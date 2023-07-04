@@ -4,9 +4,15 @@ import { NavLinks as links } from '@/constants'
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
+import { GiHamburgerMenu } from 'react-icons/gi'
+import { RxCross1 } from 'react-icons/rx'
 
 const Navbar = () => {
+    const sizeIcon = 30;
     const [nav, setNav] = useState<true | false>(false);
+    const handleNav = () => {
+        setNav(!nav);
+    }
 
     return(
         <nav className='flexCenter navbar w-full'>
@@ -38,8 +44,8 @@ const Navbar = () => {
                     </button>
                 </div>
             </div>
-            <div className='sm:flex hidden flex-row gap-10'>
-             
+            <div onClick={handleNav} className='lg:hidden flex flex-row gap-10'>
+                {nav ? (<GiHamburgerMenu size={sizeIcon}/>) : (<RxCross1 size={sizeIcon}/>)}
             </div>
         </nav>
     )
