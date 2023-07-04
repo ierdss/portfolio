@@ -1,6 +1,7 @@
 "use client"
 
 import { NavLinks as links } from '@/constants'
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 
@@ -9,20 +10,36 @@ const Navbar = () => {
 
     return(
         <nav className='flexCenter navbar w-full'>
-            <div className='flex-1 flexStart gap-10'>
-                <h1>Andrei Sager</h1>
+            <div className='flex-1 flexBetween gap-10 justify-center items-center'>
+                <Link href={""}>
+                    <Image
+                        src="/logo.svg"
+                        height={50}
+                        width={150}
+                        alt="Doggo Match"
+                    />
+                </Link>
+                <div className='sm:flex hidden gap-10'>
+                    <ul className='flex flex-row gap-2'>
+                        {links.map((link) => (
+                            <Link 
+                                href={link.href} 
+                                key={link.key}
+                                className='p-4 font-bold text-lg text-slate-400 hover:text-red-400'
+                                >
+                                {link.text}
+                            </Link>
+                        ))}
+                    </ul>
+                    <button
+                        type='button' 
+                        className='py-4 px-8 rounded-lg'>
+                        Hire Me!
+                    </button>
+                </div>
             </div>
             <div className='sm:flex hidden flex-row gap-10'>
-                <ul className="flex text-small gap-7 items-center">
-                    {links.map((link) => (
-                        <Link href={link.href} key={link.key}>
-                            {link.text}
-                        </Link>
-                    ))}
-                </ul>
-                <button className=''>
-                    Hire Me!
-                </button>
+             
             </div>
         </nav>
     )
