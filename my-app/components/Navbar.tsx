@@ -13,7 +13,7 @@ const Navbar = () => {
             <div className='flex-1 flexBetween gap-10 justify-center items-center'>
                 <Link href={""}>
                     <Image
-                        src="/logo.svg"
+                        src="/logodark.png"
                         height={50}
                         width={150}
                         alt="Doggo Match"
@@ -25,7 +25,7 @@ const Navbar = () => {
                             <Link 
                                 href={link.href} 
                                 key={link.key}
-                                className='p-4 font-bold text-lg text-slate-400 hover:text-red-400'
+                                className='p-4 font-bold text-lg text-slate-400 hover:text-secondary-red'
                                 >
                                 {link.text}
                             </Link>
@@ -33,7 +33,7 @@ const Navbar = () => {
                     </ul>
                     <button
                         type='button' 
-                        className='py-4 px-8 rounded-lg'>
+                        className='py-4 px-8 rounded-lg bg-secondary-red text-white font-bold text-lg hover:bg-red-600'>
                         Hire Me!
                     </button>
                 </div>
