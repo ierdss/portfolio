@@ -19,7 +19,7 @@ const Navbar = () => {
                         alt="Doggo Match"
                     />
                 </Link>
-                <div className='sm:flex hidden gap-10'>
+                <div className='lg:flex hidden gap-10'>
                     <ul className='flex flex-row gap-2'>
                         {links.map((link) => (
                             <Link 
@@ -33,7 +33,7 @@ const Navbar = () => {
                     </ul>
                     <button
                         type='button' 
-                        className='py-4 px-8 rounded-lg bg-secondary-red text-white font-bold text-lg hover:bg-red-600'>
+                        className='flex-1 py-4 px-8 rounded-lg bg-secondary-red text-white font-bold text-lg hover:bg-red-600'>
                         Hire Me!
                     </button>
                 </div>
