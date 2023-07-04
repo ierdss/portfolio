@@ -19,5 +19,4 @@ export const Skills = [
     { title:"Next.js" , url: "/" },
     { title:"Tailwind" , url: "/" },
     { title:"Sass" , url: "/" },
-
 ]
