@@ -47,6 +47,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="flex flex-col gap-6 w-full max-w-[700px]">
+                        <h1 className='font-bold text-lg'>Send Me a Message :)</h1>
                         <input 
                             type="text" 
                             id='name' 
