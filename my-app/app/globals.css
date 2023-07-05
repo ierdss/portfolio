@@ -40,6 +40,18 @@ body {
   @apply text-secondary-red font-extrabold text-2xl
 }
 
+.callToAction {
+  @apply w-full bg-secondary-red text-xl font-extrabold text-white p-4 hover:bg-red-600 rounded-md
+}
+
+.inputField {
+  @apply border border-solid border-slate-400 rounded-md p-4
+}
+
+.textArea {
+  @apply h-[250px] resize-none
+}
+
 ::-webkit-scrollbar {
   width: 5px;
   height: 4px;
