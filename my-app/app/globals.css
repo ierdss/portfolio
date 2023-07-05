@@ -40,6 +40,10 @@ body {
   @apply text-secondary-red font-extrabold text-2xl
 }
 
+.sectionPadding {
+  @apply p-10 md:p-20
+}
+
 .callToAction {
   @apply w-full bg-secondary-red text-xl font-extrabold text-white p-4 hover:bg-accent-pink rounded-md
 }

@@ -8,7 +8,7 @@ const Contact = () => {
 
     return( 
         <main className='w-full'>
-            <div className='flex flex-col w-full gap-8 p-20'>
+            <div className='flex flex-col w-full gap-8 sectionPadding'>
                 <div className='flex flex-col gap-4'>
                     <h1 className="sectionHeader">Contact</h1>
                     <p className='w-full lg:w-[400px]'>
