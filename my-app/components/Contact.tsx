@@ -18,7 +18,7 @@ const Contact = () => {
                 </div>
                 <div className='flex flex-col justify-between lg:flex-row gap-8'>
                     <div className="flex flex-col gap-10 w-fit md:max-w-[350px]">
-                        <div className='flex flex-row items-center gap-4 p-8 border border-solid border-slate-200 rounded-tr-xl rounded-bl-xl bg-slate-100 hover:scale-105 transition duration-150 ease-in-out'>
+                        <div className='flex flex-row items-center gap-4 p-8 border border-solid border-slate-200 rounded-tr-xl rounded-bl-xl bg-slate-100 hover:scale-105 transition duration-150 ease-in-out shadow-xl'>
                             <div className='text-secondary-red'>
                                 <HiMailOpen size={sizeIcon}/>
                             </div>
@@ -27,7 +27,7 @@ const Contact = () => {
                                 <p>{info[0].text}</p>
                             </div>
                         </div>
-                        <div className='flex flex-row items-center gap-4 p-8 border border-solid border-slate-200 rounded-tr-xl rounded-bl-xl bg-slate-100 hover:scale-105 transition duration-150 ease-in-out'>
+                        <div className='flex flex-row items-center gap-4 p-8 border border-solid border-slate-200 rounded-tr-xl rounded-bl-xl bg-slate-100 hover:scale-105 transition duration-150 ease-in-out shadow-xl'>
                             <div className='text-secondary-red'>
                                 <GiRotaryPhone size={sizeIcon}/>
                             </div>
@@ -36,7 +36,7 @@ const Contact = () => {
                                 <p>{info[1].text}</p>
                             </div>
                         </div>
-                        <div className='flex flex-row items-center gap-4 p-8 border border-solid border-slate-200 rounded-tr-xl rounded-bl-xl bg-slate-100 hover:scale-105 transition duration-150 ease-in-out'>
+                        <div className='flex flex-row items-center gap-4 p-8 border border-solid border-slate-200 rounded-tr-xl rounded-bl-xl bg-slate-100 hover:scale-105 transition duration-150 ease-in-out shadow-xl'>
                             <div className='text-secondary-red'>
                                 <MdAccessTimeFilled size={sizeIcon}/>
                             </div>
