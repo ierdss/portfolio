@@ -39,7 +39,7 @@ const Navbar = () => {
                     </ul>
                     <button
                         type='button' 
-                        className='flex-1 py-4 px-8 rounded-lg bg-secondary-red text-white font-bold text-lg hover:bg-red-600'>
+                        className='flex-1 py-4 px-8 rounded-lg bg-secondary-red text-white font-bold text-lg hover:accent-pink'>
                         Hire Me!
                     </button>
                 </div>

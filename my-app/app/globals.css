@@ -41,7 +41,7 @@ body {
 }
 
 .callToAction {
-  @apply w-full bg-secondary-red text-xl font-extrabold text-white p-4 hover:bg-red-600 rounded-md
+  @apply w-full bg-secondary-red text-xl font-extrabold text-white p-4 hover:bg-accent-pink rounded-md
 }
 
 .inputField {

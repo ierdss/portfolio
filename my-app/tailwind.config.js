@@ -21,6 +21,7 @@ module.exports = {
         'primary-purple': '#9747FF',
         'gray-50': '#D9D9D9',
         'secondary-red': '#B40041',
+        'accent-pink': '#F24471',
         'linkedin': '#0072b1',
         'github': '#171515',
       },
