@@ -6,7 +6,7 @@ const Footer = () => {
     const sizeIcon = 30;
 
     return(
-        <footer className="flex flex-col w-full py-6 px-16">
+        <footer className="flex flex-col w-full py-6 px-16 border-t border-nav-border">
             <div className="flexBetween footer_copyright gap-4">
                 <p>@ 2023 Andrei Sager. All rights reserved</p>
                 <div className='flex flex-row justify-center items-center gap-4'>
