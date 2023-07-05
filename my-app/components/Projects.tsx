@@ -1,8 +1,14 @@
 const Projects = () => {
     return( 
-        <div>
-            <h1>Projects</h1>
-        </div>
+        <main className="bg-slate-100">
+            <div className="flex flex-col w-full gap-8 p-20">
+                <h1 className="sectionHeader">Projects</h1>
+                <p></p>
+            </div>
+            <div className="">
+
+            </div>
+        </main>
     )
 }
 

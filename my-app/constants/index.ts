@@ -21,6 +21,18 @@ export const Skills = [
     { title:"Sass" , url: "/" },
 ]
 
+export const Projects = [
+    {
+        title: "",
+        description: "",
+        tags: [
+            "",
+        ],
+        githubUrl: "",
+        livedemoURl: "",
+    },
+]
+
 export const ContactInfo = [
     { title:"Email", text:"andreiwork25@gmail.com"},
     { title:"Number", text:"*639763272778"},
