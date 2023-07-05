@@ -24,6 +24,7 @@ export const Skills = [
 export const ProjectsList = [
     {
         thumbnail: "",
+        alt: "",
         title: "Sample Project",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
         tags: [
