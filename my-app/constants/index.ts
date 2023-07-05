@@ -21,15 +21,19 @@ export const Skills = [
     { title:"Sass" , url: "/" },
 ]
 
-export const Projects = [
+export const ProjectsList = [
     {
-        title: "",
-        description: "",
+        thumbnail: "",
+        title: "Sample Project",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
         tags: [
-            "",
+            "Typescript",
+            "React",
+            "Tailwind",
+            "Plain CSS",
         ],
-        githubUrl: "",
-        livedemoURl: "",
+        githubUrl: "/",
+        livedemoUrl: "/",
     },
 ]
 
