@@ -20,3 +20,9 @@ export const Skills = [
     { title:"Tailwind" , url: "/" },
     { title:"Sass" , url: "/" },
 ]
+
+export const ContactInfo = [
+    { title:"Email", text:"andreiwork25@gmail.com"},
+    { title:"Number", text:"*639763272778"},
+    { title:"Time", text:"(GMT+8) 09:00 - 17:00"},
+]
