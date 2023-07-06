@@ -23,7 +23,7 @@ const Project = ({thumbnail, alt, title, description, tags, githubUrl, livedemoU
             alt={alt}
             className="w-full"
             /> */}
-        <div className="bg-slate-500 h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl">
+        <div className="bg-slate-500 h-[450px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl">
             
         </div>
         <div className="flex flex-col text-center justify-center gap-4 py-6 w-full md:w-4/5">
@@ -54,7 +54,6 @@ const Projects = () => {
             <div className="flex flex-col w-full gap-8 sectionPadding">
                 <h1 className="sectionHeader">Projects</h1>
                 <h1 className="font-bold text-3xl">Check Out My Projects!</h1>
-                <p></p>
                 <div className="flex flex-row flex-wrap gap-10">
                     <Project 
                         thumbnail={list[0].thumbnail}
