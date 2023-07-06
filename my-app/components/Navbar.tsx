@@ -15,7 +15,7 @@ const Navbar = () => {
     }
 
     return(
-        <nav className='flexCenter navbar w-full'>
+        <nav className='flexCenter py-4 px-6 md:px-12 w-full fixed top-0 bg-white'>
             <div className='flex-1 flexBetween gap-10 justify-center items-center'>
                 <Link href={""}>
                     <Image
@@ -28,20 +28,17 @@ const Navbar = () => {
                 <div className='lg:flex hidden gap-10'>
                     <ul className='flex flex-row gap-2'>
                         {links.map((link) => (
-                            <Link 
+                            <li key={link.key}>
+                            <Link
                                 href={link.href} 
-                                key={link.key}
                                 className='p-4 font-bold text-lg text-slate-400 hover:text-secondary-red'
                                 >
                                 {link.text}
                             </Link>
+                            </li>
+                        
                         ))}
                     </ul>
-                    <button
-                        type='button' 
-                        className='flex-1 py-4 px-8 rounded-lg bg-secondary-red text-white font-bold text-lg hover:accent-pink'>
-                        Hire Me!
-                    </button>
                 </div>
             </div>
             <div onClick={handleNav} className='lg:hidden flex flex-row gap-10'>

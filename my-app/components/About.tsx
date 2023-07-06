@@ -8,7 +8,7 @@ const About = () => {
     const sizeIcon = 50;
 
     return(
-        <main className="w-full">
+        <main id="about" className="w-full">
             <div className="flex flex-col md:flex-row sectionPadding gap-10 w-full justify-around">
                 {/* <Image
                     src="/MeRed.png"

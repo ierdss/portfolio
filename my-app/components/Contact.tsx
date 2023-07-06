@@ -7,7 +7,7 @@ const Contact = () => {
     const sizeIcon = 40;
 
     return( 
-        <main className='w-full'>
+        <main id='contact' className='w-full'>
             <div className='flex flex-col w-full gap-8 sectionPadding'>
                 <div className='flex flex-col gap-4'>
                     <h1 className="sectionHeader">Contact</h1>

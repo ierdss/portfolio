@@ -50,7 +50,7 @@ const Project = ({thumbnail, alt, title, description, tags, githubUrl, livedemoU
 
 const Projects = () => {
     return( 
-        <main className="bg-slate-100">
+        <main id="projects" className="bg-slate-100">
             <div className="flex flex-col w-full gap-8 sectionPadding">
                 <h1 className="sectionHeader">Projects</h1>
                 <h1 className="font-bold text-3xl">Check Out My Projects!</h1>
