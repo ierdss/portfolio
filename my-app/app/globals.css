@@ -42,7 +42,7 @@ body {
 }
 
 .sectionPadding {
-  @apply p-6 md:p-20 md:pt-28
+  @apply p-6 md:p-20 pt-24 md:pt-28
 }
 
 .callToAction {

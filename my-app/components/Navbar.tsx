@@ -17,7 +17,7 @@ const Navbar = () => {
     return(
         <nav className='flexCenter py-4 px-6 md:px-12 w-full fixed top-0 bg-white'>
             <div className='flex-1 flexBetween gap-10 justify-center items-center'>
-                <Link href={""}>
+                <Link href={"/"}>
                     <Image
                         src="/logodark.png"
                         height={50}
@@ -36,13 +36,28 @@ const Navbar = () => {
                                 {link.text}
                             </Link>
                             </li>
-                        
                         ))}
                     </ul>
                 </div>
             </div>
             <div onClick={handleNav} className='lg:hidden flex flex-row gap-10'>
-                {nav ? (<GiHamburgerMenu size={sizeIcon}/>) : (<RxCross1 size={sizeIcon}/>)}
+                {!nav ? (<GiHamburgerMenu size={sizeIcon}/>) : (<RxCross1 size={sizeIcon}/>)}
+            </div>
+            <div className={!nav ? 'hidden' : 'block absolute top-20 w-full bg-white'} >
+                <ul className='flex flex-col w-full pb-8'>
+                    {links.map((link) => (
+                        <li key={link.key}
+                            className='w-full'>
+                            <Link
+                                onClick={handleNav}
+                                href={link.href} 
+                                className='block w-full p-6 font-bold text-lg text-slate-400 hover:text-secondary-red'
+                                >
+                                {link.text}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
             </div>
         </nav>
     )
