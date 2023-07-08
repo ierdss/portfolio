@@ -48,25 +48,26 @@ const Contact = () => {
                     </div>
                     <div className="flex flex-col gap-6 w-full max-w-[700px]">
                         <h1 className='font-bold text-lg'>Send Me a Message :)</h1>
-                        <input 
-                            type="text" 
-                            id='name' 
-                            placeholder='Enter your name..'
-                            className='inputField focus:placeholder:italic'
-                            />
-                        <input 
-                            type="text" 
-                            id='email' 
-                            placeholder='Enter your email..'
-                            className='inputField focus:placeholder:italic'
-                            />
-                        <textarea 
-                            id='message' 
-                            placeholder='Write your message..'
-                            className='inputField textArea focus:placeholder:italic'
-                            />
-                        <button className='callToAction'>Send</button>
-
+                        <form action="https://formsubmit.co/c17fde7c685d7acade816e94aa869da3" method="POST" className='flex flex-wrap w-full gap-6'>
+                            <input 
+                                type="text" 
+                                name='Sender' 
+                                placeholder='Enter your name..'
+                                className='w-full inputField focus:placeholder:italic'
+                                />
+                            <input 
+                                type="text" 
+                                name='Email' 
+                                placeholder='Enter your email..'
+                                className='w-full inputField focus:placeholder:italic'
+                                />
+                            <textarea 
+                                name='Message' 
+                                placeholder='Write your message..'
+                                className='w-full inputField textArea focus:placeholder:italic'
+                                />
+                            <button type='submit' className='w-full callToAction'>Send</button>
+                        </form>
                     </div>
                 </div>
             </div>
