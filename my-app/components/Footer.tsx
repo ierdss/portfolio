@@ -12,12 +12,14 @@ const Footer = () => {
                 <div className='flex flex-row justify-center items-center gap-4'>
                     <Link 
                         href={links[0].url}
+                        target='blank'
                         className='text-secondary-red hover:text-linkedin'
                     >
                         <BsLinkedin size={sizeIcon}/>
                     </Link>
                     <Link 
                         href={links[1].url}
+                        target='blank'
                         className='text-secondary-red hover:text-github'
                     >
                         <BsGithub size={sizeIcon}/>
