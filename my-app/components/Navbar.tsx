@@ -15,7 +15,7 @@ const Navbar = () => {
     }
 
     return(
-        <nav className='flexCenter py-4 px-6 md:px-12 w-full fixed top-0 bg-white'>
+        <nav className='flexCenter py-4 px-6 md:px-12 w-full fixed top-0 bg-white !z-20'>
             <div className='flex-1 flexBetween gap-10 justify-center items-center'>
                 <Link href={"/"}>
                     <Image
