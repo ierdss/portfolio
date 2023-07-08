@@ -52,18 +52,18 @@ const Contact = () => {
                             type="text" 
                             id='name' 
                             placeholder='Enter your name..'
-                            className='inputField'
+                            className='inputField focus:placeholder:italic'
                             />
                         <input 
                             type="text" 
                             id='email' 
                             placeholder='Enter your email..'
-                            className='inputField'
+                            className='inputField focus:placeholder:italic'
                             />
                         <textarea 
                             id='message' 
                             placeholder='Write your message..'
-                            className='inputField textArea'
+                            className='inputField textArea focus:placeholder:italic'
                             />
                         <button className='callToAction'>Send</button>
 
