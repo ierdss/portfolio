@@ -33,6 +33,9 @@ module.exports = {
       },
       maxWidth: {
         '10xl': '1680px'
+      },
+      backgroundImage: {
+        'home-texture': "url('/mountains.jpg')",
       }
     },
   },

@@ -18,12 +18,7 @@ const Navbar = () => {
         <nav className='flexCenter py-4 px-6 md:px-12 w-full fixed top-0 bg-white !z-20'>
             <div className='flex-1 flexBetween gap-10 justify-center items-center'>
                 <Link href={"/"}>
-                    <Image
-                        src="/logodark.png"
-                        height={50}
-                        width={150}
-                        alt="Doggo Match"
-                    />
+                    <h1 className='text-5xl font-black bg-clip-text wk-bg-clip text-transparent bg-cover bg-center bg-home-texture hover:text-secondary-red'>ANDREI</h1>
                 </Link>
                 <div className='lg:flex hidden gap-10'>
                     <ul className='flex flex-row gap-2'>
