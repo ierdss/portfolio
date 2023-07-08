@@ -6,8 +6,8 @@ export const NavLinks = [
 ]
 
 export const SocialLinks = [
-    { title: "LinkedIn", url: "/"},
-    { title: "Github", url: "/"},
+    { title: "LinkedIn", url: "https://www.linkedin.com/in/andrei-sager-34a452265/"},
+    { title: "Github", url: "https://github.com/LordBrim"},
 ]
 
 export const Skills = [
