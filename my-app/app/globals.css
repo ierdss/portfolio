@@ -17,6 +17,10 @@ body {
   font-family: Inter;
 }
 
+::selection {
+  @apply text-secondary-red bg-white
+}
+
 .flexCenter {
   @apply flex justify-center items-center;
 }
