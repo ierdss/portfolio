@@ -10,6 +10,16 @@ export const SocialLinks = [
     { title: "Github", url: "https://github.com/LordBrim"},
 ]
 
+export const HeroContent = {
+    title: "",
+    subtitle: "",
+}
+
+export const AboutContent = {
+    title: "",
+    subtitle: "",
+}
+
 export const Skills = [
     { title:"HTML5" , url: "/" },
     { title:"CSS3" , url: "/" },
@@ -23,7 +33,23 @@ export const Skills = [
 
 export const ProjectsList = [
     {
-        thumbnail: "",
+        id: 1,
+        thumbnail: "project-1",
+        alt: "",
+        title: "Sample Project",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
+        tags: [
+            "Typescript",
+            "React",
+            "Tailwind",
+            "Plain CSS",
+        ],
+        githubUrl: "/",
+        livedemoUrl: "/",
+    },
+    {
+        id: 2,
+        thumbnail: "project-1",
         alt: "",
         title: "Sample Project",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
