@@ -36,7 +36,6 @@ module.exports = {
       },
       backgroundImage: {
         'home-texture': "url('/mountains.jpg')",
-        'project-1': "url('/9anime-compressed.png')",
       }
     },
   },
