@@ -46,9 +46,9 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-6 w-full max-w-[700px]">
+                    <div className="flex flex-col gap-4 w-full max-w-[700px]">
                         <h1 className='font-bold text-lg'>Send Me a Message :)</h1>
-                        <form action="https://formsubmit.co/c17fde7c685d7acade816e94aa869da3" method="POST" className='flex flex-wrap w-full gap-6'>
+                        <form action="https://data.endpoint.space/cljvd1c0f006008l4400sjt6m" method="POST" className='flex flex-wrap w-full gap-3'>
                             <input 
                                 type="text" 
                                 name='Sender' 
@@ -66,7 +66,7 @@ const Contact = () => {
                                 placeholder='Write your message..'
                                 className='w-full inputField textArea focus:placeholder:italic'
                                 />
-                            <button type='submit' className='w-full callToAction'>Send</button>
+                            <button type='submit' className='w-full callToAction mt-2'>Send</button>
                         </form>
                     </div>
                 </div>

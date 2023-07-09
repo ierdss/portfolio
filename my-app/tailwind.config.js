@@ -20,10 +20,24 @@ module.exports = {
         'black-100': '#252525',
         'primary-purple': '#9747FF',
         'gray-50': '#D9D9D9',
+
         'secondary-red': '#B40041',
         'accent-pink': '#F24471',
+
         'linkedin': '#0072b1',
         'github': '#171515',
+
+        'html': '#f06529',
+
+        'css': '#2965f1',
+        'sass': '#cc6699',
+        'tailwind': '#67e8f9',
+
+        'javascript': '#ecd120',
+        'typescript': '#007acc',
+
+        'react': '#61dbfb',
+        'next': '#171515',
       },
       boxShadow: {
         menu: '0px 159px 95px rgba(13,12,34,0.01), 0px 71px 71px rgba(13,12,34,0.02), 0px 18px 39px rgba(13,12,34,0.02), 0px 0px 0px rgba(13,12,34,0.02)',
@@ -35,7 +49,11 @@ module.exports = {
         '10xl': '1680px'
       },
       backgroundImage: {
-        'home-texture': "url('/mountains.jpg')",
+        'home-texture': "url(/mountains.jpg)",
+        'thumbnail-1': "url(/9anime-compressed.png)",
+        'thumbnail-2': "url()",
+        'thumbnail-3': "url()",
+        'thumbnail-4': "url()",
       }
     },
   },
