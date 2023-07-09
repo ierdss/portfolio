@@ -22,11 +22,12 @@ const Project = ({title, description, tags, githubUrl, livedemoUrl}: ProjectProp
             ))}
         </ul>
         <div className="flex flex-row justify-center items-center gap-8 w-full mt-6">
-            <a 
-                href={githubUrl}
+            <a href={githubUrl}
+                target="_blank"
                 className="flex flex-row gap-2 justify-center items-center"
                 ><BsGithub size={sizeIcon}/>Source Code</a>
             <a href={livedemoUrl}
+                target="_blank"
                 className="flex flex-row gap-2 first:justify-center items-center"
                 ><IoGlobe size={sizeIcon}/>Live Demo</a>
         </div>
