@@ -1,5 +1,4 @@
 import { ProjectsList as list } from "@/constants"
-import Image from "next/image";
 import { BsGithub } from 'react-icons/bs'
 import { IoGlobe } from 'react-icons/io5'
 
