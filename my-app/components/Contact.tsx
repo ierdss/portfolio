@@ -48,7 +48,7 @@ const Contact = () => {
                     </div>
                     <div className="flex flex-col gap-6 w-full max-w-[700px]">
                         <h1 className='font-bold text-lg'>Send Me a Message :)</h1>
-                        <form action="https://data.endpoint.space/cljvcx8k9002108l4u9j02wnk" method="POST" className='flex flex-wrap w-full gap-6'>
+                        <form action="https://formsubmit.co/c17fde7c685d7acade816e94aa869da3 " method="POST" className='flex flex-wrap w-full gap-6'>
                             <input 
                                 type="text" 
                                 name='Sender' 
