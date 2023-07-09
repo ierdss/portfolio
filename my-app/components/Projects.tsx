@@ -16,7 +16,7 @@ const sizeIcon = 30;
 
 const Project = ({thumbnail, alt, title, description, tags, githubUrl, livedemoUrl}: ProjectProps) => (
     <div className="flex flex-col md:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8">
-            <div className={`bg-[url('/${thumbnail}')] h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[5000ms]`}>
+            <div className={`${thumbnail} h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[4000ms]`}>
         </div>
         <div className="flex flex-col text-center justify-center gap-4 py-6 w-full md:w-4/5">
             <h1 className="font-bold text-lg">{title}</h1>

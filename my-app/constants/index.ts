@@ -34,7 +34,7 @@ export const Skills = [
 export const ProjectsList = [
     {
         id: 1,
-        thumbnail: "9anime-compressed.png",
+        thumbnail: "bg-[url(/9anime-compressed.png)]",
         alt: "",
         title: "Sample Project",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
@@ -49,7 +49,7 @@ export const ProjectsList = [
     },
     {
         id: 2,
-        thumbnail: "9anime-compressed.png",
+        thumbnail: "bg-[url(/9anime-compressed.png)]",
         alt: "",
         title: "Sample Project",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
