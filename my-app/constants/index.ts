@@ -1,5 +1,5 @@
 export const NavLinks = [
-    { href:"#home", key:"Home", text:"Home"},
+    { href:"/", key:"Home", text:"Home"},
     { href:"#about", key:"About", text:"About"},
     { href:"#projects", key:"Projects", text:"Projects"},
     { href:"#contact", key:"Contact", text:"Contact"},
@@ -18,8 +18,12 @@ export const HeroContent = {
 }
 
 export const AboutContent = {
-    title:"",
-    subtitle:"",
+    title:"Get To Know Me!",
+    subtitle: [
+        "I'm a natural problem solver, eversince I was a kid I enjoyed building contraptions with lego, solving puzzles, and tinkering my curiosity away. This not only honed my interest in building things but it also polished my persistence and what led me to pursue this career in the present.",
+        "People call me spontaneous but I am simply curious of what will happen if I did this or that. What I like about this field is the ability to save and retract progress when needed, github for example. Needless to say I always contain myself or channel this curious and persistent energy in a proper way that would benifit myself and the company.",
+        "However, I as practice as a developer I found myself becoming more and more meticulous in my craft. I would prioritize writing clean code and place comments where it's necessary."
+    ]
 }
 
 export const Skills = [
