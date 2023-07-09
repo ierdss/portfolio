@@ -6,74 +6,76 @@ export const NavLinks = [
 ]
 
 export const SocialLinks = [
-    { title: "LinkedIn", url: "https://www.linkedin.com/in/andrei-sager-34a452265/"},
-    { title: "Github", url: "https://github.com/LordBrim"},
+    { title:"LinkedIn", url:"https://www.linkedin.com/in/andrei-sager-34a452265/"},
+    { title:"Github", url:"https://github.com/LordBrim"},
 ]
 
 export const HeroContent = {
-    title: "",
-    subtitle: "",
+    portrait:"/MeRed.png",
+    alt:"A portrait of myself wearing a comfortable red t-shirt.",
+    title:"Front-End Developer",
+    subtitle:"Embracing the fusion of artistry and code, I shape digital experiences as a front-end developer. With a passion for design and a drive for innovation, I craft seamless interfaces and striking visuals, elevating the aesthetic essence of the web.",
 }
 
 export const AboutContent = {
-    title: "",
-    subtitle: "",
+    title:"",
+    subtitle:"",
 }
 
 export const Skills = [
-    { title:"HTML5" , url: "/" },
-    { title:"CSS3" , url: "/" },
-    { title:"Javascript" , url: "/" },
-    { title:"Typescript" , url: "/" },
-    { title:"React" , url: "/" },
-    { title:"Next.js" , url: "/" },
-    { title:"Tailwind" , url: "/" },
-    { title:"Sass" , url: "/" },
+    { title:"HTML5" , url:"/" },
+    { title:"CSS3" , url:"/" },
+    { title:"Javascript" , url:"/" },
+    { title:"Typescript" , url:"/" },
+    { title:"React" , url:"/" },
+    { title:"Next.js" , url:"/" },
+    { title:"Tailwind" , url:"/" },
+    { title:"Sass" , url:"/" },
 ]
 
 export const ProjectsList = [
     {
         id: 1,
-        title: "Sample Project",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
+        title:"Sample Project",
+        description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
         tags: [
             "Typescript",
             "React",
             "Tailwind",
             "Plain CSS",
         ],
-        githubUrl: "/",
-        livedemoUrl: "/",
+        githubUrl:"/",
+        livedemoUrl:"/",
     },
     {
         id: 2,
-        title: "Sample Project",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
+        title:"Sample Project",
+        description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
         tags: [
             "Typescript",
             "React",
             "Tailwind",
             "Plain CSS",
         ],
-        githubUrl: "/",
-        livedemoUrl: "/",
+        githubUrl:"/",
+        livedemoUrl:"/",
     },
     {
         id: 3,
-        title: "Sample Project",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
+        title:"Sample Project",
+        description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
         tags: [
             "Typescript",
             "React",
             "Tailwind",
             "Plain CSS",
         ],
-        githubUrl: "/",
-        livedemoUrl: "/",
+        githubUrl:"/",
+        livedemoUrl:"/",
     },
     {
         id: 4,
-        title: "Sample Project",
+        title:"Sample Project",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
         tags: [
             "Typescript",
@@ -81,8 +83,8 @@ export const ProjectsList = [
             "Tailwind",
             "Plain CSS",
         ],
-        githubUrl: "/",
-        livedemoUrl: "/",
+        githubUrl:"/",
+        livedemoUrl:"/",
     },
 ]
 
