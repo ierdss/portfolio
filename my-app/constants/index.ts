@@ -34,8 +34,6 @@ export const Skills = [
 export const ProjectsList = [
     {
         id: 1,
-        thumbnail: "bg-[url(/9anime-compressed.png)]",
-        alt: "",
         title: "Sample Project",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
         tags: [
@@ -49,8 +47,32 @@ export const ProjectsList = [
     },
     {
         id: 2,
-        thumbnail: "bg-[url(/9anime-compressed.png)]",
-        alt: "",
+        title: "Sample Project",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
+        tags: [
+            "Typescript",
+            "React",
+            "Tailwind",
+            "Plain CSS",
+        ],
+        githubUrl: "/",
+        livedemoUrl: "/",
+    },
+    {
+        id: 3,
+        title: "Sample Project",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
+        tags: [
+            "Typescript",
+            "React",
+            "Tailwind",
+            "Plain CSS",
+        ],
+        githubUrl: "/",
+        livedemoUrl: "/",
+    },
+    {
+        id: 4,
         title: "Sample Project",
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
         tags: [

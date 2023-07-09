@@ -35,7 +35,8 @@ module.exports = {
         '10xl': '1680px'
       },
       backgroundImage: {
-        'home-texture': "url('/mountains.jpg')",
+        'home-texture': "url(/mountains.jpg)",
+        'thumbnail-1': "url(/9anime-compressed.png)",
       }
     },
   },
