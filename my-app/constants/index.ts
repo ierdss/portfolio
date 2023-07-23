@@ -40,16 +40,16 @@ export const Skills = [
 export const ProjectsList = [
     {
         id: 1,
-        title:"Sample Project",
+        title:"Road Way Delivery",
         description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
         tags: [
+            "Next.js",
             "Typescript",
-            "React",
             "Tailwind",
-            "Plain CSS",
+            "CSS",
         ],
-        githubUrl:"/",
-        livedemoUrl:"/",
+        githubUrl:"https://github.com/LordBrim/andrei-portfolio",
+        livedemoUrl:"https://andreiportfolio.vercel.app",
     },
     {
         id: 2,
