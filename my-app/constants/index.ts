@@ -41,15 +41,16 @@ export const ProjectsList = [
     {
         id: 1,
         title:"Road Way Delivery",
-        description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
+        description:"Road Way Delivery Service is a leading logistics company revolutionizing the industry with fast, reliable road transportation solutions. We specialize in secure, on-time deliveries for customers and businesses across local and regional destinations.",
         tags: [
             "Next.js",
             "Typescript",
             "Tailwind",
             "CSS",
+            "GraphQL",
         ],
         githubUrl:"https://github.com/LordBrim/andrei-portfolio",
-        livedemoUrl:"https://andreiportfolio.vercel.app",
+        livedemoUrl:"https://roadwaydelivery.vercel.app",
     },
     {
         id: 2,
