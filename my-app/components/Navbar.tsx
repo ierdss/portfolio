@@ -15,7 +15,7 @@ const Navbar = () => {
     }
 
     return(
-        <nav className='flexCenter py-4 px-6 md:px-12 w-full fixed top-0 bg-white !z-20'>
+        <nav className='flexCenter py-4 px-6 md:px-12 w-full fixed top-0 bg-white !z-50'>
             <div className='flex-1 flexBetween gap-10 justify-center items-center'>
                 <Link href={"/"}>
                     <h1 className='text-5xl font-black bg-clip-text wk-bg-clip text-transparent bg-cover bg-center bg-home-texture hover:text-secondary-red'>ANDREI</h1>
