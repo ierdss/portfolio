@@ -55,7 +55,7 @@ module.exports = {
         'thumbnail-desktop-3': "url()",
         'thumbnail-desktop-4': "url()",
 
-        'thumbnail-mobile-1-': "url(/9anime-compressed.png)",
+        'thumbnail-mobile-1': "url(/road-way-delivery__compressed-mobile.jpg)",
         'thumbnail-mobile-2': "url()",
         'thumbnail-mobile-3': "url()",
         'thumbnail-mobile-4': "url()",
