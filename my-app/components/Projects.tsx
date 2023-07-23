@@ -41,8 +41,12 @@ const Projects = () => {
                 <h1 className="sectionHeader">Projects</h1>
                 <h1 className="font-bold text-3xl">Check Out My Projects!</h1>
                 <div className="flex flex-row flex-wrap gap-10">
-                    <div className="flex flex-col md:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8">
-                        <div className={`bg-thumbnail-desktop-1 h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[10000ms]`}/>
+                    <div className="flex flex-col md:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8 relative">
+                        <div className="bg-thumbnail-desktop-1 h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[10000ms]"/>
+                        <div className="relative">
+                            <div className="hidden lg:flex bg-thumbnail-mobile-1 min-h-[250px] max-h-[150px] w-[120px] md:h-auto rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[15000ms] z-20 border-2 border-black absolute -bottom-3 -right-4"/>
+                        </div>
+                  
                         <Project 
                             title={list[0].title}
                             description={list[0].description}
