@@ -13,7 +13,7 @@ type ProjectProps = {
 const sizeIcon = 30;
 
 const Project = ({title, description, tags, githubUrl, livedemoUrl}: ProjectProps) => (
-    <div className="flex flex-col text-center justify-center gap-4 py-6 w-full md:w-4/5">
+    <div className="flex flex-col text-center justify-center gap-4 py-6 w-full md:w-3/5">
         <h1 className="font-bold text-lg">{title}</h1>
         <p className="text-md text-slate-500 font-medium">{description}</p>
         <ul className="flex flex-row flex-wrap justify-center items-start gap-3">
@@ -41,12 +41,11 @@ const Projects = () => {
                 <h1 className="sectionHeader">Projects</h1>
                 <h1 className="font-bold text-3xl">Check Out My Projects!</h1>
                 <div className="flex flex-row flex-wrap gap-10">
-                    <div className="flex flex-col md:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8 relative">
+                    <div className="flex flex-col md:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8 relative w-full lg:min-h-[480px] lg:max-h-[480px]">
                         <div className="bg-thumbnail-desktop-1 h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[10000ms]"/>
                         <div className="relative">
-                            <div className="hidden lg:flex bg-thumbnail-mobile-1 min-h-[250px] max-h-[150px] w-[120px] md:h-auto rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[15000ms] z-20 border-2 border-black absolute -bottom-3 -right-4"/>
+                            <div className="hidden lg:flex bg-thumbnail-mobile-1 min-h-[250px] max-h-[150px] w-[120px] md:h-auto rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[15000ms] z-20 border-2 border-black absolute -bottom-3 -right-4 hover:scale-110"/>
                         </div>
-                  
                         <Project 
                             title={list[0].title}
                             description={list[0].description}
@@ -55,8 +54,11 @@ const Projects = () => {
                             livedemoUrl={list[0].livedemoUrl}
                             />
                     </div>
-                    <div className="flex flex-col md:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8">
-                        <div className={`bg-thumbnail-desktop-2 h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[4000ms]`}/>
+                    <div className="flex flex-col md:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8 relative w-full lg:min-h-[480px] lg:max-h-[480px]">
+                        <div className="bg-thumbnail-desktop-2 h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[10000ms]"/>
+                        <div className="relative">
+                            <div className="hidden lg:flex bg-thumbnail-mobile-1 min-h-[250px] max-h-[150px] w-[120px] md:h-auto rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[15000ms] z-20 border-2 border-black absolute -bottom-3 -right-4 hover:scale-110"/>
+                        </div>
                         <Project 
                             title={list[1].title}
                             description={list[1].description}
@@ -65,8 +67,11 @@ const Projects = () => {
                             livedemoUrl={list[1].livedemoUrl}
                             />
                     </div>
-                    <div className="flex flex-col md:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8">
-                        <div className={`bg-thumbnail-desktop-2 h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[4000ms]`}/>
+                    <div className="flex flex-col md:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8 relative w-full lg:min-h-[480px] lg:max-h-[480px]">
+                        <div className="bg-thumbnail-desktop-2 h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[10000ms]"/>
+                        <div className="relative">
+                            <div className="hidden lg:flex bg-thumbnail-mobile-1 min-h-[250px] max-h-[150px] w-[120px] md:h-auto rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[15000ms] z-20 border-2 border-black absolute -bottom-3 -right-4 hover:scale-110"/>
+                        </div>
                         <Project 
                             title={list[2].title}
                             description={list[2].description}
@@ -75,8 +80,11 @@ const Projects = () => {
                             livedemoUrl={list[2].livedemoUrl}
                             />
                     </div>
-                    <div className="flex flex-col md:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8">
-                        <div className={`bg-thumbnail-desktop-2 h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[4000ms]`}/>
+                    <div className="flex flex-col md:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8 relative w-full lg:min-h-[480px] lg:max-h-[480px]">
+                        <div className="bg-thumbnail-desktop-2 h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[10000ms]"/>
+                        <div className="relative">
+                            <div className="hidden lg:flex bg-thumbnail-mobile-1 min-h-[250px] max-h-[150px] w-[120px] md:h-auto rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[15000ms] z-20 border-2 border-black absolute -bottom-3 -right-4 hover:scale-110"/>
+                        </div>
                         <Project 
                             title={list[3].title}
                             description={list[3].description}
