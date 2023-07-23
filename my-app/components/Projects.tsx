@@ -24,11 +24,11 @@ const Project = ({title, description, tags, githubUrl, livedemoUrl}: ProjectProp
         <div className="flex flex-row justify-center items-center gap-8 w-full mt-6">
             <a href={githubUrl}
                 target="_blank"
-                className="flex flex-row gap-2 justify-center items-center"
+                className="flex flex-row gap-2 justify-center items-center hover:text-secondary-red"
                 ><BsGithub size={sizeIcon}/>Source Code</a>
             <a href={livedemoUrl}
                 target="_blank"
-                className="flex flex-row gap-2 first:justify-center items-center"
+                className="flex flex-row gap-2 first:justify-center items-center hover:text-secondary-red"
                 ><IoGlobe size={sizeIcon}/>Live Demo</a>
         </div>
     </div>
@@ -42,7 +42,7 @@ const Projects = () => {
                 <h1 className="font-bold text-3xl">Check Out My Projects!</h1>
                 <div className="flex flex-row flex-wrap gap-10">
                     <div className="flex flex-col md:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8">
-                        <div className={`bg-thumbnail-1 h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[4000ms]`}/>
+                        <div className={`bg-thumbnail-desktop-1 h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[10000ms]`}/>
                         <Project 
                             title={list[0].title}
                             description={list[0].description}
@@ -52,7 +52,7 @@ const Projects = () => {
                             />
                     </div>
                     <div className="flex flex-col md:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8">
-                        <div className={`bg-thumbnail-1 h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[4000ms]`}/>
+                        <div className={`bg-thumbnail-desktop-2 h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[4000ms]`}/>
                         <Project 
                             title={list[1].title}
                             description={list[1].description}
@@ -62,7 +62,7 @@ const Projects = () => {
                             />
                     </div>
                     <div className="flex flex-col md:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8">
-                        <div className={`bg-thumbnail-1 h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[4000ms]`}/>
+                        <div className={`bg-thumbnail-desktop-2 h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[4000ms]`}/>
                         <Project 
                             title={list[2].title}
                             description={list[2].description}
@@ -72,7 +72,7 @@ const Projects = () => {
                             />
                     </div>
                     <div className="flex flex-col md:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8">
-                        <div className={`bg-thumbnail-1 h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[4000ms]`}/>
+                        <div className={`bg-thumbnail-desktop-2 h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[4000ms]`}/>
                         <Project 
                             title={list[3].title}
                             description={list[3].description}
