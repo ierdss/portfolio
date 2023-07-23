@@ -47,7 +47,6 @@ export const ProjectsList = [
             "Typescript",
             "Tailwind",
             "CSS",
-            "GraphQL",
         ],
         githubUrl:"https://github.com/LordBrim/andrei-portfolio",
         livedemoUrl:"https://roadwaydelivery.vercel.app",
