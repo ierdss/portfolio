@@ -50,10 +50,15 @@ module.exports = {
       },
       backgroundImage: {
         'home-texture': "url(/mountains.jpg)",
-        'thumbnail-1': "url(/9anime-compressed.png)",
-        'thumbnail-2': "url()",
-        'thumbnail-3': "url()",
-        'thumbnail-4': "url()",
+        'thumbnail-desktop-1': "url(/road-way-delivery__compressed-desktop.jpg)",
+        'thumbnail-desktop-2': "url(/9anime-compressed.png)",
+        'thumbnail-desktop-3': "url()",
+        'thumbnail-desktop-4': "url()",
+
+        'thumbnail-mobile-1-': "url(/9anime-compressed.png)",
+        'thumbnail-mobile-2': "url()",
+        'thumbnail-mobile-3': "url()",
+        'thumbnail-mobile-4': "url()",
       }
     },
   },
