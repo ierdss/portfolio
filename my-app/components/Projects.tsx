@@ -44,7 +44,7 @@ const Projects = () => {
                     <div className="flex flex-col md:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8 relative w-full lg:min-h-[480px] lg:max-h-[480px]">
                         <div className="bg-thumbnail-desktop-1 h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[10000ms]"/>
                         <div className="relative">
-                            <div className="hidden lg:flex bg-thumbnail-mobile-1 min-h-[250px] max-h-[150px] w-[120px] md:h-auto rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[15000ms] z-20 border-2 border-black absolute -bottom-3 -right-4 hover:scale-110"/>
+                            <div className="hidden lg:flex bg-thumbnail-mobile-1 min-h-[300px] max-h-[250px] w-[150px] md:h-auto rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[15000ms] z-20 border-2 border-black absolute -bottom-3 -right-4 hover:scale-110"/>
                         </div>
                         <Project 
                             title={list[0].title}
