@@ -36,7 +36,7 @@ const Project = ({title, description, tags, githubUrl, livedemoUrl}: ProjectProp
 
 export default function Projects() {
     return( 
-        <main id="projects" className="bg-slate-100">
+        <div id="projects" className="bg-slate-100">
             <div className="flex flex-col w-full gap-8 sectionPadding">
                 <h1 className="sectionHeader">Projects</h1>
                 <h1 className="font-bold text-3xl">Check Out My Projects!</h1>
@@ -95,6 +95,6 @@ export default function Projects() {
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
     )
 }

@@ -17,10 +17,10 @@ const skillIconSize = 50;
 const footerIconSize = 30;
 
 export const NavLinks = [
-    { href:"/", key:"Home", text:"Home"},
-    { href:"#about", key:"About", text:"About"},
-    { href:"#projects", key:"Projects", text:"Projects"},
-    { href:"#contact", key:"Contact", text:"Contact"},
+    { id:1, href:"/", key:"Home", text:"Home"},
+    { id:2, href:"#about", key:"About", text:"About"},
+    { id:3, href:"#projects", key:"Projects", text:"Projects"},
+    { id:4, href:"#contact", key:"Contact", text:"Contact"},
 ]
 
 export const SocialMediaLinks = [
