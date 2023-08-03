@@ -9,8 +9,12 @@ import { HiMailOpen } from 'react-icons/hi'
 import { GiRotaryPhone } from 'react-icons/gi'
 import { MdAccessTimeFilled } from 'react-icons/md'
 
+//Footer Section Icons
+import { BsLinkedin, BsGithub } from 'react-icons/bs'
+
 const contactIconSize = 40;
 const skillIconSize = 50;
+const footerIconSize = 30;
 
 export const NavLinks = [
     { href:"/", key:"Home", text:"Home"},
@@ -19,9 +23,9 @@ export const NavLinks = [
     { href:"#contact", key:"Contact", text:"Contact"},
 ]
 
-export const SocialLinks = [
-    { title:"LinkedIn", url:"https://www.linkedin.com/in/andrei-sager-34a452265/"},
-    { title:"Github", url:"https://github.com/LordBrim"},
+export const SocialMediaLinks = [
+    { id:1, title:"LinkedIn", icon:<BsLinkedin size={footerIconSize} className='hover:text-linkedin' />, url:"https://www.linkedin.com/in/andrei-sager-34a452265/"},
+    { id:2, title:"Github", icon:<BsGithub size={footerIconSize} className='hover:text-github' />, url:"https://github.com/LordBrim"},
 ]
 
 export const HeroContent = {
