@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { RxCross1 } from 'react-icons/rx'
 
-const Navbar = () => {
+export default function Navbar() {
     const sizeIcon = 30;
     const [nav, setNav] = useState<true | false>(false);
     const handleNav = () => {
@@ -57,5 +57,3 @@ const Navbar = () => {
         </nav>
     )
 }
-
-export default Navbar;
