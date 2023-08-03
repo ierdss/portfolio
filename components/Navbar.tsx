@@ -1,6 +1,6 @@
 "use client"
 
-import { NavLinks as links } from '@/constants'
+import { NavLinks } from '@/constants'
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
@@ -22,13 +22,13 @@ export default function Navbar() {
                 </Link>
                 <div className='lg:flex hidden gap-10'>
                     <ul className='flex flex-row gap-2'>
-                        {links.map((link) => (
-                            <li key={link.key}>
+                        {NavLinks.map(({ id, href, text}) => (
+                            <li key={id}>
                             <Link
-                                href={link.href} 
-                                className='p-4 font-bold text-lg text-slate-400 hover:text-secondary-red'
+                                href={href} 
+                                className='p-4 font-bold text-lg text-slate-400 hover:text-secondary-red target:text-secondary-red'
                                 >
-                                {link.text}
+                                {text}
                             </Link>
                             </li>
                         ))}
@@ -40,7 +40,7 @@ export default function Navbar() {
             </div>
             <div className={!nav ? 'hidden' : 'block absolute top-20 w-full bg-white'} >
                 <ul className='flex flex-col w-full pb-8'>
-                    {links.map((link) => (
+                    {NavLinks.map((link) => (
                         <li key={link.key}
                             className='w-full'>
                             <Link
