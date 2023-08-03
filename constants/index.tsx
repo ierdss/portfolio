@@ -1,8 +1,16 @@
+//Skills Section Icons
+import { FaHtml5, FaReact, FaCss3Alt, FaSass } from 'react-icons/fa'
+import { SiNextdotjs, SiTailwindcss } from 'react-icons/si'
+import { BiLogoTypescript } from 'react-icons/bi'
+import { IoLogoJavascript } from 'react-icons/io'
+
+//Contact Section Icons
 import { HiMailOpen } from 'react-icons/hi'
 import { GiRotaryPhone } from 'react-icons/gi'
 import { MdAccessTimeFilled } from 'react-icons/md'
 
 const contactIconSize = 40;
+const skillIconSize = 50;
 
 export const NavLinks = [
     { href:"/", key:"Home", text:"Home"},
@@ -32,15 +40,35 @@ export const AboutContent = {
     ]
 }
 
-export const Skills = [
-    { title:"HTML5" , url:"/" },
-    { title:"CSS3" , url:"/" },
-    { title:"Javascript" , url:"/" },
-    { title:"Typescript" , url:"/" },
-    { title:"React" , url:"/" },
-    { title:"Next.js" , url:"/" },
-    { title:"Tailwind" , url:"/" },
-    { title:"Sass" , url:"/" },
+export const SkillList = [
+    { 
+        title:"Markup",
+        skills: [
+            { id:1, title:"HTML5", icon:<FaHtml5 size={skillIconSize} className='text-html' /> },
+        ]
+    },
+    { 
+        title:"Styling",
+        skills: [
+            { id:1, title:"CSS3", icon:<FaCss3Alt size={skillIconSize} className='text-css' /> },
+            { id:2, title:"Tailwind", icon:<SiTailwindcss size={skillIconSize} className='text-tailwind' /> },
+            { id:3, title:"Sass", icon:<FaSass size={skillIconSize} className='text-sass' /> },
+        ]
+    },
+    { 
+        title:"Programming Language",
+        skills: [
+            { id:1, title:"Javascript", icon:<IoLogoJavascript size={skillIconSize} className='text-javascript' /> },
+            { id:2, title:"Typescript", icon:<BiLogoTypescript size={skillIconSize} className='text-typescript' /> },
+        ]
+    },
+    { 
+        title:"Libraries and Frameworks",
+        skills: [
+            { id:1, title:"React.js", icon:<FaReact size={skillIconSize} className='text-react' /> },
+            { id:2, title:"Next.js", icon:<SiNextdotjs size={skillIconSize} className='text-next' /> },
+        ]
+    },
 ]
 
 export const ProjectsList = [

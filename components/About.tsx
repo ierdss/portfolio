@@ -1,11 +1,28 @@
-import { FaHtml5, FaReact, FaCss3Alt, FaSass } from 'react-icons/fa'
-import { SiNextdotjs, SiTailwindcss } from 'react-icons/si'
-import { BiLogoTypescript } from 'react-icons/bi'
-import { IoLogoJavascript } from 'react-icons/io'
-import { AboutContent as content } from '@/constants'
+import { AboutContent as content, SkillList } from '@/constants'
+import { ReactNode } from 'react';
+
+type SkillProps = {
+    title: string;
+    skills: Array<SkillsProps>;
+}
+
+type SkillsProps = {
+    id: number;
+    title: string;
+    icon: ReactNode;
+}
+
+const SkillRow = ({ title, skills }:SkillProps ) => (
+    <ul className="flex flex-row w-full gap-8">
+        {skills.map((skill) => (
+            <li key={skill.id} className="w-[75px] aspect-square p-4 flex justify-center items-center rounded-tr-lg rounded-bl-lg scale-115 first:bg-slate-100 first:border first:border-slate-300 hover:scale-110 transition duration-150 ease-in-out first:shadow-xl border-slate-200 border-solid border-2 shadow-lg scale-105">
+                {skill.icon}
+            </li>
+        ))}
+    </ul>
+)
 
 export default function About() {
-    const sizeIcon = 50;
     return(
         <div id="about" className="w-full">
             <div className="flex flex-col md:flex-row sectionPadding gap-10 w-full justify-around">
@@ -20,40 +37,10 @@ export default function About() {
                 </div>
                 <div className="flex flex-col w-full lg:w-1/2 gap-6">
                     <h1 className="block sectionHeader">Skills</h1>
-                    <div className="flex flex-row md:flex-col flex-wrap w-full gap-8">
-                        <div className="flex flex-row flex-wrap gap-6 border-1 w-fit">
-                            <div className="h-[75px] aspect-square p-4 flex justify-center items-center rounded-tr-lg rounded-bl-lg scale-115 bg-slate-100 border border-slate-300 hover:scale-110 transition duration-150 ease-in-out shadow-xl text-html">
-                                <FaHtml5 size={sizeIcon}/>
-                            </div>    
-                        </div>
-                        <div className="flex flex-row flex-wrap gap-6 border-1 w-fit">
-                            <div className="h-[75px] aspect-square p-4 flex justify-center items-center rounded-tr-lg rounded-bl-lg scale-115 bg-slate-100 border border-slate-300 hover:scale-110 transition duration-150 ease-in-out shadow-xl text-css">
-                                <FaCss3Alt size={sizeIcon}/>
-                            </div>
-                            <div className="h-[75px] aspect-square border-slate-200 border-solid border-2 p-4 flex justify-center items-center rounded-tr-lg rounded-bl-lg shadow-lg scale-105 hover:scale-110 text-sass">
-                                <FaSass size={sizeIcon}/>
-                            </div>                        
-                            <div className="h-[75px] aspect-square border-slate-200 border-solid border-2 p-4 flex justify-center items-center rounded-tr-lg rounded-bl-lg shadow-lg scale-105 hover:scale-110 text-tailwind">
-                                <SiTailwindcss size={sizeIcon}/>
-                            </div>                     
-                        </div>
-                        <div className="flex flex-wrap gap-6 border-1 w-fit">
-                            <div className="h-[75px] aspect-square p-4 flex justify-center items-center rounded-tr-lg rounded-bl-lg scale-115 bg-slate-100 border border-slate-300 hover:scale-110 transition duration-150 ease-in-out shadow-xl text-javascript">
-                                <IoLogoJavascript size={sizeIcon}/>
-                            </div>
-                            <div className="h-[75px] aspect-square border-slate-200 border-solid border-2 p-4 flex justify-center items-center rounded-tr-lg rounded-bl-lg shadow-lg scale-105 hover:scale-110 text-typescript">
-                                <BiLogoTypescript size={sizeIcon}/>
-                            </div>                                         
-                        </div>
-                        <div className="flex flex-wrap gap-6 border-1 w-fit">
-                            <div className="h-[75px] aspect-square p-4 flex justify-center items-center rounded-tr-lg rounded-bl-lg scale-115 bg-slate-100 border border-slate-300 hover:scale-110 transition duration-150 ease-in-out shadow-xl text-react">
-                                <FaReact size={sizeIcon}/>
-                            </div>
-                            <div className="h-[75px] aspect-square border-slate-200 border-solid border-2 p-4 flex justify-center items-center rounded-tr-lg rounded-bl-lg shadow-lg scale-105 hover:scale-110 text-next">
-                                <SiNextdotjs size={sizeIcon}/>
-                            </div>                                         
-                        </div>
-                    </div>
+                    <SkillRow title={SkillList[0].title} skills={SkillList[0].skills}/>
+                    <SkillRow title={SkillList[1].title} skills={SkillList[1].skills}/>
+                    <SkillRow title={SkillList[2].title} skills={SkillList[2].skills}/>
+                    <SkillRow title={SkillList[3].title} skills={SkillList[3].skills}/>
                 </div>
             </div>
         </div>
