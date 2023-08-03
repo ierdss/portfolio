@@ -14,9 +14,9 @@ type SkillsProps = {
 
 const SkillRow = ({ title, skills }:SkillProps ) => (
     <ul className="flex flex-row w-full gap-8">
-        {skills.map((skill) => (
-            <li key={skill.id} className="w-[75px] aspect-square p-4 flex justify-center items-center rounded-tr-lg rounded-bl-lg scale-115 first:bg-slate-100 first:border first:border-slate-300 hover:scale-110 transition duration-150 ease-in-out first:shadow-xl border-slate-200 border-solid border-2 shadow-lg scale-105">
-                {skill.icon}
+        {skills.map(({id, icon}) => (
+            <li key={id} className="w-[75px] aspect-square p-4 flex justify-center items-center rounded-tr-lg rounded-bl-lg scale-115 first:bg-slate-100 first:border first:border-slate-300 hover:scale-110 transition duration-150 ease-in-out first:shadow-xl border-slate-200 border-solid border-2 shadow-lg scale-105">
+                {icon}
             </li>
         ))}
     </ul>
