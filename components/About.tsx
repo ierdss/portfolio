@@ -4,10 +4,10 @@ import { BiLogoTypescript } from 'react-icons/bi'
 import { IoLogoJavascript } from 'react-icons/io'
 import { AboutContent as content } from '@/constants'
 
-const About = () => {
+export default function About() {
     const sizeIcon = 50;
     return(
-        <main id="about" className="w-full">
+        <div id="about" className="w-full">
             <div className="flex flex-col md:flex-row sectionPadding gap-10 w-full justify-around">
                 <div className="flex flex-col w-full lg:w-1/2 gap-4 md:text-right">
                     <h1 className="block sectionHeader">About</h1>
@@ -56,8 +56,6 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
     )
 }
-
-export default About;

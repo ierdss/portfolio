@@ -34,7 +34,7 @@ const Project = ({title, description, tags, githubUrl, livedemoUrl}: ProjectProp
     </div>
 )
 
-const Projects = () => {
+export default function Projects() {
     return( 
         <main id="projects" className="bg-slate-100">
             <div className="flex flex-col w-full gap-8 sectionPadding">
@@ -98,5 +98,3 @@ const Projects = () => {
         </main>
     )
 }
-
-export default Projects;

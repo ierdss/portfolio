@@ -1,6 +1,6 @@
 import { ContactInfo } from '@/constants'
 
-const Contact = () => {
+export default function Contact() {
     return( 
         <div id='contact' className='w-full'>
             <div className='flex flex-col w-full gap-8 sectionPadding'>
@@ -53,5 +53,3 @@ const Contact = () => {
         </div>
     )
 }
-
-export default Contact;
