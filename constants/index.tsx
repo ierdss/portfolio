@@ -1,3 +1,9 @@
+import { HiMailOpen } from 'react-icons/hi'
+import { GiRotaryPhone } from 'react-icons/gi'
+import { MdAccessTimeFilled } from 'react-icons/md'
+
+const contactIconSize = 40;
+
 export const NavLinks = [
     { href:"/", key:"Home", text:"Home"},
     { href:"#about", key:"About", text:"About"},
@@ -93,7 +99,7 @@ export const ProjectsList = [
 ]
 
 export const ContactInfo = [
-    { title:"Email", text:"andreiwork25@gmail.com"},
-    { title:"Number", text:"*639763272778"},
-    { title:"Time", text:"(GMT+8) 09:00 - 17:00"},
+    { key:1, icon: <HiMailOpen size={contactIconSize}/>, title:"Email", text:"andreiwork25@gmail.com"},
+    { key:2, icon: <GiRotaryPhone size={contactIconSize}/>, title:"Number", text:"*639763272778"},
+    { key:3, icon: <MdAccessTimeFilled size={contactIconSize}/>, title:"Time", text:"(GMT+8) 09:00 - 17:00"},
 ]
