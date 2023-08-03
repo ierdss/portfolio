@@ -13,14 +13,14 @@ export default function Contact() {
                 </div>
                 <div className='flex flex-col justify-between lg:flex-row gap-8'>
                     <div className="flex flex-col gap-10 w-fit md:max-w-[350px]">
-                        {ContactInfo.map((info) => (
-                            <div key={info.key} className='flex flex-row items-center gap-4 p-8 border border-solid border-slate-200 rounded-tr-xl rounded-bl-xl bg-slate-100 hover:scale-105 transition duration-150 ease-in-out shadow-xl'>
+                        {ContactInfo.map(({key, title, icon, text}) => (
+                            <div key={key} className='flex flex-row items-center gap-4 p-8 border border-solid border-slate-200 rounded-tr-xl rounded-bl-xl bg-slate-100 hover:scale-105 transition duration-150 ease-in-out shadow-xl'>
                                 <div className='text-secondary-red'>
-                                    {info.icon}
+                                    {icon}
                                 </div>
                                 <div className='flex-col'>
-                                    <h4 className='font-bold'>{info.title}</h4>
-                                    <p>{info.text}</p>
+                                    <h4 className='font-bold'>{title}</h4>
+                                    <p>{text}</p>
                                 </div>
                             </div>
                         ))}
