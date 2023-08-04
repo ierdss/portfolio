@@ -34,6 +34,7 @@ export default function EarthCanvas() {
                 <OrbitControls
                     autoRotate
                     autoRotateSpeed={3}
+                    reverseOrbit
                     rotateSpeed={2}
                     enableZoom={false}
                     minPolarAngle={Math.PI / 2}
