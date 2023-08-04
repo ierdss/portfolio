@@ -52,7 +52,7 @@ export default function Projects() {
                             <ProjectLinks githubUrl={ProjectsList[0].githubUrl} livedemoUrl={ProjectsList[0].livedemoUrl} />
                         </div>
                     </div>
-                    <div className="projectItem projectItem2">
+                    <div className="projectItem projectItem2 projectItemOdd">
                         <div id="desktop" className="projectItemDesktop"/>
                         <div id="mobile" className="relative">
                             <div className="projectItemMobile"/>
@@ -76,7 +76,7 @@ export default function Projects() {
                             <ProjectLinks githubUrl={ProjectsList[2].githubUrl} livedemoUrl={ProjectsList[2].livedemoUrl} />
                         </div>
                     </div>
-                    <div className="projectItem projectItem4">
+                    <div className="projectItem projectItem4 projectItemOdd">
                         <div id="desktop" className="projectItemDesktop "/>
                         <div id="mobile" className="relative">
                             <div className="projectItemMobile"/>
