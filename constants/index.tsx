@@ -31,7 +31,7 @@ export const SocialMediaLinks = [
 export const HeroContent = {
     portrait:"/MeRed.png",
     alt:"A portrait of myself wearing a comfortable red t-shirt.",
-    title:"Front-End Developer",
+    title:"Full-Stack Developer",
     subtitle:"Embracing the fusion of artistry and code, I shape digital experiences as a front-end developer. With a passion for design and a drive for innovation, I craft seamless interfaces and striking visuals, elevating the aesthetic essence of the web.",
 }
 
