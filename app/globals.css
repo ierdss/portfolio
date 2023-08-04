@@ -108,6 +108,10 @@ body {
   @apply hidden lg:flex min-h-[280px] max-h-[230px] w-[130px] md:h-auto rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[15000ms] z-20 border-2 border-black absolute -bottom-3 -right-4 hover:scale-110
 }
 
+.projectItemOdd {
+  @apply [&>*:nth-child(1)]:order-2 [&>*:nth-child(2)]:order-3 [&>*:nth-child(3)]:order-1
+}
+
 /* Contact Component */
 .inputField {
   @apply border border-solid border-slate-400 rounded-md p-4
