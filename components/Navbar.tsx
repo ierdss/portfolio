@@ -29,7 +29,7 @@ export default function Navbar() {
 
     return(
         <nav id='navbar' className='flexCenter py-4 px-6 md:px-12 w-full fixed top-0 !z-50 max-w-screen-xl bg-transparent text-slate-200'>
-            <div className='flex-1 flexBetween gap-10 justify-center items-center'>
+            <div className='flex-1 flexBetween gap-10 md:gap-16 justify-center items-center'>
                 <Link href={"/"}>
                     <h1 className='text-5xl font-black bg-clip-text wk-bg-clip text-transparent bg-cover bg-center bg-home-texture hover:text-secondary-red'>ANDREI</h1>
                 </Link>
