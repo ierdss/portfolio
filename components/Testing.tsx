@@ -12,12 +12,12 @@ export default function CanvasTesting() {
                 <EarthCanvas/>
             </div>
             <div className="flex flex-col w-full md:w-[500px] gap-4 text-center justify-center items-center md:text-left md:items-start text-white">
-                    <div  className='flex flex-row w-fit justify-center items-center gap-4 md:order-3'>
-                        <Links/>
-                    </div>
-                    <h1 className="font-bold text-5xl md:order-1">{content.title}</h1>
-                    <p className="md:order-2 font-bold text-slate-300">{content.subtitle}</p>
+                <div  className='flex flex-row w-fit justify-center items-center gap-4 md:order-3'>
+                    <Links/>
                 </div>
+                <h1 className="font-bold text-5xl md:order-1">{content.title}</h1>
+                <p className="md:order-2 font-bold text-slate-300">{content.subtitle}</p>
+            </div>
         </div>
     )
 }
