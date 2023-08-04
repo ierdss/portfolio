@@ -50,11 +50,13 @@ module.exports = {
       },
       backgroundImage: {
         'home-texture': "url(/mountains.jpg)",
+        'thumbnail-desktop-sample': "url(/9anime-compressed.png)", 
         'thumbnail-desktop-1': "url(/road-way-delivery__compressed-desktop.jpg)",
-        'thumbnail-desktop-2': "url(/9anime-compressed.png)",
+        'thumbnail-desktop-2': "url()",
         'thumbnail-desktop-3': "url()",
         'thumbnail-desktop-4': "url()",
 
+        'thumbnail-mobile-sample': "url(/road-way-delivery__compressed-mobile.jpg)",
         'thumbnail-mobile-1': "url(/road-way-delivery__compressed-mobile.jpg)",
         'thumbnail-mobile-2': "url()",
         'thumbnail-mobile-3': "url()",
