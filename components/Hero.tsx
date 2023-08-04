@@ -12,6 +12,7 @@ export default function Hero() {
                         width={800}
                         height={800}
                         alt={content.alt}
+                        priority
                         className="aspect-square rounded-full bg-cover"
                         ></Image>
                 </div>
