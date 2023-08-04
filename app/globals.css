@@ -17,6 +17,16 @@ body {
   font-family: Inter;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 12px;
+}
+
 ::selection {
   @apply text-secondary-red bg-white
 }
@@ -53,20 +63,56 @@ body {
   @apply w-full bg-secondary-red text-xl font-extrabold text-white p-4 hover:bg-accent-pink rounded-md
 }
 
+/* Projects Component */
+.projectItem {
+  @apply flex flex-col md:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8 relative w-full lg:min-h-[480px] lg:max-h-[480px] 
+}
+
+.projectItem1  {
+  @apply [&>*:nth-child(1)]:bg-thumbnail-desktop-1 
+}
+
+.projectItem1 > div#mobile {
+  @apply [&>*:nth-child(1)]:bg-thumbnail-mobile-1
+}
+
+.projectItem2  {
+  @apply [&>*:nth-child(1)]:bg-thumbnail-desktop-sample
+}
+
+.projectItem2 > div#mobile {
+  @apply [&>*:nth-child(1)]:bg-thumbnail-mobile-sample
+}
+
+.projectItem3  {
+  @apply [&>*:nth-child(1)]:bg-thumbnail-desktop-sample 
+}
+
+.projectItem3 > div#mobile {
+  @apply [&>*:nth-child(1)]:bg-thumbnail-mobile-sample
+}
+
+.projectItem4  {
+  @apply [&>*:nth-child(1)]:bg-thumbnail-desktop-sample
+}
+
+.projectItem4 > div#mobile {
+  @apply [&>*:nth-child(1)]:bg-thumbnail-mobile-sample
+}
+
+.projectItemDesktop {
+  @apply h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[10000ms]
+}
+
+.projectItemMobile {
+  @apply hidden lg:flex min-h-[280px] max-h-[230px] w-[130px] md:h-auto rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[15000ms] z-20 border-2 border-black absolute -bottom-3 -right-4 hover:scale-110
+}
+
+/* Contact Component */
 .inputField {
   @apply border border-solid border-slate-400 rounded-md p-4
 }
 
 .textArea {
   @apply h-[190px] resize-none
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-  height: 4px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 12px;
 }
