@@ -63,6 +63,11 @@ body {
   @apply w-full bg-secondary-red text-xl font-extrabold text-white p-4 hover:bg-accent-pink rounded-md
 }
 
+/* Navbar Component */
+.navbar__black {
+  @apply bg-white text-slate-400
+}
+
 /* Projects Component */
 .projectItem {
   @apply flex flex-col lg:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8 relative w-full lg:min-h-[480px] lg:max-h-[480px] 
