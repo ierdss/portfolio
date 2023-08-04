@@ -55,12 +55,14 @@ module.exports = {
         'thumbnail-desktop-2': "url()",
         'thumbnail-desktop-3': "url()",
         'thumbnail-desktop-4': "url()",
+        'thumbnail-desktop-5': "url()",
 
         'thumbnail-mobile-sample': "url(/road-way-delivery__compressed-mobile.jpg)",
         'thumbnail-mobile-1': "url(/road-way-delivery__compressed-mobile.jpg)",
         'thumbnail-mobile-2': "url()",
         'thumbnail-mobile-3': "url()",
         'thumbnail-mobile-4': "url()",
+        'thumbnail-mobile-5': "url()",
       }
     },
   },

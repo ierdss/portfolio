@@ -88,6 +88,18 @@ export default function Projects() {
                             <ProjectLinks githubUrl={ProjectsList[3].githubUrl} livedemoUrl={ProjectsList[3].livedemoUrl} />
                         </div>
                     </div>
+                    <div className="projectItem projectItem5">
+                        <div id="desktop" className="projectItemDesktop "/>
+                        <div id="mobile" className="relative">
+                            <div className="projectItemMobile"/>
+                        </div>
+                        <div className="flex flex-col text-center justify-center gap-4 py-6 w-full md:w-3/5">
+                            <h1 className="font-bold text-lg">{ProjectsList[3].title}</h1>
+                            <p className="text-md text-slate-500 font-medium">{ProjectsList[3].description}</p>
+                            <ProjectTags tags={ProjectsList[3].tags}/>
+                            <ProjectLinks githubUrl={ProjectsList[3].githubUrl} livedemoUrl={ProjectsList[3].livedemoUrl} />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
