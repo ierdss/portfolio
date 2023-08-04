@@ -100,6 +100,14 @@ body {
   @apply [&>*:nth-child(1)]:bg-thumbnail-mobile-sample
 }
 
+.projectItem5  {
+  @apply [&>*:nth-child(1)]:bg-thumbnail-desktop-sample
+}
+
+.projectItem5 > div#mobile {
+  @apply [&>*:nth-child(1)]:bg-thumbnail-mobile-sample
+}
+
 .projectItemDesktop {
   @apply h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[10000ms]
 }
