@@ -56,7 +56,7 @@ body {
 }
 
 .sectionPadding {
-  @apply p-6 md:p-20 pt-24 md:pt-28
+  @apply px-6 md:px-20 py-24 md:pt-28
 }
 
 .callToAction {
@@ -65,7 +65,7 @@ body {
 
 /* Projects Component */
 .projectItem {
-  @apply flex flex-col md:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8 relative w-full lg:min-h-[480px] lg:max-h-[480px] 
+  @apply flex flex-col lg:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8 relative w-full lg:min-h-[480px] lg:max-h-[480px] 
 }
 
 .projectItem1  {
@@ -109,15 +109,23 @@ body {
 }
 
 .projectItemDesktop {
-  @apply h-[400px] w-full md:h-auto md:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[10000ms]
+  @apply w-full aspect-square lg:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[10000ms]
 }
 
 .projectItemMobile {
-  @apply hidden lg:flex min-h-[280px] max-h-[230px] w-[130px] md:h-auto rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[15000ms] z-20 border-2 border-black absolute -bottom-3 -right-4 hover:scale-110
+  @apply hidden md:flex relative
+}
+
+.projectItemMobile > div {
+  @apply invisible lg:visible lg:flex min-h-[280px] max-h-[230px] w-[130px] md:h-auto rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[15000ms] z-20 border-2 border-black absolute -bottom-3 -right-4 hover:scale-110
+}
+
+.projectItemDescription {
+  @apply flex flex-col text-center justify-center gap-4 py-6 w-full lg:w-4/6
 }
 
 .projectItemOdd {
-  @apply [&>*:nth-child(1)]:order-2 [&>*:nth-child(2)]:order-3 [&>*:nth-child(3)]:order-1
+  @apply lg:[&>*:nth-child(1)]:order-2 lg:[&>*:nth-child(2)]:order-3 lg:[&>*:nth-child(3)]:order-1
 }
 
 /* Contact Component */
