@@ -5,7 +5,7 @@ import Links from "./Links";
 export default function Hero() {
     return(
         <div id="home" className="w-full py-20 bg-slate-50">
-            <div className="flex flex-wrap flex-col md:flex-row justify-center items-center w-full md:w-fit h-1/2 md:h-[700px] py-20 px-6 md:px-20 gap-8">
+            <div className="flex flex-wrap flex-col md:flex-row justify-center items-center w-full md:w-fit h-1/2 md:h-[700px] pt-20 px-6 md:px-20 gap-8">
                 <div className="w-[300px] md:w-[400px] aspect-square rounded-full bg-slate-300 border-white">
                     <Image
                         src={content.portrait}
