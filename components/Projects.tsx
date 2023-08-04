@@ -4,7 +4,7 @@ import { IoGlobe } from 'react-icons/io5'
 
 const sizeIcon = 30;
 
-type ProjectTagsProps = {
+type TagsProps = {
     tags: Array<TagProps>;
 }
 
@@ -13,7 +13,7 @@ type TagProps = {
     tag: string;
 }
 
-const ProjectTags = ({ tags }:ProjectTagsProps) => (
+const ProjectTags = ({ tags }:TagsProps) => (
     <ul className="flex flex-row flex-wrap justify-center items-start gap-3">
     {tags.map(({ id, tag } ) => (
         <li key={id} className="py-2 px-4 justify-center items-start border border-solid border-slate-300 rounded-full font-medium">{tag}</li>
@@ -42,10 +42,10 @@ export default function Projects() {
                 <div className="projectsList flex flex-row flex-wrap gap-10">
                     <div className="projectItem projectItem1">
                         <div id="desktop" className="projectItemDesktop "/>
-                        <div id="mobile" className="relative">
-                            <div className="projectItemMobile"/>
+                        <div id="mobile" className="projectItemMobile">
+                            <div/>
                         </div>
-                        <div className="flex flex-col text-center justify-center gap-4 py-6 w-full md:w-3/5">
+                        <div className="projectItemDescription">
                             <h1 className="font-bold text-lg">{ProjectsList[0].title}</h1>
                             <p className="text-md text-slate-500 font-medium">{ProjectsList[0].description}</p>
                             <ProjectTags tags={ProjectsList[0].tags}/>
@@ -54,8 +54,8 @@ export default function Projects() {
                     </div>
                     <div className="projectItem projectItem2 projectItemOdd">
                         <div id="desktop" className="projectItemDesktop"/>
-                        <div id="mobile" className="relative">
-                            <div className="projectItemMobile"/>
+                        <div id="mobile" className="projectItemMobile">
+                            <div/>
                         </div>
                         <div className="flex flex-col text-center justify-center gap-4 py-6 w-full md:w-3/5">
                             <h1 className="font-bold text-lg">{ProjectsList[1].title}</h1>
@@ -66,8 +66,8 @@ export default function Projects() {
                     </div>
                     <div className="projectItem projectItem3">
                         <div id="desktop" className="projectItemDesktop "/>
-                        <div id="mobile" className="relative">
-                            <div className="projectItemMobile"/>
+                        <div id="mobile" className="projectItemMobile">
+                            <div/>
                         </div>
                         <div className="flex flex-col text-center justify-center gap-4 py-6 w-full md:w-3/5">
                             <h1 className="font-bold text-lg">{ProjectsList[2].title}</h1>
@@ -78,8 +78,8 @@ export default function Projects() {
                     </div>
                     <div className="projectItem projectItem4 projectItemOdd">
                         <div id="desktop" className="projectItemDesktop "/>
-                        <div id="mobile" className="relative">
-                            <div className="projectItemMobile"/>
+                        <div id="mobile" className="projectItemMobile">
+                            <div/>
                         </div>
                         <div className="flex flex-col text-center justify-center gap-4 py-6 w-full md:w-3/5">
                             <h1 className="font-bold text-lg">{ProjectsList[3].title}</h1>
@@ -90,8 +90,8 @@ export default function Projects() {
                     </div>
                     <div className="projectItem projectItem5">
                         <div id="desktop" className="projectItemDesktop "/>
-                        <div id="mobile" className="relative">
-                            <div className="projectItemMobile"/>
+                        <div id="mobile" className="projectItemMobile">
+                            <div/>
                         </div>
                         <div className="flex flex-col text-center justify-center gap-4 py-6 w-full md:w-3/5">
                             <h1 className="font-bold text-lg">{ProjectsList[3].title}</h1>
