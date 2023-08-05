@@ -2,7 +2,7 @@
 
 import { HeroContent as content } from "@/constants";
 
-import Links from "./Links";
+import Links from "./minor/Links";
 import EarthCanvas from "./canvas/Earth";
 
 export default function Hero() {

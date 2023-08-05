@@ -1,4 +1,4 @@
-import SocialMediaLinks from "./Links";
+import SocialMediaLinks from "./minor/Links";
 
 export default function Footer() {
     return(
