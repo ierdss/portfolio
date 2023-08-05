@@ -1,6 +1,7 @@
 "use client"
 
 import { Hero, StarsCanvas, About, Projects, Contact } from '@/components'
+import Technologies from '@/components/Technologies'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <StarsCanvas/>
       </div>
       <About/>
+      <Technologies/>
       <Projects/>
       <Contact/>
     </main>
