@@ -84,29 +84,29 @@ export const SkillList = [
     { 
         title:"Markup",
         skills: [
-            { id:1, title:"HTML5", icon:<FaHtml5 size={skillIconSize} className='text-html' /> },
+            { id:1, title:"HTML5", icon:<FaHtml5 size={skillIconSize} color={`#f06529`} /> },
         ]
     },
     { 
         title:"Styling",
         skills: [
-            { id:1, title:"CSS3", icon:<FaCss3Alt size={skillIconSize} className='text-css' /> },
-            { id:2, title:"Tailwind", icon:<SiTailwindcss size={skillIconSize} className='text-tailwind' /> },
-            { id:3, title:"Sass", icon:<FaSass size={skillIconSize} className='text-sass' /> },
+            { id:1, title:"CSS3", icon:<FaCss3Alt size={skillIconSize} color={`#2965f1`} /> },
+            { id:2, title:"Tailwind", icon:<SiTailwindcss size={skillIconSize} color={`#cc6699`} /> },
+            { id:3, title:"Sass", icon:<FaSass size={skillIconSize} color={`#67e8f9`} /> },
         ]
     },
     { 
         title:"Programming Language",
         skills: [
-            { id:1, title:"Javascript", icon:<IoLogoJavascript size={skillIconSize} className='text-javascript' /> },
-            { id:2, title:"Typescript", icon:<BiLogoTypescript size={skillIconSize} className='text-typescript' /> },
+            { id:1, title:"Javascript", icon:<IoLogoJavascript size={skillIconSize} color={`#ecd120`} /> },
+            { id:2, title:"Typescript", icon:<BiLogoTypescript size={skillIconSize} color={`#007acc`} /> },
         ]
     },
     { 
         title:"Libraries and Frameworks",
         skills: [
-            { id:1, title:"React.js", icon:<FaReact size={skillIconSize} className='text-react' /> },
-            { id:2, title:"Next.js", icon:<SiNextdotjs size={skillIconSize} className='text-next' /> },
+            { id:1, title:"React.js", icon:<FaReact size={skillIconSize} color={`#61dbfb`} /> },
+            { id:2, title:"Next.js", icon:<SiNextdotjs size={skillIconSize} color={`#171515`} /> },
         ]
     },
 ]
