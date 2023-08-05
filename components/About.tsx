@@ -25,7 +25,7 @@ const SkillRow = ({ title, skills }:SkillProps ) => (
 
 export default function About() {
     return(
-        <div id="about" className="sectionPadding w-full">
+        <div id="about" className="sectionPadding w-full text-center flex justify-center items-center md:text-left">
             <div className="flex flex-col gap-24 w-full justify-around">
                 <div className="flex flex-col w-full gap-12">
                     <div className='flex flex-col gap-4'>
