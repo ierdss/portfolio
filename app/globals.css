@@ -51,8 +51,13 @@ body {
   @apply lg:px-20 py-6 px-5;
 }
 
+/* Text */
+.sectionOverline {
+  @apply text-secondary-red font-extrabold text-lg block uppercase
+}
+
 .sectionHeader {
-  @apply text-secondary-red font-extrabold text-2xl
+  @apply block font-bold text-3xl capitalize
 }
 
 .sectionPadding {

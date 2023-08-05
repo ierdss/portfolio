@@ -1,5 +1,6 @@
-import { AboutContent as content, SkillList } from '@/constants'
+import { AboutContent as content, SkillList, ServicesContent } from '@/constants'
 import { ReactNode } from 'react';
+import ServiceCards, { ServiceCard } from './cards/ServiceCards';
 
 type SkillProps = {
     title: string;
@@ -24,19 +25,31 @@ const SkillRow = ({ title, skills }:SkillProps ) => (
 
 export default function About() {
     return(
-        <div id="about" className="w-full">
-            <div className="flex flex-col md:flex-row sectionPadding gap-10 w-full justify-around">
-                <div className="flex flex-col w-full lg:w-1/2 gap-4 md:text-right">
-                    <h1 className="block sectionHeader">About</h1>
-                    <h1 className="block font-bold text-3xl">{content.title}</h1>
-                    {content.subtitle.map((paragraph) => (
-                        <p className="block font-bold text-slate-500">{paragraph}</p>
-                    ))}
+        <div id="about" className="sectionPadding w-full">
+            <div className="flex flex-col gap-24 w-full justify-around">
+                <div className="flex flex-col w-full gap-12">
+                    <div className='flex flex-col gap-4'>
+                        <div className='w-full'>
+                            <h1 className="sectionOverline">about</h1>
+                            <h1 className="sectionHeader">me and my services</h1>
+                        </div>
+                        {content.paragraphs.map(( {id, paragraph }) => (
+                            <p key={id} className="block font-bold text-slate-500 w-full md:w-3/5">{paragraph}</p>
+                        ))}
+                    </div>
+                    <ServiceCards cards={ServicesContent}/>
                 </div>
-                <div className="w-0 border border-slate-300 hidden md:block">
+                <div>
+                    <div className="">
+                        <h1 className="sectionOverline">Work Experience</h1>
+                        <h1 className="sectionHeader">What Have I Done?</h1>
+                    </div>
                 </div>
                 <div className="flex flex-col w-full lg:w-1/2 gap-6">
-                    <h1 className="block sectionHeader">Skills</h1>
+                    <div className=''>
+                        <h1 className="sectionOverline">Skills</h1>
+                        <h1 className="sectionHeader">The Tools I am Most familiar with</h1>
+                    </div>
                     <SkillRow title={SkillList[0].title} skills={SkillList[0].skills}/>
                     <SkillRow title={SkillList[1].title} skills={SkillList[1].skills}/>
                     <SkillRow title={SkillList[2].title} skills={SkillList[2].skills}/>
