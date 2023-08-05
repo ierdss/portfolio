@@ -18,9 +18,9 @@ export default function Contact() {
                     <div className="flex flex-col gap-10 w-full md:w-[300px] items-center md:items-start">
                         {ContactInfo.map(({key, title, icon, text}) => (
                             <div key={key} className='flex flex-row items-center gap-4 p-8 border border-solid border-slate-200 rounded-tr-xl rounded-bl-xl bg-slate-100 hover:scale-105 transition duration-150 ease-in-out shadow-xl w-full max-w-[300px]'>
-                                <div className='text-secondary-red'>
+                                <span className='text-secondary-red'>
                                     {icon}
-                                </div>
+                                </span>
                                 <div className='flex-col'>
                                     <h4 className='font-bold text-left'>{title}</h4>
                                     <p className=' text-left'>{text}</p>
