@@ -1,3 +1,6 @@
+//About Section Services Icons
+import { BsGlobeAsiaAustralia } from 'react-icons/bs'
+
 //Skills Section Icons
 import { FaHtml5, FaReact, FaCss3Alt, FaSass } from 'react-icons/fa'
 import { SiNextdotjs, SiTailwindcss } from 'react-icons/si'
@@ -12,6 +15,7 @@ import { MdAccessTimeFilled } from 'react-icons/md'
 //Footer Section Icons
 import { BsLinkedin, BsGithub } from 'react-icons/bs'
 
+const aboutIconSize = 40;
 const contactIconSize = 40;
 const skillIconSize = 50;
 const footerIconSize = 30;
@@ -43,6 +47,39 @@ export const AboutContent = {
         "However, I as practice as a developer I found myself becoming more and more meticulous in my craft. I would prioritize writing clean code and place comments where it's necessary."
     ]
 }
+
+export const ServicesContent = [
+    {
+        id: 1,
+        icon: <BsGlobeAsiaAustralia size={aboutIconSize} />,
+        title:"Services content title",
+        paragraph:"Lorem ipsum amet consectetur, adipisicing elit. Tenetur error, rem impedit  officia?",
+    },
+    {
+        id: 2,
+        icon: <BsGlobeAsiaAustralia size={aboutIconSize} />,
+        title:"Services content title",
+        paragraph:"Lorem ipsum amet consectetur, adipisicing elit. Tenetur error, rem impedit  officia?",
+    },
+    {
+        id: 3,
+        icon: <BsGlobeAsiaAustralia size={aboutIconSize} />,
+        title:"Services content title",
+        paragraph:"Services content paragraph",
+    },
+    {
+        id: 4,
+        icon: <BsGlobeAsiaAustralia size={aboutIconSize} />,
+        title:"Services content title",
+        paragraph:"Services content paragraph",
+    },
+    {
+        id: 5,
+        icon: <BsGlobeAsiaAustralia size={aboutIconSize} />,
+        title:"Services content title",
+        paragraph:"Services content paragraph",
+    },
+]
 
 export const SkillList = [
     { 
