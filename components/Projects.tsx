@@ -37,8 +37,10 @@ export default function Projects() {
     return( 
         <div id="projects" className="bg-slate-100">
             <div className="flex flex-col w-full gap-8 sectionPadding">
-                <h1 className="sectionHeader">Projects</h1>
-                <h1 className="font-bold text-3xl">Check Out My Projects!</h1>
+                <div className="">
+                    <h1 className="sectionOverline">projects</h1>
+                    <h1 className="sectionHeader">check out my projects!</h1>
+                </div>
                 <div className="projectsList flex flex-row flex-wrap gap-10">
                     <div className="projectItem projectItem1">
                             <div id="desktop" className="projectItemDesktop "/>

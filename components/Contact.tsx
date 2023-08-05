@@ -5,7 +5,10 @@ export default function Contact() {
         <div id='contact' className='w-full'>
             <div className='flex flex-col w-full gap-8 sectionPadding'>
                 <div className='flex flex-col gap-4'>
-                    <h1 className="sectionHeader">Contact</h1>
+                    <div className="">
+                        <h1 className="sectionOverline">contact</h1>
+                        <h1 className="sectionHeader">send me a message :)</h1>
+                    </div>
                     <p className='w-full lg:w-[400px]'>
                         Feel free to contact me anytime! I'll get back to you
                         as soon as I can!
@@ -26,7 +29,6 @@ export default function Contact() {
                         ))}
                     </div>
                     <div className="flex flex-col gap-4 w-full max-w-[700px]">
-                        <h1 className='font-bold text-lg'>Send Me a Message :)</h1>
                         <form action="https://data.endpoint.space/cljvd1c0f006008l4400sjt6m" method="POST" className='flex flex-wrap w-full gap-3'>
                             <input 
                                 type="text" 
