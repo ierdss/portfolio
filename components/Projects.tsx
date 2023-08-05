@@ -41,23 +41,23 @@ export default function Projects() {
                 <h1 className="font-bold text-3xl">Check Out My Projects!</h1>
                 <div className="projectsList flex flex-row flex-wrap gap-10">
                     <div className="projectItem projectItem1">
-                        <div id="desktop" className="projectItemDesktop "/>
-                        <div id="mobile" className="projectItemMobile">
-                            <div/>
-                        </div>
-                        <div className="projectItemDescription">
-                            <h1 className="font-bold text-lg">{ProjectsList[0].title}</h1>
-                            <p className="text-md text-slate-500 font-medium">{ProjectsList[0].description}</p>
-                            <ProjectTags tags={ProjectsList[0].tags}/>
-                            <ProjectLinks githubUrl={ProjectsList[0].githubUrl} livedemoUrl={ProjectsList[0].livedemoUrl} />
-                        </div>
+                            <div id="desktop" className="projectItemDesktop "/>
+                            <div id="mobile" className="projectItemMobile">
+                                <div/>
+                            </div>
+                            <div className="projectItemDescription">
+                                <h1 className="font-bold text-lg">{ProjectsList[0].title}</h1>
+                                <p className="text-md text-slate-500 font-medium">{ProjectsList[0].description}</p>
+                                <ProjectTags tags={ProjectsList[0].tags}/>
+                                <ProjectLinks githubUrl={ProjectsList[0].githubUrl} livedemoUrl={ProjectsList[0].livedemoUrl} />
+                            </div>
                     </div>
                     <div className="projectItem projectItem2 projectItemOdd">
                         <div id="desktop" className="projectItemDesktop"/>
                         <div id="mobile" className="projectItemMobile">
                             <div/>
                         </div>
-                        <div className="flex flex-col text-center justify-center gap-4 py-6 w-full md:w-3/5">
+                        <div className="projectItemDescription">
                             <h1 className="font-bold text-lg">{ProjectsList[1].title}</h1>
                             <p className="text-md text-slate-500 font-medium">{ProjectsList[1].description}</p>
                             <ProjectTags tags={ProjectsList[1].tags}/>
@@ -69,7 +69,7 @@ export default function Projects() {
                         <div id="mobile" className="projectItemMobile">
                             <div/>
                         </div>
-                        <div className="flex flex-col text-center justify-center gap-4 py-6 w-full md:w-3/5">
+                        <div className="projectItemDescription">
                             <h1 className="font-bold text-lg">{ProjectsList[2].title}</h1>
                             <p className="text-md text-slate-500 font-medium">{ProjectsList[2].description}</p>
                             <ProjectTags tags={ProjectsList[2].tags}/>
@@ -81,7 +81,7 @@ export default function Projects() {
                         <div id="mobile" className="projectItemMobile">
                             <div/>
                         </div>
-                        <div className="flex flex-col text-center justify-center gap-4 py-6 w-full md:w-3/5">
+                        <div className="projectItemDescription">
                             <h1 className="font-bold text-lg">{ProjectsList[3].title}</h1>
                             <p className="text-md text-slate-500 font-medium">{ProjectsList[3].description}</p>
                             <ProjectTags tags={ProjectsList[3].tags}/>
@@ -93,7 +93,7 @@ export default function Projects() {
                         <div id="mobile" className="projectItemMobile">
                             <div/>
                         </div>
-                        <div className="flex flex-col text-center justify-center gap-4 py-6 w-full md:w-3/5">
+                        <div className="projectItemDescription">
                             <h1 className="font-bold text-lg">{ProjectsList[3].title}</h1>
                             <p className="text-md text-slate-500 font-medium">{ProjectsList[3].description}</p>
                             <ProjectTags tags={ProjectsList[3].tags}/>
