@@ -13,7 +13,7 @@ type ServiceCardProps = Omit<Card, "id">
 
 export function ServiceCard({ icon, title, paragraph }:ServiceCardProps) {
     return(
-        <div className="flex flex-col w-full md:w-[320px] h-[220px] items-center text-center py-6 px-12 rounded-xl border-2 border-slate-100 hover:text-secondary-red hover:border-3 hover:shadow-2xl group relative overflow-hidden bg-gray-200 text-sm font-medium text-slate-800 focus:outline-none focus:ring hover:border-3">
+        <div className="flex flex-col w-full md:w-[320px] h-[220px] items-center text-center py-6 px-12 rounded-xl border-2 border-slate-100 hover:text-secondary-red hover:border-3 hover:shadow-2xl group relative overflow-hidden bg-gray-200 text-sm font-medium text-slate-800 focus:outline-none focus:ring hover:border-3 hover:scale-105">
             <div className="text-secondary-red mb-5">{icon || <BsQuestionOctagon size={40} />}</div>
             <h1 className="font-bold text-lg capitalize">{title || "Sample"}</h1>
             <p className="font-medium text-slate-600 text-xm">{paragraph || "Lorem ipsum amet consectetur, adipisicing elit. Tenetur error, rem officia?"}</p> 
