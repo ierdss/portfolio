@@ -35,7 +35,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "build/types/**/*.ts"
-, "components/canvas/Stars.jsx"  ],
+, "components/canvas/Stars.jsx", "utils/motion.jsx"  ],
   "exclude": [
     "node_modules"
   ]
