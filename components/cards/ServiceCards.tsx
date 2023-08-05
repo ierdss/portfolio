@@ -19,7 +19,7 @@ export function ServiceCard({ icon, title, paragraph }:ServiceCardProps) {
             <p className="font-medium text-slate-600 text-xm">{paragraph || "Lorem ipsum amet consectetur, adipisicing elit. Tenetur error, rem officia?"}</p> 
             <span className="ease absolute right-0 top-0 h-0 w-0 border-r-2 border-secondary-red transition-all duration-700 group-hover:h-full"></span>
             <span className="ease absolute bottom-0 left-0 h-0 w-0 border-l-2 border-secondary-red transition-all duration-700 group-hover:h-full"></span>
-                </div>
+        </div>
     )
 }
 
