@@ -52,32 +52,32 @@ export const ServicesContent = [
     {
         id: 1,
         icon: <BsGlobeAsiaAustralia size={aboutIconSize} />,
-        title:"Services content title",
-        paragraph:"Lorem ipsum amet consectetur, adipisicing elit. Tenetur error, rem impedit  officia?",
+        title:"Web Development",
+        paragraph:"Lorem ipsum amet consectetur, adipisicing elit. Tenetur error, rem officia?",
     },
     {
         id: 2,
         icon: <BsGlobeAsiaAustralia size={aboutIconSize} />,
-        title:"Services content title",
-        paragraph:"Lorem ipsum amet consectetur, adipisicing elit. Tenetur error, rem impedit  officia?",
+        title:"React Developer",
+        paragraph:"Lorem ipsum amet consectetur, adipisicing elit. Tenetur error, rem officia?",
     },
     {
         id: 3,
         icon: <BsGlobeAsiaAustralia size={aboutIconSize} />,
         title:"Services content title",
-        paragraph:"Services content paragraph",
+        paragraph:"Lorem ipsum amet consectetur, adipisicing elit. Tenetur error, rem officia?",
     },
     {
         id: 4,
         icon: <BsGlobeAsiaAustralia size={aboutIconSize} />,
         title:"Services content title",
-        paragraph:"Services content paragraph",
+        paragraph:"Lorem ipsum amet consectetur, adipisicing elit. Tenetur error, rem officia?",
     },
     {
         id: 5,
         icon: <BsGlobeAsiaAustralia size={aboutIconSize} />,
         title:"Services content title",
-        paragraph:"Services content paragraph",
+        paragraph:"Lorem ipsum amet consectetur, adipisicing elit. Tenetur error, rem officia?",
     },
 ]
 
