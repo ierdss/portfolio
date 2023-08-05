@@ -23,9 +23,26 @@ const SkillRow = ({ title, skills }:SkillProps ) => (
     </ul>
 )
 
+import { motion } from 'framer-motion'
+
 const Technologies = () => {
   return (
     <div className='w-full sectionPadding'>
+        <motion.div
+            className='w-[100px] aspect-square bg-black'
+            animate={{
+                scale: [1, 2, 2, 1, 1],
+                rotate: [0, 0, 180, 180, 0],
+                borderRadius: ["0%", "0%", "50%", "50%", "0%"]
+            }}
+            transition={{
+                duration: 2,
+                ease: "easeInOut",
+                times: [0, 0.2, 0.5, 0.8, 1],
+                repeat: Infinity,
+                repeatDelay: 1
+            }}
+        />
         <div className="flex flex-col w-full lg:w-1/2 gap-6">
             <div className=''>
                 <h1 className="sectionOverline">skills</h1>
