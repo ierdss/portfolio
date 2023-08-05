@@ -31,7 +31,7 @@ export default function About() {
                     <div className='flex flex-col gap-4'>
                         <div className='w-full'>
                             <h1 className="sectionOverline">about</h1>
-                            <h1 className="sectionHeader">me and my services</h1>
+                            <h1 className="sectionHeader">me and my services 👌</h1>
                         </div>
                         {content.paragraphs.map(( {id, paragraph }) => (
                             <p key={id} className="block font-bold text-slate-500 w-full md:w-3/5">{paragraph}</p>
@@ -41,14 +41,14 @@ export default function About() {
                 </div>
                 <div>
                     <div className="">
-                        <h1 className="sectionOverline">Work Experience</h1>
-                        <h1 className="sectionHeader">What Have I Done?</h1>
+                        <h1 className="sectionOverline">work experience</h1>
+                        <h1 className="sectionHeader">what have i done?</h1>
                     </div>
                 </div>
                 <div className="flex flex-col w-full lg:w-1/2 gap-6">
                     <div className=''>
-                        <h1 className="sectionOverline">Skills</h1>
-                        <h1 className="sectionHeader">The Tools I am Most familiar with</h1>
+                        <h1 className="sectionOverline">skills</h1>
+                        <h1 className="sectionHeader">tools i am most familiar with 💻</h1>
                     </div>
                     <SkillRow title={SkillList[0].title} skills={SkillList[0].skills}/>
                     <SkillRow title={SkillList[1].title} skills={SkillList[1].skills}/>
