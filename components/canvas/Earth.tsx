@@ -24,7 +24,7 @@ export default function EarthCanvas() {
             frameloop="demand"
             gl={{ preserveDrawingBuffer: true }}
             camera={{
-                fov: 45,
+                fov: 35,
                 near: 0.1,
                 far: 100,
                 position: [-4, 3, 6],
