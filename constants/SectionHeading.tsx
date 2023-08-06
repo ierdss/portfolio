@@ -22,6 +22,16 @@ export const WorkExperienceSectionHeading = {
     header:"what have i done?",
 }
 
+export const ProjectsSectionHeading = {
+    overline:"projects",
+    header:"check out my projects!",
+}
+
+export const TestimonialsSectionHeading = {
+    overline:"testimonials",
+    header:"whom t worked with",
+}
+
 export const ContactSectionHeading = {
     overline:"contact",
     header:"send me a message :)",
