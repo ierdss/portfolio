@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 
-import { SkillList } from '@/constants'
-import { TechnologiesSectionContent } from '@/constants/SectionContent';
+import { TechnologiesSectionContent as TechList } from '@/constants/SectionContent'
+import { TechnologiesSectionHeading } from '@/constants/SectionHeading';
 
 type SkillProps = {
     title: string;
@@ -27,7 +27,7 @@ const SkillRow = ({ title, skills }:SkillProps ) => (
 import { motion } from 'framer-motion'
 
 const Technologies = () => {
-    const { overline, header } = TechnologiesSectionContent;
+    const { overline, header } = TechnologiesSectionHeading;
 
     return (
         <div className='w-full sectionPadding'>
@@ -51,10 +51,10 @@ const Technologies = () => {
                     <h1 className="sectionOverline">{overline}</h1>
                     <h1 className="sectionHeader">{header}</h1>
                 </div>
-                <SkillRow title={SkillList[0].title} skills={SkillList[0].skills}/>
-                <SkillRow title={SkillList[1].title} skills={SkillList[1].skills}/>
-                <SkillRow title={SkillList[2].title} skills={SkillList[2].skills}/>
-                <SkillRow title={SkillList[3].title} skills={SkillList[3].skills}/>
+                <SkillRow title={TechList[0].title} skills={TechList[0].skills}/>
+                <SkillRow title={TechList[1].title} skills={TechList[1].skills}/>
+                <SkillRow title={TechList[2].title} skills={TechList[2].skills}/>
+                <SkillRow title={TechList[3].title} skills={TechList[3].skills}/>
             </div>
         </div>
     )

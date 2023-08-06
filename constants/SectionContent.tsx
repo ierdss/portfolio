@@ -1,33 +1,142 @@
-export const HeroSectionContent = {
-    header:"Full-Stack Developer",
-    subheader:"Embracing the fusion of artistry and code, I shape digital experiences as a front-end developer. With a passion for design and a drive for innovation, I craft seamless interfaces and striking visuals, elevating the aesthetic essence of the web.",
-}
+//About Section Services Icons
+import { BsGlobeAsiaAustralia } from 'react-icons/bs'
 
-export const AboutSectionContent = {
-    overline:"about",
-    header:"me and my services 👌",
-    paragraphs: [
-        { id:1, paragraph:"I'm a natural problem solver, eversince I was a kid I enjoyed building   contraptions with lego, solving puzzles, and tinkering my curiosity away. This not only honed my interest in building things but it also polished my persistence and what led me to pursue this career in the present." 
-        },
-    ]
-}
+//Skills Section Icons
+import { FaHtml5, FaReact, FaCss3Alt, FaSass } from 'react-icons/fa'
+import { SiNextdotjs, SiTailwindcss } from 'react-icons/si'
+import { BiLogoTypescript } from 'react-icons/bi'
+import { IoLogoJavascript } from 'react-icons/io'
 
-export const TechnologiesSectionContent = {
-    overline:"technologies",
-    header:"tools i am most familiar with 💻",
-}
+//Contact Section Icons
+import { HiMailOpen } from 'react-icons/hi'
+import { GiRotaryPhone } from 'react-icons/gi'
+import { MdAccessTimeFilled } from 'react-icons/md'
 
-export const WorkExperienceSectionContent = {
-    overline:"work experience",
-    header:"what have i done?",
-}
+const aboutIconSize = 40;
+const contactIconSize = 40;
+const skillIconSize = 50;
 
-export const ContactSectionContent = {
-    overline:"contact",
-    header:"send me a message :)",
-    subheader:"feel free to contact me anytime! i'll get back to you as soon as I can!",
-}
+export const AboutSectionContent = [
+    {
+        id: 1,
+        icon: <BsGlobeAsiaAustralia size={aboutIconSize} />,
+        title:"Web Development",
+        paragraph:"",
+    },
+    {
+        id: 2,
+        icon: <BsGlobeAsiaAustralia size={aboutIconSize} />,
+        title:"React Developer",
+        paragraph:"",
+    },    
+    {
+        id: 3,
+        icon: <BsGlobeAsiaAustralia size={aboutIconSize} />,
+        title:"",
+        paragraph:"",
+    },    
+    {
+        id: 4,
+        icon: <BsGlobeAsiaAustralia size={aboutIconSize} />,
+        title:"",
+        paragraph:"",
+    },    
+    {
+        id: 5,
+        icon: <BsGlobeAsiaAustralia size={aboutIconSize} />,
+        title:"",
+        paragraph:"",
+    },
+]
 
-export const FooterSectionContent = {
-    copyright:"@ 2023 Andrei Sager. All rights reserved"
-}
+export const TechnologiesSectionContent = [
+    { 
+        title:"Markup",
+        skills: [
+            { id:1, title:"HTML5", icon:<FaHtml5 size={skillIconSize} color={`#f06529`} /> },
+        ]
+    },
+    { 
+        title:"Styling",
+        skills: [
+            { id:1, title:"CSS3", icon:<FaCss3Alt size={skillIconSize} color={`#2965f1`} /> },
+            { id:2, title:"Tailwind", icon:<SiTailwindcss size={skillIconSize} color={`#cc6699`} /> },
+            { id:3, title:"Sass", icon:<FaSass size={skillIconSize} color={`#67e8f9`} /> },
+        ]
+    },
+    { 
+        title:"Programming Language",
+        skills: [
+            { id:1, title:"Javascript", icon:<IoLogoJavascript size={skillIconSize} color={`#ecd120`} /> },
+            { id:2, title:"Typescript", icon:<BiLogoTypescript size={skillIconSize} color={`#007acc`} /> },
+        ]
+    },
+    { 
+        title:"Libraries and Frameworks",
+        skills: [
+            { id:1, title:"React.js", icon:<FaReact size={skillIconSize} color={`#61dbfb`} /> },
+            { id:2, title:"Next.js", icon:<SiNextdotjs size={skillIconSize} color={`#171515`} /> },
+        ]
+    },
+]
+
+export const ProjectSectionContent = [
+    {
+        id: 1,
+        title:"Road Way Delivery",
+        description:"Road Way Delivery Service is a leading logistics company revolutionizing the industry with fast, reliable road transportation solutions. We specialize in secure, on-time deliveries for customers and businesses across local and regional destinations.",
+        tags: [
+            { id:1, tag: "Next.js" },
+            { id:2, tag: "Typescript" },
+            { id:3, tag: "Tailwind" },
+            { id:4, tag: "CSS" },
+        ],
+        githubUrl:"https://github.com/LordBrim/andrei-portfolio",
+        livedemoUrl:"https://roadwaydelivery.vercel.app",
+    },
+    {
+        id: 2,
+        title:"Sample Project",
+        description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
+        tags: [
+            { id:1, tag: "Next.js" },
+            { id:2, tag: "Typescript" },
+            { id:3, tag: "Tailwind" },
+            { id:4, tag: "CSS" },
+        ],
+        githubUrl:"/",
+        livedemoUrl:"/",
+    },
+    {
+        id: 3,
+        title:"Sample Project",
+        description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
+        tags: [
+            { id:1, tag: "Next.js" },
+            { id:2, tag: "Typescript" },
+            { id:3, tag: "Tailwind" },
+            { id:4, tag: "CSS" },
+        ],
+        githubUrl:"/",
+        livedemoUrl:"/",
+    },
+    {
+        id: 4,
+        title:"Sample Project",
+        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
+        tags: [
+            { id:1, tag: "Next.js" },
+            { id:2, tag: "Typescript" },
+            { id:3, tag: "Tailwind" },
+            { id:4, tag: "CSS" },
+        ],
+        githubUrl:"/",
+        livedemoUrl:"/",
+    },
+]
+
+export const ContactSectionContent = [
+    { key:1, icon: <HiMailOpen size={contactIconSize}/>, title:"Email", text:"andreiwork25@gmail.com"},
+    { key:2, icon: <GiRotaryPhone size={contactIconSize}/>, title:"Number", text:"*639763272778"},
+    { key:3, icon: <MdAccessTimeFilled size={contactIconSize}/>, title:"Time", text:"(GMT+8) 09:00 - 17:00"},
+]

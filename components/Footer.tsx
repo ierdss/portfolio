@@ -1,8 +1,8 @@
 import SocialMediaLinks from "./minor/Links";
-import { FooterSectionContent } from "@/constants/SectionContent";
+import { FooterSectionHeading } from "@/constants/SectionHeading";
 
 export default function Footer() {
-    const { copyright } = FooterSectionContent;
+    const { copyright } = FooterSectionHeading;
 
     return(
         <footer className="flex flex-col w-full py-6 px-16 border-t border-nav-border">

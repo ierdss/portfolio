@@ -2,10 +2,10 @@
 
 import Links from "./minor/Links";
 import EarthCanvas from "./canvas/Earth";
-import { HeroSectionContent } from "@/constants/SectionContent";
+import { HeroSectionHeading} from "@/constants/SectionHeading";
 
 export default function Hero() {
-    const { header, subheader } = HeroSectionContent;
+    const { header, subheader } = HeroSectionHeading;
 
     return(
         <div className="sectionPadding md:!px-0 flex flex-col md:flex-row justify-center items-center gap-12 w-full h-[100vh] max-h-[900px] bg-neutral-900 overflow-hidden">
