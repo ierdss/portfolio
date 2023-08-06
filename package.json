@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nadfri/react-scroll-progress-bar": "^0.2.3",
     "@react-three/drei": "^9.80.1",
     "@react-three/fiber": "^8.13.6",
     "@types/node": "20.3.3",
