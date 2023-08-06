@@ -1,4 +1,5 @@
 import { ProjectSectionContent as ProjectsList } from "@/constants/SectionContent"
+import { ProjectsSectionHeading } from "@/constants/SectionHeading";
 import { BsGithub } from 'react-icons/bs'
 import { IoGlobe } from 'react-icons/io5'
 
@@ -34,10 +35,7 @@ const ProjectLinks = ({ githubUrl, livedemoUrl }:ProjectLinksProps) => (
 )
 
 export default function Projects() {
-    const { overline, header } = {
-        overline:"projects",
-        header:"check out my projects!",
-    }
+    const { overline, header } = ProjectsSectionHeading;
 
     return( 
         <div id="projects" className="bg-slate-100 w-full text-center flex justify-center items-center md:text-left">
