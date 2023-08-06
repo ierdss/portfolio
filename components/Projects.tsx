@@ -44,7 +44,7 @@ export default function Projects() {
             <div className="flex flex-col w-full gap-8 sectionPadding">
                 <div className="">
                     <h1 className="sectionOverline">{overline}</h1>
-                    <h1 className="sectionHeader">c{header}</h1>
+                    <h1 className="sectionHeader">{header}</h1>
                 </div>
                 <div className="projectsList flex flex-row flex-wrap gap-10">
                     <div className="projectItem projectItem1">
