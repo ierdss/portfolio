@@ -1,3 +1,9 @@
+import { SectionContent } from './SectionContent'
+
+export {
+    SectionContent
+};
+
 //About Section Services Icons
 import { BsGlobeAsiaAustralia } from 'react-icons/bs'
 
@@ -31,21 +37,6 @@ export const SocialMediaLinks = [
     { id:1, title:"LinkedIn", icon:<BsLinkedin size={footerIconSize} className='hover:text-linkedin' />, url:"https://www.linkedin.com/in/andrei-sager-34a452265/"},
     { id:2, title:"Github", icon:<BsGithub size={footerIconSize} className='hover:text-github' />, url:"https://github.com/LordBrim"},
 ]
-
-export const HeroContent = {
-    portrait:"/MeRed.png",
-    alt:"A portrait of myself wearing a comfortable red t-shirt.",
-    title:"Full-Stack Developer",
-    subtitle:"Embracing the fusion of artistry and code, I shape digital experiences as a front-end developer. With a passion for design and a drive for innovation, I craft seamless interfaces and striking visuals, elevating the aesthetic essence of the web.",
-}
-
-export const AboutContent = {
-    title:"Me and my services!",
-    paragraphs: [
-        { id:1, paragraph:"I'm a natural problem solver, eversince I was a kid I enjoyed building   contraptions with lego, solving puzzles, and tinkering my curiosity away. This not only honed my interest in building things but it also polished my persistence and what led me to pursue this career in the present." 
-        },
-    ]
-}
 
 export const ServicesContent = [
     {

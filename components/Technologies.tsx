@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
 
 import { SkillList } from '@/constants'
+import { TechnologiesSectionContent } from '@/constants/SectionContent';
 
 type SkillProps = {
     title: string;
@@ -26,35 +27,37 @@ const SkillRow = ({ title, skills }:SkillProps ) => (
 import { motion } from 'framer-motion'
 
 const Technologies = () => {
-  return (
-    <div className='w-full sectionPadding'>
-        <motion.div
-            className='w-[100px] aspect-square bg-black'
-            animate={{
-                scale: [1, 2, 2, 1, 1],
-                rotate: [0, 0, 180, 180, 0],
-                borderRadius: ["0%", "0%", "50%", "50%", "0%"]
-            }}
-            transition={{
-                duration: 2,
-                ease: "easeInOut",
-                times: [0, 0.2, 0.5, 0.8, 1],
-                repeat: Infinity,
-                repeatDelay: 1
-            }}
-        />
-        <div className="flex flex-col w-full lg:w-1/2 gap-6">
-            <div className=''>
-                <h1 className="sectionOverline">skills</h1>
-                <h1 className="sectionHeader">tools i am most familiar with 💻</h1>
+    const { overline, header } = TechnologiesSectionContent;
+
+    return (
+        <div className='w-full sectionPadding'>
+            <motion.div
+                className='w-[100px] aspect-square bg-black'
+                animate={{
+                    scale: [1, 2, 2, 1, 1],
+                    rotate: [0, 0, 180, 180, 0],
+                    borderRadius: ["0%", "0%", "50%", "50%", "0%"]
+                }}
+                transition={{
+                    duration: 2,
+                    ease: "easeInOut",
+                    times: [0, 0.2, 0.5, 0.8, 1],
+                    repeat: Infinity,
+                    repeatDelay: 1
+                }}
+            />
+            <div className="flex flex-col w-full lg:w-1/2 gap-6">
+                <div className=''>
+                    <h1 className="sectionOverline">{overline}</h1>
+                    <h1 className="sectionHeader">{header}</h1>
+                </div>
+                <SkillRow title={SkillList[0].title} skills={SkillList[0].skills}/>
+                <SkillRow title={SkillList[1].title} skills={SkillList[1].skills}/>
+                <SkillRow title={SkillList[2].title} skills={SkillList[2].skills}/>
+                <SkillRow title={SkillList[3].title} skills={SkillList[3].skills}/>
             </div>
-            <SkillRow title={SkillList[0].title} skills={SkillList[0].skills}/>
-            <SkillRow title={SkillList[1].title} skills={SkillList[1].skills}/>
-            <SkillRow title={SkillList[2].title} skills={SkillList[2].skills}/>
-            <SkillRow title={SkillList[3].title} skills={SkillList[3].skills}/>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Technologies
