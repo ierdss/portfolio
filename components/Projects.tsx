@@ -1,4 +1,4 @@
-import { ProjectsList } from "@/constants"
+import { ProjectSectionContent as ProjectsList } from "@/constants/SectionContent"
 import { BsGithub } from 'react-icons/bs'
 import { IoGlobe } from 'react-icons/io5'
 

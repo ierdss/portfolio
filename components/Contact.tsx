@@ -1,8 +1,8 @@
-import { ContactInfo } from '@/constants'
 import { ContactSectionContent } from '@/constants/SectionContent'
+import { ContactSectionHeading } from '@/constants/SectionHeading'
 
 export default function Contact() {
-    const { overline, header, subheader } = ContactSectionContent
+    const { overline, header, subheader } = ContactSectionHeading
 
     return( 
         <div id='contact' className=' w-full text-center flex justify-center items-center md:text-left'>
@@ -18,7 +18,7 @@ export default function Contact() {
                 </div>
                 <div className='flex flex-col justify-between lg:flex-row gap-8'>
                     <div className="flex flex-col gap-10 w-full md:w-[300px] items-center md:items-start">
-                        {ContactInfo.map(({key, title, icon, text}) => (
+                        {ContactSectionContent.map(({key, title, icon, text}) => (
                             <div key={key} className='flex flex-row items-center gap-4 p-8 border border-solid border-slate-200 rounded-tr-xl rounded-bl-xl bg-slate-100 hover:scale-105 transition duration-150 ease-in-out shadow-xl w-full max-w-[300px] group relative overflow-hidden bg-gray-200 text-sm font-medium text-slate-800 focus:outline-none focus:ring hover:border-3'>
                                 <span className='text-secondary-red'>
                                     {icon}

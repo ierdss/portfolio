@@ -1,9 +1,9 @@
 import React from 'react'
 
-import { WorkExperienceSectionContent } from '@/constants/SectionContent';
+import { WorkExperienceSectionHeading } from '@/constants/SectionHeading';
 
 export default function WorkExperience() {
-  const { overline, header } = WorkExperienceSectionContent;
+  const { overline, header } = WorkExperienceSectionHeading;
 
   return (
     <div className='w-full sectionPadding'>

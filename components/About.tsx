@@ -1,9 +1,9 @@
-import { ServicesContent } from '@/constants'
 import ServiceCards from './cards/ServiceCards';
-import { AboutSectionContent } from '@/constants/SectionContent';
+import { AboutSectionContent } from '@/constants/SectionContent'
+import { AboutSectionHeading } from '@/constants/SectionHeading';
 
 export default function About() {
-    const { overline, header, paragraphs } = AboutSectionContent
+    const { overline, header, paragraphs } = AboutSectionHeading
 
     return(
         <div id="about" className="sectionPadding w-full text-center flex justify-center items-center md:text-left flex-col gap-24">
@@ -13,11 +13,11 @@ export default function About() {
                             <h1 className="sectionOverline">{overline}</h1>
                             <h1 className="sectionHeader">{header}</h1>
                         </div>
-                        {paragraphs.map(( {id, paragraph }) => (
+                        {paragraphs.map(({id, paragraph }) => (
                             <p key={id} className="block font-bold text-slate-500 w-full md:w-3/5">{paragraph}</p>
                         ))}
                     </div>
-                    <ServiceCards cards={ServicesContent}/>
+                    <ServiceCards cards={AboutSectionContent}/>
             </div>
         </div>
     )

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { SocialMediaLinks } from '@/constants'
+import { SocialMediaLinks } from '@/constants/NavigationLinks'
 
 type classNameProps = {
     className?: string;
