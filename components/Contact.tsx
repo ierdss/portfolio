@@ -1,17 +1,19 @@
 import { ContactInfo } from '@/constants'
+import { ContactSectionContent } from '@/constants/SectionContent'
 
 export default function Contact() {
+    const { overline, header, subheader } = ContactSectionContent
+
     return( 
         <div id='contact' className=' w-full text-center flex justify-center items-center md:text-left'>
             <div className='flex flex-col w-full gap-8 sectionPadding'>
                 <div className='flex flex-col gap-4'>
                     <div className="">
-                        <h1 className="sectionOverline">contact</h1>
-                        <h1 className="sectionHeader">send me a message :)</h1>
+                        <h1 className="sectionOverline">{overline}</h1>
+                        <h1 className="sectionHeader">{header}</h1>
                     </div>
                     <p className='w-full lg:w-[400px]'>
-                        Feel free to contact me anytime! I'll get back to you
-                        as soon as I can!
+                        {subheader}
                     </p>
                 </div>
                 <div className='flex flex-col justify-between lg:flex-row gap-8'>

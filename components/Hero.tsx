@@ -1,11 +1,12 @@
 "use client"
 
-import { HeroContent as content } from "@/constants";
-
 import Links from "./minor/Links";
 import EarthCanvas from "./canvas/Earth";
+import { HeroSectionContent } from "@/constants/SectionContent";
 
 export default function Hero() {
+    const { header, subheader } = HeroSectionContent;
+
     return(
         <div className="sectionPadding md:!px-0 flex flex-col md:flex-row justify-center items-center gap-12 w-full h-[100vh] max-h-[900px] bg-neutral-900 overflow-hidden">
             <div className="w-full md:w-[40%] aspect-square">
@@ -15,8 +16,8 @@ export default function Hero() {
                 <div  className='flex flex-row w-fit justify-center items-center gap-4 md:order-3'>
                     <Links/>
                 </div>
-                <h1 className="font-bold text-5xl md:order-1">{content.title}</h1>
-                <p className="md:order-2 font-bold text-slate-300">{content.subtitle}</p>
+                <h1 className="font-bold text-5xl md:order-1">{header}</h1>
+                <p className="md:order-2 font-bold text-slate-300">{subheader}</p>
             </div>
         </div>
     )

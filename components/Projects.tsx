@@ -34,12 +34,17 @@ const ProjectLinks = ({ githubUrl, livedemoUrl }:ProjectLinksProps) => (
 )
 
 export default function Projects() {
+    const { overline, header } = {
+        overline:"projects",
+        header:"check out my projects!",
+    }
+
     return( 
         <div id="projects" className="bg-slate-100 w-full text-center flex justify-center items-center md:text-left">
             <div className="flex flex-col w-full gap-8 sectionPadding">
                 <div className="">
-                    <h1 className="sectionOverline">projects</h1>
-                    <h1 className="sectionHeader">check out my projects!</h1>
+                    <h1 className="sectionOverline">{overline}</h1>
+                    <h1 className="sectionHeader">c{header}</h1>
                 </div>
                 <div className="projectsList flex flex-row flex-wrap gap-10">
                     <div className="projectItem projectItem1">
