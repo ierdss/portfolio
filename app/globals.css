@@ -18,13 +18,9 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 4px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 12px;
+  display: none;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 ::selection {
