@@ -1,8 +1,8 @@
 "use client"
 
 import Links from "./minor/Links";
-import EarthCanvas from "./canvas/Earth";
 import { HeroSectionHeading} from "@/constants/SectionHeading";
+import MajesticCube from "./canvas/MajesticCube";
 
 export default function Hero() {
     const { header, subheader } = HeroSectionHeading;
@@ -10,7 +10,7 @@ export default function Hero() {
     return(
         <div className="sectionPadding md:!px-0 flex flex-col md:flex-row justify-center items-center gap-12 w-full h-[100vh] max-h-[900px] bg-neutral-900 overflow-hidden">
             <div className="w-full md:w-[40%] aspect-square">
-                <EarthCanvas/>
+                <MajesticCube/>
             </div>
             <div className="flex flex-col w-full md:w-[500px] gap-4 text-center justify-center items-center md:text-left md:items-start text-white">
                 <div  className='flex flex-row w-fit justify-center items-center gap-4 md:order-3'>
