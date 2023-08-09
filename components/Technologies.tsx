@@ -25,12 +25,13 @@ const SkillRow = ({ title, skills }:SkillProps ) => (
 )
 
 import { motion } from 'framer-motion'
+import Spline from '@splinetool/react-spline';
 
 const Technologies = () => {
     const { overline, header } = TechnologiesSectionHeading;
 
     return (
-        <div className='w-full sectionPadding'>
+        <div className='w-full flex flex-row sectionPadding'>
             {/* <motion.div
                 className='w-[100px] aspect-square bg-black'
                 animate={{
@@ -46,6 +47,9 @@ const Technologies = () => {
                     repeatDelay: 1
                 }}
             /> */}
+            <div className='w-1/2'>
+                <Spline scene="https://prod.spline.design/2dFzuKtoezcGgFJP/scene.splinecode"/>
+            </div>
             <div className="flex flex-col w-full lg:w-1/2 gap-6">
                 <div className=''>
                     <h1 className="sectionOverline">{overline} //Ayusin mo to mamaya</h1>

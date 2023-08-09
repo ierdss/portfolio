@@ -12,6 +12,8 @@
     "@nadfri/react-scroll-progress-bar": "^0.2.3",
     "@react-three/drei": "^9.80.1",
     "@react-three/fiber": "^8.13.6",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.414",
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
