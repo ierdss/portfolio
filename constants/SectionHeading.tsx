@@ -1,13 +1,13 @@
 export const HeroSectionHeading = {
     header:"Full-Stack Developer",
-    subheader:"Embracing the fusion of artistry and code, I shape digital experiences as a front-end developer. With a passion for design and a drive for innovation, I craft seamless interfaces and striking visuals, elevating the aesthetic essence of the web.",
+    subheader:"Embracing the fusion of artistry and code, I shape digital experiences as a full-stack developer. With a passion for design and a drive for innovation, I craft seamless interfaces and striking visuals, elevating the aesthetic essence of the web.",
 }
 
 export const AboutSectionHeading = {
     overline:"about",
     header:"me and my services 👌",
     paragraphs: [
-        { id:1, paragraph:"I'm a natural problem solver, eversince I was a kid I enjoyed building   contraptions with lego, solving puzzles, and tinkering my curiosity away. This not only honed my interest in building things but it also polished my persistence and what led me to pursue this career in the present." 
+        { id:1, paragraph:"Sample muna. I'm a natural problem solver, eversince I was a kid I enjoyed building   contraptions with lego, solving puzzles, and tinkering my curiosity away. This not only honed my interest in building things but it also polished my persistence and what led me to pursue this career." 
         },
     ]
 }

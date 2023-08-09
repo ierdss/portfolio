@@ -31,7 +31,7 @@ const Technologies = () => {
 
     return (
         <div className='w-full sectionPadding'>
-            <motion.div
+            {/* <motion.div
                 className='w-[100px] aspect-square bg-black'
                 animate={{
                     scale: [1, 2, 2, 1, 1],
@@ -45,10 +45,10 @@ const Technologies = () => {
                     repeat: Infinity,
                     repeatDelay: 1
                 }}
-            />
+            /> */}
             <div className="flex flex-col w-full lg:w-1/2 gap-6">
                 <div className=''>
-                    <h1 className="sectionOverline">{overline}</h1>
+                    <h1 className="sectionOverline">{overline} //Ayusin mo to mamaya</h1>
                     <h1 className="sectionHeader">{header}</h1>
                 </div>
                 <SkillRow title={TechList[0].title} skills={TechList[0].skills}/>
