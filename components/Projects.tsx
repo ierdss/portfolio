@@ -17,7 +17,7 @@ type TagProps = {
 const ProjectTags = ({ tags }:TagsProps) => (
     <ul className="flex flex-row flex-wrap justify-center items-start gap-3">
     {tags.map(({ id, tag } ) => (
-        <li key={id} className="py-2 px-4 justify-center items-start border border-solid border-slate-300 rounded-full font-medium">{tag}</li>
+        <li key={id} className="py-2 px-4 justify-center items-start border border-solid border-slate-300 rounded-full font-medium text-xs">{tag}</li>
     ))}
 </ul>
 )
