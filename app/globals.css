@@ -75,11 +75,11 @@ body {
 
 /* Projects Component */
 .projectsList {
-  @apply flex flex-col flex-wrap gap-8 md:gap-24
+  @apply flex flex-col flex-wrap gap-8 md:gap-24 snap-proximity snap-y
 }
 
 .projectItem {
-  @apply flex flex-col lg:flex-row rounded-xl gap-2 md:gap-10 relative w-full lg:min-h-[450px] lg:max-h-[450px] bg-white odd:lg:flex-row-reverse odd:lg:gap-0 odd:lg:pr-10 border-b-4 border-b-secondary-red lg:border-b-0 odd:lg:border-l-4 odd:lg:border-l-secondary-red even:lg:border-r-4 even:lg:border-r-secondary-red
+  @apply flex flex-col lg:flex-row rounded-xl gap-2 md:gap-10 relative w-full lg:min-h-[450px] lg:max-h-[450px] bg-white odd:lg:flex-row-reverse odd:lg:gap-0 odd:lg:pr-10 border-b-4 border-b-secondary-red lg:border-b-0 odd:lg:border-l-4 odd:lg:border-l-secondary-red even:lg:border-r-4 even:lg:border-r-secondary-red snap-center shrink-0
 }
 
 .projectThumbnails {
