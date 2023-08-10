@@ -40,7 +40,7 @@ export default function Projects() {
     const { overline, header } = ProjectsSectionHeading;
 
     return( 
-        <div id="projects" className="bg-slate-100 w-full text-center flex justify-center items-center md:text-left">
+        <div id="projects" className="w-full text-center flex justify-center items-center md:text-left">
             <div className="flex flex-col w-full gap-8 sectionPadding">
                 <div className="">
                     <h1 className="sectionOverline">{overline}</h1>
