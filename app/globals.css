@@ -83,7 +83,7 @@ body {
 }
 
 .projectThumbnails {
-  @apply flex flex-col lg:flex-row
+  @apply flex flex-col lg:flex-row relative
 }
 
 .projectThumbnailDesktop {
@@ -96,6 +96,10 @@ body {
 
 .projectThumbnailMobile > div {
   @apply invisible lg:visible lg:flex min-h-[280px] max-h-[230px] w-[130px] md:h-auto rounded-xl shadow-xl overflow-hidden z-20 border-2 border-black absolute -bottom-6 -right-8 hover:scale-110
+}
+
+.projectThumbnailExpand {
+  @apply animate-bounce text-white absolute bottom-4 left-4 cursor-pointer 
 }
 
 .projectDetails {
