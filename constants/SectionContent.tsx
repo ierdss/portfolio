@@ -83,6 +83,10 @@ export const TechnologiesSectionContent = [
 export const ProjectSectionContent = [
     {
         id: 1,
+        thumbnailDesktop:"/road-way-delivery__compressed-desktop-short.jpg",
+        desktopAlt:"RWD full page on desktop",
+        thumbnailMobile:"/road-way-delivery__compressed-mobile-short.jpg",
+        mobileAlt:"RWD full page on mobile",
         title:"Road Way Delivery",
         description:"Road Way Delivery Service is a leading logistics company revolutionizing the industry with fast, reliable road transportation solutions. We specialize in secure, on-time deliveries for customers and businesses across local and regional destinations.",
         tags: [
@@ -96,6 +100,10 @@ export const ProjectSectionContent = [
     },
     {
         id: 2,
+        thumbnailDesktop:"/road-way-delivery__compressed-desktop-short.jpg",
+        desktopAlt:"RWD full page on desktop",
+        thumbnailMobile:"/road-way-delivery__compressed-mobile-short.jpg",
+        mobileAlt:"RWD full page on mobile",
         title:"Sample Project",
         description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
         tags: [
@@ -107,32 +115,32 @@ export const ProjectSectionContent = [
         githubUrl:"/",
         livedemoUrl:"/",
     },
-    {
-        id: 3,
-        title:"Sample Project",
-        description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
-        tags: [
-            { id:1, tag: "Next.js" },
-            { id:2, tag: "Typescript" },
-            { id:3, tag: "Tailwind" },
-            { id:4, tag: "CSS" },
-        ],
-        githubUrl:"/",
-        livedemoUrl:"/",
-    },
-    {
-        id: 4,
-        title:"Sample Project",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
-        tags: [
-            { id:1, tag: "Next.js" },
-            { id:2, tag: "Typescript" },
-            { id:3, tag: "Tailwind" },
-            { id:4, tag: "CSS" },
-        ],
-        githubUrl:"/",
-        livedemoUrl:"/",
-    },
+    // {
+    //     id: 3,
+    //     title:"Sample Project",
+    //     description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
+    //     tags: [
+    //         { id:1, tag: "Next.js" },
+    //         { id:2, tag: "Typescript" },
+    //         { id:3, tag: "Tailwind" },
+    //         { id:4, tag: "CSS" },
+    //     ],
+    //     githubUrl:"/",
+    //     livedemoUrl:"/",
+    // },
+    // {
+    //     id: 4,
+    //     title:"Sample Project",
+    //     description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
+    //     tags: [
+    //         { id:1, tag: "Next.js" },
+    //         { id:2, tag: "Typescript" },
+    //         { id:3, tag: "Tailwind" },
+    //         { id:4, tag: "CSS" },
+    //     ],
+    //     githubUrl:"/",
+    //     livedemoUrl:"/",
+    // },
 ]
 
 export const ContactSectionContent = [

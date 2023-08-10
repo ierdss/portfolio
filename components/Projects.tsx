@@ -1,5 +1,6 @@
-import { ProjectSectionContent as ProjectsList } from "@/constants/SectionContent"
+import { ProjectSectionContent as ProjectList } from "@/constants/SectionContent"
 import { ProjectsSectionHeading } from "@/constants/SectionHeading";
+import Image from "next/image";
 import { BsGithub } from 'react-icons/bs'
 import { IoGlobe } from 'react-icons/io5'
 
@@ -15,9 +16,9 @@ type TagProps = {
 }
 
 const ProjectTags = ({ tags }:TagsProps) => (
-    <ul className="flex flex-row flex-wrap justify-center items-start gap-3">
+    <ul className="projectTags">
     {tags.map(({ id, tag } ) => (
-        <li key={id} className="py-2 px-4 justify-center items-start border border-solid border-slate-300 rounded-full font-medium text-xs">{tag}</li>
+        <li key={id} className="projectTag">{tag}</li>
     ))}
 </ul>
 )
@@ -28,9 +29,9 @@ type ProjectLinksProps = {
 }
 
 const ProjectLinks = ({ githubUrl, livedemoUrl }:ProjectLinksProps) => (
-    <div className="flex flex-row justify-center items-center gap-8 w-full mt-6">
-        <a href={githubUrl} target="_blank" className="flex flex-row gap-2 justify-center items-center hover:text-secondary-red"><BsGithub size={sizeIcon}/>Source Code</a>
-        <a href={livedemoUrl} target="_blank" className="flex flex-row gap-2 first:justify-center items-center hover:text-secondary-red"><IoGlobe size={sizeIcon}/>Live Demo</a>
+    <div className="projectLinks">
+        <a href={githubUrl} target="_blank" className="projectLink"><BsGithub size={sizeIcon}/>Source Code</a>
+        <a href={livedemoUrl} target="_blank" className="projectLink"><IoGlobe size={sizeIcon}/>Live Demo</a>
     </div>
 )
 
@@ -44,19 +45,50 @@ export default function Projects() {
                     <h1 className="sectionOverline">{overline}</h1>
                     <h1 className="sectionHeader">{header}</h1>
                 </div>
-                <div className="projectsList flex flex-row flex-wrap gap-10">
-                    <div className="projectItem projectItem1">
-                            <div id="desktop" className="projectItemDesktop "/>
-                            <div id="mobile" className="projectItemMobile">
-                                <div/>
-                            </div>
-                            <div className="projectItemDescription">
-                                <h1 className="font-bold text-lg">{ProjectsList[0].title}</h1>
-                                <p className="text-md text-slate-500 font-medium">{ProjectsList[0].description}</p>
-                                <ProjectTags tags={ProjectsList[0].tags}/>
-                                <ProjectLinks githubUrl={ProjectsList[0].githubUrl} livedemoUrl={ProjectsList[0].livedemoUrl} />
-                            </div>
-                    </div>
+                <ul className="projectsList">
+                    {ProjectList.map(({ id, thumbnailDesktop, thumbnailMobile, desktopAlt, mobileAlt, title, description, tags, githubUrl, livedemoUrl }) => (
+                            <li key={id} className="projectItem">
+                                <div className="projectThumbnails">
+                                    <div className="projectThumbnailDesktop">
+                                        <img
+                                            src={thumbnailDesktop}
+                                            alt={desktopAlt}
+                                        />
+                                    </div>
+                                    <div className="projectThumbnailMobile">
+                                        <div>
+                                            <Image
+                                                src={thumbnailMobile}
+                                                width={200}
+                                                height={50}
+                                                alt={mobileAlt}
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="projectDetails">
+                                    <h1 className="projectTitle">{title}</h1>
+                                    <p className="projectDescription">{description}</p>
+                                    <ProjectTags tags={tags}/>
+                                    <ProjectLinks githubUrl={githubUrl} livedemoUrl={livedemoUrl} />
+                                </div>
+                            </li>
+                        ))
+                    }
+                </ul>
+                    {/* <div className="projectItem projectItem1">
+                        <div id="desktop" className="projectItemDesktop "/>
+                        <div id="mobile" className="projectItemMobile">
+                            <div/>
+                        </div>
+                        <div className="projectItemDescription">
+                            <h1 className="font-bold text-lg">{ProjectList[0].title}</h1>
+                            <p className="text-md text-slate-500 font-medium">{ProjectList[0].description}</p>
+                            <ProjectTags tags={ProjectList[0].tags}/>
+                            <ProjectLinks githubUrl={ProjectList[0].githubUrl} livedemoUrl={ProjectList[0].livedemoUrl} />
+                        </div>
+                    </div> */}
+{/* 
                     <div className="projectItem projectItem2 projectItemOdd">
                         <div id="desktop" className="projectItemDesktop"/>
                         <div id="mobile" className="projectItemMobile">
@@ -104,8 +136,7 @@ export default function Projects() {
                             <ProjectTags tags={ProjectsList[3].tags}/>
                             <ProjectLinks githubUrl={ProjectsList[3].githubUrl} livedemoUrl={ProjectsList[3].livedemoUrl} />
                         </div>
-                    </div>
-                </div>
+                    </div> */}
             </div>
         </div>
     )

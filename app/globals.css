@@ -70,68 +70,56 @@ body {
 }
 
 /* Projects Component */
+.projectsList {
+  @apply flex flex-col flex-wrap gap-24
+}
+
 .projectItem {
-  @apply flex flex-col lg:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8 relative w-full lg:min-h-[480px] lg:max-h-[480px] 
+  @apply flex flex-col lg:flex-row even:lg:flex-row-reverse rounded-xl gap-2 md:gap-8 relative w-full lg:min-h-[480px] lg:max-h-[480px]
 }
 
-.projectItem1  {
-  @apply [&>*:nth-child(1)]:bg-thumbnail-desktop-1 
+.projectThumbnails {
+  @apply flex flex-row
 }
 
-.projectItem1 > div#mobile {
-  @apply [&>*:nth-child(1)]:bg-thumbnail-mobile-1
+.projectThumbnailDesktop {
+  @apply w-full aspect-square lg:aspect-video rounded-xl shadow-xl overflow-hidden
 }
 
-.projectItem2  {
-  @apply [&>*:nth-child(1)]:bg-thumbnail-desktop-sample
-}
-
-.projectItem2 > div#mobile {
-  @apply [&>*:nth-child(1)]:bg-thumbnail-mobile-sample
-}
-
-.projectItem3  {
-  @apply [&>*:nth-child(1)]:bg-thumbnail-desktop-sample 
-}
-
-.projectItem3 > div#mobile {
-  @apply [&>*:nth-child(1)]:bg-thumbnail-mobile-sample
-}
-
-.projectItem4  {
-  @apply [&>*:nth-child(1)]:bg-thumbnail-desktop-sample
-}
-
-.projectItem4 > div#mobile {
-  @apply [&>*:nth-child(1)]:bg-thumbnail-mobile-sample
-}
-
-.projectItem5  {
-  @apply [&>*:nth-child(1)]:bg-thumbnail-desktop-sample
-}
-
-.projectItem5 > div#mobile {
-  @apply [&>*:nth-child(1)]:bg-thumbnail-mobile-sample
-}
-
-.projectItemDesktop {
-  @apply w-full aspect-square lg:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[10000ms]
-}
-
-.projectItemMobile {
+.projectThumbnailMobile {
   @apply hidden md:flex relative
 }
 
-.projectItemMobile > div {
-  @apply invisible lg:visible lg:flex min-h-[280px] max-h-[230px] w-[130px] md:h-auto rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[15000ms] z-20 border-2 border-black absolute -bottom-3 -right-4 hover:scale-110
+.projectThumbnailMobile > div {
+  @apply invisible lg:visible lg:flex min-h-[280px] max-h-[230px] w-[130px] md:h-auto rounded-xl shadow-xl overflow-hidden z-20 border-2 border-black absolute -bottom-6 -right-10 hover:scale-110
 }
 
-.projectItemDescription {
-  @apply flex flex-col text-center justify-center gap-4 py-6 w-full lg:w-4/6
+.projectDetails {
+  @apply flex flex-col text-center justify-center gap-4 py-6 w-full lg:w-4/6 bg-white rounded-lg p-6 md:p-8 even:order-1
 }
 
-.projectItemOdd {
-  @apply lg:[&>*:nth-child(1)]:order-2 lg:[&>*:nth-child(2)]:order-3 lg:[&>*:nth-child(3)]:order-1
+.projectTitle {
+  @apply font-bold text-lg
+}
+
+.projectDescription {
+  @apply text-base text-slate-500 font-medium
+}
+
+.projectTags {
+  @apply flex flex-row flex-wrap justify-center items-start gap-3
+}
+
+.projectTag {
+  @apply py-2 px-4 justify-center items-start border border-solid border-slate-300 rounded-full font-medium text-xs
+}
+
+.projectLinks {
+  @apply flex flex-row justify-center items-center gap-8 w-full mt-6
+}
+
+.projectLink {
+  @apply flex flex-row gap-2 justify-center items-center hover:text-secondary-red
 }
 
 /* Contact Component */

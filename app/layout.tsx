@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className='flex justify-center'>
           <div className='flex flex-wrap w-full max-w-screen-xl'>
-            <LoadingOverlay/>
+            {/* <LoadingOverlay/> */}
             <Navbar/>
             <main className='w-full'>
               {children}

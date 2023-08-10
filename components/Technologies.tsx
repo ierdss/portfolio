@@ -47,9 +47,6 @@ const Technologies = () => {
                     repeatDelay: 1
                 }}
             /> */}
-            <div className='w-1/2'>
-                <Spline scene="https://prod.spline.design/2dFzuKtoezcGgFJP/scene.splinecode"/>
-            </div>
             <div className="flex flex-col w-full lg:w-1/2 gap-6">
                 <div className=''>
                     <h1 className="sectionOverline">{overline} //Ayusin mo to mamaya</h1>
