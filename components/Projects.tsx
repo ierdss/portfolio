@@ -3,6 +3,7 @@ import { ProjectsSectionHeading } from "@/constants/SectionHeading";
 import Image from "next/image";
 import { BsGithub } from 'react-icons/bs'
 import { IoGlobe } from 'react-icons/io5'
+import { LuExpand } from 'react-icons/lu'
 
 const sizeIcon = 30;
 
@@ -65,6 +66,7 @@ export default function Projects() {
                                             />
                                         </div>
                                     </div>
+                                    <LuExpand size={40} className="projectThumbnailExpand"/>
                                 </div>
                                 <div className="projectDetails">
                                     <h1 className="projectTitle">{title}</h1>
@@ -76,67 +78,6 @@ export default function Projects() {
                         ))
                     }
                 </div>
-                    {/* <div className="projectItem projectItem1">
-                        <div id="desktop" className="projectItemDesktop "/>
-                        <div id="mobile" className="projectItemMobile">
-                            <div/>
-                        </div>
-                        <div className="projectItemDescription">
-                            <h1 className="font-bold text-lg">{ProjectList[0].title}</h1>
-                            <p className="text-md text-slate-500 font-medium">{ProjectList[0].description}</p>
-                            <ProjectTags tags={ProjectList[0].tags}/>
-                            <ProjectLinks githubUrl={ProjectList[0].githubUrl} livedemoUrl={ProjectList[0].livedemoUrl} />
-                        </div>
-                    </div> */}
-{/* 
-                    <div className="projectItem projectItem2 projectItemOdd">
-                        <div id="desktop" className="projectItemDesktop"/>
-                        <div id="mobile" className="projectItemMobile">
-                            <div/>
-                        </div>
-                        <div className="projectItemDescription">
-                            <h1 className="font-bold text-lg">{ProjectsList[1].title}</h1>
-                            <p className="text-md text-slate-500 font-medium">{ProjectsList[1].description}</p>
-                            <ProjectTags tags={ProjectsList[1].tags}/>
-                            <ProjectLinks githubUrl={ProjectsList[1].githubUrl} livedemoUrl={ProjectsList[1].livedemoUrl} />
-                        </div>
-                    </div>
-                    <div className="projectItem projectItem3">
-                        <div id="desktop" className="projectItemDesktop "/>
-                        <div id="mobile" className="projectItemMobile">
-                            <div/>
-                        </div>
-                        <div className="projectItemDescription">
-                            <h1 className="font-bold text-lg">{ProjectsList[2].title}</h1>
-                            <p className="text-md text-slate-500 font-medium">{ProjectsList[2].description}</p>
-                            <ProjectTags tags={ProjectsList[2].tags}/>
-                            <ProjectLinks githubUrl={ProjectsList[2].githubUrl} livedemoUrl={ProjectsList[2].livedemoUrl} />
-                        </div>
-                    </div>
-                    <div className="projectItem projectItem4 projectItemOdd">
-                        <div id="desktop" className="projectItemDesktop "/>
-                        <div id="mobile" className="projectItemMobile">
-                            <div/>
-                        </div>
-                        <div className="projectItemDescription">
-                            <h1 className="font-bold text-lg">{ProjectsList[3].title}</h1>
-                            <p className="text-md text-slate-500 font-medium">{ProjectsList[3].description}</p>
-                            <ProjectTags tags={ProjectsList[3].tags}/>
-                            <ProjectLinks githubUrl={ProjectsList[3].githubUrl} livedemoUrl={ProjectsList[3].livedemoUrl} />
-                        </div>
-                    </div>
-                    <div className="projectItem projectItem5">
-                        <div id="desktop" className="projectItemDesktop "/>
-                        <div id="mobile" className="projectItemMobile">
-                            <div/>
-                        </div>
-                        <div className="projectItemDescription">
-                            <h1 className="font-bold text-lg">{ProjectsList[3].title}</h1>
-                            <p className="text-md text-slate-500 font-medium">{ProjectsList[3].description}</p>
-                            <ProjectTags tags={ProjectsList[3].tags}/>
-                            <ProjectLinks githubUrl={ProjectsList[3].githubUrl} livedemoUrl={ProjectsList[3].livedemoUrl} />
-                        </div>
-                    </div> */}
             </div>
         </div>
     )
