@@ -9,7 +9,7 @@ export default function Hero() {
 
     return(
         <div className="sectionPadding md:!px-0 py-40 flex flex-col md:flex-row justify-center items-center gap-12 w-full h-[100vh] max-h-[1000px] bg-neutral-900 overflow-hidden">
-            <div className="w-full md:w-[40%] aspect-square">
+            <div className="w-full md:w-[40%] aspect-square z-10">
                 <EarthCanvas/>
             </div>
             <div className="flex flex-col w-full md:w-[500px] gap-4 text-center justify-center items-center md:text-left md:items-start bg-white p-8 rounded-2xl border-r-4 border-r-secondary-red hoverSmoothScale shadow-lg">
