@@ -12,7 +12,7 @@ export default function Hero() {
             <div className="w-full md:w-[40%] aspect-square">
                 <EarthCanvas/>
             </div>
-            <div className="flex flex-col w-full md:w-[500px] gap-4 text-center justify-center items-center md:text-left md:items-start bg-white p-8 rounded-2xl border-r-4 border-r-secondary-red hover:scale-105 shadow-lg">
+            <div className="flex flex-col w-full md:w-[500px] gap-4 text-center justify-center items-center md:text-left md:items-start bg-white p-8 rounded-2xl border-r-4 border-r-secondary-red hoverSmoothScale shadow-lg">
                 <div  className='flex flex-row w-fit justify-center items-center gap-4 md:order-3'>
                     <Links/>
                 </div>
