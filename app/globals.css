@@ -64,6 +64,11 @@ body {
   @apply w-full bg-secondary-red text-xl font-extrabold text-white p-4 hover:bg-accent-pink rounded-md
 }
 
+/* Hover Effects */
+.hoverSmoothScale {
+  @apply hover:scale-105 duration-300 ease-out transition-all
+}
+
 /* Navbar Component */
 .navbar__black {
   @apply bg-white text-slate-400
