@@ -69,6 +69,10 @@ body {
   @apply bg-white text-slate-400
 }
 
+.navbar-link {
+  @apply p-6 font-bold text-base hover:text-secondary-red target:text-secondary-red capitalize block w-full
+}
+
 /* Projects Component */
 .projectsList {
   @apply flex flex-col flex-wrap gap-8 md:gap-24
