@@ -45,9 +45,9 @@ export default function Projects() {
                     <h1 className="sectionOverline">{overline}</h1>
                     <h1 className="sectionHeader">{header}</h1>
                 </div>
-                <ul className="projectsList">
+                <div className="projectsList">
                     {ProjectList.map(({ id, thumbnailDesktop, thumbnailMobile, desktopAlt, mobileAlt, title, description, tags, githubUrl, livedemoUrl }) => (
-                            <li key={id} className="projectItem">
+                            <div key={id} className="projectItem">
                                 <div className="projectThumbnails">
                                     <div className="projectThumbnailDesktop">
                                         <img
@@ -72,10 +72,10 @@ export default function Projects() {
                                     <ProjectTags tags={tags}/>
                                     <ProjectLinks githubUrl={githubUrl} livedemoUrl={livedemoUrl} />
                                 </div>
-                            </li>
+                            </div>
                         ))
                     }
-                </ul>
+                </div>
                     {/* <div className="projectItem projectItem1">
                         <div id="desktop" className="projectItemDesktop "/>
                         <div id="mobile" className="projectItemMobile">
