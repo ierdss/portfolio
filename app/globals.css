@@ -71,19 +71,19 @@ body {
 
 /* Projects Component */
 .projectsList {
-  @apply flex flex-col flex-wrap gap-24
+  @apply flex flex-col flex-wrap gap-8 md:gap-24
 }
 
 .projectItem {
-  @apply flex flex-col lg:flex-row even:lg:flex-row-reverse rounded-xl gap-2 md:gap-8 relative w-full lg:min-h-[480px] lg:max-h-[480px]
+  @apply flex flex-col lg:flex-row rounded-xl gap-2 md:gap-8 relative w-full lg:min-h-[450px] lg:max-h-[450px] bg-white odd:lg:flex-row-reverse
 }
 
 .projectThumbnails {
-  @apply flex flex-row
+  @apply flex flex-col lg:flex-row
 }
 
 .projectThumbnailDesktop {
-  @apply w-full aspect-square lg:aspect-video rounded-xl shadow-xl overflow-hidden
+  @apply w-full h-auto  lg:aspect-video rounded-xl shadow-xl overflow-hidden
 }
 
 .projectThumbnailMobile {
@@ -91,15 +91,15 @@ body {
 }
 
 .projectThumbnailMobile > div {
-  @apply invisible lg:visible lg:flex min-h-[280px] max-h-[230px] w-[130px] md:h-auto rounded-xl shadow-xl overflow-hidden z-20 border-2 border-black absolute -bottom-6 -right-10 hover:scale-110
+  @apply invisible lg:visible lg:flex min-h-[280px] max-h-[230px] w-[130px] md:h-auto rounded-xl shadow-xl overflow-hidden z-20 border-2 border-black absolute -bottom-6 -right-8 hover:scale-110
 }
 
 .projectDetails {
-  @apply flex flex-col text-center justify-center gap-4 py-6 w-full lg:w-4/6 bg-white rounded-lg p-6 md:p-8 even:order-1
+  @apply flex flex-col justify-center gap-4 py-6 w-full lg:w-4/6 rounded-lg p-6 md:p-8
 }
 
 .projectTitle {
-  @apply font-bold text-lg
+  @apply font-bold text-xl
 }
 
 .projectDescription {
@@ -107,7 +107,7 @@ body {
 }
 
 .projectTags {
-  @apply flex flex-row flex-wrap justify-center items-start gap-3
+  @apply flex flex-row flex-wrap justify-center md:justify-start items-start gap-3
 }
 
 .projectTag {
@@ -115,12 +115,25 @@ body {
 }
 
 .projectLinks {
-  @apply flex flex-row justify-center items-center gap-8 w-full mt-6
+  @apply flex flex-row justify-center md:justify-start items-center gap-8 w-full mt-6
 }
 
 .projectLink {
   @apply flex flex-row gap-2 justify-center items-center hover:text-secondary-red
 }
+
+.projectDetails__top-row {
+  @apply flex
+}
+
+.projectDetails__middle-row {
+  @apply flex
+}
+
+.projectDetails__bottom-row {
+  @apply flex
+}
+
 
 /* Contact Component */
 .inputField {
