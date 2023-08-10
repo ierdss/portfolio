@@ -88,7 +88,10 @@ export const ProjectSectionContent = [
         thumbnailMobile:"/road-way-delivery__compressed-mobile-short.jpg",
         mobileAlt:"RWD full page on mobile",
         title:"Road Way Delivery",
-        description:"Road Way Delivery Service is a leading logistics company revolutionizing the industry with fast, reliable road transportation solutions. We specialize in secure, on-time deliveries for customers and businesses across local and regional destinations.",
+        description:
+        <div>
+           <p className='projectDescription'><span className='font-bold'>Road Way Delivery</span> Service is a leading logistics company revolutionizing the industry with fast, reliable road transportation solutions. We specialize in secure, on-time deliveries for customers and businesses across local and regional destinations.</p>
+        </div>,
         tags: [
             { id:1, tag: "Next.js" },
             { id:2, tag: "Typescript" },
@@ -105,7 +108,7 @@ export const ProjectSectionContent = [
         thumbnailMobile:"/road-way-delivery__compressed-mobile-short.jpg",
         mobileAlt:"RWD full page on mobile",
         title:"Sample Project",
-        description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
+        description: <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.</p>,
         tags: [
             { id:1, tag: "Next.js" },
             { id:2, tag: "Typescript" },
@@ -122,7 +125,7 @@ export const ProjectSectionContent = [
         thumbnailMobile:"/road-way-delivery__compressed-mobile-short.jpg",
         mobileAlt:"RWD full page on mobile",
         title:"Sample Project",
-        description:"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
+        description: <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.</p>,
         tags: [
             { id:1, tag: "Next.js" },
             { id:2, tag: "Typescript" },
@@ -139,7 +142,7 @@ export const ProjectSectionContent = [
         thumbnailMobile:"/road-way-delivery__compressed-mobile-short.jpg",
         mobileAlt:"RWD full page on mobile",
         title:"Sample Project",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
+        description: <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.</p>,
         tags: [
             { id:1, tag: "Next.js" },
             { id:2, tag: "Typescript" },
@@ -156,7 +159,7 @@ export const ProjectSectionContent = [
         thumbnailMobile:"/road-way-delivery__compressed-mobile-short.jpg",
         mobileAlt:"RWD full page on mobile",
         title:"Sample Project",
-        description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
+        description: <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.</p>,
         tags: [
             { id:1, tag: "Next.js" },
             { id:2, tag: "Typescript" },

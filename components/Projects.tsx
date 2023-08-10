@@ -66,11 +66,11 @@ export default function Projects() {
                                             />
                                         </div>
                                     </div>
-                                    <LuExpand size={40} className="projectThumbnailExpand"/>
+                                    <LuExpand size={30} className="projectThumbnailExpand"/>
                                 </div>
                                 <div className="projectDetails">
                                     <h1 className="projectTitle">{title}</h1>
-                                    <p className="projectDescription">{description}</p>
+                                    {description}
                                     <ProjectTags tags={tags}/>
                                     <ProjectLinks githubUrl={githubUrl} livedemoUrl={livedemoUrl} />
                                 </div>
