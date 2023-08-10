@@ -99,7 +99,7 @@ export default function Contact() {
                             method="POST" 
                             // onSubmit={handleSubmit}
                             className='flex flex-wrap w-full gap-3'>
-                            <span>Name</span>
+                            <span className="font-bold">Name*</span>
                             <input 
                                 type="text" 
                                 name='sender' 
@@ -108,7 +108,7 @@ export default function Contact() {
                                 placeholder='Enter your name..'
                                 className='w-full inputField focus:placeholder:italic'
                                 />
-                            <span>Email</span>
+                            <span className="font-bold">Email*</span>
                             <input 
                                 type="email" 
                                 name='email' 
@@ -117,7 +117,7 @@ export default function Contact() {
                                 placeholder='Enter your email..'
                                 className='w-full inputField focus:placeholder:italic'
                                 />
-                            <span>Message</span>
+                            <span className="font-bold">Message*</span>
                             <textarea 
                                 rows={7}
                                 name='message'
