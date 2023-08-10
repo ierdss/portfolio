@@ -79,7 +79,7 @@ body {
 }
 
 .projectItem {
-  @apply flex flex-col lg:flex-row rounded-xl gap-2 md:gap-10 relative w-full lg:min-h-[450px] lg:max-h-[450px] bg-white odd:lg:flex-row-reverse odd:lg:gap-0 odd:lg:pr-10 border-b-4 border-b-secondary-red lg:border-b-0 odd:lg:border-l-4 odd:lg:border-l-secondary-red even:lg:border-r-4 even:lg:border-r-secondary-red snap-center shrink-0
+  @apply flex flex-col lg:flex-row rounded-xl gap-2 md:gap-10 relative w-full lg:min-h-[450px] lg:max-h-[450px] odd:lg:flex-row-reverse odd:lg:gap-0 odd:lg:pr-10 border-b-4 border-b-secondary-red lg:border-b-0 odd:lg:border-l-4 odd:lg:border-l-secondary-red even:lg:border-r-4 even:lg:border-r-secondary-red snap-center shrink-0 drop-shadow-xl bg-white
 }
 
 .projectThumbnails {
@@ -87,7 +87,7 @@ body {
 }
 
 .projectThumbnailDesktop {
-  @apply w-full h-auto  lg:aspect-video rounded-xl shadow-xl overflow-hidden
+  @apply w-full h-auto  lg:aspect-video rounded-xl shadow-md overflow-hidden
 }
 
 .projectThumbnailMobile {
@@ -95,7 +95,7 @@ body {
 }
 
 .projectThumbnailMobile > div {
-  @apply invisible lg:visible lg:flex min-h-[280px] max-h-[230px] w-[130px] md:h-auto rounded-xl shadow-xl overflow-hidden z-20 border-2 border-black absolute -bottom-6 -right-8 hover:scale-110
+  @apply invisible lg:visible lg:flex min-h-[280px] max-h-[230px] w-[130px] md:h-auto rounded-xl shadow-md overflow-hidden z-20 border-2 border-black absolute -bottom-6 -right-8 hover:scale-110
 }
 
 .projectThumbnailExpand {
