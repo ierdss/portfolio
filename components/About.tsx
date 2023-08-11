@@ -1,10 +1,9 @@
-import { ServiceCard } from './cards/ServiceCards';
-import { AboutSectionContent as content } from '@/constants/SectionContent'
 import { AboutSectionHeading } from '@/constants/SectionHeading';
 
 import { TechnologiesSectionContent as TechList } from '@/constants/SectionContent'
 import { ReactNode } from 'react';
 import { motion } from 'framer-motion'
+import ServicesCardGallery from './ServicesCardGallery';
 
 type TechListProps = {
     technologies: Array<TechProps>;
@@ -45,21 +44,8 @@ export default function About() {
                     ))}
                     <TechGroup technologies={TechList}/>
                 </div>
-                <div className='w-full md:w-1/2 flex flex-row gap-4 py-12 md:py-16'>
-                    <div className='flex flex-col gap-4'>
-                        <ServiceCard 
-                            icon={content[0].icon} 
-                            title={content[0].title} 
-                            paragraph={content[0].paragraph}
-                            colorType='serviceCard__black'
-                        />
-                        <ServiceCard colorType="serviceCard__red"/>
-                        <ServiceCard colorType='serviceCard__image'/>
-                    </div>
-                    <div className='flex flex-col gap-4 mt-[110px]'>
-                        <ServiceCard colorType="serviceCard__red"/>
-                        <ServiceCard/>
-                    </div>
+                <div className='w-full md:w-1/2'>
+                    <ServicesCardGallery/>
                 </div>
             </div>
         </div>
