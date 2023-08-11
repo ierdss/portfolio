@@ -86,8 +86,8 @@ body {
 }
 
 /* Navbar Component */
-.navbar__black {
-  @apply bg-white text-slate-400
+.navbar__scrolled {
+  @apply shadow-lg
 }
 
 .navbar-link {
