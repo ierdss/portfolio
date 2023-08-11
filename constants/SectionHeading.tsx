@@ -9,6 +9,8 @@ export const AboutSectionHeading = {
     paragraphs: [
         { id:1, paragraph:"Sample muna. I'm a natural problem solver, eversince I was a kid I enjoyed building   contraptions with lego, solving puzzles, and tinkering my curiosity away. This not only honed my interest in building things but it also polished my persistence and what led me to pursue this career." 
         },
+        { id:2, paragraph:"Sample muna. I'm a natural problem solver, eversince I was a kid I enjoyed building   contraptions with lego, solving puzzles, and tinkering my curiosity away. This not only honed my interest in building things but it also polished my persistence and what led me to pursue this career." 
+        },
     ]
 }
 
