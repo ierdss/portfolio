@@ -94,6 +94,10 @@ body {
   @apply p-6 font-bold text-base hover:text-secondary-red target:text-secondary-red capitalize block w-full
 }
 
+/* Hero Component  */
+
+
+
 /* Projects Component */
 .projectsList {
   @apply flex flex-col flex-wrap gap-8 md:gap-24 snap-proximity snap-y
