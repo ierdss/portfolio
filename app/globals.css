@@ -156,3 +156,60 @@ body {
 .textArea {
   @apply h-[190px] resize-none
 }
+
+/* Components */
+.serviceCard, .serviceCard__black, .serviceCard__red {
+  @apply hoverSmoothScale flex flex-col w-full min-h-[240px] md:min-h-[200px] max-h-[280px] items-center text-center py-6 px-4 md:px-6 rounded-xl overflow-hidden 
+}
+
+.serviceCard > div, .serviceCard__black > div, .serviceCard__red > div {
+  @apply  mb-5
+}
+
+.serviceCard > h1, .serviceCard__black > h1, .serviceCard__red > h1 {
+  @apply  mb-2 font-bold text-lg capitalize
+}
+
+.serviceCard > p, .serviceCard__black > p, .serviceCard__red > p {
+  @apply text-sm font-bold
+}
+
+.serviceCard__black, .serviceCard__red {
+  @apply hover:shadow-lg 
+}
+
+.serviceCard__black > div, .serviceCard__red > div {
+  @apply text-white
+}
+
+.serviceCard__black > h1, .serviceCard__red > h1 {
+  @apply text-white
+}
+
+.serviceCard__black > p, .serviceCard__red > p {
+  @apply text-white
+}
+
+.serviceCard {
+  @apply hover:text-secondary-red shadow-inner shadow-slate-400 hover:shadow-lg hover:border hover:border-slate-300
+}
+
+.serviceCard__black {
+  @apply bg-neutral-800
+}
+
+.serviceCard__red {
+  @apply bg-secondary-red
+}
+
+.serviceCard > div {
+  @apply text-secondary-red
+}
+
+.serviceCard > h1 {
+  @apply capitalize
+}
+
+.serviceCard > p {
+  @apply text-slate-600
+}

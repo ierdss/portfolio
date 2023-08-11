@@ -7,18 +7,17 @@ interface Card {
     icon?: ReactNode;
     title?: string;
     paragraph?: string;
+    colorType?: string;
 }
 
 type ServiceCardProps = Omit<Card, "id">
 
-export function ServiceCard({ icon, title, paragraph }:ServiceCardProps) {
+export function ServiceCard({ icon, title, paragraph, colorType }:ServiceCardProps) {
     return(
-        <div className="hoverSmoothScale flex flex-col w-full md:w-[320px] h-[220px] items-center text-center py-6 px-12 rounded-xl border-2 border-slate-100 hover:text-secondary-red hover:border-3 hover:shadow-2xl group relative overflow-hidden bg-gray-200 text-sm font-medium text-slate-800 focus:outline-none focus:ring hover:border-3">
-            <div className="text-secondary-red mb-5">{icon || <BsQuestionOctagon size={40} />}</div>
-            <h1 className="font-bold text-lg capitalize">{title || "Sample"}</h1>
-            <p className="font-medium text-slate-600 text-xm">{paragraph || "Lorem ipsum amet consectetur, adipisicing elit. Tenetur error, rem officia?"}</p> 
-            <span className="ease absolute right-0 top-0 h-0 w-0 border-r-2 border-secondary-red transition-all duration-700 group-hover:h-full"></span>
-            <span className="ease absolute bottom-0 left-0 h-0 w-0 border-l-2 border-secondary-red transition-all duration-700 group-hover:h-full"></span>
+        <div className={colorType || "serviceCard"}>
+            <div>{icon || <BsQuestionOctagon size={40} />}</div>
+            <h1>{title || "Sample"}</h1>
+            <p>{paragraph || "Lorem ipsum amet consectetur, adipisicing elit. Tenetur error, rem officia?"}</p> 
         </div>
     )
 }
