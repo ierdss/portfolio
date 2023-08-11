@@ -159,7 +159,7 @@ body {
 
 /* Components */
 .serviceCard, .serviceCard__black, .serviceCard__red, .serviceCard__image {
-  @apply hoverSmoothScale flex flex-col w-full min-h-[240px] md:min-h-[200px] max-h-[280px] items-center text-center py-6 px-4 md:px-6 rounded-xl overflow-hidden 
+  @apply hoverSmoothScale flex flex-col w-full min-h-[240px] md:min-h-[200px] max-h-[280px] items-center text-center py-6 px-4 md:px-6 rounded-xl overflow-hidden md:text-left md:items-start
 }
 
 .serviceCard > div, .serviceCard__black > div, .serviceCard__red > div {
