@@ -98,7 +98,7 @@ body {
 
 /* Grid Component */
 .gridSquare {
-  @apply w-full rounded-xl border-2 border-slate-300
+  @apply w-full rounded-xl shadow-md overflow-hidden
 }
 
 .gridSquare__small, .gridSquare__big {
@@ -115,6 +115,10 @@ body {
 
 .gridSquare__big {
   @apply col-span-2 row-span-2
+}
+
+.gridImage {
+  @apply hover:scale-110 ease-in-out duration-500 transition-all
 }
 
 /* Projects Component */
