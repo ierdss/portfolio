@@ -4,6 +4,7 @@ import { AboutSectionHeading } from '@/constants/SectionHeading';
 
 import { TechnologiesSectionContent as TechList } from '@/constants/SectionContent'
 import { ReactNode } from 'react';
+import { motion } from 'framer-motion'
 
 type TechListProps = {
     technologies: Array<TechProps>;
@@ -18,13 +19,13 @@ type TechProps = {
 
 const TechGroup = ({technologies}:TechListProps ) => {
     return(
-        <ul className='grid grid-cols-4 gap-4 w-full mt-8'>
+        <motion.ul className='grid grid-cols-4 gap-4 w-full mt-8'>
             {technologies.map(({id, icon}) => (
                 <li key={id} className='flex justify-center items-center w-full aspect-square rounded-xl shadow-inner shadow-slate-400'>
                     {icon}
                 </li>
             ))}
-        </ul>
+        </motion.ul>
     )
 }
 
@@ -34,7 +35,7 @@ export default function About() {
     return(
         <div id="about" className="sectionPadding w-full text-center flex justify-center items-center md:text-left flex-col gap-24">
             <div className="flex flex-row flex-wrap w-full">
-                <div className='flex flex-col gap-4 w-full md:w-1/2 md:pr-16'>
+                <div className='flex flex-col gap-4 w-full md:w-1/2 md:pr-16 justify-center'>
                     <div className='w-full'>
                         <h1 className="sectionOverline">{overline}</h1>
                         <h1 className="sectionHeader">{header}</h1>
