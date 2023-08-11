@@ -27,6 +27,7 @@ export default function About() {
                                 colorType='serviceCard__black'
                             />
                             <ServiceCard colorType="serviceCard__red"/>
+                            <ServiceCard colorType='serviceCard__image'/>
                         </div>
                         <div className='flex flex-col gap-4 mt-[110px]'>
                             <ServiceCard colorType="serviceCard__red"/>
