@@ -60,8 +60,8 @@ export const TechnologiesSectionContent = [
         title:"Styling",
         skills: [
             { id:1, title:"CSS3", icon:<FaCss3Alt size={skillIconSize} color={`#2965f1`} /> },
-            { id:2, title:"Tailwind", icon:<SiTailwindcss size={skillIconSize} color={`#cc6699`} /> },
-            { id:3, title:"Sass", icon:<FaSass size={skillIconSize} color={`#67e8f9`} /> },
+            { id:2, title:"Tailwind", icon:<SiTailwindcss size={skillIconSize} color={`#67e8f9`} /> },
+            { id:3, title:"Sass", icon:<FaSass size={skillIconSize} color={`#cc6699`} /> },
         ]
     },
     { 
