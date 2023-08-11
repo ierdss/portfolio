@@ -5,10 +5,7 @@ import { Hero, StarsCanvas, About, Projects, Contact, Technologies } from '@/com
 export default function Home() {
   return (
     <main className="flex flex-col w-full">
-      <div className='relative z-0'>
-        <Hero/>
-        <StarsCanvas/>
-      </div>
+      <Hero/>
       <About/>
       <Projects/>
       <Contact/>

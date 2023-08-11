@@ -2,17 +2,17 @@
 
 import Links from "./minor/Links";
 import { HeroSectionHeading} from "@/constants/SectionHeading";
-import { EarthCanvas } from "./canvas";
+import GalleryGrid from "./minor/GalleryGrid";
 
 export default function Hero() {
     const { header, subheader } = HeroSectionHeading;
 
     return(
-        <div className="sectionPadding md:!px-0 py-40 flex flex-col md:flex-row justify-center items-center gap-12 w-full h-[100vh] max-h-[1000px] bg-neutral-900 overflow-hidden">
-            <div className="w-full md:w-[40%] aspect-square z-10">
-                <EarthCanvas/>
+        <div className="sectionPadding md:!pt-44 flex flex-col md:flex-row justify-center items-center gap-12 w-full overflow-hidden">
+            <div className="w-full lg:w-[35%] z-10">
+                <GalleryGrid />
             </div>
-            <div className="flex flex-col w-full md:w-[500px] gap-4 text-center justify-center items-center md:text-left md:items-start bg-white p-8 rounded-2xl border-r-4 border-r-secondary-red hoverSmoothScale shadow-lg">
+            <div className="flex flex-col w-full md:w-[500px] gap-4 text-center justify-center items-center md:text-left md:items-start md:p-8">
                 <div  className='flex flex-row w-fit justify-center items-center gap-4 md:order-3'>
                     <Links/>
                 </div>
