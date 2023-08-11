@@ -94,9 +94,28 @@ body {
   @apply p-6 font-bold text-base hover:text-secondary-red target:text-secondary-red capitalize block w-full
 }
 
-/* Hero Component  */
+/* Hero Section  */
 
+/* Grid Component */
+.gridSquare {
+  @apply w-full rounded-xl border-2 border-slate-300
+}
 
+.gridSquare__small, .gridSquare__big {
+  @apply aspect-square
+}
+
+.gridSquare__tall {
+  @apply row-span-2
+}
+
+.gridSquare__long {
+  @apply col-span-2
+}
+
+.gridSquare__big {
+  @apply col-span-2 row-span-2
+}
 
 /* Projects Component */
 .projectsList {
