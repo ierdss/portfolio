@@ -211,7 +211,7 @@ body {
 }
 
 .serviceCard__image {
-  @apply bg-home-texture bg-center bg-cover bg-no-repeat mix-blend-multiply bg-pink-400
+  @apply bg-home-texture bg-center bg-cover bg-no-repeat
 }
 
 .serviceCard__image > div {
