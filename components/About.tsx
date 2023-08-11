@@ -18,9 +18,9 @@ type TechProps = {
 
 const TechGroup = ({technologies}:TechListProps ) => {
     return(
-        <ul className='grid grid-cols-4 gap-4 w-full mt-12'>
+        <ul className='grid grid-cols-4 gap-4 w-full mt-8'>
             {technologies.map(({id, icon}) => (
-                <li key={id} className='flex justify-center items-center p-6 rounded-xl shadow-inner shadow-slate-400'>
+                <li key={id} className='flex justify-center items-center w-full aspect-square rounded-xl shadow-inner shadow-slate-400'>
                     {icon}
                 </li>
             ))}
