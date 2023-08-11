@@ -20,7 +20,7 @@ const TechGroup = ({technologies}:TechListProps ) => {
     return(
         <motion.ul className='grid grid-cols-4 gap-4 w-full mt-8'>
             {technologies.map(({id, icon}) => (
-                <li key={id} className='flex justify-center items-center w-full aspect-square rounded-xl shadow-inner shadow-slate-400'>
+                <li key={id} className='flex justify-center items-center w-full aspect-square rounded-xl shadow-inner shadow-slate-400 hover:shadow-lg scale-95 hover:scale-100'>
                     {icon}
                 </li>
             ))}
