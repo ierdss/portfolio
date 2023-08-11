@@ -16,21 +16,21 @@ export default function Navbar() {
         setNav(!nav)
     )
 
-    // useEffect(() => {
-    //     const onScroll = () => {
-    //         const navbar = document.getElementById("navbar")!;
-    //         const distance = 50;
-    //         if (document.documentElement.scrollTop > distance) {
-    //             navbar.classList.add("navbar__black");
-    //         } else {
-    //             navbar.classList.remove("navbar__black");
-    //         }
-    //     }
-    //     window.addEventListener("scroll", onScroll);
-    // }, []);
+    useEffect(() => {
+        const onScroll = () => {
+            const navbar = document.getElementById("navbar")!;
+            const distance = 50;
+            if (document.documentElement.scrollTop > distance) {
+                navbar.classList.add("navbar__scrolled");
+            } else {
+                navbar.classList.remove("navbar__scrolled");
+            }
+        }
+        window.addEventListener("scroll", onScroll);
+    }, []);
 
     return(
-    <nav id='navbar' className='flexCenter py-4 md:py-2 px-6 md:px-12 w-full fixed top-0 !z-40 max-w-screen-xl bg-transparent text-slate-200 shadow-lg'>
+    <nav id='navbar' className='flexCenter py-4 md:py-2 px-6 md:px-12 w-full fixed top-0 !z-40 max-w-screen-xl bg-white text-slate-500'>
         <ProgressBar 
             color1   = "#e2e8f0" 
             color2   = "#B40041" 
