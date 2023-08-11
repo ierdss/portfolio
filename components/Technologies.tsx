@@ -52,10 +52,10 @@ const Technologies = () => {
                     <h1 className="sectionOverline">{overline} //Ayusin mo to mamaya</h1>
                     <h1 className="sectionHeader">{header}</h1>
                 </div>
-                <SkillRow title={TechList[0].title} skills={TechList[0].skills}/>
+                {/* <SkillRow title={TechList[0].title} skills={TechList[0].skills}/>
                 <SkillRow title={TechList[1].title} skills={TechList[1].skills}/>
                 <SkillRow title={TechList[2].title} skills={TechList[2].skills}/>
-                <SkillRow title={TechList[3].title} skills={TechList[3].skills}/>
+                <SkillRow title={TechList[3].title} skills={TechList[3].skills}/> */}
             </div>
         </div>
     )
