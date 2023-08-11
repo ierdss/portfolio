@@ -127,7 +127,7 @@ body {
 }
 
 .projectItem {
-  @apply flex flex-col lg:flex-row rounded-xl gap-2 md:gap-10 relative w-full lg:min-h-[450px] lg:max-h-[450px] odd:lg:flex-row-reverse odd:lg:gap-0 odd:lg:pr-10 border-b-2 border-b-secondary-red lg:border-b-0 odd:lg:border-l-2 odd:lg:border-l-secondary-red even:lg:border-r-2 even:lg:border-r-secondary-red snap-center shrink-0 drop-shadow-xl bg-white
+  @apply flex flex-col lg:flex-row rounded-xl gap-2 md:gap-10 relative w-full lg:min-h-[450px] lg:max-h-[450px] odd:lg:flex-row-reverse odd:lg:gap-0 odd:lg:pr-10 border-b-2 border-b-secondary-red lg:border-b-0 odd:lg:border-l-2 odd:lg:border-l-secondary-red even:lg:border-r-2 even:lg:border-r-secondary-red snap-center shrink-0 drop-shadow-xl bg-white shadow-inner shadow-slate-300
 }
 
 .projectThumbnails {
