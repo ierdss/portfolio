@@ -50,34 +50,14 @@ export const AboutSectionContent = [
 ]
 
 export const TechnologiesSectionContent = [
-    { 
-        title:"Markup",
-        skills: [
-            { id:1, title:"HTML5", icon:<FaHtml5 size={skillIconSize} color={`#f06529`} /> },
-        ]
-    },
-    { 
-        title:"Styling",
-        skills: [
-            { id:1, title:"CSS3", icon:<FaCss3Alt size={skillIconSize} color={`#2965f1`} /> },
-            { id:2, title:"Tailwind", icon:<SiTailwindcss size={skillIconSize} color={`#67e8f9`} /> },
-            { id:3, title:"Sass", icon:<FaSass size={skillIconSize} color={`#cc6699`} /> },
-        ]
-    },
-    { 
-        title:"Programming Language",
-        skills: [
-            { id:1, title:"Javascript", icon:<IoLogoJavascript size={skillIconSize} color={`#ecd120`} /> },
-            { id:2, title:"Typescript", icon:<BiLogoTypescript size={skillIconSize} color={`#007acc`} /> },
-        ]
-    },
-    { 
-        title:"Libraries and Frameworks",
-        skills: [
-            { id:1, title:"React.js", icon:<FaReact size={skillIconSize} color={`#61dbfb`} /> },
-            { id:2, title:"Next.js", icon:<SiNextdotjs size={skillIconSize} color={`#171515`} /> },
-        ]
-    },
+    { id:1, title:"HTML5", group:"markup", icon:<FaHtml5 size={skillIconSize} color={`#f06529`} /> },
+    { id:2, title:"CSS3", group:"styling", icon:<FaCss3Alt size={skillIconSize} color={`#2965f1`} /> },
+    { id:3, title:"Tailwind", group:"styling", icon:<SiTailwindcss size={skillIconSize} color={`#67e8f9`} /> },
+    { id:4, title:"Sass", group:"styling", icon:<FaSass size={skillIconSize} color={`#cc6699`} /> },
+    { id:5, title:"Javascript", group:"programming", icon:<IoLogoJavascript size={skillIconSize} color={`#ecd120`} /> },
+    { id:6, title:"Typescript", group:"programming", icon:<BiLogoTypescript size={skillIconSize} color={`#007acc`} /> },
+    { id:7, title:"React.js", group:"library", icon:<FaReact size={skillIconSize} color={`#61dbfb`} /> },
+    { id:8, title:"Next.js", group:"framework", icon:<SiNextdotjs size={skillIconSize} color={`#171515`} /> },
 ]
 
 export const ProjectSectionContent = [

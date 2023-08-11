@@ -10,7 +10,6 @@ export default function Home() {
         <StarsCanvas/>
       </div>
       <About/>
-      <Technologies/>
       <Projects/>
       <Contact/>
     </main>
