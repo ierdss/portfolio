@@ -44,7 +44,6 @@ export default function About() {
                     ))}
                     <TechGroup technologies={TechList}/>
                 </div>
-                {/* <ServiceCards cards={AboutSectionContent}/> */}
                 <div className='w-full md:w-1/2 flex flex-row gap-4 py-12 md:py-16'>
                     <div className='flex flex-col gap-4'>
                         <ServiceCard 
