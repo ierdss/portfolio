@@ -9,7 +9,7 @@ export default function Hero() {
 
     return(
         <div className="sectionPadding md:!pt-44 flex flex-col md:flex-row justify-center items-center gap-12 w-full overflow-hidden">
-            <div className="w-full lg:w-[35%] z-10">
+            <div className="w-full lg:w-[40%] z-10">
                 <GalleryGrid />
             </div>
             <div className="flex flex-col w-full md:w-[500px] gap-4 text-center justify-center items-center md:text-left md:items-start md:p-8">
