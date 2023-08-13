@@ -67,19 +67,17 @@ export const ProjectSectionContent = [
         desktopAlt:"RWD full page on desktop",
         thumbnailMobile:"/road-way-delivery__compressed-mobile-short.jpg",
         mobileAlt:"RWD full page on mobile",
-        title:"Road Way Delivery",
-        description:
-        <div>
-           <p className='projectDescription'><span className='font-bold'>Road Way Delivery</span> Service is a leading logistics company revolutionizing the industry with fast, reliable road transportation solutions. We specialize in secure, on-time deliveries for customers and businesses across local and regional destinations.</p>
-        </div>,
+        title:"Sample Project",
+        subtitle:"Artificial Intelligence",
+        description: <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.</p>,
         tags: [
             { id:1, tag: "Next.js" },
             { id:2, tag: "Typescript" },
             { id:3, tag: "Tailwind" },
             { id:4, tag: "CSS" },
         ],
-        githubUrl:"https://github.com/LordBrim/andrei-portfolio",
-        livedemoUrl:"https://roadwaydelivery.vercel.app",
+        githubUrl:"/",
+        livedemoUrl:"/",
     },
     {
         id: 2,
@@ -87,7 +85,8 @@ export const ProjectSectionContent = [
         desktopAlt:"RWD full page on desktop",
         thumbnailMobile:"/road-way-delivery__compressed-mobile-short.jpg",
         mobileAlt:"RWD full page on mobile",
-        title:"Sample Project",
+        title:"Sample Project",        
+        subtitle:"e-commerce shop",
         description: <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.</p>,
         tags: [
             { id:1, tag: "Next.js" },
@@ -105,6 +104,7 @@ export const ProjectSectionContent = [
         thumbnailMobile:"/road-way-delivery__compressed-mobile-short.jpg",
         mobileAlt:"RWD full page on mobile",
         title:"Sample Project",
+        subtitle:"instant messaging",
         description: <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.</p>,
         tags: [
             { id:1, tag: "Next.js" },
@@ -121,16 +121,20 @@ export const ProjectSectionContent = [
         desktopAlt:"RWD full page on desktop",
         thumbnailMobile:"/road-way-delivery__compressed-mobile-short.jpg",
         mobileAlt:"RWD full page on mobile",
-        title:"Sample Project",
-        description: <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.</p>,
+        title:"Road Way Delivery",
+        subtitle:"Transport Service",
+        description:
+        <div>
+           <p className='projectDescription'><span className='font-bold'>Road Way Delivery</span> Service is a leading logistics company revolutionizing the industry with fast, reliable road transportation solutions. We specialize in secure, on-time deliveries for customers and businesses across local and regional destinations.</p>
+        </div>,
         tags: [
             { id:1, tag: "Next.js" },
             { id:2, tag: "Typescript" },
             { id:3, tag: "Tailwind" },
             { id:4, tag: "CSS" },
         ],
-        githubUrl:"/",
-        livedemoUrl:"/",
+        githubUrl:"https://github.com/LordBrim/andrei-portfolio",
+        livedemoUrl:"https://roadwaydelivery.vercel.app",
     },
     {
         id: 5,
@@ -139,6 +143,7 @@ export const ProjectSectionContent = [
         thumbnailMobile:"/road-way-delivery__compressed-mobile-short.jpg",
         mobileAlt:"RWD full page on mobile",
         title:"Sample Project",
+        subtitle:"Video Sharing",
         description: <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.</p>,
         tags: [
             { id:1, tag: "Next.js" },
