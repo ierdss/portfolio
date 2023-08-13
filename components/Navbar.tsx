@@ -30,11 +30,11 @@ export default function Navbar() {
     }, []);
 
     return(
-    <nav id='navbar' className='flexCenter py-4 md:py-2 px-6 md:px-12 w-full fixed top-0 !z-40 max-w-screen-xl bg-white text-slate-500'>
+    <nav id='navbar' className='flexCenter pt-2 pb-1 md:pt-[5x] md:pb-0 px-6 md:px-12 w-full fixed top-0 !z-40 max-w-screen-xl bg-white text-slate-500'>
         <ProgressBar 
             color1   = "#e2e8f0" 
             color2   = "#B40041" 
-            height   = "6px"
+            height   = "5px"
             position = "fixed" 
         />
         <div className='flex-1 flexBetween gap-10 md:gap-16 justify-center items-center'>
@@ -42,15 +42,15 @@ export default function Navbar() {
                 <h1 className='text-4xl font-black bg-clip-text bg-clip text-transparent bg-cover bg-center bg-home-texture hover:text-secondary-red'>ANDREI</h1>
             </Link>
             <div className='lg:flex hidden gap-10'>
-                <ul id='navbar-links' className='flex flex-row gap-2'>
+                <ul id='navbar-links' className='flex flex-row'>
                     {NavLinks.map(({ id, href, text}) => (
                         <li key={id}>
-                        <Link
-                            href={href} 
-                            className='navbar-link'
-                            >
-                            {text}
-                        </Link>
+                            <Link
+                                href={href} 
+                                className='navbar-link'
+                                >
+                                {text}
+                            </Link>
                         </li>
                     ))}
                 </ul>
@@ -61,7 +61,7 @@ export default function Navbar() {
         </div>
         <div className={nav ? "flex flex-col justify-between items-center gap-8 bg-white w-full h-full fixed top-0 right-0 lg:hidden z-50 ease-in-out duration-500" : "flex flex-col justify-between items-center gap-8 bg-white w-full h-full fixed top-0 right-[-100%] lg:hidden z-50 ease-in-out duration-500"}>
             <ul id='navbar-links' className='flex flex-col w-full text-slate-400 gap-4'>
-                <div onClick={handleNav} className="flex w-full justify-between items-center py-4 px-6">
+                <div onClick={handleNav} className="flex w-full justify-between items-center pt-2 pb-1 px-6">
                     <h1 className='text-4xl font-black bg-clip-text bg-clip text-transparent bg-cover bg-center bg-home-texture hover:text-secondary-red'>ANDREI</h1>
                     <RxCross2 size={sizeIcon}/>
                 </div>
