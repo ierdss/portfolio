@@ -155,7 +155,7 @@ body {
 }
 
 .projectDetails {
-  @apply flex flex-col justify-center items-center lg:items-start gap-4 py-6 px-4 md:px-6 w-full lg:w-[40%] rounded-lg text-center lg:text-left
+  @apply flex flex-col justify-center items-center lg:items-start gap-4 py-6 px-6 md:px-8 w-full lg:w-[40%] rounded-lg text-center lg:text-left
 }
 
 .projectTitle {
@@ -163,7 +163,7 @@ body {
 }
 
 .projectDescription {
-  @apply text-base text-slate-500 font-medium text-justify
+  @apply text-base text-slate-500 font-medium text-justify lg:text-left
 }
 
 .projectTags {
