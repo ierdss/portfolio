@@ -98,7 +98,7 @@ body {
 
 /* Grid Component */
 .gridSquare {
-  @apply w-full rounded-xl shadow-md overflow-hidden
+  @apply w-full rounded-xl shadow-xl overflow-hidden
 }
 
 .gridSquare__small, .gridSquare__big {
