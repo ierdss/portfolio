@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@nadfri/react-scroll-progress-bar": "^0.2.3",
     "@react-three/drei": "^9.80.1",
     "@react-three/fiber": "^8.13.6",
@@ -19,6 +20,7 @@
     "@types/react-dom": "18.2.6",
     "autoprefixer": "10.4.14",
     "disable-scroll": "^0.6.0",
+    "dotenv": "^16.3.1",
     "framer-motion": "^10.15.0",
     "maath": "^0.7.0",
     "next": "^13.4.8",

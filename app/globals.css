@@ -188,7 +188,7 @@ body {
 
 /* Contact Component */
 .inputField {
-  @apply border border-solid border-slate-400 rounded-md p-4 w-full focus:placeholder:italic focus:outline-secondary-red
+  @apply border border-solid border-slate-400 rounded-md p-3 w-full focus:placeholder:italic focus:outline-secondary-red text-black 
 }
 
 .textArea {

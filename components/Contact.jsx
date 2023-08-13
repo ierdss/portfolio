@@ -2,9 +2,8 @@ import { ContactSectionHeading } from '@/constants/SectionHeading'
 import { useRef, useState } from 'react';
 import ContactGrid from './minor/ContactGrid';
 
-// template_p6ks3sk
-// service_ar3a3ho
-// GRURLN1e8fG0Plvov
+import emailjs from "@emailjs/browser";
+import 'dotenv/config'
 
 export default function Contact() {
     const { overline, header, subheader } = ContactSectionHeading;
@@ -18,8 +17,8 @@ export default function Contact() {
   
     const [loading, setLoading] = useState(false);
 
-    const handleChange = (e) => {
-      const { target } = e;
+    const handleChange = (event) => {
+      const { target } = event;
       const { name, value } = target;
   
       setForm({
@@ -28,22 +27,22 @@ export default function Contact() {
       });
     };
   
-    const handleSubmit = (e) => {
-      e.preventDefault();
+    const handleSubmit = (event) => {
+      event.preventDefault();
       setLoading(true);
   
       emailjs
         .send(
-          import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-          import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+          process.env.NEXT_EMAILJS_SERVICE_ID,
+          process.env.NEXT_EMAILJS_TEMPLATE_ID,
           {
             from_name: form.name,
-            to_name: "JavaScript Mastery",
+            to_name: "Andrei",
             from_email: form.email,
-            to_email: "sujata@jsmastery.pro",
+            to_email: "andreiwork25@gmail.com",
             message: form.message,
           },
-          import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+          process.env.NEXT_EMAILJS_PUBLIC_KEY
         )
         .then(
           () => {
@@ -75,43 +74,49 @@ export default function Contact() {
                   <h1 className="sectionOverline !text-white">{overline}</h1>
                   <h1 className="sectionHeader">{header}</h1>
               </div>
-              <p className='w-full'>
+              <p className='w-full normal-case'>
                   {subheader}
               </p>
               <div className="flex-1 flex flex-col gap-4 w-full">
                   <form 
-                      action="https://data.endpoint.space/cljvd1c0f006008l4400sjt6m"
-                      method="POST" 
-                      // onSubmit={handleSubmit}
-                      className='flex flex-wrap w-full gap-3'>
-                      <span className="font-bold">Name*</span>
+                      ref={formRef}
+                      onSubmit={handleSubmit}
+                      className='flex flex-wrap w-full gap-3'
+                  >
+                    <label className='flex flex-col w-full'>
+                      <span className="font-bold text-left">Name*</span>
                       <input 
-                          type="text" 
-                          name='sender' 
+                          type="text"
+                          name='name'
                           value={form.name}
-                          // onChange={handleChange}
+                          onChange={handleChange}
                           placeholder='Enter your name..'
-                          className='w-full inputField focus:placeholder:italic'
+                          className='inputField'
                           />
-                      <span className="font-bold">Email*</span>
+                    </label>
+                    <label className='flex flex-col w-full'>
+                      <span className="font-bold text-left">Email*</span>
                       <input 
-                          type="email" 
-                          name='email' 
-                          value={form.name}
-                          // onChange={handleChange}
+                          type="email"
+                          name='email'
+                          value={form.email}
+                          onChange={handleChange}
                           placeholder='Enter your email..'
-                          className='w-full inputField focus:placeholder:italic'
+                          className='inputField'
                           />
-                      <span className="font-bold">Message*</span>
+                    </label>
+                    <label className='flex flex-col w-full'>
+                      <span className="font-bold text-left">Message*</span>
                       <textarea 
                           rows={7}
                           name='message'
-                          value={form.name}
-                          // onChange={handleChange}
+                          value={form.message}
+                          onChange={handleChange}
                           placeholder='Write your message..'
-                          className='inputField textArea '
+                          className='inputField textArea'
                           />
-                      <button type='submit' className='w-full callToAction mt-2'>Send</button>
+                    </label>
+                    <button type='submit' className='w-full callToAction mt-2'>{loading ? "Sending..." : "Send"}</button>
                   </form>
               </div>
           </div>
