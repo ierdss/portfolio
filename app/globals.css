@@ -163,7 +163,7 @@ body {
 }
 
 .projectDescription {
-  @apply text-base text-slate-500 font-medium text-justify lg:text-left
+  @apply text-base text-slate-500 font-medium text-justify lg:text-left normal-case
 }
 
 .projectTags {
@@ -175,7 +175,7 @@ body {
 }
 
 .projectTag {
-  @apply py-2 px-4 justify-center items-start border border-solid border-slate-300 rounded-full font-medium text-xs
+  @apply py-2 px-4 justify-center items-start border border-solid border-slate-300 rounded-full font-medium text-xs capitalize
 }
 
 .projectLinks {
@@ -183,7 +183,7 @@ body {
 }
 
 .projectLink {
-  @apply flex flex-row gap-2 justify-center items-center hover:text-secondary-red
+  @apply flex flex-row gap-2 justify-center items-center hover:text-secondary-red capitalize
 }
 
 /* Contact Component */
@@ -209,7 +209,7 @@ body {
 }
 
 .serviceCard > p, .serviceCard__black > p, .serviceCard__red > p {
-  @apply text-xs font-bold
+  @apply text-xs font-bold normal-case
 }
 
 .serviceCard__black, .serviceCard__red {

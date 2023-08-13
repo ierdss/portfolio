@@ -41,7 +41,7 @@ export default function About() {
                             <h1 className="sectionHeader">{header}</h1>
                         </div>
                         {paragraphs.map(({id, paragraph }) => (
-                            <p key={id} className="block font-bold text-slate-500 w-full text-justify">{paragraph}</p>
+                            <p key={id} className="block font-bold text-slate-500 w-full text-justify normal-case">{paragraph}</p>
                         ))}
                     </div>
                     <TechGroup technologies={TechList}/>

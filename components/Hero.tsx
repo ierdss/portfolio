@@ -17,7 +17,7 @@ export default function Hero() {
                     <Links/>
                 </div>
                 <h1 className="font-bold text-3xl md:order-1">{header}</h1>
-                <p className="md:order-2 font-bold text-slate-700">{subheader}</p>
+                <p className="md:order-2 font-bold text-slate-700 normal-case">{subheader}</p>
             </div>
         </div>
     )
