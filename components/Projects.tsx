@@ -51,9 +51,12 @@ export default function Projects() {
                             <div key={id} className="projectItem">
                                 <div className="projectThumbnails">
                                     <div className="projectThumbnailDesktop">
-                                        <img
+                                        <Image
                                             src={thumbnailDesktop}
+                                            width={1000}
+                                            height={800}
                                             alt={desktopAlt}
+                                            loading="lazy"
                                         />
                                     </div>
                                     <div className="projectThumbnailMobile">
