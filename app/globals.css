@@ -98,7 +98,7 @@ body {
 
 /* Grid Component */
 .gridSquare {
-  @apply w-full rounded-xl shadow-xl overflow-hidden
+  @apply w-full rounded-xl shadow-lg overflow-hidden border border-neutral-300
 }
 
 .gridSquare__small, .gridSquare__big {
@@ -188,7 +188,7 @@ body {
 
 /* Contact Component */
 .inputField {
-  @apply border border-solid border-slate-400 rounded-md p-4
+  @apply border border-solid border-slate-400 rounded-md p-4 w-full focus:placeholder:italic focus:outline-secondary-red
 }
 
 .textArea {
@@ -262,4 +262,13 @@ body {
 
 .serviceCard__image > p {
   @apply hidden
+}
+
+/* Contact Component */
+.contactCard {
+  @apply flex flex-row items-center gap-4 p-8 col-span-3 md:col-span-2
+}
+
+.contactCard__extra {
+  @apply hidden md:flex
 }

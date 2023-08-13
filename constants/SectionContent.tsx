@@ -169,7 +169,7 @@ export const ProjectSectionContent = [
 ]
 
 export const ContactSectionContent = [
-    { key:1, icon: <HiMailOpen size={contactIconSize}/>, title:"Email", text:"andreiwork25@gmail.com"},
-    { key:2, icon: <GiRotaryPhone size={contactIconSize}/>, title:"Number", text:"*639763272778"},
-    { key:3, icon: <MdAccessTimeFilled size={contactIconSize}/>, title:"Time", text:"(GMT+8) 09:00 - 17:00"},
+    { key:1, icon: <HiMailOpen size={contactIconSize}/>, title:"Email Address", text:"andreiwork25@gmail.com"},
+    { key:2, icon: <GiRotaryPhone size={contactIconSize}/>, title:"Phone Number", text:"*639763272778"},
+    { key:3, icon: <MdAccessTimeFilled size={contactIconSize}/>, title:"Working Hours", text:"(GMT+8) 09:00 - 17:00"},
 ]
