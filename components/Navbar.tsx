@@ -30,7 +30,7 @@ export default function Navbar() {
     }, []);
 
     return(
-    <nav id='navbar' className='flexCenter pt-2 pb-1 md:pt-[5x] md:pb-0 px-6 md:px-12 w-full fixed top-0 !z-40 max-w-screen-xl bg-white text-slate-500'>
+    <nav id='navbar' className='flexCenter pt-2 pb-1 md:pt-[5px] md:pb-0 px-6 md:px-12 w-full fixed top-0 !z-40 max-w-screen-xl bg-white text-slate-500'>
         <ProgressBar 
             color1   = "#e2e8f0" 
             color2   = "#B40041" 
