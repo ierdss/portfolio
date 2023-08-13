@@ -23,20 +23,16 @@ export default function ContactGrid() {
                     height={200}
                     alt="a leaf"
                     loading="lazy"
-                >
-
-                </Image>
+                />
             </div>
             <div className="gridSquare gridSquare__small bg-secondary-red contactCard__extra">
                 <Image
                     src="/plants/trees-1.jpg"
                     width={200}
                     height={200}
-                    alt="a leaf"
+                    alt="trees"
                     loading="lazy"
-                >
-
-                </Image>
+                />
             </div>
 
             <div className="gridSquare gridSquare__long !rounded-full !rounded-bl-none bg-neutral-800 contactCard contactCard text-white text-left">
@@ -61,11 +57,9 @@ export default function ContactGrid() {
                     src="/plants/leaves-3.jpg"
                     width={200}
                     height={200}
-                    alt="a leaf"
+                    alt="leaves"
                     loading="lazy"
-                >
-
-                </Image>
+                />
             </div>
         </div>
     )
