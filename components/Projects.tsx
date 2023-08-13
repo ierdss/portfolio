@@ -47,7 +47,7 @@ export default function Projects() {
                     <h1 className="sectionHeader">{header}</h1>
                 </div>
                 <div className="projectsList">
-                    {ProjectList.map(({ id, thumbnailDesktop, thumbnailMobile, desktopAlt, mobileAlt, title, description, tags, githubUrl, livedemoUrl }) => (
+                    {ProjectList.map(({ id, thumbnailDesktop, thumbnailMobile, desktopAlt, mobileAlt, title, subtitle, description, tags, githubUrl, livedemoUrl }) => (
                             <div key={id} className="projectItem">
                                 <div className="projectItem__right">
                                     <div className="projectThumbnails">
@@ -83,7 +83,10 @@ export default function Projects() {
                                     </div>
                                 </div>
                                 <div className="projectDetails">
-                                    <h1 className="projectTitle">{title}</h1>
+                                    <div>
+                                        <h1 className="projectTitle">{title}</h1>
+                                        <h1 className="text-xs font-bold uppercase text-secondary-red">{subtitle}</h1>
+                                    </div>
                                     {description}
                                     <ProjectLinks githubUrl={githubUrl} livedemoUrl={livedemoUrl} />
                                 </div>
