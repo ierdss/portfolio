@@ -49,32 +49,42 @@ export default function Projects() {
                 <div className="projectsList">
                     {ProjectList.map(({ id, thumbnailDesktop, thumbnailMobile, desktopAlt, mobileAlt, title, description, tags, githubUrl, livedemoUrl }) => (
                             <div key={id} className="projectItem">
-                                <div className="projectThumbnails">
-                                    <div className="projectThumbnailDesktop">
-                                        <Image
-                                            src={thumbnailDesktop}
-                                            width={1000}
-                                            height={800}
-                                            alt={desktopAlt}
-                                            loading="lazy"
-                                        />
-                                    </div>
-                                    <div className="projectThumbnailMobile">
-                                        <div>
+                                <div className="projectItem__right">
+                                    <div className="projectThumbnails">
+                                        <div className="projectThumbnailDesktop">
                                             <Image
-                                                src={thumbnailMobile}
-                                                width={200}
-                                                height={50}
-                                                alt={mobileAlt}
+                                                src={thumbnailDesktop}
+                                                width={650}
+                                                height={400}
+                                                alt={desktopAlt}
+                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                                loading="lazy"
+                                                style={{
+                                                    objectFit: 'cover',
+                                                }}
+                                                className="rounded-xl"
                                             />
                                         </div>
+                                        <div className="projectThumbnailMobile">
+                                            <div>
+                                                <Image
+                                                    src={thumbnailMobile}
+                                                    width={200}
+                                                    height={50}
+                                                    alt={mobileAlt}
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                        </div>
+                                        <LuExpand size={30} className="projectThumbnailExpand"/>
                                     </div>
-                                    <LuExpand size={30} className="projectThumbnailExpand"/>
+                                    <div className="projectTags__container">
+                                        <ProjectTags tags={tags}/>
+                                    </div>
                                 </div>
                                 <div className="projectDetails">
                                     <h1 className="projectTitle">{title}</h1>
                                     {description}
-                                    <ProjectTags tags={tags}/>
                                     <ProjectLinks githubUrl={githubUrl} livedemoUrl={livedemoUrl} />
                                 </div>
                             </div>

@@ -127,15 +127,19 @@ body {
 }
 
 .projectItem {
-  @apply flex flex-col lg:flex-row rounded-xl gap-2 md:gap-10 relative w-full lg:min-h-[450px] lg:max-h-[450px] odd:lg:flex-row-reverse odd:lg:gap-0 odd:lg:pr-10 border-b-2 border-b-secondary-red lg:border-b-0 odd:lg:border-l-2 odd:lg:border-l-secondary-red even:lg:border-r-2 even:lg:border-r-secondary-red snap-center shrink-0 drop-shadow-xl bg-white shadow-inner shadow-slate-300
+  @apply flex flex-col lg:flex-row rounded-xl gap-2 lg:gap-10 relative w-full lg:min-h-[550px] lg:max-h-[600px] odd:lg:flex-row-reverse odd:lg:gap-0 odd:lg:pr-10 border-b-2 border-b-secondary-red lg:border-b-0 odd:lg:border-l-2 odd:lg:border-l-secondary-red even:lg:border-r-2 even:lg:border-r-secondary-red snap-center shrink-0 drop-shadow-xl bg-white shadow-inner shadow-slate-300
+}
+
+.projectItem__right {
+  @apply flex flex-col w-full h-fit lg:w-[60%] 
 }
 
 .projectThumbnails {
-  @apply flex flex-col lg:flex-row relative
+  @apply flex flex-col lg:flex-row relative w-full h-full md:h-[440px]
 }
 
 .projectThumbnailDesktop {
-  @apply w-full h-auto  lg:aspect-video rounded-xl shadow-md overflow-hidden
+  @apply w-full h-full rounded-xl shadow-md overflow-hidden
 }
 
 .projectThumbnailMobile {
@@ -151,7 +155,7 @@ body {
 }
 
 .projectDetails {
-  @apply flex flex-col justify-center gap-4 py-6 w-full lg:w-4/6 rounded-lg p-6 md:p-8
+  @apply flex flex-col justify-center items-center lg:items-start gap-4 py-6 px-4 md:px-6 w-full lg:w-[40%] rounded-lg text-center lg:text-left
 }
 
 .projectTitle {
@@ -163,7 +167,11 @@ body {
 }
 
 .projectTags {
-  @apply flex flex-row flex-wrap justify-center md:justify-start items-start gap-3
+  @apply flex flex-row flex-wrap justify-center lg:justify-start items-start gap-3
+}
+
+.projectTags__container {
+  @apply flex p-4 w-full h-full lg:w-[83%] justify-center lg:justify-normal
 }
 
 .projectTag {
@@ -171,7 +179,7 @@ body {
 }
 
 .projectLinks {
-  @apply flex flex-row justify-center md:justify-start items-center gap-8 w-full mt-6
+  @apply flex flex-row justify-center lg:justify-normal items-center gap-8 w-full mt-6
 }
 
 .projectLink {
