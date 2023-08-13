@@ -35,7 +35,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "build/types/**/*.ts"
-, "components/canvas/Stars.jsx", "utils/motion.jsx", "app/page.jsx", "components/LoadingOverlay.jsx"  ],
+, "components/canvas/Stars.jsx", "utils/motion.jsx", "app/page.jsx", "components/LoadingOverlay.jsx", "components/Contact.jsx"  ],
   "exclude": [
     "node_modules"
   ]
