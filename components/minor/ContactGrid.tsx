@@ -11,8 +11,8 @@ export default function ContactGrid() {
             <div className="gridSquare gridSquare__long !rounded-full !rounded-tr-none  !rounded-br-none bg-secondary-red contactCard text-white text-left">
                 {email.icon}
                 <div className='flex-col'>
-                    <h4 className="font-bold text-sm">{email.title}</h4>
-                    <p className="text-xs">{email.text}</p>
+                    <h4 className="font-bold">{email.title}</h4>
+                    <p>{email.text}</p>
                 </div>
             </div>
 
@@ -35,7 +35,7 @@ export default function ContactGrid() {
                     <p className=' text-left'>{time.text}</p>
                 </div>
             </div>
-            
+
             <div className="gridSquare gridSquare__small bg-neutral-800 !rounded-tl-full contactCard__extra"></div>
         </div>
     )
