@@ -16,8 +16,28 @@ export default function ContactGrid() {
                 </div>
             </div>
 
-            <div className="gridSquare gridSquare__small !rounded-full !shadow-inner !shadow-neutral-400 border border-neutral-200 contactCard__extra"></div>
-            <div className="gridSquare gridSquare__small bg-secondary-red contactCard__extra"></div>
+            <div className="gridSquare gridSquare__small !rounded-full !shadow-inner !shadow-neutral-400 border border-neutral-200 contactCard__extra flex w-full">
+                <Image
+                    src="/plants/leaf-1.jpg"
+                    width={200}
+                    height={200}
+                    alt="a leaf"
+                    loading="lazy"
+                >
+
+                </Image>
+            </div>
+            <div className="gridSquare gridSquare__small bg-secondary-red contactCard__extra">
+                <Image
+                    src="/plants/trees-1.jpg"
+                    width={200}
+                    height={200}
+                    alt="a leaf"
+                    loading="lazy"
+                >
+
+                </Image>
+            </div>
 
             <div className="gridSquare gridSquare__long !rounded-full !rounded-bl-none bg-neutral-800 contactCard contactCard text-white text-left">
                     {phone.icon}
@@ -36,7 +56,17 @@ export default function ContactGrid() {
                 </div>
             </div>
 
-            <div className="gridSquare gridSquare__small bg-neutral-800 !rounded-tl-full contactCard__extra"></div>
+            <div className="gridSquare gridSquare__small bg-neutral-800 !rounded-tl-full contactCard__extra">
+                <Image
+                    src="/plants/leaves-3.jpg"
+                    width={200}
+                    height={200}
+                    alt="a leaf"
+                    loading="lazy"
+                >
+
+                </Image>
+            </div>
         </div>
     )
 }
