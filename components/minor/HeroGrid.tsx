@@ -14,7 +14,7 @@ export default function GalleryGrid() {
             </div>
             <div className="gridSquare gridSquare__big !rounded-full !rounded-bl-none flex">
                 <Image
-                    src="/plants/blue-1.jpg"
+                    src="/plants/chrysanthemum-1.jpg"
                     width={300}
                     height={300}
                     alt="a leaf"
@@ -34,7 +34,7 @@ export default function GalleryGrid() {
             </div>
             <div className="gridSquare gridSquare__long !rounded-full !rounded-bl-none flex justify-center items-center relative">
                 <Image
-                    src="/plants/chrysanthemum-1.jpg"
+                    src="/plants/blue-1.jpg"
                     width={300}
                     height={100}
                     alt="a leaf"
