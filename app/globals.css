@@ -163,7 +163,7 @@ body {
 }
 
 .projectDescription {
-  @apply text-base text-slate-500 font-medium
+  @apply text-base text-slate-500 font-medium text-justify
 }
 
 .projectTags {
