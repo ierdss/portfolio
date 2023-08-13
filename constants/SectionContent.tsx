@@ -110,7 +110,7 @@ export const ProjectSectionContent = [
         thumbnailMobile:"/road-way-delivery__compressed-mobile-short.jpg",
         mobileAlt:"RWD full page on mobile",
         title:"Letter",
-        subtitle:"instant messaging",
+        subtitle:"Social Platform",
         description: 
         <p className='projectDescription'>
             Letter is an all-in-one communication app designed to seamlessly connect you with friends and loved ones. With Letter, you can effortlessly send messages to users and join engaging voice chats fostering meaningful conversations. Elevate your interactions with face-to-face connections through high-quality video calls, making every conversation feel personal and authentic. Stay connected like never before with Letter – where messaging, voice chats, and video calls come together in one intuitive platform.
