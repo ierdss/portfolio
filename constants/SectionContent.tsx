@@ -67,9 +67,12 @@ export const ProjectSectionContent = [
         desktopAlt:"RWD full page on desktop",
         thumbnailMobile:"/road-way-delivery__compressed-mobile-short.jpg",
         mobileAlt:"RWD full page on mobile",
-        title:"Sample Project",
+        title:"Marked A.I.",
         subtitle:"Artificial Intelligence",
-        description: <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.</p>,
+        description: 
+        <p className='projectDescription'>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.
+        </p>,
         tags: [
             { id:1, tag: "Next.js" },
             { id:2, tag: "Typescript" },
@@ -85,9 +88,12 @@ export const ProjectSectionContent = [
         desktopAlt:"RWD full page on desktop",
         thumbnailMobile:"/road-way-delivery__compressed-mobile-short.jpg",
         mobileAlt:"RWD full page on mobile",
-        title:"Sample Project",        
+        title:"Available",        
         subtitle:"e-commerce shop",
-        description: <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.</p>,
+        description: 
+        <p className='projectDescription'>
+            An online shop that sells a lot of products. It also has a dashboard for the seller and the user. Sellers can effortlessly manage their inventory, track orders, and engage with customers, while users can easily track their purchases, manage their profiles, and explore personalized recommendations.
+        </p>,
         tags: [
             { id:1, tag: "Next.js" },
             { id:2, tag: "Typescript" },
@@ -103,9 +109,12 @@ export const ProjectSectionContent = [
         desktopAlt:"RWD full page on desktop",
         thumbnailMobile:"/road-way-delivery__compressed-mobile-short.jpg",
         mobileAlt:"RWD full page on mobile",
-        title:"Sample Project",
+        title:"Letter",
         subtitle:"instant messaging",
-        description: <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.</p>,
+        description: 
+        <p className='projectDescription'>
+            Letter is an all-in-one communication app designed to seamlessly connect you with friends and loved ones. With Letter, you can effortlessly send messages to users and join engaging voice chats fostering meaningful conversations. Elevate your interactions with face-to-face connections through high-quality video calls, making every conversation feel personal and authentic. Stay connected like never before with Letter – where messaging, voice chats, and video calls come together in one intuitive platform.
+        </p>,
         tags: [
             { id:1, tag: "Next.js" },
             { id:2, tag: "Typescript" },
@@ -124,9 +133,9 @@ export const ProjectSectionContent = [
         title:"Road Way Delivery",
         subtitle:"Transport Service",
         description:
-        <div>
-           <p className='projectDescription'><span className='font-bold'>Road Way Delivery</span> Service is a leading logistics company revolutionizing the industry with fast, reliable road transportation solutions. We specialize in secure, on-time deliveries for customers and businesses across local and regional destinations.</p>
-        </div>,
+        <p className='projectDescription'><span className='font-bold'>
+            Road Way Delivery</span> Service is a leading logistics company revolutionizing the industry with fast, reliable road transportation solutions. We specialize in secure, on-time deliveries for customers and businesses across local and regional destinations.
+        </p>,
         tags: [
             { id:1, tag: "Next.js" },
             { id:2, tag: "Typescript" },
@@ -142,9 +151,12 @@ export const ProjectSectionContent = [
         desktopAlt:"RWD full page on desktop",
         thumbnailMobile:"/road-way-delivery__compressed-mobile-short.jpg",
         mobileAlt:"RWD full page on mobile",
-        title:"Sample Project",
+        title:"Shoutcaster",
         subtitle:"Video Sharing",
-        description: <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.</p>,
+        description: 
+        <p className='projectDescription'>
+           Welcome to Shoutcaster, our dedicated podcast platform, the ultimate destination for immersive audio experiences. Discover a world of knowledge, stories, and insights as you explore a diverse array of podcasts on our platform. Whether you're into captivating storytelling, thought-provoking discussions, or expert interviews, our platform offers a curated selection to cater to every interest. Immerse yourself in a universe of sound, where ideas and narratives come to life, all in one convenient podcast-exclusive platform.
+        </p>,
         tags: [
             { id:1, tag: "Next.js" },
             { id:2, tag: "Typescript" },
