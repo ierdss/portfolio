@@ -266,9 +266,21 @@ body {
 
 /* Contact Component */
 .contactCard {
-  @apply flex flex-row items-center gap-4 p-8 col-span-3 md:col-span-2
+  @apply flex flex-row items-center gap-2 lg:gap-4 text-left justify-center
 }
 
 .contactCard__extra {
-  @apply hidden md:flex
+  @apply flex
+}
+
+.contactCard__text {
+  @apply flex flex-col
+}
+
+.contactCard__title {
+  @apply font-bold text-sm
+}
+
+.contactCard__info {
+  @apply text-xs
 }

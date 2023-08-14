@@ -66,10 +66,10 @@ export default function Contact() {
 
     return( 
         <div id='contact' className='flex flex-row flex-wrap w-full sectionPadding text-center justify-center items-center md:text-left gap-8'>
-          <div className='flex flex-col justify-between lg:flex-row gap-8 w-full lg:w-[55%] h-full bg-white shadow-xl rounded-xl p-8 md:order-2 border border-neutral-300'>
+          <div className='flex flex-col justify-between lg:flex-row gap-8 w-full lg:w-[55%] h-full bg-white shadow-xl rounded-xl p-4 lg:p-8 lg:order-2 border border-neutral-300'>
             <ContactGrid/>
           </div>
-          <div className='flex flex-col gap-4 shadow-xl rounded-xl p-4 w-full md:p-8 lg:w-[40%] bg-neutral-800 text-white m-2 md:mr-0 md:order-1'>
+          <div className='flex flex-col gap-4 shadow-xl rounded-xl p-4 w-full md:p-8 lg:w-[40%] bg-neutral-800 text-white m-2 md:mr-0 lg:order-1'>
               <div className="">
                   <h1 className="sectionOverline !text-white">{overline}</h1>
                   <h1 className="sectionHeader">{header}</h1>
