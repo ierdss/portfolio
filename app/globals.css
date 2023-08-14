@@ -139,11 +139,11 @@ body {
 }
 
 .projectThumbnailDesktop {
-  @apply w-full h-full rounded-xl shadow-md overflow-hidden
+  @apply w-full h-full rounded-xl shadow-md overflow-hidden cursor-pointer
 }
 
 .projectThumbnailMobile {
-  @apply hidden md:flex relative
+  @apply hidden md:flex relative cursor-pointer
 }
 
 .projectThumbnailMobile > div {
