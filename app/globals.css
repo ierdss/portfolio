@@ -135,11 +135,11 @@ body {
 }
 
 .projectThumbnails {
-  @apply flex flex-col lg:flex-row relative w-full h-full md:h-[440px]
+  @apply flex flex-col lg:flex-row relative w-full h-full
 }
 
 .projectThumbnailDesktop {
-  @apply w-full h-full rounded-xl shadow-md overflow-hidden cursor-pointer
+  @apply flex flex-col w-full h-full rounded-xl shadow-md overflow-hidden cursor-pointer aspect-auto
 }
 
 .projectThumbnailMobile {
