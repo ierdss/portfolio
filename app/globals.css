@@ -167,11 +167,11 @@ body {
 }
 
 .projectTags {
-  @apply flex flex-row flex-wrap justify-center lg:justify-start items-start gap-3
+  @apply flex flex-row flex-wrap justify-center lg:justify-start items-start gap-2
 }
 
 .projectTags__container {
-  @apply flex p-4 w-full h-full lg:w-[83%] justify-center lg:justify-normal
+  @apply flex p-2 md:p-3 w-full h-full lg:w-[83%] justify-center lg:justify-normal
 }
 
 .projectTag {
