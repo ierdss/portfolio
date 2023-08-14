@@ -6,18 +6,19 @@ export default function ContactGrid() {
     const phone = ContactSectionContent[1];
     const time = ContactSectionContent[2];
 
-    const width = 200;
-    const height = 50;
+    const width = 260;
+    const height = 260;
 
     return(
-        <div className="w-full grid grid-cols-3 grid-rows-3 grid-flow-dense gap-4 ">
-            <div className="gridSquare gridSquare__long !rounded-full !rounded-tr-none  !rounded-br-none bg-secondary-red contactCard text-white text-left">
+        <div className="w-full grid grid-cols-3 grid-rows-3 grid-flow-dense gap-2 lg:gap-4 ">
+            <div className="gridSquare gridSquare__long !rounded-full !rounded-tr-none  !rounded-br-none bg-secondary-red contactCard text-white ">
                 {email.icon}
-                <div className='flex-col'>
-                    <h4 className="font-bold">{email.title}</h4>
-                    <p>{email.text}</p>
+                <div className='contactCard__text'>
+                    <h4 className="contactCard__title">{email.title}</h4>
+                    <p className="contactCard__info">{email.text}</p>
                 </div>
             </div>
+
 
             <div className="gridSquare gridSquare__small !rounded-full !shadow-inner !shadow-neutral-400 border border-neutral-200 contactCard__extra">
                 <Image
@@ -38,22 +39,24 @@ export default function ContactGrid() {
                 />
             </div>
 
-            <div className="gridSquare gridSquare__long !rounded-full !rounded-bl-none bg-neutral-800 contactCard contactCard text-white text-left">
+
+            <div className="gridSquare gridSquare__long !rounded-full !rounded-bl-none bg-neutral-800 contactCard text-white">
                     {phone.icon}
-                <div className='flex-col'>
-                    <h4 className='font-bold'>{phone.title}</h4>
-                    <p>{phone.text}</p>
+                <div className='contactCard__text'>
+                    <h4 className='contactCard__title'>{phone.title}</h4>
+                    <p className="contactCard__info">{phone.text}</p>
                 </div>
             </div>
             <div className="gridSquare gridSquare__long !rounded-full !rounded-tr-none !shadow-inner !shadow-neutral-400 border border-neutral-200 contactCard">
                 <span className='text-secondary-red'>
                     {time.icon}
                 </span>
-                <div className='flex-col'>
-                    <h4 className='font-bold text-left'>{time.title}</h4>
-                    <p className=' text-left'>{time.text}</p>
+                <div className='contactCard__text'>
+                    <h4 className='contactCard__title'>{time.title}</h4>
+                    <p className='contactCard__info'>{time.text}</p>
                 </div>
             </div>
+
 
             <div className="gridSquare gridSquare__small bg-neutral-800 !rounded-tl-full contactCard__extra">
                 <Image
