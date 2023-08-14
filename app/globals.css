@@ -151,7 +151,7 @@ body {
 }
 
 .projectThumbnailExpand {
-  @apply animate-bounce text-white absolute bottom-4 left-4 cursor-pointer
+  @apply text-white absolute bottom-4 left-4 cursor-pointer
 }
 
 .projectDetails {

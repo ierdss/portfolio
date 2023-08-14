@@ -1,9 +1,10 @@
 import { ProjectSectionContent as ProjectList } from "@/constants/SectionContent"
 import { ProjectsSectionHeading } from "@/constants/SectionHeading";
 import Image from "next/image";
+import Link from "next/link";
 import { BsGithub } from 'react-icons/bs'
 import { IoGlobe } from 'react-icons/io5'
-import { LuExpand } from 'react-icons/lu'
+import { HiOutlineExternalLink } from 'react-icons/hi'
 
 const sizeIcon = 30;
 
@@ -50,34 +51,35 @@ export default function Projects() {
                     {ProjectList.map(({ id, thumbnailDesktop, thumbnailMobile, desktopAlt, mobileAlt, title, subtitle, description, tags, githubUrl, livedemoUrl }) => (
                             <div key={id} className="projectItem">
                                 <div className="projectItem__right">
-                                    <div className="projectThumbnails">
-                                        <div className="projectThumbnailDesktop">
-                                            <Image
-                                                src={thumbnailDesktop}
-                                                width={650}
-                                                height={400}
-                                                alt={desktopAlt}
-                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                                                loading="lazy"
-                                                style={{
-                                                    objectFit: 'cover',
-                                                }}
-                                                className="rounded-xl"
-                                            />
-                                        </div>
-                                        <div className="projectThumbnailMobile">
-                                            <div>
-                                                <Image
-                                                    src={thumbnailMobile}
-                                                    width={200}
-                                                    height={50}
-                                                    alt={mobileAlt}
-                                                    loading="lazy"
-                                                />
+                                    <Link href={livedemoUrl} target="_blank">
+                                        <div className="projectThumbnails">
+                                            <div className="projectThumbnailDesktop">
+                                                    <Image
+                                                        src={thumbnailDesktop}
+                                                        width={850}
+                                                        height={600}
+                                                        alt={desktopAlt}
+                                                        loading="lazy"
+                                                        style={{
+                                                            objectFit: 'cover',
+                                                        }}
+                                                        className="rounded-xl object-cover"
+                                                    />
                                             </div>
+                                            <div className="projectThumbnailMobile">
+                                                <div>
+                                                    <Image
+                                                        src={thumbnailMobile}
+                                                        width={200}
+                                                        height={50}
+                                                        alt={mobileAlt}
+                                                        loading="lazy"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <HiOutlineExternalLink size={30} className="projectThumbnailExpand"/>
                                         </div>
-                                        <LuExpand size={30} className="projectThumbnailExpand"/>
-                                    </div>
+                                    </Link>
                                     <div className="projectTags__container">
                                         <ProjectTags tags={tags}/>
                                     </div>
