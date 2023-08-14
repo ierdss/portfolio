@@ -4,6 +4,9 @@ import ContactGrid from './minor/ContactGrid';
 
 import emailjs from "@emailjs/browser";
 import 'dotenv/config'
+require('dotenv').config()
+
+import HashLoader from 'react-spinners/HashLoader';
 
 export default function Contact() {
     const { overline, header, subheader } = ContactSectionHeading;
@@ -116,7 +119,22 @@ export default function Contact() {
                           className='inputField textArea'
                           />
                     </label>
-                    <button type='submit' className='w-full callToAction mt-2'>{loading ? "Sending..." : "Send"}</button>
+                    <button type='submit' className='w-full callToAction mt-2 flex justify-center items-center'>
+                      {loading ? 
+                      <div className='flex flex-row gap-4'>
+                        Sending...
+                       <HashLoader
+                        loading={true}
+                        size={28}
+                        color="white"
+                        aria-label="Loading Spinner"
+                        data-testid="loader"
+                        speedMultiplier={1}
+                        className='text-white'
+                        ></HashLoader>
+                      </div> : "Send"
+                    }
+                    </button>
                   </form>
               </div>
           </div>
