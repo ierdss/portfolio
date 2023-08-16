@@ -150,7 +150,7 @@ body {
   @apply invisible lg:visible lg:flex min-h-[280px] max-h-[230px] w-[130px] md:h-auto rounded-2xl shadow-md overflow-hidden z-20 border-2 border-black absolute -bottom-6 -right-8 hover:scale-110
 }
 
-.projectThumbnailExpand {
+.projectThumbnail__external-link {
   @apply text-white absolute bottom-4 left-4 cursor-pointer
 }
 

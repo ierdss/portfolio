@@ -5,6 +5,7 @@ import Link from "next/link";
 import { BsGithub } from 'react-icons/bs'
 import { IoGlobe } from 'react-icons/io5'
 import { HiOutlineExternalLink } from 'react-icons/hi'
+import { PiSquaresFourFill } from 'react-icons/pi'
 
 const sizeIcon = 30;
 
@@ -78,7 +79,7 @@ export default function Projects() {
                                                     />
                                                 </div>
                                             </div>
-                                            <HiOutlineExternalLink size={30} className="projectThumbnailExpand"/>
+                                            <HiOutlineExternalLink size={30} className="projectThumbnail__external-link"/>
                                         </div>
                                     </Link>
                                     <div className="projectTags__container">
