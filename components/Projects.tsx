@@ -97,9 +97,9 @@ export default function Projects() {
                         ))
                     }
                 </div>
-                <div>
-                    Other projects and contributions
-                </div>
+                {/* <div>
+                    Other projects, snippets, and contributions
+                </div> */}
             </div>
         </div>
     )
