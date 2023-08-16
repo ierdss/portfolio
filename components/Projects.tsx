@@ -54,17 +54,18 @@ export default function Projects() {
                                     <Link href={livedemoUrl} target="_blank">
                                         <div className="projectThumbnails">
                                             <div className="projectThumbnailDesktop">
-                                                    <Image
-                                                        src={thumbnailDesktop}
-                                                        width={850}
-                                                        height={600}
-                                                        alt={desktopAlt}
-                                                        loading="lazy"
-                                                        style={{
-                                                            objectFit: 'cover',
-                                                        }}
-                                                        className="rounded-xl object-cover"
-                                                    />
+                                                <Image
+                                                    src={thumbnailDesktop}
+                                                    width={850}
+                                                    height={600}
+                                                    alt={desktopAlt}
+                                                    loading="lazy"
+                                                    sizes="(max-width: 768px) 50vw, (max-width: 	1024px) 75vw, (max-width: 1280px) 100vw, 25vw"
+                                                    style={{
+                                                        objectFit: 'cover',
+                                                    }}
+                                                    className="rounded-2xl object-cover"
+                                                />
                                             </div>
                                             <div className="projectThumbnailMobile">
                                                 <div>
