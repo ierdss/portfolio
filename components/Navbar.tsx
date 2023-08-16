@@ -38,7 +38,7 @@ export default function Navbar() {
             position = "fixed" 
         />
         <div className='flex-1 flexBetween gap-10 md:gap-16 justify-center items-center'>
-            <Link href={"/"}>
+            <Link href="javascript:window.location.reload(true)">
                 <h1 className='text-4xl font-black bg-clip-text bg-clip text-transparent bg-cover bg-center bg-home-texture hover:text-secondary-red'>ANDREI</h1>
             </Link>
             <div className='lg:flex hidden gap-10'>
