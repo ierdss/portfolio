@@ -77,7 +77,7 @@ body {
 }
 
 .callToAction {
-  @apply w-full bg-secondary-red text-xl font-extrabold text-white p-4 hover:bg-accent-pink rounded-md
+  @apply w-full bg-secondary-red text-xl font-extrabold text-white p-4 hover:bg-accent-pink rounded-lg
 }
 
 /* Hover Effects */
@@ -98,7 +98,7 @@ body {
 
 /* Grid Component */
 .gridSquare {
-  @apply w-full rounded-xl shadow-lg overflow-hidden border border-neutral-300
+  @apply w-full rounded-2xl shadow-lg overflow-hidden border border-neutral-300
 }
 
 .gridSquare__small, .gridSquare__big {
@@ -127,7 +127,7 @@ body {
 }
 
 .projectItem {
-  @apply flex flex-col lg:flex-row rounded-xl gap-2 lg:gap-10 relative w-full lg:min-h-[550px] lg:max-h-[600px] odd:lg:flex-row-reverse odd:lg:gap-0 odd:lg:pr-10 border-b-2 border-b-secondary-red lg:border-b-0 odd:lg:border-l-2 odd:lg:border-l-secondary-red even:lg:border-r-2 even:lg:border-r-secondary-red snap-center shrink-0 drop-shadow-xl bg-white shadow-inner shadow-slate-300
+  @apply flex flex-col lg:flex-row rounded-2xl gap-2 lg:gap-10 relative w-full lg:min-h-[550px] lg:max-h-[600px] odd:lg:flex-row-reverse odd:lg:gap-0 odd:lg:pr-10 border-b-2 border-b-secondary-red lg:border-b-0 odd:lg:border-l-2 odd:lg:border-l-secondary-red even:lg:border-r-2 even:lg:border-r-secondary-red snap-center shrink-0 drop-shadow-xl bg-white shadow-inner shadow-slate-300
 }
 
 .projectItem__right {
@@ -139,7 +139,7 @@ body {
 }
 
 .projectThumbnailDesktop {
-  @apply flex flex-col w-full h-full rounded-xl shadow-md overflow-hidden cursor-pointer aspect-auto
+  @apply flex flex-col w-full h-full rounded-2xl shadow-md overflow-hidden cursor-pointer aspect-auto
 }
 
 .projectThumbnailMobile {
@@ -147,7 +147,7 @@ body {
 }
 
 .projectThumbnailMobile > div {
-  @apply invisible lg:visible lg:flex min-h-[280px] max-h-[230px] w-[130px] md:h-auto rounded-xl shadow-md overflow-hidden z-20 border-2 border-black absolute -bottom-6 -right-8 hover:scale-110
+  @apply invisible lg:visible lg:flex min-h-[280px] max-h-[230px] w-[130px] md:h-auto rounded-2xl shadow-md overflow-hidden z-20 border-2 border-black absolute -bottom-6 -right-8 hover:scale-110
 }
 
 .projectThumbnailExpand {
@@ -155,7 +155,7 @@ body {
 }
 
 .projectDetails {
-  @apply flex flex-col justify-center items-center lg:items-start gap-4 py-6 px-6 md:px-8 w-full lg:w-[40%] rounded-lg text-center lg:text-left
+  @apply flex flex-col justify-center items-center lg:items-start gap-4 py-6 px-6 md:px-8 w-full lg:w-[40%] rounded-2xl text-center lg:text-left
 }
 
 .projectTitle {
@@ -197,7 +197,7 @@ body {
 
 /* Components */
 .serviceCard, .serviceCard__black, .serviceCard__red, .serviceCard__image {
-  @apply hoverSmoothScale flex flex-col w-full min-h-[240px] md:min-h-[200px] max-h-[280px] items-center text-center py-6 px-4 md:px-5 rounded-xl overflow-hidden md:text-left md:items-start row-span-2
+  @apply hoverSmoothScale flex flex-col w-full min-h-[240px] md:min-h-[200px] max-h-[280px] items-center text-center py-6 px-4 md:px-5 rounded-2xl overflow-hidden md:text-left md:items-start row-span-2
 }
 
 .serviceCard > div, .serviceCard__black > div, .serviceCard__red > div {
