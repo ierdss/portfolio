@@ -1,6 +1,6 @@
 "use client"
 
-import { Hero, StarsCanvas, About, Projects, Contact, Technologies } from '@/components'
+import { Hero, About, Projects, Contact } from '@/components'
 
 export default function Home() {
   return (
