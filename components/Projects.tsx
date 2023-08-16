@@ -5,7 +5,6 @@ import Link from "next/link";
 import { BsGithub } from 'react-icons/bs'
 import { IoGlobe } from 'react-icons/io5'
 import { HiOutlineExternalLink } from 'react-icons/hi'
-import { PiSquaresFourFill } from 'react-icons/pi'
 
 const sizeIcon = 30;
 
@@ -97,6 +96,9 @@ export default function Projects() {
                             </div>
                         ))
                     }
+                </div>
+                <div>
+                    Other projects and contributions
                 </div>
             </div>
         </div>
