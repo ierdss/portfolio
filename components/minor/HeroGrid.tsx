@@ -10,6 +10,7 @@ export default function GalleryGrid() {
                     height={200}
                     alt="a leaf"
                     priority
+                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 33vw"
                 />
             </div>
             <div className="gridSquare gridSquare__big !rounded-full !rounded-bl-none flex">
@@ -19,6 +20,7 @@ export default function GalleryGrid() {
                     height={300}
                     alt="a leaf"
                     priority
+                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 33vw"
                 />
             </div>
             <div className="gridSquare gridSquare__tall !rounded-tr-full !rounded-bl-full bg-secondary-red"></div>
@@ -30,6 +32,7 @@ export default function GalleryGrid() {
                     height={200}
                     alt="a leaf"
                     priority
+                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 33vw"
                 />
             </div>
             <div className="gridSquare gridSquare__long !rounded-full !rounded-bl-none flex justify-center items-center relative">
@@ -39,6 +42,7 @@ export default function GalleryGrid() {
                     height={100}
                     alt="a leaf"
                     priority
+                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 33vw"
                     className="absolute top-0 left-0"
                 />
             </div>
