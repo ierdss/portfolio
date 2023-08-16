@@ -27,6 +27,7 @@ export default function ContactGrid() {
                     height={height}
                     alt="a leaf"
                     loading="lazy"
+                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 33vw"
                 />
             </div>
             <div className="gridSquare gridSquare__small bg-secondary-red contactCard__extra">
@@ -36,6 +37,7 @@ export default function ContactGrid() {
                     height={height}
                     alt="trees"
                     loading="lazy"
+                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 33vw"
                 />
             </div>
 
@@ -65,6 +67,7 @@ export default function ContactGrid() {
                     height={height}
                     alt="leaves"
                     loading="lazy"
+                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 33vw"
                 />
             </div>
         </div>
