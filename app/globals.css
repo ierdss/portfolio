@@ -19,12 +19,24 @@ body {
 
 ::-webkit-scrollbar {
   width: 5px;
-  height: 4px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 12px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.3);
 }
 
 ::selection {
@@ -51,88 +63,224 @@ body {
   @apply lg:px-20 py-6 px-5;
 }
 
+/* Text */
+.sectionOverline {
+  @apply text-secondary-red font-extrabold text-lg block uppercase
+}
+
 .sectionHeader {
-  @apply text-secondary-red font-extrabold text-2xl
+  @apply block font-bold text-3xl capitalize
 }
 
 .sectionPadding {
-  @apply px-6 md:px-20 py-24 md:pt-28
+  @apply px-2 md:px-20 pt-24 pb-12 md:pt-28
 }
 
 .callToAction {
-  @apply w-full bg-secondary-red text-xl font-extrabold text-white p-4 hover:bg-accent-pink rounded-md
+  @apply w-full bg-secondary-red text-xl font-extrabold text-white p-4 hover:bg-accent-pink rounded-lg
+}
+
+/* Hover Effects */
+.hoverSmoothScale {
+  @apply hover:scale-105 duration-300 ease-out transition-all
+}
+
+/* Navbar Component */
+.navbar__scrolled {
+  @apply shadow-lg
+}
+
+.navbar-link {
+  @apply px-8 py-6 font-bold text-base hover:text-secondary-red target:text-secondary-red capitalize block w-full
+}
+
+/* Hero Section  */
+
+/* Grid Component */
+.gridSquare {
+  @apply w-full rounded-2xl shadow-lg overflow-hidden border border-neutral-300
+}
+
+.gridSquare__small, .gridSquare__big {
+  @apply aspect-square
+}
+
+.gridSquare__tall {
+  @apply row-span-2
+}
+
+.gridSquare__long {
+  @apply col-span-2
+}
+
+.gridSquare__big {
+  @apply col-span-2 row-span-2
+}
+
+.gridImage {
+  @apply hover:scale-110 ease-in-out duration-500 transition-all
 }
 
 /* Projects Component */
+.projectsList {
+  @apply flex flex-col flex-wrap gap-8 md:gap-24 snap-proximity snap-y
+}
+
 .projectItem {
-  @apply flex flex-col lg:flex-row p-4 md:p-8 bg-white rounded-xl shadow-xl gap-2 md:gap-8 relative w-full lg:min-h-[480px] lg:max-h-[480px] 
+  @apply flex flex-col lg:flex-row rounded-2xl gap-2 lg:gap-10 relative w-full lg:min-h-[550px] lg:max-h-[600px] odd:lg:flex-row-reverse odd:lg:gap-0 odd:lg:pr-10 border-b-2 border-b-secondary-red lg:border-b-0 odd:lg:border-l-2 odd:lg:border-l-secondary-red even:lg:border-r-2 even:lg:border-r-secondary-red snap-center shrink-0 drop-shadow-xl bg-white shadow-inner shadow-slate-300
 }
 
-.projectItem1  {
-  @apply [&>*:nth-child(1)]:bg-thumbnail-desktop-1 
+.projectItem__right {
+  @apply flex flex-col w-full h-fit lg:w-[60%] 
 }
 
-.projectItem1 > div#mobile {
-  @apply [&>*:nth-child(1)]:bg-thumbnail-mobile-1
+.projectThumbnails {
+  @apply flex flex-col lg:flex-row relative w-full h-full
 }
 
-.projectItem2  {
-  @apply [&>*:nth-child(1)]:bg-thumbnail-desktop-sample
+.projectThumbnailDesktop {
+  @apply flex flex-col w-full h-full rounded-2xl shadow-md overflow-hidden cursor-pointer aspect-auto
 }
 
-.projectItem2 > div#mobile {
-  @apply [&>*:nth-child(1)]:bg-thumbnail-mobile-sample
+.projectThumbnailMobile {
+  @apply hidden md:flex relative cursor-pointer
 }
 
-.projectItem3  {
-  @apply [&>*:nth-child(1)]:bg-thumbnail-desktop-sample 
+.projectThumbnailMobile > div {
+  @apply invisible lg:visible lg:flex min-h-[280px] max-h-[230px] w-[130px] md:h-auto rounded-2xl shadow-md overflow-hidden z-20 border-2 border-black absolute -bottom-6 -right-8 hover:scale-110
 }
 
-.projectItem3 > div#mobile {
-  @apply [&>*:nth-child(1)]:bg-thumbnail-mobile-sample
+.projectThumbnail__external-link {
+  @apply text-white absolute bottom-4 left-4 cursor-pointer
 }
 
-.projectItem4  {
-  @apply [&>*:nth-child(1)]:bg-thumbnail-desktop-sample
+.projectDetails {
+  @apply flex flex-col justify-center items-center lg:items-start gap-4 py-6 px-6 md:px-8 w-full lg:w-[40%] rounded-2xl text-center lg:text-left
 }
 
-.projectItem4 > div#mobile {
-  @apply [&>*:nth-child(1)]:bg-thumbnail-mobile-sample
+.projectTitle {
+  @apply font-bold text-xl
 }
 
-.projectItem5  {
-  @apply [&>*:nth-child(1)]:bg-thumbnail-desktop-sample
+.projectDescription {
+  @apply text-base text-slate-500 font-medium text-justify lg:text-left normal-case
 }
 
-.projectItem5 > div#mobile {
-  @apply [&>*:nth-child(1)]:bg-thumbnail-mobile-sample
+.projectTags {
+  @apply flex flex-row flex-wrap justify-center lg:justify-start items-start gap-2
 }
 
-.projectItemDesktop {
-  @apply w-full aspect-square lg:aspect-video rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[10000ms]
+.projectTags__container {
+  @apply flex p-2 md:p-3 w-full h-full lg:w-[83%] justify-center lg:justify-normal
 }
 
-.projectItemMobile {
-  @apply hidden md:flex relative
+.projectTag {
+  @apply py-2 px-4 justify-center items-start border border-solid border-slate-300 rounded-full font-medium text-xs capitalize
 }
 
-.projectItemMobile > div {
-  @apply invisible lg:visible lg:flex min-h-[280px] max-h-[230px] w-[130px] md:h-auto rounded-xl shadow-xl overflow-hidden bg-top bg-cover hover:bg-bottom ease-in duration-[15000ms] z-20 border-2 border-black absolute -bottom-3 -right-4 hover:scale-110
+.projectLinks {
+  @apply flex flex-row justify-center lg:justify-normal items-center gap-8 w-full mt-6
 }
 
-.projectItemDescription {
-  @apply flex flex-col text-center justify-center gap-4 py-6 w-full lg:w-4/6
-}
-
-.projectItemOdd {
-  @apply lg:[&>*:nth-child(1)]:order-2 lg:[&>*:nth-child(2)]:order-3 lg:[&>*:nth-child(3)]:order-1
+.projectLink {
+  @apply flex flex-row gap-2 justify-center items-center hover:text-secondary-red capitalize
 }
 
 /* Contact Component */
 .inputField {
-  @apply border border-solid border-slate-400 rounded-md p-4
+  @apply border border-solid border-slate-400 rounded-md p-3 w-full focus:placeholder:italic focus:outline-secondary-red text-black 
 }
 
 .textArea {
   @apply h-[190px] resize-none
+}
+
+/* Components */
+.serviceCard, .serviceCard__black, .serviceCard__red, .serviceCard__image {
+  @apply hoverSmoothScale flex flex-col w-full min-h-[240px] md:min-h-[200px] max-h-[280px] items-center text-center py-6 px-4 md:px-5 rounded-2xl overflow-hidden md:text-left md:items-start row-span-2
+}
+
+.serviceCard > div, .serviceCard__black > div, .serviceCard__red > div {
+  @apply  mb-4
+}
+
+.serviceCard > h1, .serviceCard__black > h1, .serviceCard__red > h1 {
+  @apply  font-bold text-lg capitalize
+}
+
+.serviceCard > p, .serviceCard__black > p, .serviceCard__red > p {
+  @apply text-xs font-bold normal-case
+}
+
+.serviceCard__black, .serviceCard__red {
+  @apply hover:shadow-lg 
+}
+
+.serviceCard__black > div, .serviceCard__red > div {
+  @apply text-white
+}
+
+.serviceCard__black > h1, .serviceCard__red > h1 {
+  @apply text-white
+}
+
+.serviceCard__black > p, .serviceCard__red > p {
+  @apply text-white
+}
+
+.serviceCard {
+  @apply hover:text-secondary-red shadow-inner shadow-slate-400 hover:shadow-lg
+}
+
+.serviceCard__black {
+  @apply bg-neutral-800
+}
+
+.serviceCard__red {
+  @apply bg-secondary-red
+}
+
+.serviceCard > div {
+  @apply text-secondary-red
+}
+
+.serviceCard > p {
+  @apply text-slate-500
+}
+
+.serviceCard__image {
+  @apply bg-home-texture bg-center bg-cover bg-no-repeat
+}
+
+.serviceCard__image > div {
+  @apply hidden
+}
+
+.serviceCard__image > h1 {
+  @apply hidden
+}
+
+.serviceCard__image > p {
+  @apply hidden
+}
+
+/* Contact Component */
+.contactCard {
+  @apply flex flex-row items-center gap-2 lg:gap-4 text-left justify-center
+}
+
+.contactCard__extra {
+  @apply flex
+}
+
+.contactCard__text {
+  @apply flex flex-col
+}
+
+.contactCard__title {
+  @apply font-bold text-sm
+}
+
+.contactCard__info {
+  @apply text-xs
 }
