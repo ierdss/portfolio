@@ -53,10 +53,11 @@ function FeaturedProjects() {
                                         <Image
                                             src={thumbnailDesktop}
                                             width={850}
-                                            height={600}
+                                            height={700}
                                             alt={desktopAlt}
                                             loading="lazy"
-                                            sizes="(max-width: 768px) 50vw, (max-width: 	1024px) 75vw, (max-width: 1280px) 100vw, 25vw"
+                                            quality={100}
+                                            sizes="(max-width: 768px) 50vw, (max-width: 1024px) 75vw, (max-width: 1280px) 100vw, 25vw"
                                             style={{
                                                 objectFit: 'cover',
                                             }}
@@ -71,6 +72,8 @@ function FeaturedProjects() {
                                                 height={50}
                                                 alt={mobileAlt}
                                                 loading="lazy"
+                                                quality={100}
+                                                className="object-cover"
                                             />
                                         </div>
                                     </div>
