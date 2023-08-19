@@ -3,7 +3,7 @@ import React from 'react'
 import { WorkExperienceSectionHeading } from '@/constants/SectionHeading';
 
 type TimelineProps = {
-  timeline: Array<TimelineCardProps>,
+  timeline?: Array<TimelineCardProps>,
 }
 
 type TimelineCardProps = {

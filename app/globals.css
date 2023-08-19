@@ -72,8 +72,12 @@ body {
   @apply block font-bold text-3xl capitalize
 }
 
+.sectionDescription {
+  @apply font-medium text-base text-slate-600 normal-case
+}
+
 .sectionPadding {
-  @apply px-2 md:px-20 pt-24 pb-12 md:pt-28
+  @apply px-2 md:px-16 pt-24 pb-12 md:pt-28
 }
 
 .callToAction {
