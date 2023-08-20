@@ -20,7 +20,7 @@ const Technologies = () => {
         {TechList.map(({ id, frontTitle, frontIcon, frontCategoryIcon, backTitle, backIcon }) => (
           <li key={id} className="hover:-translate-y-2 group transition-all duration-500">
             <div className="technologiesCard">
-              <div className="technologiesCard__back">
+              <div className="technologiesCard__back text-center">
                 {backIcon}
                 <span>{frontTitle}</span>
                 <span className="text-xs">{backTitle}</span>

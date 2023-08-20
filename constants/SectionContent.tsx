@@ -1,8 +1,4 @@
-import {
-  BiCodeAlt,
-  BiLogoTypescript,
-  BiTargetLock,
-} from "react-icons/bi";
+import { BiCodeAlt, BiLogoTypescript, BiTargetLock } from "react-icons/bi";
 import { BsGlobeAsiaAustralia, BsLayersFill } from "react-icons/bs";
 import {
   FaGlobeAsia,
@@ -117,7 +113,7 @@ export const TechnologiesSectionContent = [
     frontIcon: <FaHtml5 size={techIconSize} color={`#f06529`} />,
     frontCategoryIcon: TechCategorySmallIcons.markup,
     backIcon: TechCategoryLargeIcons.markup,
-    backTitle: "Markup",
+    backTitle: "Markup Language",
   },
   {
     id: 2,
@@ -125,7 +121,7 @@ export const TechnologiesSectionContent = [
     frontIcon: <FaCss3Alt size={techIconSize} color={`#2965f1`} />,
     frontCategoryIcon: TechCategorySmallIcons.styling,
     backIcon: TechCategoryLargeIcons.styling,
-    backTitle: "Styling",
+    backTitle: "Styling Language",
   },
   {
     id: 3,
@@ -133,7 +129,7 @@ export const TechnologiesSectionContent = [
     frontIcon: <SiTailwindcss size={techIconSize} color={`#67e8f9`} />,
     frontCategoryIcon: TechCategorySmallIcons.styling,
     backIcon: TechCategoryLargeIcons.styling,
-    backTitle: "Styling",
+    backTitle: "Styling Language",
   },
   {
     id: 4,
@@ -141,7 +137,7 @@ export const TechnologiesSectionContent = [
     frontIcon: <FaSass size={techIconSize} color={`#cc6699`} />,
     frontCategoryIcon: TechCategorySmallIcons.styling,
     backIcon: TechCategoryLargeIcons.styling,
-    backTitle: "Styling",
+    backTitle: "Styling Language",
   },
   {
     id: 5,
@@ -149,7 +145,7 @@ export const TechnologiesSectionContent = [
     frontIcon: <IoLogoJavascript size={techIconSize} color={`#ecd120`} />,
     frontCategoryIcon: TechCategorySmallIcons.programming,
     backIcon: TechCategoryLargeIcons.programming,
-    backTitle: "Programming",
+    backTitle: "Programming Language",
   },
   {
     id: 6,
@@ -157,7 +153,7 @@ export const TechnologiesSectionContent = [
     frontIcon: <BiLogoTypescript size={techIconSize} color={`#007acc`} />,
     frontCategoryIcon: TechCategorySmallIcons.programming,
     backIcon: TechCategoryLargeIcons.programming,
-    backTitle: "Programming",
+    backTitle: "Programming Language",
   },
   {
     id: 7,
@@ -176,6 +172,38 @@ export const TechnologiesSectionContent = [
     backTitle: "Framework",
   },
 ];
+
+export const WorkflowSectionContent = [
+  {
+    id: 1,
+    number: "01",
+    title: "sales is the goal",
+    description: "As a developer the goal of making a website is making money. My job as a developer is to design and create a website with the highest number of clicks.",
+  },
+  {
+    id: 2,
+    number: "02",
+    title: "content comes first",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam nesciunt quaerat sequi autem impedit odio distinctio suscipit consequuntur perspiciatis numquam quam doloremque, laudantium neque. Iure quia harum nam repellat quam!",
+  },
+  {
+    id: 3,
+    number: "03",
+    title: "prototying a design",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam nesciunt quaerat sequi autem impedit odio distinctio suscipit consequuntur perspiciatis numquam quam doloremque, laudantium neque. Iure quia harum nam repellat quam!",
+  },
+  {
+    id: 4,
+    number: "04",
+    title: "finally, building",
+    description:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam nesciunt quaerat sequi autem impedit odio distinctio suscipit consequuntur perspiciatis numquam quam doloremque, laudantium neque. Iure quia harum nam repellat quam!",
+  },
+];
+
+export const WorkExperienceSectionContent = {};
 
 export const ProjectSectionContent = [
   {

@@ -3,10 +3,10 @@ import Hero from "./Hero";
 import Services from "./Services";
 import About from "./About";
 import Technologies from "./Technologies";
-import WorkFlow from "./WorkFlow";
+import Workflow from "./Workflow";
 import WorkExperience from "./WorkExperience";
 import Projects from "./Projects";
-import Testimonials from "./Testimonials"
+import Testimonials from "./Testimonials";
 import Contact from "./Contact";
 import Footer from "./Footer";
 
@@ -16,7 +16,7 @@ export {
   Services,
   About,
   Technologies,
-  WorkFlow,
+  Workflow,
   WorkExperience,
   Projects,
   Testimonials,

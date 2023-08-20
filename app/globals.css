@@ -201,6 +201,10 @@ body {
 }
 
 /* WorkFlow Section  */
+.workflow {
+  @apply w-full flex flex-col
+}
+
 
 /* WorkExperience Section  */
 

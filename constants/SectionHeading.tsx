@@ -35,6 +35,11 @@ export const TechnologiesSectionHeading = {
     "As a Software Developer I have decided to master a small set of skills. Nonetheless, I am willing and eager to learn new technologies to give more value to clients and to build myself even further.",
 };
 
+export const WorkflowSectionHeading = {
+  overline: "Workflow",
+  header: "my thought process",
+}
+
 export const WorkExperienceSectionHeading = {
   overline: "work experience",
   header: "what have i done?",
