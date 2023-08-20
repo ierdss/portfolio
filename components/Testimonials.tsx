@@ -1,6 +1,6 @@
-import { WorkflowSectionHeading } from "@/constants";
+import { TestimonialsSectionHeading } from "@/constants";
 export default function Testimonials() {
-  const { overline, header } = WorkflowSectionHeading;
+  const { overline, header } = TestimonialsSectionHeading;
 
   return (
     <div id="testimonials" className="testimonials sectionPadding">

@@ -16,7 +16,7 @@ const Technologies = () => {
         </div>
         <p className="sectionDescription !text-white">{description}</p>
       </div>
-      <ul className="technologiesCardGrid">
+      <ul className="technologiesCardGrid ">
         {TechList.map(({ id, frontTitle, frontIcon, frontCategoryIcon, backTitle, backIcon }) => (
           <li key={id} className="hover:-translate-y-2 group transition-all duration-500">
             <div className="technologiesCard">
