@@ -22,7 +22,7 @@ export default function ContactGrid() {
 
             <div className="gridSquare gridSquare__small !rounded-full !shadow-inner !shadow-neutral-400 border border-neutral-200 contactCard__extra">
                 <Image
-                    src="/plants/leaf-1.jpg"
+                    src="/plants__compressed/leaf-1__compressed.jpg"
                     width={width}
                     height={height}
                     alt="a leaf"
@@ -32,7 +32,7 @@ export default function ContactGrid() {
             </div>
             <div className="gridSquare gridSquare__small bg-secondary-red contactCard__extra">
                 <Image
-                    src="/plants/trees-1.jpg"
+                    src="/plants__compressed/trees-1__compressed.jpg"
                     width={width}
                     height={height}
                     alt="trees"
@@ -62,7 +62,7 @@ export default function ContactGrid() {
 
             <div className="gridSquare gridSquare__small bg-neutral-800 !rounded-tl-full contactCard__extra">
                 <Image
-                    src="/plants/leaves-3.jpg"
+                    src="/plants__compressed/leaves-3__compressed.jpg"
                     width={width}
                     height={height}
                     alt="leaves"

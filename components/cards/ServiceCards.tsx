@@ -15,7 +15,7 @@ type ServiceCardProps = Omit<Card, "id">
 export function ServiceCard({ icon, title, paragraph, colorType }:ServiceCardProps) {
     return(
         <div className={colorType || "serviceCard"}>
-            <div>{icon || <BsQuestionOctagon size={40} />}</div>
+            <div>{icon || <BsQuestionOctagon size={50} />}</div>
             <h1>{title || "Sample"}</h1>
             <p>{paragraph || "Lorem ipsum amet consectetur, adipisicing elit. Tenetur error, rem officia?"}</p> 
         </div>
