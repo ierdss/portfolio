@@ -40,7 +40,7 @@ body {
 }
 
 ::selection {
-  @apply text-secondary-red bg-white
+  @apply text-secondary-red bg-white;
 }
 
 /* Flex Shortcuts */
@@ -58,144 +58,146 @@ body {
 
 /* All Sections */
 .sectionOverline {
-  @apply text-secondary-red font-extrabold text-sm block uppercase
+  @apply text-secondary-red font-extrabold text-sm block uppercase;
 }
 
 .sectionHeader {
-  @apply block font-bold text-3xl capitalize
+  @apply block font-bold text-3xl capitalize;
 }
 
 .sectionDescription {
-  @apply font-medium text-base text-slate-600 normal-case
+  @apply font-medium text-base text-slate-600 normal-case;
 }
 
 .sectionPadding {
-  @apply px-[10px] md:px-[100px] py-[50px]
+  @apply px-[10px] md:px-[100px] py-[50px];
 }
 
 .callToAction {
-  @apply w-full bg-secondary-red text-base font-extrabold text-white p-4 hover:bg-accent-pink rounded-lg
+  @apply w-full bg-secondary-red text-base font-extrabold text-white p-4 hover:bg-accent-pink rounded-lg;
 }
 
 /* Hover Effects */
 .hoverSmoothScale {
-  @apply hover:scale-105 duration-300 ease-out transition-all
+  @apply hover:scale-105 duration-300 ease-out transition-all;
 }
 
 /* Navbar Section */
 .navbar {
-  @apply flexCenter pt-2 pb-1 md:pt-[5px] md:pb-0 px-6 md:px-12 w-full fixed top-0 !z-40 max-w-screen-xl bg-white text-slate-500
+  @apply flexCenter pt-2 pb-1 md:pt-[5px] md:pb-0 px-6 md:px-12 w-full fixed top-0 !z-40 max-w-screen-xl bg-white text-slate-500;
 }
 
 .navbar__scrolled {
-  @apply shadow-lg
+  @apply shadow-lg;
 }
 
 .navbar__desktop {
-  @apply flex-1 flexBetween gap-10 md:gap-16 justify-center items-center
+  @apply flex-1 flexBetween gap-10 md:gap-16 justify-center items-center;
 }
 
 .navbar__desktop-center {
-  @apply lg:flex hidden gap-10
+  @apply lg:flex hidden gap-10;
 }
 
-.navbarLogo, .navbarCta {
-  @apply w-[140px]
+.navbarLogo,
+.navbarCta {
+  @apply w-[140px];
 }
 
 .navbarLogo {
-  @apply text-4xl font-black bg-clip-text text-transparent bg-cover bg-center bg-home-texture hover:text-secondary-red 
+  @apply text-4xl font-black bg-clip-text text-transparent bg-cover bg-center bg-home-texture hover:text-secondary-red;
 }
 
 .navbarListItem {
-  @apply flex flex-col w-full text-center
+  @apply flex flex-col w-full text-center;
 }
 
 .navbarLinks {
-  @apply flex flex-col w-full text-slate-400 gap-4
+  @apply flex flex-col w-full text-slate-400 gap-4;
 }
 
 .navbarLinks__desktop {
-  @apply flex flex-row gap-4
+  @apply flex flex-row gap-4;
 }
 
 .navbarLink {
-  @apply px-4 py-3 my-3 font-bold text-sm hover:text-secondary-red target:text-secondary-red capitalize block w-full
+  @apply px-4 py-3 my-3 font-bold text-sm hover:text-secondary-red target:text-secondary-red capitalize block w-full;
 }
 
 .navbarCta {
-  @apply hidden md:flex items-center justify-center bg-secondary-red text-base font-extrabold text-white p-3 hover:bg-accent-pink rounded-md gap-2
+  @apply hidden md:flex items-center justify-center bg-secondary-red text-base font-extrabold text-white p-3 hover:bg-accent-pink rounded-md gap-2;
 }
 
 .navbarMenu {
-  @apply lg:hidden flex flex-row gap-10
+  @apply lg:hidden flex flex-row gap-10;
 }
 
 .navbar__mobile-open {
-  @apply flex flex-col justify-between items-center gap-8 bg-white w-full h-full fixed top-0 right-0 lg:hidden z-50 ease-in-out duration-500
+  @apply flex flex-col justify-between items-center gap-8 bg-white w-full h-full fixed top-0 right-0 lg:hidden z-50 ease-in-out duration-500;
 }
 
 .navbar__mobile-closed {
-  @apply flex flex-col justify-between items-center gap-8 bg-white w-full h-full fixed top-0 right-[-100%] lg:hidden z-50 ease-in-out duration-500
+  @apply flex flex-col justify-between items-center gap-8 bg-white w-full h-full fixed top-0 right-[-100%] lg:hidden z-50 ease-in-out duration-500;
 }
 
 .navbar__mobile-top {
-  @apply flex w-full justify-between items-center pt-2 pb-1 px-6
+  @apply flex w-full justify-between items-center pt-2 pb-1 px-6;
 }
-
 
 /* Hero Section  */
 
 /* Services Section  */
 .services {
-  @apply flexCenter flex-col md:flex-row gap-[50px] bg-neutral-50 relative
+  @apply flexCenter flex-col md:flex-row gap-[50px] bg-neutral-50 relative;
 }
 
-.servicesContent, .servicesCards {
-  @apply flex flex-col z-10
+.servicesContent,
+.servicesCards {
+  @apply flex flex-col z-10;
 }
 
 .servicesContent {
-  @apply w-[90%] md:w-[40%] gap-[12px]
+  @apply w-[90%] md:w-[40%] gap-[12px];
 }
 
 .servicesCards {
-  @apply w-[90%] md:w-[65%] gap-[30px]
+  @apply w-[90%] md:w-[65%] gap-[30px];
 }
 
 .servicesCardsRow {
-  @apply flex flex-col md:flex-row  gap-[30px]
+  @apply flex flex-col md:flex-row  gap-[30px];
 }
 
 .servicesBackground {
-  @apply absolute left-0 right-0 pointer-events-none
+  @apply absolute left-0 right-0 pointer-events-none;
 }
 
 /* About Section  */
 
 /* Technologies Section  */
 .technologies {
-  @apply bg-secondary-red w-full flex flex-col md:flex-row gap-[50px] justify-between items-center bg-opacity-50
+  @apply bg-secondary-red w-full flex flex-col md:flex-row gap-[50px] justify-between items-center bg-opacity-50;
 }
 
 .technologiesCardGrid {
-  @apply w-[90%] md:w-full grid grid-cols-3 md:grid-cols-4 gap-x-2 gap-y-4 md:gap-[50px]
+  @apply w-[90%] md:w-full grid grid-cols-3 md:grid-cols-4 gap-x-2 gap-y-4 md:gap-[50px];
 }
 
-.technologiesCard{
-  @apply  w-[110px] h-[160px] relative transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]
+.technologiesCard {
+  @apply w-[110px] h-[160px] relative transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)];
 }
 
-.technologiesCard__front, .technologiesCard__back {
-  @apply md:-rotate-12 absolute inset-0 w-full h-full p-4 flex flex-col rounded-md shadow-md items-center
+.technologiesCard__front,
+.technologiesCard__back {
+  @apply md:-rotate-12 absolute inset-0 w-full h-full p-4 flex flex-col rounded-md shadow-md items-center;
 }
 
 .technologiesCard__front {
-  @apply bg-white justify-between
+  @apply bg-white justify-between;
 }
 
 .technologiesCard__back {
-  @apply bg-black justify-center [transform:rotateY(180deg)] [backface-visibility:hidden]
+  @apply bg-black justify-center [transform:rotateY(180deg)] [backface-visibility:hidden];
 }
 
 /* WorkFlow Section  */
@@ -204,196 +206,209 @@ body {
 
 /* Grid Component */
 .gridSquare {
-  @apply w-full rounded-2xl shadow-lg overflow-hidden border border-neutral-300
+  @apply w-full rounded-2xl shadow-lg overflow-hidden border border-neutral-300;
 }
 
-.gridSquare__small, .gridSquare__big {
-  @apply aspect-square
+.gridSquare__small,
+.gridSquare__big {
+  @apply aspect-square;
 }
 
 .gridSquare__tall {
-  @apply row-span-2
+  @apply row-span-2;
 }
 
 .gridSquare__long {
-  @apply col-span-2
+  @apply col-span-2;
 }
 
 .gridSquare__big {
-  @apply col-span-2 row-span-2
+  @apply col-span-2 row-span-2;
 }
 
 .gridImage {
-  @apply hover:scale-110 ease-in-out duration-500 transition-all
+  @apply hover:scale-110 ease-in-out duration-500 transition-all;
 }
 
 /* Projects Component */
 .projectsList {
-  @apply flex flex-col flex-wrap gap-8 md:gap-24 snap-proximity snap-y
+  @apply flex flex-col flex-wrap gap-8 md:gap-24 snap-proximity snap-y;
 }
 
 .projectItem {
-  @apply flex flex-col lg:flex-row rounded-2xl gap-2 lg:gap-10 relative w-full odd:lg:flex-row-reverse odd:lg:gap-0 odd:lg:pr-10 border-b-2 border-b-secondary-red lg:border-b-0 odd:lg:border-l-2 odd:lg:border-l-secondary-red even:lg:border-r-2 even:lg:border-r-secondary-red snap-center shrink-0 drop-shadow-xl bg-white shadow-inner shadow-slate-300
+  @apply flex flex-col lg:flex-row rounded-2xl gap-2 lg:gap-10 relative w-full odd:lg:flex-row-reverse odd:lg:gap-0 odd:lg:pr-10 border-b-2 border-b-secondary-red lg:border-b-0 odd:lg:border-l-2 odd:lg:border-l-secondary-red even:lg:border-r-2 even:lg:border-r-secondary-red snap-center shrink-0 drop-shadow-xl bg-white shadow-inner shadow-slate-300;
 }
 
 .projectItem__right {
-  @apply flex flex-col w-full h-fit lg:w-[60%] 
+  @apply flex flex-col w-full h-fit lg:w-[60%];
 }
 
 .projectThumbnails {
-  @apply flex flex-col lg:flex-row relative w-full h-full
+  @apply flex flex-col lg:flex-row relative w-full h-full;
 }
 
 .projectThumbnailDesktop {
-  @apply flex flex-col w-full h-full rounded-2xl shadow-md overflow-hidden cursor-pointer aspect-auto
+  @apply flex flex-col w-full h-full rounded-2xl shadow-md overflow-hidden cursor-pointer aspect-auto;
 }
 
 .projectThumbnailMobile {
-  @apply hidden md:flex relative cursor-pointer
+  @apply hidden md:flex relative cursor-pointer;
 }
 
 .projectThumbnailMobile > div {
-  @apply invisible lg:visible lg:flex min-h-[280px] max-h-[230px] w-[130px] md:h-auto rounded-2xl shadow-md overflow-hidden z-20 border-2 border-black absolute -bottom-6 -right-8 hover:scale-110
+  @apply invisible lg:visible lg:flex min-h-[280px] max-h-[230px] w-[130px] md:h-auto rounded-2xl shadow-md overflow-hidden z-20 border-2 border-black absolute -bottom-6 -right-8 hover:scale-110;
 }
 
 .projectThumbnail__external-link {
-  @apply text-white absolute bottom-4 left-4 cursor-pointer
+  @apply text-white absolute bottom-4 left-4 cursor-pointer;
 }
 
 .projectDetails {
-  @apply flex flex-col justify-center items-center lg:items-start gap-4 py-6 px-6 md:px-8 w-full lg:w-[40%] rounded-2xl text-center lg:text-left
+  @apply flex flex-col justify-center items-center lg:items-start gap-4 py-6 px-6 md:px-8 w-full lg:w-[40%] rounded-2xl text-center lg:text-left;
 }
 
 .projectTitle {
-  @apply font-bold text-xl
+  @apply font-bold text-xl;
 }
 
 .projectDescription {
-  @apply text-base text-slate-500 font-medium text-justify lg:text-left normal-case
+  @apply text-base text-slate-500 font-medium text-justify lg:text-left normal-case;
 }
 
 .projectTags {
-  @apply flex flex-row flex-wrap justify-center lg:justify-start items-start gap-2
+  @apply flex flex-row flex-wrap justify-center lg:justify-start items-start gap-2;
 }
 
 .projectTags__container {
-  @apply flex p-2 md:p-3 w-full h-full lg:w-[83%] justify-center lg:justify-normal
+  @apply flex p-2 md:p-3 w-full h-full lg:w-[83%] justify-center lg:justify-normal;
 }
 
 .projectTag {
-  @apply py-2 px-4 justify-center items-start border border-solid border-slate-300 rounded-full font-medium text-xs capitalize
+  @apply py-2 px-4 justify-center items-start border border-solid border-slate-300 rounded-full font-medium text-xs capitalize;
 }
 
 .projectLinks {
-  @apply flex flex-row justify-center lg:justify-normal items-center gap-8 w-full mt-6
+  @apply flex flex-row justify-center lg:justify-normal items-center gap-8 w-full mt-6;
 }
 
 .projectLink {
-  @apply flex flex-row gap-2 justify-center items-center hover:text-secondary-red capitalize
+  @apply flex flex-row gap-2 justify-center items-center hover:text-secondary-red capitalize;
 }
 
 /* Testimonials Section  */
 
 /* Contact Component */
 .inputField {
-  @apply border border-solid border-slate-400 rounded-md p-3 w-full focus:placeholder:italic focus:outline-secondary-red text-black 
+  @apply border border-solid border-slate-400 rounded-md p-3 w-full focus:placeholder:italic focus:outline-secondary-red text-black;
 }
 
 .textArea {
-  @apply h-[190px] resize-none
+  @apply h-[190px] resize-none;
 }
 
 /* Components */
-.serviceCard, .serviceCard__black, .serviceCard__red, .serviceCard__image {
-  @apply hoverSmoothScale flex flex-col w-full min-h-[230px] aspect-video justify-center p-6 rounded-md overflow-hidden  row-span-2
+.serviceCard,
+.serviceCard__black,
+.serviceCard__red,
+.serviceCard__image {
+  @apply hoverSmoothScale flex flex-col w-full min-h-[230px] aspect-video justify-center p-6 rounded-md overflow-hidden  row-span-2;
 }
 
-.serviceCard > div, .serviceCard__black > div, .serviceCard__red > div {
-  @apply  mb-4
+.serviceCard > div,
+.serviceCard__black > div,
+.serviceCard__red > div {
+  @apply mb-4;
 }
 
-.serviceCard > h1, .serviceCard__black > h1, .serviceCard__red > h1 {
-  @apply font-bold text-lg capitalize
+.serviceCard > h1,
+.serviceCard__black > h1,
+.serviceCard__red > h1 {
+  @apply font-bold text-lg capitalize;
 }
 
-.serviceCard > p, .serviceCard__black > p, .serviceCard__red > p {
-  @apply text-base font-medium normal-case
+.serviceCard > p,
+.serviceCard__black > p,
+.serviceCard__red > p {
+  @apply text-base font-medium normal-case;
 }
 
-.serviceCard__black, .serviceCard__red {
-  @apply hover:shadow-lg 
+.serviceCard__black,
+.serviceCard__red {
+  @apply hover:shadow-lg;
 }
 
-.serviceCard__black > div, .serviceCard__red > div {
-  @apply text-white
+.serviceCard__black > div,
+.serviceCard__red > div {
+  @apply text-white;
 }
 
-.serviceCard__black > h1, .serviceCard__red > h1 {
-  @apply text-white
+.serviceCard__black > h1,
+.serviceCard__red > h1 {
+  @apply text-white;
 }
 
-.serviceCard__black > p, .serviceCard__red > p {
-  @apply text-white
+.serviceCard__black > p,
+.serviceCard__red > p {
+  @apply text-white;
 }
 
 .serviceCard {
-  @apply hover:text-secondary-red shadow-inner shadow-slate-400 hover:shadow-lg
+  @apply hover:text-secondary-red shadow-inner shadow-slate-400 hover:shadow-lg;
 }
 
 .serviceCard__black {
-  @apply bg-neutral-800
+  @apply bg-neutral-800;
 }
 
 .serviceCard__red {
-  @apply bg-secondary-red
+  @apply bg-secondary-red;
 }
 
 .serviceCard > div {
-  @apply text-secondary-red
+  @apply text-secondary-red;
 }
 
 .serviceCard > p {
-  @apply text-slate-500
+  @apply text-slate-500;
 }
 
 .serviceCard__image {
-  @apply bg-home-texture bg-center bg-cover bg-no-repeat
+  @apply bg-home-texture bg-center bg-cover bg-no-repeat;
 }
 
 .serviceCard__image > div {
-  @apply hidden
+  @apply hidden;
 }
 
 .serviceCard__image > h1 {
-  @apply hidden
+  @apply hidden;
 }
 
 .serviceCard__image > p {
-  @apply hidden
+  @apply hidden;
 }
 
 /* Contact Component */
 .contactCard {
-  @apply flex flex-row items-center gap-2 lg:gap-4 text-left justify-center
+  @apply flex flex-row items-center gap-2 lg:gap-4 text-left justify-center;
 }
 
 .contactCard__extra {
-  @apply flex
+  @apply flex;
 }
 
 .contactCard__text {
-  @apply flex flex-col
+  @apply flex flex-col;
 }
 
 .contactCard__title {
-  @apply font-bold text-sm
+  @apply font-bold text-sm;
 }
 
 .contactCard__info {
-  @apply text-xs
+  @apply text-xs;
 }
 
 /* Footer Section */
-
 
 /* Extra Components */
