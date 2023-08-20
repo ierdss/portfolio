@@ -4,35 +4,46 @@ import {
 } from './NavigationLinks'
 
 import { 
+    ServicesSectionContent,
     AboutSectionContent, 
-    TechnologiesSectionContent, 
+    TechnologiesSectionContent,
+    WorkflowSectionContent,
+    WorkExperienceSectionContent, 
     ProjectSectionContent,
     ContactSectionContent, 
 } from './SectionContent'
 
 import { 
     HeroSectionHeading, 
+    ServicesSectionHeading,
     AboutSectionHeading, 
     TechnologiesSectionHeading,
-    WorkExperienceSectionHeading,
+    WorkflowSectionHeading,
+    ExperienceSectionHeading,
     ProjectsSectionHeading,
     TestimonialsSectionHeading,
     ContactSectionHeading,
     FooterSectionHeading, 
 } from './SectionHeading'
 
-
 export {
     NavLinks, 
     SocialMediaLinks, 
+
+    ServicesSectionContent,
     AboutSectionContent, 
     TechnologiesSectionContent, 
+    WorkflowSectionContent,
+    WorkExperienceSectionContent, 
     ProjectSectionContent,
-    ContactSectionContent, 
-    HeroSectionHeading, 
+    ContactSectionContent,
+
+    HeroSectionHeading,
+    ServicesSectionHeading, 
     AboutSectionHeading, 
     TechnologiesSectionHeading,
-    WorkExperienceSectionHeading,
+    WorkflowSectionHeading,
+    ExperienceSectionHeading,
     ProjectsSectionHeading,
     TestimonialsSectionHeading,
     ContactSectionHeading,
