@@ -16,10 +16,10 @@ module.exports = {
         'light-white-400': '#E2E5F1',
         'light-white-500': '#E4E4E4',
         gray: '#4D4A4A',
-        'gray-100': '#3d3d4e',
-        'black-100': '#212121',
+        'gray-1': '#3d3d4e',
+        'black-1': '#212121',
         'primary-purple': '#9747FF',
-        'gray-50': '#D9D9D9',
+        'gray-2': '#D9D9D9',
 
         'secondary-red': '#B40041',
         'accent-pink': '#F24471',
