@@ -70,7 +70,7 @@ body {
 }
 
 .sectionPadding {
-  @apply px-2 md:px-[100px] py-[50px] md:pt-[50px]
+  @apply px-[10px] md:px-[100px] py-[50px]
 }
 
 .callToAction {
