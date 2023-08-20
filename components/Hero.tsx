@@ -8,7 +8,7 @@ export default function Hero() {
     const { header, subheader } = HeroSectionHeading;
 
     return(
-        <div className="sectionPadding md:!pt-32 flex flex-col md:flex-row justify-center items-center gap-12 w-full overflow-hidden">
+        <div className="sectionPadding md:!pt-32 flex flex-col md:flex-row justify-center items-center gap-12 w-full overflow-hidden mt-[50px]">
             <div className="w-[80%] lg:w-[40%] z-10">
                 <HeroGrid />
             </div>
