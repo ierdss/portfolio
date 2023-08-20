@@ -1,4 +1,8 @@
-import { BiCodeAlt, BiLogoTypescript, BiSolidBone } from "react-icons/bi";
+import {
+  BiCodeAlt,
+  BiLogoTypescript,
+  BiTargetLock,
+} from "react-icons/bi";
 import { BsGlobeAsiaAustralia, BsLayersFill } from "react-icons/bs";
 import {
   FaGlobeAsia,
@@ -10,15 +14,10 @@ import {
 import { GiRotaryPhone } from "react-icons/gi";
 import { HiMailOpen } from "react-icons/hi";
 import { IoLogoJavascript } from "react-icons/io";
-import {
-  IoStorefront,
-  IoColorPaletteSharp,
-  IoLibrarySharp,
-} from "react-icons/io5";
+import { IoStorefront, IoColorPaletteSharp, IoLibrary } from "react-icons/io5";
 import { MdSettingsSuggest, MdAccessTimeFilled } from "react-icons/md";
 import { RiDatabaseFill } from "react-icons/ri";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
-import { TbLayersDifference } from "react-icons/tb";
 
 const servicesIconSize = 50;
 const aboutIconSize = 40;
@@ -95,63 +94,86 @@ export const AboutSectionContent = [
   },
 ];
 
-const TechCategoryIcons = {
-  markup: <TbLayersDifference size={categoryIconSize} />,
+const TechCategorySmallIcons = {
+  markup: <BiTargetLock size={categoryIconSize} />,
   styling: <IoColorPaletteSharp size={categoryIconSize} />,
   programming: <BiCodeAlt size={categoryIconSize} />,
-  library: <IoLibrarySharp size={categoryIconSize} />,
+  library: <IoLibrary size={categoryIconSize} />,
   framework: <BsLayersFill size={categoryIconSize} />,
+};
+
+const TechCategoryLargeIcons = {
+  markup: <BiTargetLock size={techIconSize} />,
+  styling: <IoColorPaletteSharp size={techIconSize} />,
+  programming: <BiCodeAlt size={techIconSize} />,
+  library: <IoLibrary size={techIconSize} />,
+  framework: <BsLayersFill size={techIconSize} />,
 };
 
 export const TechnologiesSectionContent = [
   {
     id: 1,
-    title: "HTML5",
-    icon: <FaHtml5 size={techIconSize} color={`#f06529`} />,
-    category: TechCategoryIcons.markup,
+    frontTitle: "HTML5",
+    frontIcon: <FaHtml5 size={techIconSize} color={`#f06529`} />,
+    frontCategoryIcon: TechCategorySmallIcons.markup,
+    backIcon: TechCategoryLargeIcons.markup,
+    backTitle: "Markup",
   },
   {
     id: 2,
-    title: "CSS3",
-    icon: <FaCss3Alt size={techIconSize} color={`#2965f1`} />,
-    category: TechCategoryIcons.styling,
+    frontTitle: "CSS3",
+    frontIcon: <FaCss3Alt size={techIconSize} color={`#2965f1`} />,
+    frontCategoryIcon: TechCategorySmallIcons.styling,
+    backIcon: TechCategoryLargeIcons.styling,
+    backTitle: "Styling",
   },
   {
     id: 3,
-    title: "Tailwind",
-    icon: <SiTailwindcss size={techIconSize} color={`#67e8f9`} />,
-    category: TechCategoryIcons.styling,
+    frontTitle: "Tailwind",
+    frontIcon: <SiTailwindcss size={techIconSize} color={`#67e8f9`} />,
+    frontCategoryIcon: TechCategorySmallIcons.styling,
+    backIcon: TechCategoryLargeIcons.styling,
+    backTitle: "Styling",
   },
   {
     id: 4,
-    title: "Sass",
-    icon: <FaSass size={techIconSize} color={`#cc6699`} />,
-    category: TechCategoryIcons.styling,
+    frontTitle: "Sass",
+    frontIcon: <FaSass size={techIconSize} color={`#cc6699`} />,
+    frontCategoryIcon: TechCategorySmallIcons.styling,
+    backIcon: TechCategoryLargeIcons.styling,
+    backTitle: "Styling",
   },
   {
     id: 5,
-    title: "Javascript",
-    group: "programming",
-    icon: <IoLogoJavascript size={techIconSize} color={`#ecd120`} />,
-    category: TechCategoryIcons.programming,
+    frontTitle: "Javascript",
+    frontIcon: <IoLogoJavascript size={techIconSize} color={`#ecd120`} />,
+    frontCategoryIcon: TechCategorySmallIcons.programming,
+    backIcon: TechCategoryLargeIcons.programming,
+    backTitle: "Programming",
   },
   {
     id: 6,
-    title: "Typescript",
-    icon: <BiLogoTypescript size={techIconSize} color={`#007acc`} />,
-    category: TechCategoryIcons.programming,
+    frontTitle: "Typescript",
+    frontIcon: <BiLogoTypescript size={techIconSize} color={`#007acc`} />,
+    frontCategoryIcon: TechCategorySmallIcons.programming,
+    backIcon: TechCategoryLargeIcons.programming,
+    backTitle: "Programming",
   },
   {
     id: 7,
-    title: "React.js",
-    icon: <FaReact size={techIconSize} color={`#61dbfb`} />,
-    category: TechCategoryIcons.library,
+    frontTitle: "React.js",
+    frontIcon: <FaReact size={techIconSize} color={`#61dbfb`} />,
+    frontCategoryIcon: TechCategorySmallIcons.library,
+    backIcon: TechCategoryLargeIcons.library,
+    backTitle: "Library",
   },
   {
     id: 8,
-    title: "Next.js",
-    icon: <SiNextdotjs size={techIconSize} color={`#171515`} />,
-    category: TechCategoryIcons.framework,
+    frontTitle: "Next.js",
+    frontIcon: <SiNextdotjs size={techIconSize} color={`#171515`} />,
+    frontCategoryIcon: TechCategorySmallIcons.framework,
+    backIcon: TechCategoryLargeIcons.framework,
+    backTitle: "Framework",
   },
 ];
 

@@ -180,7 +180,7 @@ body {
 }
 
 .technologiesCardGrid {
-  @apply w-[90%] md:w-full grid grid-cols-3 md:grid-cols-4 gap-x-2 gap-y-4 md:gap-[50px];
+  @apply w-[90%] md:w-full grid grid-cols-3 md:grid-cols-4 gap-x-2 gap-y-[30px] md:gap-[50px];
 }
 
 .technologiesCard {
@@ -193,11 +193,11 @@ body {
 }
 
 .technologiesCard__front {
-  @apply bg-white justify-between [backface-visibility:hidden];
+  @apply bg-white text-black-1 justify-between [backface-visibility:hidden];
 }
 
 .technologiesCard__back {
-  @apply bg-black justify-center [transform:rotateY(180deg)] text-white;
+  @apply bg-black-1 text-white justify-center [transform:rotateY(180deg)] ;
 }
 
 /* WorkFlow Section  */
