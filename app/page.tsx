@@ -1,6 +1,6 @@
 "use client"
 
-import { Hero, Services, About, Technologies, WorkFlow, WorkExperience, Projects, Testimonials, Contact,  } from '@/components'
+import { Hero, Services, About, Technologies, Workflow, WorkExperience, Projects, Testimonials, Contact,  } from '@/components'
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       <Services />
       <About />
       <Technologies />
-      <WorkFlow />
+      <Workflow />
       <WorkExperience />
       <Projects />
       <Testimonials />
