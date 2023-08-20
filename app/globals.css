@@ -184,20 +184,20 @@ body {
 }
 
 .technologiesCard {
-  @apply w-[110px] h-[160px] relative transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)];
+  @apply w-[110px] h-[160px] relative transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] md:-rotate-12;
 }
 
 .technologiesCard__front,
 .technologiesCard__back {
-  @apply md:-rotate-12 absolute inset-0 w-full h-full p-4 flex flex-col rounded-md shadow-md items-center;
+  @apply absolute inset-0 w-full h-full p-4 flex flex-col rounded-md shadow-md items-center;
 }
 
 .technologiesCard__front {
-  @apply bg-white justify-between;
+  @apply bg-white justify-between [backface-visibility:hidden];
 }
 
 .technologiesCard__back {
-  @apply bg-black justify-center [transform:rotateY(180deg)] [backface-visibility:hidden];
+  @apply bg-black justify-center [transform:rotateY(180deg)] text-white;
 }
 
 /* WorkFlow Section  */
