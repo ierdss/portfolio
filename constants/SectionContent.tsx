@@ -1,7 +1,6 @@
-import { BiLogoTypescript } from 'react-icons/bi'
-import { BsGlobeAsiaAustralia } from 'react-icons/bs'
-import { FaGlobeAsia, FaMarker, FaHtml5, FaReact, FaCss3Alt, FaSass,  } from 'react-icons/fa'
-import { FaTrowelBricks }from 'react-icons/fa6'
+import { BiCodeAlt, BiLogoTypescript, BiSolidBone } from 'react-icons/bi'
+import { BsGlobeAsiaAustralia, BsLayersFill } from 'react-icons/bs'
+import { FaGlobeAsia, FaHtml5, FaReact, FaCss3Alt, FaSass,  } from 'react-icons/fa'
 import { GiRotaryPhone } from 'react-icons/gi'
 import { HiMailOpen } from 'react-icons/hi'
 import { IoLogoJavascript } from 'react-icons/io'
@@ -9,7 +8,6 @@ import { IoStorefront, IoColorPaletteSharp, IoLibrarySharp } from 'react-icons/i
 import { MdSettingsSuggest, MdAccessTimeFilled } from 'react-icons/md'
 import { RiDatabaseFill } from 'react-icons/ri'
 import { SiNextdotjs, SiTailwindcss } from 'react-icons/si'
-import { TbFrame } from 'react-icons/tb'
 
 const servicesIconSize = 50;
 const aboutIconSize = 40;
@@ -84,11 +82,11 @@ export const AboutSectionContent = [
 ]
 
 const TechCategoryIcons = {
-    markup: <FaMarker size={categoryIconSize} />,
+    markup: <BiSolidBone size={categoryIconSize} />,
     styling: <IoColorPaletteSharp size={categoryIconSize} />,
-    programming: <FaTrowelBricks size={categoryIconSize} />,
+    programming: <BiCodeAlt size={categoryIconSize} />,
     library: <IoLibrarySharp size={categoryIconSize} />,
-    framework: <TbFrame size={categoryIconSize} />,
+    framework: <BsLayersFill size={categoryIconSize} />,
 }
 
 export const TechnologiesSectionContent = [
