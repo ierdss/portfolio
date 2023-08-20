@@ -18,13 +18,21 @@ const Technologies = () => {
             </div>
             <ul className='technologiesCardGrid'>
                 {TechList.map(({ id, icon, category }) => (
-                    <li key={id} className='technologiesCard'>
-                        <div className='w-full flex justify-end'>
-                            {category}
-                        </div>
-                        {icon}
-                        <div className='w-full'>
-                            {category}
+                    <li key={id} className='hover:-translate-y-1 group'>
+                        <div className='technologiesCard'>
+                            <div className='technologiesCard__back'>
+                                Back
+                            </div>
+                            <div className='technologiesCard__front'>
+                                <div className='w-full flex justify-end'>
+                                    {category}
+                                </div>
+                                {icon}
+                                <div className='w-full'>
+                                    {category}
+                                </div>
+                            </div>
+                       
                         </div>
                     </li>
                 ))}
