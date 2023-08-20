@@ -3,6 +3,12 @@ export const HeroSectionHeading = {
     subheader:"Embracing the fusion of artistry and code, I shape digital experiences as a full-stack developer. With a passion for design and a drive for innovation, I craft seamless interfaces and striking visuals, elevating the aesthetic essence of the web.",
 }
 
+export const ServicesSectionHeading = {
+    overline:"services",
+    header:"what can i provide?",
+    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium adipisci ullam sint placeat doloremque, voluptatibus veniam minima eos. Explicabo!",
+}
+
 export const AboutSectionHeading = {
     overline:"about",
     header:"me and my services 👌",

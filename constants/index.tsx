@@ -12,6 +12,7 @@ import {
 
 import { 
     HeroSectionHeading, 
+    ServicesSectionHeading,
     AboutSectionHeading, 
     TechnologiesSectionHeading,
     WorkExperienceSectionHeading,
@@ -21,15 +22,17 @@ import {
     FooterSectionHeading, 
 } from './SectionHeading'
 
-
 export {
     NavLinks, 
     SocialMediaLinks, 
+
     AboutSectionContent, 
     TechnologiesSectionContent, 
     ProjectSectionContent,
-    ContactSectionContent, 
-    HeroSectionHeading, 
+    ContactSectionContent,
+
+    HeroSectionHeading,
+    ServicesSectionHeading, 
     AboutSectionHeading, 
     TechnologiesSectionHeading,
     WorkExperienceSectionHeading,
