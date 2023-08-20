@@ -8,6 +8,7 @@ import { IoStorefront, IoColorPaletteSharp, IoLibrarySharp } from 'react-icons/i
 import { MdSettingsSuggest, MdAccessTimeFilled } from 'react-icons/md'
 import { RiDatabaseFill } from 'react-icons/ri'
 import { SiNextdotjs, SiTailwindcss } from 'react-icons/si'
+import { TbLayersDifference } from 'react-icons/tb'
 
 const servicesIconSize = 50;
 const aboutIconSize = 40;
@@ -82,7 +83,7 @@ export const AboutSectionContent = [
 ]
 
 const TechCategoryIcons = {
-    markup: <BiSolidBone size={categoryIconSize} />,
+    markup: <TbLayersDifference size={categoryIconSize} />,
     styling: <IoColorPaletteSharp size={categoryIconSize} />,
     programming: <BiCodeAlt size={categoryIconSize} />,
     library: <IoLibrarySharp size={categoryIconSize} />,
