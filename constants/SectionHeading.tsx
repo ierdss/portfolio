@@ -32,7 +32,7 @@ export const TechnologiesSectionHeading = {
   overline: "technologies",
   header: "tools i am most familiar with 💻",
   description:
-    "As a Software Developer I have decided to master a small set of skills. Nonetheless, I am openly willing to learn new technologies to give more value to clients and to build myself even further.",
+    "As a Software Developer I have decided to master a small set of skills. Nonetheless, I am willing and eager to learn new technologies to give more value to clients and to build myself even further.",
 };
 
 export const WorkExperienceSectionHeading = {
