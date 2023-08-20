@@ -1,14 +1,19 @@
 "use client"
 
-import { Hero, StarsCanvas, About, Projects, Contact, Technologies } from '@/components'
+import { Hero, Services, About, Technologies, Workflow, Experience, Projects, Testimonials, Contact,  } from '@/components'
 
 export default function Home() {
   return (
     <main className="flex flex-col w-full">
-      <Hero/>
-      <About/>
-      <Projects/>
-      <Contact/>
+      <Hero />
+      <Services />
+      <About />
+      <Technologies />
+      <Workflow />
+      <Experience />
+      <Projects />
+      <Testimonials />
+      <Contact />
     </main>
   )
 }
