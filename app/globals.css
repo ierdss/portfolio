@@ -58,7 +58,7 @@ body {
 
 /* All Sections */
 .sectionOverline {
-  @apply text-secondary-red font-extrabold text-lg block uppercase
+  @apply text-secondary-red font-extrabold text-sm block uppercase
 }
 
 .sectionHeader {
@@ -70,7 +70,7 @@ body {
 }
 
 .sectionPadding {
-  @apply px-2 md:px-[100px] py-[50px] md:pt-[100px]
+  @apply px-2 md:px-[100px] py-[50px] md:pt-[50px]
 }
 
 .callToAction {
@@ -116,15 +116,15 @@ body {
 }
 
 .navbarLinks__desktop {
-  @apply flex flex-row
+  @apply flex flex-row gap-4
 }
 
 .navbarLink {
-  @apply px-6 py-6 font-bold text-base hover:text-secondary-red target:text-secondary-red capitalize block w-full
+  @apply px-4 py-3 my-3 font-bold text-sm hover:text-secondary-red target:text-secondary-red capitalize block w-full
 }
 
 .navbarCta {
-  @apply hidden md:flex items-center justify-center bg-secondary-red text-base font-extrabold text-white py-3 px-4 hover:bg-accent-pink rounded-full gap-2
+  @apply hidden md:flex items-center justify-center bg-secondary-red text-base font-extrabold text-white p-3 hover:bg-accent-pink rounded-full gap-2
 }
 
 .navbarMenu {
@@ -147,6 +147,29 @@ body {
 /* Hero Section  */
 
 /* Services Section  */
+.services {
+  @apply flexCenter flex-col md:flex-row gap-[50px] bg-neutral-50 relative
+}
+
+.servicesContent, .servicesCards {
+  @apply flex flex-col z-10
+}
+
+.servicesContent {
+  @apply w-[90%] md:w-[40%] gap-[12px]
+}
+
+.servicesCards {
+  @apply w-full md:w-[65%] gap-[30px]
+}
+
+.servicesCardsRow {
+  @apply flex flex-col md:flex-row  gap-[30px]
+}
+
+.servicesBackground {
+  @apply absolute bottom-0 right-0 pointer-events-none
+}
 
 /* About Section  */
 
@@ -259,7 +282,7 @@ body {
 
 /* Components */
 .serviceCard, .serviceCard__black, .serviceCard__red, .serviceCard__image {
-  @apply hoverSmoothScale flex flex-col w-full min-h-[240px] md:min-h-[200px] max-h-[280px] items-center text-center py-6 px-4 md:px-5 rounded-2xl overflow-hidden md:text-left md:items-start row-span-2
+  @apply hoverSmoothScale flex flex-col w-full min-h-[230px] aspect-video justify-center p-6 rounded-md overflow-hidden  row-span-2
 }
 
 .serviceCard > div, .serviceCard__black > div, .serviceCard__red > div {
@@ -267,11 +290,11 @@ body {
 }
 
 .serviceCard > h1, .serviceCard__black > h1, .serviceCard__red > h1 {
-  @apply  font-bold text-lg capitalize
+  @apply font-bold text-lg capitalize
 }
 
 .serviceCard > p, .serviceCard__black > p, .serviceCard__red > p {
-  @apply text-xs font-bold normal-case
+  @apply text-base font-medium normal-case
 }
 
 .serviceCard__black, .serviceCard__red {
