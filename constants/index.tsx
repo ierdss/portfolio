@@ -4,6 +4,7 @@ import {
 } from './NavigationLinks'
 
 import { 
+    ServicesSectionContent,
     AboutSectionContent, 
     TechnologiesSectionContent, 
     ProjectSectionContent,
@@ -26,6 +27,7 @@ export {
     NavLinks, 
     SocialMediaLinks, 
 
+    ServicesSectionContent,
     AboutSectionContent, 
     TechnologiesSectionContent, 
     ProjectSectionContent,
