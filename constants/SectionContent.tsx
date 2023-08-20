@@ -1,27 +1,21 @@
-// Services Section Icons
-import { FaGlobeAsia, FaToolbox } from 'react-icons/fa'
-import { IoStorefront } from 'react-icons/io5'
-import { RiDatabaseFill } from 'react-icons/ri'
-import { MdSettingsSuggest } from 'react-icons/md'
-
-//About Section Services Icons
-import { BsGlobeAsiaAustralia } from 'react-icons/bs'
-
-//Skills Section Icons
-import { FaHtml5, FaReact, FaCss3Alt, FaSass} from 'react-icons/fa'
-import { SiNextdotjs, SiTailwindcss } from 'react-icons/si'
 import { BiLogoTypescript } from 'react-icons/bi'
-import { IoLogoJavascript } from 'react-icons/io'
-
-//Contact Section Icons
-import { HiMailOpen } from 'react-icons/hi'
+import { BsGlobeAsiaAustralia } from 'react-icons/bs'
+import { FaGlobeAsia, FaMarker, FaHtml5, FaReact, FaCss3Alt, FaSass,  } from 'react-icons/fa'
+import { FaTrowelBricks }from 'react-icons/fa6'
 import { GiRotaryPhone } from 'react-icons/gi'
-import { MdAccessTimeFilled } from 'react-icons/md'
+import { HiMailOpen } from 'react-icons/hi'
+import { IoLogoJavascript } from 'react-icons/io'
+import { IoStorefront, IoColorPaletteSharp, IoLibrarySharp } from 'react-icons/io5'
+import { MdSettingsSuggest, MdAccessTimeFilled } from 'react-icons/md'
+import { RiDatabaseFill } from 'react-icons/ri'
+import { SiNextdotjs, SiTailwindcss } from 'react-icons/si'
+import { TbFrame } from 'react-icons/tb'
 
 const servicesIconSize = 50;
 const aboutIconSize = 40;
 const contactIconSize = 40;
-const skillIconSize = 50;
+const techIconSize = 50;
+const categoryIconSize = 15;
 
 export const ServicesSectionContent = [
     {
@@ -89,15 +83,64 @@ export const AboutSectionContent = [
     },
 ]
 
+const TechCategoryIcons = {
+    markup: <FaMarker size={categoryIconSize} />,
+    styling: <IoColorPaletteSharp size={categoryIconSize} />,
+    programming: <FaTrowelBricks size={categoryIconSize} />,
+    library: <IoLibrarySharp size={categoryIconSize} />,
+    framework: <TbFrame size={categoryIconSize} />,
+}
+
 export const TechnologiesSectionContent = [
-    { id:1, title:"HTML5", group:"markup", icon:<FaHtml5 size={skillIconSize} color={`#f06529`} /> },
-    { id:2, title:"CSS3", group:"styling", icon:<FaCss3Alt size={skillIconSize} color={`#2965f1`} /> },
-    { id:3, title:"Tailwind", group:"styling", icon:<SiTailwindcss size={skillIconSize} color={`#67e8f9`} /> },
-    { id:4, title:"Sass", group:"styling", icon:<FaSass size={skillIconSize} color={`#cc6699`} /> },
-    { id:5, title:"Javascript", group:"programming", icon:<IoLogoJavascript size={skillIconSize} color={`#ecd120`} /> },
-    { id:6, title:"Typescript", group:"programming", icon:<BiLogoTypescript size={skillIconSize} color={`#007acc`} /> },
-    { id:7, title:"React.js", group:"library", icon:<FaReact size={skillIconSize} color={`#61dbfb`} /> },
-    { id:8, title:"Next.js", group:"framework", icon:<SiNextdotjs size={skillIconSize} color={`#171515`} /> },
+    {
+        id:1,
+        title:"HTML5",
+        icon:<FaHtml5 size={techIconSize} color={`#f06529`} />,
+        category: TechCategoryIcons.markup,
+    },
+    { 
+        id:2, 
+        title:"CSS3", 
+        icon:<FaCss3Alt size={techIconSize} color={`#2965f1`} />,
+        category: TechCategoryIcons.styling,
+    },
+    { 
+        id:3, 
+        title:"Tailwind", 
+        icon:<SiTailwindcss size={techIconSize} color={`#67e8f9`} />, 
+        category: TechCategoryIcons.styling,
+    },
+    { 
+        id:4, 
+        title:"Sass", 
+        icon:<FaSass size={techIconSize} color={`#cc6699`} />,
+        category: TechCategoryIcons.styling,
+    },
+    { 
+        id:5, 
+        title:"Javascript", 
+        group:"programming", 
+        icon:<IoLogoJavascript size={techIconSize} color={`#ecd120`} />, 
+        category: TechCategoryIcons.programming,
+    },
+    { 
+        id:6, 
+        title:"Typescript", 
+        icon:<BiLogoTypescript size={techIconSize} color={`#007acc`} />,
+        category: TechCategoryIcons.programming
+    },
+    { 
+        id:7, 
+        title:"React.js", 
+        icon:<FaReact size={techIconSize} color={`#61dbfb`} />,
+        category: TechCategoryIcons.library
+    },
+    { 
+        id:8, 
+        title:"Next.js", 
+        icon:<SiNextdotjs size={techIconSize} color={`#171515`} />,
+        category: TechCategoryIcons.framework
+    },
 ]
 
 export const ProjectSectionContent = [
