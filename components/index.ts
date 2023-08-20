@@ -4,7 +4,7 @@ import Services from "./Services";
 import About from "./About";
 import Technologies from "./Technologies";
 import Workflow from "./Workflow";
-import WorkExperience from "./WorkExperience";
+import Experience from "./Experience";
 import Projects from "./Projects";
 import Testimonials from "./Testimonials";
 import Contact from "./Contact";
@@ -17,7 +17,7 @@ export {
   About,
   Technologies,
   Workflow,
-  WorkExperience,
+  Experience,
   Projects,
   Testimonials,
   Contact,
