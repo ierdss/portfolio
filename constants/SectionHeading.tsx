@@ -52,7 +52,7 @@ export const ProjectsSectionHeading = {
 
 export const TestimonialsSectionHeading = {
   overline: "testimonials",
-  header: "whom t worked with",
+  header: "whom ive worked with",
 };
 
 export const ContactSectionHeading = {
