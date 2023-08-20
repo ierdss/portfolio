@@ -6,7 +6,7 @@ export const HeroSectionHeading = {
 export const ServicesSectionHeading = {
     overline:"services",
     header:"what can i provide?",
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium adipisci ullam sint placeat doloremque, voluptatibus veniam minima eos. Explicabo!",
+    description:"With my services I can make your ideas for a product or service come to life.",
 }
 
 export const AboutSectionHeading = {

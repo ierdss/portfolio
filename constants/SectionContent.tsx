@@ -1,8 +1,14 @@
+// Services Section Icons
+import { FaGlobeAsia, FaToolbox } from 'react-icons/fa'
+import { IoStorefront } from 'react-icons/io5'
+import { RiDatabaseFill } from 'react-icons/ri'
+import { MdSettingsSuggest } from 'react-icons/md'
+
 //About Section Services Icons
 import { BsGlobeAsiaAustralia } from 'react-icons/bs'
 
 //Skills Section Icons
-import { FaHtml5, FaReact, FaCss3Alt, FaSass } from 'react-icons/fa'
+import { FaHtml5, FaReact, FaCss3Alt, FaSass} from 'react-icons/fa'
 import { SiNextdotjs, SiTailwindcss } from 'react-icons/si'
 import { BiLogoTypescript } from 'react-icons/bi'
 import { IoLogoJavascript } from 'react-icons/io'
@@ -12,9 +18,43 @@ import { HiMailOpen } from 'react-icons/hi'
 import { GiRotaryPhone } from 'react-icons/gi'
 import { MdAccessTimeFilled } from 'react-icons/md'
 
+const servicesIconSize = 50;
 const aboutIconSize = 40;
 const contactIconSize = 40;
 const skillIconSize = 50;
+
+export const ServicesSectionContent = [
+    {
+        icon: <FaGlobeAsia size={servicesIconSize} />,
+        title:"Web Development",
+        description:"Professional web pages with best practices, clean code structures and layout responsiveness.",
+    },
+    {
+        icon: <IoStorefront size={servicesIconSize} />,
+        title:"Front-End Development",
+        description:"Design prototyping for customer sales conversion. Creating familiarity for users throught UI/UX.",
+    },
+    {
+        icon: <RiDatabaseFill size={servicesIconSize} />,
+        title:"Back-End Development",
+        description:"",
+    },
+    {
+        icon: <MdSettingsSuggest size={servicesIconSize} />,
+        title:"Website Management",
+        description:"Support and maintenance with the latest technologies through code optimization and unit testing.",
+    }
+    // {
+    //     icon: <FaPhoneVolume size={servicesIconSize} />,
+    //     title:"Consulting",
+    //     description:"I can suggest solutions for your problems.",
+    // },
+    // {
+    //     icon: <BsMortarboardFill size={servicesIconSize} />,
+    //     title:"Mentoring",
+    //     description:"I teach students all around the world programming. I also provide one-on-one mentorship for a price.",
+    // }
+]
 
 export const AboutSectionContent = [
     {
