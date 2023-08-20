@@ -30,55 +30,48 @@ export default function Navbar() {
     }, []);
 
     return(
-    <nav id='navbar' className='flexCenter pt-2 pb-1 md:pt-[5px] md:pb-0 px-6 md:px-12 w-full fixed top-0 !z-40 max-w-screen-xl bg-white text-slate-500'>
-        <ProgressBar 
-            color1   = "#e2e8f0" 
-            color2   = "#B40041" 
-            height   = "5px"
-            position = "fixed" 
-        />
-        <div className='flex-1 flexBetween gap-10 md:gap-16 justify-center items-center'>
-            <Link href="#">
-                <h1 className='text-4xl font-black bg-clip-text bg-clip text-transparent bg-cover bg-center bg-home-texture hover:text-secondary-red'>ANDREI</h1>
-            </Link>
-            <div className='lg:flex hidden gap-10'>
-                <ul id='navbar-links' className='flex flex-row'>
+        <nav id='navbar' className='navbar'>
+            <ProgressBar 
+                color1   = "#e2e8f0" 
+                color2   = "#B40041" 
+                height   = "5px"
+                position = "fixed" 
+            />
+            <div className='navbar__desktop'>
+                <Link href="#">
+                    <h1 className='navbarLogo bg-clip'>ANDREI</h1>
+                </Link>
+                <div className='navbar__desktop-center'>
+                    <ul id='navbar-links' className='navbarLinks__desktop'>
+                        {NavLinks.map(({ id, href, text}) => (
+                            <li key={id}>
+                                <Link href={href} className='navbarLink'>
+                                    {text}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+                <Link href="#contact" className='navbarCta'>Contact</Link>
+            </div>
+            <div onClick={handleNav} className='navbarMenu'>
+                <GiHamburgerMenu size={sizeIcon}/>
+            </div>
+            <div className={nav ? "navbar__mobile-open" : "navbar__mobile-closed"}>
+                <ul id='navbar-links' className='navbarLinks'>
+                    <div onClick={handleNav} className="navbar__mobile-top">
+                        <h1 className='navbarLogo bg-clip'>ANDREI</h1>
+                        <RxCross2 size={sizeIcon}/>
+                    </div>
                     {NavLinks.map(({ id, href, text}) => (
-                        <li key={id}>
-                            <Link
-                                href={href} 
-                                className='navbar-link'
-                                >
+                        <li key={id} className='navbarListItem'>
+                            <Link onClick={handleNav} href={href} className='navbarLink'>
                                 {text}
                             </Link>
                         </li>
                     ))}
                 </ul>
             </div>
-        </div>
-        <div onClick={handleNav} className='lg:hidden flex flex-row gap-10'>
-            <GiHamburgerMenu size={sizeIcon}/>
-        </div>
-        <div className={nav ? "flex flex-col justify-between items-center gap-8 bg-white w-full h-full fixed top-0 right-0 lg:hidden z-50 ease-in-out duration-500" : "flex flex-col justify-between items-center gap-8 bg-white w-full h-full fixed top-0 right-[-100%] lg:hidden z-50 ease-in-out duration-500"}>
-            <ul id='navbar-links' className='flex flex-col w-full text-slate-400 gap-4'>
-                <div onClick={handleNav} className="flex w-full justify-between items-center pt-2 pb-1 px-6">
-                    <h1 className='text-4xl font-black bg-clip-text bg-clip text-transparent bg-cover bg-center bg-home-texture hover:text-secondary-red'>ANDREI</h1>
-                    <RxCross2 size={sizeIcon}/>
-                </div>
-                {NavLinks.map(({ id, href, text}) => (
-                    <li key={id}
-                        className='flex flex-col w-full text-center'>
-                        <Link
-                            onClick={handleNav}
-                            href={href} 
-                            className='navbar-link'
-                            >
-                            {text}
-                        </Link>
-                    </li>
-                ))}
-            </ul>
-        </div>
-    </nav>
+        </nav>
     )
 }
