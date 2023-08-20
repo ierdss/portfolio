@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { WorkExperienceSectionHeading } from '@/constants/SectionHeading';
+import { ExperienceSectionHeading } from '@/constants';
 
 type TimelineProps = {
   timeline?: Array<TimelineCardProps>,
@@ -13,8 +13,8 @@ type TimelineCardProps = {
   contributions: Array<String>,
 }
 
-export default function WorkExperience( { timeline }:TimelineProps ) {
-  const { overline, header } = WorkExperienceSectionHeading;
+export default function Experience( { timeline }:TimelineProps ) {
+  const { overline, header } = ExperienceSectionHeading;
 
   return (
     <div className='w-full sectionPadding'>

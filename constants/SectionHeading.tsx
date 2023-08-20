@@ -40,7 +40,7 @@ export const WorkflowSectionHeading = {
   header: "my thought process",
 }
 
-export const WorkExperienceSectionHeading = {
+export const ExperienceSectionHeading = {
   overline: "work experience",
   header: "what have i done?",
 };
