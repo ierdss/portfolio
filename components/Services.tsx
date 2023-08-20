@@ -26,13 +26,18 @@ export default function Services() {
             </div>
             <Image
                 typeof="background"
-                src={"/patterns/bg-services.svg"}
+                src={"/patterns/bg-services__desktop.svg"}
                 fill
                 alt="This is impossible! An svg did not load?"
-                className="servicesBackground"
-            >
-
-            </Image>
+                className="servicesBackground top-0  hidden md:flex"
+            />
+            <Image
+                typeof="background"
+                src={"/patterns/bg-services__mobile.svg"}
+                fill
+                alt="This is impossible! An svg did not load?"
+                className="servicesBackground bottom-0 md:hidden"
+            />
         </div>
     )
 }
