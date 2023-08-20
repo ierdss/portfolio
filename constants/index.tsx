@@ -6,7 +6,9 @@ import {
 import { 
     ServicesSectionContent,
     AboutSectionContent, 
-    TechnologiesSectionContent, 
+    TechnologiesSectionContent,
+    WorkflowSectionContent,
+    WorkExperienceSectionContent, 
     ProjectSectionContent,
     ContactSectionContent, 
 } from './SectionContent'
@@ -16,6 +18,7 @@ import {
     ServicesSectionHeading,
     AboutSectionHeading, 
     TechnologiesSectionHeading,
+    WorkflowSectionHeading,
     WorkExperienceSectionHeading,
     ProjectsSectionHeading,
     TestimonialsSectionHeading,
@@ -30,6 +33,8 @@ export {
     ServicesSectionContent,
     AboutSectionContent, 
     TechnologiesSectionContent, 
+    WorkflowSectionContent,
+    WorkExperienceSectionContent, 
     ProjectSectionContent,
     ContactSectionContent,
 
@@ -37,6 +42,7 @@ export {
     ServicesSectionHeading, 
     AboutSectionHeading, 
     TechnologiesSectionHeading,
+    WorkflowSectionHeading,
     WorkExperienceSectionHeading,
     ProjectsSectionHeading,
     TestimonialsSectionHeading,
