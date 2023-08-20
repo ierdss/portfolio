@@ -43,6 +43,7 @@ body {
   @apply text-secondary-red bg-white
 }
 
+/* Flex Shortcuts */
 .flexCenter {
   @apply flex justify-center items-center;
 }
@@ -55,15 +56,7 @@ body {
   @apply flex items-center justify-start;
 }
 
-.text-small {
-  @apply text-sm font-medium;
-}
-
-.paddings {
-  @apply lg:px-20 py-6 px-5;
-}
-
-/* Text */
+/* All Sections */
 .sectionOverline {
   @apply text-secondary-red font-extrabold text-lg block uppercase
 }
@@ -77,11 +70,11 @@ body {
 }
 
 .sectionPadding {
-  @apply px-2 md:px-16 pt-24 pb-12 md:pt-28
+  @apply px-2 md:px-[100px] py-[50px] md:pt-[100px]
 }
 
 .callToAction {
-  @apply w-full bg-secondary-red text-xl font-extrabold text-white p-4 hover:bg-accent-pink rounded-lg
+  @apply w-full bg-secondary-red text-base font-extrabold text-white p-4 hover:bg-accent-pink rounded-lg
 }
 
 /* Hover Effects */
@@ -89,16 +82,79 @@ body {
   @apply hover:scale-105 duration-300 ease-out transition-all
 }
 
-/* Navbar Component */
+/* Navbar Section */
+.navbar {
+  @apply flexCenter pt-2 pb-1 md:pt-[5px] md:pb-0 px-6 md:px-12 w-full fixed top-0 !z-40 max-w-screen-xl bg-white text-slate-500
+}
+
 .navbar__scrolled {
   @apply shadow-lg
 }
 
-.navbar-link {
-  @apply px-8 py-6 font-bold text-base hover:text-secondary-red target:text-secondary-red capitalize block w-full
+.navbar__desktop {
+  @apply flex-1 flexBetween gap-10 md:gap-16 justify-center items-center
 }
 
+.navbar__desktop-center {
+  @apply lg:flex hidden gap-10
+}
+
+.navbarLogo, .navbarCta {
+  @apply w-[140px]
+}
+
+.navbarLogo {
+  @apply text-4xl font-black bg-clip-text text-transparent bg-cover bg-center bg-home-texture hover:text-secondary-red 
+}
+
+.navbarListItem {
+  @apply flex flex-col w-full text-center
+}
+
+.navbarLinks {
+  @apply flex flex-col w-full text-slate-400 gap-4
+}
+
+.navbarLinks__desktop {
+  @apply flex flex-row
+}
+
+.navbarLink {
+  @apply px-6 py-6 font-bold text-base hover:text-secondary-red target:text-secondary-red capitalize block w-full
+}
+
+.navbarCta {
+  @apply hidden md:flex items-center justify-center bg-secondary-red text-base font-extrabold text-white py-3 px-4 hover:bg-accent-pink rounded-full gap-2
+}
+
+.navbarMenu {
+  @apply lg:hidden flex flex-row gap-10
+}
+
+.navbar__mobile-open {
+  @apply flex flex-col justify-between items-center gap-8 bg-white w-full h-full fixed top-0 right-0 lg:hidden z-50 ease-in-out duration-500
+}
+
+.navbar__mobile-closed {
+  @apply flex flex-col justify-between items-center gap-8 bg-white w-full h-full fixed top-0 right-[-100%] lg:hidden z-50 ease-in-out duration-500
+}
+
+.navbar__mobile-top {
+  @apply flex w-full justify-between items-center pt-2 pb-1 px-6
+}
+
+
 /* Hero Section  */
+
+/* Services Section  */
+
+/* About Section  */
+
+/* Technologies Section  */
+
+/* WorkFlow Section  */
+
+/* WorkExperience Section  */
 
 /* Grid Component */
 .gridSquare {
@@ -189,6 +245,8 @@ body {
 .projectLink {
   @apply flex flex-row gap-2 justify-center items-center hover:text-secondary-red capitalize
 }
+
+/* Testimonials Section  */
 
 /* Contact Component */
 .inputField {
@@ -288,3 +346,8 @@ body {
 .contactCard__info {
   @apply text-xs
 }
+
+/* Footer Section */
+
+
+/* Extra Components */

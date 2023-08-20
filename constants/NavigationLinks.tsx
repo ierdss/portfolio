@@ -5,9 +5,10 @@ const mediaIconSize = 30;
 
 export const NavLinks = [
     { id:1, href:"/", key:"Home", text:"Home"},
-    { id:2, href:"#about", key:"About", text:"About"},
-    { id:3, href:"#projects", key:"Projects", text:"Projects"},
-    { id:4, href:"#contact", key:"Contact", text:"Contact"},
+    { id:2, href:"#services", key:"Services", text:"Services"},
+    { id:3, href:"#about", key:"About", text:"About"},
+    // { id:4, href:"#experience", key:"Experience", text:"Experience"},
+    { id:4, href:"#projects", key:"Projects", text:"Projects"},
 ]
 
 export const SocialMediaLinks = [
