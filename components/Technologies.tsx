@@ -17,22 +17,36 @@ const Technologies = () => {
         <p className="sectionDescription !text-white">{description}</p>
       </div>
       <ul className="technologiesCardGrid ">
-        {TechList.map(({ id, frontTitle, frontIcon, frontCategoryIcon, backTitle, backIcon }) => (
-          <li key={id} className="hover:-translate-y-2 group transition-all duration-500">
-            <div className="technologiesCard">
-              <div className="technologiesCard__back text-center">
-                {backIcon}
-                <span>{frontTitle}</span>
-                <span className="text-xs">{backTitle}</span>
+        {TechList.map(
+          ({
+            id,
+            frontTitle,
+            frontIcon,
+            frontCategoryIcon,
+            backTitle,
+            backIcon,
+          }) => (
+            <li
+              key={id}
+              className="hover:-translate-y-2 group transition-all duration-500"
+            >
+              <div className="technologiesCard">
+                <div className="technologiesCard__back text-center">
+                  {backIcon}
+                  <span>{frontTitle}</span>
+                  <span className="text-xs">{backTitle}</span>
+                </div>
+                <div className="technologiesCard__front">
+                  <div className="w-full flex justify-end">
+                    {frontCategoryIcon}
+                  </div>
+                  {frontIcon}
+                  <div className="w-full">{frontCategoryIcon}</div>
+                </div>
               </div>
-              <div className="technologiesCard__front">
-                <div className="w-full flex justify-end">{frontCategoryIcon}</div>
-                {frontIcon}
-                <div className="w-full">{frontCategoryIcon}</div>
-              </div>
-            </div>
-          </li>
-        ))}
+            </li>
+          )
+        )}
       </ul>
       <Image
         src="/laptop-1.jpg"
