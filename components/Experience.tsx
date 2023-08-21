@@ -1,6 +1,9 @@
 import React from "react";
 
-import { ExperienceSectionHeading } from "@/constants";
+import {
+  ExperienceSectionHeading,
+  ExperienceSectionContent,
+} from "@/constants";
 
 type TimelineProps = {
   timeline?: Array<TimelineCardProps>;
@@ -17,12 +20,19 @@ export default function Experience({ timeline }: TimelineProps) {
   const { overline, header } = ExperienceSectionHeading;
 
   return (
-    <div className="w-full sectionPadding">
+    <div id="experience" className="w-full sectionPadding">
       <div className="">
         <h1 className="sectionOverline">{overline}</h1>
         <h1 className="sectionHeader">{header}</h1>
       </div>
-      <div>Card based timeline for ongoing work experience.</div>
+      <ul>
+        Card based timeline for ongoing work experience.
+        {ExperienceSectionContent.map(
+          ({ id, title, companyName, icon, date, bullets }) => (
+            <li key={id} className="experienceCard"></li>
+          )
+        )}
+      </ul>
     </div>
   );
 }
