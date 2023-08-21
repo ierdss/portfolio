@@ -29,17 +29,19 @@ export default function Testimonials() {
                 alt="Testimonial Avatar"
                 className="absolute -top-[50px] left-[50%] -translate-x-1/2 bg-black rounded-full overflow-hidden aspect-square"
               />
-              <BiSolidQuoteLeft
-                size={40}
-                className="text-secondary-red group-first:text-white"
-              />
-              <div>
-                <h1 className="font-bold text-lg">{name}</h1>
-                <h1 className="font-bold text-xs text-secondary-red group-first:text-white uppercase">
-                  {occupation}
-                </h1>
+              <div className="w-full flexCenter flex-row !justify-between">
+                <div className="text-left">
+                  <h1 className="font-bold text-lg">{name}</h1>
+                  <h1 className="font-semibold text-xs text-secondary-red group-first:text-white uppercase">
+                    {occupation}
+                  </h1>
+                </div>
+                <BiSolidQuoteLeft
+                  size={40}
+                  className="text-secondary-red group-first:text-white"
+                />
               </div>
-              <p className="font-medium text-sm">{testimonial}</p>
+              <p className="font-medium text-xs text-justify">{testimonial}</p>
               <span>⭐⭐⭐⭐⭐</span>
             </li>
           )
