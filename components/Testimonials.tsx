@@ -20,7 +20,7 @@ export default function Testimonials() {
           ({ avatar, name, occupation, testimonial }, index) => (
             <li
               key={index}
-              className="relative flex items-center flex-col justify-around w-full h-[300px] rounded-md p-4 shadow-lg border border-neutral-300 group first:text-white first:bg-secondary-red bg-neutral-50 pt-[50px] hover:-translate-y-4 transition-all duration-500 ease-in-out"
+              className="relative flex items-center flex-col justify-around w-full rounded-md p-8 gap-3 shadow-lg border border-neutral-300 group first:text-white first:bg-secondary-red bg-neutral-50 pt-[50px] hover:-translate-y-4 transition-all duration-500 ease-in-out"
             >
               <Image
                 src={avatar}
