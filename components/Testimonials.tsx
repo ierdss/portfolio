@@ -41,8 +41,7 @@ export default function Testimonials() {
                   className="text-secondary-red group-first:text-white"
                 />
               </div>
-              <p className="font-medium text-xs text-justify">{testimonial}</p>
-              <span>⭐⭐⭐⭐⭐</span>
+              <p className="font-medium text-xs text-left">{testimonial}</p>
             </li>
           )
         )}
