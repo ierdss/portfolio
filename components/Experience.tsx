@@ -55,15 +55,20 @@ function ExperienceCard({
           />
         </div>
       }
-      iconClassName="bg-white overflow-hidden"
+      iconStyle={{
+        color: "#B40041",
+      }}
+      iconClassName="bg-white overflow-hidden shadow-xl"
     >
       <h1 className="projectTitle">{title}</h1>
       <h1 className="text-xs font-bold text-secondary-red uppercase">
         {companyName}
       </h1>
       <ul className="list-disc mt-4 ml-4">
-        {bullets.map((bullet) => (
-          <li className="text-sm tracking-wider pl-1 font-medium">{bullet}</li>
+        {bullets.map((bullet, index) => (
+          <li key={index} className="text-sm tracking-wider pl-1 font-medium">
+            {bullet}
+          </li>
         ))}
       </ul>
       <span className="ease absolute bottom-0 left-[50%] -translate-x-1/2 h-0 w-0 border-t-2 border-secondary-red transition-all duration-700 group-hover:w-full" />
