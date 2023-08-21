@@ -10,6 +10,7 @@ import {
   ExperienceSectionHeading,
   ExperienceSectionContent,
 } from "@/constants";
+import Image from "next/image";
 
 type ExperienceCardProps = {
   title: string;
@@ -34,7 +35,7 @@ function ExperienceCard({
 
   return (
     <VerticalTimelineElement
-      className=" relative group"
+      className="relative group hover:-translate-y-4 transition-all ease-in-out duration-500 "
       contentStyle={{
         background: "white",
         color: "black",
@@ -43,17 +44,29 @@ function ExperienceCard({
       contentArrowStyle={{ borderRight: "7px solid #B40041" }}
       date={date}
       dateClassName="text-black"
-      icon={<div className="flexCenter w-full aspect-square">Icon</div>}
-      iconClassName="bg-white"
+      icon={
+        <div className="flexCenter w-full aspect-square">
+          <Image
+            src="/patterns/intersecting-circles.svg"
+            fill
+            alt="Me in red"
+            loading="lazy"
+            sizes="(max-width: 768px) 50vw, 33vw"
+          />
+        </div>
+      }
+      iconClassName="bg-white overflow-hidden"
     >
-      <h1>{title}</h1>
-      <h1>{companyName}</h1>
-      <ul>
+      <h1 className="projectTitle">{title}</h1>
+      <h1 className="text-xs font-bold text-secondary-red uppercase">
+        {companyName}
+      </h1>
+      <ul className="list-disc mt-4 ml-4">
         {bullets.map((bullet) => (
-          <li className="text-sm"> • {bullet}</li>
+          <li className="text-sm tracking-wider pl-1 font-medium">{bullet}</li>
         ))}
       </ul>
-      <span className="ease absolute bottom-0 left-[50%] -translate-x-1/2 h-0 w-0 border-t-2 border-secondary-red transition-all duration-500 group-hover:w-full" />
+      <span className="ease absolute bottom-0 left-[50%] -translate-x-1/2 h-0 w-0 border-t-2 border-secondary-red transition-all duration-700 group-hover:w-full" />
     </VerticalTimelineElement>
   );
 }
@@ -69,7 +82,6 @@ export default function Experience() {
       <div className="w-[90%] md:w-full text-left md:text-center">
         <h1 className="sectionOverline">{overline}</h1>
         <h1 className="sectionHeader">{header}</h1>
-        Card based timeline for ongoing work experience.
       </div>
       <VerticalTimeline className="w-full" lineColor="#B40041">
         {ExperienceSectionContent.map(
