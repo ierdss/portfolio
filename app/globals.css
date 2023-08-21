@@ -80,6 +80,14 @@ body {
   @apply px-[10px] md:px-[100px] py-[50px];
 }
 
+.sectionTitle {
+  @apply flex;
+}
+
+.sectionSubtitle {
+  @apply flex;
+}
+
 .callToAction {
   @apply w-full bg-secondary-red text-base font-extrabold text-white p-4 hover:bg-accent-pink rounded-lg;
 }
@@ -204,14 +212,13 @@ body {
 }
 
 .technologiesCard__back {
-  @apply bg-black-1 text-white justify-center [transform:rotateY(180deg)] ;
+  @apply bg-black-1 text-white justify-center [transform:rotateY(180deg)];
 }
 
 /* WorkFlow Section  */
 .workflow {
-  @apply w-full flex flex-col
+  @apply w-full flex flex-col;
 }
-
 
 /* WorkExperience Section  */
 

@@ -24,6 +24,7 @@ const aboutIconSize = 40;
 const contactIconSize = 40;
 const techIconSize = 50;
 const categoryIconSize = 15;
+const experienceIconSize = 70;
 
 export const ServicesSectionContent = [
   {
@@ -210,10 +211,21 @@ export const WorkflowSectionContent = [
 
 export const ExperienceSectionContent = [
   {
-    id: 1,
     title: "Next.js Developer",
     companyName: "Starbucks",
-    icon: <BsPatchQuestion size={30} />,
+    icon: <BsPatchQuestion size={experienceIconSize} />,
+    date: "March 2020 - April 2021",
+    bullets: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Next.js Developer",
+    companyName: "Starbucks",
+    icon: <BsPatchQuestion size={experienceIconSize} />,
     date: "March 2020 - April 2021",
     bullets: [
       "Developing and maintaining web applications using React.js and other related technologies.",
