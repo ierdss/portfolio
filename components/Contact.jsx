@@ -171,11 +171,11 @@ export default function Contact() {
           <h1 className="sectionHeader">Contact Information</h1>
           <ul className="flex flex-col gap-[20px]">
             {ContactSectionContent.map(({ icon, title, text }, index) => (
-              <li key={index} className="flex flex-row gap-2">
+              <li key={index} className="flex flex-row gap-2 text-left">
                 <div>{icon}</div>
                 <div>
-                  <h1>{title}</h1>
-                  <p>{text}</p>
+                  <h1 className="font-bold text-base">{title}</h1>
+                  <p className="text-sm font-medium">{text}</p>
                 </div>
               </li>
             ))}
