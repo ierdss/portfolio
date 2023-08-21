@@ -51,7 +51,7 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
-        <Link href="#contact" className="navbarCta">
+        <Link href="#contact" className="navbarCta__desktop">
           Contact
         </Link>
       </div>
@@ -72,6 +72,9 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+        <Link onClick={handleNav} href="#contact" className="navbarCta !block">
+          Contact
+        </Link>
       </div>
     </nav>
   );
