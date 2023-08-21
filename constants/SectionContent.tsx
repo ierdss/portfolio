@@ -383,14 +383,48 @@ export const ProjectSectionContent = [
 ];
 
 export const TestimonialsSectionContent = [
-  // {
-  //   testimonial:
-  //     "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-  //   name: "Sara Lee",
-  //   designation: "CFO",
-  //   company: "Acme Co",
-  //   image: "https://randomuser.me/api/portraits/women/4.jpg",
-  // },
+  {
+    avatar: "/MeRed.png",
+    name: "Andrei Sager",
+    occupation: "Software Developer",
+    testimonial:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit omnis molestiae fuga modi ex asperiores, quaerat magnam similique sint.",
+  },
+  {
+    avatar: "/MeRed.png",
+    name: "Andrei Sager",
+    occupation: "Software Developer",
+    testimonial:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit omnis molestiae fuga modi ex asperiores, quaerat magnam similique sint.",
+  },
+  {
+    avatar: "/MeRed.png",
+    name: "Andrei Sager",
+    occupation: "Software Developer",
+    testimonial:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit omnis molestiae fuga modi ex asperiores, quaerat magnam similique sint.",
+  },
+  {
+    avatar: "/MeRed.png",
+    name: "Andrei Sager",
+    occupation: "Software Developer",
+    testimonial:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit omnis molestiae fuga modi ex asperiores, quaerat magnam similique sint.",
+  },
+  {
+    avatar: "/MeRed.png",
+    name: "Andrei Sager",
+    occupation: "Software Developer",
+    testimonial:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit omnis molestiae fuga modi ex asperiores, quaerat magnam similique sint.",
+  },
+  {
+    avatar: "/MeRed.png",
+    name: "Andrei Sager",
+    occupation: "Software Developer",
+    testimonial:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit omnis molestiae fuga modi ex asperiores, quaerat magnam similique sint.",
+  },
 ];
 
 export const ContactSectionContent = [
