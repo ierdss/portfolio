@@ -314,6 +314,9 @@ body {
 }
 
 /* Testimonials Section  */
+.testimonials {
+  @apply flexCenter flex-col gap-[100px] text-center;
+}
 
 /* Contact Component */
 .inputField {
