@@ -6,7 +6,7 @@ export const HeroSectionHeading = {
 
 export const ServicesSectionHeading = {
   overline: "services",
-  header: "what can i provide?",
+  header: "what i provide?",
   description:
     "With my services I can make your ideas for a product or service come to life.",
 };
@@ -38,7 +38,7 @@ export const TechnologiesSectionHeading = {
 export const WorkflowSectionHeading = {
   overline: "Workflow",
   header: "my thought process",
-}
+};
 
 export const ExperienceSectionHeading = {
   overline: "work experience",
