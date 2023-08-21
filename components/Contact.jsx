@@ -103,7 +103,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="flex flex-col md:flex-row w-full text-center justify-center items-center md:text-left  bg-neutral-50"
+      className="flex flex-col md:flex-row w-full text-center justify-center items-center md:text-left  bg-transparent"
     >
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
@@ -159,13 +159,13 @@ export default function Contact() {
         </Dialog>
       </Transition>
 
-      <div className="w-full md:w-1/2 md:h-[100vh] md:max-h-[708px] md:aspect-auto aspect-square bg-secondary-red relative flexCenter flex-col">
+      <div className="w-full md:w-1/2 md:h-[100vh] md:max-h-[708px] md:aspect-auto aspect-square bg-secondary-red bg-opacity-60 relative flexCenter flex-col">
         <Image
           src="/computer-1.jpg"
           fill
           alt="Background"
           sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 33vw"
-          className=" absolute top-0 left-0 object-cover opacity-50 select-none"
+          className=" absolute inset-0 -z-10 object-cover"
         />
         <div className=" text-white z-10 flex flex-col gap-[50px]">
           <h1 className="sectionHeader">Contact Information</h1>
@@ -183,7 +183,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="sectionPadding w-[90%] md:w-1/2 flex flex-col gap-[50px]">
+      <div className="sectionPadding w-[90%] md:w-1/2 flex flex-col gap-[50px] bg-neutral-50">
         <div className="">
           <h1 className="sectionOverline">{overline}</h1>
           <h1 className="sectionHeader">{header}</h1>

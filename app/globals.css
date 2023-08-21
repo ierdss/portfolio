@@ -205,7 +205,7 @@ body {
 
 /* Technologies Section  */
 .technologies {
-  @apply bg-secondary-red w-full flex flex-col md:flex-row gap-[50px] justify-between items-center bg-opacity-50;
+  @apply bg-secondary-red w-full flex flex-col md:flex-row gap-[50px] justify-between items-center bg-opacity-60;
 }
 
 .technologiesCardGrid {

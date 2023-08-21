@@ -53,7 +53,7 @@ const Technologies = () => {
         fill
         alt="Background"
         sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 33vw"
-        className="absolute top-0 left-0 -z-10 object-cover"
+        className="absolute inset-0 -z-10 object-cover"
       />
     </div>
   );
