@@ -1,5 +1,9 @@
 import { BiCodeAlt, BiLogoTypescript, BiTargetLock } from "react-icons/bi";
-import { BsGlobeAsiaAustralia, BsLayersFill } from "react-icons/bs";
+import {
+  BsGlobeAsiaAustralia,
+  BsLayersFill,
+  BsPatchQuestion,
+} from "react-icons/bs";
 import {
   FaGlobeAsia,
   FaHtml5,
@@ -178,7 +182,8 @@ export const WorkflowSectionContent = [
     id: 1,
     number: "01",
     title: "sales is the goal",
-    description: "As a developer the goal of making a website is making money. My job as a developer is to design and create a website with the highest number of clicks.",
+    description:
+      "As a developer the goal of making a website is making money. My job as a developer is to design and create a website with the highest number of clicks.",
   },
   {
     id: 2,
@@ -203,7 +208,21 @@ export const WorkflowSectionContent = [
   },
 ];
 
-export const WorkExperienceSectionContent = {};
+export const ExperienceSectionContent = [
+  {
+    id: 1,
+    title: "Next.js Developer",
+    companyName: "Starbucks",
+    icon: <BsPatchQuestion size={30} />,
+    date: "March 2020 - April 2021",
+    bullets: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+];
 
 export const ProjectSectionContent = [
   {
@@ -349,6 +368,17 @@ export const ProjectSectionContent = [
     githubUrl: "/",
     livedemoUrl: "/",
   },
+];
+
+export const TestimonialsSectionContent = [
+  // {
+  //   testimonial:
+  //     "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+  //   name: "Sara Lee",
+  //   designation: "CFO",
+  //   company: "Acme Co",
+  //   image: "https://randomuser.me/api/portraits/women/4.jpg",
+  // },
 ];
 
 export const ContactSectionContent = [
