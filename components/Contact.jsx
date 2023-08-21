@@ -8,6 +8,7 @@ require("dotenv").config();
 
 import HashLoader from "react-spinners/HashLoader";
 import Image from "next/image";
+import { ContactSectionContent } from "@/constants";
 
 export default function Contact() {
   const { overline, header, subheader } = ContactSectionHeading;
@@ -166,7 +167,20 @@ export default function Contact() {
           sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 33vw"
           className=" absolute top-0 left-0 object-cover opacity-50 select-none"
         />
-        <div className=" text-white">Hello</div>
+        <div className=" text-white z-10 flex flex-col gap-[50px]">
+          <h1 className="sectionHeader">Contact Information</h1>
+          <ul className="flex flex-col gap-[20px]">
+            {ContactSectionContent.map(({ icon, title, text }, index) => (
+              <li key={index} className="flex flex-row gap-2">
+                <div>{icon}</div>
+                <div>
+                  <h1>{title}</h1>
+                  <p>{text}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
 
       <div className="sectionPadding w-[90%] md:w-1/2 flex flex-col gap-[50px]">
