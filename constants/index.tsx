@@ -7,6 +7,7 @@ import {
   WorkflowSectionContent,
   ExperienceSectionContent,
   ProjectSectionContent,
+  TestimonialsSectionContent,
   ContactSectionContent,
 } from "./SectionContent";
 
@@ -32,6 +33,7 @@ export {
   WorkflowSectionContent,
   ExperienceSectionContent,
   ProjectSectionContent,
+  TestimonialsSectionContent,
   ContactSectionContent,
   HeroSectionHeading,
   ServicesSectionHeading,
