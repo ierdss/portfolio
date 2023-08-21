@@ -1,13 +1,13 @@
 import { ContactSectionHeading } from "@/constants/SectionHeading";
 import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import ContactGrid from "./minor/ContactGrid";
 
 import emailjs from "@emailjs/browser";
 import "dotenv/config";
 require("dotenv").config();
 
 import HashLoader from "react-spinners/HashLoader";
+import Image from "next/image";
 
 export default function Contact() {
   const { overline, header, subheader } = ContactSectionHeading;
@@ -102,7 +102,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="flex flex-row flex-wrap w-full sectionPadding text-center justify-center items-center md:text-left gap-8"
+      className="flex flex-col md:flex-row w-full text-center justify-center items-center md:text-left  bg-neutral-50"
     >
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
@@ -128,7 +128,7 @@ export default function Contact() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-md p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900 capitalize"
@@ -157,76 +157,92 @@ export default function Contact() {
           </div>
         </Dialog>
       </Transition>
-      <div className="flex flex-col justify-between lg:flex-row gap-8 w-full lg:w-[55%] h-full bg-white shadow-xl rounded-xl p-4 lg:p-8 lg:order-2 border border-neutral-300">
-        <ContactGrid />
+
+      <div className="w-full md:w-1/2 h-[800px] bg-secondary-red relative">
+        <Image
+          src="/computer-1.jpg"
+          fill
+          alt="Background"
+          sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 33vw"
+          className="absolute top-0 left-0 object-cover opacity-50"
+        />
       </div>
-      <div className="flex flex-col gap-4 shadow-xl rounded-xl p-4 w-full md:p-8 lg:w-[40%] bg-neutral-800 text-white m-2 md:mr-0 lg:order-1">
+
+      <div className="sectionPadding w-full md:w-1/2 flex flex-col gap-[50px]">
         <div className="">
-          <h1 className="sectionOverline !text-white">{overline}</h1>
+          <h1 className="sectionOverline">{overline}</h1>
           <h1 className="sectionHeader">{header}</h1>
+          <p className="w-full normal-case mt-2">{subheader}</p>
         </div>
-        <p className="w-full normal-case">{subheader}</p>
-        <div className="flex-1 flex flex-col gap-4 w-full">
-          <form
-            ref={formRef}
-            onSubmit={handleSubmit}
-            className="flex flex-wrap w-full gap-3"
-          >
-            <label className="flex flex-col w-full">
-              <span className="font-bold text-left">Name*</span>
-              <input
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                placeholder="Enter your name.."
-                className="inputField"
-              />
-            </label>
-            <label className="flex flex-col w-full">
-              <span className="font-bold text-left">Email*</span>
-              <input
-                type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                placeholder="Enter your email.."
-                className="inputField"
-              />
-            </label>
-            <label className="flex flex-col w-full">
-              <span className="font-bold text-left">Message*</span>
-              <textarea
-                rows={7}
-                name="message"
-                value={form.message}
-                onChange={handleChange}
-                placeholder="Write your message.."
-                className="inputField textArea"
-              />
-            </label>
-            <button
-              type="submit"
-              className="w-full callToAction mt-2 flex justify-center items-center"
+        <div className="flex flex-col gap-4 rounded-md w-full lg:order-1">
+          <div className="flex-1 flex flex-col gap-4 w-full">
+            <form
+              ref={formRef}
+              onSubmit={handleSubmit}
+              className="flex flex-wrap w-full gap-3"
             >
-              {loading ? (
-                <div className="flex flex-row gap-4">
-                  Sending...
-                  <HashLoader
-                    loading={true}
-                    size={28}
-                    color="white"
-                    aria-label="Loading Spinner"
-                    data-testid="loader"
-                    speedMultiplier={1}
-                    className="text-white"
-                  ></HashLoader>
-                </div>
-              ) : (
-                "Send"
-              )}
-            </button>
-          </form>
+              <label className="flex flex-col w-full">
+                <span className="font-bold text-left">
+                  Name<span className="text-secondary-red">*</span>
+                </span>
+                <input
+                  type="text"
+                  name="name"
+                  value={form.name}
+                  onChange={handleChange}
+                  placeholder="Enter your name.."
+                  className="inputField"
+                />
+              </label>
+              <label className="flex flex-col w-full">
+                <span className="font-bold text-left">
+                  Email<span className="text-secondary-red">*</span>
+                </span>
+                <input
+                  type="email"
+                  name="email"
+                  value={form.email}
+                  onChange={handleChange}
+                  placeholder="Enter your email.."
+                  className="inputField"
+                />
+              </label>
+              <label className="flex flex-col w-full">
+                <span className="font-bold text-left">
+                  Message<span className="text-secondary-red">*</span>
+                </span>
+                <textarea
+                  rows={7}
+                  name="message"
+                  value={form.message}
+                  onChange={handleChange}
+                  placeholder="Write your message.."
+                  className="inputField textArea"
+                />
+              </label>
+              <button
+                type="submit"
+                className="!w-fit callToAction mt-2 !px-12 !py-3 flex justify-center items-center"
+              >
+                {loading ? (
+                  <div className="flex flex-row gap-4">
+                    Sending...
+                    <HashLoader
+                      loading={true}
+                      size={28}
+                      color="white"
+                      aria-label="Loading Spinner"
+                      data-testid="loader"
+                      speedMultiplier={1}
+                      className="text-white"
+                    ></HashLoader>
+                  </div>
+                ) : (
+                  "Send"
+                )}
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

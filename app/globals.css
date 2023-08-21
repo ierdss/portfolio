@@ -89,7 +89,7 @@ body {
 }
 
 .callToAction {
-  @apply w-full bg-secondary-red text-base font-extrabold text-white p-4 hover:bg-accent-pink rounded-lg;
+  @apply w-full bg-secondary-red text-base font-extrabold text-white p-4 hover:bg-accent-pink rounded-md;
 }
 
 /* Hover Effects */
@@ -319,8 +319,13 @@ body {
 }
 
 /* Contact Component */
+.inputField[type="text"],
+.textArea {
+  @apply bg-white;
+}
+
 .inputField {
-  @apply border border-solid border-slate-400 rounded-md p-3 w-full focus:placeholder:italic focus:outline-secondary-red text-black;
+  @apply border-b border-black-1 p-3 w-full focus:placeholder:italic outline-none rounded-t-md focus:bg-white;
 }
 
 .textArea {
