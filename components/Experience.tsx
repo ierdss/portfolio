@@ -45,20 +45,17 @@ function ExperienceCard({
       date={date}
       dateClassName="text-black"
       icon={
-        <div className="flexCenter w-full aspect-square">
+        <div className="flex w-full aspect-square ">
           <Image
             src="/patterns/intersecting-circles.svg"
             fill
-            alt="Me in red"
+            alt="Circle"
             loading="lazy"
             sizes="(max-width: 768px) 50vw, 33vw"
           />
         </div>
       }
-      iconStyle={{
-        color: "#B40041",
-      }}
-      iconClassName="bg-white overflow-hidden shadow-xl"
+      iconClassName="bg-white overflow-hidden"
     >
       <h1 className="projectTitle">{title}</h1>
       <h1 className="text-xs font-bold text-secondary-red uppercase">
