@@ -158,17 +158,18 @@ export default function Contact() {
         </Dialog>
       </Transition>
 
-      <div className="w-full md:w-1/2 h-[800px] bg-secondary-red relative">
+      <div className="w-full md:w-1/2 md:h-[100vh] md:max-h-[708px] md:aspect-auto aspect-square bg-secondary-red relative flexCenter flex-col">
         <Image
           src="/computer-1.jpg"
           fill
           alt="Background"
           sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 33vw"
-          className="absolute top-0 left-0 object-cover opacity-50"
+          className=" absolute top-0 left-0 object-cover opacity-50 select-none"
         />
+        <div className=" text-white">Hello</div>
       </div>
 
-      <div className="sectionPadding w-full md:w-1/2 flex flex-col gap-[50px]">
+      <div className="sectionPadding w-[90%] md:w-1/2 flex flex-col gap-[50px]">
         <div className="">
           <h1 className="sectionOverline">{overline}</h1>
           <h1 className="sectionHeader">{header}</h1>
@@ -222,7 +223,7 @@ export default function Contact() {
               </label>
               <button
                 type="submit"
-                className="!w-fit callToAction mt-2 !px-12 !py-3 flex justify-center items-center"
+                className="!w-fit callToAction !px-12 !py-3 flex justify-center items-center"
               >
                 {loading ? (
                   <div className="flex flex-row gap-4">

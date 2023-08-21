@@ -115,7 +115,7 @@ body {
 }
 
 .navbarLogo,
-.navbarCta {
+.navbarCta__desktop {
   @apply w-[140px];
 }
 
@@ -139,20 +139,34 @@ body {
   @apply px-4 py-3 my-3 font-bold text-sm hover:text-secondary-red target:text-secondary-red capitalize block w-full;
 }
 
+.navbarCta__desktop,
 .navbarCta {
-  @apply hidden md:flex items-center justify-center bg-secondary-red text-base font-extrabold text-white p-3 hover:bg-accent-pink rounded-md gap-2;
+  @apply items-center justify-center bg-secondary-red text-base font-extrabold text-white p-3 hover:bg-accent-pink rounded-md gap-2 text-center;
+}
+
+.navbarCta__desktop {
+  @apply hidden lg:flex;
 }
 
 .navbarMenu {
   @apply lg:hidden flex flex-row gap-10;
 }
 
+.navbarCta {
+  @apply flex w-[90%];
+}
+
+.navbar__mobile-open,
+.navbar__mobile-closed {
+  @apply flex flex-col items-center gap-8 bg-white w-full h-full fixed top-0  lg:hidden z-50 ease-in-out duration-500;
+}
+
 .navbar__mobile-open {
-  @apply flex flex-col justify-between items-center gap-8 bg-white w-full h-full fixed top-0 right-0 lg:hidden z-50 ease-in-out duration-500;
+  @apply right-0;
 }
 
 .navbar__mobile-closed {
-  @apply flex flex-col justify-between items-center gap-8 bg-white w-full h-full fixed top-0 right-[-100%] lg:hidden z-50 ease-in-out duration-500;
+  @apply right-[-100%];
 }
 
 .navbar__mobile-top {
