@@ -28,7 +28,7 @@ export default function Hero() {
       className="hero sectionPadding md:!px-[100px] md:!pt-[100px]"
     >
       <div className="heroContainer">
-        <div className="heroCard">
+        <div className="heroCard active">
           <Image
             src="/placeholder/man-left.jpg"
             fill
@@ -60,7 +60,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="heroCard active">
+        <div className="heroCard">
           <Image
             src="/placeholder/man-right.jpg"
             fill
