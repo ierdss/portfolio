@@ -39,7 +39,7 @@ export default function Hero() {
           />
           <div className="heroCard__content">
             <h1 className="sectionHeader">Andrei</h1>
-            <h1 className="sectionOverline !text-white">Designer</h1>
+            <h1 className="sectionOverline !text-white">Project Designer</h1>
           </div>
         </div>
 
@@ -55,7 +55,7 @@ export default function Hero() {
           />
           <div className="heroCard__content">
             <h1 className="sectionHeader">Santos</h1>
-            <h1 className="sectionOverline !text-white">Developer</h1>
+            <h1 className="sectionOverline !text-white">Software Developer</h1>
           </div>
         </div>
 
@@ -71,12 +71,12 @@ export default function Hero() {
           />
           <div className="heroCard__content">
             <h1 className="sectionHeader">Sager</h1>
-            <h1 className="sectionOverline !text-white">Innovator</h1>
+            <h1 className="sectionOverline !text-white">Problem Solver</h1>
           </div>
         </div>
       </div>
 
-      {/* <div className="flex flex-col w-[90%] md:w-[500px] gap-4 text-center justify-center items-center md:text-left md:items-start">
+      <div className="flex flex-col w-[90%] md:w-[500px] gap-4 text-center justify-center items-center md:text-left md:items-start">
         <div className="flex flex-row w-fit justify-center items-center gap-4 md:order-3">
           <Links />
         </div>
@@ -84,7 +84,7 @@ export default function Hero() {
         <p className="md:order-2 font-bold text-slate-600 normal-case">
           {subheader}
         </p>
-      </div> */}
+      </div>
     </div>
   );
 }
