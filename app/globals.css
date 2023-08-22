@@ -176,17 +176,21 @@ body {
 /* Hero Section  */
 /* Main */
 .hero {
-  @apply flex flex-col md:flex-row justify-center items-center gap-12 w-full overflow-hidden mt-[50px] h-[100vh] max-h-[750vh];
+  @apply flex flex-col md:flex-row justify-center items-center gap-[100px] md:gap-[50px] w-full overflow-hidden h-[100vh] max-h-[1000px];
 }
 
 /* Container */
 .heroContainer {
-  @apply flex w-[700px] h-[400px];
+  @apply flex w-full h-[80%] mt-[50px] md:mt-0;
 }
 
 /* Profile Card */
 .heroCard {
-  @apply w-[150px] relative rounded-md m-[10px] cursor-pointer transition-all duration-500 ease-in-out flex justify-between items-end text-white p-[20px];
+  @apply w-[20%] md:w-[150px] relative rounded-md m-[10px] cursor-pointer transition-all duration-500 ease-in-out flex justify-between items-end text-white p-[20px];
+}
+
+.heroCard:nth-child(2) {
+  @apply translate-y-[50px];
 }
 
 .heroCard.active {
