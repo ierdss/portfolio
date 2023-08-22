@@ -52,7 +52,7 @@ export default function Services() {
         src={"/patterns/bg-services__desktop.svg"}
         fill
         alt="This is impossible! An svg did not load?"
-        className="servicesBackground top-0  hidden md:flex"
+        className="servicesBackground top-0 hidden md:flex"
       />
       <Image
         typeof="background"
