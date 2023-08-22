@@ -176,17 +176,17 @@ body {
 /* Hero Section  */
 /* Main */
 .hero {
-  @apply flex flex-col md:flex-row justify-center items-center gap-[100px] md:gap-[50px] w-full overflow-hidden h-[100vh] max-h-[1000px];
+  @apply flex flex-col lg:flex-row justify-center items-center gap-[100px] md:gap-[50px] w-full overflow-hidden h-[100vh] max-h-[1000px];
 }
 
 /* Container */
 .heroContainer {
-  @apply flex w-full h-[80%] mt-[50px] md:mt-0;
+  @apply flex w-full h-[75%] mt-[50px] md:mt-0;
 }
 
 /* Profile Card */
 .heroCard {
-  @apply w-[20%] md:w-[150px] relative rounded-md m-[10px] cursor-pointer transition-all duration-500 ease-in-out flex justify-between items-end text-white p-[20px];
+  @apply w-[20%] md:w-[150px] relative rounded-md m-[10px] cursor-pointer transition-all duration-500 ease-in-out flex justify-between items-end text-white p-[20px] overflow-hidden;
 }
 
 .heroCard:nth-child(2) {
@@ -206,23 +206,21 @@ body {
   @apply flex flex-col w-full h-full justify-end p-[20px] whitespace-nowrap;
 }
 
-.heroCard__content h1:nth-child(odd) {
-  @apply -translate-y-[40px] -translate-x-1/2 -rotate-90 transition-all duration-500 ease-in-out;
+.heroCard__content h1 {
+  @apply -translate-y-[30px] -translate-x-1/2 -rotate-90 transition-all duration-500 ease-in-out;
 }
 
 .heroCard.active .heroCard__content h1 {
   @apply translate-y-0 translate-x-0 rotate-0 z-[11];
 }
 
-/* Not Working */
-.heroCard__content h1:nth-child(even) {
-  @apply text-opacity-0 translate-x-[-10px] transition-all duration-300 ease-in-out delay-200;
+.heroCard__content p {
+  @apply -translate-y-[30px] -translate-x-[200px] transition-all duration-500 ease-in-out;
 }
 
-.heroCard.active .heroCard__content h1:nth-child(even) {
-  @apply opacity-100 translate-x-0;
+.heroCard.active .heroCard__content p {
+  @apply translate-y-0 translate-x-0 rotate-0 z-[11];
 }
-/* Not Working */
 
 .heroCard.active .heroCard__content {
   @apply border border-double border-white;
