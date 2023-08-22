@@ -89,7 +89,11 @@ body {
 }
 
 .callToAction {
-  @apply w-full bg-secondary-red text-base font-extrabold text-white p-4 hover:bg-accent-pink rounded-md;
+  @apply w-full bg-secondary-red text-base font-extrabold text-white p-4 hover:bg-accent-pink rounded-md transition-all duration-200 ease-in-out flexCenter;
+}
+
+.sectionCta__outline {
+  @apply w-full hover:border-secondary-red text-base font-extrabold p-4 rounded-md border border-neutral-400 text-neutral-400 hover:text-secondary-red transition-all duration-200 ease-in-out;
 }
 
 /* Hover Effects */
@@ -186,7 +190,7 @@ body {
 
 /* Profile Card */
 .heroCard {
-  @apply w-[20%] md:w-[150px] relative rounded-md m-[10px] cursor-pointer transition-all duration-500 ease-in-out flex justify-between items-end text-white p-[20px] overflow-hidden;
+  @apply w-[20%] md:w-[150px] relative rounded-md m-[10px] cursor-pointer transition-all duration-500 ease-in-out flex justify-between items-end text-white p-[20px] overflow-hidden gap-[10px];
 }
 
 .heroCard:nth-child(2) {
