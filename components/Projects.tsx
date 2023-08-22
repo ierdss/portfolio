@@ -79,9 +79,8 @@ function FeaturedProjects() {
                       loading="lazy"
                       quality={100}
                       sizes="(max-width: 768px) 50vw, (max-width: 1024px) 75vw, (max-width: 1280px) 100vw, 25vw"
-                      style={{
-                        objectFit: "cover",
-                      }}
+                      objectFit="cover"
+                      objectPosition="top"
                       className="rounded-2xl object-cover"
                     />
                   </div>
@@ -94,7 +93,8 @@ function FeaturedProjects() {
                         alt={mobileAlt}
                         loading="lazy"
                         quality={100}
-                        className="object-cover"
+                        objectFit="cover"
+                        objectPosition="top"
                       />
                     </div>
                   </div>
