@@ -1,7 +1,6 @@
 export const HeroSectionHeading = {
-  header: "Full-Stack Developer",
-  subheader:
-    "Embracing the fusion of artistry and code, I shape digital experiences as a full-stack developer. With a passion for design and a drive for innovation, I craft seamless interfaces and striking visuals, elevating the aesthetic essence of the web.",
+  header: "Software Developer",
+  body: "Embracing the fusion of artistry and code, I shape digital experiences as a full-stack software developer. Building experiences with a twist. ",
 };
 
 export const ServicesSectionHeading = {
