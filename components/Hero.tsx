@@ -1,13 +1,16 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import Links from "./minor/Links";
 import { HeroSectionHeading } from "@/constants/SectionHeading";
-import Link from "next/link";
+import { motion, useInView } from "framer-motion";
 
 export default function Hero() {
   const { header, body } = HeroSectionHeading;
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   useEffect(() => {
     let profileCardEl = document.querySelectorAll<HTMLElement>(".heroCard");
@@ -28,7 +31,15 @@ export default function Hero() {
       className="hero sectionPadding md:!px-[100px] md:!pt-[100px]"
     >
       <div className="heroContainer">
-        <div className="heroCard active">
+        <motion.div
+          ref={ref}
+          style={{
+            transform: isInView ? "translateY(0px)" : "translateY(200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
+          className="heroCard active"
+        >
           <Image
             src="/placeholder/man-left.jpg"
             fill
@@ -42,9 +53,17 @@ export default function Hero() {
             <h1 className="sectionHeader">Andrei</h1>
             <p className="sectionOverline !text-white">Designer</p>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="heroCard">
+        <motion.div
+          ref={ref}
+          style={{
+            transform: isInView ? "translateY(50px)" : "translateY(-200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
+          className="heroCard"
+        >
           <Image
             src="/placeholder/man-center.jpg"
             fill
@@ -58,9 +77,17 @@ export default function Hero() {
             <h1 className="sectionHeader">Santos</h1>
             <p className="sectionOverline !text-white">Developer</p>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="heroCard">
+        <motion.div
+          ref={ref}
+          style={{
+            transform: isInView ? "translateY(0px)" : "translateY(200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
+          className="heroCard"
+        >
           <Image
             src="/placeholder/man-right.jpg"
             fill
@@ -74,9 +101,17 @@ export default function Hero() {
             <h1 className="sectionHeader">Sager</h1>
             <p className="sectionOverline !text-white">Solver</p>
           </div>
-        </div>
+        </motion.div>
       </div>
-      <div className="flex flex-col w-[90%] md:w-[440px] gap-4 text-center justify-center items-center md:text-left md:items-start">
+      <motion.div
+        ref={ref}
+        style={{
+          transform: isInView ? "translateX(0px)" : "translateX(200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        }}
+        className="flex flex-col w-[90%] md:w-[440px] gap-4 text-center justify-center items-center md:text-left md:items-start"
+      >
         <div className="flex flex-col w-fit justify-center items-center gap-4 md:order-3">
           <Links />
         </div>
@@ -84,15 +119,7 @@ export default function Hero() {
         <p className="md:order-2 text-sm font-bold text-slate-600 normal-case">
           {body}
         </p>
-        {/* <div className="md:order-4 w-full flex flex-row gap-[10px] justify-between items-center">
-          <button type="button" className="sectionCta__outline">
-            Download CV
-          </button>
-          <Link href="#contact" className="callToAction">
-            Say hello
-          </Link>
-        </div> */}
-      </div>
+      </motion.div>
     </div>
   );
 }

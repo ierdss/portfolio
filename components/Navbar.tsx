@@ -5,7 +5,7 @@ import { NavLinks } from "@/constants/NavigationLinks";
 import Link from "next/link";
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { RxCross1, RxCross2 } from "react-icons/rx";
+import { RxCross2 } from "react-icons/rx";
 import { ProgressBar } from "@nadfri/react-scroll-progress-bar";
 
 export default function Navbar() {
