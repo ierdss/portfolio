@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Links from "./minor/Links";
 import { HeroSectionHeading } from "@/constants/SectionHeading";
@@ -25,6 +25,15 @@ export default function Hero() {
     });
   }, []);
 
+  const [isDone, setIsDone] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsDone(true);
+    }, 2000);
+  }),
+    [];
+
   return (
     <div
       id="hero"
@@ -36,7 +45,9 @@ export default function Hero() {
           style={{
             transform: isInView ? "translateY(0px)" : "translateY(200px)",
             opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            transition: isDone
+              ? ""
+              : "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
           className="heroCard active"
         >
@@ -60,7 +71,9 @@ export default function Hero() {
           style={{
             transform: isInView ? "translateY(50px)" : "translateY(-200px)",
             opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1s",
+            transition: isDone
+              ? ""
+              : "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1s",
           }}
           className="heroCard"
         >
@@ -84,7 +97,9 @@ export default function Hero() {
           style={{
             transform: isInView ? "translateY(0px)" : "translateY(200px)",
             opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s",
+            transition: isDone
+              ? ""
+              : "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s",
           }}
           className="heroCard"
         >
