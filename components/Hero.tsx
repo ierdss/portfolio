@@ -60,7 +60,7 @@ export default function Hero() {
           style={{
             transform: isInView ? "translateY(50px)" : "translateY(-200px)",
             opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1s",
           }}
           className="heroCard"
         >
@@ -84,7 +84,7 @@ export default function Hero() {
           style={{
             transform: isInView ? "translateY(0px)" : "translateY(200px)",
             opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s",
           }}
           className="heroCard"
         >
@@ -108,7 +108,7 @@ export default function Hero() {
         style={{
           transform: isInView ? "translateX(0px)" : "translateX(200px)",
           opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 2s",
         }}
         className="flex flex-col w-[90%] md:w-[440px] gap-4 text-center justify-center items-center md:text-left md:items-start"
       >
