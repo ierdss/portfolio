@@ -15,7 +15,7 @@ export default function Testimonials() {
         <h1 className="sectionHeading !text-center">{header}</h1>
         <span className="w-[60px] h-[5px] bg-secondary-red mt-2 rounded-md" />
       </div>
-      <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-[20px] gap-x-[25px] md:w-[80%]">
+      <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-[20px] gap-x-[25px] lg:w-[80%]">
         {TestimonialsSectionContent.map(
           ({ avatar, name, occupation, testimonial }, index) => (
             <li

@@ -125,15 +125,15 @@ export default function Hero() {
           opacity: isInView ? 1 : 0,
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s",
         }}
-        className="flex flex-col w-[90%] md:w-[440px] gap-4 text-center justify-center items-center md:text-left md:items-start"
+        className="flex flex-col w-[90%] md:w-[440px] gap-4 text-center justify-center items-center lg:items-start"
       >
         <div className="flex flex-col w-fit justify-center items-center gap-4 md:order-3">
           <Links />
         </div>
-        <h1 className="sectionHeading md:order-1 !text-center md:!text-left">
+        <h1 className="sectionHeading md:order-1 !text-center lg:!text-left">
           {header}
         </h1>
-        <p className="md:order-2 sectionLeading !text-center md:!text-left">
+        <p className="md:order-2 sectionLeading !text-center lg:!text-left">
           {body}
         </p>
       </motion.div>

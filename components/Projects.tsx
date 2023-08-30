@@ -115,10 +115,14 @@ function FeaturedProjects() {
             </div>
             <div className="projectDetails">
               <div>
-                <h1 className="sectionHeading-2">{title}</h1>
-                <h1 className="sectionOverline-2">{subtitle}</h1>
+                <h1 className="sectionHeading-2 !text-center lg:!text-left">
+                  {title}
+                </h1>
+                <h1 className="sectionOverline-2 !text-center lg:!text-left">
+                  {subtitle}
+                </h1>
               </div>
-              <p>{description}</p>
+              {description}
               <ProjectLinks githubUrl={githubUrl} livedemoUrl={livedemoUrl} />
             </div>
           </div>
