@@ -23,7 +23,7 @@ export default function Testimonials() {
               className="relative flex items-center flex-col w-full rounded-md p-8 gap-3 shadow-lg border border-neutral-300 group first:text-white first:bg-secondary-red bg-neutral-50  hover:-translate-y-4 transition-all duration-500 ease-in-out"
             >
               <p className="flex flex-row gap-4">
-                <span className="font-medium text-xs text-left w-[90%]">
+                <span className="sectionDescription group-first:text-white w-[90%]">
                   {testimonial}
                 </span>
                 <BiSolidQuoteLeft
@@ -40,8 +40,10 @@ export default function Testimonials() {
                   className=" bg-black rounded-full overflow-hidden aspect-square"
                 />
                 <div className="text-left">
-                  <h1 className="font-bold text-sm">{name}</h1>
-                  <h1 className="font-semibold text-xs text-secondary-red group-first:text-white ">
+                  <h1 className="sectionLeading group-first:text-white">
+                    {name}
+                  </h1>
+                  <h1 className="sectionOverline-2 !capitalize group-first:text-white ">
                     {occupation}
                   </h1>
                 </div>
