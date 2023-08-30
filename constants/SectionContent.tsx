@@ -247,7 +247,7 @@ export const ProjectSectionContent = [
     title: "Marked A.I.",
     subtitle: "Artificial Intelligence",
     description: (
-      <p className="sectionDescription">
+      <p className="sectionDescription !text-justify md:!text-left">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae
         magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit!
         Similique eaque voluptas repudiandae iste aperiam consequatur
@@ -273,7 +273,7 @@ export const ProjectSectionContent = [
     title: "Available",
     subtitle: "e-commerce shop",
     description: (
-      <p className="sectionDescription">
+      <p className="sectionDescription !text-justify md:!text-left">
         An online shop that sells a lot of products. It also has a dashboard for
         the seller and the user. Sellers can effortlessly manage their
         inventory, track orders, and engage with customers, while users can
@@ -299,7 +299,7 @@ export const ProjectSectionContent = [
     title: "Bridge",
     subtitle: "Social Platform",
     description: (
-      <p className="sectionDescription">
+      <p className="sectionDescription !text-justify md:!text-left">
         Bridge is an all-in-one communication app designed to seamlessly connect
         you with friends and loved ones. With Bridge, you can effortlessly send
         messages to users and join engaging voice chats fostering meaningful
@@ -329,7 +329,7 @@ export const ProjectSectionContent = [
     title: "Road Way Delivery",
     subtitle: "Transport Service",
     description: (
-      <p className="sectionDescription">
+      <p className="sectionDescription !text-justify md:!text-left">
         <span className="font-bold">Road Way Delivery</span> Service is a
         leading logistics company revolutionizing the industry with fast,
         reliable road transportation solutions. We specialize in secure, on-time
@@ -360,7 +360,7 @@ export const ProjectSectionContent = [
     title: "Shoutcaster",
     subtitle: "Video Sharing",
     description: (
-      <p className="sectionDescription">
+      <p className="sectionDescription !text-justify md:!text-left">
         Welcome to Shoutcaster, our dedicated podcast platform, the ultimate
         destination for immersive audio experiences. Discover a world of
         knowledge, stories, and insights as you explore a diverse array of
