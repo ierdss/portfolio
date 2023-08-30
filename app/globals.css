@@ -153,7 +153,7 @@ body {
 }
 
 .navbarLogo {
-  @apply text-4xl font-black bg-clip-text text-transparent bg-cover bg-center bg-home-texture hover:text-secondary-red;
+  @apply text-4xl font-black bg-clip-text hover:text-transparent bg-cover bg-center bg-home-texture text-secondary-red;
 }
 
 .navbarListItem {
