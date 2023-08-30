@@ -168,14 +168,14 @@ export default function Contact() {
           className=" absolute inset-0 -z-10 object-cover"
         />
         <div className=" text-white z-10 flex flex-col gap-[50px]">
-          <h1 className="sectionHeader">Contact Information</h1>
+          <h1 className="sectionHeading">Contact Information</h1>
           <ul className="flex flex-col gap-[20px]">
             {ContactSectionContent.map(({ icon, title, text }, index) => (
               <li key={index} className="flex flex-row gap-2 text-left">
                 <div>{icon}</div>
                 <div>
-                  <h1 className="font-bold text-base">{title}</h1>
-                  <p className="text-sm font-medium">{text}</p>
+                  <h1 className="sectionLeading !text-white">{title}</h1>
+                  <p className="sectionDescription !text-white">{text}</p>
                 </div>
               </li>
             ))}
@@ -185,9 +185,15 @@ export default function Contact() {
 
       <div className="sectionPadding w-[90%] md:w-1/2 flex flex-col gap-[50px] bg-neutral-50">
         <div className="">
-          <h1 className="sectionOverline">{overline}</h1>
-          <h1 className="sectionHeader">{header}</h1>
-          <p className="w-full normal-case mt-2">{subheader}</p>
+          <h1 className="sectionOverline !text-center md:!text-left">
+            {overline}
+          </h1>
+          <h1 className="sectionHeading !text-center md:!text-left">
+            {header}
+          </h1>
+          <p className="sectionLeading !text-center md:!text-left mt-2">
+            {subheader}
+          </p>
         </div>
         <div className="flex flex-col gap-4 rounded-md w-full lg:order-1">
           <div className="flex-1 flex flex-col gap-4 w-full">
@@ -197,7 +203,7 @@ export default function Contact() {
               className="flex flex-wrap w-full gap-3"
             >
               <label className="flex flex-col w-full">
-                <span className="font-bold text-left">
+                <span className="sectionLeading text-left">
                   Name<span className="text-secondary-red">*</span>
                 </span>
                 <input
@@ -206,11 +212,11 @@ export default function Contact() {
                   value={form.name}
                   onChange={handleChange}
                   placeholder="Enter your name.."
-                  className="inputField"
+                  className="inputField sectionDescription"
                 />
               </label>
               <label className="flex flex-col w-full">
-                <span className="font-bold text-left">
+                <span className="sectionLeading text-left">
                   Email<span className="text-secondary-red">*</span>
                 </span>
                 <input
@@ -219,11 +225,11 @@ export default function Contact() {
                   value={form.email}
                   onChange={handleChange}
                   placeholder="Enter your email.."
-                  className="inputField"
+                  className="inputField sectionDescription"
                 />
               </label>
               <label className="flex flex-col w-full">
-                <span className="font-bold text-left">
+                <span className="sectionLeading text-left">
                   Message<span className="text-secondary-red">*</span>
                 </span>
                 <textarea
@@ -232,7 +238,7 @@ export default function Contact() {
                   value={form.message}
                   onChange={handleChange}
                   placeholder="Write your message.."
-                  className="inputField textArea"
+                  className="inputField textArea sectionDescription"
                 />
               </label>
               <button

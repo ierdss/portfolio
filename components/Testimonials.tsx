@@ -11,8 +11,8 @@ export default function Testimonials() {
   return (
     <div id="testimonials" className="testimonials sectionPadding">
       <div className="w-full">
-        <h1 className="sectionOverline">{overline}</h1>
-        <h1 className="sectionHeader">{header}</h1>
+        <h1 className="sectionOverline !text-center">{overline}</h1>
+        <h1 className="sectionHeading !text-center">{header}</h1>
         <span className="w-[60px] h-[5px] bg-secondary-red mt-2 rounded-md" />
       </div>
       <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-[20px] gap-x-[25px] md:w-[80%]">
