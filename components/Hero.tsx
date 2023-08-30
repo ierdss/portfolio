@@ -62,7 +62,7 @@ export default function Hero() {
           />
           <div className="heroCard__content">
             <h1 className="sectionHeader">Andrei</h1>
-            <p className="sectionOverline !text-white">Designer</p>
+            <p className="sectionOverline !text-white">Developer</p>
           </div>
         </motion.div>
 
@@ -88,7 +88,7 @@ export default function Hero() {
           />
           <div className="heroCard__content">
             <h1 className="sectionHeader">Santos</h1>
-            <p className="sectionOverline !text-white">Developer</p>
+            <p className="sectionOverline !text-white">Designer</p>
           </div>
         </motion.div>
 
