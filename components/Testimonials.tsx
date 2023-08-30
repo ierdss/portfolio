@@ -3,6 +3,7 @@ import {
   TestimonialsSectionContent,
 } from "@/constants";
 import Image from "next/image";
+import { BiSolidQuoteLeft } from "react-icons/bi";
 
 export default function Testimonials() {
   const { overline, header } = TestimonialsSectionHeading;
@@ -14,16 +15,23 @@ export default function Testimonials() {
         <h1 className="sectionHeader">{header}</h1>
         <span className="w-[60px] h-[5px] bg-secondary-red mt-2 rounded-md" />
       </div>
-      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-[20px] gap-x-[25px]">
+      <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-[20px] gap-x-[25px] md:w-[80%]">
         {TestimonialsSectionContent.map(
           ({ avatar, name, occupation, testimonial }, index) => (
             <li
               key={index}
               className="relative flex items-center flex-col w-full rounded-md p-8 gap-3 shadow-lg border border-neutral-300 group first:text-white first:bg-secondary-red bg-neutral-50  hover:-translate-y-4 transition-all duration-500 ease-in-out"
             >
-              <p className="font-medium text-xs text-left">{testimonial}</p>
-
-              <div className="w-full flexCenter flex-row !justify-start gap-2">
+              <p className="flex flex-row gap-4">
+                <span className="font-medium text-xs text-left w-[90%]">
+                  {testimonial}
+                </span>
+                <BiSolidQuoteLeft
+                  size={50}
+                  className="text-secondary-red group-first:text-white"
+                />
+              </p>
+              <div className="w-full flexCenter flex-row !justify-start gap-2 mt-2">
                 <Image
                   src={avatar}
                   width={50}
@@ -38,6 +46,7 @@ export default function Testimonials() {
                   </h1>
                 </div>
               </div>
+              <p className="w-full flex justify-end">⭐⭐⭐⭐⭐</p>
             </li>
           )
         )}
