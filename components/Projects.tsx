@@ -37,11 +37,19 @@ type ProjectLinksProps = {
 function ProjectLinks({ githubUrl, livedemoUrl }: ProjectLinksProps) {
   return (
     <div className="projectLinks">
-      <a href={githubUrl} target="_blank" className="projectLink">
+      <a
+        href={githubUrl}
+        target="_blank"
+        className="projectLink sectionLeading"
+      >
         <BsGithub size={sizeIcon} />
         Source Code
       </a>
-      <a href={livedemoUrl} target="_blank" className="projectLink">
+      <a
+        href={livedemoUrl}
+        target="_blank"
+        className="projectLink sectionLeading"
+      >
         <IoGlobe size={sizeIcon} />
         Live Demo
       </a>
@@ -107,12 +115,10 @@ function FeaturedProjects() {
             </div>
             <div className="projectDetails">
               <div>
-                <h1 className="projectTitle">{title}</h1>
-                <h1 className="text-xs font-bold uppercase text-secondary-red">
-                  {subtitle}
-                </h1>
+                <h1 className="sectionHeading-2">{title}</h1>
+                <h1 className="sectionOverline-2">{subtitle}</h1>
               </div>
-              {description}
+              <p>{description}</p>
               <ProjectLinks githubUrl={githubUrl} livedemoUrl={livedemoUrl} />
             </div>
           </div>
