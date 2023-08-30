@@ -61,7 +61,7 @@ export default function Hero() {
             className="heroCard__image"
           />
           <div className="heroCard__content">
-            <h1 className="sectionHeader">Andrei</h1>
+            <h1 className="sectionHeading">Andrei</h1>
             <p className="sectionOverline !text-white">Developer</p>
           </div>
         </motion.div>
@@ -87,7 +87,7 @@ export default function Hero() {
             className="heroCard__image"
           />
           <div className="heroCard__content">
-            <h1 className="sectionHeader">Santos</h1>
+            <h1 className="sectionHeading">Santos</h1>
             <p className="sectionOverline !text-white">Designer</p>
           </div>
         </motion.div>
@@ -113,7 +113,7 @@ export default function Hero() {
             className="heroCard__image"
           />
           <div className="heroCard__content">
-            <h1 className="sectionHeader">Sager</h1>
+            <h1 className="sectionHeading">Sager</h1>
             <p className="sectionOverline !text-white">Solver</p>
           </div>
         </motion.div>
@@ -130,8 +130,10 @@ export default function Hero() {
         <div className="flex flex-col w-fit justify-center items-center gap-4 md:order-3">
           <Links />
         </div>
-        <h1 className="font-bold text-3xl md:order-1">{header}</h1>
-        <p className="md:order-2 text-sm font-bold text-slate-600 normal-case">
+        <h1 className="sectionHeading md:order-1 !text-center md:!text-left">
+          {header}
+        </h1>
+        <p className="md:order-2 sectionLeading !text-center md:!text-left">
           {body}
         </p>
       </motion.div>

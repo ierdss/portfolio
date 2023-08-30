@@ -46,9 +46,9 @@ const Technologies = () => {
       >
         <div className=" text-white">
           <h1 className="sectionOverline !text-white">{overline}</h1>
-          <h1 className="sectionHeader">{header}</h1>
+          <h1 className="sectionHeading">{header}</h1>
         </div>
-        <p className="sectionDescription !text-white">{description}</p>
+        <p className="sectionLeading !text-white">{description}</p>
       </motion.div>
       <motion.ul
         variants={container}

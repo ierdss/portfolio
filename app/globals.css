@@ -64,16 +64,27 @@ body {
 }
 
 /* All Sections */
-.sectionOverline {
-  @apply text-secondary-red font-extrabold text-sm block uppercase;
+.sectionOverline,
+.sectionHeading,
+.sectionLeading,
+.sectionDescription {
+  @apply block text-left w-full;
 }
 
-.sectionHeader {
-  @apply block font-bold text-3xl capitalize;
+.sectionOverline {
+  @apply text-secondary-red font-extrabold text-sm uppercase;
+}
+
+.sectionHeading {
+  @apply font-bold text-3xl capitalize;
+}
+
+.sectionLeading {
+  @apply font-semibold text-base text-neutral-900 normal-case;
 }
 
 .sectionDescription {
-  @apply font-medium text-base text-slate-600 normal-case;
+  @apply font-medium text-sm text-neutral-800 normal-case text-left;
 }
 
 .sectionPadding {

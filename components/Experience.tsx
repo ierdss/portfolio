@@ -81,9 +81,11 @@ export default function Experience() {
       id="experience"
       className="w-full sectionPadding flexCenter flex-col gap-[50px]"
     >
-      <div className="w-[90%] md:w-full text-left md:text-center">
-        <h1 className="sectionOverline">{overline}</h1>
-        <h1 className="sectionHeader">{header}</h1>
+      <div className="w-[90%] md:w-full !text-left md:!text-center">
+        <h1 className="sectionOverline !text-left md:!text-center">
+          {overline}
+        </h1>
+        <h1 className="sectionHeading !text-left md:!text-center">{header}</h1>
       </div>
       <VerticalTimeline className="w-full" lineColor="#B40041">
         {ExperienceSectionContent.map(
