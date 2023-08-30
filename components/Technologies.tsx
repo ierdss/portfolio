@@ -1,22 +1,34 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import { TechnologiesSectionContent as TechList } from "@/constants/SectionContent";
 import { TechnologiesSectionHeading } from "@/constants/SectionHeading";
 import Image from "next/image";
+import { motion, useInView } from "framer-motion";
 
 const Technologies = () => {
   const { overline, header, description } = TechnologiesSectionHeading;
 
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <div id="technologies" className="sectionPadding technologies relative">
-      <div className="w-[90%] md:w-[55%] flex flex-col gap-[20px]">
+      <motion.div
+        ref={ref}
+        style={{
+          transform: isInView ? "translateX(0px)" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+        }}
+        className="w-[90%] md:w-[55%] flex flex-col gap-[20px]"
+      >
         <div className=" text-white">
           <h1 className="sectionOverline !text-white">{overline}</h1>
           <h1 className="sectionHeader">{header}</h1>
         </div>
         <p className="sectionDescription !text-white">{description}</p>
-      </div>
-      <ul className="technologiesCardGrid ">
+      </motion.div>
+      <motion.ul className="technologiesCardGrid ">
         {TechList.map(
           ({
             id,
@@ -47,7 +59,7 @@ const Technologies = () => {
             </li>
           )
         )}
-      </ul>
+      </motion.ul>
       <Image
         src="/laptop-1.jpg"
         fill
