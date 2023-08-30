@@ -66,17 +66,35 @@ body {
 /* All Sections */
 .sectionOverline,
 .sectionHeading,
+.sectionHeading-2,
+.sectionHeading-3,
 .sectionLeading,
 .sectionDescription {
   @apply block text-left w-full;
 }
 
+.sectionOverline,
+.sectionOverline-2 {
+  @apply text-secondary-red font-extrabold uppercase;
+}
 .sectionOverline {
-  @apply text-secondary-red font-extrabold text-sm uppercase;
+  @apply text-sm;
+}
+
+.sectionOverline-2 {
+  @apply text-xs;
 }
 
 .sectionHeading {
   @apply font-bold text-3xl capitalize;
+}
+
+.sectionHeading-2 {
+  @apply font-bold text-xl capitalize;
+}
+
+.sectionHeading-3 {
+  @apply font-bold text-lg capitalize;
 }
 
 .sectionLeading {
@@ -191,7 +209,7 @@ body {
 /* Hero Section  */
 /* Main */
 .hero {
-  @apply flex flex-col lg:flex-row justify-center items-center gap-[100px] md:gap-[50px] w-full overflow-hidden h-[100vh] max-h-[1000px];
+  @apply flex flex-col lg:flex-row justify-center items-center gap-[100px] lg:gap-[50px] w-full overflow-hidden h-[100vh] max-h-[1000px];
 }
 
 /* Container */
@@ -374,7 +392,7 @@ body {
 }
 
 .projectTags {
-  @apply flex flex-row flex-wrap justify-center lg:justify-start items-start gap-2;
+  @apply flex flex-row flex-wrap justify-center lg:justify-start items-start gap-2 text-black;
 }
 
 .projectTags__container {
@@ -417,7 +435,7 @@ body {
 .serviceCard__black,
 .serviceCard__red,
 .serviceCard__image {
-  @apply hoverSmoothScale flex flex-col w-full min-h-[230px] aspect-video justify-center p-6 rounded-md overflow-hidden  row-span-2;
+  @apply hoverSmoothScale flex flex-col w-full min-h-[230px] aspect-video justify-center p-6 rounded-md overflow-hidden row-span-2;
 }
 
 .serviceCard > div,
@@ -429,13 +447,13 @@ body {
 .serviceCard > h1,
 .serviceCard__black > h1,
 .serviceCard__red > h1 {
-  @apply font-bold text-lg capitalize;
+  @apply sectionHeading-3;
 }
 
 .serviceCard > p,
 .serviceCard__black > p,
 .serviceCard__red > p {
-  @apply text-base font-medium normal-case;
+  @apply sectionDescription;
 }
 
 .serviceCard__black,
