@@ -64,13 +64,10 @@ export default function About() {
           <div className="flex flex-col gap-4 w-full ">
             <div className="w-full">
               <h1 className="sectionOverline">{overline}</h1>
-              <h1 className="sectionHeader">{header}</h1>
+              <h1 className="sectionHeading">{header}</h1>
             </div>
             {paragraphs.map(({ id, paragraph }) => (
-              <p
-                key={id}
-                className="block font-bold text-slate-500 w-full text-justify normal-case"
-              >
+              <p key={id} className="sectionDescription">
                 {paragraph}
               </p>
             ))}

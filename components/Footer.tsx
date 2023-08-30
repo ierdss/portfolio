@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="sm:order-2">
           <SocialMediaLinks />
         </div>
-        <p className="sm:order-1">{copyright}</p>
+        <p className="sectionDescription sm:order-1">{copyright}</p>
       </div>
     </footer>
   );

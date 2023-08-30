@@ -13,9 +13,9 @@ export default function Services() {
       <div className="servicesContent">
         <div className="w-full">
           <h1 className="sectionOverline">{overline}</h1>
-          <h1 className="sectionHeader">{header}</h1>
+          <h1 className="sectionHeading">{header}</h1>
         </div>
-        <p className="sectionDescription">{description}</p>
+        <p className="sectionLeading">{description}</p>
       </div>
       <div className="servicesCards">
         <div className="servicesCardsRow">
