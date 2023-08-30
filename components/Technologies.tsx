@@ -12,12 +12,12 @@ const Technologies = () => {
   const isInView = useInView(ref, { once: true });
 
   const container = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 1 },
     show: {
       opacity: 1,
-      duration: "0.9s",
       transition: {
         staggerChildren: 0.2,
+        delay: 0.5,
       },
     },
   };
@@ -27,15 +27,11 @@ const Technologies = () => {
     show: {
       opacity: 1,
       transform: "translateY(0px)",
+      transition: {
+        duration: 0.9,
+      },
     },
   };
-
-  // ref={ref}
-  // style={{
-  //   transform: isInView ? "translateX(0px)" : "translateX(-200px)",
-  //   opacity: isInView ? 1 : 0,
-  //   transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-  // }}
 
   return (
     <div id="technologies" className="sectionPadding technologies relative">
@@ -44,7 +40,7 @@ const Technologies = () => {
         style={{
           transform: isInView ? "translateX(0px)" : "translateX(-200px)",
           opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
         }}
         className="w-[90%] md:w-[55%] flex flex-col gap-[20px]"
       >
