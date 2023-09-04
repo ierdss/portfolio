@@ -26,6 +26,7 @@ export function ServiceCard({
         {paragraph ||
           "Lorem ipsum amet consectetur, adipisicing elit. Tenetur error, rem officia?"}
       </p>
+      <div className="serviceCard__shadow"></div>
     </div>
   );
 }

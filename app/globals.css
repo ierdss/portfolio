@@ -435,7 +435,7 @@ body {
 .serviceCard__black,
 .serviceCard__red,
 .serviceCard__image {
-  @apply hoverSmoothScale flex flex-col w-full md:max-w-[210px] md:min-h-[280px] justify-center p-6 rounded-md overflow-hidden row-span-2 shadow-lg bg-white z-10;
+  @apply hoverSmoothScale flex flex-col w-full md:max-w-[210px] md:min-h-[280px] justify-center p-6 rounded-md overflow-hidden row-span-2 shadow-lg z-10 relative bg-white;
 }
 
 .serviceCard > div,
@@ -510,6 +510,10 @@ body {
 
 .serviceCard__image > p {
   @apply hidden;
+}
+
+.serviceCard__shadow {
+  @apply brightness-75 w-[200px] aspect-square absolute -bottom-[20px] -right-[150px] bg-white z-10 opacity-20 -rotate-45;
 }
 
 /* Contact Component */
