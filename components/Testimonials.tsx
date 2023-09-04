@@ -1,18 +1,13 @@
-import {
-  TestimonialsSectionHeading,
-  TestimonialsSectionContent,
-} from "@/constants";
+import { TestimonialsSectionContent } from "@/constants";
 import Image from "next/image";
 import { BiSolidQuoteLeft } from "react-icons/bi";
 
 export default function Testimonials() {
-  const { overline, header } = TestimonialsSectionHeading;
-
   return (
     <div id="testimonials" className="testimonials sectionPadding">
       <div className="w-full">
-        <h1 className="sectionOverline !text-center">{overline}</h1>
-        <h1 className="sectionHeading !text-center">{header}</h1>
+        <h1 className="sectionOverline !text-center">Testimonials</h1>
+        <h1 className="sectionHeading !text-center">What People Say</h1>
         <span className="w-[60px] h-[5px] bg-secondary-red mt-2 rounded-md" />
       </div>
       <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-[20px] gap-x-[25px] lg:w-[80%]">

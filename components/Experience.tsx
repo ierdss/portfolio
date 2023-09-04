@@ -6,10 +6,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-import {
-  ExperienceSectionHeading,
-  ExperienceSectionContent,
-} from "@/constants";
+import { ExperienceSectionContent } from "@/constants";
 import Image from "next/image";
 
 type ExperienceCardProps = {
@@ -74,8 +71,6 @@ function ExperienceCard({
 }
 
 export default function Experience() {
-  const { overline, header } = ExperienceSectionHeading;
-
   return (
     <div
       id="experience"
@@ -83,9 +78,11 @@ export default function Experience() {
     >
       <div className="w-[90%] md:w-full !text-left md:!text-center">
         <h1 className="sectionOverline !text-left md:!text-center">
-          {overline}
+          Experience
         </h1>
-        <h1 className="sectionHeading !text-left md:!text-center">{header}</h1>
+        <h1 className="sectionHeading !text-left md:!text-center">
+          What Have I Done?
+        </h1>
       </div>
       <VerticalTimeline className="w-full" lineColor="#B40041">
         {ExperienceSectionContent.map(

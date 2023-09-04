@@ -1,24 +1,18 @@
-import { WorkflowSectionHeading, WorkflowSectionContent } from "@/constants";
-import Image from "next/image";
+import { WorkflowSectionContent } from "@/constants";
 
 export default function Workflow() {
-  const { overline, header } = WorkflowSectionHeading;
-
   return (
-    <div
-      id="workflow"
-      className="sectionPadding workflow bg-neutral-50 gap-[100px] relative"
-    >
+    <div id="workflow" className="sectionPadding workflow gap-[75px] relative">
       <div className="w-full !text-center">
-        <h1 className="sectionOverline !text-center">{overline}</h1>
-        <h1 className="sectionHeading !text-center">{header}</h1>
+        <h1 className="sectionOverline !text-center">Workflow</h1>
+        <h1 className="sectionHeading !text-center">My Thought Process</h1>
         <span className="w-[60px] h-[5px] bg-secondary-red mt-2 rounded-md" />
       </div>
-      <ul className="w-full grid grid-cols-1 md:grid-cols-2 lg:px-[100px] gap-[50px]">
+      <ul className="w-full grid grid-cols-1 md:grid-cols-4 gap-[30px]">
         {WorkflowSectionContent.map(({ id, number, title, description }) => (
           <li
             key={id}
-            className="w-full aspect-video relative border border-neutral-100 rounded-md bg-neutral-50 hover:bg-white hover:shadow-xl hover:-translate-y-3 transition-all duration-500 px-4 py-10 text-center group inline-block z-10 group:"
+            className="w-full aspect-video relative border border-neutral-100 rounded-md bg-white hover:shadow-xl hover:-translate-y-3 transition-all duration-500 px-4 py-10 text-center group inline-block z-10 group:"
           >
             <span className="w-[50px] aspect-square absolute -top-[30px] left-[50%] -translate-x-1/2 bg-secondary-red rounded-full text-white font-bold text-2xl flex items-center justify-center shadow-lg !z-20">
               {number}
