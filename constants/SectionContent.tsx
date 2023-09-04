@@ -180,32 +180,28 @@ export const TechnologiesSectionContent = [
 
 export const WorkflowSectionContent = [
   {
-    id: 1,
     number: "01",
     title: "sales is the goal",
     description:
-      "As a developer the goal of making a website is making money. My job as a developer is to design and create a website with the highest number of clicks.",
+      "As a developer my goal when making a website is to maximize click rate. For websites gaining the users' attention and directing its flow into a click is crucial. For many sites a good funnel can garner more customers increasing the chance a click translates into a sale.",
   },
   {
-    id: 2,
     number: "02",
     title: "content comes first",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam nesciunt quaerat sequi autem impedit odio distinctio suscipit consequuntur perspiciatis numquam quam doloremque, laudantium neque. Iure quia harum nam repellat quam!",
+      "Before creating a website the client must first provide its contents. This way planning the layout of a website becomes a smoother process saving the client and myself our precious time. The quicker a website is deployed, the quicker we can gain value.",
   },
   {
-    id: 3,
     number: "03",
     title: "prototying a design",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam nesciunt quaerat sequi autem impedit odio distinctio suscipit consequuntur perspiciatis numquam quam doloremque, laudantium neque. Iure quia harum nam repellat quam!",
+      "Prototyping is a form of visual communication between the client and the developer. It is a quick and easy method that allows different ideas to be tested before production saving time and effort. The clients can easily give feedback during this process and if they want changes it can be easily assessed.",
   },
   {
-    id: 4,
     number: "04",
     title: "finally, building",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam nesciunt quaerat sequi autem impedit odio distinctio suscipit consequuntur perspiciatis numquam quam doloremque, laudantium neque. Iure quia harum nam repellat quam!",
+      "When building a project I prioritize writing clean code and the best practices that I know of. However, what code I write may depend on the constraints of the situation. I weight my decisions based on time constraints, efficiency, and code adaptability. I first make sure of the intentions of the client before starting.",
   },
 ];
 
