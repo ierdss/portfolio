@@ -261,7 +261,7 @@ body {
 
 /* Services Section  */
 .services {
-  @apply flexCenter flex-col md:flex-row gap-[100px] h-[100vh] max-h-[1000px] relative;
+  @apply flexCenter flex-col md:flex-row gap-[100px] md:h-[100vh] md:max-h-[1000px];
 }
 
 .servicesContent,
@@ -274,7 +274,7 @@ body {
 }
 
 .servicesCards {
-  @apply w-full flex flex-row md:w-[45%] gap-[30px];
+  @apply w-[95%] flex flex-col md:flex-row md:w-[45%] gap-[30px];
 }
 
 .servicesCardsRow {
@@ -435,7 +435,7 @@ body {
 .serviceCard__black,
 .serviceCard__red,
 .serviceCard__image {
-  @apply hoverSmoothScale flex flex-col w-full max-w-[210px] min-h-[280px] justify-center p-6 rounded-md overflow-hidden row-span-2 shadow-lg shadow-neutral-300;
+  @apply hoverSmoothScale flex flex-col w-full md:max-w-[210px] md:min-h-[280px] justify-center p-6 rounded-md overflow-hidden row-span-2 shadow-lg shadow-neutral-300;
 }
 
 .serviceCard > div,
