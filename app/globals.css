@@ -352,7 +352,7 @@ body {
 }
 
 .projectItem {
-  @apply flex flex-col lg:flex-row rounded-2xl gap-2 lg:gap-10 relative w-full odd:lg:flex-row-reverse odd:lg:gap-0 odd:lg:pr-10 border-b-2 border-b-secondary-red lg:border-b-0 odd:lg:border-l-2 odd:lg:border-l-secondary-red even:lg:border-r-2 even:lg:border-r-secondary-red snap-center shrink-0 drop-shadow-xl bg-white shadow-inner shadow-slate-300;
+  @apply flex flex-col lg:flex-row rounded-2xl gap-2 lg:gap-10 relative w-full odd:lg:flex-row-reverse odd:lg:gap-0 odd:lg:pr-10 border-b-2 border-b-secondary-red odd:lg:border-l-2 odd:lg:border-l-secondary-red even:lg:border-r-2 even:lg:border-r-secondary-red snap-center shrink-0 shadow-lg bg-white;
 }
 
 .projectItem__right {
