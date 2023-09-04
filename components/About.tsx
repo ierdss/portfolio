@@ -74,15 +74,6 @@ export default function About() {
           </div>
         </motion.div>
       </div>
-      {/* <div className="servicesBackground !opacity-30 top-[200px] -rotate-12 left-0 hidden md:flex">
-        <Image
-          typeof="background"
-          src={"/patterns/ring-split.svg"}
-          width={1000}
-          height={2000}
-          alt="This is impossible! An svg did not load?"
-        />
-      </div> */}
     </div>
   );
 }
