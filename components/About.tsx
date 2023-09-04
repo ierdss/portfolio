@@ -31,7 +31,7 @@ const TechGroup = ({ technologies }: TechListProps) => {
 };
 
 export default function About() {
-  const { overline, header, paragraphs } = AboutSectionHeading;
+  const { paragraphs } = AboutSectionHeading;
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -39,7 +39,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="sectionPadding w-full text-center flex justify-center items-center md:text-left flex-col gap-24"
+      className="sectionPadding w-full text-center flex justify-center items-center md:text-left flex-col gap-24 md:h-[100vh] md:max-h-[1000px] relative"
     >
       <div className="flex flex-row flex-wrap w-full justify-center items-center gap-8 md:gap-16">
         <div
@@ -63,8 +63,8 @@ export default function About() {
         >
           <div className="flex flex-col gap-4 w-full ">
             <div className="w-full">
-              <h1 className="sectionOverline">{overline}</h1>
-              <h1 className="sectionHeading">{header}</h1>
+              <h1 className="sectionOverline">About</h1>
+              <h1 className="sectionHeading">Get To Know Me :)</h1>
             </div>
             {paragraphs.map(({ id, paragraph }) => (
               <p key={id} className="sectionDescription">
@@ -73,6 +73,15 @@ export default function About() {
             ))}
           </div>
         </motion.div>
+      </div>
+      <div className="servicesBackground !opacity-30 top-[200px] -rotate-12 left-0 hidden md:flex">
+        <Image
+          typeof="background"
+          src={"/patterns/ring-split.svg"}
+          width={1000}
+          height={2000}
+          alt="This is impossible! An svg did not load?"
+        />
       </div>
     </div>
   );
