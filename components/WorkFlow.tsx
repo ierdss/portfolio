@@ -4,7 +4,7 @@ export default function Workflow() {
   return (
     <div
       id="workflow"
-      className="sectionPadding workflow gap-[75px] relative md:h-[100vh] md:max-h-[700px]"
+      className="sectionPadding workflow gap-[75px] relative md:h-[100vh] md:max-h-[500px]"
     >
       <div className="w-full !text-center">
         <h1 className="sectionOverline !text-center">Workflow</h1>
