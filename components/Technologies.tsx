@@ -1,13 +1,10 @@
 import React, { useRef } from "react";
 
 import { TechnologiesSectionContent as TechList } from "@/constants/SectionContent";
-import { TechnologiesSectionHeading } from "@/constants/SectionHeading";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
 
 const Technologies = () => {
-  const { overline, header, description } = TechnologiesSectionHeading;
-
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -45,10 +42,15 @@ const Technologies = () => {
         className="w-[90%] md:w-[55%] flex flex-col gap-[20px]"
       >
         <div className=" text-white">
-          <h1 className="sectionOverline !text-white">{overline}</h1>
-          <h1 className="sectionHeading">{header}</h1>
+          <h1 className="sectionOverline !text-white">Technologies</h1>
+          <h1 className="sectionHeading">Tools I Am Most Familiar With </h1>
         </div>
-        <p className="sectionLeading !text-white">{description}</p>
+        <p className="sectionLeading !text-white">
+          As a Software Developer I have decided to master a small set of
+          skills. Nonetheless, I am willing and eager to learn new technologies
+          that allow me to give more value to my clients while build myself up
+          even further.
+        </p>
       </motion.div>
       <motion.ul
         variants={container}

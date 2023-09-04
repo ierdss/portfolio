@@ -7,8 +7,6 @@ import { HeroSectionHeading } from "@/constants/SectionHeading";
 import { motion, useInView } from "framer-motion";
 
 export default function Hero() {
-  const { header, body } = HeroSectionHeading;
-
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -131,10 +129,11 @@ export default function Hero() {
           <Links />
         </div>
         <h1 className="sectionHeading md:order-1 !text-center lg:!text-left">
-          {header}
+          Software Developer
         </h1>
         <p className="md:order-2 sectionLeading !text-center lg:!text-left">
-          {body}
+          Embracing the fusion of artistry and code, I shape digital experiences
+          as a full-stack software developer. Building experiences with a twist.
         </p>
       </motion.div>
       <div className="servicesBackground aspect-square !opacity-30 top-[100px] left-0 -z-0">
