@@ -146,7 +146,7 @@ export default function Hero() {
           className=" md:hidden object-none overflow-auto aspect-square"
         />
       </div>
-      <div className="servicesBackground !opacity-30 right-0 -z-0  hidden md:flex">
+      <div className="servicesBackground !opacity-30 right-0 -z-0 hidden md:flex">
         <Image
           typeof="background"
           src={"/patterns/ring-left.svg"}
