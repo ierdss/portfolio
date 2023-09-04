@@ -143,10 +143,10 @@ export default function Hero() {
           width={1000}
           height={1000}
           alt="This is impossible! An svg did not load?"
-          className="xs:hidden object-none overflow-auto aspect-square"
+          className="md:hidden object-none overflow-auto aspect-square"
         />
       </div>
-      <div className="servicesBackground !opacity-30 right-0 -z-0  hidden xs:flex">
+      <div className="servicesBackground !opacity-30 right-0 -z-0  hidden md:flex">
         <Image
           typeof="background"
           src={"/patterns/ring-left.svg"}
