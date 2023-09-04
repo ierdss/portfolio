@@ -29,38 +29,24 @@ export default function Services() {
             icon={card[1].icon}
             title={card[1].title}
             paragraph={card[1].description}
-            colorType="serviceCard__black"
+            colorType="serviceCard"
           />
         </div>
-        <div className="servicesCardsRow">
+        <div className="servicesCardsRow mt-[50px]">
           <ServiceCard
             icon={card[2].icon}
             title={card[2].title}
             paragraph={card[2].description}
-            colorType="serviceCard__black"
+            colorType="serviceCard"
           />
           <ServiceCard
             icon={card[3].icon}
             title={card[3].title}
             paragraph={card[3].description}
-            colorType="serviceCard__red"
+            colorType="serviceCard"
           />
         </div>
       </div>
-      <Image
-        typeof="background"
-        src={"/patterns/bg-services__desktop.svg"}
-        fill
-        alt="This is impossible! An svg did not load?"
-        className="servicesBackground top-0 hidden md:flex"
-      />
-      <Image
-        typeof="background"
-        src={"/patterns/bg-services__mobile.svg"}
-        fill
-        alt="This is impossible! An svg did not load?"
-        className="servicesBackground bottom-0 md:hidden"
-      />
     </div>
   );
 }
