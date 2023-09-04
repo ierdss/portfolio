@@ -315,7 +315,7 @@ body {
 
 /* WorkFlow Section  */
 .workflow {
-  @apply w-full flex flex-col;
+  @apply w-full flexCenter flex-col;
 }
 
 /* WorkExperience Section  */

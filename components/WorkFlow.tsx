@@ -2,7 +2,10 @@ import { WorkflowSectionContent } from "@/constants";
 
 export default function Workflow() {
   return (
-    <div id="workflow" className="sectionPadding workflow gap-[75px] relative">
+    <div
+      id="workflow"
+      className="sectionPadding workflow gap-[75px] relative md:h-[100vh] md:max-h-[700px]"
+    >
       <div className="w-full !text-center">
         <h1 className="sectionOverline !text-center">Workflow</h1>
         <h1 className="sectionHeading !text-center">My Thought Process</h1>
