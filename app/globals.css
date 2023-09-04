@@ -513,7 +513,7 @@ body {
 }
 
 .serviceCard__shadow {
-  @apply brightness-75 w-[200px] aspect-square absolute -bottom-[20px] -right-[150px] bg-white z-10 opacity-20 -rotate-45;
+  @apply brightness-75 w-[200px] aspect-square absolute -top-[20px] -right-[150px] bg-white z-10 opacity-20 -rotate-45;
 }
 
 /* Contact Component */
