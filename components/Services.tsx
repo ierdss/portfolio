@@ -22,7 +22,7 @@ export default function Services() {
           width={400}
           height={400}
           alt="This is impossible! An svg did not load?"
-          className="servicesBackground top-1/2 left-1/2 translate-x-[-50%] translate-y-[-40%] hidden md:flex"
+          className="servicesBackground top-1/2 left-1/2 translate-x-[-50%] translate-y-[-40%] hidden xs:flex"
         />
         <div className="servicesCardsRow">
           <ServiceCard
@@ -38,7 +38,7 @@ export default function Services() {
             colorType="serviceCard"
           />
         </div>
-        <div className="servicesCardsRow md:mt-[50px]">
+        <div className="servicesCardsRow xs:mt-[50px]">
           <ServiceCard
             icon={card[2].icon}
             title={card[2].title}
@@ -59,7 +59,7 @@ export default function Services() {
         width={1000}
         height={1000}
         alt="This is impossible! An svg did not load?"
-        className="servicesBackground -bottom-1/3 right-0 translate-y-[-50%] md:hidden"
+        className="servicesBackground -bottom-1/3 right-0 translate-y-[-50%] xs:hidden"
       />
     </div>
   );
