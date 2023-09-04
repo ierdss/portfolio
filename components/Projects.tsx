@@ -1,5 +1,4 @@
 import { ProjectSectionContent as ProjectList } from "@/constants/SectionContent";
-import { ProjectsSectionHeading } from "@/constants/SectionHeading";
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
@@ -137,8 +136,6 @@ function OtherProjects() {
 }
 
 export default function Projects() {
-  const { overline, header } = ProjectsSectionHeading;
-
   return (
     <div
       id="projects"
@@ -146,8 +143,10 @@ export default function Projects() {
     >
       <div className="flex flex-col w-full gap-8 sectionPadding bg-neutral-50">
         <div className="">
-          <h1 className="sectionOverline !text-center">{overline}</h1>
-          <h1 className="sectionHeading !text-center">{header}</h1>
+          <h1 className="sectionOverline !text-center">Projects</h1>
+          <h1 className="sectionHeading !text-center">
+            Check Out My Projects!
+          </h1>
         </div>
         <FeaturedProjects />
         {/* <div className="">

@@ -1,21 +1,19 @@
 import Image from "next/image";
 import { ServiceCard } from "./cards/ServiceCards";
-import {
-  ServicesSectionHeading,
-  ServicesSectionContent as card,
-} from "@/constants";
+import { ServicesSectionContent as card } from "@/constants";
 
 export default function Services() {
-  const { overline, header, description } = ServicesSectionHeading;
-
   return (
     <div id="services" className="services sectionPadding">
       <div className="servicesContent">
         <div className="w-full">
-          <h1 className="sectionOverline">{overline}</h1>
-          <h1 className="sectionHeading">{header}</h1>
+          <h1 className="sectionOverline">Services</h1>
+          <h1 className="sectionHeading">The Value I Provide</h1>
         </div>
-        <p className="sectionLeading">{description}</p>
+        <p className="sectionLeading">
+          With my services I can make your ideas for a product or service come
+          to life.
+        </p>
       </div>
       <div className="servicesCards relative">
         <Image
