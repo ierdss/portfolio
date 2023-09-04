@@ -17,7 +17,15 @@ export default function Services() {
         </div>
         <p className="sectionLeading">{description}</p>
       </div>
-      <div className="servicesCards">
+      <div className="servicesCards relative">
+        <Image
+          typeof="background"
+          src={"/patterns/ring.svg"}
+          width={400}
+          height={400}
+          alt="This is impossible! An svg did not load?"
+          className="servicesBackground top-1/2 left-1/2 translate-x-[-50%] translate-y-[-40%] hidden md:flex"
+        />
         <div className="servicesCardsRow">
           <ServiceCard
             icon={card[0].icon}
@@ -47,6 +55,14 @@ export default function Services() {
           />
         </div>
       </div>
+      <Image
+        typeof="background"
+        src={"/patterns/ring-left.svg"}
+        width={1000}
+        height={1000}
+        alt="This is impossible! An svg did not load?"
+        className="servicesBackground top-1/2 right-0 translate-y-[-50%] md:hidden"
+      />
     </div>
   );
 }

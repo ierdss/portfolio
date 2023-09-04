@@ -261,7 +261,7 @@ body {
 
 /* Services Section  */
 .services {
-  @apply flexCenter flex-col md:flex-row gap-[50px] lg:gap-[100px] md:h-[100vh] md:max-h-[1000px];
+  @apply flexCenter flex-col md:flex-row gap-[50px] lg:gap-[100px] md:h-[100vh] md:max-h-[1000px] relative;
 }
 
 .servicesContent,
@@ -282,7 +282,7 @@ body {
 }
 
 .servicesBackground {
-  @apply absolute left-0 right-0 pointer-events-none;
+  @apply absolute pointer-events-none -z-0 opacity-50;
 }
 
 /* About Section  */
@@ -435,7 +435,7 @@ body {
 .serviceCard__black,
 .serviceCard__red,
 .serviceCard__image {
-  @apply hoverSmoothScale flex flex-col w-full md:max-w-[210px] md:min-h-[280px] justify-center p-6 rounded-md overflow-hidden row-span-2 shadow-lg shadow-neutral-300;
+  @apply hoverSmoothScale flex flex-col w-full md:max-w-[210px] md:min-h-[280px] justify-center p-6 rounded-md overflow-hidden row-span-2 shadow-lg bg-white z-10;
 }
 
 .serviceCard > div,
