@@ -4,11 +4,12 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 const mediaIconSize = 30;
 
 export const NavLinks = [
-  { id: 1, href: "/", key: "Home", text: "Home" },
-  { id: 2, href: "#services", key: "Services", text: "Services" },
-  { id: 3, href: "#about", key: "About", text: "About" },
-  { id: 4, href: "#experience", key: "Experience", text: "Experience" },
-  { id: 5, href: "#projects", key: "Projects", text: "Projects" },
+  { href: "/", key: "Home", text: "Home" },
+  { href: "#services", key: "Services", text: "Services" },
+  { href: "#about", key: "About", text: "About" },
+  { href: "#experience", key: "Experience", text: "Experience" },
+  { href: "#projects", key: "Projects", text: "Projects" },
+  { href: "#testimonials", key: "Testimonials", text: "Testimonials" },
 ];
 
 export const SocialMediaLinks = [
