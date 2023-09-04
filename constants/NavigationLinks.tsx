@@ -4,7 +4,6 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 const mediaIconSize = 30;
 
 export const NavLinks = [
-  { href: "/", key: "Home", text: "Home" },
   { href: "#services", key: "Services", text: "Services" },
   { href: "#about", key: "About", text: "About" },
   { href: "#experience", key: "Experience", text: "Experience" },
