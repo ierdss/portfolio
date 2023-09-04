@@ -37,9 +37,9 @@ export default function Hero() {
   return (
     <div
       id="hero"
-      className="hero sectionPadding md:!px-[100px] md:!pt-[100px]"
+      className="hero sectionPadding md:!px-[100px] md:!pt-[100px] relative"
     >
-      <div className="heroContainer">
+      <div className="heroContainer z-10">
         <motion.div
           ref={ref}
           style={{
@@ -137,6 +137,25 @@ export default function Hero() {
           {body}
         </p>
       </motion.div>
+      <div className="servicesBackground aspect-square !opacity-30 top-[100px] left-0 -z-0">
+        <Image
+          typeof="background"
+          src={"/patterns/ring-top.svg"}
+          width={1000}
+          height={1000}
+          alt="This is impossible! An svg did not load?"
+          className=" md:hidden object-none overflow-auto aspect-square"
+        />
+      </div>
+      <div className="servicesBackground !opacity-30 right-0 -z-0  hidden md:flex">
+        <Image
+          typeof="background"
+          src={"/patterns/ring-left.svg"}
+          width={1000}
+          height={1000}
+          alt="This is impossible! An svg did not load?"
+        />
+      </div>
     </div>
   );
 }
