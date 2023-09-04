@@ -132,7 +132,7 @@ body {
 
 /* Navbar Section */
 .navbar {
-  @apply flexCenter pt-2 pb-1 md:pt-[5px] md:pb-0 px-6 md:px-12 w-full fixed top-0 !z-40 max-w-screen-xl bg-white text-slate-500;
+  @apply justify-between flexCenter pt-2 pb-1 md:pt-[5px] md:pb-0 px-6 md:px-12 w-full fixed top-0 !z-40 max-w-screen-xl bg-white text-slate-500;
 }
 
 .navbar__scrolled {
@@ -261,7 +261,7 @@ body {
 
 /* Services Section  */
 .services {
-  @apply flexCenter flex-col md:flex-row gap-[100px] md:h-[100vh] md:max-h-[1000px];
+  @apply flexCenter flex-col md:flex-row gap-[50px] lg:gap-[100px] md:h-[100vh] md:max-h-[1000px];
 }
 
 .servicesContent,
