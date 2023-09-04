@@ -32,7 +32,7 @@ export default function Services() {
             colorType="serviceCard"
           />
         </div>
-        <div className="servicesCardsRow mt-[50px]">
+        <div className="servicesCardsRow md:mt-[50px]">
           <ServiceCard
             icon={card[2].icon}
             title={card[2].title}
