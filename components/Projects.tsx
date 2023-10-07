@@ -1,5 +1,4 @@
 import { ProjectSectionContent as ProjectList } from "@/constants/SectionContent";
-import { ProjectsSectionHeading } from "@/constants/SectionHeading";
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub } from "react-icons/bs";
@@ -37,11 +36,19 @@ type ProjectLinksProps = {
 function ProjectLinks({ githubUrl, livedemoUrl }: ProjectLinksProps) {
   return (
     <div className="projectLinks">
-      <a href={githubUrl} target="_blank" className="projectLink">
+      <a
+        href={githubUrl}
+        target="_blank"
+        className="projectLink sectionLeading"
+      >
         <BsGithub size={sizeIcon} />
         Source Code
       </a>
-      <a href={livedemoUrl} target="_blank" className="projectLink">
+      <a
+        href={livedemoUrl}
+        target="_blank"
+        className="projectLink sectionLeading"
+      >
         <IoGlobe size={sizeIcon} />
         Live Demo
       </a>
@@ -79,10 +86,7 @@ function FeaturedProjects() {
                       loading="lazy"
                       quality={100}
                       sizes="(max-width: 768px) 50vw, (max-width: 1024px) 75vw, (max-width: 1280px) 100vw, 25vw"
-                      style={{
-                        objectFit: "cover",
-                      }}
-                      className="rounded-2xl object-cover"
+                      className="rounded-2xl object-cover object-top"
                     />
                   </div>
                   <div className="projectThumbnailMobile">
@@ -94,7 +98,7 @@ function FeaturedProjects() {
                         alt={mobileAlt}
                         loading="lazy"
                         quality={100}
-                        className="object-cover"
+                        className="object-cover object-top"
                       />
                     </div>
                   </div>
@@ -110,8 +114,10 @@ function FeaturedProjects() {
             </div>
             <div className="projectDetails">
               <div>
-                <h1 className="projectTitle">{title}</h1>
-                <h1 className="text-xs font-bold uppercase text-secondary-red">
+                <h1 className="sectionHeading-2 !text-center lg:!text-left">
+                  {title}
+                </h1>
+                <h1 className="sectionOverline-2 !text-center lg:!text-left">
                   {subtitle}
                 </h1>
               </div>
@@ -130,17 +136,17 @@ function OtherProjects() {
 }
 
 export default function Projects() {
-  const { overline, header } = ProjectsSectionHeading;
-
   return (
     <div
       id="projects"
-      className="w-full text-center flex justify-center items-center md:text-left"
+      className="w-full flex justify-center items-center md:text-left"
     >
-      <div className="flex flex-col w-full gap-8 sectionPadding bg-neutral-50">
+      <div className="flex flex-col w-full gap-[50px] sectionPadding">
         <div className="">
-          <h1 className="sectionOverline">{overline}</h1>
-          <h1 className="sectionHeader">{header}</h1>
+          <h1 className="sectionOverline !text-center">Projects</h1>
+          <h1 className="sectionHeading !text-center">
+            Check Out My Projects!
+          </h1>
         </div>
         <FeaturedProjects />
         {/* <div className="">
