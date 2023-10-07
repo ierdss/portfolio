@@ -1,5 +1,9 @@
 import { BiCodeAlt, BiLogoTypescript, BiTargetLock } from "react-icons/bi";
-import { BsGlobeAsiaAustralia, BsLayersFill } from "react-icons/bs";
+import {
+  BsGlobeAsiaAustralia,
+  BsLayersFill,
+  BsPatchQuestion,
+} from "react-icons/bs";
 import {
   FaGlobeAsia,
   FaHtml5,
@@ -20,6 +24,7 @@ const aboutIconSize = 40;
 const contactIconSize = 40;
 const techIconSize = 50;
 const categoryIconSize = 15;
+const experienceIconSize = 70;
 
 export const ServicesSectionContent = [
   {
@@ -175,35 +180,57 @@ export const TechnologiesSectionContent = [
 
 export const WorkflowSectionContent = [
   {
-    id: 1,
     number: "01",
     title: "sales is the goal",
-    description: "As a developer the goal of making a website is making money. My job as a developer is to design and create a website with the highest number of clicks.",
+    description:
+      "As a developer my goal when making a website is to maximize click rate. For websites gaining the users' attention and directing its flow into a click is crucial. For many sites a good funnel can garner more customers increasing the chance a click translates into a sale.",
   },
   {
-    id: 2,
     number: "02",
     title: "content comes first",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam nesciunt quaerat sequi autem impedit odio distinctio suscipit consequuntur perspiciatis numquam quam doloremque, laudantium neque. Iure quia harum nam repellat quam!",
+      "Before creating a website the client must first provide its contents. This way planning the layout of a website becomes a smoother process saving the client and myself our precious time. The quicker a website is deployed, the quicker we can gain value.",
   },
   {
-    id: 3,
     number: "03",
     title: "prototying a design",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam nesciunt quaerat sequi autem impedit odio distinctio suscipit consequuntur perspiciatis numquam quam doloremque, laudantium neque. Iure quia harum nam repellat quam!",
+      "Prototyping is a form of visual communication between the client and the developer. It is a quick and easy method that allows different ideas to be tested before production saving time and effort. The clients can easily give feedback during this process and if they want changes it can be easily assessed.",
   },
   {
-    id: 4,
     number: "04",
     title: "finally, building",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam nesciunt quaerat sequi autem impedit odio distinctio suscipit consequuntur perspiciatis numquam quam doloremque, laudantium neque. Iure quia harum nam repellat quam!",
+      "When building a project I prioritize writing clean code and the best practices that I know of. However, what code I write may depend on the constraints of the situation. I weight my decisions based on time constraints, efficiency, and code adaptability. I first make sure of the intentions of the client before starting.",
   },
 ];
 
-export const WorkExperienceSectionContent = {};
+export const ExperienceSectionContent = [
+  {
+    title: "Next.js Developer",
+    companyName: "Starbucks",
+    icon: <BsPatchQuestion size={experienceIconSize} />,
+    date: "March 2020 - April 2021",
+    bullets: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Next.js Developer",
+    companyName: "Starbucks",
+    icon: <BsPatchQuestion size={experienceIconSize} />,
+    date: "March 2020 - April 2021",
+    bullets: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+];
 
 export const ProjectSectionContent = [
   {
@@ -216,7 +243,7 @@ export const ProjectSectionContent = [
     title: "Marked A.I.",
     subtitle: "Artificial Intelligence",
     description: (
-      <p className="projectDescription">
+      <p className="sectionDescription !text-justify md:!text-left">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae
         magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit!
         Similique eaque voluptas repudiandae iste aperiam consequatur
@@ -242,7 +269,7 @@ export const ProjectSectionContent = [
     title: "Available",
     subtitle: "e-commerce shop",
     description: (
-      <p className="projectDescription">
+      <p className="sectionDescription !text-justify md:!text-left">
         An online shop that sells a lot of products. It also has a dashboard for
         the seller and the user. Sellers can effortlessly manage their
         inventory, track orders, and engage with customers, while users can
@@ -268,7 +295,7 @@ export const ProjectSectionContent = [
     title: "Bridge",
     subtitle: "Social Platform",
     description: (
-      <p className="projectDescription">
+      <p className="sectionDescription !text-justify md:!text-left">
         Bridge is an all-in-one communication app designed to seamlessly connect
         you with friends and loved ones. With Bridge, you can effortlessly send
         messages to users and join engaging voice chats fostering meaningful
@@ -298,7 +325,7 @@ export const ProjectSectionContent = [
     title: "Road Way Delivery",
     subtitle: "Transport Service",
     description: (
-      <p className="projectDescription">
+      <p className="sectionDescription !text-justify md:!text-left">
         <span className="font-bold">Road Way Delivery</span> Service is a
         leading logistics company revolutionizing the industry with fast,
         reliable road transportation solutions. We specialize in secure, on-time
@@ -329,7 +356,7 @@ export const ProjectSectionContent = [
     title: "Shoutcaster",
     subtitle: "Video Sharing",
     description: (
-      <p className="projectDescription">
+      <p className="sectionDescription !text-justify md:!text-left">
         Welcome to Shoutcaster, our dedicated podcast platform, the ultimate
         destination for immersive audio experiences. Discover a world of
         knowledge, stories, and insights as you explore a diverse array of
@@ -351,21 +378,63 @@ export const ProjectSectionContent = [
   },
 ];
 
+export const TestimonialsSectionContent = [
+  {
+    avatar: "/MeRed.png",
+    name: "Andrei Sager",
+    occupation: "Software Developer",
+    testimonial:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit omnis molestiae fuga modi ex asperiores, quaerat magnam similique sint.",
+  },
+  {
+    avatar: "/MeRed.png",
+    name: "Andrei Sager",
+    occupation: "Software Developer",
+    testimonial:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit omnis molestiae fuga modi ex asperiores, quaerat magnam similique sint.",
+  },
+  {
+    avatar: "/MeRed.png",
+    name: "Andrei Sager",
+    occupation: "Software Developer",
+    testimonial:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit omnis molestiae fuga modi ex asperiores, quaerat magnam similique sint.",
+  },
+  {
+    avatar: "/MeRed.png",
+    name: "Andrei Sager",
+    occupation: "Software Developer",
+    testimonial:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit omnis molestiae fuga modi ex asperiores, quaerat magnam similique sint.",
+  },
+  {
+    avatar: "/MeRed.png",
+    name: "Andrei Sager",
+    occupation: "Software Developer",
+    testimonial:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit omnis molestiae fuga modi ex asperiores, quaerat magnam similique sint.",
+  },
+  {
+    avatar: "/MeRed.png",
+    name: "Andrei Sager",
+    occupation: "Software Developer",
+    testimonial:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque reprehenderit omnis molestiae fuga modi ex asperiores, quaerat magnam similique sint.",
+  },
+];
+
 export const ContactSectionContent = [
   {
-    key: 1,
     icon: <HiMailOpen size={contactIconSize} />,
     title: "Email Address",
     text: "andreiwork25@gmail.com",
   },
   {
-    key: 2,
     icon: <GiRotaryPhone size={contactIconSize} />,
     title: "Phone Number",
     text: "*639763272778",
   },
   {
-    key: 3,
     icon: <MdAccessTimeFilled size={contactIconSize} />,
     title: "Working Hours",
     text: "(GMT+8) 9:00am-6:00pm",

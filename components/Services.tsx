@@ -1,23 +1,29 @@
 import Image from "next/image";
 import { ServiceCard } from "./cards/ServiceCards";
-import {
-  ServicesSectionHeading,
-  ServicesSectionContent as card,
-} from "@/constants";
+import { ServicesSectionContent as card } from "@/constants";
 
 export default function Services() {
-  const { overline, header, description } = ServicesSectionHeading;
-
   return (
     <div id="services" className="services sectionPadding">
       <div className="servicesContent">
         <div className="w-full">
-          <h1 className="sectionOverline">{overline}</h1>
-          <h1 className="sectionHeader">{header}</h1>
+          <h1 className="sectionOverline">Services</h1>
+          <h1 className="sectionHeading">The Value I Provide</h1>
         </div>
-        <p className="sectionDescription">{description}</p>
+        <p className="sectionLeading">
+          With my services I can make your ideas for a product or service come
+          to life.
+        </p>
       </div>
-      <div className="servicesCards">
+      <div className="servicesCards relative">
+        <Image
+          typeof="background"
+          src={"/patterns/ring.svg"}
+          width={400}
+          height={400}
+          alt="This is impossible! An svg did not load?"
+          className="servicesBackground top-1/2 left-1/2 translate-x-[-50%] translate-y-[-40%] hidden xs:flex"
+        />
         <div className="servicesCardsRow">
           <ServiceCard
             icon={card[0].icon}
@@ -29,37 +35,31 @@ export default function Services() {
             icon={card[1].icon}
             title={card[1].title}
             paragraph={card[1].description}
-            colorType="serviceCard__black"
+            colorType="serviceCard"
           />
         </div>
-        <div className="servicesCardsRow">
+        <div className="servicesCardsRow xs:mt-[50px]">
           <ServiceCard
             icon={card[2].icon}
             title={card[2].title}
             paragraph={card[2].description}
-            colorType="serviceCard__black"
+            colorType="serviceCard"
           />
           <ServiceCard
             icon={card[3].icon}
             title={card[3].title}
             paragraph={card[3].description}
-            colorType="serviceCard__red"
+            colorType="serviceCard"
           />
         </div>
       </div>
       <Image
         typeof="background"
-        src={"/patterns/bg-services__desktop.svg"}
-        fill
+        src={"/patterns/ring-left.svg"}
+        width={1000}
+        height={1000}
         alt="This is impossible! An svg did not load?"
-        className="servicesBackground top-0  hidden md:flex"
-      />
-      <Image
-        typeof="background"
-        src={"/patterns/bg-services__mobile.svg"}
-        fill
-        alt="This is impossible! An svg did not load?"
-        className="servicesBackground bottom-0 md:hidden"
+        className="servicesBackground -bottom-1/3 right-0 translate-y-[-50%] xs:hidden"
       />
     </div>
   );
