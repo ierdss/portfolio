@@ -1,12 +1,11 @@
 export const HeroSectionHeading = {
-  header: "Full-Stack Developer",
-  subheader:
-    "Embracing the fusion of artistry and code, I shape digital experiences as a full-stack developer. With a passion for design and a drive for innovation, I craft seamless interfaces and striking visuals, elevating the aesthetic essence of the web.",
+  header: "Software Developer",
+  body: "Embracing the fusion of artistry and code, I shape digital experiences as a full-stack software developer. Building experiences with a twist. ",
 };
 
 export const ServicesSectionHeading = {
   overline: "services",
-  header: "what can i provide?",
+  header: "what i provide?",
   description:
     "With my services I can make your ideas for a product or service come to life.",
 };
@@ -32,13 +31,13 @@ export const TechnologiesSectionHeading = {
   overline: "technologies",
   header: "tools i am most familiar with 💻",
   description:
-    "As a Software Developer I have decided to master a small set of skills. Nonetheless, I am willing and eager to learn new technologies to give more value to clients and to build myself even further.",
+    "As a Software Developer I have decided to master a small set of skills. Nonetheless, I am willing and eager to learn new technologies that allow me to give more value to my clients while build myself up even further.",
 };
 
 export const WorkflowSectionHeading = {
   overline: "Workflow",
   header: "my thought process",
-}
+};
 
 export const ExperienceSectionHeading = {
   overline: "work experience",
@@ -52,7 +51,7 @@ export const ProjectsSectionHeading = {
 
 export const TestimonialsSectionHeading = {
   overline: "testimonials",
-  header: "whom ive worked with",
+  header: "what people say",
 };
 
 export const ContactSectionHeading = {

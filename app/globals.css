@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: Inter;
+  font-family: "DM Sans", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -64,24 +64,65 @@ body {
 }
 
 /* All Sections */
-.sectionOverline {
-  @apply text-secondary-red font-extrabold text-sm block uppercase;
+.sectionOverline,
+.sectionHeading,
+.sectionHeading-2,
+.sectionHeading-3,
+.sectionLeading,
+.sectionDescription {
+  @apply block text-left w-full;
 }
 
-.sectionHeader {
-  @apply block font-bold text-3xl capitalize;
+.sectionOverline,
+.sectionOverline-2 {
+  @apply text-secondary-red font-extrabold uppercase;
+}
+.sectionOverline {
+  @apply text-sm;
+}
+
+.sectionOverline-2 {
+  @apply text-xs;
+}
+
+.sectionHeading {
+  @apply font-bold text-3xl capitalize;
+}
+
+.sectionHeading-2 {
+  @apply font-bold text-xl capitalize;
+}
+
+.sectionHeading-3 {
+  @apply font-bold text-lg capitalize;
+}
+
+.sectionLeading {
+  @apply font-semibold text-base text-neutral-900 normal-case;
 }
 
 .sectionDescription {
-  @apply font-medium text-base text-slate-600 normal-case;
+  @apply font-medium text-sm text-neutral-800 normal-case text-left;
 }
 
 .sectionPadding {
   @apply px-[10px] md:px-[100px] py-[50px];
 }
 
+.sectionTitle {
+  @apply flex;
+}
+
+.sectionSubtitle {
+  @apply flex;
+}
+
 .callToAction {
-  @apply w-full bg-secondary-red text-base font-extrabold text-white p-4 hover:bg-accent-pink rounded-lg;
+  @apply w-full bg-secondary-red text-base font-extrabold text-white p-4 hover:bg-accent-pink rounded-md transition-all duration-200 ease-in-out flexCenter;
+}
+
+.sectionCta__outline {
+  @apply w-full hover:border-secondary-red text-base font-extrabold p-4 rounded-md border border-neutral-400 text-neutral-400 hover:text-secondary-red transition-all duration-200 ease-in-out;
 }
 
 /* Hover Effects */
@@ -91,7 +132,7 @@ body {
 
 /* Navbar Section */
 .navbar {
-  @apply flexCenter pt-2 pb-1 md:pt-[5px] md:pb-0 px-6 md:px-12 w-full fixed top-0 !z-40 max-w-screen-xl bg-white text-slate-500;
+  @apply justify-between flexCenter pt-2 pb-1 md:pt-[5px] md:pb-0 px-6 md:px-12 w-full fixed top-0 !z-40 max-w-screen-xl bg-white text-slate-500;
 }
 
 .navbar__scrolled {
@@ -107,12 +148,12 @@ body {
 }
 
 .navbarLogo,
-.navbarCta {
+.navbarCta__desktop {
   @apply w-[140px];
 }
 
 .navbarLogo {
-  @apply text-4xl font-black bg-clip-text text-transparent bg-cover bg-center bg-home-texture hover:text-secondary-red;
+  @apply text-4xl font-black bg-clip-text hover:text-transparent bg-cover bg-center bg-home-texture text-secondary-red;
 }
 
 .navbarListItem {
@@ -131,20 +172,34 @@ body {
   @apply px-4 py-3 my-3 font-bold text-sm hover:text-secondary-red target:text-secondary-red capitalize block w-full;
 }
 
+.navbarCta__desktop,
 .navbarCta {
-  @apply hidden md:flex items-center justify-center bg-secondary-red text-base font-extrabold text-white p-3 hover:bg-accent-pink rounded-md gap-2;
+  @apply items-center justify-center bg-secondary-red text-base font-extrabold text-white p-3 hover:bg-accent-pink rounded-md gap-2 text-center;
+}
+
+.navbarCta__desktop {
+  @apply hidden lg:flex;
 }
 
 .navbarMenu {
   @apply lg:hidden flex flex-row gap-10;
 }
 
+.navbarCta {
+  @apply flex w-[90%];
+}
+
+.navbar__mobile-open,
+.navbar__mobile-closed {
+  @apply flex flex-col items-center gap-8 bg-white w-full h-full fixed top-0  lg:hidden z-50 ease-in-out duration-500;
+}
+
 .navbar__mobile-open {
-  @apply flex flex-col justify-between items-center gap-8 bg-white w-full h-full fixed top-0 right-0 lg:hidden z-50 ease-in-out duration-500;
+  @apply right-0;
 }
 
 .navbar__mobile-closed {
-  @apply flex flex-col justify-between items-center gap-8 bg-white w-full h-full fixed top-0 right-[-100%] lg:hidden z-50 ease-in-out duration-500;
+  @apply right-[-100%];
 }
 
 .navbar__mobile-top {
@@ -152,10 +207,61 @@ body {
 }
 
 /* Hero Section  */
+/* Main */
+.hero {
+  @apply flex flex-col lg:flex-row justify-center items-center gap-[100px] lg:gap-[50px] w-full  h-[100vh] max-h-[1000px];
+}
+
+/* Container */
+.heroContainer {
+  @apply flex w-full h-[75%] mt-[50px] md:mt-0;
+}
+
+/* Profile Card */
+.heroCard {
+  @apply w-[20%] md:w-[150px] relative rounded-md m-[10px] cursor-pointer transition-all duration-500 ease-in-out flex justify-between items-end text-white p-[20px] overflow-hidden gap-[10px];
+}
+
+.heroCard:nth-child(2) {
+  @apply translate-y-[50px];
+}
+
+.heroCard.active {
+  @apply grow-[2];
+}
+
+.heroCard__image {
+  @apply absolute inset-0 object-cover object-center rounded-md -z-10;
+}
+
+/* Card Content */
+.heroCard__content {
+  @apply flex flex-col w-full h-full justify-end p-[20px] whitespace-nowrap;
+}
+
+.heroCard__content h1 {
+  @apply -translate-y-[30px] -translate-x-1/2 -rotate-90 transition-all duration-500 ease-in-out;
+}
+
+.heroCard.active .heroCard__content h1 {
+  @apply translate-y-0 translate-x-0 rotate-0 z-[11];
+}
+
+.heroCard__content p {
+  @apply -translate-y-[30px] -translate-x-[200px] transition-all duration-500 ease-in-out;
+}
+
+.heroCard.active .heroCard__content p {
+  @apply translate-y-0 translate-x-0 rotate-0 z-[11];
+}
+
+.heroCard.active .heroCard__content {
+  @apply border border-double border-white;
+}
 
 /* Services Section  */
 .services {
-  @apply flexCenter flex-col md:flex-row gap-[50px] bg-neutral-50 relative;
+  @apply flexCenter flex-col md:flex-row gap-[50px] lg:gap-[100px] md:h-[100vh] md:max-h-[1000px] relative;
 }
 
 .servicesContent,
@@ -164,34 +270,34 @@ body {
 }
 
 .servicesContent {
-  @apply w-[90%] md:w-[40%] gap-[12px];
+  @apply w-[90%] md:w-[32%] gap-[12px];
 }
 
 .servicesCards {
-  @apply w-[90%] md:w-[65%] gap-[30px];
+  @apply w-[95%] flex flex-col xs:flex-row md:w-[45%] gap-[30px];
 }
 
 .servicesCardsRow {
-  @apply flex flex-col md:flex-row  gap-[30px];
+  @apply flex flex-col gap-[30px];
 }
 
 .servicesBackground {
-  @apply absolute left-0 right-0 pointer-events-none;
+  @apply absolute pointer-events-none -z-0 opacity-50;
 }
 
 /* About Section  */
 
 /* Technologies Section  */
 .technologies {
-  @apply bg-secondary-red w-full flex flex-col md:flex-row gap-[50px] justify-between items-center bg-opacity-50;
+  @apply bg-secondary-red w-full flex flex-col md:flex-row gap-[50px] justify-between items-center bg-opacity-60;
 }
 
 .technologiesCardGrid {
-  @apply w-[90%] md:w-full grid grid-cols-3 md:grid-cols-4 gap-x-2 gap-y-[30px] md:gap-[50px];
+  @apply w-[90%] md:w-full grid grid-cols-3 gap-x-2 gap-y-[30px] md:gap-[50px] place-items-center;
 }
 
 .technologiesCard {
-  @apply w-[110px] h-[160px] relative transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] md:-rotate-12;
+  @apply w-[110px] h-[160px] relative transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] md:-rotate-12 self-center;
 }
 
 .technologiesCard__front,
@@ -204,14 +310,13 @@ body {
 }
 
 .technologiesCard__back {
-  @apply bg-black-1 text-white justify-center [transform:rotateY(180deg)] ;
+  @apply bg-black-1 text-white justify-center [transform:rotateY(180deg)];
 }
 
 /* WorkFlow Section  */
 .workflow {
-  @apply w-full flex flex-col
+  @apply w-full flexCenter flex-col;
 }
-
 
 /* WorkExperience Section  */
 
@@ -247,7 +352,7 @@ body {
 }
 
 .projectItem {
-  @apply flex flex-col lg:flex-row rounded-2xl gap-2 lg:gap-10 relative w-full odd:lg:flex-row-reverse odd:lg:gap-0 odd:lg:pr-10 border-b-2 border-b-secondary-red lg:border-b-0 odd:lg:border-l-2 odd:lg:border-l-secondary-red even:lg:border-r-2 even:lg:border-r-secondary-red snap-center shrink-0 drop-shadow-xl bg-white shadow-inner shadow-slate-300;
+  @apply flex flex-col lg:flex-row rounded-2xl gap-2 lg:gap-10 relative w-full odd:lg:flex-row-reverse odd:lg:gap-0 odd:lg:pr-10 border-b-2 border-b-secondary-red odd:lg:border-l-2 odd:lg:border-l-secondary-red even:lg:border-r-2 even:lg:border-r-secondary-red snap-center shrink-0 shadow-lg bg-white;
 }
 
 .projectItem__right {
@@ -287,7 +392,7 @@ body {
 }
 
 .projectTags {
-  @apply flex flex-row flex-wrap justify-center lg:justify-start items-start gap-2;
+  @apply flex flex-row flex-wrap justify-center lg:justify-start items-start gap-2 text-black;
 }
 
 .projectTags__container {
@@ -307,10 +412,18 @@ body {
 }
 
 /* Testimonials Section  */
+.testimonials {
+  @apply flexCenter flex-col gap-[50px] text-center;
+}
 
 /* Contact Component */
+.inputField,
+.textArea {
+  @apply bg-white;
+}
+
 .inputField {
-  @apply border border-solid border-slate-400 rounded-md p-3 w-full focus:placeholder:italic focus:outline-secondary-red text-black;
+  @apply border-b border-black-1 p-3 w-full focus:placeholder:italic outline-none rounded-t-md focus:bg-white;
 }
 
 .textArea {
@@ -322,7 +435,7 @@ body {
 .serviceCard__black,
 .serviceCard__red,
 .serviceCard__image {
-  @apply hoverSmoothScale flex flex-col w-full min-h-[230px] aspect-video justify-center p-6 rounded-md overflow-hidden  row-span-2;
+  @apply hoverSmoothScale flex flex-col w-full md:max-w-[210px] md:min-h-[280px] justify-center p-6 rounded-md overflow-hidden row-span-2 shadow-lg z-10 relative bg-white;
 }
 
 .serviceCard > div,
@@ -334,13 +447,13 @@ body {
 .serviceCard > h1,
 .serviceCard__black > h1,
 .serviceCard__red > h1 {
-  @apply font-bold text-lg capitalize;
+  @apply sectionHeading-3;
 }
 
 .serviceCard > p,
 .serviceCard__black > p,
 .serviceCard__red > p {
-  @apply text-base font-medium normal-case;
+  @apply sectionDescription;
 }
 
 .serviceCard__black,
@@ -364,7 +477,7 @@ body {
 }
 
 .serviceCard {
-  @apply hover:text-secondary-red shadow-inner shadow-slate-400 hover:shadow-lg;
+  @apply hover:text-secondary-red;
 }
 
 .serviceCard__black {
@@ -397,6 +510,10 @@ body {
 
 .serviceCard__image > p {
   @apply hidden;
+}
+
+.serviceCard__shadow {
+  @apply brightness-75 w-[180px] aspect-square absolute -top-[20px] -right-[150px] bg-white z-10 opacity-20 -rotate-45;
 }
 
 /* Contact Component */

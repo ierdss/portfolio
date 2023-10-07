@@ -5,7 +5,7 @@ import { NavLinks } from "@/constants/NavigationLinks";
 import Link from "next/link";
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { RxCross1, RxCross2 } from "react-icons/rx";
+import { RxCross2 } from "react-icons/rx";
 import { ProgressBar } from "@nadfri/react-scroll-progress-bar";
 
 export default function Navbar() {
@@ -41,8 +41,8 @@ export default function Navbar() {
         </Link>
         <div className="navbar__desktop-center">
           <ul id="navbar-links" className="navbarLinks__desktop">
-            {NavLinks.map(({ id, href, text }) => (
-              <li key={id}>
+            {NavLinks.map(({ href, text }, index) => (
+              <li key={index}>
                 <Link href={href} className="navbarLink group relative">
                   {text}
                   <span className="ease absolute bottom-0 left-[50%] -translate-x-1/2 h-0 w-0 border-t-2 border-secondary-red transition-all duration-500 group-hover:w-full" />
@@ -51,7 +51,7 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
-        <Link href="#contact" className="navbarCta">
+        <Link href="#contact" className="navbarCta__desktop">
           Contact
         </Link>
       </div>
@@ -64,14 +64,17 @@ export default function Navbar() {
             <h1 className="navbarLogo bg-clip">ANDREI</h1>
             <RxCross2 size={sizeIcon} />
           </div>
-          {NavLinks.map(({ id, href, text }) => (
-            <li key={id} className="navbarListItem">
+          {NavLinks.map(({ href, text }, index) => (
+            <li key={index} className="navbarListItem">
               <Link onClick={handleNav} href={href} className="navbarLink">
                 {text}
               </Link>
             </li>
           ))}
         </ul>
+        <Link onClick={handleNav} href="#contact" className="navbarCta !block">
+          Contact
+        </Link>
       </div>
     </nav>
   );

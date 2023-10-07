@@ -1,13 +1,14 @@
 import { ContactSectionHeading } from "@/constants/SectionHeading";
 import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-import ContactGrid from "./minor/ContactGrid";
 
 import emailjs from "@emailjs/browser";
 import "dotenv/config";
 require("dotenv").config();
 
 import HashLoader from "react-spinners/HashLoader";
+import Image from "next/image";
+import { ContactSectionContent } from "@/constants";
 
 export default function Contact() {
   const { overline, header, subheader } = ContactSectionHeading;
@@ -102,7 +103,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="flex flex-row flex-wrap w-full sectionPadding text-center justify-center items-center md:text-left gap-8"
+      className="flex flex-col md:flex-row w-full text-center justify-center items-center md:text-left  bg-transparent"
     >
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
@@ -128,7 +129,7 @@ export default function Contact() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-md p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900 capitalize"
@@ -157,76 +158,112 @@ export default function Contact() {
           </div>
         </Dialog>
       </Transition>
-      <div className="flex flex-col justify-between lg:flex-row gap-8 w-full lg:w-[55%] h-full bg-white shadow-xl rounded-xl p-4 lg:p-8 lg:order-2 border border-neutral-300">
-        <ContactGrid />
-      </div>
-      <div className="flex flex-col gap-4 shadow-xl rounded-xl p-4 w-full md:p-8 lg:w-[40%] bg-neutral-800 text-white m-2 md:mr-0 lg:order-1">
-        <div className="">
-          <h1 className="sectionOverline !text-white">{overline}</h1>
-          <h1 className="sectionHeader">{header}</h1>
-        </div>
-        <p className="w-full normal-case">{subheader}</p>
-        <div className="flex-1 flex flex-col gap-4 w-full">
-          <form
-            ref={formRef}
-            onSubmit={handleSubmit}
-            className="flex flex-wrap w-full gap-3"
-          >
-            <label className="flex flex-col w-full">
-              <span className="font-bold text-left">Name*</span>
-              <input
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                placeholder="Enter your name.."
-                className="inputField"
-              />
-            </label>
-            <label className="flex flex-col w-full">
-              <span className="font-bold text-left">Email*</span>
-              <input
-                type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                placeholder="Enter your email.."
-                className="inputField"
-              />
-            </label>
-            <label className="flex flex-col w-full">
-              <span className="font-bold text-left">Message*</span>
-              <textarea
-                rows={7}
-                name="message"
-                value={form.message}
-                onChange={handleChange}
-                placeholder="Write your message.."
-                className="inputField textArea"
-              />
-            </label>
-            <button
-              type="submit"
-              className="w-full callToAction mt-2 flex justify-center items-center"
-            >
-              {loading ? (
-                <div className="flex flex-row gap-4">
-                  Sending...
-                  <HashLoader
-                    loading={true}
-                    size={28}
-                    color="white"
-                    aria-label="Loading Spinner"
-                    data-testid="loader"
-                    speedMultiplier={1}
-                    className="text-white"
-                  ></HashLoader>
+
+      <div className="w-full md:w-1/2 md:h-[100vh] md:max-h-[708px] md:aspect-auto aspect-square bg-secondary-red bg-opacity-60 relative flexCenter flex-col">
+        <Image
+          src="/computer-1.jpg"
+          fill
+          alt="Background"
+          sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 33vw"
+          className=" absolute inset-0 -z-10 object-cover"
+        />
+        <div className=" text-white z-10 flex flex-col gap-[50px]">
+          <h1 className="sectionHeading">Contact Information</h1>
+          <ul className="flex flex-col gap-[20px]">
+            {ContactSectionContent.map(({ icon, title, text }, index) => (
+              <li key={index} className="flex flex-row gap-2 text-left">
+                <div>{icon}</div>
+                <div>
+                  <h1 className="sectionLeading !text-white">{title}</h1>
+                  <p className="sectionDescription !text-white">{text}</p>
                 </div>
-              ) : (
-                "Send"
-              )}
-            </button>
-          </form>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <div className="sectionPadding w-[90%] md:w-1/2 flex flex-col gap-[50px] bg-neutral-50">
+        <div className="">
+          <h1 className="sectionOverline !text-center md:!text-left">
+            {overline}
+          </h1>
+          <h1 className="sectionHeading !text-center md:!text-left">
+            {header}
+          </h1>
+          <p className="sectionLeading !text-center md:!text-left mt-2">
+            {subheader}
+          </p>
+        </div>
+        <div className="flex flex-col gap-4 rounded-md w-full lg:order-1">
+          <div className="flex-1 flex flex-col gap-4 w-full">
+            <form
+              ref={formRef}
+              onSubmit={handleSubmit}
+              className="flex flex-wrap w-full gap-3"
+            >
+              <label className="flex flex-col w-full">
+                <span className="sectionLeading text-left">
+                  Name<span className="text-secondary-red">*</span>
+                </span>
+                <input
+                  type="text"
+                  name="name"
+                  value={form.name}
+                  onChange={handleChange}
+                  placeholder="Enter your name.."
+                  className="inputField sectionDescription"
+                />
+              </label>
+              <label className="flex flex-col w-full">
+                <span className="sectionLeading text-left">
+                  Email<span className="text-secondary-red">*</span>
+                </span>
+                <input
+                  type="email"
+                  name="email"
+                  value={form.email}
+                  onChange={handleChange}
+                  placeholder="Enter your email.."
+                  className="inputField sectionDescription"
+                />
+              </label>
+              <label className="flex flex-col w-full">
+                <span className="sectionLeading text-left">
+                  Message<span className="text-secondary-red">*</span>
+                </span>
+                <textarea
+                  rows={7}
+                  name="message"
+                  value={form.message}
+                  onChange={handleChange}
+                  placeholder="Write your message.."
+                  className="inputField textArea sectionDescription"
+                />
+              </label>
+              <button
+                type="submit"
+                className="!w-fit callToAction !px-12 !py-3 flex justify-center items-center"
+              >
+                {loading ? (
+                  <div className="flex flex-row gap-4">
+                    Sending...
+                    <HashLoader
+                      loading={true}
+                      size={28}
+                      color="white"
+                      aria-label="Loading Spinner"
+                      data-testid="loader"
+                      speedMultiplier={1}
+                      className="text-white"
+                    ></HashLoader>
+                  </div>
+                ) : (
+                  "Send"
+                )}
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

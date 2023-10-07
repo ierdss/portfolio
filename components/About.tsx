@@ -1,9 +1,7 @@
 import { AboutSectionHeading } from "@/constants/SectionHeading";
 
-import { TechnologiesSectionContent as TechList } from "@/constants/SectionContent";
-import { ReactNode } from "react";
-import { motion } from "framer-motion";
-import ServicesCardGallery from "./ServicesCardGallery";
+import { ReactNode, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 
 type TechListProps = {
@@ -33,33 +31,48 @@ const TechGroup = ({ technologies }: TechListProps) => {
 };
 
 export default function About() {
-  const { overline, header, paragraphs } = AboutSectionHeading;
+  const { paragraphs } = AboutSectionHeading;
+
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   return (
     <div
       id="about"
-      className="sectionPadding w-full text-center flex justify-center items-center md:text-left flex-col gap-24"
+      className="sectionPadding w-full text-center flex justify-center items-center md:text-left flex-col gap-24 md:h-[100vh] md:max-h-[500px] relative"
     >
       <div className="flex flex-row flex-wrap w-full justify-center items-center gap-8 md:gap-16">
-        <div>
+        <div
+          ref={ref}
+          style={{
+            transform: isInView ? "translateX(0px)" : "translateX(-200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+          }}
+        >
           <Image src="/MeRed.png" width={300} height={300} alt="Me in red" />
         </div>
-        <div className="flex flex-col gap-8 w-[90%] md:w-[45%] ">
+        <motion.div
+          ref={ref}
+          style={{
+            transform: isInView ? "translateX(0px)" : "translateX(200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+          }}
+          className="flex flex-col gap-8 w-[90%] md:w-[45%] "
+        >
           <div className="flex flex-col gap-4 w-full ">
             <div className="w-full">
-              <h1 className="sectionOverline">{overline}</h1>
-              <h1 className="sectionHeader">{header}</h1>
+              <h1 className="sectionOverline">About</h1>
+              <h1 className="sectionHeading">Get To Know Me :)</h1>
             </div>
             {paragraphs.map(({ id, paragraph }) => (
-              <p
-                key={id}
-                className="block font-bold text-slate-500 w-full text-justify normal-case"
-              >
+              <p key={id} className="sectionLeading">
                 {paragraph}
               </p>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
