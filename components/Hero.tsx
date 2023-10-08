@@ -37,7 +37,7 @@ export default function Hero() {
       id="hero"
       className="hero sectionPadding md:!px-[100px] md:!pt-[100px] relative"
     >
-      <div className="heroContainer z-10">
+      {/* <div className="heroContainer z-10">
         <motion.div
           ref={ref}
           style={{
@@ -115,7 +115,13 @@ export default function Hero() {
             <p className="sectionOverline !text-white">Solver</p>
           </div>
         </motion.div>
+      </div> */}
+      <div className="heroCards">
+        <div className="heroCard">Andrei</div>
+        <div className="heroCard">Santos</div>
+        <div className="heroCard">Sager</div>
       </div>
+
       <motion.div
         ref={ref}
         style={{
@@ -123,7 +129,7 @@ export default function Hero() {
           opacity: isInView ? 1 : 0,
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s",
         }}
-        className="flex flex-col w-[90%] md:w-[440px] gap-4 text-center justify-center items-center lg:items-start"
+        className="flex flex-col w-[90%] md:w-[300px] gap-4 text-center justify-center items-center lg:items-start shrink-0"
       >
         <div className="flex flex-col w-fit justify-center items-center gap-4 md:order-3">
           <Links />
@@ -136,7 +142,7 @@ export default function Hero() {
           as a full-stack software developer. Building experiences with a twist.
         </p>
       </motion.div>
-      <div className="servicesBackground aspect-square !opacity-30 top-[100px] left-0 -z-0">
+      {/* <div className="servicesBackground aspect-square !opacity-30 top-[100px] left-0 -z-0">
         <Image
           typeof="background"
           src={"/patterns/ring-top.svg"}
@@ -154,7 +160,7 @@ export default function Hero() {
           height={1000}
           alt="This is impossible! An svg did not load?"
         />
-      </div>
+      </div> */}
     </div>
   );
 }
