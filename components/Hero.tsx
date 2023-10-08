@@ -148,7 +148,7 @@ export default function Hero() {
           as a full-stack software developer. Building experiences with a twist.
         </p>
       </motion.div>
-      {/* <div className="servicesBackground aspect-square !opacity-30 top-[100px] left-0 -z-0">
+      <div className="servicesBackground aspect-square !opacity-30 top-[100px] left-0 -z-0">
         <Image
           typeof="background"
           src={"/patterns/ring-top.svg"}
@@ -166,7 +166,7 @@ export default function Hero() {
           height={1000}
           alt="This is impossible! An svg did not load?"
         />
-      </div> */}
+      </div>
     </div>
   );
 }
