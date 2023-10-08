@@ -15,12 +15,14 @@ export const SocialMediaLinks = [
   {
     id: 1,
     title: "LinkedIn",
+    ariaLabel: "Take a look at my work profile on LinkedIn.",
     icon: <BsLinkedin size={mediaIconSize} className="hover:text-linkedin" />,
     url: "https://www.linkedin.com/in/andrei-sager-34a452265/",
   },
   {
     id: 2,
     title: "Github",
+    ariaLabel: "Check out my projects from my GitHub repository!",
     icon: <BsGithub size={mediaIconSize} className="hover:text-github" />,
     url: "https://github.com/LordBrim",
   },
