@@ -219,23 +219,23 @@ body {
 
 /* Profile Card */
 .heroCards {
-  @apply w-[80%] md:w-[70%] h-[500px] md:h-full flex flex-row relative items-center mt-[180px] md:mt-0;
+  @apply w-[95%] md:w-[70%] h-[450px] md:h-full flex flex-row items-center justify-end mt-[60px] md:mt-0 relative;
 }
 
 .heroCard {
-  @apply w-full h-[500px] md:w-[300px] md:h-[400px] rounded-lg;
+  @apply w-[280px] h-[450px] md:w-[300px] md:h-[400px] rounded-lg absolute bottom-0 right-0 md:static;
 }
 
 .heroCard:nth-child(1) {
-  @apply bg-black text-white z-0 md:-rotate-12 md:translate-y-7;
+  @apply bg-black text-white z-0 -translate-x-[90px] -translate-y-4  md:-rotate-12 md:translate-x-0 md:translate-y-7;
 }
 
 .heroCard:nth-child(2) {
-  @apply bg-secondary-red text-white z-[1] translate-x-5 -translate-y-5 md:translate-x-0 md:translate-y-0;
+  @apply bg-secondary-red text-white z-[1] -translate-x-[45px] -translate-y-2 md:rotate-0 md:translate-x-0 md:translate-y-0;
 }
 
 .heroCard:nth-child(3) {
-  @apply bg-white text-black md:rotate-12 z-[2] translate-x-10 -translate-y-10 md:translate-x-0 md:translate-y-7 border-slate-100 shadow-md;
+  @apply bg-white text-black md:rotate-12 z-[2] md:translate-x-0 md:translate-y-7 border-slate-100 shadow-md;
 }
 
 /* .heroCard {
