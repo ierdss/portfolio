@@ -209,16 +209,16 @@ body {
 /* Hero Section  */
 /* Main */
 .hero {
-  @apply flex flex-col lg:flex-row justify-center items-center gap-[50px] w-full h-[100vh] max-h-[1000px];
+  @apply flex flex-col lg:flex-row justify-center items-center gap-[100px] md:gap-[50px] w-full h-[100vh] max-h-[1000px];
 }
 
 /* Container */
 .heroContainer {
-  @apply flex w-full h-[75%] mt-[50px] md:mt-0;
+  @apply flex w-full h-[90%] mt-[50px] md:mt-0;
 }
 
 /* Profile Card */
-.heroCards {
+/* .heroCards {
   @apply w-[95%] md:w-[70%] h-[450px] flex flex-row items-center justify-end mt-[60px] md:mt-0 relative hover:transition-all hover:scale-105 duration-500 ease-in-out z-10;
 }
 
@@ -240,9 +240,9 @@ body {
 
 .heroCard_title {
   @apply -rotate-90 w-[110px] h-fit -translate-x-8 -translate-y-14;
-}
+} */
 
-/* .heroCard {
+.heroCard {
   @apply w-[20%] md:w-[150px] relative rounded-md m-[10px] cursor-pointer transition-all duration-500 ease-in-out flex justify-between items-end text-white p-[20px] overflow-hidden gap-[10px];
 }
 
@@ -256,7 +256,7 @@ body {
 
 .heroCard__image {
   @apply absolute inset-0 object-cover object-center rounded-md -z-10;
-} */
+}
 
 /* Card Content */
 .heroCard__content {
@@ -294,11 +294,11 @@ body {
 }
 
 .servicesContent {
-  @apply w-[90%] md:w-[32%] gap-[12px];
+  @apply w-[90%] md:w-[290px] gap-[12px] shrink-0;
 }
 
 .servicesCards {
-  @apply w-[95%] flex flex-col xs:flex-row md:w-[45%] gap-[30px];
+  @apply w-[95%] flex flex-col xs:flex-row md:w-[42%] gap-[30px];
 }
 
 .servicesCardsRow {
