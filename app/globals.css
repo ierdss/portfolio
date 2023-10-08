@@ -209,7 +209,7 @@ body {
 /* Hero Section  */
 /* Main */
 .hero {
-  @apply flex flex-col lg:flex-row justify-center items-center gap-[100px] lg:gap-[50px] w-full  h-[100vh] max-h-[1000px];
+  @apply flex flex-col lg:flex-row justify-center items-center gap-[50px] w-full h-[100vh] max-h-[1000px];
 }
 
 /* Container */
@@ -218,7 +218,27 @@ body {
 }
 
 /* Profile Card */
+.heroCards {
+  @apply w-[80%] md:w-[70%] h-[450px] md:h-full flex flex-row relative items-center mt-[180px] md:mt-0;
+}
+
 .heroCard {
+  @apply w-full h-[500px] md:w-[300px] md:h-[400px] rounded-lg;
+}
+
+.heroCard:nth-child(1) {
+  @apply bg-black text-white z-0 md:-rotate-12 md:translate-y-7;
+}
+
+.heroCard:nth-child(2) {
+  @apply bg-secondary-red text-white z-[1] translate-x-5 -translate-y-5 md:translate-x-0 md:translate-y-0;
+}
+
+.heroCard:nth-child(3) {
+  @apply bg-white text-black md:rotate-12 z-[2] translate-x-10 -translate-y-10 md:translate-x-0 md:translate-y-7 border-slate-100 shadow-md;
+}
+
+/* .heroCard {
   @apply w-[20%] md:w-[150px] relative rounded-md m-[10px] cursor-pointer transition-all duration-500 ease-in-out flex justify-between items-end text-white p-[20px] overflow-hidden gap-[10px];
 }
 
@@ -232,7 +252,7 @@ body {
 
 .heroCard__image {
   @apply absolute inset-0 object-cover object-center rounded-md -z-10;
-}
+} */
 
 /* Card Content */
 .heroCard__content {
