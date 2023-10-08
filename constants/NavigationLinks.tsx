@@ -8,7 +8,7 @@ export const NavLinks = [
   { href: "#about", key: "About", text: "About" },
   { href: "#experience", key: "Experience", text: "Experience" },
   { href: "#projects", key: "Projects", text: "Projects" },
-  { href: "#testimonials", key: "Testimonials", text: "Testimonials" },
+  // { href: "#testimonials", key: "Testimonials", text: "Testimonials" },
 ];
 
 export const SocialMediaLinks = [
