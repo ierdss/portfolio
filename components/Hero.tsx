@@ -37,7 +37,7 @@ export default function Hero() {
       id="hero"
       className="hero sectionPadding md:!px-[100px] md:!pt-[100px] relative"
     >
-      {/* <div className="heroContainer z-10">
+      <div className="heroContainer z-10">
         <motion.div
           ref={ref}
           style={{
@@ -115,8 +115,9 @@ export default function Hero() {
             <p className="sectionOverline !text-white">Solver</p>
           </div>
         </motion.div>
-      </div> */}
-      <div className="heroCards">
+      </div>
+
+      {/* <div className="heroCards">
         <div className="heroCard">
           <h1 className="heroCard_title sectionHeading">Andrei</h1>
         </div>
@@ -126,7 +127,7 @@ export default function Hero() {
         <div className="heroCard">
           <h1 className="heroCard_title sectionHeading">Sager</h1>
         </div>
-      </div>
+      </div> */}
 
       <motion.div
         ref={ref}

@@ -52,6 +52,20 @@ export default function Services() {
             colorType="serviceCard"
           />
         </div>
+        {/* <div className="servicesCardsRow xs:mt-[100px]">
+          <ServiceCard
+            icon={card[2].icon}
+            title={card[2].title}
+            paragraph={card[2].description}
+            colorType="serviceCard"
+          />
+          <ServiceCard
+            icon={card[3].icon}
+            title={card[3].title}
+            paragraph={card[3].description}
+            colorType="serviceCard"
+          />
+        </div> */}
       </div>
       <Image
         typeof="background"
