@@ -219,7 +219,7 @@ body {
 
 /* Profile Card */
 .heroCards {
-  @apply w-[80%] md:w-[70%] h-[450px] md:h-full flex flex-row relative items-center mt-[180px] md:mt-0;
+  @apply w-[80%] md:w-[70%] h-[500px] md:h-full flex flex-row relative items-center mt-[180px] md:mt-0;
 }
 
 .heroCard {
