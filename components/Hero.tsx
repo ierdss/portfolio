@@ -148,7 +148,7 @@ export default function Hero() {
           as a full-stack software developer. Building experiences with a twist.
         </p>
       </motion.div>
-      <div className="servicesBackground aspect-square !opacity-30 top-[100px] left-0 -z-0">
+      {/* <div className="servicesBackground aspect-square !opacity-30 top-[100px] left-0 -z-0">
         <Image
           typeof="background"
           src={"/patterns/ring-top.svg"}
@@ -158,15 +158,15 @@ export default function Hero() {
           className="md:hidden object-none overflow-auto aspect-square"
         />
       </div>
-      <div className="servicesBackground !opacity-30 right-0 -z-0  hidden md:flex">
+      <div className="servicesBackground !opacity-20 right-0 -z-0 hidden md:flex mix-blend-darken">
         <Image
           typeof="background"
-          src={"/patterns/ring-left.svg"}
+          src={"/patterns/ring-splitter.svg"}
           width={1000}
           height={1000}
           alt="This is impossible! An svg did not load?"
         />
-      </div>
+      </div> */}
     </div>
   );
 }
