@@ -73,6 +73,7 @@ export default function Services() {
         width={1000}
         height={1000}
         alt="This is impossible! An svg did not load?"
+        priority
         className="servicesBackground -bottom-1/3 right-0 translate-y-[-50%] xs:hidden"
       />
     </div>

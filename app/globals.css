@@ -153,7 +153,7 @@ body {
 }
 
 .navbarLogo {
-  @apply text-4xl font-black bg-clip-text hover:text-transparent bg-cover bg-center bg-home-texture text-secondary-red;
+  @apply text-4xl font-black text-secondary-red;
 }
 
 .navbarListItem {
@@ -161,7 +161,7 @@ body {
 }
 
 .navbarLinks {
-  @apply flex flex-col w-full text-black-1 gap-4 mix-blend-exclusion;
+  @apply flex flex-col w-full text-black-1 gap-4;
 }
 
 .navbarLinks__desktop {
