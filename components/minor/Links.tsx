@@ -13,11 +13,12 @@ export default function Links({ className }: classNameProps) {
         "flex flex-row justify-center items-center gap-4 lg:justify-start"
       }
     >
-      {SocialMediaLinks.map(({ id, icon, url }) => (
+      {SocialMediaLinks.map(({ id, ariaLabel, icon, url }) => (
         <li key={id}>
           <Link
             href={url}
             target="_blank"
+            aria-label={ariaLabel}
             className="text-secondary-red hover:text-accent-pink"
           >
             {icon}
