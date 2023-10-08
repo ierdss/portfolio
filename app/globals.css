@@ -223,11 +223,11 @@ body {
 }
 
 .heroCard {
-  @apply w-[280px] h-[450px] md:w-[300px] md:h-[400px] rounded-lg absolute bottom-0 right-0 md:static;
+  @apply w-[280px] h-[450px] md:w-[300px] md:h-[400px] rounded-lg absolute bottom-0 right-0 md:static flex flex-row justify-start items-end;
 }
 
 .heroCard:nth-child(1) {
-  @apply bg-black text-white z-0 -translate-x-[90px] -translate-y-4  md:-rotate-12 md:translate-x-0 md:translate-y-7;
+  @apply bg-black text-white z-0 -translate-x-[90px] -translate-y-4 md:-rotate-12 md:translate-x-0 md:translate-y-7;
 }
 
 .heroCard:nth-child(2) {
@@ -236,6 +236,10 @@ body {
 
 .heroCard:nth-child(3) {
   @apply bg-white text-black md:rotate-12 z-[2] md:translate-x-0 md:translate-y-7 border-slate-100 shadow-md;
+}
+
+.heroCard_title {
+  @apply -rotate-90 w-[110px] h-fit -translate-x-8 -translate-y-14;
 }
 
 /* .heroCard {

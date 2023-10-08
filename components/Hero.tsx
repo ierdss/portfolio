@@ -117,9 +117,15 @@ export default function Hero() {
         </motion.div>
       </div> */}
       <div className="heroCards">
-        <div className="heroCard">Andrei</div>
-        <div className="heroCard">Santos</div>
-        <div className="heroCard">Sager</div>
+        <div className="heroCard">
+          <h1 className="heroCard_title sectionHeading">Andrei</h1>
+        </div>
+        <div className="heroCard">
+          <h1 className="heroCard_title sectionHeading">Santos</h1>
+        </div>
+        <div className="heroCard">
+          <h1 className="heroCard_title sectionHeading">Sager</h1>
+        </div>
       </div>
 
       <motion.div
