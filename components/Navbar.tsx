@@ -38,7 +38,7 @@ export default function Navbar() {
       {/* Navbar Desktop */}
       <div className="navbar__desktop">
         <Link href="#">
-          <h1 className="navbarLogo bg-clip">ANDREI</h1>
+          <h1 className="navbarLogo">ANDREI</h1>
         </Link>
         <div className="navbar__desktop-center">
           <ul id="navbar-links" className="navbarLinks__desktop">
@@ -61,11 +61,11 @@ export default function Navbar() {
         <GiHamburgerMenu size={sizeIcon} />
       </div>
       <div className={nav ? "navbar__mobile-open" : "navbar__mobile-closed"}>
+        <div onClick={handleNav} className="navbar__mobile-top">
+          <h1 className="navbarLogo bg-clip">ANDREI</h1>
+          <RxCross2 size={sizeIcon} />
+        </div>
         <ul id="navbar-links" className="navbarLinks">
-          <div onClick={handleNav} className="navbar__mobile-top">
-            <h1 className="navbarLogo bg-clip">ANDREI</h1>
-            <RxCross2 size={sizeIcon} />
-          </div>
           {NavLinks.map(({ href, text }, index) => (
             <li key={index} className="navbarListItem">
               <Link onClick={handleNav} href={href} className="navbarLink">

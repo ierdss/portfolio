@@ -212,6 +212,7 @@ export default function Contact() {
                   value={form.name}
                   onChange={handleChange}
                   placeholder="Enter your name.."
+                  autoComplete="on"
                   className="inputField sectionDescription"
                 />
               </label>
@@ -225,6 +226,7 @@ export default function Contact() {
                   value={form.email}
                   onChange={handleChange}
                   placeholder="Enter your email.."
+                  autoComplete="on"
                   className="inputField sectionDescription"
                 />
               </label>

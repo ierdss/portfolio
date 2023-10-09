@@ -39,9 +39,9 @@ export default function About() {
   return (
     <div
       id="about"
-      className="sectionPadding w-full text-center flex justify-center items-center md:text-left flex-col gap-24 md:h-[100vh] md:max-h-[500px] relative"
+      className="sectionPadding w-full text-center flex justify-center items-center md:text-left flex-col  md:h-[100vh] md:max-h-[500px] relative overflow-hidden"
     >
-      <div className="flex flex-row flex-wrap w-full justify-center items-center gap-8 md:gap-16">
+      <div className="flex flex-row flex-wrap w-full justify-center items-center gap-[50px] md:gap-[100px]">
         <div
           ref={ref}
           style={{
