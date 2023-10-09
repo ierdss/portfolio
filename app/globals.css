@@ -191,7 +191,7 @@ body {
 
 .navbar__mobile-open,
 .navbar__mobile-closed {
-  @apply flex flex-col flex-1 items-center gap-8 bg-white w-screen h-full fixed top-0 lg:hidden z-50 ease-in-out duration-500;
+  @apply flex flex-col items-center gap-8 bg-white min-w-full h-full fixed top-0 lg:hidden z-50 ease-in-out duration-500;
 }
 
 .navbar__mobile-open {
