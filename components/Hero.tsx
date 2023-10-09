@@ -35,7 +35,7 @@ export default function Hero() {
   return (
     <div
       id="hero"
-      className="hero sectionPadding md:!px-[100px] md:!pt-[100px] relative"
+      className="hero sectionPadding md:!px-[100px] md:!pt-[100px] relative overflow-hidden"
     >
       <div className="heroContainer z-10">
         <motion.div
