@@ -52,6 +52,20 @@ export default function Services() {
             colorType="serviceCard"
           />
         </div>
+        {/* <div className="servicesCardsRow xs:mt-[100px]">
+          <ServiceCard
+            icon={card[2].icon}
+            title={card[2].title}
+            paragraph={card[2].description}
+            colorType="serviceCard"
+          />
+          <ServiceCard
+            icon={card[3].icon}
+            title={card[3].title}
+            paragraph={card[3].description}
+            colorType="serviceCard"
+          />
+        </div> */}
       </div>
       <Image
         typeof="background"
@@ -59,6 +73,7 @@ export default function Services() {
         width={1000}
         height={1000}
         alt="This is impossible! An svg did not load?"
+        priority
         className="servicesBackground -bottom-1/3 right-0 translate-y-[-50%] xs:hidden"
       />
     </div>

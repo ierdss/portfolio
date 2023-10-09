@@ -35,9 +35,9 @@ export default function Hero() {
   return (
     <div
       id="hero"
-      className="hero sectionPadding md:!px-[100px] md:!pt-[100px] relative"
+      className="hero sectionPadding md:!px-[100px] md:!pt-[100px] relative overflow-hidden"
     >
-      {/* <div className="heroContainer z-10">
+      <div className="heroContainer z-10">
         <motion.div
           ref={ref}
           style={{
@@ -115,12 +115,19 @@ export default function Hero() {
             <p className="sectionOverline !text-white">Solver</p>
           </div>
         </motion.div>
-      </div> */}
-      <div className="heroCards">
-        <div className="heroCard">Andrei</div>
-        <div className="heroCard">Santos</div>
-        <div className="heroCard">Sager</div>
       </div>
+
+      {/* <div className="heroCards">
+        <div className="heroCard">
+          <h1 className="heroCard_title sectionHeading">Andrei</h1>
+        </div>
+        <div className="heroCard">
+          <h1 className="heroCard_title sectionHeading">Santos</h1>
+        </div>
+        <div className="heroCard">
+          <h1 className="heroCard_title sectionHeading">Sager</h1>
+        </div>
+      </div> */}
 
       <motion.div
         ref={ref}
@@ -152,10 +159,10 @@ export default function Hero() {
           className="md:hidden object-none overflow-auto aspect-square"
         />
       </div>
-      <div className="servicesBackground !opacity-30 right-0 -z-0  hidden md:flex">
+      <div className="servicesBackground !opacity-20 right-0 -z-0 hidden md:flex mix-blend-darken">
         <Image
           typeof="background"
-          src={"/patterns/ring-left.svg"}
+          src={"/patterns/ring-splitter.svg"}
           width={1000}
           height={1000}
           alt="This is impossible! An svg did not load?"
