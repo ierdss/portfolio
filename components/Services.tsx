@@ -7,10 +7,14 @@ export default function Services() {
     <div id="services" className="services sectionPadding">
       <div className="servicesContent">
         <div className="w-full">
-          <h1 className="sectionOverline md:text-center">Services</h1>
-          <h1 className="sectionHeading md:text-center">The Value I Provide</h1>
+          <h1 className="sectionOverline sm:text-center md:text-left">
+            Services
+          </h1>
+          <h1 className="sectionHeading sm:text-center md:text-left">
+            The Value I Provide
+          </h1>
         </div>
-        <p className="sectionLeading md:text-center">
+        <p className="sectionLeading sm:text-center md:text-left">
           With my services I can make your ideas for a product or service come
           to life.
         </p>
@@ -22,7 +26,7 @@ export default function Services() {
           width={400}
           height={400}
           alt="This is impossible! An svg did not load?"
-          className="servicesBackground top-1/2 left-1/2 translate-x-[-50%] translate-y-[-40%] hidden xs:flex"
+          className="servicesBackground top-1/2 left-1/2 translate-x-[-50%] translate-y-[-40%] hidden sm:flex"
         />
         <div className="servicesCardsRow">
           <ServiceCard
@@ -38,7 +42,7 @@ export default function Services() {
             colorType="serviceCard"
           />
         </div>
-        <div className="servicesCardsRow xs:mt-[50px]">
+        <div className="servicesCardsRow sm:mt-[50px]">
           <ServiceCard
             icon={card[2].icon}
             title={card[2].title}
