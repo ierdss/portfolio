@@ -7,10 +7,10 @@ export default function Services() {
     <div id="services" className="services sectionPadding">
       <div className="servicesContent">
         <div className="w-full">
-          <h1 className="sectionOverline">Services</h1>
-          <h1 className="sectionHeading">The Value I Provide</h1>
+          <h1 className="sectionOverline md:text-center">Services</h1>
+          <h1 className="sectionHeading md:text-center">The Value I Provide</h1>
         </div>
-        <p className="sectionLeading">
+        <p className="sectionLeading md:text-center">
           With my services I can make your ideas for a product or service come
           to life.
         </p>
