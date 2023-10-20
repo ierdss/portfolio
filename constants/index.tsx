@@ -14,7 +14,6 @@ import {
 import {
   HeroSectionHeading,
   ServicesSectionHeading,
-  AboutSectionHeading,
   TechnologiesSectionHeading,
   WorkflowSectionHeading,
   ExperienceSectionHeading,
@@ -37,7 +36,6 @@ export {
   ContactSectionContent,
   HeroSectionHeading,
   ServicesSectionHeading,
-  AboutSectionHeading,
   TechnologiesSectionHeading,
   WorkflowSectionHeading,
   ExperienceSectionHeading,
