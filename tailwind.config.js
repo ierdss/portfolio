@@ -43,7 +43,7 @@ module.exports = {
         menu: "0px 159px 95px rgba(13,12,34,0.01), 0px 71px 71px rgba(13,12,34,0.02), 0px 18px 39px rgba(13,12,34,0.02), 0px 0px 0px rgba(13,12,34,0.02)",
       },
       screens: {
-        xs: "420px",
+        sm: "480px",
         md: "768px",
         lg: "1200px",
       },
