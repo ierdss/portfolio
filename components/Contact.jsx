@@ -103,7 +103,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="flex flex-col md:flex-row w-full md:h-[100vh] md:max-h-[768px] text-center justify-center items-center md:text-left  bg-transparent"
+      className="flex flex-col md:flex-row w-full lg:h-[100vh] lg:max-h-[768px] text-center justify-center items-center md:text-left bg-transparent overflow-hidden"
     >
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
@@ -159,7 +159,7 @@ export default function Contact() {
         </Dialog>
       </Transition>
 
-      <div className="w-full md:w-1/2 h-full md:aspect-auto aspect-square bg-secondary-red bg-opacity-60 relative flexCenter flex-col">
+      <div className="w-full md:w-1/2 md:h-[121vh] md:aspect-auto aspect-square bg-secondary-red bg-opacity-60 relative flexCenter flex-col">
         <Image
           src="/computer-1.jpg"
           fill
