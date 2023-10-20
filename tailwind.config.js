@@ -44,6 +44,8 @@ module.exports = {
       },
       screens: {
         xs: "420px",
+        md: "768px",
+        lg: "1200px",
       },
       maxWidth: {
         "10xl": "1680px",

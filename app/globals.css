@@ -174,7 +174,7 @@ body {
 
 .navbarCta__desktop,
 .navbarCta {
-  @apply items-center justify-center bg-secondary-red text-base font-extrabold text-white p-3 hover:bg-accent-pink rounded-md gap-2 text-center;
+  @apply items-center justify-center bg-secondary-red text-base font-extrabold text-white p-3 hover:bg-accent-pink rounded-full gap-2 text-center;
 }
 
 .navbarCta__desktop {
@@ -285,7 +285,7 @@ body {
 
 /* Services Section  */
 .services {
-  @apply flexCenter flex-col md:flex-row gap-[50px] lg:gap-[100px] md:h-[100vh] md:max-h-[1000px] relative;
+  @apply flexCenter flex-col lg:flex-row gap-[50px] lg:gap-[100px] md:max-h-[1000px] relative;
 }
 
 .servicesContent,
@@ -294,11 +294,11 @@ body {
 }
 
 .servicesContent {
-  @apply w-[90%] md:w-[290px] gap-[12px] shrink-0;
+  @apply w-[90%] sm:w-[290px] gap-[12px] shrink-0;
 }
 
 .servicesCards {
-  @apply w-[95%] flex flex-col xs:flex-row md:w-[42%] gap-[30px];
+  @apply w-[95%] flex flex-col md:flex-row lg:w-[42%] gap-[30px] justify-center text-center;
 }
 
 .servicesCardsRow {
