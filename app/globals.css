@@ -386,7 +386,7 @@ body {
 }
 
 .projectThumbnailDesktop {
-  @apply flex flex-col w-full h-full rounded-2xl shadow-md overflow-hidden cursor-pointer aspect-auto;
+  @apply flex flex-col w-full h-full rounded-2xl shadow-md overflow-hidden cursor-pointer;
 }
 
 .projectThumbnailMobile {

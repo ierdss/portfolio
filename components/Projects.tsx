@@ -80,7 +80,7 @@ function FeaturedProjects() {
                   <div className="projectThumbnailDesktop">
                     <Image
                       src={thumbnailDesktop}
-                      width={850}
+                      width={950}
                       height={700}
                       alt={desktopAlt}
                       loading="lazy"
