@@ -118,7 +118,7 @@ body {
 }
 
 .callToAction {
-  @apply w-full bg-secondary-red text-base font-extrabold text-white p-4 hover:bg-accent-pink rounded-md transition-all duration-200 ease-in-out flexCenter;
+  @apply w-full bg-secondary-red text-base font-extrabold text-white p-4 hover:bg-accent-pink rounded-full transition-all duration-200 ease-in-out flexCenter;
 }
 
 .sectionCta__outline {
