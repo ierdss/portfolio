@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Links from "./minor/Links";
-import { HeroSectionHeading } from "@/constants/SectionHeading";
 import { motion, useInView } from "framer-motion";
 
 export default function Hero() {
@@ -116,19 +115,6 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
-
-      {/* <div className="heroCards">
-        <div className="heroCard">
-          <h1 className="heroCard_title sectionHeading">Andrei</h1>
-        </div>
-        <div className="heroCard">
-          <h1 className="heroCard_title sectionHeading">Santos</h1>
-        </div>
-        <div className="heroCard">
-          <h1 className="heroCard_title sectionHeading">Sager</h1>
-        </div>
-      </div> */}
-
       <motion.div
         ref={ref}
         style={{
