@@ -315,7 +315,7 @@ body {
 }
 
 .technologiesCardGrid {
-  @apply w-[90%] md:w-full grid grid-cols-3 md:grid-cols-4 gap-x-2 gap-y-[30px] md:gap-[50px] place-items-center;
+  @apply w-[90%] md:w-full grid grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-[30px] md:gap-[50px] place-items-center;
 }
 
 .technologiesCard {
