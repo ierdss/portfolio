@@ -150,10 +150,10 @@ export default function Projects() {
         </div>
         <FeaturedProjects />
         {/* <div className="">
-                    <h1 className="sectionOverline">{overline}</h1>
-                    <h1 className="sectionHeader">{header}</h1>
-                </div>
-                <OtherProjects/> */}
+              <h1 className="sectionOverline">{overline}</h1>
+              <h1 className="sectionHeader">{header}</h1>
+          </div>
+          <OtherProjects/> */}
       </div>
     </div>
   );
