@@ -31,8 +31,6 @@ const TechGroup = ({ technologies }: TechListProps) => {
 };
 
 export default function About() {
-  const { paragraphs } = AboutSectionHeading;
-
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -59,18 +57,27 @@ export default function About() {
             opacity: isInView ? 1 : 0,
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
           }}
-          className="flex flex-col gap-8 w-[90%] md:w-[45%] "
+          className="flex flex-col gap-8 w-[90%] lg:w-[45%] "
         >
           <div className="flex flex-col gap-4 w-full ">
             <div className="w-full">
               <h1 className="sectionOverline">About</h1>
               <h1 className="sectionHeading">Get To Know Me :)</h1>
             </div>
-            {paragraphs.map(({ id, paragraph }) => (
-              <p key={id} className="sectionLeading">
-                {paragraph}
-              </p>
-            ))}
+            <p className="sectionLeading">
+              Sample muna. I'm a natural problem solver, eversince I was a kid I
+              enjoyed building contraptions with lego, solving puzzles, and
+              tinkering my curiosity away. This not only honed my interest in
+              building things but it also polished my persistence and what led
+              me to pursue this career.
+            </p>
+            <p className="sectionLeading">
+              Sample muna. I'm a natural problem solver, eversince I was a kid I
+              enjoyed building contraptions with lego, solving puzzles, and
+              tinkering my curiosity away. This not only honed my interest in
+              building things but it also polished my persistence and what led
+              me to pursue this career.
+            </p>
           </div>
         </motion.div>
       </div>
