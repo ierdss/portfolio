@@ -1,5 +1,3 @@
-import { AboutSectionHeading } from "@/constants/SectionHeading";
-
 import { ReactNode, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
