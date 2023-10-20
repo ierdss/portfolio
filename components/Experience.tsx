@@ -32,7 +32,7 @@ function ExperienceCard({
 
   return (
     <VerticalTimelineElement
-      className="relative group hover:-translate-y-4 transition-all ease-in-out duration-500 "
+      className="relative group hover:-translate-y-4 transition-all ease-in-out duration-500 overflow-hidden"
       contentStyle={{
         background: "white",
         color: "black",
