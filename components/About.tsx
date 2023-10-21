@@ -45,15 +45,19 @@ export default function About() {
             opacity: isInView ? 1 : 0,
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
           }}
+          className="hover:-translate-y-2 group transition-all duration-500"
         >
-          <div className="w-[300px] h-[420px] bg-black flex items-center justify-center overflow-hidden rotate-12 rounded-lg">
-            <Image
-              src="/MeRed.png"
-              width={300}
-              height={300}
-              alt="Me in red"
-              className="-rotate-12"
-            />
+          <div className="portraitCard">
+            <div className="portraitCard__back">Back</div>
+            <div className="portraitCard__front">
+              <Image
+                src="/MeRed.png"
+                width={300}
+                height={300}
+                alt="Me in red"
+                className=""
+              />
+            </div>
           </div>
         </div>
         <motion.div
