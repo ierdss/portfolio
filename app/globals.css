@@ -309,6 +309,24 @@ body {
   @apply absolute pointer-events-none -z-0 opacity-50;
 }
 
+/* About Me Section */
+.portraitCard {
+  @apply w-[300px] h-[450px] relative transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] md:-rotate-12 self-center z-10;
+}
+
+.portraitCard__front,
+.portraitCard__back {
+  @apply absolute inset-0 w-full h-full p-4 flex flex-col rounded-md shadow-md items-center;
+}
+
+.portraitCard__front {
+  @apply bg-white text-black-1 justify-between [backface-visibility:hidden];
+}
+
+.portraitCard__back {
+  @apply bg-black-1 text-white justify-center [transform:rotateY(180deg)];
+}
+
 /* Technologies Section  */
 .technologies {
   @apply bg-secondary-red w-full flex flex-col md:flex-row gap-[50px] justify-between items-center bg-opacity-60;
