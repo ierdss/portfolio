@@ -6,12 +6,12 @@ export default function Services() {
   return (
     <div id="services" className="services sectionPadding">
       <div className="servicesContent">
-        <div className="w-full">
+        <div className="w-full  md:w-full">
           <h1 className="sectionOverline sm:text-center md:text-left">
             Services
           </h1>
           <h1 className="sectionHeading sm:text-center md:text-left">
-            The Value I Provide
+            What I Offer
           </h1>
         </div>
         <p className="sectionLeading sm:text-center md:text-left">
