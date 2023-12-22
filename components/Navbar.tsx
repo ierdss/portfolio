@@ -35,6 +35,7 @@ export default function Navbar() {
         height="5px"
         position="fixed"
       />
+
       {/* Navbar Desktop */}
       <div className="navbar__desktop">
         <Link href="#">
@@ -56,6 +57,7 @@ export default function Navbar() {
           Contact
         </Link>
       </div>
+
       {/* Navbar Mobile */}
       <div onClick={handleNav} className="navbarMenu">
         <GiHamburgerMenu size={sizeIcon} />
