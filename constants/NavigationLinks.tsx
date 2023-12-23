@@ -1,4 +1,3 @@
-//Footer Section Icons
 import { BsLinkedin, BsGithub, BsMailbox2 } from "react-icons/bs";
 
 const mediaIconSize = 30;
