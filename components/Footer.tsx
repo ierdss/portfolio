@@ -5,13 +5,8 @@ export default function Footer() {
   const { copyright } = FooterSectionHeading;
 
   return (
-    <footer className="flex flex-col w-full py-6 px-16 border-t border-neutral-300">
-      <div className="flex-col text-center sm:flex-row sm:text-left flexBetween footer_copyright gap-8">
-        <div className="sm:order-2">
-          <SocialMediaLinks />
-        </div>
-        <p className="sectionDescription sm:order-1">{copyright}</p>
-      </div>
+    <footer className="flex flex-col w-full py-6 px-16 border-t border-neutral-300  text-center">
+      {copyright}
     </footer>
   );
 }

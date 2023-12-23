@@ -55,7 +55,9 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
-        <Links />
+        <div className="hidden lg:flex">
+          <Links />
+        </div>
       </div>
 
       {/* Navbar Mobile */}
@@ -76,9 +78,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <Link onClick={handleNav} href="#contact" className="navbarCta !block">
-          Contact
-        </Link>
+        <Links />
       </div>
     </nav>
   );
