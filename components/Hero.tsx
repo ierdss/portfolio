@@ -54,7 +54,9 @@ export default function Hero() {
         }}
         className="flex flex-col w-[90%] md:w-[50%] gap-4 text-center justify-center items-center lg:items-start shrink-0"
       >
-        <h1>Hi My Name is Andrei, I am a</h1>
+        <h1 className="sectionOverline !text-center lg:!text-left">
+          Hi My Name is Andrei, I am a
+        </h1>
         <h1 className="sectionHeading !text-center lg:!text-left">
           Software Developer
         </h1>
