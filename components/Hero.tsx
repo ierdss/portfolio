@@ -35,11 +35,8 @@ export default function Hero() {
     [];
 
   return (
-    <div
-      id="hero"
-      className="hero sectionPadding md:!px-[100px] md:!pt-[100px] relative overflow-hidden"
-    >
-      <div className="w-[30%] aspect-square flex items-center justify-center rounded-full overflow-hidden">
+    <div id="hero" className="hero sectionPadding  relative overflow-hidden">
+      <div className="w-[80%] md:w-[30%] aspect-square flex items-center justify-center rounded-full overflow-hidden">
         <Image
           src="/hero.jpg"
           width={1000}
@@ -55,7 +52,7 @@ export default function Hero() {
           opacity: isInView ? 1 : 0,
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s",
         }}
-        className="flex flex-col w-[90%] md:w-[300px] gap-4 text-center justify-center items-center lg:items-start shrink-0"
+        className="flex flex-col w-[90%] md:w-[50%] gap-4 text-center justify-center items-center lg:items-start shrink-0"
       >
         <h1>Hi My Name is Andrei, I am a</h1>
         <h1 className="sectionHeading !text-center lg:!text-left">
@@ -67,12 +64,15 @@ export default function Hero() {
           experiences with a twist.
         </p>
         <div className="flex flex-col w-fit justify-center items-center gap-4 md:order-3"></div>
-        <div className="flex w-full">
-          <Link href="#contact" className="navbarCta flex flex-row">
+        <div className="flex w-full gap-4">
+          <Link
+            href="#contact"
+            className="navbarCta flex flex-row !bg-transparent !text-slate-300 border border-slate-300 hover:!text-secondary-red hover:border-secondary-red !w-fit"
+          >
             <TiDownload size={30} />
             <p>Download CV</p>
           </Link>
-          <Link href="#contact" className="navbarCta flex flex-row">
+          <Link href="#contact" className="navbarCta flex flex-row !w-fit">
             <SiMinutemailer size={30} />
             Contact
           </Link>
