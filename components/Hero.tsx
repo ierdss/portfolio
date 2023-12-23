@@ -48,22 +48,25 @@ export default function Hero() {
       <motion.div
         ref={ref}
         style={{
-          transform: isInView ? "translateX(0px)" : "translateX(200px)",
+          transform: isInView ? "translateY(0px)" : "translateY(200px)",
           opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s",
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
         className="flex flex-col w-[90%] md:w-[50%] gap-4 text-center justify-center items-center lg:items-start shrink-0"
       >
-        <h1 className="sectionOverline !text-center lg:!text-left">
-          Hi My Name is Andrei, I am a
-        </h1>
-        <h1 className="sectionHeading !text-center lg:!text-left">
-          Software Developer
-        </h1>
+        <div>
+          <h1 className="sectionOverline !text-center lg:!text-left">
+            Hi My Name is Andrei Sager, I am a
+          </h1>
+          <h1 className="sectionHeading !text-5xl !text-center lg:!text-left">
+            Software Developer
+          </h1>
+        </div>
+
         <p className="sectionLeading !text-center lg:!text-left">
-          The value I can bring Embracing the fusion of artistry and code, I
-          shape digital experiences as a full-stack software developer. Building
-          experiences with a twist.
+          I specialize in constructing remarkable websites and mobile
+          applications while immersing myself in diverse aspects of the digital
+          spectrum that pique my interest.
         </p>
         <div className="flex flex-col w-fit justify-center items-center gap-4 md:order-3"></div>
         <div className="flex w-full gap-4 items-center justify-center lg:justify-start">
