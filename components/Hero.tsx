@@ -73,7 +73,7 @@ export default function Hero() {
           <h1 className="sectionOverline !text-center lg:!text-left">
             Hi My Name is Andrei Sager, I am a
           </h1>
-          <h1 className="sectionHeading !text-5xl !text-center lg:!text-left">
+          <h1 className="sectionHeading !text-4xl !text-center lg:!text-left">
             Software Developer
           </h1>
         </div>
