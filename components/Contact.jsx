@@ -103,7 +103,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="flex flex-col md:flex-row w-full text-center justify-center items-center md:text-left  bg-transparent"
+      className="flex flex-col md:flex-row w-full lg:h-[100vh] lg:max-h-[768px] text-center justify-center items-center md:text-left bg-transparent overflow-hidden"
     >
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
@@ -159,7 +159,7 @@ export default function Contact() {
         </Dialog>
       </Transition>
 
-      <div className="w-full md:w-1/2 md:h-[100vh] md:max-h-[708px] md:aspect-auto aspect-square bg-secondary-red bg-opacity-60 relative flexCenter flex-col">
+      <div className="w-full md:w-1/2 md:h-[121vh] md:aspect-auto aspect-square bg-secondary-red bg-opacity-60 relative flexCenter flex-col">
         <Image
           src="/computer-1.jpg"
           fill
@@ -183,19 +183,20 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="sectionPadding w-[90%] md:w-1/2 flex flex-col gap-[50px] bg-neutral-50">
-        <div className="">
+      <div className="sectionPadding w-full h-full !px-[0px] md:w-1/2 flex flex-col gap-[50px] bg-neutral-50 ">
+        <div className="w-full px-[3rem]">
           <h1 className="sectionOverline !text-center md:!text-left">
-            {overline}
+            Contact
           </h1>
           <h1 className="sectionHeading !text-center md:!text-left">
-            {header}
+            Send me a message
           </h1>
           <p className="sectionLeading !text-center md:!text-left mt-2">
-            {subheader}
+            Feel free to contact me anytime! I'll get back to you as soon as I
+            can!
           </p>
         </div>
-        <div className="flex flex-col gap-4 rounded-md w-full lg:order-1">
+        <div className="flex flex-col gap-4 rounded-md w-full px-[3rem] lg:order-1">
           <div className="flex-1 flex flex-col gap-4 w-full">
             <form
               ref={formRef}
