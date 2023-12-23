@@ -174,7 +174,7 @@ body {
 
 .navbarCta__desktop,
 .navbarCta {
-  @apply items-center justify-center bg-secondary-red text-base font-extrabold text-white p-3 hover:bg-accent-pink rounded-full gap-2 text-center;
+  @apply items-center justify-center bg-secondary-red text-sm font-extrabold text-white py-2 px-6 hover:bg-accent-pink rounded-full gap-2 text-center;
 }
 
 .navbarCta__desktop {
