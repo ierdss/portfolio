@@ -30,7 +30,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav id="navbar" className="navbar">
+    <nav id="navbar" className="navbar ">
       <ProgressBar
         color1="#e2e8f0"
         color2="#B40041"
