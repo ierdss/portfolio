@@ -10,23 +10,6 @@ export const ServicesSectionHeading = {
     "With my services I can make your ideas for a product or service come to life.",
 };
 
-export const AboutSectionHeading = {
-  overline: "about",
-  header: "me and my services 👌",
-  paragraphs: [
-    {
-      id: 1,
-      paragraph:
-        "Sample muna. I'm a natural problem solver, eversince I was a kid I enjoyed building   contraptions with lego, solving puzzles, and tinkering my curiosity away. This not only honed my interest in building things but it also polished my persistence and what led me to pursue this career.",
-    },
-    {
-      id: 2,
-      paragraph:
-        "Sample muna. I'm a natural problem solver, eversince I was a kid I enjoyed building   contraptions with lego, solving puzzles, and tinkering my curiosity away. This not only honed my interest in building things but it also polished my persistence and what led me to pursue this career.",
-    },
-  ],
-};
-
 export const TechnologiesSectionHeading = {
   overline: "technologies",
   header: "tools i am most familiar with 💻",

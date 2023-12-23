@@ -6,11 +6,15 @@ export default function Services() {
   return (
     <div id="services" className="services sectionPadding">
       <div className="servicesContent">
-        <div className="w-full">
-          <h1 className="sectionOverline">Services</h1>
-          <h1 className="sectionHeading">The Value I Provide</h1>
+        <div className="w-full  md:w-full">
+          <h1 className="sectionOverline sm:text-center md:text-left">
+            Services
+          </h1>
+          <h1 className="sectionHeading sm:text-center md:text-left">
+            What I Offer
+          </h1>
         </div>
-        <p className="sectionLeading">
+        <p className="sectionLeading sm:text-center md:text-left">
           With my services I can make your ideas for a product or service come
           to life.
         </p>
@@ -22,7 +26,7 @@ export default function Services() {
           width={400}
           height={400}
           alt="This is impossible! An svg did not load?"
-          className="servicesBackground top-1/2 left-1/2 translate-x-[-50%] translate-y-[-40%] hidden xs:flex"
+          className="servicesBackground top-1/2 left-1/2 translate-x-[-50%] translate-y-[-40%] hidden sm:flex"
         />
         <div className="servicesCardsRow">
           <ServiceCard
@@ -38,7 +42,7 @@ export default function Services() {
             colorType="serviceCard"
           />
         </div>
-        <div className="servicesCardsRow xs:mt-[50px]">
+        <div className="servicesCardsRow sm:mt-[50px]">
           <ServiceCard
             icon={card[2].icon}
             title={card[2].title}
@@ -74,7 +78,7 @@ export default function Services() {
         height={1000}
         alt="This is impossible! An svg did not load?"
         priority
-        className="servicesBackground -bottom-1/3 right-0 translate-y-[-50%] xs:hidden"
+        className="servicesBackground -bottom-1/3 right-0 translate-y-[-50%] sm:hidden"
       />
     </div>
   );

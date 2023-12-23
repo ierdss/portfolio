@@ -33,7 +33,7 @@ const Technologies = () => {
   return (
     <div
       id="technologies"
-      className="sectionPadding technologies relative md:h-[100vh] md:max-h-[700px]"
+      className="sectionPadding technologies relative md:min-h-[700px]"
     >
       <motion.div
         ref={ref}

@@ -80,12 +80,12 @@ function FeaturedProjects() {
                   <div className="projectThumbnailDesktop">
                     <Image
                       src={thumbnailDesktop}
-                      width={850}
+                      width={950}
                       height={700}
                       alt={desktopAlt}
                       loading="lazy"
                       quality={100}
-                      sizes="(max-width: 768px) 50vw, (max-width: 1024px) 75vw, (max-width: 1280px) 100vw, 25vw"
+                      sizes="(min-width: 768px) 50vw, (min-width: 1024px) 75vw, (min-width: 1280px) 100vw, 25vw"
                       className="rounded-2xl object-cover object-top"
                     />
                   </div>
@@ -150,10 +150,10 @@ export default function Projects() {
         </div>
         <FeaturedProjects />
         {/* <div className="">
-                    <h1 className="sectionOverline">{overline}</h1>
-                    <h1 className="sectionHeader">{header}</h1>
-                </div>
-                <OtherProjects/> */}
+              <h1 className="sectionOverline">{overline}</h1>
+              <h1 className="sectionHeader">{header}</h1>
+          </div>
+          <OtherProjects/> */}
       </div>
     </div>
   );
