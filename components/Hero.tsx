@@ -35,8 +35,23 @@ export default function Hero() {
     [];
 
   return (
-    <div id="hero" className="hero sectionPadding  relative overflow-hidden">
-      <div className="w-[80%] md:w-[30%] aspect-square flex items-center justify-center rounded-full overflow-hidden">
+    <div
+      id="hero"
+      className="hero area sectionPadding relative overflow-hidden"
+    >
+      <ul className="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div className="w-[80%] md:w-[30%] aspect-square flex items-center justify-center rounded-full overflow-hidden z-10">
         <Image
           src="/hero.jpg"
           width={1000}
