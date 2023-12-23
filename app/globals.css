@@ -298,7 +298,7 @@ body {
 }
 
 .servicesCards {
-  @apply w-[95%] sm:min-w-[450px] flex flex-col sm:flex-row lg:w-[42%] gap-[30px] justify-center text-center;
+  @apply w-[95%] sm:min-w-[450px] flex flex-col sm:flex-row lg:w-[50%] gap-[30px] justify-center text-center;
 }
 
 .servicesCardsRow {
@@ -475,7 +475,7 @@ body {
 .serviceCard__black,
 .serviceCard__red,
 .serviceCard__image {
-  @apply hoverSmoothScale flex flex-col w-full md:max-w-[210px] md:min-h-[280px] justify-center p-6 rounded-md overflow-hidden row-span-2 shadow-lg z-10 relative bg-white;
+  @apply hoverSmoothScale flex flex-col w-full md:max-w-[230px] md:min-h-[280px] justify-center p-6 rounded-2xl overflow-hidden row-span-2 shadow-lg z-10 relative bg-white;
 }
 
 .serviceCard > div,
