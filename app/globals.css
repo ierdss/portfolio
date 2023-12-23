@@ -536,6 +536,10 @@ body {
   @apply text-slate-500;
 }
 
+.serviceCard__red > div.serviceCard__shadow {
+  @apply !bg-white !opacity-100 brightness-100;
+}
+
 .serviceCard__image {
   @apply bg-home-texture bg-center bg-cover bg-no-repeat;
 }
