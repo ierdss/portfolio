@@ -66,7 +66,7 @@ export default function Hero() {
           experiences with a twist.
         </p>
         <div className="flex flex-col w-fit justify-center items-center gap-4 md:order-3"></div>
-        <div className="flex w-full gap-4">
+        <div className="flex w-full gap-4 items-center justify-center lg:justify-start">
           <Link
             href="#contact"
             className="navbarCta flex flex-row !bg-transparent !text-slate-300 border border-slate-300 hover:!text-secondary-red hover:border-secondary-red !w-fit"
@@ -76,7 +76,7 @@ export default function Hero() {
           </Link>
           <Link href="#contact" className="navbarCta flex flex-row !w-fit">
             <SiMinutemailer size={20} />
-            Contact
+            Say Hello
           </Link>
         </div>
       </motion.div>
