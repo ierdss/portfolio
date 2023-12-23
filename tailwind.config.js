@@ -26,6 +26,7 @@ module.exports = {
 
         linkedin: "#0072b1",
         github: "#171515",
+        gmail: "#BB001B",
 
         html: "#f06529",
 

@@ -8,6 +8,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { ProgressBar } from "@nadfri/react-scroll-progress-bar";
 
+import Links from "./minor/Links";
+
 export default function Navbar() {
   const sizeIcon = 30;
 
@@ -53,9 +55,7 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
-        <Link href="#contact" className="navbarCta__desktop">
-          Contact
-        </Link>
+        <Links />
       </div>
 
       {/* Navbar Mobile */}
