@@ -2,9 +2,11 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { motion, useInView } from "framer-motion";
-import Link from "next/link";
+import { TiDownload } from "react-icons/ti";
+import { SiMinutemailer } from "react-icons/si";
 
 export default function Hero() {
   const ref = useRef(null);
@@ -66,10 +68,12 @@ export default function Hero() {
         </p>
         <div className="flex flex-col w-fit justify-center items-center gap-4 md:order-3"></div>
         <div className="flex w-full">
-          <Link href="#contact" className="navbarCta !block">
-            Download CV
+          <Link href="#contact" className="navbarCta flex flex-row">
+            <TiDownload size={30} />
+            <p>Download CV</p>
           </Link>
-          <Link href="#contact" className="navbarCta !block">
+          <Link href="#contact" className="navbarCta flex flex-row">
+            <SiMinutemailer size={30} />
             Contact
           </Link>
         </div>
