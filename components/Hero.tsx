@@ -25,39 +25,18 @@ export default function Hero() {
     });
   }, []);
 
-  const [isDone, setIsDone] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsDone(true);
-    }, 2000);
-  }),
-    [];
-
   return (
     <div
       id="hero"
       className="hero area sectionPadding relative overflow-hidden"
     >
-      <ul className="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
       <motion.div
         className="w-[80%] md:w-[30%] aspect-square flex items-center justify-center rounded-full overflow-hidden z-10"
         ref={ref}
         style={{
           transform: isInView ? "translateY(0px)" : "translateY(200px)",
           opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0s",
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
         }}
       >
         <Image
@@ -73,7 +52,7 @@ export default function Hero() {
         style={{
           transform: isInView ? "translateY(0px)" : "translateY(200px)",
           opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0s",
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
         }}
         className="flex flex-col w-[90%] md:w-[50%] gap-4 text-center justify-center items-center lg:items-start shrink-0"
       >
@@ -106,6 +85,20 @@ export default function Hero() {
           </Link>
         </div>
       </motion.div>
+
+      {/* Animated Lavalamp Squares */}
+      <ul className="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
   );
 }
