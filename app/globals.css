@@ -209,7 +209,7 @@ body {
 /* Hero Section  */
 /* Main */
 .hero {
-  @apply flex flex-col lg:flex-row justify-center items-center gap-[40px] lg:gap-[50px] w-full h-[100vh] max-h-[800px];
+  @apply flex flex-col lg:flex-row justify-center items-center gap-[40px] lg:gap-[50px] h-[100vh] max-h-[800px] max-w-screen-xl;
 }
 
 /* Container */
@@ -285,7 +285,7 @@ body {
 
 /* Services Section  */
 .services {
-  @apply flexCenter flex-col md:flex-row gap-[50px] lg:gap-[100px] md:max-h-[1000px] relative;
+  @apply flexCenter flex-col md:flex-row gap-[50px] lg:gap-[100px] md:max-h-[1000px] relative w-full max-w-screen-xl;
 }
 
 .servicesContent,
