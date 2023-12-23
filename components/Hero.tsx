@@ -71,11 +71,11 @@ export default function Hero() {
             href="#contact"
             className="navbarCta flex flex-row !bg-transparent !text-slate-300 border border-slate-300 hover:!text-secondary-red hover:border-secondary-red !w-fit"
           >
-            <TiDownload size={30} />
+            <TiDownload size={20} />
             <p>Download CV</p>
           </Link>
           <Link href="#contact" className="navbarCta flex flex-row !w-fit">
-            <SiMinutemailer size={30} />
+            <SiMinutemailer size={20} />
             Contact
           </Link>
         </div>
