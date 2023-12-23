@@ -15,7 +15,7 @@ import { GiRotaryPhone } from "react-icons/gi";
 import { HiMailOpen } from "react-icons/hi";
 import { IoLogoJavascript } from "react-icons/io";
 import { IoStorefront, IoColorPaletteSharp, IoLibrary } from "react-icons/io5";
-import { MdSettingsSuggest, MdAccessTimeFilled } from "react-icons/md";
+import { MdOutlineMobileFriendly, MdAccessTimeFilled } from "react-icons/md";
 import { RiDatabaseFill } from "react-icons/ri";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 
@@ -31,24 +31,25 @@ export const ServicesSectionContent = [
     icon: <FaGlobeAsia size={servicesIconSize} />,
     title: "Web Development",
     description:
-      "Professional web pages with best practices, clean code structures and layout responsiveness.",
+      "Professional looking web pages made with the best practices, clean code structures and layout responsiveness.",
+  },
+  {
+    icon: <MdOutlineMobileFriendly size={servicesIconSize} />,
+    title: "Mobile Development",
+    description:
+      "Unified and consistent user experience across various devices. Localized platform design using platform modules for Android, iOS, and Web.",
   },
   {
     icon: <IoStorefront size={servicesIconSize} />,
     title: "Front-End Development",
     description:
-      "Design prototyping for customer sales conversion. Creating familiarity for users throught UI/UX.",
+      "Prototyping and design for customer sales conversion. Creating familiarity for users throught UI/UX.",
   },
   {
     icon: <RiDatabaseFill size={servicesIconSize} />,
     title: "Back-End Development",
-    description: "",
-  },
-  {
-    icon: <MdSettingsSuggest size={servicesIconSize} />,
-    title: "Website Management",
     description:
-      "Support and maintenance with the latest technologies through code optimization and unit testing.",
+      "Support and maintenance with the latest backend technologies through code optimization and unit testing.",
   },
   // {
   //     icon: <FaPhoneVolume size={servicesIconSize} />,

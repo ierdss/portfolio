@@ -16,8 +16,7 @@ export default function Services() {
             </h1>
           </div>
           <p className="sectionLeading sm:text-center md:text-left">
-            With my services I can make your ideas for a product or service come
-            to life.
+            With my services, I can make your product ideas come to life.
           </p>
         </div>
         <div className="servicesCards relative">
