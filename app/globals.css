@@ -285,7 +285,7 @@ body {
 
 /* Services Section  */
 .services {
-  @apply flexCenter flex-col md:flex-row gap-[50px] lg:gap-[100px] md:max-h-[1000px] relative w-full max-w-screen-xl;
+  @apply flexCenter flex-col lg:flex-row gap-[50px] lg:gap-[100px] md:max-h-[1000px] relative w-full max-w-screen-xl;
 }
 
 .servicesContent,
@@ -298,11 +298,11 @@ body {
 }
 
 .servicesCards {
-  @apply w-[95%] sm:min-w-[450px] flex flex-col sm:flex-row lg:w-[50%] gap-[30px] justify-center text-center;
+  @apply w-[95%] flex flex-col sm:flex-row lg:w-[50%] gap-[30px] justify-center text-center;
 }
 
-.servicesCardsRow {
-  @apply flex flex-col gap-[30px];
+.servicesCardsCol {
+  @apply flex flex-col gap-[30px] w-full sm:w-fit;
 }
 
 .servicesBackground {
