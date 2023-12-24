@@ -35,7 +35,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="sectionPadding w-full text-center flex justify-center items-center md:text-left flex-col md:flex-row md:min-h-[500px] relative overflow-hidden  max-w-screen-xl"
+      className="sectionPadding w-full text-center flex justify-center items-center md:text-left flex-col md:flex-row md:min-h-[800px] relative overflow-hidden  max-w-screen-xl"
     >
       <div className="flex flex-row flex-wrap w-full justify-center items-center gap-[50px] md:gap-[100px]">
         <div
