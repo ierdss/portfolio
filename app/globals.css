@@ -388,7 +388,7 @@ body {
 
 /* Projects Component */
 .projectsList {
-  @apply flex flex-col flex-wrap gap-8 md:gap-24 snap-proximity snap-y;
+  @apply flex flex-col flex-wrap gap-8 md:gap-24 snap-proximity snap-y max-w-screen-xl;
 }
 
 .projectItem {
