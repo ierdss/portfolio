@@ -139,9 +139,9 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="w-full flex justify-center items-center md:text-left"
+      className="w-full flex flex-col justify-center items-center md:text-left"
     >
-      <div className="flex flex-col w-full gap-[50px] sectionPadding">
+      <div className="flex flex-col justify-center items-center w-full gap-[50px] sectionPadding">
         <div className="">
           <h1 className="sectionOverline !text-center">Projects</h1>
           <h1 className="sectionHeading !text-center">
