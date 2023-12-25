@@ -9,6 +9,9 @@ import "react-vertical-timeline-component/style.min.css";
 import { ExperienceSectionContent } from "@/constants";
 import Image from "next/image";
 
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+
 type ExperienceCardProps = {
   title: string;
   companyName: string;
@@ -28,8 +31,6 @@ function ExperienceCard({
   date,
   bullets,
 }: ExperienceCardProps) {
-  // className="experienceCard"
-
   return (
     <VerticalTimelineElement
       className="relative group hover:-translate-y-4 transition-all ease-in-out duration-500 overflow-hidden"
@@ -71,18 +72,37 @@ function ExperienceCard({
 }
 
 export default function Experience() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <div
       id="experience"
       className="w-full sectionPadding flexCenter flex-col gap-[50px]"
     >
       <div className="w-[90%] md:w-full !text-left md:!text-center">
-        <h1 className="sectionOverline !text-left md:!text-center">
+        <motion.h1
+          className="sectionOverline !text-left md:!text-center"
+          ref={ref}
+          style={{
+            transform: isInView ? "translateY(0px)" : "translateY(200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s",
+          }}
+        >
           Experience
-        </h1>
-        <h1 className="sectionHeading !text-left md:!text-center">
+        </motion.h1>
+        <motion.h1
+          className="sectionHeading !text-left md:!text-center"
+          ref={ref}
+          style={{
+            transform: isInView ? "translateY(0px)" : "translateY(200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+          }}
+        >
           What Have I Done?
-        </h1>
+        </motion.h1>
       </div>
       <VerticalTimeline className="w-full" lineColor="#B40041">
         {ExperienceSectionContent.map(
