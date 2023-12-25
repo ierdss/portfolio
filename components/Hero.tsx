@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 import { motion, useInView } from "framer-motion";
 import { TiDownload } from "react-icons/ti";
