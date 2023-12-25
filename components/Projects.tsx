@@ -5,6 +5,9 @@ import { BsGithub } from "react-icons/bs";
 import { IoGlobe } from "react-icons/io5";
 import { HiOutlineExternalLink } from "react-icons/hi";
 
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+
 const sizeIcon = 30;
 
 type TagsProps = {
@@ -136,6 +139,9 @@ function OtherProjects() {
 }
 
 export default function Projects() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <div
       id="projects"
@@ -143,11 +149,30 @@ export default function Projects() {
     >
       <div className="flex flex-col justify-center items-center w-full gap-[50px] sectionPadding">
         <div className="">
-          <h1 className="sectionOverline !text-center">Projects</h1>
-          <h1 className="sectionHeading !text-center">
+          <motion.h1
+            className="sectionOverline !text-center"
+            ref={ref}
+            style={{
+              transform: isInView ? "translateY(0px)" : "translateY(200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s",
+            }}
+          >
+            Projects
+          </motion.h1>
+          <motion.h1
+            className="sectionHeading !text-center"
+            ref={ref}
+            style={{
+              transform: isInView ? "translateY(0px)" : "translateY(200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+            }}
+          >
             Check Out My Projects!
-          </h1>
+          </motion.h1>
         </div>
+
         <FeaturedProjects />
         {/* <div className="">
               <h1 className="sectionOverline">{overline}</h1>
