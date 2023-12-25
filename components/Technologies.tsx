@@ -35,26 +35,47 @@ const Technologies = () => {
       id="technologies"
       className="sectionPadding technologies relative md:min-h-[700px]"
     >
-      <motion.div
-        ref={ref}
-        style={{
-          transform: isInView ? "translateX(0px)" : "translateX(-200px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
-        }}
-        className="w-[90%] md:w-[55%] flex flex-col gap-[20px]"
-      >
+      <div className="w-[90%] md:w-[55%] flex flex-col gap-[20px]">
         <div className=" text-white">
-          <h1 className="sectionOverline !text-white">Technologies</h1>
-          <h1 className="sectionHeading">Tools I Am Most Familiar With </h1>
+          <motion.h1
+            className="sectionOverline !text-white"
+            ref={ref}
+            style={{
+              transform: isInView ? "translateY(0px)" : "translateY(200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s",
+            }}
+          >
+            Technologies
+          </motion.h1>
+          <motion.h1
+            className="sectionHeading"
+            ref={ref}
+            style={{
+              transform: isInView ? "translateY(0px)" : "translateY(200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+            }}
+          >
+            Tools I Am Most Familiar With{" "}
+          </motion.h1>
         </div>
-        <p className="sectionLeading !text-white">
+        <motion.p
+          className="sectionLeading !text-white"
+          ref={ref}
+          style={{
+            transform: isInView ? "translateY(0px)" : "translateY(200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+          }}
+        >
           As a Software Developer I have decided to master a small set of
           skills. Nonetheless, I am willing and eager to learn new technologies
           that allow me to give more value to my clients while build myself up
           even further.
-        </p>
-      </motion.div>
+        </motion.p>
+      </div>
+
       <motion.ul
         variants={container}
         initial="hidden"
