@@ -36,7 +36,7 @@ export default function Hero() {
         style={{
           transform: isInView ? "translateY(0px)" : "translateY(200px)",
           opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s",
         }}
       >
         <Image
@@ -47,44 +47,75 @@ export default function Hero() {
         />
       </motion.div>
 
-      <motion.div
-        ref={ref}
-        style={{
-          transform: isInView ? "translateY(0px)" : "translateY(200px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
-        }}
-        className="flex flex-col w-[90%] md:w-[50%] gap-4 text-center justify-center items-center lg:items-start shrink-0"
-      >
+      <div className="flex flex-col w-[90%] md:w-[50%] gap-4 text-center justify-center items-center lg:items-start shrink-0">
         <div>
-          <h1 className="sectionOverline !text-center lg:!text-left">
+          <motion.h1
+            className="sectionOverline !text-center lg:!text-left"
+            ref={ref}
+            style={{
+              transform: isInView ? "translateY(0px)" : "translateY(200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+            }}
+          >
             Hi My Name is Andrei Sager, I am a
-          </h1>
-          <h1 className="sectionHeading !text-4xl !text-center lg:!text-left">
+          </motion.h1>
+          <motion.h1
+            className="sectionHeading !text-4xl !text-center lg:!text-left"
+            ref={ref}
+            style={{
+              transform: isInView ? "translateY(0px)" : "translateY(200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.4s",
+            }}
+          >
             Software Developer
-          </h1>
+          </motion.h1>
         </div>
 
-        <p className="sectionLeading !text-center lg:!text-left">
+        <motion.p
+          className="sectionLeading !text-center lg:!text-left"
+          ref={ref}
+          style={{
+            transform: isInView ? "translateY(0px)" : "translateY(200px)",
+            opacity: isInView ? 1 : 0,
+            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
+        >
           I specialize in constructing remarkable websites and mobile
           applications while immersing myself in diverse aspects of the digital
           spectrum that pique my interest.
-        </p>
-        <div className="flex flex-col w-fit justify-center items-center gap-4 md:order-3"></div>
+        </motion.p>
+
         <div className="flex w-full gap-4 items-center justify-center lg:justify-start">
-          <Link
+          <motion.a
             href="#contact"
             className="navbarCta flex flex-row !bg-transparent !text-slate-300 border border-slate-300 hover:!text-secondary-red hover:border-secondary-red !w-fit"
+            ref={ref}
+            style={{
+              transform: isInView ? "translateY(0px)" : "translateY(200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.6s",
+            }}
           >
             <TiDownload size={20} />
             <p>Download CV</p>
-          </Link>
-          <Link href="#contact" className="navbarCta flex flex-row !w-fit">
+          </motion.a>
+          <motion.a
+            href="#contact"
+            className="navbarCta flex flex-row !w-fit"
+            ref={ref}
+            style={{
+              transform: isInView ? "translateY(0px)" : "translateY(200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.7s",
+            }}
+          >
             <SiMinutemailer size={20} />
             Say Hello
-          </Link>
+          </motion.a>
         </div>
-      </motion.div>
+      </div>
 
       {/* Animated Lavalamp Squares */}
       <ul className="circles">
