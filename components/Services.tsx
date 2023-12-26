@@ -60,32 +60,69 @@ export default function Services() {
             className="servicesBackground top-1/2 left-1/2 translate-x-[-50%] translate-y-[-40%] hidden sm:flex"
           />
           <div className="servicesCardsCol">
-            <ServiceCard
-              icon={card[0].icon}
-              title={card[0].title}
-              paragraph={card[0].description}
-              colorType="serviceCard__red"
-            />
-            <ServiceCard
-              icon={card[1].icon}
-              title={card[1].title}
-              paragraph={card[1].description}
-              colorType="serviceCard"
-            />
+            <motion.div
+              ref={ref}
+              style={{
+                transform: isInView ? "translateY(0px)" : "translateY(200px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.4s",
+              }}
+            >
+              <ServiceCard
+                icon={card[0].icon}
+                title={card[0].title}
+                paragraph={card[0].description}
+                colorType="serviceCard__red"
+              />
+            </motion.div>
+
+            <motion.div
+              ref={ref}
+              style={{
+                transform: isInView ? "translateY(0px)" : "translateY(200px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+              }}
+            >
+              <ServiceCard
+                icon={card[1].icon}
+                title={card[1].title}
+                paragraph={card[1].description}
+                colorType="serviceCard"
+              />
+            </motion.div>
           </div>
           <div className="servicesCardsCol sm:mt-[50px]">
-            <ServiceCard
-              icon={card[2].icon}
-              title={card[2].title}
-              paragraph={card[2].description}
-              colorType="serviceCard"
-            />
-            <ServiceCard
-              icon={card[3].icon}
-              title={card[3].title}
-              paragraph={card[3].description}
-              colorType="serviceCard"
-            />
+            <motion.div
+              ref={ref}
+              style={{
+                transform: isInView ? "translateY(0px)" : "translateY(200px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.6s",
+              }}
+            >
+              <ServiceCard
+                icon={card[2].icon}
+                title={card[2].title}
+                paragraph={card[2].description}
+                colorType="serviceCard"
+              />
+            </motion.div>
+            <motion.div
+              ref={ref}
+              style={{
+                transform: isInView ? "translateY(0px)" : "translateY(200px)",
+                opacity: isInView ? 1 : 0,
+                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.7s",
+              }}
+            >
+              <ServiceCard
+                icon={card[3].icon}
+                title={card[3].title}
+                paragraph={card[3].description}
+                colorType="serviceCard"
+              />
+            </motion.div>
           </div>
           {/* <div className="servicesCardsRow xs:mt-[100px]">
           <ServiceCard
