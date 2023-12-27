@@ -25,12 +25,9 @@ export default function Hero() {
   }, []);
 
   return (
-    <div
-      id="hero"
-      className="hero area sectionPadding relative overflow-hidden"
-    >
+    <div id="hero" className="hero">
       <motion.div
-        className="w-[80%] md:w-[30%] aspect-square flex items-center justify-center rounded-full overflow-hidden z-10"
+        className="hero__portrait"
         ref={ref}
         style={{
           scale: isInView ? 1 : 0,
@@ -46,7 +43,7 @@ export default function Hero() {
         />
       </motion.div>
 
-      <div className="flex flex-col w-[90%] md:w-[50%] gap-4 text-center justify-center items-center lg:items-start shrink-0">
+      <div className="hero__headline">
         <div>
           <motion.h1
             className="sectionOverline !text-center lg:!text-left"
@@ -88,7 +85,7 @@ export default function Hero() {
 
         <div className="flex w-full gap-4 items-center justify-center lg:justify-start">
           <motion.a
-            href="#contact"
+            href="#"
             className="cta__outline"
             ref={ref}
             style={{
@@ -101,7 +98,7 @@ export default function Hero() {
             <p>Download CV</p>
           </motion.a>
           <motion.a
-            href="#contact"
+            href="#projects"
             className="cta__solid"
             ref={ref}
             style={{
@@ -117,7 +114,7 @@ export default function Hero() {
       </div>
 
       {/* Animated Lavalamp Squares */}
-      <ul className="circles">
+      <ul className="hero__squares">
         <li></li>
         <li></li>
         <li></li>
