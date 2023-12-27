@@ -2,11 +2,19 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { motion, useCycle } from "framer-motion";
 
-import { NavLinks } from "@/constants/NavigationLinks";
 import Links from "./minor/Links";
 import Link from "next/link";
 
-export default function NavbarMobile() {
+interface NavbarMobileLinkProps {
+  href: string;
+  text: string;
+}
+
+interface NavbarMobileLinksProps {
+  links: NavbarMobileLinkProps[];
+}
+
+export default function NavbarMobile({ links }: NavbarMobileLinksProps) {
   const sizeIcon = 30;
   const [isOpen, toggleIsOpen] = useCycle(false, true);
 
@@ -24,7 +32,7 @@ export default function NavbarMobile() {
         <RxCross2 size={sizeIcon} />
       </div>
       <ul id="navbar-links" className="navbar-mobile__links">
-        {NavLinks.map(({ href, text }, index) => (
+        {links.map(({ href, text }, index) => (
           <li key={index}>
             <Link
               onClick={() => useCycle()}
