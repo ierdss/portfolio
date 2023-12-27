@@ -54,7 +54,7 @@ export default function Hero() {
               transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
             }}
           >
-            Hi My Name is Andrei Sager, I am a
+            Andrei Sager
           </motion.h1>
           <motion.h1
             className="sectionHeading !text-4xl !text-center lg:!text-left"
@@ -78,12 +78,12 @@ export default function Hero() {
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.4s",
           }}
         >
-          I specialize in constructing remarkable websites and mobile
-          applications while immersing myself in diverse aspects of the digital
-          spectrum that pique my interest.
+          I specialize in constructing websites and mobile applications while
+          immersing myself in diverse aspects of the digital spectrum that pique
+          my interest.
         </motion.p>
 
-        <div className="flex w-full gap-4 items-center justify-center lg:justify-start">
+        <div className="hero__headline__buttons">
           <motion.a
             href="#"
             className="cta__outline"
