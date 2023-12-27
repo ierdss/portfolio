@@ -111,7 +111,7 @@ export default function Hero() {
             }}
           >
             <SiMinutemailer size={20} />
-            Say Hello
+            See Projects
           </motion.a>
         </div>
       </div>
