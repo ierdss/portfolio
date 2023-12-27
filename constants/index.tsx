@@ -1,5 +1,3 @@
-import { NavLinks, SocialMediaLinks } from "./NavigationLinks";
-
 import {
   ServicesSectionContent,
   AboutSectionContent,
@@ -12,8 +10,6 @@ import {
 } from "./SectionContent";
 
 export {
-  NavLinks,
-  SocialMediaLinks,
   ServicesSectionContent,
   AboutSectionContent,
   TechnologiesSectionContent,
