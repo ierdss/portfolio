@@ -161,11 +161,11 @@ body {
 }
 
 .navbar-desktop__links {
-  @apply lg:flex hidden gap-10 flex flex-row gap-4;
+  @apply hidden lg:flex flex-row gap-4;
 }
 
 .navbar-mobile__links {
-  @apply flex flex-col w-full text-black-1 gap-4 flex flex-col w-full text-center;
+  @apply flex flex-col w-full text-black-1 gap-4 text-center;
 }
 
 .navbar-desktop__link {
