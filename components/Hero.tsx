@@ -89,7 +89,7 @@ export default function Hero() {
         <div className="flex w-full gap-4 items-center justify-center lg:justify-start">
           <motion.a
             href="#contact"
-            className="navbarCta flex flex-row !bg-transparent !text-slate-300 border border-slate-300 hover:!text-secondary-red hover:border-secondary-red !w-fit"
+            className="cta__outline"
             ref={ref}
             style={{
               transform: isInView ? "translateY(0px)" : "translateY(200px)",
@@ -102,7 +102,7 @@ export default function Hero() {
           </motion.a>
           <motion.a
             href="#contact"
-            className="navbarCta flex flex-row !w-fit"
+            className="cta__solid"
             ref={ref}
             style={{
               transform: isInView ? "translateY(0px)" : "translateY(200px)",
