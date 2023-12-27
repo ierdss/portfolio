@@ -20,13 +20,17 @@ export default function NavbarMobile() {
         <GiHamburgerMenu size={sizeIcon} />
       </div>
       <div onClick={() => useCycle()} className="navbar__mobile-top">
-        <h1 className="navbarLogo bg-clip">ANDREI</h1>
+        <h1 className="navbar__logo bg-clip">ANDREI</h1>
         <RxCross2 size={sizeIcon} />
       </div>
-      <ul id="navbar-links" className="navbarLinks">
+      <ul id="navbar-links" className="navbar-mobile__links">
         {NavLinks.map(({ href, text }, index) => (
-          <li key={index} className="navbarListItem">
-            <Link onClick={() => useCycle()} href={href} className="navbarLink">
+          <li key={index}>
+            <Link
+              onClick={() => useCycle()}
+              href={href}
+              className="navbar-mobile__link"
+            >
               {text}
             </Link>
           </li>
