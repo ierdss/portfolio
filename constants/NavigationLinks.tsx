@@ -2,14 +2,6 @@ import { BsLinkedin, BsGithub, BsMailbox2 } from "react-icons/bs";
 
 const mediaIconSize = 30;
 
-export const NavLinks = [
-  { href: "#services", key: "Services", text: "Services" },
-  { href: "#about", key: "About", text: "About" },
-  { href: "#experience", key: "Experience", text: "Experience" },
-  { href: "#projects", key: "Projects", text: "Projects" },
-  // { href: "#testimonials", key: "Testimonials", text: "Testimonials" },
-];
-
 export const SocialMediaLinks = [
   {
     id: 1,
