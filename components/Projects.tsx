@@ -1,4 +1,4 @@
-import { ProjectSectionContent as ProjectList } from "@/constants/SectionContent";
+import { Projects as ProjectList } from "@/constants/projectsdatabase";
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub } from "react-icons/bs";

@@ -1,10 +1,11 @@
+import { Projects } from "./projectsdatabase";
+
 import {
   ServicesSectionContent,
   AboutSectionContent,
   TechnologiesSectionContent,
   WorkflowSectionContent,
   ExperienceSectionContent,
-  ProjectSectionContent,
   TestimonialsSectionContent,
   ContactSectionContent,
 } from "./SectionContent";
@@ -15,7 +16,6 @@ export {
   TechnologiesSectionContent,
   WorkflowSectionContent,
   ExperienceSectionContent,
-  ProjectSectionContent,
   TestimonialsSectionContent,
   ContactSectionContent,
 };
