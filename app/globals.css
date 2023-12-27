@@ -164,6 +164,10 @@ body {
   @apply px-4 py-3 my-3 font-bold text-sm hover:text-secondary-red target:text-secondary-red capitalize block w-full;
 }
 
+.navbar-mobile__top {
+  @apply flex w-full justify-between items-center pt-2 pb-1 px-6;
+}
+
 .navbar-mobile__toggle {
   @apply lg:hidden flex flex-row gap-10;
 }
@@ -181,85 +185,9 @@ body {
   @apply top-0 left-[-100%];
 }
 
-.navbar-mobile__top {
-  @apply flex w-full justify-between items-center pt-2 pb-1 px-6;
-}
-
 /* Hero Section  */
-/* Main */
 .hero {
   @apply flex flex-col lg:flex-row justify-center items-center gap-[40px] lg:gap-[50px] h-[100vh] max-h-[800px] max-w-screen-xl;
-}
-
-/* Container */
-.heroContainer {
-  @apply flex w-full h-[90%] mt-[50px] md:mt-0;
-}
-
-/* Profile Card */
-/* .heroCards {
-  @apply w-[95%] md:w-[70%] h-[450px] flex flex-row items-center justify-end mt-[60px] md:mt-0 relative hover:transition-all hover:scale-105 duration-500 ease-in-out z-10;
-}
-
-.heroCard {
-  @apply w-[280px] h-[450px] md:w-[300px] md:h-[400px] rounded-lg absolute bottom-0 right-0 md:static flex flex-row justify-start items-end;
-}
-
-.heroCard:nth-child(1) {
-  @apply bg-black text-white z-[1] -translate-x-[90px] -translate-y-4 md:-rotate-12 md:translate-x-6 md:translate-y-7;
-}
-
-.heroCard:nth-child(2) {
-  @apply bg-secondary-red text-white z-[2] -translate-x-[45px] -translate-y-2 md:rotate-0 md:translate-x-0 md:translate-y-0;
-}
-
-.heroCard:nth-child(3) {
-  @apply bg-white text-black md:rotate-12 z-[3] md:-translate-x-6 md:translate-y-7 border border-slate-300 shadow-md;
-}
-
-.heroCard_title {
-  @apply -rotate-90 w-[110px] h-fit -translate-x-8 -translate-y-14;
-} */
-
-.heroCard {
-  @apply w-[20%] md:w-[150px] relative rounded-md m-[10px] cursor-pointer transition-all duration-500 ease-in-out flex justify-between items-end text-white p-[20px] overflow-hidden gap-[10px];
-}
-
-.heroCard:nth-child(2) {
-  @apply translate-y-[50px];
-}
-
-.heroCard.active {
-  @apply grow-[2];
-}
-
-.heroCard__image {
-  @apply absolute inset-0 object-cover object-center rounded-md -z-10;
-}
-
-/* Card Content */
-.heroCard__content {
-  @apply flex flex-col w-full h-full justify-end p-[20px] whitespace-nowrap;
-}
-
-.heroCard__content h1 {
-  @apply -translate-y-[30px] -translate-x-1/2 -rotate-90 transition-all duration-500 ease-in-out;
-}
-
-.heroCard.active .heroCard__content h1 {
-  @apply translate-y-0 translate-x-0 rotate-0 z-[11];
-}
-
-.heroCard__content p {
-  @apply -translate-y-[30px] -translate-x-[200px] transition-all duration-500 ease-in-out;
-}
-
-.heroCard.active .heroCard__content p {
-  @apply translate-y-0 translate-x-0 rotate-0 z-[11];
-}
-
-.heroCard.active .heroCard__content {
-  @apply border border-double border-white;
 }
 
 /* Services Section  */
