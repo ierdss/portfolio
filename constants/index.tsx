@@ -11,18 +11,6 @@ import {
   ContactSectionContent,
 } from "./SectionContent";
 
-import {
-  HeroSectionHeading,
-  ServicesSectionHeading,
-  TechnologiesSectionHeading,
-  WorkflowSectionHeading,
-  ExperienceSectionHeading,
-  ProjectsSectionHeading,
-  TestimonialsSectionHeading,
-  ContactSectionHeading,
-  FooterSectionHeading,
-} from "./SectionHeading";
-
 export {
   NavLinks,
   SocialMediaLinks,
@@ -34,13 +22,4 @@ export {
   ProjectSectionContent,
   TestimonialsSectionContent,
   ContactSectionContent,
-  HeroSectionHeading,
-  ServicesSectionHeading,
-  TechnologiesSectionHeading,
-  WorkflowSectionHeading,
-  ExperienceSectionHeading,
-  ProjectsSectionHeading,
-  TestimonialsSectionHeading,
-  ContactSectionHeading,
-  FooterSectionHeading,
 };

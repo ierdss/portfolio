@@ -1,4 +1,3 @@
-import { ContactSectionHeading } from "@/constants/SectionHeading";
 import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 
@@ -11,8 +10,6 @@ import Image from "next/image";
 import { ContactSectionContent } from "@/constants";
 
 export default function Contact() {
-  const { overline, header, subheader } = ContactSectionHeading;
-
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
