@@ -1,7 +1,7 @@
 import { useRef } from "react";
 
 import Image from "next/image";
-import { ServiceCard } from "./cards/ServiceCards";
+import { ServiceCard } from "./ServiceCards";
 import { ServicesSectionContent as card } from "@/constants";
 
 import { motion, useInView } from "framer-motion";
