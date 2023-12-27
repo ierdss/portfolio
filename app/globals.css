@@ -124,6 +124,19 @@ body {
 .sectionCta__outline {
   @apply w-full hover:border-secondary-red text-base font-extrabold p-4 rounded-md border border-neutral-400 text-neutral-400 hover:text-secondary-red transition-all duration-200 ease-in-out;
 }
+/* 
+.navbarCta__desktop,
+.navbarCta {
+  @apply items-center justify-center bg-secondary-red text-sm font-extrabold text-white py-2 px-6 hover:bg-accent-pink rounded-full gap-2 text-center;
+}
+
+.navbarCta__desktop {
+  @apply hidden lg:flex;
+}
+
+.navbarCta {
+  @apply flex w-[90%];
+} */
 
 /* Hover Effects */
 .hoverSmoothScale {
@@ -139,54 +152,28 @@ body {
   @apply shadow-lg bg-white;
 }
 
-.navbar__desktop {
-  @apply w-screen flexBetween gap-10 md:gap-16 justify-center items-center lg:max-w-screen-xl;
+.navbar-desktop {
+  @apply flex justify-between items-center gap-10 md:gap-16 w-screen lg:max-w-screen-xl;
 }
 
-.navbar__desktop-center {
-  @apply lg:flex hidden gap-10;
+.navbar__logo {
+  @apply text-4xl font-black text-secondary-red w-[140px];
 }
 
-.navbarLogo,
-.navbarCta__desktop {
-  @apply w-[140px];
+.navbar-desktop__links {
+  @apply lg:flex hidden gap-10 flex flex-row gap-4;
 }
 
-.navbarLogo {
-  @apply text-4xl font-black text-secondary-red;
+.navbar-mobile__links {
+  @apply flex flex-col w-full text-black-1 gap-4 flex flex-col w-full text-center;
 }
 
-.navbarListItem {
-  @apply flex flex-col w-full text-center;
-}
-
-.navbarLinks {
-  @apply flex flex-col w-full text-black-1 gap-4;
-}
-
-.navbarLinks__desktop {
-  @apply flex flex-row gap-4;
-}
-
-.navbarLink {
+.navbar-desktop__link {
   @apply px-4 py-3 my-3 font-bold text-sm hover:text-secondary-red target:text-secondary-red capitalize block w-full;
 }
 
-.navbarCta__desktop,
-.navbarCta {
-  @apply items-center justify-center bg-secondary-red text-sm font-extrabold text-white py-2 px-6 hover:bg-accent-pink rounded-full gap-2 text-center;
-}
-
-.navbarCta__desktop {
-  @apply hidden lg:flex;
-}
-
-.navbarMenu {
+.navbar-mobile__toggle {
   @apply lg:hidden flex flex-row gap-10;
-}
-
-.navbarCta {
-  @apply flex w-[90%];
 }
 
 .navbar__mobile-open,
