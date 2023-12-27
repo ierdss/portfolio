@@ -117,26 +117,18 @@ body {
   @apply flex;
 }
 
-.callToAction {
-  @apply w-full bg-secondary-red text-base font-extrabold text-white p-4 hover:bg-accent-pink rounded-full transition-all duration-200 ease-in-out flexCenter;
+.cta__solid,
+.cta__outline {
+  @apply flex w-fit items-center justify-center text-sm py-2 px-6 rounded-full gap-2 text-center;
 }
 
-.sectionCta__outline {
-  @apply w-full hover:border-secondary-red text-base font-extrabold p-4 rounded-md border border-neutral-400 text-neutral-400 hover:text-secondary-red transition-all duration-200 ease-in-out;
-}
-/* 
-.navbarCta__desktop,
-.navbarCta {
-  @apply items-center justify-center bg-secondary-red text-sm font-extrabold text-white py-2 px-6 hover:bg-accent-pink rounded-full gap-2 text-center;
+.cta__solid {
+  @apply bg-secondary-red font-extrabold text-white hover:bg-accent-pink;
 }
 
-.navbarCta__desktop {
-  @apply hidden lg:flex;
+.cta__outline {
+  @apply bg-transparent text-slate-300 border border-slate-300 hover:text-secondary-red hover:border-secondary-red;
 }
-
-.navbarCta {
-  @apply flex w-[90%];
-} */
 
 /* Hover Effects */
 .hoverSmoothScale {
