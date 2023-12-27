@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect } from "react";
-import { NavLinks } from "@/constants/NavigationLinks";
 import Link from "next/link";
 import React from "react";
 import { ProgressBar } from "@nadfri/react-scroll-progress-bar";
@@ -57,3 +56,12 @@ export default function Navbar() {
     </nav>
   );
 }
+
+const NavLinks = [
+  { href: "#services", text: "Services" },
+  { href: "#about", text: "About" },
+  { href: "#experience", text: "Experience" },
+  { href: "#projects", text: "Projects" },
+  // { href: "#testimonials", text: "Testimonials" },
+  { href: "#contact", text: "Contact" },
+];
