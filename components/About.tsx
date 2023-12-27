@@ -90,11 +90,12 @@ export default function About() {
               me to pursue this career.
             </p>
           </div>
-          <div className="flex flex-row">
+
+          {/* <div className="flex flex-row">
             <h1>Projects Completed</h1>
             <h1>Freelance Commisions</h1>
             <h1>Years of Experience</h1>
-          </div>
+          </div> */}
         </motion.div>
       </div>
     </div>
