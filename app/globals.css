@@ -176,20 +176,20 @@ body {
   @apply lg:hidden flex flex-row gap-10;
 }
 
-.navbar__mobile-open,
-.navbar__mobile-closed {
+.navbar-mobile--open,
+.navbar-mobil--closed {
   @apply overflow-hidden flex flex-col items-center gap-8 bg-white w-full h-full fixed lg:hidden z-50 ease-in-out duration-500;
 }
 
-.navbar__mobile-open {
+.navbar-mobile--open {
   @apply top-0 left-0;
 }
 
-.navbar__mobile-closed {
+.navbar-mobile--closed {
   @apply top-0 left-[-100%];
 }
 
-.navbar__mobile-top {
+.navbar-mobile__top {
   @apply flex w-full justify-between items-center pt-2 pb-1 px-6;
 }
 
