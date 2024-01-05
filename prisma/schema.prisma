@@ -37,3 +37,11 @@ model tag {
   projectsIds String @db.ObjectId
   projects project @relation(fields: [projectsIds], references: [id], onDelete: Cascade)
 }
+
+model experience {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  jobTitle String?
+  companyName String?
+  date String?
+  bullets String[]
+}
