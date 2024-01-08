@@ -1,4 +1,4 @@
-import { ServiceCard } from "./services/ServiceCards";
+import { ServiceCard } from "./ServiceCards";
 import { AboutSectionContent as content } from "@/constants/SectionContent";
 
 export default function ServicesCardGallery() {
