@@ -35,10 +35,7 @@ type ProjectLinksProps = {
   livedemoUrl: string;
 };
 
-export default function ProjectLinks({
-  githubUrl,
-  livedemoUrl,
-}: ProjectLinksProps) {
+function ProjectLinks({ githubUrl, livedemoUrl }: ProjectLinksProps) {
   return (
     <div className="projectLinks">
       <a
@@ -61,7 +58,7 @@ export default function ProjectLinks({
   );
 }
 
-function FeaturedProjects() {
+export default function FeaturedProjects() {
   return (
     <div className="projectsList">
       {ProjectList.map(
