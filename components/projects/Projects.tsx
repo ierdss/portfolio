@@ -42,7 +42,7 @@ export default async function Projects() {
           </motion.h1>
         </div>
 
-        <FeaturedProjects />
+        {/* <FeaturedProjects /> */}
         <OtherProjects />
       </div>
     </div>
