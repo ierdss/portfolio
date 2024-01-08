@@ -9,7 +9,7 @@ export default async function getOtherProjects() {
         tags: true,
       },
       where: {
-        isFeatured: null,
+        isFeatured: false,
       },
     });
 

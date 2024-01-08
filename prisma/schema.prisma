@@ -15,7 +15,7 @@ model Project {
   title String? @unique
   subtitle String?
   description String?
-  isFeatured Boolean?
+  isFeatured Boolean? @default(false)
 
   thumbnailDesktop String?
   thumbnailMobile String?
