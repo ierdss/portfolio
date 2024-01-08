@@ -7,14 +7,15 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model project {
+model Project {
   id String @id @default(auto()) @map("_id") @db.ObjectId
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
   title String? @unique
   subtitle String?
   description String?
   isFeatured Boolean?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
 
   thumbnailDesktop String?
   thumbnailMobile String?
@@ -25,20 +26,20 @@ model project {
   linkLiveDemo String?
   linkCaseStudy String?
 
-  tagsIds String[] @db.ObjectId
-  tags tag[]
+  tags Tag[] @relation(fields: [tagsIds], references: [id])
+  tagsIds String[] @db.ObjectId 
 }
 
-model tag {
+model Tag {
   id String @id @default(auto()) @map("_id") @db.ObjectId
-  name String?
-  technology String?
+  name String? @unique
+  type String?
 
-  projectsIds String @db.ObjectId
-  projects project @relation(fields: [projectsIds], references: [id], onDelete: Cascade)
+  projects Project[] @relation(fields: [projectsIds], references: [id])
+  projectsIds String[] @db.ObjectId
 }
 
-model experience {
+model Experience {
   id String @id @default(auto()) @map("_id") @db.ObjectId
   jobTitle String?
   companyName String?
