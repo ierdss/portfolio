@@ -72,7 +72,7 @@ export default function FeaturedProjectsCard({
             {subtitle || "subtitle"}
           </h1>
         </div>
-        <a href={linkCaseStudy}>
+        <a href={linkCaseStudy} target="_blank">
           <p className="featured-projects-card__details-description">
             {description ||
               "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At in ea voluptate incidunt veritatis aliquid, atque similique quasi eum sint?"}
