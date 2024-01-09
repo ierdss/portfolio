@@ -46,18 +46,20 @@ export default function OtherProjectsCard({
   return (
     <div className="other-projects-card">
       <div className="other-projects-card__images">
-        <Image
-          src={desktopThumbnail || ""}
-          width={50}
-          height={50}
-          alt={desktopAlt || ""}
-          className="other-projects-card__image-desktop"
-        />
+        <a href="">
+          <Image
+            src={desktopThumbnail || ""}
+            width={1000}
+            height={1000}
+            alt={desktopAlt || "Desktop Thumbnail"}
+            className="other-projects-card__image-desktop"
+          />
+        </a>
         <Image
           src={mobileThumbnail || ""}
-          width={50}
-          height={50}
-          alt={mobileAlt || ""}
+          width={600}
+          height={600}
+          alt={mobileAlt || "Mobile Thumbnail"}
           className="other-projects-card__image-mobile"
         />
       </div>
