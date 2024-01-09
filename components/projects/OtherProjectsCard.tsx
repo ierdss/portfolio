@@ -52,6 +52,7 @@ export default function OtherProjectsCard({
             width={1000}
             height={1000}
             alt={desktopAlt || "Desktop Thumbnail"}
+            sizes="(min-width: 768px) 100vw, 50vw"
             className="other-projects-card__image-desktop"
           />
         </a>
@@ -60,6 +61,7 @@ export default function OtherProjectsCard({
           width={600}
           height={600}
           alt={mobileAlt || "Mobile Thumbnail"}
+          sizes="(min-width: 768px) 100vw, 50vw"
           className="other-projects-card__image-mobile"
         />
       </div>
