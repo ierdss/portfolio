@@ -64,7 +64,7 @@ export default function OtherProjectsCard({
         />
       </div>
       <div className="other-projects-card__details">
-        <div className="flex flex-col gap-2">
+        <div>
           <h1 className="other-projects-card__details-title">
             {title || "title"}
           </h1>
