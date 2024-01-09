@@ -18,12 +18,12 @@ export default async function OtherProjects() {
   const otherProjects = await getOtherProjects();
 
   return (
-    <div className="other-projects max-w-screen-xl w-full">
+    <div className="other-projects">
       <div>
         <h1 className="sectionOverline">More From Me</h1>
         <h1 className="sectionHeading">Other Projects</h1>
       </div>
-      <div className="other-projects__map ">
+      <div className="other-projects__map">
         {Projects.map((project) => (
           <OtherProjectsCard
             key={project.id}
