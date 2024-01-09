@@ -29,8 +29,8 @@ export default async function OtherProjects() {
             key={project.id}
             title={project.title !== null ? project.title : ""}
             subtitle={project.subtitle !== null ? project.subtitle : ""}
-            descriptionBasic={
-              project.descriptionBasic !== null ? project.descriptionBasic : ""
+            description={
+              project.description !== null ? project.description : ""
             }
             desktopThumbnail={
               project.desktopThumbnail !== null ? project.desktopThumbnail : ""

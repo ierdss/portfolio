@@ -6,7 +6,7 @@ import { IoGlobe } from "react-icons/io5";
 interface OtherProjectsCardProps {
   title: string;
   subtitle?: string;
-  descriptionBasic?: string;
+  description?: string;
   desktopThumbnail?: string;
   desktopAlt?: string;
   mobileThumbnail?: string;
@@ -31,7 +31,7 @@ interface TagProps {
 export default function OtherProjectsCard({
   title,
   subtitle,
-  descriptionBasic,
+  description,
   desktopThumbnail,
   desktopAlt,
   mobileThumbnail,
@@ -72,7 +72,7 @@ export default function OtherProjectsCard({
         </div>
         <a href={linkCaseStudy}>
           <p className="other-projects-card__details-description sectionDescription !text-justify md:!text-left">
-            {descriptionBasic ||
+            {description ||
               "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At in ea voluptate incidunt veritatis aliquid, atque similique quasi eum sint?"}
           </p>
         </a>
