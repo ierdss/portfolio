@@ -317,7 +317,7 @@ body {
 
 /* Services Section  */
 .services {
-  @apply flexCenter flex-col lg:flex-row gap-[50px] lg:gap-[100px] md:max-h-[1000px] relative w-full max-w-screen-xl;
+  @apply flexCenter flex-col lg:flex-row gap-[50px] lg:gap-[100px] md:max-h-[1000px] relative w-full max-w-screen-xl section-padding__y-axis;
 }
 
 .servicesContent,
