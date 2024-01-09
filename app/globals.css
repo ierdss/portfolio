@@ -471,7 +471,7 @@ body {
 }
 
 .featured-projects-card__images {
-  @apply w-full aspect-video overflow-hidden rounded-2xl;
+  @apply w-full aspect-16/11 overflow-hidden rounded-2xl;
 }
 .featured-projects-card__image-desktop {
   @apply w-full;
@@ -522,7 +522,7 @@ body {
 }
 
 .other-projects-card__images {
-  @apply w-full aspect-video overflow-hidden rounded-2xl;
+  @apply w-full aspect-16/11 overflow-hidden rounded-2xl;
 }
 
 .other-projects-card__image-desktop {
