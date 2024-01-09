@@ -502,10 +502,10 @@ body {
   @apply flex justify-center items-center text-xs py-1 px-3 text-slate-600 border border-solid border-slate-300 rounded-full font-medium capitalize;
 }
 .featured-projects-card__details-links {
-  @apply flex flex-row flex-wrap items-center gap-8 w-full;
+  @apply flex flex-row flex-wrap items-center gap-4 w-full;
 }
 .featured-projects-card__details-link {
-  @apply flex flex-row gap-2 justify-center items-center hover:text-secondary-red capitalize;
+  @apply flex flex-row gap-2 justify-center items-center hover:text-secondary-red capitalize text-xs;
 }
 
 /* Other Projects Component */
@@ -562,11 +562,11 @@ body {
 }
 
 .other-projects-card__details-links {
-  @apply flex flex-row flex-wrap items-center gap-8 w-full;
+  @apply flex flex-row flex-wrap items-center gap-4 w-full;
 }
 
 .other-projects-card__details-link {
-  @apply flex flex-row gap-2 justify-center items-center hover:text-secondary-red capitalize;
+  @apply flex flex-row gap-2 justify-center items-center hover:text-secondary-red;
 }
 
 /* Testimonials Section  */

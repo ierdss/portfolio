@@ -42,8 +42,8 @@ export default function FeaturedProjectsCard({
   tags,
 }: FeaturedProjectsCardProps) {
   return (
-    <div className="other-projects-card">
-      <div className="other-projects-card__images">
+    <div className="featured-projects-card">
+      <div className="featured-projects-card__images">
         <a href={linkLiveDemo} target="_blank">
           <Image
             src={desktopThumbnail || ""}
@@ -60,55 +60,55 @@ export default function FeaturedProjectsCard({
           height={600}
           alt={mobileAlt || "Mobile Thumbnail"}
           sizes="(min-width: 768px) 100vw, 50vw"
-          className="other-projects-card__image-mobile"
+          className="featured-projects-card__image-mobile"
         />
       </div>
-      <div className="other-projects-card__details">
+      <div className="featured-projects-card__details">
         <div className="flex flex-col gap-2">
-          <h1 className="other-projects-card__details-title">
+          <h1 className="featured-projects-card__details-title">
             {title || "title"}
           </h1>
-          <h1 className="other-projects-card__details-subtitle">
+          <h1 className="featured-projects-card__details-subtitle">
             {subtitle || "subtitle"}
           </h1>
         </div>
         <a href={linkCaseStudy}>
-          <p className="other-projects-card__details-description">
+          <p className="featured-projects-card__details-description">
             {description ||
               "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At in ea voluptate incidunt veritatis aliquid, atque similique quasi eum sint?"}
           </p>
         </a>
-        <ul className="other-projects-card__details-tags">
+        <ul className="featured-projects-card__details-tags">
           {tags.map((tag) => (
-            <li key={tag.id} className="other-projects-card__details-tag">
+            <li key={tag.id} className="featured-projects-card__details-tag">
               {tag.tag}
             </li>
           ))}
         </ul>
-        <div className="other-projects-card__details-links">
+        <div className="featured-projects-card__details-links">
           <a
             href={linkLiveDemo}
             target="_blank"
-            className="other-projects-card__details-link"
+            className="featured-projects-card__details-link"
           >
             <IoGlobe size={34} />
-            {/* Live Demo */}
+            Live Demo
           </a>
           <a
             href={linkRepository}
             target="_blank"
-            className="other-projects-card__details-link"
+            className="featured-projects-card__details-link"
           >
             <BsGithub size={30} />
-            {/* Source Code */}
+            Source Code
           </a>
           <a
             href={linkCaseStudy}
             target="_blank"
-            className="other-projects-card__details-link"
+            className="featured-projects-card__details-link"
           >
             <BsBookHalf size={30} />
-            {/* Case Study */}
+            Case Study
           </a>
         </div>
       </div>
