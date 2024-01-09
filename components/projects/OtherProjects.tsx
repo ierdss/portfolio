@@ -18,7 +18,7 @@ export default async function OtherProjects() {
   const otherProjects = await getOtherProjects();
 
   return (
-    <div className="max-w-screen-xl w-full">
+    <div className="other-projects max-w-screen-xl w-full">
       <div>
         <h1 className="sectionOverline">More From Me</h1>
         <h1 className="sectionHeader">Other Projects</h1>

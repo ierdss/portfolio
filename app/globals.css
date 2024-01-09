@@ -457,7 +457,7 @@ body {
 
 /* Other Projects Component */
 .other-projects {
-  @apply w-full px-2;
+  @apply w-full px-2 sm:p-5;
 }
 
 /* Other Projects Card Component */

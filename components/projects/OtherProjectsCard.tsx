@@ -41,12 +41,10 @@ export default function OtherProjectsCard({
   linkCaseStudy,
   tags,
 }: OtherProjectsCardProps) {
-  const size = 30;
-
   return (
     <div className="other-projects-card">
       <div className="other-projects-card__images">
-        <a href={linkLiveDemo}>
+        <a href={linkLiveDemo} target="_blank">
           <Image
             src={desktopThumbnail || ""}
             width={1000}
@@ -101,7 +99,7 @@ export default function OtherProjectsCard({
             target="_blank"
             className="other-projects-card__details-link"
           >
-            <BsGithub size={size} />
+            <BsGithub size={30} />
             {/* Source Code */}
           </a>
           <a
@@ -109,7 +107,7 @@ export default function OtherProjectsCard({
             target="_blank"
             className="other-projects-card__details-link"
           >
-            <BsBookHalf size={size} />
+            <BsBookHalf size={30} />
             {/* Case Study */}
           </a>
         </div>
