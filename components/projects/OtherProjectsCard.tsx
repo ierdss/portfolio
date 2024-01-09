@@ -41,12 +41,14 @@ export default function OtherProjectsCard({
   linkCaseStudy,
   tags,
 }: OtherProjectsCardProps) {
+  const placeholderArray = new Array(4).fill("Project Tag");
+
   return (
     <div className="other-projects-card">
       <div className="other-projects-card__images">
         <a href={linkLiveDemo} target="_blank">
           <Image
-            src={desktopThumbnail || ""}
+            src={desktopThumbnail || "/placeholder/desktop-thumbnail.jpg"}
             width={1000}
             height={1000}
             alt={desktopAlt || "Desktop Thumbnail"}
@@ -75,15 +77,21 @@ export default function OtherProjectsCard({
         <a href={linkCaseStudy}>
           <p className="other-projects-card__details-description">
             {description ||
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At in ea voluptate incidunt veritatis aliquid, atque similique quasi eum sint?"}
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti pariatur dolorum doloribus natus, quisquam illo sunt rem nihil neque repellat consequatur molestiae maxime saepe laborum? Quae nesciunt excepturi quasi reprehenderit quo illum natus incidunt possimus doloribus minus. Fugit, id. Rerum facere, consectetur alias ad consequatur quam quo soluta repellat consequuntur."}
           </p>
         </a>
         <ul className="other-projects-card__details-tags">
-          {tags.map((tag) => (
-            <li key={tag.id} className="other-projects-card__details-tag">
-              {tag.tag}
-            </li>
-          ))}
+          {tags.length !== 0
+            ? tags.map((tag) => (
+                <li key={tag.id} className="other-projects-card__details-tag">
+                  {tag.tag}
+                </li>
+              ))
+            : placeholderArray.map(({ tag }, index) => (
+                <li key={index} className="other-projects-card__details-tag">
+                  {tag}
+                </li>
+              ))}
         </ul>
         <div className="other-projects-card__details-links">
           <a
