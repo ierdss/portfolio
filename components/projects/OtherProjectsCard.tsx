@@ -46,7 +46,7 @@ export default function OtherProjectsCard({
   return (
     <div className="other-projects-card">
       <div className="other-projects-card__images">
-        <a href="">
+        <a href={linkLiveDemo}>
           <Image
             src={desktopThumbnail || ""}
             width={1000}
