@@ -71,7 +71,7 @@ export default function OtherProjectsCard({
           </h1>
         </div>
         <a href={linkCaseStudy}>
-          <p className="other-projects-card__details-description sectionDescription !text-justify md:!text-left">
+          <p className="other-projects-card__details-description">
             {description ||
               "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At in ea voluptate incidunt veritatis aliquid, atque similique quasi eum sint?"}
           </p>
