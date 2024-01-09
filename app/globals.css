@@ -479,6 +479,68 @@ body {
   @apply flex flex-row gap-2 justify-center items-center hover:text-secondary-red capitalize;
 }
 
+/* Other Projects Component */
+.other-projects {
+  @apply w-full px-2;
+}
+
+/* Other Projects Card Component */
+.other-projects-card {
+  @apply w-full rounded-r-2xl overflow-hidden;
+}
+
+.other-projects-card__images {
+  @apply w-full aspect-video overflow-hidden rounded-2xl;
+}
+
+.other-projects-card__image-desktop {
+  @apply w-full;
+}
+
+.other-projects-card__image-mobile {
+  @apply w-full;
+}
+
+.other-projects-card__images {
+  @apply w-full;
+}
+
+.other-projects-card__details {
+  @apply w-full p-2 rounded-2xl;
+}
+
+.other-projects-card__details-subtitle {
+  @apply w-full;
+}
+
+.other-projects-card__details-title {
+  @apply w-full;
+}
+
+.other-projects-card__details-subtitle {
+  @apply w-full;
+}
+
+.other-projects-card__details-description {
+  @apply w-full;
+}
+
+.other-projects-card__details-tags {
+  @apply flex py-2 gap-2 w-full h-full flex-wrap justify-center lg:justify-normal;
+}
+
+.other-projects-card__details-tag {
+  @apply flex justify-center items-center text-xs py-1 px-3 border border-solid border-slate-300 rounded-full font-medium capitalize;
+}
+
+.other-projects-card__details-links {
+  @apply w-full;
+}
+
+.other-projects-card__details-link {
+  @apply w-full;
+}
+
 /* Testimonials Section  */
 .testimonials {
   @apply flexCenter flex-col gap-[50px] text-center;

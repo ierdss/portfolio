@@ -6,30 +6,36 @@ import { IoGlobe } from "react-icons/io5";
 interface OtherProjectsCardProps {
   title: string;
   subtitle?: string;
-  description?: string;
-  thumbnailDesktop?: string;
-  thumbnailMobile?: string;
-  altDesktop?: string;
-  altMobile?: string;
+  descriptionBasic?: string;
+  desktopThumbnail?: string;
+  desktopAlt?: string;
+  mobileThumbnail?: string;
+  mobileAlt?: string;
   linkRepository?: string;
   linkLiveDemo?: string;
   linkCaseStudy?: string;
-  tags: tagProps[];
+  tags: TagProps[];
 }
 
-interface tagProps {
-  name?: string;
-  type?: string;
+interface TagProps {
+  id: number;
+  tag: string;
 }
+
+// MongoDB
+// interface tagProps {
+//   name?: string;
+//   type?: string;
+// }
 
 export default function OtherProjectsCard({
   title,
   subtitle,
-  description,
-  thumbnailDesktop,
-  thumbnailMobile,
-  altDesktop,
-  altMobile,
+  descriptionBasic,
+  desktopThumbnail,
+  desktopAlt,
+  mobileThumbnail,
+  mobileAlt,
   linkRepository,
   linkLiveDemo,
   linkCaseStudy,
@@ -38,60 +44,68 @@ export default function OtherProjectsCard({
   const size = 30;
 
   return (
-    <div>
-      <div>
+    <div className="other-projects-card">
+      <div className="other-projects-card__images">
         <Image
-          src={thumbnailDesktop || ""}
+          src={desktopThumbnail || ""}
           width={50}
           height={50}
-          alt={altDesktop || ""}
+          alt={desktopAlt || ""}
+          className="other-projects-card__image-desktop"
         />
         <Image
-          src={thumbnailMobile || ""}
+          src={mobileThumbnail || ""}
           width={50}
           height={50}
-          alt={altMobile || ""}
+          alt={mobileAlt || ""}
+          className="other-projects-card__image-mobile"
         />
       </div>
-      <div>
+      <div className="other-projects-card__details">
         <div>
-          <h1 className="sectionOverline">{subtitle || "subtitle"}</h1>
-          <h1 className="sectionHeader">{title || "title"}</h1>
+          <h1 className="other-projects-card__details-subtitle sectionOverline">
+            {subtitle || "subtitle"}
+          </h1>
+          <h1 className="other-projects-card__details-title sectionHeader">
+            {title || "title"}
+          </h1>
         </div>
-        <p>
-          {description ||
+        <p className="other-projects-card__details-description sectionDescription !text-justify md:!text-left">
+          {descriptionBasic ||
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At in ea voluptate incidunt veritatis aliquid, atque similique quasi eum sint?"}
         </p>
-        <ul>
+        <ul className="other-projects-card__details-tags">
           {tags.map((tag) => (
-            <li>{tag.name}</li>
+            <li key={tag.id} className="other-projects-card__details-tag">
+              {tag.tag}
+            </li>
           ))}
         </ul>
       </div>
-      <div className="projectLinks">
+      <div className="other-projects-card__links projectLinks">
         <a
           href={linkLiveDemo}
           target="_blank"
-          className="projectLink sectionLeading"
+          className="other-projects-card__link projectLink"
         >
           <IoGlobe size={size} />
-          Live Demo
+          {/* Live Demo */}
         </a>
         <a
           href={linkRepository}
           target="_blank"
-          className="projectLink sectionLeading"
+          className="other-projects-card__link projectLink"
         >
           <BsGithub size={size} />
-          Source Code
+          {/* Source Code */}
         </a>
         <a
           href={linkCaseStudy}
           target="_blank"
-          className="projectLink sectionLeading"
+          className="other-projects-card__link projectLink"
         >
           <BsBookHalf size={size} />
-          Case Study
+          {/* Case Study */}
         </a>
       </div>
     </div>
