@@ -18,30 +18,11 @@ export default function Projects() {
     >
       <div className="flex flex-col justify-center items-center w-full gap-[50px] section-padding__y-axis">
         <div className="">
-          <motion.h1
-            className="sectionOverline !text-center"
-            ref={ref}
-            style={{
-              transform: isInView ? "translateY(0px)" : "translateY(200px)",
-              opacity: isInView ? 1 : 0,
-              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s",
-            }}
-          >
-            Projects
-          </motion.h1>
-          <motion.h1
-            className="sectionHeading !text-center"
-            ref={ref}
-            style={{
-              transform: isInView ? "translateY(0px)" : "translateY(200px)",
-              opacity: isInView ? 1 : 0,
-              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
-            }}
-          >
+          <h1 className="sectionOverline !text-center">Projects</h1>
+          <h1 className="sectionHeading !text-center" ref={ref}>
             Check Out My Projects!
-          </motion.h1>
+          </h1>
         </div>
-
         <FeaturedProjects />
         <OtherProjects />
       </div>
