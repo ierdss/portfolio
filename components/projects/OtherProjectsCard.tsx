@@ -62,12 +62,12 @@ export default function OtherProjectsCard({
         />
       </div>
       <div className="other-projects-card__details">
-        <div>
-          <h1 className="other-projects-card__details-subtitle sectionOverline">
-            {subtitle || "subtitle"}
-          </h1>
-          <h1 className="other-projects-card__details-title sectionHeader">
+        <div className="gap-2">
+          <h1 className="other-projects-card__details-title">
             {title || "title"}
+          </h1>
+          <h1 className="other-projects-card__details-subtitle">
+            {subtitle || "subtitle"}
           </h1>
         </div>
         <p className="other-projects-card__details-description sectionDescription !text-justify md:!text-left">
@@ -81,32 +81,32 @@ export default function OtherProjectsCard({
             </li>
           ))}
         </ul>
-      </div>
-      <div className="other-projects-card__links projectLinks">
-        <a
-          href={linkLiveDemo}
-          target="_blank"
-          className="other-projects-card__link projectLink"
-        >
-          <IoGlobe size={size} />
-          {/* Live Demo */}
-        </a>
-        <a
-          href={linkRepository}
-          target="_blank"
-          className="other-projects-card__link projectLink"
-        >
-          <BsGithub size={size} />
-          {/* Source Code */}
-        </a>
-        <a
-          href={linkCaseStudy}
-          target="_blank"
-          className="other-projects-card__link projectLink"
-        >
-          <BsBookHalf size={size} />
-          {/* Case Study */}
-        </a>
+        <div className="other-projects-card__links projectLinks">
+          <a
+            href={linkLiveDemo}
+            target="_blank"
+            className="other-projects-card__link projectLink"
+          >
+            <IoGlobe size={size} />
+            {/* Live Demo */}
+          </a>
+          <a
+            href={linkRepository}
+            target="_blank"
+            className="other-projects-card__link projectLink"
+          >
+            <BsGithub size={size} />
+            {/* Source Code */}
+          </a>
+          <a
+            href={linkCaseStudy}
+            target="_blank"
+            className="other-projects-card__link projectLink"
+          >
+            <BsBookHalf size={size} />
+            {/* Case Study */}
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -486,7 +486,7 @@ body {
 
 /* Other Projects Card Component */
 .other-projects-card {
-  @apply w-full rounded-r-2xl overflow-hidden;
+  @apply w-full h-fit rounded-2xl overflow-hidden border border-slate-300 shadow-lg;
 }
 
 .other-projects-card__images {
@@ -506,19 +506,15 @@ body {
 }
 
 .other-projects-card__details {
-  @apply w-full p-2 rounded-2xl;
+  @apply w-full p-4 rounded-2xl h-fit flex flex-col gap-4;
 }
 
 .other-projects-card__details-subtitle {
-  @apply w-full;
+  @apply block text-left w-full text-xs text-secondary-red font-extrabold uppercase;
 }
 
 .other-projects-card__details-title {
-  @apply w-full;
-}
-
-.other-projects-card__details-subtitle {
-  @apply w-full;
+  @apply block text-left w-full text-xl font-extrabold capitalize;
 }
 
 .other-projects-card__details-description {
@@ -526,7 +522,7 @@ body {
 }
 
 .other-projects-card__details-tags {
-  @apply flex py-2 gap-2 w-full h-full flex-wrap justify-center lg:justify-normal;
+  @apply flex py-2 gap-1 w-full h-full flex-wrap justify-center lg:justify-normal;
 }
 
 .other-projects-card__details-tag {
