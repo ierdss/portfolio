@@ -3,8 +3,7 @@ import { PrismaClient } from "@prisma/client";
 interface createProject {
   title: string;
   subtitle?: string;
-  descriptionBasic?: string;
-  descriptionFull?: string;
+  description?: string;
   isFeatured?: boolean;
 
   desktopThumbnail?: string;
@@ -20,8 +19,7 @@ interface createProject {
 export default async function createProject({
   title,
   subtitle,
-  descriptionBasic,
-  descriptionFull,
+  description,
   isFeatured,
   desktopThumbnail,
   desktopAlt,
@@ -38,8 +36,7 @@ export default async function createProject({
       data: {
         title: title,
         subtitle: subtitle,
-        descriptionBasic: descriptionBasic,
-        descriptionFull: descriptionFull,
+        description: description,
         isFeatured: isFeatured,
         desktopThumbnail: desktopThumbnail,
         desktopAlt: desktopAlt,
