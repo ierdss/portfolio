@@ -462,12 +462,12 @@ body {
   @apply w-full max-w-screen-xl flex flex-col gap-8;
 }
 .featured-projects__map {
-  @apply w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  @apply w-full grid grid-cols-1 gap-12;
 }
 
 /* Featured Projects Card Component */
 .featured-projects-card {
-  @apply w-full h-fit rounded-2xl overflow-hidden shadow-lg;
+  @apply w-full h-fit rounded-2xl overflow-hidden shadow-lg flex flex-row even:flex-row-reverse items-center;
 }
 
 .featured-projects-card__images {
@@ -484,7 +484,7 @@ body {
 }
 
 .featured-projects-card__details {
-  @apply w-full p-4 rounded-2xl h-fit flex flex-col gap-4;
+  @apply w-1/2 p-4 rounded-2xl h-fit flex flex-col gap-4;
 }
 .featured-projects-card__details-title {
   @apply block text-left w-full text-2xl font-bold capitalize;
@@ -493,7 +493,7 @@ body {
   @apply block text-left w-full text-xs text-secondary-red font-bold uppercase;
 }
 .featured-projects-card__details-description {
-  @apply text-sm text-black font-medium text-justify lg:text-left normal-case line-clamp-3;
+  @apply text-sm text-black font-medium text-justify lg:text-left normal-case;
 }
 .featured-projects-card__details-tags {
   @apply flex gap-1 w-full h-full flex-wrap line-clamp-3;
