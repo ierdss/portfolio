@@ -8,8 +8,7 @@ export const Projects = [
     mobileAlt: "RWD full page on mobile",
     title: "Marked A.I.",
     subtitle: "Artificial Intelligence",
-    descriptionBasic: "",
-    descriptionFull:
+    description:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
     tags: [
       { id: 1, tag: "Next.js" },
@@ -30,8 +29,7 @@ export const Projects = [
     mobileAlt: "RWD full page on mobile",
     title: "Available",
     subtitle: "e-commerce shop",
-    descriptionBasic: "",
-    descriptionFull:
+    description:
       "An online shop that sells a lot of products. It also has a dashboard for the seller and the user. Sellers can effortlessly manage their inventory, track orders, and engage with customers, while users can easily track their purchases, manage their profiles, and explore personalized recommendations.",
     tags: [
       { id: 1, tag: "Next.js" },
@@ -51,8 +49,7 @@ export const Projects = [
     mobileAlt: "RWD full page on mobile",
     title: "Bridge",
     subtitle: "Social Platform",
-    descriptionBasic: "",
-    descriptionFull:
+    description:
       "Bridge is an all-in-one communication app designed to seamlessly connect you with friends and loved ones. With Bridge, you can effortlessly send messages to users and join engaging voice chats fostering meaningful conversations. Elevate your interactions with face-to-face connections through high-quality video calls, making every conversation feel personal and authentic. Stay connected like never before with Bridge – where messaging, voice chats, and video calls come together in one intuitive platform.",
     tags: [
       { id: 1, tag: "Next.js" },
@@ -73,8 +70,7 @@ export const Projects = [
     mobileAlt: "RWD full page on mobile",
     title: "Road Way Delivery",
     subtitle: "Transport Service",
-    descriptionBasic: "",
-    descriptionFull:
+    description:
       "Road Way DeliveryService is a leading logistics company revolutionizing the industry with fast, reliable road transportation solutions. We specialize in secure, on-time deliveries for customers and businesses across local and regional destinations.",
     tags: [
       { id: 1, tag: "Next.js" },
@@ -99,8 +95,7 @@ export const Projects = [
     mobileAlt: "RWD full page on mobile",
     title: "Shoutcaster",
     subtitle: "Video Sharing",
-    descriptionBasic: "",
-    descriptionFull:
+    description:
       "Welcome to Shoutcaster, our dedicated podcast platform, the ultimate destination for immersive audio experiences. Discover a world of knowledge, stories, and insights as you explore a diverse array of podcasts on our platform. Whether you're into captivating storytelling, thought-provoking discussions, or expert interviews, our platform offers a curated selection to cater to every interest. Immerse yourself in a universe of sound, where ideas and narratives come to life, all in one convenient podcast-exclusive platform.",
     tags: [
       { id: 1, tag: "Next.js" },
