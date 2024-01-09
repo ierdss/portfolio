@@ -62,7 +62,7 @@ export default function OtherProjectsCard({
         />
       </div>
       <div className="other-projects-card__details">
-        <div className="gap-2">
+        <div className="flex flex-col gap-2">
           <h1 className="other-projects-card__details-title">
             {title || "title"}
           </h1>
@@ -70,10 +70,12 @@ export default function OtherProjectsCard({
             {subtitle || "subtitle"}
           </h1>
         </div>
-        <p className="other-projects-card__details-description sectionDescription !text-justify md:!text-left">
-          {descriptionBasic ||
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At in ea voluptate incidunt veritatis aliquid, atque similique quasi eum sint?"}
-        </p>
+        <a href={linkCaseStudy}>
+          <p className="other-projects-card__details-description sectionDescription !text-justify md:!text-left">
+            {descriptionBasic ||
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At in ea voluptate incidunt veritatis aliquid, atque similique quasi eum sint?"}
+          </p>
+        </a>
         <ul className="other-projects-card__details-tags">
           {tags.map((tag) => (
             <li key={tag.id} className="other-projects-card__details-tag">
@@ -81,19 +83,19 @@ export default function OtherProjectsCard({
             </li>
           ))}
         </ul>
-        <div className="other-projects-card__links projectLinks">
+        <div className="other-projects-card__details-links">
           <a
             href={linkLiveDemo}
             target="_blank"
-            className="other-projects-card__link projectLink"
+            className="other-projects-card__details-link"
           >
-            <IoGlobe size={size} />
+            <IoGlobe size={34} />
             {/* Live Demo */}
           </a>
           <a
             href={linkRepository}
             target="_blank"
-            className="other-projects-card__link projectLink"
+            className="other-projects-card__details-link"
           >
             <BsGithub size={size} />
             {/* Source Code */}
@@ -101,7 +103,7 @@ export default function OtherProjectsCard({
           <a
             href={linkCaseStudy}
             target="_blank"
-            className="other-projects-card__link projectLink"
+            className="other-projects-card__details-link"
           >
             <BsBookHalf size={size} />
             {/* Case Study */}
