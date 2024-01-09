@@ -14,7 +14,7 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="w-full h-fit flex flex-col justify-center items-center md:text-left "
+      className="w-full h-fit flex flex-col justify-center items-center md:text-left px-2 sm:px-5 "
     >
       <div className="flex flex-col justify-center items-center w-full gap-[50px] section-padding__y-axis">
         <div className="">
