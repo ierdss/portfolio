@@ -23,7 +23,7 @@ export default async function OtherProjects() {
         <h1 className="sectionOverline">More From Me</h1>
         <h1 className="sectionHeader">Other Projects</h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
         {Projects.map((project) => (
           <OtherProjectsCard
             key={project.id}
