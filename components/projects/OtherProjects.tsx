@@ -1,10 +1,18 @@
 import getOtherProjects from "../../actions/getOtherProjects";
 import OtherProjectsCard from "./OtherProjectsCard";
 
-interface tagProps {
-  name?: string;
-  type?: string;
+import { Projects } from "@/constants/projectsdatabase";
+
+interface TagProps {
+  id: number;
+  tag: string;
 }
+
+// MongoDb
+// interface tagProps {
+//   name?: string;
+//   type?: string;
+// }
 
 export default async function OtherProjects() {
   const otherProjects = await getOtherProjects();
@@ -15,23 +23,23 @@ export default async function OtherProjects() {
         <h1 className="sectionOverline">More From Me</h1>
         <h1 className="sectionHeader">Other Projects</h1>
       </div>
-      <div className="grid-cols-1 md:grid-cols-3">
-        {otherProjects.map((project) => (
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-5 w-full">
+        {Projects.map((project) => (
           <OtherProjectsCard
             key={project.id}
             title={project.title !== null ? project.title : ""}
             subtitle={project.subtitle !== null ? project.subtitle : ""}
-            description={
-              project.description !== null ? project.description : ""
+            descriptionBasic={
+              project.descriptionBasic !== null ? project.descriptionBasic : ""
             }
-            thumbnailDesktop={
-              project.thumbnailDesktop !== null ? project.thumbnailDesktop : ""
+            desktopThumbnail={
+              project.desktopThumbnail !== null ? project.desktopThumbnail : ""
             }
-            thumbnailMobile={
-              project.thumbnailMobile !== null ? project.thumbnailMobile : ""
+            desktopAlt={project.desktopAlt !== null ? project.desktopAlt : ""}
+            mobileThumbnail={
+              project.mobileThumbnail !== null ? project.mobileThumbnail : ""
             }
-            altDesktop={project.altDesktop !== null ? project.altDesktop : ""}
-            altMobile={project.altMobile !== null ? project.altMobile : ""}
+            mobileAlt={project.mobileAlt !== null ? project.mobileAlt : ""}
             linkRepository={
               project.linkRepository !== null ? project.linkRepository : ""
             }
@@ -41,7 +49,7 @@ export default async function OtherProjects() {
             linkCaseStudy={
               project.linkCaseStudy !== null ? project.linkCaseStudy : ""
             }
-            tags={project.tags as tagProps[]}
+            tags={project.tags as TagProps[]}
           />
         ))}
       </div>
