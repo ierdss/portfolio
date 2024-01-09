@@ -107,4 +107,18 @@ export const Projects = [
     linkLiveDemo: "/",
     linkCaseStudy: "/",
   },
+  {
+    id: 5,
+    desktopThumbnail: "",
+    desktopAlt: "",
+    mobileThumbnail: "",
+    mobileAlt: "",
+    title: "",
+    subtitle: "",
+    description: "",
+    tags: [],
+    linkRepository: "/",
+    linkLiveDemo: "/",
+    linkCaseStudy: "/",
+  },
 ];
