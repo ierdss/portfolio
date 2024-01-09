@@ -481,16 +481,16 @@ body {
   @apply w-full p-4 rounded-2xl h-fit flex flex-col gap-4;
 }
 
-.other-projects-card__details-subtitle {
-  @apply block text-left w-full text-xs text-secondary-red font-extrabold uppercase;
+.other-projects-card__details-title {
+  @apply block text-left w-full text-2xl font-bold capitalize;
 }
 
-.other-projects-card__details-title {
-  @apply block text-left w-full text-xl font-bold capitalize;
+.other-projects-card__details-subtitle {
+  @apply block text-left w-full text-xs text-secondary-red font-bold uppercase;
 }
 
 .other-projects-card__details-description {
-  @apply text-base text-slate-500 font-medium text-justify lg:text-left normal-case line-clamp-3;
+  @apply text-sm text-slate-500 font-medium text-justify lg:text-left normal-case line-clamp-3;
 }
 
 .other-projects-card__details-tags {
