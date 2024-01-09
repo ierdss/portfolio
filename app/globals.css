@@ -459,7 +459,11 @@ body {
 
 /* Featured Projects Component */
 .featured-projects {
-  @apply w-full px-2 sm:p-5;
+  @apply w-full px-2 sm:p-5 max-w-screen-xl;
+}
+
+.featured-projects__map {
+  @apply w-full sm:p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
 }
 
 /* Featured Projects Card Component */
@@ -470,15 +474,12 @@ body {
 .featured-projects-card__images {
   @apply w-full aspect-video overflow-hidden rounded-2xl;
 }
-
 .featured-projects-card__image-desktop {
   @apply w-full;
 }
-
 .featured-projects-card__image-mobile {
   @apply w-full;
 }
-
 .featured-projects-card__images {
   @apply w-full;
 }
@@ -486,38 +487,34 @@ body {
 .featured-projects-card__details {
   @apply w-full p-4 rounded-2xl h-fit flex flex-col gap-4;
 }
-
 .featured-projects-card__details-title {
   @apply block text-left w-full text-2xl font-bold capitalize;
 }
-
 .featured-projects-card__details-subtitle {
   @apply block text-left w-full text-xs text-secondary-red font-bold uppercase;
 }
-
 .featured-projects-card__details-description {
   @apply text-sm text-black font-medium text-justify lg:text-left normal-case line-clamp-3;
 }
-
 .featured-projects-card__details-tags {
   @apply flex gap-1 w-full h-full flex-wrap line-clamp-3;
 }
-
 .featured-projects-card__details-tag {
   @apply flex justify-center items-center text-xs py-1 px-3 text-slate-600 border border-solid border-slate-300 rounded-full font-medium capitalize;
 }
-
 .featured-projects-card__details-links {
   @apply flex flex-row flex-wrap items-center gap-8 w-full;
 }
-
 .featured-projects-card__details-link {
   @apply flex flex-row gap-2 justify-center items-center hover:text-secondary-red capitalize;
 }
 
 /* Other Projects Component */
 .other-projects {
-  @apply w-full px-2 sm:p-5;
+  @apply w-full max-w-screen-xl;
+}
+.other-projects__map {
+  @apply w-full sm:p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
 }
 
 /* Other Projects Card Component */
