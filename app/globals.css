@@ -105,8 +105,12 @@ body {
   @apply font-medium text-sm text-neutral-800 normal-case text-left;
 }
 
-.sectionPadding {
-  @apply px-[10px] md:px-[100px] py-[50px];
+.section-padding__x-axis {
+  @apply px-[10px] md:px-[100px];
+}
+
+.section-padding__y-axis {
+  @apply py-[50px];
 }
 
 .sectionTitle {
@@ -187,7 +191,7 @@ body {
 
 /* Hero Section  */
 .hero {
-  @apply flex flex-col lg:flex-row justify-center items-center gap-[40px] lg:gap-[50px] h-[100vh] max-h-[800px] max-w-screen-xl  sectionPadding relative overflow-hidden;
+  @apply flex flex-col lg:flex-row justify-center items-center gap-[40px] lg:gap-[50px] h-[100vh] max-h-[800px] max-w-screen-xl section-padding__x-axis section-padding__y-axis relative overflow-hidden;
 }
 
 .hero__portrait {
@@ -490,7 +494,7 @@ body {
 }
 
 .other-projects-card__details-description {
-  @apply text-sm text-slate-500 font-medium text-justify lg:text-left normal-case line-clamp-3;
+  @apply text-sm text-black font-medium text-justify lg:text-left normal-case line-clamp-3;
 }
 
 .other-projects-card__details-tags {
