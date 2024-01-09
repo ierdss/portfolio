@@ -180,7 +180,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="sectionPadding w-full h-full !px-[0px] md:w-1/2 flex flex-col gap-[50px] bg-neutral-50 ">
+      <div className="section-padding__y-axis w-full h-full !px-[0px] md:w-1/2 flex flex-col gap-[50px] bg-neutral-50">
         <div className="w-full px-[3rem]">
           <h1 className="sectionOverline !text-center md:!text-left">
             Contact

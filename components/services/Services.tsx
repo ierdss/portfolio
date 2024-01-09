@@ -11,7 +11,7 @@ export default function Services() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div className="w-full  bg-rose-50 flex items-center justify-center">
+    <div className="w-full bg-rose-50 flex items-center justify-center">
       <div id="services" className="services sectionPadding">
         <div className="servicesContent">
           <div className="w-full  md:w-full">
