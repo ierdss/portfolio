@@ -5,7 +5,7 @@ import { PrismaClient } from "@prisma/client";
 import FeaturedProjects from "./FeaturedProjects";
 import OtherProjects from "./OtherProjects";
 
-export default async function Projects() {
+export default function Projects() {
   const prisma = new PrismaClient();
 
   const ref = useRef(null);
@@ -42,7 +42,7 @@ export default async function Projects() {
           </motion.h1>
         </div>
 
-        {/* <FeaturedProjects /> */}
+        <FeaturedProjects />
         <OtherProjects />
       </div>
     </div>

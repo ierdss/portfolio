@@ -3,13 +3,14 @@ import { PrismaClient } from "@prisma/client";
 interface createProject {
   title: string;
   subtitle?: string;
-  description?: string;
+  descriptionBasic?: string;
+  descriptionFull?: string;
   isFeatured?: boolean;
 
-  thumbnailDesktop?: string;
-  thumbnailMobile?: string;
-  altDesktop?: string;
-  altMobile?: string;
+  desktopThumbnail?: string;
+  desktopAlt?: string;
+  mobileThumbnail?: string;
+  mobileAlt?: string;
 
   linkRepository?: string;
   linkLiveDemo?: string;
@@ -19,12 +20,13 @@ interface createProject {
 export default async function createProject({
   title,
   subtitle,
-  description,
+  descriptionBasic,
+  descriptionFull,
   isFeatured,
-  thumbnailDesktop,
-  thumbnailMobile,
-  altDesktop,
-  altMobile,
+  desktopThumbnail,
+  desktopAlt,
+  mobileThumbnail,
+  mobileAlt,
   linkRepository,
   linkLiveDemo,
   linkCaseStudy,
@@ -36,12 +38,13 @@ export default async function createProject({
       data: {
         title: title,
         subtitle: subtitle,
-        description: description,
+        descriptionBasic: descriptionBasic,
+        descriptionFull: descriptionFull,
         isFeatured: isFeatured,
-        thumbnailDesktop: thumbnailDesktop,
-        thumbnailMobile: thumbnailMobile,
-        altDesktop: altDesktop,
-        altMobile: altMobile,
+        desktopThumbnail: desktopThumbnail,
+        desktopAlt: desktopAlt,
+        mobileThumbnail: mobileThumbnail,
+        mobileAlt: mobileAlt,
         linkRepository: linkRepository,
         linkLiveDemo: linkLiveDemo,
         linkCaseStudy: linkCaseStudy,
