@@ -458,7 +458,7 @@ body {
 
 /* Other Projects Card Component */
 .other-projects-card {
-  @apply w-full h-fit rounded-2xl overflow-hidden border border-slate-300 shadow-lg;
+  @apply w-full h-fit rounded-2xl overflow-hidden shadow-lg;
 }
 
 .other-projects-card__images {
