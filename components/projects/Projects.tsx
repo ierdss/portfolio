@@ -14,9 +14,9 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="w-full flex flex-col justify-center items-center md:text-left"
+      className="w-full h-fit flex flex-col justify-center items-center md:text-left "
     >
-      <div className="flex flex-col justify-center items-center w-full gap-[50px] sectionPadding">
+      <div className="flex flex-col justify-center items-center w-full gap-[50px] section-padding__y-axis">
         <div className="">
           <motion.h1
             className="sectionOverline !text-center"
