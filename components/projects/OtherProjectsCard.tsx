@@ -41,7 +41,28 @@ export default function OtherProjectsCard({
   linkCaseStudy,
   tags,
 }: OtherProjectsCardProps) {
-  const placeholderArray = new Array(4).fill("Project Tag");
+  const placeholderArray = [
+    {
+      id: 1,
+      name: "Project Tag",
+    },
+    {
+      id: 2,
+      name: "Project Tag",
+    },
+    {
+      id: 3,
+      name: "Project Tag",
+    },
+    {
+      id: 4,
+      name: "Project Tag",
+    },
+    {
+      id: 5,
+      name: "Project Tag",
+    },
+  ];
 
   return (
     <div className="other-projects-card">
@@ -87,9 +108,9 @@ export default function OtherProjectsCard({
                   {tag.tag}
                 </li>
               ))
-            : placeholderArray.map(({ tag }, index) => (
-                <li key={index} className="other-projects-card__details-tag">
-                  {tag}
+            : placeholderArray.map((tag) => (
+                <li key={tag.id} className="other-projects-card__details-tag">
+                  {tag.name}
                 </li>
               ))}
         </ul>
