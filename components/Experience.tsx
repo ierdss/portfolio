@@ -78,7 +78,7 @@ export default function Experience() {
   return (
     <div
       id="experience"
-      className="w-full sectionPadding flexCenter flex-col gap-[50px]"
+      className="w-full flexCenter flex-col gap-[50px] section-padding__y-axis"
     >
       <div className="w-[90%] md:w-full !text-left md:!text-center">
         <motion.h1
