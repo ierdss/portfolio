@@ -361,7 +361,7 @@ body {
 
 /* Technologies Section  */
 .technologies {
-  @apply bg-secondary-red w-full flex flex-col md:flex-row gap-[50px] justify-between items-center bg-opacity-60;
+  @apply w-full flex flex-col section-padding__y-axis max-w-screen-xl gap-8;
 }
 
 .technologiesCardGrid {

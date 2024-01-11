@@ -2,7 +2,7 @@ import Navbar from "./navbar/Navbar";
 import Hero from "./Hero";
 import Services from "./services/Services";
 import About from "./About";
-import Technologies from "./Technologies";
+import Technologies from "./technologies/Technologies";
 import Workflow from "./WorkFlow";
 import Experience from "./Experience";
 import Projects from "./projects/Projects";
