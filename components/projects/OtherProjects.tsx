@@ -14,8 +14,8 @@ interface TagProps {
 //   type?: string;
 // }
 
-export default async function OtherProjects() {
-  const otherProjects = await getOtherProjects();
+export default function OtherProjects() {
+  // const otherProjects = await getOtherProjects();
 
   return (
     <div className="other-projects">

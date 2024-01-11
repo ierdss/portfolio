@@ -5,6 +5,8 @@ import { IoGlobe } from "react-icons/io5";
 import { CiMobile1 } from "react-icons/ci";
 import { IoIosLaptop } from "react-icons/io";
 
+import { Tooltip } from "../../src/components/ReactTooltip";
+
 interface OtherProjectsCardProps {
   title: string;
   subtitle?: string;
@@ -128,6 +130,7 @@ export default function OtherProjectsCard({
         </ul>
         <div className="other-projects-card__details-links">
           <a
+            data-tooltip-id="tooltip__live-demo"
             href={linkLiveDemo}
             target="_blank"
             className="other-projects-card__details-link"
@@ -136,6 +139,7 @@ export default function OtherProjectsCard({
             {/* Live Demo */}
           </a>
           <a
+            data-tooltip-id="tooltip__source-code"
             href={linkSourceCode}
             target="_blank"
             className="other-projects-card__details-link"
@@ -144,6 +148,7 @@ export default function OtherProjectsCard({
             {/* Source Code */}
           </a>
           <a
+            data-tooltip-id="tooltip__case-study"
             href={linkCaseStudy}
             target="_blank"
             className="other-projects-card__details-link"
@@ -151,6 +156,24 @@ export default function OtherProjectsCard({
             <BsBookHalf size={30} />
             {/* Case Study */}
           </a>
+          <Tooltip
+            id="tooltip__live-demo"
+            place="left"
+            content="Live Demo"
+            style={{ borderRadius: "4px" }}
+          />
+          <Tooltip
+            id="tooltip__source-code"
+            place="bottom"
+            content="Source Code"
+            style={{ borderRadius: "4px" }}
+          />
+          <Tooltip
+            id="tooltip__case-study"
+            place="right"
+            content="Case Study"
+            style={{ borderRadius: "4px" }}
+          />
         </div>
       </div>
     </div>
