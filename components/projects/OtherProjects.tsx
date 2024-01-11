@@ -46,7 +46,7 @@ export default async function OtherProjects() {
             platformMobile={
               project.platformMobile !== null ? project.platformMobile : false
             }
-            linkRepository={
+            linkSourceCode={
               project.linkRepository !== null ? project.linkRepository : ""
             }
             linkLiveDemo={

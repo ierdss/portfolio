@@ -15,7 +15,7 @@ interface OtherProjectsCardProps {
   mobileAlt?: string;
   platformDesktop?: boolean;
   platformMobile?: boolean;
-  linkRepository?: string;
+  linkSourceCode?: string;
   linkLiveDemo?: string;
   linkCaseStudy?: string;
   tags: TagProps[];
@@ -42,7 +42,7 @@ export default function OtherProjectsCard({
   mobileAlt,
   platformDesktop,
   platformMobile,
-  linkRepository,
+  linkSourceCode,
   linkLiveDemo,
   linkCaseStudy,
   tags,
@@ -136,7 +136,7 @@ export default function OtherProjectsCard({
             {/* Live Demo */}
           </a>
           <a
-            href={linkRepository}
+            href={linkSourceCode}
             target="_blank"
             className="other-projects-card__details-link"
           >
