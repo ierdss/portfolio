@@ -57,7 +57,7 @@ const Technologies = () => {
           Tools I Am Most Familiar With{" "}
         </motion.h1>
       </div>
-      <ul className="w-full grid grid-flow-row grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3 md:gap-5">
+      <ul className="w-full grid grid-flow-row grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3 md:gap-5">
         {Skills.map((skill) => (
           <TechnologiesCard key={skill.id} />
         ))}
