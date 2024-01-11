@@ -20,8 +20,8 @@ export default async function FeaturedProjects() {
   return (
     <div className="featured-projects">
       <div className="grid-cols-1 md:grid-cols-2">
-        <h1 className="sectionOverline">My Best Works</h1>
-        <h1 className="sectionHeading">Featured Projects</h1>
+        <h1 className="sectionOverline">Featured Projects</h1>
+        <h1 className="sectionHeading">My Best Works</h1>
       </div>
       <div className="featured-projects__map">
         {Projects.map((project) => (

@@ -20,8 +20,8 @@ export default async function OtherProjects() {
   return (
     <div className="other-projects">
       <div>
-        <h1 className="sectionOverline">More From Me</h1>
-        <h1 className="sectionHeading">Other Projects</h1>
+        <h1 className="sectionOverline">Other Projects</h1>
+        <h1 className="sectionHeading">More From Me</h1>
       </div>
       <div className="other-projects__map">
         {Projects.map((project) => (
