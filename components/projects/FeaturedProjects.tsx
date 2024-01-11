@@ -40,6 +40,12 @@ export default async function FeaturedProjects() {
               project.mobileThumbnail !== null ? project.mobileThumbnail : ""
             }
             mobileAlt={project.mobileAlt !== null ? project.mobileAlt : ""}
+            platformDesktop={
+              project.platformDesktop !== null ? project.platformDesktop : false
+            }
+            platformMobile={
+              project.platformMobile !== null ? project.platformMobile : false
+            }
             linkRepository={
               project.linkRepository !== null ? project.linkRepository : ""
             }
