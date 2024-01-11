@@ -2,6 +2,8 @@ import Image from "next/image";
 
 import { BsBookHalf, BsGithub } from "react-icons/bs";
 import { IoGlobe } from "react-icons/io5";
+import { CiMobile1 } from "react-icons/ci";
+import { IoIosLaptop } from "react-icons/io";
 
 interface OtherProjectsCardProps {
   title: string;
@@ -11,6 +13,8 @@ interface OtherProjectsCardProps {
   desktopAlt?: string;
   mobileThumbnail?: string;
   mobileAlt?: string;
+  platformDesktop?: boolean;
+  platformMobile?: boolean;
   linkRepository?: string;
   linkLiveDemo?: string;
   linkCaseStudy?: string;
@@ -36,6 +40,8 @@ export default function OtherProjectsCard({
   desktopAlt,
   mobileThumbnail,
   mobileAlt,
+  platformDesktop,
+  platformMobile,
   linkRepository,
   linkLiveDemo,
   linkCaseStudy,
@@ -87,13 +93,19 @@ export default function OtherProjectsCard({
         />
       </div>
       <div className="other-projects-card__details">
-        <div>
-          <h1 className="other-projects-card__details-title">
-            {title || "title"}
-          </h1>
-          <h1 className="other-projects-card__details-subtitle">
-            {subtitle || "subtitle"}
-          </h1>
+        <div className="other-projects-card__details-header">
+          <div>
+            <h1 className="other-projects-card__details-title">
+              {title || "title"}
+            </h1>
+            <h1 className="other-projects-card__details-subtitle">
+              {subtitle || "subtitle"}
+            </h1>
+          </div>
+          <div className="other-projects-card__details-platforms">
+            {platformDesktop ? <IoIosLaptop size={40} /> : ""}
+            {platformMobile ? <CiMobile1 size={25} /> : ""}
+          </div>
         </div>
         <a href={linkCaseStudy}>
           <p className="other-projects-card__details-description">
