@@ -14,8 +14,8 @@ interface TagProps {
 //   type?: string;
 // }
 
-export default async function FeaturedProjects() {
-  const featuredProjects = await getFeaturedProjects();
+export default function FeaturedProjects() {
+  // const featuredProjects = await getFeaturedProjects();
 
   return (
     <div className="featured-projects">
