@@ -19,7 +19,7 @@ export default function Projects() {
       <div className="flex flex-col justify-center items-center w-full gap-[50px] section-padding__y-axis">
         <div className="">
           <h1 className="sectionOverline !text-center">Projects</h1>
-          <h1 className="sectionHeading !text-center" ref={ref}>
+          <h1 className="sectionHeading !text-center">
             Check Out My Projects!
           </h1>
         </div>
