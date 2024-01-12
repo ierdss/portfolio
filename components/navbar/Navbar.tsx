@@ -38,13 +38,16 @@ export default function Navbar() {
           <h1 className="navbar__logo">ANDREI</h1>
         </Link>
         <ul id="navbar-links" className="navbar-desktop__links">
-          {NavLinks.map(({ href, text }, index) => (
-            <li key={index}>
-              <Link href={href} className="navbar-desktop__link group relative">
-                {text}
-                <span className="ease absolute bottom-0 left-[50%] -translate-x-1/2 h-0 w-0 border-t-2 border-secondary-red transition-all duration-500 group-hover:w-full" />
-              </Link>
-            </li>
+          {NavLinks.map(({ id, href, text }) => (
+            <Link
+              key={id}
+              href={href}
+              data-to-scrollspy-id={id}
+              className="navbar-desktop__link group relative"
+            >
+              {text}
+              <span className="ease absolute bottom-0 left-[50%] -translate-x-1/2 h-0 w-0 border-t-2 border-secondary-red transition-all duration-500 group-hover:w-full" />
+            </Link>
           ))}
         </ul>
         <div className="hidden lg:flex">
@@ -58,10 +61,10 @@ export default function Navbar() {
 }
 
 const NavLinks = [
-  { href: "#services", text: "Services" },
-  { href: "#about", text: "About" },
-  { href: "#experience", text: "Experience" },
-  { href: "#projects", text: "Projects" },
+  { id: "services", href: "#services", text: "Services" },
+  { id: "about", href: "#about", text: "About" },
+  { id: "experience", href: "#experience", text: "Experience" },
+  { id: "projects", href: "#projects", text: "Projects" },
   // { href: "#testimonials", text: "Testimonials" },
-  { href: "#contact", text: "Contact" },
+  { id: "contact", href: "#contact", text: "Contact" },
 ];
