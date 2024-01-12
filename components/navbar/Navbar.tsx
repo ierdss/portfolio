@@ -23,7 +23,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav id="navbar" className="navbar">
+    <div id="navbar" className="navbar">
       {/* Measures the scroll progress on the page. */}
       <ProgressBar
         color1="#e2e8f0"
@@ -32,7 +32,7 @@ export default function Navbar() {
         position="fixed"
       />
 
-      <div className="navbar-desktop">
+      <nav className="navbar-desktop">
         <Link href="#">
           <h1 className="navbar-logo">ANDREI</h1>
         </Link>
@@ -61,11 +61,39 @@ export default function Navbar() {
             />
           ))}
         </ul>
+      </nav>
 
-        {/* Navbar Mobile */}
-        {/* <NavbarMobile links={NavLinks} /> */}
-      </div>
-    </nav>
+      <nav className="navbar-mobile">
+        <Link href="#">
+          <h1 className="navbar-logo">ANDREI</h1>
+        </Link>
+        <ul className="navbar-links navbar-mobile_-links">
+          {NavLinks.map(({ id, href, text }) => (
+            <Link
+              key={id}
+              href={href}
+              data-to-scrollspy-id={id}
+              className="navbar-link navbar-mobile__link group"
+            >
+              {text}
+              <span className="ease absolute bottom-0 left-[50%] -translate-x-1/2 h-0 w-0 border-t-2 border-secondary-red transition-all duration-500 group-hover:w-full" />
+            </Link>
+          ))}
+        </ul>
+        <ul className="navbar-socials">
+          {SocialMediaLinks.map(({ id, ariaLabel, url }) => (
+            <SocialIcon
+              key={id}
+              url={url}
+              target="_blank"
+              label={ariaLabel}
+              style={{ height: 35, width: 35 }}
+              className="text-secondary-red hover:text-accent-pink"
+            />
+          ))}
+        </ul>
+      </nav>
+    </div>
   );
 }
 
