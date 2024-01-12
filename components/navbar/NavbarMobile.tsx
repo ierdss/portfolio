@@ -43,7 +43,6 @@ export default function NavbarMobile({ links }: NavbarMobileLinksProps) {
           </li>
         ))}
       </ul>
-      <Links />
     </motion.div>
   );
 }
