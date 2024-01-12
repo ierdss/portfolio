@@ -32,43 +32,35 @@ export default function Navbar() {
         position="fixed"
       />
 
-      {/* Elements of the navbar justified between. */}
       <div className="navbar-desktop">
         <Link href="#">
-          <h1 className="navbar__logo">ANDREI</h1>
+          <h1 className="navbar-logo">ANDREI</h1>
         </Link>
-        <ul id="navbar-links" className="navbar-desktop__links">
+        <ul className="navbar-links navbar-desktop__links">
           {NavLinks.map(({ id, href, text }) => (
             <Link
               key={id}
               href={href}
               data-to-scrollspy-id={id}
-              className="navbar-desktop__link group relative"
+              className="navbar-link navbar-desktop__link group"
             >
               {text}
               <span className="ease absolute bottom-0 left-[50%] -translate-x-1/2 h-0 w-0 border-t-2 border-secondary-red transition-all duration-500 group-hover:w-full" />
             </Link>
           ))}
         </ul>
-        <div className="hidden lg:flex">
-          <ul
-            className={
-              "flex flex-row justify-center items-center gap-2 lg:justify-start"
-            }
-          >
-            {SocialMediaLinks.map(({ id, ariaLabel, url }) => (
-              <li key={id}>
-                <SocialIcon
-                  url={url}
-                  target="_blank"
-                  label={ariaLabel}
-                  style={{ height: 35, width: 35 }}
-                  className="text-secondary-red hover:text-accent-pink"
-                />
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ul className="navbar-socials">
+          {SocialMediaLinks.map(({ id, ariaLabel, url }) => (
+            <SocialIcon
+              key={id}
+              url={url}
+              target="_blank"
+              label={ariaLabel}
+              style={{ height: 35, width: 35 }}
+              className="text-secondary-red hover:text-accent-pink"
+            />
+          ))}
+        </ul>
         {/* Navbar Mobile */}
         {/* <NavbarMobile links={NavLinks} /> */}
       </div>
@@ -77,7 +69,6 @@ export default function Navbar() {
 }
 
 const NavLinks = [
-  { id: "services", href: "#services", text: "Services" },
   { id: "about", href: "#about", text: "About" },
   { id: "experience", href: "#experience", text: "Experience" },
   { id: "projects", href: "#projects", text: "Projects" },
