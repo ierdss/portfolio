@@ -5,7 +5,6 @@ import Link from "next/link";
 import React from "react";
 import { ProgressBar } from "@nadfri/react-scroll-progress-bar";
 
-import Links from "../footer/Links";
 import NavbarMobile from "./NavbarMobile";
 import { SocialIcon } from "react-social-icons";
 
