@@ -2,7 +2,6 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import { motion, useCycle } from "framer-motion";
 
-import Links from "../footer/Links";
 import Link from "next/link";
 
 interface NavbarMobileLinkProps {
