@@ -4,7 +4,7 @@ import Services from "./services/Services";
 import About from "./About";
 import Technologies from "./technologies/Technologies";
 import Workflow from "./WorkFlow";
-import Experience from "./Experience";
+import Experience from "./experience/Experience";
 import Projects from "./projects/Projects";
 import Testimonials from "./Testimonials";
 import Contact from "./Contact";

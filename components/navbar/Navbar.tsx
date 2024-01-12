@@ -51,7 +51,7 @@ export default function Navbar() {
           <Links />
         </div>
         {/* Navbar Mobile */}
-        {/* <NavbarMobile /> */}
+        {/* <NavbarMobile links={NavLinks} /> */}
       </div>
     </nav>
   );
