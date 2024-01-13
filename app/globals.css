@@ -141,7 +141,7 @@ body {
 
 /* Navbar Section */
 .navbar {
-  @apply flex items-center justify-center pt-2 pb-1 md:pt-[5px] md:pb-0 px-6 md:px-12 w-full fixed top-0 left-0 !z-40 text-slate-500 overflow-hidden bg-transparent;
+  @apply flex items-center justify-center pt-2 pb-1 md:pt-[5px] md:pb-0 px-6 md:px-12 w-full fixed top-0 left-0 !z-40 text-slate-500 bg-transparent;
 }
 .navbar--scrolled {
   @apply shadow-lg bg-white;
@@ -176,13 +176,23 @@ body {
   @apply;
 } */
 
+.navbar-mobile {
+  @apply lg:hidden top-0 bottom-0 right-0 relative;
+}
+.navbar-mobile__background {
+  @apply absolute top-0 bottom-0 right-0 w-[100vh] h-[100vh] bg-secondary-red;
+}
+.navbar-mobile__toggle {
+  @apply absolute outline-none border-none cursor-pointer inset-0 bg-transparent;
+}
+
 .navbar-mobile__links {
   @apply flex flex-col w-full text-black-1 gap-4 text-center;
 }
 .navbar-mobile__top {
   @apply flex w-full justify-between items-center pt-2 pb-1 px-6;
 }
-.navbar-mobile__toggle {
+/* .navbar-mobile__toggle {
   @apply lg:hidden flex flex-row gap-10;
 }
 .navbar-mobile--open,
@@ -194,7 +204,7 @@ body {
 }
 .navbar-mobile--closed {
   @apply top-0 left-[-100%];
-}
+} */
 
 /* Hero Section  */
 .hero {
