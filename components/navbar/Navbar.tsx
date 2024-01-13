@@ -1,12 +1,14 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 import React from "react";
 import { ProgressBar } from "@nadfri/react-scroll-progress-bar";
 
-import NavbarMobile from "./NavbarMobile";
 import { SocialIcon } from "react-social-icons";
+import { motion, useCycle } from "framer-motion";
+import NavbarToggle from "./NavbarToggle";
+import { useDimensions } from "@/src/useDimensions";
 
 export default function Navbar() {
   useEffect(() => {
@@ -22,8 +24,12 @@ export default function Navbar() {
     window.addEventListener("scroll", onScroll);
   }, []);
 
+  const [isOpen, toggleOpen] = useCycle(false, true);
+  const containerRef = useRef(null);
+  const { height } = useDimensions(containerRef);
+
   return (
-    <div id="navbar" className="navbar">
+    <nav id="navbar" className="navbar">
       {/* Measures the scroll progress on the page. */}
       <ProgressBar
         color1="#e2e8f0"
@@ -32,7 +38,7 @@ export default function Navbar() {
         position="fixed"
       />
 
-      <nav className="navbar-desktop">
+      <div className="navbar-desktop">
         <Link href="#">
           <h1 className="navbar-logo">ANDREI</h1>
         </Link>
@@ -61,13 +67,29 @@ export default function Navbar() {
             />
           ))}
         </ul>
-      </nav>
+      </div>
 
-      <nav className="navbar-mobile">
-        <Link href="#">
+      <motion.div
+        className="navbar-mobile"
+        initial={false}
+        animate={isOpen ? "open" : "closed"}
+        ref={containerRef}
+      >
+        <div className="relative h-[20px] w-[20px]">
+          <motion.div
+            className="navbar-mobile__background"
+            variants={sidebar}
+          />
+          <NavbarToggle
+            toggle={() => toggleOpen()}
+            customClass="navbar-mobile__toggle"
+          />
+        </div>
+
+        {/* <Link href="#">
           <h1 className="navbar-logo">ANDREI</h1>
-        </Link>
-        <ul className="navbar-links navbar-mobile_-links">
+        </Link> */}
+        {/* <ul className="navbar-links navbar-mobile__links">
           {NavLinks.map(({ id, href, text }) => (
             <Link
               key={id}
@@ -79,8 +101,8 @@ export default function Navbar() {
               <span className="ease absolute bottom-0 left-[50%] -translate-x-1/2 h-0 w-0 border-t-2 border-secondary-red transition-all duration-500 group-hover:w-full" />
             </Link>
           ))}
-        </ul>
-        <ul className="navbar-socials">
+        </ul> */}
+        {/* <ul className="navbar-socials">
           {SocialMediaLinks.map(({ id, ariaLabel, url }) => (
             <SocialIcon
               key={id}
@@ -91,12 +113,13 @@ export default function Navbar() {
               className="text-secondary-red hover:text-accent-pink"
             />
           ))}
-        </ul>
-      </nav>
-    </div>
+        </ul> */}
+      </motion.div>
+    </nav>
   );
 }
 
+// URLs
 const NavLinks = [
   { id: "about", href: "#about", text: "About" },
   { id: "experience", href: "#experience", text: "Experience" },
@@ -125,3 +148,24 @@ const SocialMediaLinks = [
     url: "https://github.com/Andrei-Sager",
   },
 ];
+
+// Animations
+const sidebar = {
+  open: (height = 1000) => ({
+    clipPath: `circle(${height * 2 + 200}px at 500px 40px)`,
+    transition: {
+      type: "spring",
+      stiffness: 20,
+      restDelta: 2,
+    },
+  }),
+  closed: {
+    clipPath: "circle(30px at 500px 50px)",
+    transition: {
+      delay: 0.5,
+      type: "spring",
+      stiffness: 400,
+      damping: 40,
+    },
+  },
+};
