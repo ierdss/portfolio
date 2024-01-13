@@ -90,7 +90,10 @@ export default function Navbar() {
         {/* <Link href="#">
           <h1 className="navbar-logo">ANDREI</h1>
         </Link> */}
-        {/* <ul className="navbar-links navbar-mobile__links">
+        <motion.ul
+          variants={variants}
+          className="navbar-links navbar-mobile__links"
+        >
           {NavLinks.map(({ id, href, text }) => (
             <Link
               key={id}
@@ -102,7 +105,7 @@ export default function Navbar() {
               <span className="ease absolute bottom-0 left-[50%] -translate-x-1/2 h-0 w-0 border-t-2 border-secondary-red transition-all duration-500 group-hover:w-full" />
             </Link>
           ))}
-        </ul> */}
+        </motion.ul>
         {/* <ul className="navbar-socials">
           {SocialMediaLinks.map(({ id, ariaLabel, url }) => (
             <SocialIcon
@@ -168,5 +171,17 @@ const sidebar = {
       stiffness: 400,
       damping: 40,
     },
+  },
+};
+
+// Variants
+const itemIds = [0, 1, 2, 3, 4];
+
+const variants = {
+  open: {
+    transition: { staggerChildren: 0.07, delayChildren: 0.2 },
+  },
+  closed: {
+    transition: { staggerChildren: 0.05, staggerDirection: -1 },
   },
 };
