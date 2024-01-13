@@ -187,7 +187,10 @@ body {
 }
 
 .navbar-mobile__links {
-  @apply flex flex-col w-full text-black-1 gap-4 text-center;
+  @apply absolute top-5 right-0 flex flex-col w-[300px] text-black-1 gap-4 text-center;
+}
+.navbar-mobile__link {
+  @apply w-full;
 }
 .navbar-mobile__top {
   @apply flex w-full justify-between items-center pt-2 pb-1 px-6;
