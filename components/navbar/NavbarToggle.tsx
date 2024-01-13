@@ -26,8 +26,9 @@ export default function NavbarToggle({
 }: NavbarToggleProps) {
   return (
     <button onClick={toggle} className={customClass || "navbar-mobile__toggle"}>
-      <svg width="23" height="23" viewBox="0 0 23 23" color="white">
+      <svg width="23" height="23" viewBox="0 0 23 23">
         <Path
+          fill="white"
           variants={{
             closed: { d: "M 2 2.5 L 20 2.5" },
             open: { d: "M 3 16.5 L 17 2.5" },

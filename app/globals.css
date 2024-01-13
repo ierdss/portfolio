@@ -180,7 +180,7 @@ body {
   @apply lg:hidden top-0 bottom-0 right-0 relative;
 }
 .navbar-mobile__background {
-  @apply absolute -top-6 bottom-0 -right-6 w-[100vh] h-[110vh] md:w-[300px] bg-secondary-red;
+  @apply absolute -top-6 bottom-0 -right-6 w-[100vh] h-[110vh] md:w-[300px] bg-rose-50;
 }
 .navbar-mobile__toggle {
   @apply absolute outline-none border-none cursor-pointer inset-0 bg-transparent;
