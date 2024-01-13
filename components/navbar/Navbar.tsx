@@ -153,7 +153,7 @@ const SocialMediaLinks = [
 // Animations
 const sidebar = {
   open: (height = 1000) => ({
-    clipPath: `circle(${height * 2 + 200}px at 0px 0px)`,
+    clipPath: `circle(${height * 2 + 200}px at 800px 200px)`,
     transition: {
       type: "spring",
       stiffness: 20,
@@ -161,7 +161,7 @@ const sidebar = {
     },
   }),
   closed: {
-    clipPath: "circle(20px at 707px 32px)",
+    clipPath: "circle(20px at 800px 200px)",
     transition: {
       delay: 0.5,
       type: "spring",
