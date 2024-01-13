@@ -73,6 +73,7 @@ export default function Navbar() {
         className="navbar-mobile"
         initial={false}
         animate={isOpen ? "open" : "closed"}
+        custom={height}
         ref={containerRef}
       >
         <div className="relative h-[20px] w-[20px]">
@@ -152,7 +153,7 @@ const SocialMediaLinks = [
 // Animations
 const sidebar = {
   open: (height = 1000) => ({
-    clipPath: `circle(${height * 2 + 200}px at 500px 40px)`,
+    clipPath: `circle(${height * 2 + 200}px at 0px 0px)`,
     transition: {
       type: "spring",
       stiffness: 20,
@@ -160,7 +161,7 @@ const sidebar = {
     },
   }),
   closed: {
-    clipPath: "circle(30px at 500px 50px)",
+    clipPath: "circle(20px at 707px 32px)",
     transition: {
       delay: 0.5,
       type: "spring",
