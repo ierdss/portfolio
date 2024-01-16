@@ -29,25 +29,25 @@ const experienceIconSize = 70;
 export const ServicesSectionContent = [
   {
     icon: <FaGlobeAsia size={servicesIconSize} />,
-    title: "Web Development",
+    title: "Web \nDevelopment",
     description:
       "Professional looking web pages made with the best practices, clean code structures and layout responsiveness.",
   },
   {
     icon: <MdOutlineMobileFriendly size={servicesIconSize} />,
-    title: "Mobile Development",
+    title: "Mobile \nDevelopment",
     description:
       "Unified and consistent user experience across various devices. Localized platform design using platform modules for Android, iOS, and Web.",
   },
   {
     icon: <IoStorefront size={servicesIconSize} />,
-    title: "Front-End Development",
+    title: "Front-End \nDevelopment",
     description:
       "Prototyping and design for customer sales conversion. Creating familiarity for users throught UI/UX.",
   },
   {
     icon: <RiDatabaseFill size={servicesIconSize} />,
-    title: "Back-End Development",
+    title: "Back-End \nDevelopment",
     description:
       "Support and maintenance with the latest backend technologies through code optimization and unit testing.",
   },
