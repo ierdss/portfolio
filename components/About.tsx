@@ -37,6 +37,16 @@ export default function About() {
       id="about"
       className="about flex flex-row w-full justify-center items-center gap-[50px] md:gap-[100px]"
     >
+      <div className="about-portrait">
+        <Image
+          src="/hero.jpg"
+          width={800}
+          height={800}
+          alt="Me in red"
+          className="about-portrait__image"
+        />
+      </div>
+
       <div className="about-details">
         <div className="max-w-[250px]">
           <h1 className="sectionOverline">About</h1>
@@ -56,24 +66,13 @@ export default function About() {
           building things but it also polished my persistence and what led me to
           pursue this career.
         </p>
-      </div>
-
-      <div className="about-portrait flex items-center justify-center w-[300px] aspect-[16/19] overflow-hidden rounded-xl bg-secondary-red rotate-12">
-        <Image
-          src="/hero.jpg"
-          width={800}
-          height={800}
-          alt="Me in red"
-          className="w-[450px] aspect-square scale-[1.35] -rotate-12"
-        />
-      </div>
-
-      {/* <div className="flex flex-row">
+        {/* <div className="flex flex-row">
             <h1>Over Projects Completed</h1>
             <h1>Freelance Commissions</h1>
             <h1>Years of Experience</h1>
           </div> */}
-      {/* </motion.div> */}
+        {/* </motion.div> */}
+      </div>
     </div>
   );
 }
