@@ -377,6 +377,15 @@ body {
 .service-card:first-child {
   @apply bg-secondary-red;
 }
+.service-card:first-child .service-card__icon {
+  @apply text-white;
+}
+.service-card:first-child .service-card__title {
+  @apply text-white group-hover:!text-white;
+}
+.service-card:first-child .service-card__description {
+  @apply text-white;
+}
 .service-card__red > div.service-card__shadow {
   @apply !bg-white !opacity-100 brightness-100;
 }
@@ -385,16 +394,13 @@ body {
   @apply text-secondary-red;
 }
 .service-card__title {
-  @apply font-bold text-lg capitalize text-black text-left group-hover:text-secondary-red;
+  @apply font-bold text-lg capitalize text-black text-left group-hover:text-secondary-red whitespace-pre;
 }
 .service-card__title:first-child {
-  @apply text-white group-hover:text-white;
+  @apply group-hover:text-white;
 }
 .service-card__description {
   @apply font-medium text-xs text-neutral-800 normal-case text-left first:text-white;
-}
-.service-card__description:first-child {
-  @apply text-white;
 }
 .service-card__shadow {
   @apply brightness-75 w-[180px] aspect-square absolute -top-[20px] -right-[150px] bg-white z-10 opacity-20 -rotate-45;
