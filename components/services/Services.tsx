@@ -56,7 +56,7 @@ export default function Services() {
         width={800}
         height={800}
         alt="This is impossible! An svg did not load?"
-        className="servicesBackground top-1/2 left-1/2 translate-x-[-20%] translate-y-[-29%] hidden sm:flex"
+        className="services__background top-1/2 left-1/2 translate-x-[-20%] translate-y-[-29%] hidden sm:flex"
       />
       <Image
         typeof="background"
@@ -65,7 +65,7 @@ export default function Services() {
         height={1000}
         alt="This is impossible! An svg did not load?"
         priority
-        className="servicesBackground -bottom-1/3 right-0 translate-x-[20%] translate-y-[-60%] sm:hidden"
+        className="services__background -bottom-1/3 right-0 translate-x-[20%] translate-y-[-60%] sm:hidden"
       />
     </div>
   );
