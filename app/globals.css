@@ -113,6 +113,10 @@ body {
   @apply py-[50px];
 }
 
+.sectionHeader {
+  @apply w-full;
+}
+
 .sectionTitle {
   @apply flex;
 }
@@ -337,7 +341,7 @@ body {
 
 /* Services Section  */
 .services {
-  @apply flexCenter flex-col lg:flex-row gap-[50px] lg:gap-[100px] md:max-h-[1000px] relative w-full max-w-screen-xl section-padding__y-axis;
+  @apply flexCenter flex-col gap-[50px] lg:gap-[100px] md:max-h-[1000px] relative w-full max-w-screen-xl section-padding__y-axis;
 }
 
 .servicesContent,
@@ -359,6 +363,41 @@ body {
 
 .servicesBackground {
   @apply absolute pointer-events-none -z-0 opacity-50;
+}
+
+/* Service Cards Component */
+.service-cards {
+  @apply w-full flex flex-col md:flex-row justify-center items-center gap-6;
+}
+
+/* Service Card Component */
+.service-card {
+  @apply hoverSmoothScale flex flex-col gap-2 w-full md:max-w-[230px] md:min-h-[280px] justify-center p-6 rounded-2xl overflow-hidden row-span-2 shadow-lg z-10 relative bg-white mb-4 hover:shadow-lg hover:text-secondary-red;
+}
+.service-card:first-child {
+  @apply bg-secondary-red;
+}
+.service-card__red > div.service-card__shadow {
+  @apply !bg-white !opacity-100 brightness-100;
+}
+
+.service-card__icon {
+  @apply text-secondary-red;
+}
+.service-card__title {
+  @apply font-bold text-lg capitalize text-black text-left group-hover:text-secondary-red;
+}
+.service-card__title:first-child {
+  @apply text-white group-hover:text-white;
+}
+.service-card__description {
+  @apply font-medium text-xs text-neutral-800 normal-case text-left first:text-white;
+}
+.service-card__description:first-child {
+  @apply text-white;
+}
+.service-card__shadow {
+  @apply brightness-75 w-[180px] aspect-square absolute -top-[20px] -right-[150px] bg-white z-10 opacity-20 -rotate-45;
 }
 
 /* About Me Section */
@@ -608,96 +647,6 @@ body {
 
 .textArea {
   @apply h-[190px] resize-none;
-}
-
-/* Components */
-.serviceCard,
-.serviceCard__black,
-.serviceCard__red,
-.serviceCard__image {
-  @apply hoverSmoothScale flex flex-col w-full md:max-w-[230px] md:min-h-[280px] justify-center p-6 rounded-2xl overflow-hidden row-span-2 shadow-lg z-10 relative bg-white;
-}
-
-.serviceCard > div,
-.serviceCard__black > div,
-.serviceCard__red > div {
-  @apply mb-4;
-}
-
-.serviceCard > h1,
-.serviceCard__black > h1,
-.serviceCard__red > h1 {
-  @apply sectionHeading-3;
-}
-
-.serviceCard > p,
-.serviceCard__black > p,
-.serviceCard__red > p {
-  @apply sectionDescription;
-}
-
-.serviceCard__black,
-.serviceCard__red {
-  @apply hover:shadow-lg;
-}
-
-.serviceCard__black > div,
-.serviceCard__red > div {
-  @apply text-white;
-}
-
-.serviceCard__black > h1,
-.serviceCard__red > h1 {
-  @apply text-white;
-}
-
-.serviceCard__black > p,
-.serviceCard__red > p {
-  @apply text-white;
-}
-
-.serviceCard {
-  @apply hover:text-secondary-red;
-}
-
-.serviceCard__black {
-  @apply bg-neutral-800;
-}
-
-.serviceCard__red {
-  @apply bg-secondary-red;
-}
-
-.serviceCard > div {
-  @apply text-secondary-red;
-}
-
-.serviceCard > p {
-  @apply text-slate-500;
-}
-
-.serviceCard__red > div.serviceCard__shadow {
-  @apply !bg-white !opacity-100 brightness-100;
-}
-
-.serviceCard__image {
-  @apply bg-home-texture bg-center bg-cover bg-no-repeat;
-}
-
-.serviceCard__image > div {
-  @apply hidden;
-}
-
-.serviceCard__image > h1 {
-  @apply hidden;
-}
-
-.serviceCard__image > p {
-  @apply hidden;
-}
-
-.serviceCard__shadow {
-  @apply brightness-75 w-[180px] aspect-square absolute -top-[20px] -right-[150px] bg-white z-10 opacity-20 -rotate-45;
 }
 
 /* Contact Component */
