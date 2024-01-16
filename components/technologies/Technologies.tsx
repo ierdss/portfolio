@@ -54,7 +54,7 @@ const Technologies = () => {
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
           }}
         >
-          Tools I Am Most Familiar With{" "}
+          Skills Inside My Toolbox
         </motion.h1>
       </div>
       <ul className="w-full grid grid-flow-row grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3 md:gap-5">
