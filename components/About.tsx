@@ -58,13 +58,13 @@ export default function About() {
         </p>
       </div>
 
-      <div className="about-portrait flex items-center justify-center w-[300px] aspect-[16/19] overflow-hidden rounded-xl bg-secondary-red">
+      <div className="about-portrait flex items-center justify-center w-[300px] aspect-[16/19] overflow-hidden rounded-xl bg-secondary-red rotate-12">
         <Image
           src="/hero.jpg"
           width={800}
           height={800}
           alt="Me in red"
-          className="w-[400px] aspect-square scale-125"
+          className="w-[450px] aspect-square scale-[1.35] -rotate-12"
         />
       </div>
 
