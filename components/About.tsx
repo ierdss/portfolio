@@ -42,14 +42,14 @@ export default function About() {
           <h1 className="sectionOverline">About</h1>
           <h1 className="sectionHeading">Get To Know Me</h1>
         </div>
-        <p className="sectionLeading">
+        <p className="about-description">
           Sample muna. I'm a natural problem solver, eversince I was a kid I
           enjoyed building contraptions with lego, solving puzzles, and
           tinkering my curiosity away. This not only honed my interest in
           building things but it also polished my persistence and what led me to
           pursue this career.
         </p>
-        <p className="sectionLeading">
+        <p className="about-description">
           Sample muna. I'm a natural problem solver, eversince I was a kid I
           enjoyed building contraptions with lego, solving puzzles, and
           tinkering my curiosity away. This not only honed my interest in
@@ -58,17 +58,19 @@ export default function About() {
         </p>
       </div>
 
-      <Image
-        src="/MeRed.png"
-        width={300}
-        height={300}
-        alt="Me in red"
-        className="about-portrait"
-      />
+      <div className="about-portrait flex items-center justify-center w-[300px] aspect-[16/19] overflow-hidden rounded-xl bg-secondary-red">
+        <Image
+          src="/hero.jpg"
+          width={800}
+          height={800}
+          alt="Me in red"
+          className="w-[400px] aspect-square scale-125"
+        />
+      </div>
 
       {/* <div className="flex flex-row">
-            <h1>Projects Completed</h1>
-            <h1>Freelance Commisions</h1>
+            <h1>Over Projects Completed</h1>
+            <h1>Freelance Commissions</h1>
             <h1>Years of Experience</h1>
           </div> */}
       {/* </motion.div> */}
