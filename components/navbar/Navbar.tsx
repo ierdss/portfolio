@@ -70,7 +70,7 @@ export default function Navbar() {
       </div>
 
       <motion.div
-        className="navbar-mobile"
+        className="navbar-mobile hidden"
         initial={false}
         animate={isOpen ? "open" : "closed"}
         custom={height}
