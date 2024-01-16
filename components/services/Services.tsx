@@ -54,10 +54,10 @@ export default function Services() {
         <Image
           typeof="background"
           src={"/patterns/ring.svg"}
-          width={400}
-          height={400}
+          width={1000}
+          height={1000}
           alt="This is impossible! An svg did not load?"
-          className="servicesBackground top-1/2 left-1/2 translate-x-[-50%] translate-y-[-40%] hidden sm:flex"
+          className="servicesBackground top-1/2 left-1/2 translate-x-[20%] translate-y-[-60%] hidden sm:flex"
         />
         <Image
           typeof="background"
@@ -66,7 +66,7 @@ export default function Services() {
           height={1000}
           alt="This is impossible! An svg did not load?"
           priority
-          className="servicesBackground -bottom-1/3 right-0 translate-y-[-61%] sm:hidden"
+          className="servicesBackground -bottom-1/3 right-0 translate-x-[20%] translate-y-[-25%] sm:hidden"
         />
       </div>
     </div>
