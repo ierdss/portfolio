@@ -12,20 +12,13 @@ export default function Projects() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div
-      id="projects"
-      className="w-full h-fit flex flex-col justify-center items-center md:text-left px-2 sm:px-5 "
-    >
-      <div className="flex flex-col justify-center items-center w-full gap-[50px] section-padding__y-axis">
-        <div className="">
-          <h1 className="sectionOverline !text-center">Projects</h1>
-          <h1 className="sectionHeading !text-center">
-            Check Out My Projects!
-          </h1>
-        </div>
-        <FeaturedProjects />
-        <OtherProjects />
+    <div id="projects" className="projects">
+      <div className="">
+        <h1 className="sectionOverline !text-center">Projects</h1>
+        <h1 className="sectionHeading !text-center">Check Out My Projects!</h1>
       </div>
+      <FeaturedProjects />
+      <OtherProjects />
     </div>
   );
 }
