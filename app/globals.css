@@ -341,7 +341,7 @@ body {
 
 /* Services Section  */
 .services {
-  @apply flexCenter flex-col gap-[50px] lg:gap-[100px] md:max-h-[1000px] relative w-full max-w-screen-xl section-padding__y-axis;
+  @apply flex flex-col gap-[50px] md:max-h-[1000px] relative w-full max-w-screen-xl section-padding__y-axis section-padding__x-axis bg-rose-100 rounded-2xl;
 }
 
 .servicesContent,
@@ -367,12 +367,12 @@ body {
 
 /* Service Cards Component */
 .service-cards {
-  @apply w-full flex flex-col md:flex-row justify-center items-center gap-6;
+  @apply w-full flex flex-wrap flex-col md:flex-row items-center gap-6;
 }
 
 /* Service Card Component */
 .service-card {
-  @apply hoverSmoothScale flex flex-col gap-2 w-full md:max-w-[230px] md:min-h-[280px] justify-center p-6 rounded-2xl overflow-hidden row-span-2 shadow-lg z-10 relative bg-white mb-4 hover:shadow-lg hover:text-secondary-red;
+  @apply hoverSmoothScale flex flex-col gap-2 w-full md:max-w-[230px] md:min-h-[280px] p-6 rounded-2xl overflow-hidden row-span-2 shadow-lg z-10 relative bg-white mb-4 hover:shadow-lg hover:text-secondary-red;
 }
 .service-card:first-child {
   @apply bg-secondary-red;
@@ -386,7 +386,7 @@ body {
 .service-card:first-child .service-card__description {
   @apply text-white;
 }
-.service-card__red > div.service-card__shadow {
+.service-card:first-child .service-card__shadow {
   @apply !bg-white !opacity-100 brightness-100;
 }
 
@@ -394,7 +394,7 @@ body {
   @apply text-secondary-red;
 }
 .service-card__title {
-  @apply font-bold text-lg capitalize text-black text-left group-hover:text-secondary-red whitespace-pre;
+  @apply font-bold text-lg capitalize text-black text-left group-hover:text-secondary-red md:whitespace-pre;
 }
 .service-card__title:first-child {
   @apply group-hover:text-white;
