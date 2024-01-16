@@ -393,10 +393,13 @@ body {
   @apply max-w-screen-xl w-full text-center flex justify-center items-center md:text-left flex-col md:flex-row relative overflow-hidden section-padding__y-axis h-[100vh] max-h-[800px];
 }
 .about-details {
-  @apply flex flex-col gap-4 w-[90%] lg:w-[45%];
+  @apply flex flex-col gap-4 w-[90%] max-w-md;
 }
 .about-portrait {
-  @apply w-full max-w-sm;
+  @apply text-white;
+}
+.about-description {
+  @apply font-medium text-xs text-neutral-800 normal-case text-left first:text-white;
 }
 
 /* Technologies Section  */
