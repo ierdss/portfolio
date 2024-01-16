@@ -343,25 +343,7 @@ body {
 .services {
   @apply flex flex-col gap-[50px] md:max-h-[1000px] relative w-full max-w-screen-xl section-padding__y-axis section-padding__x-axis bg-rose-100 rounded-2xl overflow-hidden;
 }
-
-.servicesContent,
-.servicesCards {
-  @apply flex flex-col z-10;
-}
-
-.servicesContent {
-  @apply w-[90%] sm:w-[280px] gap-[12px] shrink-0;
-}
-
-.servicesCards {
-  @apply w-[95%] flex flex-col sm:flex-row lg:w-[50%] gap-[30px] justify-center text-center;
-}
-
-.servicesCardsCol {
-  @apply flex flex-col gap-[30px] w-full sm:w-fit;
-}
-
-.servicesBackground {
+.services__background {
   @apply absolute pointer-events-none -z-0 opacity-50;
 }
 
