@@ -11,11 +11,8 @@ export default function Services() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div
-      id="services"
-      className="services w-full bg-rose-100 flex items-center justify-center rounded-2xl"
-    >
-      <div>
+    <div id="services" className="services">
+      <div className="max-w-[250px]">
         <motion.h1
           className="sectionOverline sm:text-center md:text-left"
           ref={ref}
@@ -39,7 +36,7 @@ export default function Services() {
           What I Can Offer
         </motion.h1>
         <motion.p
-          className="sectionLeading sm:text-center md:text-left"
+          className="sectionLeading sm:text-center md:text-left max-w-[220px]"
           ref={ref}
           style={{
             transform: isInView ? "translateY(0px)" : "translateY(200px)",
