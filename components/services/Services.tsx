@@ -13,7 +13,7 @@ export default function Services() {
   return (
     <div
       id="services"
-      className="w-full bg-rose-50 flex items-center justify-center"
+      className="w-full bg-rose-100 flex items-center justify-center rounded-2xl"
     >
       <div className="services sectionPadding">
         <div className="servicesContent">
