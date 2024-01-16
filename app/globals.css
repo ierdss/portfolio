@@ -98,7 +98,7 @@ body {
 }
 
 .sectionLeading {
-  @apply font-semibold text-base text-neutral-900 normal-case;
+  @apply font-semibold text-sm text-neutral-900 normal-case;
 }
 
 .sectionDescription {
