@@ -390,16 +390,16 @@ body {
 
 /* About Me Section */
 .about {
-  @apply max-w-screen-xl w-full text-center flex justify-center items-center md:text-left flex-col md:flex-row relative overflow-hidden section-padding__y-axis h-[100vh] max-h-[800px];
+  @apply max-w-screen-xl w-full text-center flex justify-center items-center md:text-left flex-col md:flex-row relative overflow-hidden section-padding__y-axis section-padding__x-axis md:h-[100vh] md:max-h-[800px];
 }
 .about-details {
   @apply flex flex-col gap-4 w-[90%] max-w-md md:order-1;
 }
 .about-portrait {
-  @apply flex items-center justify-center w-full md:w-[300px] aspect-[16/19] overflow-hidden rounded-xl bg-secondary-red md:rotate-12 md:order-2;
+  @apply flex items-center justify-center w-[300px] aspect-16/11 aspect-[16/19] overflow-hidden rounded-xl bg-secondary-red md:rotate-12 md:order-2;
 }
 .about-portrait__image {
-  @apply w-[450px] aspect-square scale-[1.35] -rotate-12;
+  @apply w-[450px] aspect-square scale-[1.35] md:rotate-12;
 }
 .about-description {
   @apply font-medium text-xs text-neutral-800 normal-case text-left first:text-white;
