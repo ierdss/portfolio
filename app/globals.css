@@ -341,7 +341,7 @@ body {
 
 /* Services Section  */
 .services {
-  @apply flex flex-col gap-[50px] md:max-h-[1000px] relative w-full max-w-screen-xl section-padding__y-axis section-padding__x-axis bg-rose-100 rounded-2xl;
+  @apply flex flex-col gap-[50px] md:max-h-[1000px] relative w-full max-w-screen-xl section-padding__y-axis section-padding__x-axis bg-rose-100 rounded-2xl overflow-hidden;
 }
 
 .servicesContent,
@@ -372,7 +372,7 @@ body {
 
 /* Service Card Component */
 .service-card {
-  @apply hoverSmoothScale flex flex-col gap-2 w-full md:max-w-[230px] md:min-h-[280px] p-6 rounded-2xl overflow-hidden row-span-2 shadow-lg z-10 relative bg-white mb-4 hover:shadow-lg hover:text-secondary-red;
+  @apply hoverSmoothScale flex flex-col gap-2 w-full md:max-w-[230px] md:min-h-[280px] p-6 rounded-2xl overflow-hidden row-span-2 shadow-lg z-20 relative bg-white mb-4 hover:shadow-lg hover:text-secondary-red;
 }
 .service-card:first-child {
   @apply bg-secondary-red;
