@@ -399,7 +399,7 @@ body {
   @apply flex items-center justify-center w-[300px] aspect-16/11 aspect-[16/19] overflow-hidden rounded-xl bg-secondary-red md:rotate-12 md:order-2;
 }
 .about-portrait__image {
-  @apply w-[450px] aspect-square scale-[1.35] md:rotate-12;
+  @apply w-[450px] aspect-square scale-[1.35] md:-rotate-12;
 }
 .about-description {
   @apply font-medium text-xs text-neutral-800 normal-case text-left first:text-white;
