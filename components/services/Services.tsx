@@ -12,29 +12,31 @@ export default function Services() {
 
   return (
     <div id="services" className="services">
-      <div className="max-w-[250px]">
-        <motion.h1
-          className="sectionOverline sm:text-center md:text-left"
-          ref={ref}
-          style={{
-            transform: isInView ? "translateY(0px)" : "translateY(200px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s",
-          }}
-        >
-          Services
-        </motion.h1>
-        <motion.h1
-          className="sectionHeading sm:text-center md:text-left"
-          ref={ref}
-          style={{
-            transform: isInView ? "translateY(0px)" : "translateY(200px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
-          }}
-        >
-          What I Can Offer
-        </motion.h1>
+      <div className="max-w-[250px] flex flex-col gap-4">
+        <div>
+          <motion.h1
+            className="sectionOverline sm:text-center md:text-left"
+            ref={ref}
+            style={{
+              transform: isInView ? "translateY(0px)" : "translateY(200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s",
+            }}
+          >
+            Services
+          </motion.h1>
+          <motion.h1
+            className="sectionHeading sm:text-center md:text-left"
+            ref={ref}
+            style={{
+              transform: isInView ? "translateY(0px)" : "translateY(200px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+            }}
+          >
+            What I Can Offer
+          </motion.h1>
+        </div>
         <motion.p
           className="sectionLeading sm:text-center md:text-left max-w-[220px]"
           ref={ref}
