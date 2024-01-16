@@ -389,21 +389,14 @@ body {
 }
 
 /* About Me Section */
-.portraitCard {
-  @apply w-[300px] h-[450px] relative transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] md:-rotate-12 self-center z-10;
+.about {
+  @apply max-w-screen-xl w-full text-center flex justify-center items-center md:text-left flex-col md:flex-row relative overflow-hidden section-padding__y-axis h-[100vh] max-h-[800px];
 }
-
-.portraitCard__front,
-.portraitCard__back {
-  @apply absolute inset-0 w-full h-full p-4 flex flex-col rounded-md shadow-md items-center;
+.about-details {
+  @apply flex flex-col gap-4 w-[90%] lg:w-[45%];
 }
-
-.portraitCard__front {
-  @apply bg-white text-black-1 justify-between [backface-visibility:hidden];
-}
-
-.portraitCard__back {
-  @apply bg-black-1 text-white justify-center [transform:rotateY(180deg)];
+.about-portrait {
+  @apply w-full max-w-sm;
 }
 
 /* Technologies Section  */
