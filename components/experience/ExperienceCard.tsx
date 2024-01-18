@@ -19,7 +19,7 @@ export default function ExperienceCard({
 }: ExperienceCardProps) {
   return (
     <VerticalTimelineElement
-      className="experience-card"
+      className="experience-card group"
       contentStyle={{
         background: "white",
         color: "black",

@@ -4,6 +4,7 @@ import { BsBookHalf, BsGithub } from "react-icons/bs";
 import { CiMobile1 } from "react-icons/ci";
 import { IoIosLaptop } from "react-icons/io";
 import { IoGlobe } from "react-icons/io5";
+import { TbExternalLink } from "react-icons/tb";
 
 interface FeaturedProjectsCardProps {
   title: string;
@@ -88,12 +89,16 @@ export default function FeaturedProjectsCard({
           />
         </a>
         <Image
-          src={mobileThumbnail || ""}
+          src={mobileThumbnail || "/placeholder/mobile-thumbnail.jpg"}
           width={600}
           height={600}
           alt={mobileAlt || "Mobile Thumbnail"}
           sizes="(min-width: 768px) 100vw, 50vw"
           className="featured-projects-card__image-mobile"
+        />
+        <TbExternalLink
+          size={30}
+          className="featured-projects-card__image-icon"
         />
       </div>
       <div className="featured-projects-card__details">

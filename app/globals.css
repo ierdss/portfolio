@@ -356,6 +356,19 @@ body {
 .service-card {
   @apply hoverSmoothScale flex flex-col gap-2 w-full md:max-w-[230px] md:min-h-[280px] p-6 rounded-2xl overflow-hidden row-span-2 shadow-lg z-20 relative bg-white mb-4 hover:shadow-lg hover:text-secondary-red;
 }
+.service-card__icon {
+  @apply text-secondary-red;
+}
+.service-card__title {
+  @apply font-bold text-lg capitalize text-black text-left group-hover:text-secondary-red first:group-hover:text-white md:whitespace-pre;
+}
+.service-card__description {
+  @apply font-medium text-xs text-neutral-800 normal-case text-left;
+}
+.service-card__shadow {
+  @apply brightness-75 w-[180px] aspect-square absolute -top-[20px] -right-[150px] bg-white z-10 opacity-20 -rotate-45;
+}
+
 .service-card:first-child {
   @apply bg-secondary-red;
 }
@@ -363,29 +376,13 @@ body {
   @apply text-white;
 }
 .service-card:first-child .service-card__title {
-  @apply text-white group-hover:!text-white;
+  @apply text-white;
 }
 .service-card:first-child .service-card__description {
   @apply text-white;
 }
 .service-card:first-child .service-card__shadow {
   @apply !bg-white !opacity-100 brightness-100;
-}
-
-.service-card__icon {
-  @apply text-secondary-red;
-}
-.service-card__title {
-  @apply font-bold text-lg capitalize text-black text-left group-hover:text-secondary-red md:whitespace-pre;
-}
-.service-card__title:first-child {
-  @apply group-hover:text-white;
-}
-.service-card__description {
-  @apply font-medium text-xs text-neutral-800 normal-case text-left first:text-white;
-}
-.service-card__shadow {
-  @apply brightness-75 w-[180px] aspect-square absolute -top-[20px] -right-[150px] bg-white z-10 opacity-20 -rotate-45;
 }
 
 /* About Me Section */
@@ -396,7 +393,7 @@ body {
   @apply flex flex-col gap-4 w-[90%] max-w-md md:order-1;
 }
 .about-portrait {
-  @apply flex items-center justify-center w-[300px] aspect-16/11 aspect-[16/19] overflow-hidden rounded-xl bg-secondary-red md:rotate-12 md:order-2;
+  @apply flex items-center justify-center w-[300px] aspect-16/19 overflow-hidden rounded-xl bg-secondary-red md:rotate-12 md:order-2;
 }
 .about-portrait__image {
   @apply w-[450px] aspect-square scale-[1.35] md:-rotate-12;
@@ -456,7 +453,7 @@ body {
 
 /* Experience Card Section */
 .experience-card {
-  @apply relative group hover:-translate-y-4 transition-all ease-in-out duration-500 overflow-hidden;
+  @apply relative hover:-translate-y-4 transition-all ease-in-out duration-500 overflow-hidden;
 }
 .experience-card__icon {
   @apply flex w-full aspect-square;
@@ -519,7 +516,7 @@ body {
 }
 
 .featured-projects-card__images {
-  @apply w-full aspect-16/11 overflow-hidden rounded-2xl shadow-lg;
+  @apply w-full aspect-16/11 overflow-hidden rounded-2xl shadow-lg relative;
 }
 .featured-projects-card__image-desktop {
   @apply w-full;
@@ -527,8 +524,8 @@ body {
 .featured-projects-card__image-mobile {
   @apply w-full;
 }
-.featured-projects-card__images {
-  @apply w-full;
+.featured-projects-card__image-icon {
+  @apply absolute left-3 bottom-3 text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)];
 }
 
 .featured-projects-card__details {
@@ -576,16 +573,16 @@ body {
 }
 
 .other-projects-card__images {
-  @apply w-full aspect-16/11 overflow-hidden rounded-2xl;
+  @apply w-full aspect-16/11 overflow-hidden rounded-2xl relative;
 }
-.other-projects-card__image-desktop {
+.other-projects-card__image--desktop {
   @apply w-full;
 }
-.other-projects-card__image-mobile {
+.other-projects-card__image--mobile {
   @apply w-full;
 }
-.other-projects-card__images {
-  @apply w-full;
+.other-projects-card__image-icon {
+  @apply absolute left-3 bottom-3 text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)];
 }
 
 .other-projects-card__details {
