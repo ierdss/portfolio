@@ -5,9 +5,9 @@ import Image from "next/image";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
 type ExperienceCardProps = {
+  icon: ReactNode;
   title: string;
   companyName: string;
-  icon: ReactNode;
   date: string;
   bullets: Array<String>;
 };
@@ -17,9 +17,9 @@ type ExperienceTimelineProps = {
 };
 
 export default function ExperienceCard({
+  icon,
   title,
   companyName,
-  icon,
   date,
   bullets,
 }: ExperienceCardProps) {
@@ -35,15 +35,17 @@ export default function ExperienceCard({
       date={date}
       dateClassName="text-black"
       icon={
-        <div className="flex w-full aspect-square ">
-          <Image
-            src="/patterns/intersecting-circles.svg"
-            fill
-            alt="Circle"
-            loading="lazy"
-            sizes="(max-width: 768px) 50vw, 33vw"
-          />
-        </div>
+        icon || (
+          <div className="flex w-full aspect-square ">
+            <Image
+              src="/patterns/intersecting-circles.svg"
+              fill
+              alt="Circle"
+              loading="lazy"
+              sizes="(max-width: 768px) 50vw, 33vw"
+            />
+          </div>
+        )
       }
       iconClassName="bg-white overflow-hidden"
     >
