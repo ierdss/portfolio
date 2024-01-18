@@ -14,13 +14,11 @@ export default function TechnologiesCard({
   link,
 }: TechnologiesCard) {
   return (
-    <a
-      href={link}
-      target="_blank"
-      className="flex flex-col items-center justify-center gap-2 w-full max-w-[140px] aspect-16/11 rounded-2xl shadow-md"
-    >
-      <div>{icon || <FaQuestion size={30} />}</div>
-      <h1 className="text-xs">{name || "Name"}</h1>
+    <a href={link} target="_blank" className="technologies-card">
+      <div className="technologies-card__icon">
+        {icon || <FaQuestion size={30} />}
+      </div>
+      <h1 className="technologies-card__name">{name || "Name"}</h1>
     </a>
   );
 }
