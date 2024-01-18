@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 
 import { motion, useInView } from "framer-motion";
@@ -8,9 +8,6 @@ import { TiDownload } from "react-icons/ti";
 import { SiMinutemailer } from "react-icons/si";
 
 export default function Hero() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
   useEffect(() => {
     let profileCardEl = document.querySelectorAll<HTMLElement>(".heroCard");
 
@@ -28,11 +25,18 @@ export default function Hero() {
     <div id="hero" className="hero">
       <motion.div
         className="hero__portrait"
-        ref={ref}
-        style={{
-          scale: isInView ? 1 : 0,
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s",
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.7,
+          delay: 0.3,
+          ease: [0.17, 0.55, 0.55, 1],
+          scale: {
+            type: "spring",
+            damping: 5,
+            stiffness: 100,
+            restDelta: 0.001,
+          },
         }}
       >
         <Image
@@ -47,22 +51,24 @@ export default function Hero() {
         <div>
           <motion.h1
             className="sectionOverline !text-center lg:!text-left"
-            ref={ref}
-            style={{
-              transform: isInView ? "translateY(0px)" : "translateY(200px)",
-              opacity: isInView ? 1 : 0,
-              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
+            initial={{ opacity: 0, y: 200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.9,
+              delay: 0.2,
+              ease: [0.17, 0.55, 0.55, 1],
             }}
           >
             Andrei Sager
           </motion.h1>
           <motion.h1
             className="sectionHeading !text-4xl !text-center lg:!text-left"
-            ref={ref}
-            style={{
-              transform: isInView ? "translateY(0px)" : "translateY(200px)",
-              opacity: isInView ? 1 : 0,
-              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+            initial={{ opacity: 0, y: 200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.9,
+              delay: 0.3,
+              ease: [0.17, 0.55, 0.55, 1],
             }}
           >
             Software Developer
@@ -71,11 +77,12 @@ export default function Hero() {
 
         <motion.p
           className="sectionLeading !text-center lg:!text-left"
-          ref={ref}
-          style={{
-            transform: isInView ? "translateY(0px)" : "translateY(200px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.4s",
+          initial={{ opacity: 0, y: 200 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.9,
+            delay: 0.4,
+            ease: [0.17, 0.55, 0.55, 1],
           }}
         >
           I specialize in constructing websites and mobile applications while
@@ -87,11 +94,12 @@ export default function Hero() {
           <motion.a
             href="#"
             className="cta__outline"
-            ref={ref}
-            style={{
-              transform: isInView ? "translateY(0px)" : "translateY(200px)",
-              opacity: isInView ? 1 : 0,
-              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            initial={{ opacity: 0, y: 200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.9,
+              delay: 0.5,
+              ease: [0.17, 0.55, 0.55, 1],
             }}
           >
             <TiDownload size={20} />
@@ -100,11 +108,12 @@ export default function Hero() {
           <motion.a
             href="#projects"
             className="cta__solid"
-            ref={ref}
-            style={{
-              transform: isInView ? "translateY(0px)" : "translateY(200px)",
-              opacity: isInView ? 1 : 0,
-              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.6s",
+            initial={{ opacity: 0, y: 200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.9,
+              delay: 0.6,
+              ease: [0.17, 0.55, 0.55, 1],
             }}
           >
             <SiMinutemailer size={20} />
