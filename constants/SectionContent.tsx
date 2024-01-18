@@ -210,7 +210,7 @@ export const ExperienceSectionContent = [
   {
     title: "Next.js Developer",
     company: "Starbucks",
-    icon: <BsPatchQuestion size={experienceIconSize} />,
+    icon: null,
     date: "March 2020 - April 2021",
     bullets: [
       "Developing and maintaining web applications using React.js and other related technologies.",
@@ -222,7 +222,7 @@ export const ExperienceSectionContent = [
   {
     title: "Next.js Developer",
     company: "Starbucks",
-    icon: <BsPatchQuestion size={experienceIconSize} />,
+    icon: null,
     date: "March 2020 - April 2021",
     bullets: [
       "Developing and maintaining web applications using React.js and other related technologies.",
