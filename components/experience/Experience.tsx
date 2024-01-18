@@ -2,12 +2,10 @@ import React, { ReactNode } from "react";
 
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-
-import { ExperienceSectionContent } from "@/constants";
-
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
+import { ExperienceSectionContent } from "@/constants";
 import ExperienceCard from "./ExperienceCard";
 
 export default function Experience() {
@@ -43,12 +41,12 @@ export default function Experience() {
 
       <VerticalTimeline className="experience__timeline" lineColor="#B40041">
         {ExperienceSectionContent.map(
-          ({ icon, title, companyName, date, bullets }, index) => (
+          ({ icon, title, company, date, bullets }, index) => (
             <ExperienceCard
               key={index}
               icon={icon}
               title={title}
-              companyName={companyName}
+              company={company}
               date={date}
               bullets={bullets}
             />

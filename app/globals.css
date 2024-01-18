@@ -455,6 +455,24 @@ body {
 }
 
 /* Experience Card Section */
+.experience-card {
+  @apply relative group hover:-translate-y-4 transition-all ease-in-out duration-500 overflow-hidden;
+}
+.experience-card__icon {
+  @apply flex w-full aspect-square;
+}
+.experience-card__title {
+  @apply flex;
+}
+.experience-card__company {
+  @apply text-xs font-bold text-secondary-red uppercase;
+}
+.experience-card__bullets {
+  @apply list-disc mt-4 ml-4;
+}
+.experience-card__date {
+  @apply text-black;
+}
 
 /* Grid Component */
 .gridSquare {

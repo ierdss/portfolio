@@ -209,7 +209,7 @@ export const WorkflowSectionContent = [
 export const ExperienceSectionContent = [
   {
     title: "Next.js Developer",
-    companyName: "Starbucks",
+    company: "Starbucks",
     icon: <BsPatchQuestion size={experienceIconSize} />,
     date: "March 2020 - April 2021",
     bullets: [
@@ -221,7 +221,7 @@ export const ExperienceSectionContent = [
   },
   {
     title: "Next.js Developer",
-    companyName: "Starbucks",
+    company: "Starbucks",
     icon: <BsPatchQuestion size={experienceIconSize} />,
     date: "March 2020 - April 2021",
     bullets: [
