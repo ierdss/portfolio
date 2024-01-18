@@ -215,7 +215,7 @@ body {
 
 /* Hero Section  */
 .hero {
-  @apply flex flex-col lg:flex-row justify-center items-center gap-[40px] lg:gap-[50px] h-[100vh] max-h-[800px] max-w-screen-xl section-padding__x-axis section-padding__y-axis relative overflow-hidden;
+  @apply w-full flex flex-col lg:flex-row justify-center items-center gap-[40px] lg:gap-[50px] h-[100vh] max-h-[800px] max-w-screen-xl section-padding__x-axis section-padding__y-axis relative overflow-hidden;
 }
 
 .hero__portrait {
