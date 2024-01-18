@@ -38,7 +38,7 @@ export default function Services() {
           </motion.h1>
         </div>
         <motion.p
-          className="sectionLeading sm:text-center md:text-left max-w-[220px]"
+          className="sectionLeading sm:text-center md:text-left"
           ref={ref}
           style={{
             transform: isInView ? "translateY(0px)" : "translateY(200px)",
