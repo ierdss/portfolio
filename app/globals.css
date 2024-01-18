@@ -349,7 +349,7 @@ body {
 
 /* Service Cards Component */
 .service-cards {
-  @apply w-full flex flex-wrap flex-col md:flex-row items-center gap-6;
+  @apply w-full flex flex-wrap flex-col md:flex-row items-center gap-2 md:gap-8;
 }
 
 /* Service Card Component */
@@ -452,7 +452,7 @@ body {
   @apply flex w-full aspect-square;
 }
 .experience-card__title {
-  @apply flex;
+  @apply font-bold text-lg;
 }
 .experience-card__company {
   @apply text-xs font-bold text-secondary-red uppercase;
