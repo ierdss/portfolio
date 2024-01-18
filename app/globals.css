@@ -418,7 +418,7 @@ body {
   @apply group-hover:text-secondary-red;
 }
 .technologies-card__name {
-  @apply text-sm group-hover:text-secondary-red;
+  @apply text-sm font-medium group-hover:text-secondary-red;
 }
 
 /* Work Flow Section  */
