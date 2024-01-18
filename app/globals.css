@@ -382,7 +382,7 @@ body {
   @apply group-hover:text-white;
 }
 .service-card__description {
-  @apply font-medium text-base text-neutral-800 normal-case text-left first:text-white;
+  @apply font-medium text-xs text-neutral-800 normal-case text-left first:text-white;
 }
 .service-card__shadow {
   @apply brightness-75 w-[180px] aspect-square absolute -top-[20px] -right-[150px] bg-white z-10 opacity-20 -rotate-45;
