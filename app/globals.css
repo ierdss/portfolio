@@ -402,7 +402,7 @@ body {
   @apply w-[450px] aspect-square scale-[1.35] md:-rotate-12;
 }
 .about-description {
-  @apply font-medium text-sm text-neutral-800 normal-case text-left first:text-white;
+  @apply font-medium text-base text-neutral-800 normal-case text-left first:text-white;
 }
 
 /* Technologies Section  */
