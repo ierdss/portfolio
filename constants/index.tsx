@@ -1,5 +1,3 @@
-import { Projects } from "./projectsdatabase";
-
 import {
   ServicesSectionContent,
   AboutSectionContent,
@@ -19,3 +17,8 @@ export {
   TestimonialsSectionContent,
   ContactSectionContent,
 };
+
+import { Projects } from "./projectsdatabase";
+import { Technologies } from "./technologiesdatabase";
+
+export { Projects, Technologies };
