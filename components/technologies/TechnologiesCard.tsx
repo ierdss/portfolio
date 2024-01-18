@@ -14,7 +14,7 @@ export default function TechnologiesCard({
   link,
 }: TechnologiesCard) {
   return (
-    <a href={link} target="_blank" className="technologies-card group">
+    <a href={link || "/"} target="_blank" className="technologies-card group">
       <div className="technologies-card__icon">
         {icon || <FaQuestion size={30} />}
       </div>
