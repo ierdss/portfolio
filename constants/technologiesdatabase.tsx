@@ -1,4 +1,7 @@
-import { FaHtml5 } from "react-icons/fa";
+import { BiLogoTypescript } from "react-icons/bi";
+import { FaCss3Alt, FaHtml5, FaReact, FaSass } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 
 const size = 40;
 
@@ -9,38 +12,38 @@ export const Technologies = [
     link: "",
   },
   {
-    icon: null,
-    name: "",
+    icon: <FaCss3Alt size={size} color={`#2965f1`} />,
+    name: "CSS3",
     link: "",
   },
   {
-    icon: null,
-    name: "",
+    icon: <SiTailwindcss size={size} color={`#67e8f9`} />,
+    name: "Tailwind",
     link: "",
   },
   {
-    icon: null,
-    name: "",
+    icon: <FaSass size={size} color={`#cc6699`} />,
+    name: "Sass",
     link: "",
   },
   {
-    icon: null,
-    name: "",
+    icon: <IoLogoJavascript size={size} color={`#ecd120`} />,
+    name: "Javascript",
     link: "",
   },
   {
-    icon: null,
-    name: "",
+    icon: <BiLogoTypescript size={size} color={`#007acc`} />,
+    name: "Typescript",
     link: "",
   },
   {
-    icon: null,
-    name: "",
+    icon: <FaReact size={size} color={`#61dbfb`} />,
+    name: "React",
     link: "",
   },
   {
-    icon: null,
-    name: "",
+    icon: <SiNextdotjs size={size} color={`#171515`} />,
+    name: "Next",
     link: "",
   },
   {
