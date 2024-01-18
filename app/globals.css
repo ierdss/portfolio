@@ -402,30 +402,23 @@ body {
   @apply font-medium text-base text-neutral-800 normal-case text-left first:text-white;
 }
 
-/* Technologies Section  */
+/* Technologies Section */
 .technologies {
-  @apply w-full flex flex-col section-padding__y-axis max-w-screen-xl gap-8;
+  @apply w-full flex flex-col section-padding__y-axis max-w-screen-xl gap-8 px-2;
+}
+.technologies__list {
+  @apply w-full grid grid-flow-row grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-5;
 }
 
-.technologiesCardGrid {
-  @apply w-[90%] md:w-full grid grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-[30px] md:gap-[50px] place-items-center;
+/* Technologies Card Component*/
+.technologies-card {
+  @apply flex flex-col items-center justify-center gap-2 w-full lg:max-w-[200px] aspect-16/11 rounded-2xl shadow-md;
 }
-
-.technologiesCard {
-  @apply w-[110px] h-[160px] relative transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] md:-rotate-12 self-center;
+.technologies-card__icon {
+  @apply flex;
 }
-
-.technologiesCard__front,
-.technologiesCard__back {
-  @apply absolute inset-0 w-full h-full p-4 flex flex-col rounded-md shadow-md items-center;
-}
-
-.technologiesCard__front {
-  @apply bg-white text-black-1 justify-between [backface-visibility:hidden];
-}
-
-.technologiesCard__back {
-  @apply bg-black-1 text-white justify-center [transform:rotateY(180deg)];
+.technologies-card__name {
+  @apply text-sm;
 }
 
 /* Work Flow Section  */
