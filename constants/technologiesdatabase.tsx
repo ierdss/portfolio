@@ -46,29 +46,29 @@ export const Technologies = [
     name: "Next",
     link: "https://nextjs.org/docs",
   },
-  {
-    icon: null,
-    name: "",
-    link: "",
-  },
-  {
-    icon: null,
-    name: "",
-    link: "",
-  },
-  {
-    icon: null,
-    name: "",
-    link: "",
-  },
-  {
-    icon: null,
-    name: "",
-    link: "",
-  },
-  {
-    icon: null,
-    name: "",
-    link: "",
-  },
+  // {
+  //   icon: null,
+  //   name: "",
+  //   link: "",
+  // },
+  // {
+  //   icon: null,
+  //   name: "",
+  //   link: "",
+  // },
+  // {
+  //   icon: null,
+  //   name: "",
+  //   link: "",
+  // },
+  // {
+  //   icon: null,
+  //   name: "",
+  //   link: "",
+  // },
+  // {
+  //   icon: null,
+  //   name: "",
+  //   link: "",
+  // },
 ];
