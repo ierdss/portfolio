@@ -118,7 +118,7 @@ export const Projects = [
     linkCaseStudy: "/",
   },
   {
-    id: 5,
+    id: 6,
     title: "",
     subtitle: "",
     description: "",
