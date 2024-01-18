@@ -1,31 +1,25 @@
 import { ReactNode } from "react";
-
 import Image from "next/image";
-
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
 type ExperienceCardProps = {
   icon: ReactNode;
   title: string;
-  companyName: string;
+  company: string;
   date: string;
   bullets: Array<String>;
-};
-
-type ExperienceTimelineProps = {
-  experience: Array<ExperienceCardProps>;
 };
 
 export default function ExperienceCard({
   icon,
   title,
-  companyName,
+  company,
   date,
   bullets,
 }: ExperienceCardProps) {
   return (
     <VerticalTimelineElement
-      className="relative group hover:-translate-y-4 transition-all ease-in-out duration-500 overflow-hidden"
+      className="experience-card"
       contentStyle={{
         background: "white",
         color: "black",
@@ -33,10 +27,10 @@ export default function ExperienceCard({
       }}
       contentArrowStyle={{ borderRight: "7px solid #B40041" }}
       date={date}
-      dateClassName="text-black"
+      dateClassName="experience-card__date"
       icon={
         icon || (
-          <div className="flex w-full aspect-square ">
+          <div className="experience-card__icon">
             <Image
               src="/patterns/intersecting-circles.svg"
               fill
@@ -49,11 +43,9 @@ export default function ExperienceCard({
       }
       iconClassName="bg-white overflow-hidden"
     >
-      <h1 className="projectTitle">{title}</h1>
-      <h1 className="text-xs font-bold text-secondary-red uppercase">
-        {companyName}
-      </h1>
-      <ul className="list-disc mt-4 ml-4">
+      <h1 className="experience-card__title">{title}</h1>
+      <h1 className="experience-card__company">{company}</h1>
+      <ul className="experience-card__bullets">
         {bullets.map((bullet, index) => (
           <li key={index} className="text-sm tracking-wider pl-1 font-medium">
             {bullet}
