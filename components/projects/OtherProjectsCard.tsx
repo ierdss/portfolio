@@ -6,6 +6,7 @@ import { CiMobile1 } from "react-icons/ci";
 import { IoIosLaptop } from "react-icons/io";
 
 import { Tooltip } from "../../src/components/ReactTooltip";
+import { TbExternalLink } from "react-icons/tb";
 
 interface OtherProjectsCardProps {
   title: string;
@@ -82,17 +83,18 @@ export default function OtherProjectsCard({
             height={1000}
             alt={desktopAlt || "Desktop Thumbnail"}
             sizes="(min-width: 768px) 100vw, 50vw"
-            className="other-projects-card__image-desktop"
+            className="other-projects-card__image--desktop"
           />
         </a>
         <Image
-          src={mobileThumbnail || ""}
+          src={mobileThumbnail || "/placeholder/mobile-thumbnail.jpg"}
           width={600}
           height={600}
           alt={mobileAlt || "Mobile Thumbnail"}
           sizes="(min-width: 768px) 100vw, 50vw"
-          className="other-projects-card__image-mobile"
+          className="other-projects-card__image--mobile"
         />
+        <TbExternalLink size={30} className="other-projects-card__image-icon" />
       </div>
       <div className="other-projects-card__details">
         <div className="other-projects-card__details-header">
