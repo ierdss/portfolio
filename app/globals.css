@@ -215,7 +215,7 @@ body {
 
 /* Hero Section  */
 .hero {
-  @apply w-full flex flex-col lg:flex-row justify-center items-center gap-[40px] lg:gap-[50px] h-[100vh] max-h-[800px] max-w-screen-xl section-padding__x-axis section-padding__y-axis relative overflow-hidden;
+  @apply w-full flex flex-col lg:flex-row justify-center items-center gap-[40px] lg:gap-[50px] h-[100vh] max-h-[800px]  section-padding__x-axis section-padding__y-axis relative overflow-hidden;
 }
 
 .hero__portrait {
@@ -651,7 +651,10 @@ body {
 
 /* Footer Section */
 .footer {
-  @apply flex flex-col w-full py-6 px-16 border-t border-neutral-300 text-center;
+  @apply bg-rose-200;
+}
+.footer__title {
+  @apply flex flex-col w-full py-6 px-16 text-center bg-secondary-red text-white rounded-t-2xl;
 }
 
 /* Extra Components */
