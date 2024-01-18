@@ -15,13 +15,10 @@ export default function Experience() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div
-      id="experience"
-      className="w-full flexCenter flex-col gap-[50px] section-padding__y-axis"
-    >
-      <div className="w-[90%] md:w-full !text-left md:!text-center">
+    <div id="experience" className="experience">
+      <div className="experience__heading">
         <motion.h1
-          className="sectionOverline !text-left md:!text-center"
+          className="experience__heading-subtitle"
           ref={ref}
           style={{
             transform: isInView ? "translateY(0px)" : "translateY(200px)",
@@ -32,7 +29,7 @@ export default function Experience() {
           Experience
         </motion.h1>
         <motion.h1
-          className="sectionHeading !text-left md:!text-center"
+          className="experience__heading-title"
           ref={ref}
           style={{
             transform: isInView ? "translateY(0px)" : "translateY(200px)",
@@ -43,14 +40,15 @@ export default function Experience() {
           What Have I Done?
         </motion.h1>
       </div>
-      <VerticalTimeline className="w-full" lineColor="#B40041">
+
+      <VerticalTimeline className="experience__timeline" lineColor="#B40041">
         {ExperienceSectionContent.map(
-          ({ title, companyName, icon, date, bullets }, index) => (
+          ({ icon, title, companyName, date, bullets }, index) => (
             <ExperienceCard
               key={index}
+              icon={icon}
               title={title}
               companyName={companyName}
-              icon={icon}
               date={date}
               bullets={bullets}
             />

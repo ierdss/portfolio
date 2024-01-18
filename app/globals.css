@@ -431,12 +431,30 @@ body {
   @apply bg-black-1 text-white justify-center [transform:rotateY(180deg)];
 }
 
-/* WorkFlow Section  */
+/* Work Flow Section  */
 .workflow {
   @apply w-full flexCenter flex-col;
 }
 
-/* WorkExperience Section  */
+/* Experience Section  */
+.experience {
+  @apply w-full flexCenter flex-col gap-[50px] section-padding__y-axis;
+}
+.experience__heading {
+  @apply w-[90%] md:w-full !text-left md:!text-center;
+}
+.experience__heading-subtitle {
+  @apply sectionOverline !text-left md:!text-center;
+}
+.experience__heading-title {
+  @apply sectionHeading !text-left md:!text-center;
+}
+
+.experience__timeline {
+  @apply w-full;
+}
+
+/* Experience Card Section */
 
 /* Grid Component */
 .gridSquare {
