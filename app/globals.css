@@ -106,7 +106,7 @@ body {
 }
 
 .section-padding__x-axis {
-  @apply px-[10px] md:px-[100px];
+  @apply px-[10px] md:px-[50px] lg:px-[100px];
 }
 
 .section-padding__y-axis {
@@ -618,7 +618,7 @@ body {
 .contact {
   @apply flex flex-col md:flex-row shadow-lg;
 }
-.contact__details {
+.contact__ .contact__details {
   @apply flex flex-col;
 }
 .contact__form {
