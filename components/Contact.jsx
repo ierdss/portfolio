@@ -174,7 +174,7 @@ export default function Contact() {
             <ul className="flex flex-col gap-[20px]">
               {ContactSectionContent.map(({ icon, title, text }, index) => (
                 <li key={index} className="flex flex-row gap-2 text-left">
-                  <div>{icon}</div>
+                  <div className="text-secondary-red">{icon}</div>
                   <div>
                     <h1 className="sectionLeading">{title}</h1>
                     <p className="sectionDescription">{text}</p>
@@ -263,7 +263,7 @@ export default function Contact() {
           width={800}
           height={800}
           alt="This is impossible! An svg did not load?"
-          className="services__background top-1/2 left-1/2 translate-x-[-20%] translate-y-[-29%] hidden sm:flex"
+          className="services__background top-1/2 left-1/2 translate-x-[-5%] translate-y-[-29%] hidden sm:flex"
         />
         <Image
           typeof="background"
