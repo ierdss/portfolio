@@ -500,7 +500,7 @@ body {
 
 /* Featured Projects Component */
 .featured-projects {
-  @apply w-full max-w-screen-xl flex flex-col gap-8 lg:px-[100px];
+  @apply w-full max-w-screen-xl flex flex-col gap-8 lg:!px-[100px];
 }
 .featured-projects__map {
   @apply w-full grid grid-cols-1 gap-12;
