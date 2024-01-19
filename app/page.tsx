@@ -17,7 +17,7 @@ import ScrollSpy from "react-ui-scrollspy";
 export default function Home() {
   return (
     <main className="flex flex-col w-full justify-center items-center">
-      <ScrollSpy scrollThrottle={100} offsetTop={-50}>
+      <ScrollSpy scrollThrottle={100}>
         <Hero />
         <Services />
         <About />
