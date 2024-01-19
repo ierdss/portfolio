@@ -156,7 +156,7 @@ export default function Contact() {
         </Dialog>
       </Transition>
 
-      <div className="flex flex-col lg:flex-row bg-rose-100 rounded-3xl section-padding__y-axis section-padding__x-axis gap-[50px]">
+      <div className="flex flex-col lg:flex-row bg-rose-100 rounded-3xl section-padding__y-axis section-padding__x-axis gap-[50px] relative overflow-hidden">
         <div className="w-full md:w-1/3 md:aspect-auto aspect-square relative flex flex-col justify-center items-center md:items-start gap-8 drop-shadow-xl">
           <div className="w-full">
             <h1 className="sectionOverline !text-center md:!text-left">
@@ -185,7 +185,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="w-full md:w-2/3 !px-[0px] flex flex-col justify-center items-center gap-4 md:gap-[50px] rounded-md g:order-1 flex-1">
+        <div className="w-full md:w-2/3 !px-[0px] flex flex-col justify-center items-center gap-4 md:gap-[50px] rounded-md g:order-1 flex-1 z-20">
           <form
             ref={formRef}
             onSubmit={handleSubmit}
@@ -257,6 +257,23 @@ export default function Contact() {
             </button>
           </form>
         </div>
+        <Image
+          typeof="background"
+          src={"/patterns/cross.svg"}
+          width={800}
+          height={800}
+          alt="This is impossible! An svg did not load?"
+          className="services__background top-1/2 left-1/2 translate-x-[-20%] translate-y-[-29%] hidden sm:flex"
+        />
+        <Image
+          typeof="background"
+          src={"/patterns/cross.svg"}
+          width={1000}
+          height={1000}
+          alt="This is impossible! An svg did not load?"
+          priority
+          className="services__background -bottom-1/3 right-0 translate-x-[20%] translate-y-[-140%] sm:hidden"
+        />
       </div>
     </div>
   );
