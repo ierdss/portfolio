@@ -40,7 +40,9 @@ export default function Navbar() {
 
       <div className="navbar-desktop">
         <Link href="#">
-          <h1 className="navbar-logo">ANDREI</h1>
+          <h1 className="navbar-logo" data-to-scrollspy-id="hero">
+            ANDREI
+          </h1>
         </Link>
         <ul className="navbar-links navbar-desktop__links">
           {NavLinks.map(({ id, href, text }) => (
