@@ -341,7 +341,7 @@ body {
 
 /* Services Section  */
 .services {
-  @apply flex flex-col gap-[50px] md:max-h-[1000px] relative w-full section-padding__y-axis section-padding__x-axis bg-rose-100 rounded-2xl overflow-hidden;
+  @apply flex flex-col gap-[50px] md:max-h-[1000px] relative w-full section-padding__y-axis section-padding__x-axis bg-rose-100 rounded-[30px] overflow-hidden;
 }
 .services__background {
   @apply absolute pointer-events-none -z-0 opacity-50;
@@ -615,13 +615,23 @@ body {
 }
 
 /* Contact Component */
+.contact {
+  @apply flex flex-col md:flex-row shadow-lg;
+}
+.contact__details {
+  @apply flex flex-col;
+}
+.contact__form {
+  @apply flex flex-col;
+}
+
 .inputField,
 .textArea {
   @apply bg-white;
 }
 
 .inputField {
-  @apply border-b border-black-1 p-3 w-full focus:placeholder:italic outline-none rounded-t-md focus:bg-white;
+  @apply border-b border-black-1 p-3 w-full focus:placeholder:italic outline-none rounded-t-md focus:bg-white shadow-lg;
 }
 
 .textArea {
@@ -651,10 +661,10 @@ body {
 
 /* Footer Section */
 .footer {
-  @apply bg-rose-200;
+  @apply flex;
 }
 .footer__title {
-  @apply flex flex-col w-full py-6 px-16 text-center bg-secondary-red text-white rounded-t-2xl;
+  @apply flex flex-col w-full py-6 px-16 text-center;
 }
 
 /* Extra Components */
