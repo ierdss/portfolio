@@ -635,7 +635,7 @@ body {
 }
 
 .textArea {
-  @apply h-[190px] lg:h-[160] resize-none;
+  @apply h-[200px] md:h-[155px] resize-none;
 }
 
 /* Contact Component */

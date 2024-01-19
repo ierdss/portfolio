@@ -100,7 +100,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="flex flex-col md:flex-row w-full text-center justify-center items-center md:text-left bg-transparent overflow-hidden section-padding__y-axis section-padding__x-axis"
+      className="flex flex-col md:flex-row w-full text-center justify-center items-center md:text-left bg-transparent overflow-hidden section-padding__y-axis section-padding__x-axis !pb-[30px]"
     >
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
@@ -272,7 +272,7 @@ export default function Contact() {
           height={1000}
           alt="This is impossible! An svg did not load?"
           priority
-          className="services__background -bottom-1/3 right-0 translate-x-[20%] translate-y-[-140%] sm:hidden"
+          className="services__background -bottom-1/3 right-0 translate-x-[20%] translate-y-[-150%] sm:hidden"
         />
       </div>
     </div>
