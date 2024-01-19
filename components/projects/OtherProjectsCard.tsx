@@ -94,7 +94,7 @@ export default function OtherProjectsCard({
           sizes="(min-width: 768px) 100vw, 50vw"
           className="other-projects-card__image--mobile"
         />
-        <TbExternalLink size={20} className="other-projects-card__image-icon" />
+        <TbExternalLink size={30} className="other-projects-card__image-icon" />
       </div>
       <div className="other-projects-card__details">
         <div className="other-projects-card__details-header">
