@@ -50,7 +50,7 @@ export default function Hero() {
       <div className="hero__headline">
         <div>
           <motion.h1
-            className="sectionOverline !text-center lg:!text-left"
+            className="sectionOverline !text-center md:!text-left"
             initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -62,7 +62,7 @@ export default function Hero() {
             Andrei Sager
           </motion.h1>
           <motion.h1
-            className="sectionHeading !text-4xl !text-center lg:!text-left"
+            className="sectionHeading !text-4xl !text-center md:!text-left"
             initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -76,7 +76,7 @@ export default function Hero() {
         </div>
 
         <motion.p
-          className="sectionLeading !text-center lg:!text-left"
+          className="sectionLeading !text-center md:!text-left"
           initial={{ opacity: 0, y: 200 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
