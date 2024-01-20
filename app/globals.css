@@ -161,7 +161,7 @@ body {
 }
 
 .navbar-logo {
-  @apply w-fit text-4xl font-black w-[140px] text-secondary-red;
+  @apply w-fit text-4xl font-black text-secondary-red;
 }
 .navbar-links {
   @apply hidden lg:flex flex-row gap-4;
