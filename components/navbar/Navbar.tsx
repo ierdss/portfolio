@@ -6,7 +6,7 @@ import React from "react";
 import { ProgressBar } from "@nadfri/react-scroll-progress-bar";
 
 import { SocialIcon } from "react-social-icons";
-import { motion, useCycle } from "framer-motion";
+import { delay, motion, useCycle } from "framer-motion";
 import NavbarToggle from "./NavbarToggle";
 import { useDimensions } from "@/src/useDimensions";
 
@@ -94,13 +94,13 @@ export default function Navbar() {
         animate={isOpen ? "open" : "closed"}
         ref={containerRef}
       >
-        <Link href="#" className="w-fit">
-          <h1 className="navbar-logo">ANDREI</h1>
-        </Link>
         <motion.ul
           variants={links}
           className="navbar-links navbar-mobile__links"
         >
+          <motion.a href="#" className="w-fit" variants={link}>
+            <h1 className="navbar-logo">ANDREI</h1>
+          </motion.a>
           {NavLinks.map(({ id, href, text }) => (
             <motion.a
               variants={link}
@@ -114,20 +114,19 @@ export default function Navbar() {
               <span className="ease absolute bottom-0 left-[50%] -translate-x-1/2 h-0 w-0 border-t-2 border-secondary-red transition-all duration-500 group-hover:w-full" />
             </motion.a>
           ))}
+          <motion.ul className="navbar-mobile__socials" variants={link}>
+            {SocialMediaLinks.map(({ id, ariaLabel, url }) => (
+              <SocialIcon
+                key={id}
+                url={url}
+                target="_blank"
+                label={ariaLabel}
+                style={{ height: 35, width: 35 }}
+                className="text-secondary-red hover:text-accent-pink"
+              />
+            ))}
+          </motion.ul>
         </motion.ul>
-
-        <ul className="navbar-mobile__socials">
-          {SocialMediaLinks.map(({ id, ariaLabel, url }) => (
-            <SocialIcon
-              key={id}
-              url={url}
-              target="_blank"
-              label={ariaLabel}
-              style={{ height: 35, width: 35 }}
-              className="text-secondary-red hover:text-accent-pink"
-            />
-          ))}
-        </ul>
       </motion.div>
     </nav>
   );
