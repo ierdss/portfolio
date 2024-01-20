@@ -88,7 +88,12 @@ export default function Navbar() {
         </div>
       </motion.div>
 
-      <div className="navbar-mobile__body">
+      <motion.div
+        className="navbar-mobile__body"
+        initial={false}
+        animate={isOpen ? "open" : "closed"}
+        ref={containerRef}
+      >
         <Link href="#" className="w-fit">
           <h1 className="navbar-logo">ANDREI</h1>
         </Link>
@@ -98,8 +103,8 @@ export default function Navbar() {
         >
           {NavLinks.map(({ id, href, text }) => (
             <motion.a
-              key={id}
               variants={link}
+              key={id}
               whileTap={{ scale: 0.95 }}
               href={href}
               data-to-scrollspy-id={id}
@@ -123,7 +128,7 @@ export default function Navbar() {
             />
           ))}
         </ul>
-      </div>
+      </motion.div>
     </nav>
   );
 }
