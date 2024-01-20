@@ -89,25 +89,28 @@ export default function Navbar() {
       </motion.div>
 
       <div className="navbar-mobile__body">
-        <Link href="#">
+        <Link href="#" className="w-fit">
           <h1 className="navbar-logo">ANDREI</h1>
         </Link>
         <motion.ul
-          variants={variants}
+          variants={links}
           className="navbar-links navbar-mobile__links"
         >
           {NavLinks.map(({ id, href, text }) => (
-            <Link
+            <motion.a
               key={id}
+              variants={link}
+              whileTap={{ scale: 0.95 }}
               href={href}
               data-to-scrollspy-id={id}
               className="navbar-link navbar-mobile__link group"
             >
               {text}
               <span className="ease absolute bottom-0 left-[50%] -translate-x-1/2 h-0 w-0 border-t-2 border-secondary-red transition-all duration-500 group-hover:w-full" />
-            </Link>
+            </motion.a>
           ))}
         </motion.ul>
+
         <ul className="navbar-mobile__socials">
           {SocialMediaLinks.map(({ id, ariaLabel, url }) => (
             <SocialIcon
@@ -176,14 +179,28 @@ const sidebar = {
   },
 };
 
-// Variants
-const itemIds = [0, 1, 2, 3, 4];
-
-const variants = {
+const links = {
   open: {
     transition: { staggerChildren: 0.07, delayChildren: 0.2 },
   },
   closed: {
     transition: { staggerChildren: 0.05, staggerDirection: -1 },
+  },
+};
+
+const link = {
+  open: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      y: { stiffness: 1000, velocity: -100 },
+    },
+  },
+  closed: {
+    y: 50,
+    opacity: 0,
+    transition: {
+      y: { stiffness: 1000 },
+    },
   },
 };
