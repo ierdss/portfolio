@@ -107,7 +107,7 @@ export default function Navbar() {
             </Link>
           ))}
         </motion.ul>
-        <ul className="navbar-socials">
+        <ul className="navbar-mobile__socials">
           {SocialMediaLinks.map(({ id, ariaLabel, url }) => (
             <SocialIcon
               key={id}
