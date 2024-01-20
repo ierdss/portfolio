@@ -89,15 +89,14 @@ export default function Navbar() {
       </motion.div>
 
       <motion.div
-        className="navbar-mobile__body"
+        className={
+          isOpen ? "navbar-mobile__body--open" : "navbar-mobile__body--closed"
+        }
         initial={false}
         animate={isOpen ? "open" : "closed"}
         ref={containerRef}
       >
-        <motion.ul
-          variants={links}
-          className="navbar-links navbar-mobile__links"
-        >
+        <motion.ul variants={links} className="navbar-mobile__links">
           <motion.a href="#" className="w-fit" variants={link}>
             <h1 className="navbar-logo">ANDREI</h1>
           </motion.a>
@@ -177,7 +176,8 @@ const sidebar = {
     transition: {
       delay: 0.5,
       type: "spring",
-      stiffness: 400,
+      stiffness: 100,
+      restDelta: 0.7,
       damping: 40,
     },
   },
@@ -195,6 +195,7 @@ const links = {
 const link = {
   open: {
     y: 0,
+    z: 0,
     opacity: 1,
     transition: {
       y: { stiffness: 1000, velocity: -100 },
@@ -202,6 +203,7 @@ const link = {
   },
   closed: {
     y: 50,
+    z: -10,
     opacity: 0,
     transition: {
       y: { stiffness: 1000 },
