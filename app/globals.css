@@ -161,7 +161,7 @@ body {
 }
 
 .navbar-logo {
-  @apply text-4xl font-black w-[140px] text-secondary-red;
+  @apply w-fit text-4xl font-black w-[140px] text-secondary-red;
 }
 .navbar-links {
   @apply hidden lg:flex flex-row gap-4;
@@ -190,18 +190,21 @@ body {
   @apply absolute -top-6 bottom-0 -right-12 w-[100vh] h-[110vh] md:w-[300px] bg-rose-50;
 }
 .navbar-mobile__toggle {
-  @apply absolute outline-none border-none cursor-pointer inset-0 bg-transparent;
+  @apply absolute outline-none border-none cursor-pointer inset-0 bg-transparent z-20;
 }
 
+.navbar-mobile__body {
+  @apply absolute top-0 bottom-0 right-0 w-full flex flex-col pt-2 pb-1 md:pt-[5px] md:pb-0 px-4 md:px-8;
+}
 .navbar-mobile__links {
-  @apply absolute top-5 right-0 flex flex-col w-[300px] text-black-1 gap-4 text-center;
+  @apply flex flex-col w-full text-black-1 !gap-0 text-center;
 }
 .navbar-mobile__link {
   @apply w-full;
 }
-.navbar-mobile__top {
+/* .navbar-mobile__top {
   @apply flex w-full justify-between items-center pt-2 pb-1 px-6;
-}
+} */
 /* .navbar-mobile__toggle {
   @apply lg:hidden flex flex-row gap-10;
 }
