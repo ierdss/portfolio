@@ -272,7 +272,7 @@ export default function Contact() {
           height={1000}
           alt="This is impossible! An svg did not load?"
           priority
-          className="services__background -bottom-1/3 right-0 translate-x-[20%] translate-y-[-150%] sm:hidden"
+          className="services__background -bottom-1/3 right-0 translate-x-[20%] translate-y-[-120%] sm:hidden"
         />
       </div>
     </div>
