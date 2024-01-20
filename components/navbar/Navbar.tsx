@@ -70,7 +70,7 @@ export default function Navbar() {
       </div>
 
       <motion.div
-        className="navbar-mobile hidden"
+        className="navbar-mobile"
         initial={false}
         animate={isOpen ? "open" : "closed"}
         custom={height}
@@ -89,7 +89,7 @@ export default function Navbar() {
 
         {/* <Link href="#">
           <h1 className="navbar-logo">ANDREI</h1>
-        </Link> */}
+        </Link>
         <motion.ul
           variants={variants}
           className="navbar-links navbar-mobile__links"
@@ -106,7 +106,7 @@ export default function Navbar() {
             </Link>
           ))}
         </motion.ul>
-        {/* <ul className="navbar-socials">
+        <ul className="navbar-socials">
           {SocialMediaLinks.map(({ id, ariaLabel, url }) => (
             <SocialIcon
               key={id}
