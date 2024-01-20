@@ -86,8 +86,9 @@ export default function Navbar() {
             customClass="navbar-mobile__toggle"
           />
         </div>
-
-        {/* <Link href="#">
+      </motion.div>
+      <div className="navbar-mobile__body">
+        <Link href="#">
           <h1 className="navbar-logo">ANDREI</h1>
         </Link>
         <motion.ul
@@ -117,8 +118,8 @@ export default function Navbar() {
               className="text-secondary-red hover:text-accent-pink"
             />
           ))}
-        </ul> */}
-      </motion.div>
+        </ul>
+      </div>
     </nav>
   );
 }
