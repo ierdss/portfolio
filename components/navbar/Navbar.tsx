@@ -87,6 +87,7 @@ export default function Navbar() {
           />
         </div>
       </motion.div>
+
       <div className="navbar-mobile__body">
         <Link href="#">
           <h1 className="navbar-logo">ANDREI</h1>
