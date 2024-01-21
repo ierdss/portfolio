@@ -1,7 +1,7 @@
 import getFeaturedProjects from "../../actions/getFeaturedProjects";
 import FeaturedProjectsCard from "./FeaturedProjectsCard";
 
-import { Projects } from "@/constants/projectsdatabase";
+import { FeaturedProjectsData } from "@/constants";
 
 interface TagProps {
   id: number;
@@ -24,7 +24,7 @@ export default function FeaturedProjects() {
         <h1 className="sectionHeading">My Best Works</h1>
       </div>
       <div className="featured-projects__map">
-        {Projects.map((project) => (
+        {FeaturedProjectsData.map((project) => (
           <FeaturedProjectsCard
             key={project.id}
             title={project.title !== null ? project.title : ""}
