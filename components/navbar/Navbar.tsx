@@ -107,6 +107,7 @@ export default function Navbar() {
               whileTap={{ scale: 0.95 }}
               href={href}
               data-to-scrollspy-id={id}
+              onClick={() => toggleOpen()}
               className="navbar-link navbar-mobile__link group"
             >
               {text}
