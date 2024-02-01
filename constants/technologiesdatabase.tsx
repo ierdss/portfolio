@@ -1,7 +1,7 @@
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaCss3Alt, FaHtml5, FaReact, FaSass } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss, SiVercel } from "react-icons/si";
 
 const size = 40;
 
@@ -45,6 +45,11 @@ export const Technologies = [
     icon: <SiNextdotjs size={size} color={`#171515`} />,
     name: "Next",
     link: "https://nextjs.org/docs",
+  },
+  {
+    icon: <SiVercel size={size} color={`#171515`} />,
+    name: "Vercel",
+    link: "https://vercel.com/docs",
   },
   // {
   //   icon: null,
