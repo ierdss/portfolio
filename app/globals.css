@@ -403,7 +403,7 @@ body {
   @apply w-full text-center flex justify-center items-center md:text-left flex-col md:flex-row relative overflow-hidden section-padding__y-axis section-padding__x-axis md:h-[100vh] md:max-h-[800px];
 }
 .about-details {
-  @apply flex flex-col gap-4 w-[90%] max-w-md md:order-1;
+  @apply flex flex-col gap-4 w-[90%] max-w-xl md:order-1;
 }
 .about-portrait {
   @apply flex items-center justify-center w-[300px] aspect-16/19 overflow-hidden rounded-xl bg-secondary-red md:rotate-12 md:order-2;
