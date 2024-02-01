@@ -1,4 +1,3 @@
-import getFeaturedProjects from "../../actions/getFeaturedProjects";
 import FeaturedProjectsCard from "./FeaturedProjectsCard";
 
 import { FeaturedProjectsData } from "@/constants";

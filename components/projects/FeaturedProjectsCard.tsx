@@ -158,14 +158,14 @@ export default function FeaturedProjectsCard({
             <BsGithub size={30} />
             Source Code
           </a>
-          <a
+          {/* <a
             href={linkCaseStudy}
             target="_blank"
             className="featured-projects-card__details-link"
           >
             <BsBookHalf size={30} />
             Case Study
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
