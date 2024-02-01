@@ -1,14 +1,14 @@
-import Navbar from "./Navbar";
+import Navbar from "./navbar/Navbar";
 import Hero from "./Hero";
-import Services from "./Services";
+import Services from "./services/Services";
 import About from "./About";
-import Technologies from "./Technologies";
+import Technologies from "./technologies/Technologies";
 import Workflow from "./WorkFlow";
-import Experience from "./Experience";
-import Projects from "./Projects";
+import Experience from "./experience/Experience";
+import Projects from "./projects/Projects";
 import Testimonials from "./Testimonials";
 import Contact from "./Contact";
-import Footer from "./Footer";
+import Footer from "./footer/Footer";
 
 export {
   Navbar,

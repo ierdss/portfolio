@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -18,15 +14,14 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "allowImportingTsExtensions": true,
     "plugins": [
       {
         "name": "next"
       }
     ],
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["./*"]
     }
   },
   "include": [
@@ -34,9 +29,12 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "build/types/**/*.ts"
-, "components/canvas/Stars.jsx", "utils/motion.jsx", "app/page.jsx", "components/LoadingOverlay.jsx", "components/Contact.tsx"  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "build/types/**/*.ts",
+    "components/canvas/Stars.jsx",
+    "utils/motion.jsx",
+    "app/page.jsx",
+    "components/LoadingOverlay.jsx",
+    "components/Contact.tsx"
+  ],
+  "exclude": ["node_modules"]
 }
