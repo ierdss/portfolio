@@ -33,7 +33,8 @@ export default function ExperienceCard({
           <div className="experience-card__icon">
             <Image
               src="/patterns/intersecting-circles.svg"
-              fill
+              width={300}
+              height={300}
               alt="Circle"
               loading="lazy"
               sizes="(max-width: 768px) 50vw, 33vw"

@@ -138,7 +138,7 @@ export default function OtherProjectsCard({
             className="other-projects-card__details-link"
           >
             <IoGlobe size={34} />
-            {/* Live Demo */}
+            Live Demo
           </a>
           <a
             data-tooltip-id="tooltip__source-code"
@@ -147,17 +147,17 @@ export default function OtherProjectsCard({
             className="other-projects-card__details-link"
           >
             <BsGithub size={30} />
-            {/* Source Code */}
+            Source Code
           </a>
-          <a
+          {/* <a
             data-tooltip-id="tooltip__case-study"
             href={linkCaseStudy}
             target="_blank"
             className="other-projects-card__details-link"
           >
             <BsBookHalf size={30} />
-            {/* Case Study */}
-          </a>
+            Case Study
+          </a> */}
           <Tooltip
             id="tooltip__live-demo"
             place="left"
