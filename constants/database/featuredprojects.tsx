@@ -1,23 +1,41 @@
+// Sample
+// {
+//   id: 0,
+//   title: "",
+//   subtitle: "",
+//   description: "",
+//   desktopThumbnail: "",
+//   desktopAlt: "",
+//   mobileThumbnail: "",
+//   mobileAlt: "",
+//   platformDesktop: true,
+//   platformMobile: true,
+//   tags: [{ id: 1, tag: "" }],
+//   linkRepository: "/",
+//   linkLiveDemo: "/",
+//   linkCaseStudy: "/",
+// },
+
 export const FeaturedProjectsData = [
+  // {
+  //   id: 0,
+  //   title: "Lorebuilder",
+  //   subtitle: "World Building",
+  //   description:
+  //     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
+  //   desktopThumbnail: "",
+  //   desktopAlt: "Lorebuilder On Desktop",
+  //   mobileThumbnail: "",
+  //   mobileAlt: "Lorebuilder On Mobile",
+  //   platformDesktop: true,
+  //   platformMobile: true,
+  //   tags: [{ id: 1, tag: "Electron.js" }],
+  //   linkRepository: "/",
+  //   linkLiveDemo: "/",
+  //   linkCaseStudy: "/",
+  // },
   {
     id: 1,
-    title: "Lorebuilder",
-    subtitle: "World Building",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
-    desktopThumbnail: "",
-    desktopAlt: "Lorebuilder On Desktop",
-    mobileThumbnail: "",
-    mobileAlt: "Lorebuilder On Mobile",
-    platformDesktop: true,
-    platformMobile: true,
-    tags: [{ id: 1, tag: "Electron.js" }],
-    linkRepository: "/",
-    linkLiveDemo: "/",
-    linkCaseStudy: "/",
-  },
-  {
-    id: 2,
     title: "Samura",
     subtitle: "e-commerce shop",
     description:
@@ -39,7 +57,7 @@ export const FeaturedProjectsData = [
     linkCaseStudy: "/",
   },
   {
-    id: 3,
+    id: 2,
     title: "Bridge",
     subtitle: "Social Platform",
     description:
@@ -61,7 +79,7 @@ export const FeaturedProjectsData = [
     linkCaseStudy: "/",
   },
   {
-    id: 4,
+    id: 3,
     title: "Roadway Delivery (App)",
     subtitle: "Social Platform",
     description:

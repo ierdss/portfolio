@@ -149,15 +149,15 @@ export default function OtherProjectsCard({
             <BsGithub size={30} />
             {/* Source Code */}
           </a>
-          <a
+          {/* <a
             data-tooltip-id="tooltip__case-study"
             href={linkCaseStudy}
             target="_blank"
             className="other-projects-card__details-link"
           >
             <BsBookHalf size={30} />
-            {/* Case Study */}
-          </a>
+            Case Study
+          </a> */}
           <Tooltip
             id="tooltip__live-demo"
             place="left"
