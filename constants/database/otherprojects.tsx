@@ -65,10 +65,10 @@ export const OtherProjectsData = [
   },
   {
     id: 2,
-    title: "Road Way Delivery (Landing Page)",
+    title: "Roadway Delivery (Landing Page)",
     subtitle: "Transport Service",
     description:
-      "Road Way DeliveryService is a leading logistics company revolutionizing the industry with fast, reliable road transportation solutions. We specialize in secure, on-time deliveries for customers and businesses across local and regional destinations.",
+      "Roadway Delivery Service is a leading logistics company revolutionizing the industry with fast, reliable road transportation solutions. We specialize in secure, on-time deliveries for customers and businesses across local and regional destinations.",
     desktopThumbnail:
       "/projects-short/road-way-delivery__compressed-desktop.jpg",
     desktopAlt: "RWD full page on desktop",
