@@ -201,7 +201,7 @@ body {
 }
 
 .navbar-mobile__links {
-  @apply flex lg:hidden flex-col w-full text-black-1 gap-0 text-center;
+  @apply flex lg:hidden flex-col w-full text-black-1 gap-6 text-center;
 }
 .navbar-mobile__link {
   @apply w-full;
