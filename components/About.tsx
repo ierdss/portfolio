@@ -53,18 +53,26 @@ export default function About() {
           <h1 className="sectionHeading">Get To Know Me</h1>
         </div>
         <p className="about-description">
-          Sample muna. I'm a natural problem solver, eversince I was a kid I
-          enjoyed building contraptions with lego, solving puzzles, and
-          tinkering my curiosity away. This not only honed my interest in
-          building things but it also polished my persistence and what led me to
-          pursue this career.
+          Hey there! I'm Andrei Sager, a software developer residing in the
+          Philippines. I am a student of STI College Sta. Mesa who is currently
+          finishing his Bachelors of Science in Computer Science (BSCS) Degree.
         </p>
         <p className="about-description">
-          Sample muna. I'm a natural problem solver, eversince I was a kid I
-          enjoyed building contraptions with lego, solving puzzles, and
-          tinkering my curiosity away. This not only honed my interest in
-          building things but it also polished my persistence and what led me to
-          pursue this career.
+          During my free time I am a self-taught learner exploring deeper into
+          topics outside the scope of the college curriculum diving into
+          practice and creating my personal projects. I'm big on keeping my code
+          clean with methodologies like BEM and am always up for learning
+          something new.
+        </p>
+        <p className="about-description">
+          People often describe me as a motivated and organized person. I like
+          setting goals for projects and making sure I hit them. I believe in
+          bringing out the best results for the companies I work with, all while
+          keeping things dynamic and enjoyable.
+        </p>
+        <p className="about-description">
+          If you ever want to chat about coding, challenges, or just share some
+          cool ideas, I'm all ears! Let's keep making things better together.
         </p>
         {/* <div className="flex flex-row">
             <h1>Over Projects Completed</h1>
