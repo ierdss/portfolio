@@ -1,53 +1,22 @@
-import { useRef } from "react";
-
 import Image from "next/image";
 import ServiceCards from "./ServiceCards";
 import { ServicesSectionContent as cards } from "@/constants";
 
-import { motion, useInView } from "framer-motion";
-
 export default function Services() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
   return (
     <div id="services" className="services">
       <div className="max-w-[250px] flex flex-col gap-4">
         <div>
-          <motion.h1
-            className="sectionOverline sm:text-center md:text-left"
-            ref={ref}
-            style={{
-              transform: isInView ? "translateY(0px)" : "translateY(200px)",
-              opacity: isInView ? 1 : 0,
-              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.1s",
-            }}
-          >
+          <h1 className="sectionOverline sm:text-center md:text-left">
             Services
-          </motion.h1>
-          <motion.h1
-            className="sectionHeading sm:text-center md:text-left"
-            ref={ref}
-            style={{
-              transform: isInView ? "translateY(0px)" : "translateY(200px)",
-              opacity: isInView ? 1 : 0,
-              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.2s",
-            }}
-          >
+          </h1>
+          <h1 className="sectionHeading sm:text-center md:text-left">
             What I Can Offer
-          </motion.h1>
+          </h1>
         </div>
-        <motion.p
-          className="sectionLeading sm:text-center md:text-left"
-          ref={ref}
-          style={{
-            transform: isInView ? "translateY(0px)" : "translateY(200px)",
-            opacity: isInView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
-          }}
-        >
+        <p className="sectionLeading sm:text-center md:text-left">
           With my services, I can make your product ideas come to life.
-        </motion.p>
+        </p>
       </div>
       <div className="w-full">
         <ServiceCards cards={cards} />
