@@ -69,6 +69,11 @@ module.exports = {
         "thumbnail-mobile-4": "url()",
         "thumbnail-mobile-5": "url()",
       },
+      aspectRatio: {
+        "3/2": "3/2",
+        "16/11": "16/11",
+        "16/19": "16/19",
+      },
     },
   },
   plugins: [],
