@@ -19,7 +19,7 @@ export {
 };
 
 import { FeaturedProjectsData } from "./database/featuredprojects";
-import { Projects } from "./projectsdatabase";
+import { OtherProjectsData } from "./database/otherprojects";
 import { Technologies } from "./technologiesdatabase";
 
-export { FeaturedProjectsData, Projects, Technologies };
+export { FeaturedProjectsData, OtherProjectsData, Technologies };
