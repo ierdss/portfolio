@@ -28,6 +28,7 @@ export default function Hero() {
           width={1000}
           height={1000}
           alt="A picture of Andrei Sager"
+          priority
         />
       </div>
 
