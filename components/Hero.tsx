@@ -1,17 +1,13 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
 
 import { motion, useInView } from "framer-motion";
 import { TiDownload } from "react-icons/ti";
 import { SiMinutemailer } from "react-icons/si";
 
 export default function Hero() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
   useEffect(() => {
     let profileCardEl = document.querySelectorAll<HTMLElement>(".heroCard");
 
@@ -25,61 +21,120 @@ export default function Hero() {
     });
   }, []);
 
-  const [isDone, setIsDone] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsDone(true);
-    }, 2000);
-  }),
-    [];
-
   return (
-    <div id="hero" className="hero sectionPadding  relative overflow-hidden">
-      <div className="w-[80%] md:w-[30%] aspect-square flex items-center justify-center rounded-full overflow-hidden">
+    <div id="hero" className="hero">
+      <motion.div
+        className="hero__portrait"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.7,
+          delay: 0.3,
+          ease: [0.17, 0.55, 0.55, 1],
+          scale: {
+            type: "spring",
+            damping: 5,
+            stiffness: 100,
+            restDelta: 0.001,
+          },
+        }}
+      >
         <Image
           src="/hero.jpg"
           width={1000}
           height={1000}
           alt="A picture of Andrei Sager"
         />
+      </motion.div>
+
+      <div className="hero__headline">
+        <div>
+          <motion.h1
+            className="sectionOverline !text-center md:!text-left"
+            initial={{ opacity: 0, y: 200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.9,
+              delay: 0.2,
+              ease: [0.17, 0.55, 0.55, 1],
+            }}
+          >
+            Andrei Sager
+          </motion.h1>
+          <motion.h1
+            className="sectionHeading !text-4xl !text-center md:!text-left"
+            initial={{ opacity: 0, y: 200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.9,
+              delay: 0.3,
+              ease: [0.17, 0.55, 0.55, 1],
+            }}
+          >
+            Software Developer
+          </motion.h1>
+        </div>
+
+        <motion.p
+          className="sectionLeading !text-center md:!text-left max-w-md"
+          initial={{ opacity: 0, y: 200 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.9,
+            delay: 0.4,
+            ease: [0.17, 0.55, 0.55, 1],
+          }}
+        >
+          I specialize in constructing websites and mobile applications while
+          immersing myself in diverse aspects of the digital spectrum that pique
+          my interest.
+        </motion.p>
+
+        <div className="hero__headline__buttons">
+          <motion.a
+            href="#"
+            className="cta__outline"
+            initial={{ opacity: 0, y: 200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.9,
+              delay: 0.5,
+              ease: [0.17, 0.55, 0.55, 1],
+            }}
+          >
+            <TiDownload size={20} />
+            <p>Download CV</p>
+          </motion.a>
+          <motion.a
+            href="#projects"
+            className="cta__solid"
+            initial={{ opacity: 0, y: 200 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.9,
+              delay: 0.6,
+              ease: [0.17, 0.55, 0.55, 1],
+            }}
+          >
+            <SiMinutemailer size={20} />
+            See Projects
+          </motion.a>
+        </div>
       </div>
 
-      <motion.div
-        ref={ref}
-        style={{
-          transform: isInView ? "translateX(0px)" : "translateX(200px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1.5s",
-        }}
-        className="flex flex-col w-[90%] md:w-[50%] gap-4 text-center justify-center items-center lg:items-start shrink-0"
-      >
-        <h1 className="sectionOverline !text-center lg:!text-left">
-          Hi My Name is Andrei, I am a
-        </h1>
-        <h1 className="sectionHeading !text-center lg:!text-left">
-          Software Developer
-        </h1>
-        <p className="sectionLeading !text-center lg:!text-left">
-          The value I can bring Embracing the fusion of artistry and code, I
-          shape digital experiences as a full-stack software developer. Building
-          experiences with a twist.
-        </p>
-        <div className="flex flex-col w-fit justify-center items-center gap-4 md:order-3"></div>
-        <div className="flex w-full gap-4">
-          <Link
-            href="#contact"
-            className="navbarCta flex flex-row !bg-transparent !text-slate-300 border border-slate-300 hover:!text-secondary-red hover:border-secondary-red !w-fit"
-          >
-            <TiDownload size={30} />
-            <p>Download CV</p>
-          </Link>
-          <Link href="#contact" className="navbarCta flex flex-row !w-fit">
-            <SiMinutemailer size={30} />
-            Contact
-          </Link>
-        </div>
-      </motion.div>
+      {/* Animated Lavalamp Squares */}
+      <ul className="hero__squares">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
   );
 }
