@@ -1,7 +1,6 @@
-import getOtherProjects from "../../actions/getOtherProjects";
 import OtherProjectsCard from "./OtherProjectsCard";
 
-import { Projects } from "@/constants/projectsdatabase";
+import { OtherProjectsData } from "@/constants";
 
 interface TagProps {
   id: number;
@@ -24,7 +23,7 @@ export default function OtherProjects() {
         <h1 className="sectionHeading">More From Me</h1>
       </div>
       <div className="other-projects__map">
-        {Projects.map((project) => (
+        {OtherProjectsData.map((project) => (
           <OtherProjectsCard
             key={project.id}
             title={project.title !== null ? project.title : ""}
