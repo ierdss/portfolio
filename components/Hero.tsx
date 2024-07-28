@@ -49,7 +49,13 @@ export default function Hero() {
         </p>
 
         <div className="hero__headline__buttons">
-          <a href="#" className="cta__outline">
+          <a
+            download={true}
+            href="/documents/curriculum_vitae-no_photo.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta__outline"
+          >
             <TiDownload size={20} />
             <p>Download CV</p>
           </a>
