@@ -236,14 +236,14 @@ export default function Contact() {
             </label>
             <button
               type="submit"
-              className="!w-fit cta__solid !px-12 !py-3 flex justify-center items-center"
+              className="!w-full md:!w-fit min-w-[210px] cta__solid !px-12 !py-3 flex justify-center items-center"
             >
               {loading ? (
                 <div className="flex flex-row gap-4">
                   Sending...
                   <HashLoader
                     loading={true}
-                    size={28}
+                    size={20}
                     color="white"
                     aria-label="Loading Spinner"
                     data-testid="loader"
