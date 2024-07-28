@@ -232,7 +232,7 @@ body {
 }
 
 .hero__portrait {
-  @apply w-[80%] md:w-[30%] aspect-square flex items-center justify-center rounded-full overflow-hidden z-10 shadow-lg;
+  @apply w-[80%] md:w-[30%] aspect-square flex items-center justify-center rounded-full overflow-hidden z-10 shadow-lg brightness-125;
 }
 
 .hero__headline {

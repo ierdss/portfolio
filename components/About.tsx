@@ -39,7 +39,7 @@ export default function About() {
     >
       <div className="about-portrait">
         <Image
-          src="/hero.jpg"
+          src="/1styear.jpg"
           width={800}
           height={800}
           alt="Me in red"
