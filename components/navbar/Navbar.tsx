@@ -160,7 +160,7 @@ const SocialMediaLinks = [
     id: 3,
     title: "Github",
     ariaLabel: "Check out my projects from my GitHub repository!",
-    url: "https://github.com/Andrei-Sager",
+    url: "https://github.com/AndreiSager",
   },
 ];
 
