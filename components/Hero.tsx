@@ -24,7 +24,7 @@ export default function Hero() {
     <div id="hero" className="hero">
       <div className="hero__portrait">
         <Image
-          src="/hero.jpg"
+          src="/hero.png"
           width={1000}
           height={1000}
           alt="A picture of Andrei Sager"
