@@ -137,7 +137,7 @@ export default function Navbar() {
 // URLs
 const NavLinks = [
   { id: "about", href: "#about", text: "About" },
-  { id: "experience", href: "#experience", text: "Experience" },
+  // { id: "experience", href: "#experience", text: "Experience" },
   { id: "projects", href: "#projects", text: "Projects" },
   // { id: "testimonials", href: "#testimonials", text: "Testimonials" },
   { id: "contact", href: "#contact", text: "Contact" },
