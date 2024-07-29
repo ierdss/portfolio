@@ -40,7 +40,7 @@ export const FeaturedProjectsData = [
       { id: 7, tag: "CSS" },
       { id: 8, tag: "Sass" },
     ],
-    linkRepository: "https://github.com/LordBrim/andrei-portfolio",
+    linkRepository: "https://github.com/AndreiSager/road-way-delivery",
     linkLiveDemo: "https://roadwaydelivery.vercel.app",
     linkCaseStudy: "/",
   },
