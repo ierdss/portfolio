@@ -6,11 +6,11 @@ import Footer from "@/components/footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  link: "/favicon.ico",
+  link: "favicon.ico",
   title: "Andrei Sager Portfolio",
   description: "My personal online portfolio as a Software Developer.",
   openGraph: {
-    images: ["/Me.png"],
+    image: "/Me.png",
     url: "https://andreiportfolio.vercel.app",
     siteName: "andreiportfolio.vercel.app",
     title: "Andrei Sager Portfolio",
