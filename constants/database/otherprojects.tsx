@@ -23,7 +23,7 @@ export const OtherProjectsData = [
     subtitle: "Portfolio",
     description:
       "To be honest, this is my fourth portfolio. The first one got deleted and I didn't know how to use version control software, the second one was bloated from Sass for a relatively small project, and the last was just too ugly.",
-    desktopThumbnail: "",
+    desktopThumbnail: "/projects-short/portfolio-compressed.png",
     desktopAlt: "",
     mobileThumbnail: "",
     mobileAlt: "",
@@ -69,7 +69,7 @@ export const OtherProjectsData = [
     subtitle: "Image Gallery",
     description:
       "A simple and quick to setup image gallery created from a Next.js template. I wanted an place to commemorate my family and friends. Celebrating our milestones, memories (especially funny ones), and connections.",
-    desktopThumbnail: "",
+    desktopThumbnail: "/projects-short/remembrance-gallery-compressed.png",
     desktopAlt: "",
     mobileThumbnail: "",
     mobileAlt: "",
