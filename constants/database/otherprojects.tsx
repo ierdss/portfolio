@@ -57,6 +57,7 @@ export const OtherProjectsData = [
       { id: 2, tag: "typescript" },
       { id: 3, tag: "tailwind" },
       { id: 4, tag: "mdx" },
+      { id: 4, tag: "contentlayer" },
     ],
     linkRepository: "https://github.com/AndreiSager/blog",
     linkLiveDemo: "https://andreiblog.vercel.app/",
