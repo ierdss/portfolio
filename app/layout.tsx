@@ -6,8 +6,22 @@ import Footer from "@/components/footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
+  link: "/favicon.ico",
   title: "Andrei Sager Portfolio",
-  description: "A next.js portfolio",
+  description: "My personal online portfolio as a Software Developer.",
+  openGraph: {
+    image: "/Me.png",
+    url: "https://andreiportfolio.vercel.app",
+    site_name: "andreiportfolio.vercel.app",
+    title: "Andrei Sager Portfolio",
+    description: "My personal online portfolio as a Software Developer.",
+  },
+  twitter: {
+    image: "/Me.png",
+    card: "summary_large_image",
+    title: "Andrei Sager Portfolio",
+    description: "My personal online portfolio as a Software Developer.",
+  },
 };
 
 export default function RootLayout({
