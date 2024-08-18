@@ -68,7 +68,7 @@ export const OtherProjectsData = [
     title: "Commemoration Gallery",
     subtitle: "Image Gallery",
     description:
-      "A simple and quick to setup image gallery created from a Next.js template. I wanted an place to commemorate my family and friends. Celebrating our milestones, memories (especially funny ones), and connections.",
+      "A simple and quick to setup image gallery created from a Next.js template. Although I did use a template, I still had to make major changes and learn cloudinary. It took me a week to make the gallery support portrait images.",
     desktopThumbnail: "/projects-short/remembrance-gallery-compressed.png",
     desktopAlt: "",
     mobileThumbnail: "",
