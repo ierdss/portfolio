@@ -53,7 +53,7 @@ export default function Navbar() {
               className="navbar-link navbar-desktop__link group"
             >
               {text}
-              <span className="ease absolute bottom-0 left-[50%] -translate-x-1/2 h-0 w-0 border-t-2 border-secondary-red transition-all duration-500 group-hover:w-full" />
+              <span className="ease absolute -bottom-3 left-[50%] -translate-x-1/2 h-0 w-0 border-t-2 border-secondary-red transition-all duration-500 group-hover:w-full" />
             </Link>
           ))}
         </ul>
