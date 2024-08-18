@@ -77,6 +77,7 @@ export default function OtherProjectsCard({
     <div className="other-projects-card">
       <div className="other-projects-card__images">
         <a href={linkLiveDemo} target="_blank">
+          {/* TODO: Create a useState() to toggle between desktop and mobile thumbnails */}
           <Image
             src={desktopThumbnail || "/placeholder/desktop-thumbnail.jpg"}
             width={1000}
@@ -107,6 +108,7 @@ export default function OtherProjectsCard({
             </h1>
           </div>
           <div className="other-projects-card__details-platforms">
+            {/* TODO: Make icons clickable to change thumbnail on click */}
             {platformDesktop ? <IoIosLaptop size={40} /> : ""}
             {platformMobile ? <CiMobile1 size={25} /> : ""}
           </div>
