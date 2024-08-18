@@ -10,11 +10,13 @@ export const metadata = {
   title: "Andrei Sager Portfolio",
   description: "My personal online portfolio as a Software Developer.",
   openGraph: {
-    image: "/Me.png",
+    images: ["/Me.png"],
     url: "https://andreiportfolio.vercel.app",
-    site_name: "andreiportfolio.vercel.app",
+    siteName: "andreiportfolio.vercel.app",
     title: "Andrei Sager Portfolio",
     description: "My personal online portfolio as a Software Developer.",
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
     image: "/Me.png",
