@@ -111,12 +111,11 @@ export default function OtherProjectsCard({
             {platformMobile ? <CiMobile1 size={25} /> : ""}
           </div>
         </div>
-        <a href={linkCaseStudy}>
-          <p className="other-projects-card__details-description">
-            {description ||
-              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti pariatur dolorum doloribus natus, quisquam illo sunt rem nihil neque repellat consequatur molestiae maxime saepe laborum? Quae nesciunt excepturi quasi reprehenderit quo illum natus incidunt possimus doloribus minus. Fugit, id. Rerum facere, consectetur alias ad consequatur quam quo soluta repellat consequuntur."}
-          </p>
-        </a>
+        {/* <a href={linkCaseStudy}> */}
+        <p className="other-projects-card__details-description">
+          {description ||
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti pariatur dolorum doloribus natus, quisquam illo sunt rem nihil neque repellat consequatur molestiae maxime saepe laborum? Quae nesciunt excepturi quasi reprehenderit quo illum natus incidunt possimus doloribus minus. Fugit, id. Rerum facere, consectetur alias ad consequatur quam quo soluta repellat consequuntur."}
+        </p>
         <ul className="other-projects-card__details-tags">
           {tags.length !== 0
             ? tags.map((tag) => (

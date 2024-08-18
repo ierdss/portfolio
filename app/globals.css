@@ -604,7 +604,7 @@ body {
   @apply block text-left w-full text-xs text-secondary-red font-bold uppercase;
 }
 .other-projects-card__details-description {
-  @apply text-sm text-black font-medium text-justify lg:text-left normal-case line-clamp-3;
+  @apply text-sm text-black font-medium text-justify lg:text-left normal-case md:line-clamp-4;
 }
 .other-projects-card__details-platforms {
   @apply flex flex-row items-center gap-3;

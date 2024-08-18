@@ -18,7 +18,7 @@ export default function Projects() {
         <h1 className="sectionHeading !text-center">Check Out My Projects!</h1>
       </div>
       <FeaturedProjects />
-      {/* <OtherProjects /> */}
+      <OtherProjects />
     </div>
   );
 }
