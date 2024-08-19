@@ -39,10 +39,11 @@ export default function Navbar() {
       />
 
       <div className="navbar-desktop">
-        <Link href="#">
+        <Link href="#" className="relative group">
           <h1 className="navbar-logo" onClick={() => toggleOpen()}>
             ANDREI
           </h1>
+          <span className="ease absolute -bottom-[14px] left-0 h-0 w-0 border-t-2 border-secondary-red transition-all duration-500 group-hover:w-full" />
         </Link>
         <ul className="navbar-links navbar-desktop__links">
           {NavLinks.map(({ id, href, text }) => (
@@ -50,7 +51,7 @@ export default function Navbar() {
               key={id}
               href={href}
               data-to-scrollspy-id={id}
-              className="navbar-link navbar-desktop__link group"
+              className="navbar-link group"
             >
               {text}
               <span className="ease absolute -bottom-3 left-[50%] -translate-x-1/2 h-0 w-0 border-t-2 border-secondary-red transition-all duration-500 group-hover:w-full" />
