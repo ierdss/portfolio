@@ -176,12 +176,6 @@ body {
 .navbar-desktop {
   @apply flex justify-between items-center gap-10 md:gap-16 w-screen lg:max-w-screen-xl;
 }
-/* .navbar-desktop__links {
-  @apply;
-}
-.navbar-desktop__link {
-  @apply;
-} */
 
 .navbar-mobile {
   @apply lg:hidden top-0 bottom-0 right-0 relative;
