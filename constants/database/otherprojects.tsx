@@ -41,30 +41,6 @@ export const OtherProjectsData = [
   },
   {
     id: 1,
-    title: "My Blog",
-    subtitle: "Blog",
-    description:
-      "A simple and quick to setup ordinary blog created from a Next.js template. I wanted to write my thoughts and experiences in a place where I wouldn't need to worry about paying for any service.",
-    desktopThumbnail: "",
-    desktopAlt: "",
-    mobileThumbnail: "",
-    mobileAlt: "",
-    platformDesktop: true,
-    platformMobile: true,
-    tags: [
-      { id: 0, tag: "template" },
-      { id: 1, tag: "next.js" },
-      { id: 2, tag: "typescript" },
-      { id: 3, tag: "tailwind" },
-      { id: 4, tag: "mdx" },
-      { id: 5, tag: "contentlayer" },
-    ],
-    linkRepository: "https://github.com/AndreiSager/blog",
-    linkLiveDemo: "https://andreiblog.vercel.app/",
-    linkCaseStudy: "/",
-  },
-  {
-    id: 2,
     title: "Commemoration Gallery",
     subtitle: "Image Gallery",
     description:
@@ -85,6 +61,30 @@ export const OtherProjectsData = [
     linkRepository:
       "https://github.com/AndreiSager/family-friends_image-gallery",
     linkLiveDemo: "https://remembrance-gallery.vercel.app",
+    linkCaseStudy: "/",
+  },
+  {
+    id: 2,
+    title: "My Blog",
+    subtitle: "Blog",
+    description:
+      "A simple and quick to setup ordinary blog created from a Next.js template. I wanted to write my thoughts and experiences in a place where I wouldn't need to worry about paying for any service.",
+    desktopThumbnail: "",
+    desktopAlt: "",
+    mobileThumbnail: "",
+    mobileAlt: "",
+    platformDesktop: true,
+    platformMobile: true,
+    tags: [
+      { id: 0, tag: "template" },
+      { id: 1, tag: "next.js" },
+      { id: 2, tag: "typescript" },
+      { id: 3, tag: "tailwind" },
+      { id: 4, tag: "mdx" },
+      { id: 5, tag: "contentlayer" },
+    ],
+    linkRepository: "https://github.com/AndreiSager/blog",
+    linkLiveDemo: "https://andreiblog.vercel.app/",
     linkCaseStudy: "/",
   },
 ];
