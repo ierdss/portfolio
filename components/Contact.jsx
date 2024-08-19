@@ -72,17 +72,36 @@ export default function Contact() {
       .then(
         () => {
           setLoading(false);
-          handleModal(
-            "Message Sent Succesfully!",
-            "Thank you for contacting me! I will get back to you as soon as possible.",
-            "Okay, I undestand"
-          );
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
+          if (
+            !(
+              (form.name == "" || form.name == null) &&
+              (form.email == "" || form.email == null) &&
+              (form.message == "" || form.message == null)
+            )
+          ) {
+            setLoading(false);
+
+            handleModal(
+              "Message Sent Succesfully!",
+              "Thank you for contacting me! I will get back to you as soon as possible.",
+              "Okay, I undestand"
+            );
+
+            setForm({
+              name: "",
+              email: "",
+              message: "",
+            });
+          } else {
+            setLoading(false);
+
+            handleModal(
+              "Failed To Send Message!",
+              "Please fill up all the fields!",
+              "Okay, I undestand"
+            );
+          }
         },
         (error) => {
           setLoading(false);
