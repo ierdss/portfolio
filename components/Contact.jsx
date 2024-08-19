@@ -103,7 +103,7 @@ export default function Contact() {
       className="flex flex-col md:flex-row w-full text-center justify-center items-center md:text-left bg-transparent overflow-hidden section-padding__y-axis section-padding__x-axis !pb-[30px]"
     >
       <Transition appear show={isOpen} as={Fragment}>
-        <Dialog as="div" className="relative z-10" onClose={closeModal}>
+        <Dialog as="div" className="relative z-50" onClose={closeModal}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -113,10 +113,10 @@ export default function Contact() {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed inset-0 bg-black bg-opacity-25" />
+            <div className="fixed inset-0  bg-black bg-opacity-25" />
           </Transition.Child>
           <div className="fixed inset-0 overflow-y-auto">
-            <div className="flex items-center justify-center p-4 text-center">
+            <div className="flex items-center justify-center p-4 text-center  w-full h-full">
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
@@ -126,7 +126,7 @@ export default function Contact() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-md p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-3xl p-6 text-left align-middle shadow-xl transition-all bg-white  ">
                   <Dialog.Title
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900 capitalize"
@@ -143,7 +143,7 @@ export default function Contact() {
                   <div className="mt-4">
                     <button
                       type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-secondary-red px-4 py-2 text-sm font-medium text-white hover:brightness-125 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary-red focus-visible:ring-offset-2 normal-case"
+                      className="inline-flex justify-center rounded-3xl border border-transparent bg-secondary-red px-4 py-2 text-sm text-white hover:brightness-125 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary-red focus-visible:ring-offset-2 normal-case font-semibold"
                       onClick={closeModal}
                     >
                       {modal.button || "Got it, thanks!"}
