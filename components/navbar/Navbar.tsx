@@ -43,7 +43,7 @@ export default function Navbar() {
           <h1 className="navbar-logo" onClick={() => toggleOpen()}>
             ANDREI
           </h1>
-          <span className="ease absolute bottom-0 left-0 h-0 w-full border-t-4 border-secondary-red transition-all duration-500" />
+          <span className="ease absolute -bottom-1 left-0 h-0 w-full border-t-4 border-secondary-red transition-all duration-500" />
         </Link>
         <ul className="navbar-links navbar-desktop__links">
           {NavLinks.map(({ id, href, text }) => (
