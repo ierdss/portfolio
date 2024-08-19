@@ -77,7 +77,7 @@ export default function OtherProjectsCard({
     <div className="other-projects-card">
       <div className="other-projects-card__images">
         <a href={linkLiveDemo} target="_blank">
-          {/* TODO: Create a useState() to toggle between desktop and mobile thumbnails */}
+          {/* TODO: Create a useState() to toggle between desktop and mobile thumbnails. Toggle animation as bubble highlighting icons.*/}
           <Image
             src={desktopThumbnail || "/placeholder/desktop-thumbnail.jpg"}
             width={1000}
