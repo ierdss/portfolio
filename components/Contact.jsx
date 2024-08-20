@@ -73,40 +73,20 @@ export default function Contact() {
         () => {
           setLoading(false);
 
-          if (
-            !(
-              (form.name == "" || form.name == null) &&
-              (form.email == "" || form.email == null) &&
-              (form.message == "" || form.message == null)
-            )
-          ) {
-            setLoading(false);
-
-            handleModal(
-              "Message Sent Succesfully!",
-              "Thank you for contacting me! I will get back to you as soon as possible.",
-              "Okay, I undestand"
-            );
-
-            setForm({
-              name: "",
-              email: "",
-              message: "",
-            });
-          } else {
-            setLoading(false);
-
-            handleModal(
-              "Failed To Send Message!",
-              "Please fill up all the fields!",
-              "Okay, I undestand"
-            );
-          }
+          handleModal(
+            "Message Sent Succesfully!",
+            "Thank you for contacting me! I will get back to you as soon as possible.",
+            "Okay, I undestand"
+          );
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
         },
         (error) => {
-          setLoading(false);
           console.error(error);
-
+          setLoading(false);
           handleModal(
             "Failed To Send Message!",
             "Ahh, something went wrong. Please try again!",
@@ -220,6 +200,7 @@ export default function Contact() {
                   name="name"
                   value={form.name}
                   onChange={handleChange}
+                  required={true}
                   placeholder="Enter your name.."
                   autoComplete="on"
                   className="inputField sectionDescription"
@@ -234,6 +215,7 @@ export default function Contact() {
                   name="email"
                   value={form.email}
                   onChange={handleChange}
+                  required={true}
                   placeholder="Enter your email.."
                   autoComplete="on"
                   className="inputField sectionDescription"
@@ -249,6 +231,7 @@ export default function Contact() {
                 name="message"
                 value={form.message}
                 onChange={handleChange}
+                required={true}
                 placeholder="Write your message.."
                 className="inputField textArea sectionDescription"
               />
