@@ -3,7 +3,6 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 import React from "react";
-import { ProgressBar } from "@nadfri/react-scroll-progress-bar";
 
 import { SocialIcon } from "react-social-icons";
 import { useScroll, useSpring, motion, useCycle } from "framer-motion";
@@ -38,13 +37,6 @@ export default function Navbar() {
   return (
     <nav id="navbar" className="navbar">
       {/* Measures the scroll progress on the page. */}
-      {/* <ProgressBar
-        color1="#e2e8f0"
-        color2="#B40041"
-        height="5px"
-        position="fixed"
-      /> */}
-
       <motion.div
         className="fixed top-0 left-0 right-0 h-[5px] bg-secondary-red origin-top-left"
         style={{ scaleX }}
