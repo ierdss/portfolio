@@ -61,6 +61,7 @@ export const OtherProjectsData = [
       { id: 1, tag: "typescript" },
       { id: 2, tag: "tailwind" },
       { id: 3, tag: "emailjs" },
+      { id: 4, tag: "framer motion" },
     ],
     linkRepository: "/",
     linkLiveDemo: "/",
