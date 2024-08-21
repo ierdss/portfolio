@@ -18,8 +18,7 @@ export {
   ContactSectionContent,
 };
 
-import { FeaturedProjectsData } from "./database/featuredprojects";
-import { OtherProjectsData } from "./database/otherprojects";
+import { FeaturedProjectsData, OtherProjectsData } from "./database/projects";
 import { Technologies } from "./technologiesdatabase";
 
 export { FeaturedProjectsData, OtherProjectsData, Technologies };

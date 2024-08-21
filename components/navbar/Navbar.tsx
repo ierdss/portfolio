@@ -3,14 +3,20 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 import React from "react";
-import { ProgressBar } from "@nadfri/react-scroll-progress-bar";
 
 import { SocialIcon } from "react-social-icons";
-import { delay, motion, useCycle } from "framer-motion";
+import { useScroll, useSpring, motion, useCycle } from "framer-motion";
 import NavbarToggle from "./NavbarToggle";
 import { useDimensions } from "@/src/useDimensions";
 
 export default function Navbar() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
   useEffect(() => {
     const onScroll = () => {
       const navbar = document.getElementById("navbar")!;
@@ -31,18 +37,17 @@ export default function Navbar() {
   return (
     <nav id="navbar" className="navbar">
       {/* Measures the scroll progress on the page. */}
-      <ProgressBar
-        color1="#e2e8f0"
-        color2="#B40041"
-        height="5px"
-        position="fixed"
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-[5px] bg-secondary-red origin-top-left"
+        style={{ scaleX }}
       />
 
       <div className="navbar-desktop">
-        <Link href="#">
+        <Link href="#" className="relative group">
           <h1 className="navbar-logo" onClick={() => toggleOpen()}>
             ANDREI
           </h1>
+          <span className="ease absolute -bottom-1 left-0 h-0 w-full border-t-4 border-secondary-red transition-all duration-500" />
         </Link>
         <ul className="navbar-links navbar-desktop__links">
           {NavLinks.map(({ id, href, text }) => (
@@ -50,10 +55,10 @@ export default function Navbar() {
               key={id}
               href={href}
               data-to-scrollspy-id={id}
-              className="navbar-link navbar-desktop__link group"
+              className="navbar-link group"
             >
               {text}
-              <span className="ease absolute bottom-0 left-[50%] -translate-x-1/2 h-0 w-0 border-t-2 border-secondary-red transition-all duration-500 group-hover:w-full" />
+              <span className="ease absolute -bottom-3 left-[50%] -translate-x-1/2 h-0 w-0 border-t-2 border-secondary-red transition-all duration-500 group-hover:w-full" />
             </Link>
           ))}
         </ul>
@@ -137,7 +142,7 @@ export default function Navbar() {
 // URLs
 const NavLinks = [
   { id: "about", href: "#about", text: "About" },
-  { id: "experience", href: "#experience", text: "Experience" },
+  // { id: "experience", href: "#experience", text: "Experience" },
   { id: "projects", href: "#projects", text: "Projects" },
   // { id: "testimonials", href: "#testimonials", text: "Testimonials" },
   { id: "contact", href: "#contact", text: "Contact" },
@@ -160,7 +165,7 @@ const SocialMediaLinks = [
     id: 3,
     title: "Github",
     ariaLabel: "Check out my projects from my GitHub repository!",
-    url: "https://github.com/Andrei-Sager",
+    url: "https://github.com/AndreiSager",
   },
 ];
 

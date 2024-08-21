@@ -153,11 +153,8 @@ body {
 .navbar--scrolled .navbar-logo {
   @apply text-slate-500  hover:text-secondary-red;
 }
-.active-scroll-spy {
-  @apply text-secondary-red;
-}
-.active-scroll-spy span {
-  @apply w-full;
+.navbar--scrolled span {
+  @apply w-0;
 }
 
 .navbar-logo {
@@ -176,12 +173,6 @@ body {
 .navbar-desktop {
   @apply flex justify-between items-center gap-10 md:gap-16 w-screen lg:max-w-screen-xl;
 }
-/* .navbar-desktop__links {
-  @apply;
-}
-.navbar-desktop__link {
-  @apply;
-} */
 
 .navbar-mobile {
   @apply lg:hidden top-0 bottom-0 right-0 relative;
@@ -232,7 +223,7 @@ body {
 }
 
 .hero__portrait {
-  @apply w-[80%] md:w-[30%] aspect-square flex items-center justify-center rounded-full overflow-hidden z-10;
+  @apply w-[80%] md:w-[30%] aspect-square flex items-center justify-center rounded-full overflow-hidden z-10 shadow-lg brightness-125;
 }
 
 .hero__headline {
@@ -604,7 +595,7 @@ body {
   @apply block text-left w-full text-xs text-secondary-red font-bold uppercase;
 }
 .other-projects-card__details-description {
-  @apply text-sm text-black font-medium text-justify lg:text-left normal-case line-clamp-3;
+  @apply text-sm text-black font-medium text-justify lg:text-left normal-case md:line-clamp-4;
 }
 .other-projects-card__details-platforms {
   @apply flex flex-row items-center gap-3;

@@ -77,6 +77,7 @@ export default function OtherProjectsCard({
     <div className="other-projects-card">
       <div className="other-projects-card__images">
         <a href={linkLiveDemo} target="_blank">
+          {/* TODO: Create a useState() to toggle between desktop and mobile thumbnails. Toggle animation as bubble highlighting icons.*/}
           <Image
             src={desktopThumbnail || "/placeholder/desktop-thumbnail.jpg"}
             width={1000}
@@ -107,16 +108,16 @@ export default function OtherProjectsCard({
             </h1>
           </div>
           <div className="other-projects-card__details-platforms">
+            {/* TODO: Make icons clickable to change thumbnail on click */}
             {platformDesktop ? <IoIosLaptop size={40} /> : ""}
             {platformMobile ? <CiMobile1 size={25} /> : ""}
           </div>
         </div>
-        <a href={linkCaseStudy}>
-          <p className="other-projects-card__details-description">
-            {description ||
-              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti pariatur dolorum doloribus natus, quisquam illo sunt rem nihil neque repellat consequatur molestiae maxime saepe laborum? Quae nesciunt excepturi quasi reprehenderit quo illum natus incidunt possimus doloribus minus. Fugit, id. Rerum facere, consectetur alias ad consequatur quam quo soluta repellat consequuntur."}
-          </p>
-        </a>
+        {/* <a href={linkCaseStudy}> */}
+        <p className="other-projects-card__details-description">
+          {description ||
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti pariatur dolorum doloribus natus, quisquam illo sunt rem nihil neque repellat consequatur molestiae maxime saepe laborum? Quae nesciunt excepturi quasi reprehenderit quo illum natus incidunt possimus doloribus minus. Fugit, id. Rerum facere, consectetur alias ad consequatur quam quo soluta repellat consequuntur."}
+        </p>
         <ul className="other-projects-card__details-tags">
           {tags.length !== 0
             ? tags.map((tag) => (

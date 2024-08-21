@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import Image from "next/image";
 
-import { TiDownload } from "react-icons/ti";
+import { FaGithub } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
 
 export default function Hero() {
@@ -24,7 +24,7 @@ export default function Hero() {
     <div id="hero" className="hero">
       <div className="hero__portrait">
         <Image
-          src="/hero.jpg"
+          src="/hero.png"
           width={1000}
           height={1000}
           alt="A picture of Andrei Sager"
@@ -49,9 +49,15 @@ export default function Hero() {
         </p>
 
         <div className="hero__headline__buttons">
-          <a href="#" className="cta__outline">
-            <TiDownload size={20} />
-            <p>Download CV</p>
+          <a
+            download={true}
+            href="https://github.com/AndreiSager/files/blob/495a5a1c5238bc0de0bd23ee95d40821accaf439/curriculum_vitae-no_photo.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta__outline"
+          >
+            <FaGithub size={20} />
+            <p>View CV</p>
           </a>
           <a href="#projects" className="cta__solid">
             <SiMinutemailer size={20} />
