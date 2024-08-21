@@ -6,11 +6,18 @@ import React from "react";
 import { ProgressBar } from "@nadfri/react-scroll-progress-bar";
 
 import { SocialIcon } from "react-social-icons";
-import { delay, motion, useCycle } from "framer-motion";
+import { useScroll, useSpring, motion, useCycle } from "framer-motion";
 import NavbarToggle from "./NavbarToggle";
 import { useDimensions } from "@/src/useDimensions";
 
 export default function Navbar() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
   useEffect(() => {
     const onScroll = () => {
       const navbar = document.getElementById("navbar")!;
@@ -31,11 +38,16 @@ export default function Navbar() {
   return (
     <nav id="navbar" className="navbar">
       {/* Measures the scroll progress on the page. */}
-      <ProgressBar
+      {/* <ProgressBar
         color1="#e2e8f0"
         color2="#B40041"
         height="5px"
         position="fixed"
+      /> */}
+
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-[5px] bg-secondary-red origin-top-left"
+        style={{ scaleX }}
       />
 
       <div className="navbar-desktop">
