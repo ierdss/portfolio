@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import Image from "next/image";
 
-import { TiDownload } from "react-icons/ti";
+import { FaGithub } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
 
 export default function Hero() {
@@ -51,13 +51,13 @@ export default function Hero() {
         <div className="hero__headline__buttons">
           <a
             download={true}
-            href="/documents/curriculum_vitae-no_photo.pdf"
+            href="https://github.com/AndreiSager/files/blob/495a5a1c5238bc0de0bd23ee95d40821accaf439/curriculum_vitae-no_photo.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="cta__outline"
           >
-            <TiDownload size={20} />
-            <p>Download CV</p>
+            <FaGithub size={20} />
+            <p>View CV</p>
           </a>
           <a href="#projects" className="cta__solid">
             <SiMinutemailer size={20} />
