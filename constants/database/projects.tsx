@@ -63,7 +63,7 @@ export const OtherProjectsData = [
       { id: 3, tag: "emailjs" },
       { id: 4, tag: "framer motion" },
     ],
-    linkRepository: "/",
+    linkRepository: "https://github.com/AndreiSager/andrei-portfolio",
     linkLiveDemo: "/",
     linkCaseStudy: "/",
   },
