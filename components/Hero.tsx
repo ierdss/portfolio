@@ -49,6 +49,10 @@ export default function Hero() {
         </p>
 
         <div className="hero__headline__buttons">
+          <a href="#projects" className="cta__solid">
+            <SiMinutemailer size={20} />
+            See Projects
+          </a>
           <a
             download={true}
             href="https://github.com/AndreiSager/files/blob/495a5a1c5238bc0de0bd23ee95d40821accaf439/curriculum_vitae-no_photo.pdf"
@@ -58,10 +62,6 @@ export default function Hero() {
           >
             <FaGithub size={20} />
             <p>View CV</p>
-          </a>
-          <a href="#projects" className="cta__solid">
-            <SiMinutemailer size={20} />
-            See Projects
           </a>
         </div>
       </div>
