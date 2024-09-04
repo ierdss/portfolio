@@ -156,14 +156,16 @@ export default function Footer() {
           </Dialog>
         </Transition>
 
-        <div className="flex flex-col ">
-          <h1 className="sectionHeading !text-center text-3xl capitalize text-gray md:!text-left">
-            Reaching goals relentlessly!
-          </h1>
-          <p className=" mt-2 !text-center text-[20px] text-gray brightness-90 md:!text-left">
-            Relentlessly pursuing goals with unwavering <br />
-            determination, turning vision into reality!
-          </p>
+        <div className="flex flex-col gap-[70px]">
+          <div className="flex flex-col gap-0">
+            <h1 className="text-left text-[64px] font-bold capitalize text-gray">
+              Reaching goals relentlessly!
+            </h1>
+            <p className=" mt-2 !text-center text-[20px] text-gray brightness-90 md:!text-left">
+              Relentlessly pursuing goals with unwavering <br />
+              determination, turning vision into reality!
+            </p>
+          </div>
 
           <div className=" relative flex flex-col gap-[50px] overflow-hidden  lg:flex-row">
             <div className="g:order-1 z-20 flex w-full flex-1 flex-col items-center justify-center gap-4 rounded-md !px-[0px] md:gap-[50px] lg:w-2/3">
