@@ -662,13 +662,3 @@ body {
 .contactCard__info {
   @apply text-xs;
 }
-
-/* Footer Section */
-.footer {
-  @apply flex;
-}
-.footer__title {
-  @apply flex flex-col w-full py-6 px-16 text-center;
-}
-
-/* Extra Components */
