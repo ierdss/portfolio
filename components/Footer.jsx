@@ -204,16 +204,16 @@ export default function Footer() {
                     className="block w-full min-w-[210px] items-center justify-center rounded-[10px] bg-gray p-[16px] font-bold text-blackberry hover:brightness-110 md:w-[300px]"
                   >
                     {loading ? (
-                      <div className="flex flex-row gap-4">
+                      <div className="flex flex-row items-center justify-center gap-4">
                         Sending...
                         <HashLoader
                           loading={true}
                           size={20}
-                          color="white"
+                          color="#252131"
                           aria-label="Loading Spinner"
                           data-testid="loader"
                           speedMultiplier={1}
-                          className="text-white"
+                          className="text-blackberry"
                         />
                       </div>
                     ) : (
