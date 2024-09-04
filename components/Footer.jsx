@@ -113,7 +113,7 @@ export default function Footer() {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <div className="fixed inset-0  bg-black bg-opacity-25" />
+              <div className="fixed inset-0 bg-black bg-opacity-25" />
             </Transition.Child>
             <div className="fixed inset-0 overflow-y-auto">
               <div className="flex h-full w-full items-center justify-center p-4 text-center">
@@ -185,7 +185,7 @@ export default function Footer() {
                       required={true}
                       placeholder="Enter your name..."
                       autoComplete="on"
-                      className="bg-blackglass text-gray2 block w-full select-none rounded-[10px] bg-opacity-70 p-[16px] text-left focus:placeholder:italic md:w-[300px]"
+                      className="bg-blackglass/70 text-gray2 block w-full select-none rounded-[10px] p-[16px] text-left focus:placeholder:italic md:w-[300px]"
                     />
 
                     <input
@@ -196,7 +196,7 @@ export default function Footer() {
                       required={true}
                       placeholder="Enter your email..."
                       autoComplete="on"
-                      className="bg-blackglass text-gray2 block w-full select-none rounded-[10px] bg-opacity-70 p-[16px] text-left focus:placeholder:italic md:w-[300px]"
+                      className="bg-blackglass/70 text-gray2 block w-full select-none rounded-[10px] p-[16px] text-left focus:placeholder:italic md:w-[300px]"
                     />
                   </div>
 
@@ -207,7 +207,7 @@ export default function Footer() {
                     onChange={handleChange}
                     required={true}
                     placeholder="Enter your message..."
-                    className=" bg-blackglass text-gray2 mb-[15px] block h-full w-full select-none resize-none rounded-[10px] bg-opacity-70 p-[16px] text-left focus:placeholder:italic md:mb-[0px] md:h-[175px] md:w-[500px]
+                    className=" bg-blackglass/70 text-gray2 mb-[15px] block h-full w-full select-none resize-none rounded-[10px]  p-[16px] text-left focus:placeholder:italic md:mb-[0px] md:h-[175px] md:w-[500px]
                     "
                   />
                 </div>
@@ -238,7 +238,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex h-[2px] w-full bg-gray opacity-10  md:hidden" />
+        <div className="flex h-[2px] w-full bg-gray/10  md:hidden" />
 
         <div className="flex flex-row items-center justify-center gap-[30px] md:flex-col md:items-end md:justify-end md:gap-[60px]">
           <ul className="order-2 flex w-fit flex-row justify-between gap-[15px] md:order-1 md:w-full md:gap-2 lg:flex">
