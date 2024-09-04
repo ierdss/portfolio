@@ -16,7 +16,7 @@ import ScrollSpy from "react-ui-scrollspy";
 
 export default function Home() {
   return (
-    <main className="flex flex-col w-full justify-center items-center">
+    <main className="flex w-full flex-col items-center justify-center">
       <ScrollSpy
         scrollThrottle={300}
         offsetBottom={100}
@@ -26,11 +26,10 @@ export default function Home() {
         <Hero />
         <Services />
         <About />
-        {/* <Workflow /> */}
-        {/* <Experience /> */}
+        <Experience />
         <Technologies />
         <Projects />
-        {/* <Testimonials /> */}
+        <Testimonials />
       </ScrollSpy>
     </main>
   );
