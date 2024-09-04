@@ -237,15 +237,17 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-row items-center justify-between gap-[30px] md:flex-col md:items-end md:justify-end md:gap-[60px]">
-          <ul className="order-2 flex w-fit flex-row items-center gap-[15px] md:order-1 md:w-full md:justify-between md:gap-2 lg:flex">
+        <div className="flex h-[2px] w-full bg-gray opacity-10  md:hidden" />
+
+        <div className="flex flex-row items-center justify-center gap-[30px] md:flex-col md:items-end md:justify-end md:gap-[60px]">
+          <ul className="order-2 flex w-fit flex-row justify-between gap-[15px] md:order-1 md:w-full md:gap-2 lg:flex">
             {SocialMediaLinks.map(({ id, icon, ariaLabel, url }) => (
               <a
                 key={id}
                 href={url}
                 target="_blank"
                 ariaLabel={ariaLabel}
-                className="flex h-[28px] w-[28px] items-center justify-center rounded-full text-gray md:h-[48px] md:w-[48px]"
+                className="flex h-[28px] w-[28px] items-center justify-center text-gray md:h-[48px] md:w-[48px]"
               >
                 {icon}
               </a>
