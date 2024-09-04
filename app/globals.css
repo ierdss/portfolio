@@ -324,9 +324,6 @@ body {
 }
 
 /* Services Section  */
-.services {
-  @apply section-padding__y-axis section-padding__x-axis relative flex w-full flex-col gap-[50px] overflow-hidden rounded-[30px] bg-rose-100 md:max-h-[1000px];
-}
 .services__background {
   @apply pointer-events-none absolute -z-0 opacity-50;
 }
@@ -370,9 +367,6 @@ body {
 }
 
 /* About Me Section */
-.about {
-  @apply section-padding__y-axis section-padding__x-axis relative flex w-full flex-col items-center justify-center overflow-hidden text-center md:h-[100vh] md:max-h-[800px] md:flex-row md:text-left;
-}
 .about-details {
   @apply flex w-[90%] max-w-xl flex-col gap-4 md:order-1;
 }
@@ -387,9 +381,6 @@ body {
 }
 
 /* Technologies Section */
-.technologies {
-  @apply section-padding__y-axis flex w-full flex-col gap-8 px-2;
-}
 .technologies__list {
   @apply grid w-full grid-flow-row grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 md:gap-5 lg:grid-cols-6;
 }
@@ -411,9 +402,6 @@ body {
 }
 
 /* Experience Section  */
-.experience {
-  @apply flexCenter section-padding__y-axis w-full flex-col gap-[50px];
-}
 .experience__heading {
   @apply w-[90%] !text-left md:w-full md:!text-center;
 }
@@ -446,11 +434,6 @@ body {
 }
 .experience-card__date {
   @apply text-black;
-}
-
-/* Projects Component */
-.projects {
-  @apply section-padding__y-axis flex h-fit w-full flex-col items-center justify-center gap-[50px] px-2 sm:px-5 md:text-left;
 }
 
 /* Featured Projects Component */
