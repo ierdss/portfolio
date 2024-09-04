@@ -14,7 +14,10 @@ module.exports = {
         },
         heading: "rgb(var(--color-heading) / <alpha-value>)",
         content: "rgb(var(--color-content) / <alpha-value>)",
-        accent: "rgb(var(--color-accent) / <alpha-value>)",
+        accent: {
+          1: "rgb(var(--color-accent) / <alpha-value>)",
+          2: "rgb(var(--color-accent) / <alpha-value>)",
+        },
         glass: "rgb(var(--color-glass) / 0.7)",
 
         redberry: "#B40041",
