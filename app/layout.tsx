@@ -1,21 +1,21 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar/Navbar";
-import Footer from "@/components/footer/Footer";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   metadataBase: new URL("https://andreiportfolio.vercel.app"),
   favicon: "favicon.ico",
-  title: "Andrei Sager Portfolio",
+  title: "Andrei Sager",
   description: "My personal online portfolio as a Software Developer.",
   image: "/Me.png",
   openGraph: {
     image: "/Me.png",
     url: "https://andreiportfolio.vercel.app",
     siteName: "andreiportfolio.vercel.app",
-    title: "Andrei Sager Portfolio",
+    title: "Andrei Sager",
     description: "My personal online portfolio as a Software Developer.",
     locale: "en_US",
     type: "website",
@@ -23,7 +23,7 @@ export const metadata = {
   twitter: {
     image: "/Me.png",
     card: "summary_large_image",
-    title: "Andrei Sager Portfolio",
+    title: "Andrei Sager",
     description: "My personal online portfolio as a Software Developer.",
   },
 };

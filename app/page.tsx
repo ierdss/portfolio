@@ -9,7 +9,6 @@ import {
   Experience,
   Projects,
   Testimonials,
-  Contact,
 } from "@/components";
 import Head from "next/head";
 
@@ -32,7 +31,6 @@ export default function Home() {
         <Technologies />
         <Projects />
         {/* <Testimonials /> */}
-        <Contact />
       </ScrollSpy>
     </main>
   );

@@ -34,7 +34,7 @@
     "utils/motion.jsx",
     "app/page.jsx",
     "components/LoadingOverlay.jsx",
-    "components/Contact.tsx"
+    "components/Footer.jsx"
   ],
   "exclude": ["node_modules"]
 }

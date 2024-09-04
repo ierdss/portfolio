@@ -7,8 +7,7 @@ import Workflow from "./WorkFlow";
 import Experience from "./experience/Experience";
 import Projects from "./projects/Projects";
 import Testimonials from "./Testimonials";
-import Contact from "./Contact";
-import Footer from "./footer/Footer";
+import Footer from "./Footer";
 
 export {
   Navbar,
@@ -20,6 +19,5 @@ export {
   Experience,
   Projects,
   Testimonials,
-  Contact,
   Footer,
 };
