@@ -227,7 +227,7 @@ export default function Footer() {
                   value={form.message}
                   onChange={handleChange}
                   required={true}
-                  placeholder="Write your message..."
+                  placeholder="Enter your message..."
                   className=" bg-blackglass block h-full w-full resize-none rounded-[10px] bg-opacity-70 p-[16px] text-left text-gray focus:placeholder:italic md:h-[175px] md:w-[500px]"
                 />
               </form>
