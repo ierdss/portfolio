@@ -80,14 +80,14 @@ export default function Navbar() {
         </div>
         <div className="flex max-w-[350px] flex-row items-center justify-center gap-5">
           {theme === "dark" ? (
-            <FaSun
-              onClick={() => toggleTheme()}
-              className="h-[30px] w-[30px] text-blackberry"
-            />
-          ) : (
             <BsFillMoonStarsFill
               onClick={() => toggleTheme()}
               className="h-[30px] w-[30px] text-gray"
+            />
+          ) : (
+            <FaSun
+              onClick={() => toggleTheme()}
+              className="h-[30px] w-[30px] text-blackberry"
             />
           )}
           <Link
