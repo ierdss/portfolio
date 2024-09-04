@@ -101,7 +101,7 @@ export default function Footer() {
       id="footer"
       className="flex w-full flex-col items-center justify-center bg-blackberry"
     >
-      <div className="flex w-full max-w-[1980px] flex-col justify-between gap-[50px] px-[8px] py-[50px] shadow-lg md:flex-row md:px-[150px] md:py-[100px] md:pt-[200px]">
+      <div className="flex w-full max-w-[1980px] flex-col justify-between gap-[50px] px-[8px] py-[50px] shadow-lg md:flex-row md:px-[150px] md:py-[100px]">
         <Transition appear show={isOpen} as={Fragment}>
           <Dialog as="div" className="relative z-50" onClose={closeModal}>
             <Transition.Child
