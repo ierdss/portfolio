@@ -8,6 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        blackberry: "#252131",
+
         "nav-border": "#EBEAEA",
         "light-white": "#FAFAFB",
         "light-white-100": "#F1F4F5",

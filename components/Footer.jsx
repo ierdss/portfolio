@@ -7,6 +7,8 @@ import emailjs from "@emailjs/browser";
 import "dotenv/config";
 
 import HashLoader from "react-spinners/HashLoader";
+import { SocialMediaLinks } from "@/constants";
+import { SocialIcon } from "react-social-icons";
 
 export default function Footer() {
   const formRef = useRef();
@@ -96,7 +98,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="flex">
+    <footer className="flex bg-blackberry">
       <div
         id="contact"
         className="flex flex-col md:flex-row w-full text-center justify-center items-center md:text-left bg-transparent overflow-hidden section-padding__y-axis section-padding__x-axis !pb-[30px]"
@@ -249,10 +251,24 @@ export default function Footer() {
         </div>
       </div>
 
-      <p className="flex flex-row w-full py-6 px-16 text-center gap-2">
-        © 2023{" "}
-        <span className="flex w-fit h-fit font-bold"> Andrei Sager</span>
-      </p>
+      <div className="flex flex-col">
+        <ul className="navbar-socials">
+          {SocialMediaLinks.map(({ id, ariaLabel, url }) => (
+            <SocialIcon
+              key={id}
+              url={url}
+              target="_blank"
+              label={ariaLabel}
+              style={{ height: 35, width: 35 }}
+              className="text-secondary-red hover:text-accent-pink"
+            />
+          ))}
+        </ul>
+        <p className="flex flex-row w-full py-6 px-16 text-center gap-2">
+          © 2023{" "}
+          <span className="flex w-fit h-fit font-bold"> Andrei Sager</span>
+        </p>
+      </div>
     </footer>
   );
 }

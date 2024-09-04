@@ -7,6 +7,8 @@ import {
   TestimonialsSectionContent,
 } from "./SectionContent";
 
+import { SocialMediaLinks } from "./SocialMediaLInks";
+
 export {
   ServicesSectionContent,
   AboutSectionContent,
@@ -14,6 +16,7 @@ export {
   WorkflowSectionContent,
   ExperienceSectionContent,
   TestimonialsSectionContent,
+  SocialMediaLinks,
 };
 
 import { FeaturedProjectsData, OtherProjectsData } from "./database/projects";

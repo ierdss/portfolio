@@ -62,18 +62,6 @@ export default function Navbar() {
             </Link>
           ))}
         </ul>
-        <ul className="navbar-socials">
-          {SocialMediaLinks.map(({ id, ariaLabel, url }) => (
-            <SocialIcon
-              key={id}
-              url={url}
-              target="_blank"
-              label={ariaLabel}
-              style={{ height: 35, width: 35 }}
-              className="text-secondary-red hover:text-accent-pink"
-            />
-          ))}
-        </ul>
       </div>
 
       <motion.div
