@@ -35,7 +35,7 @@ export default function Footer() {
     message: "",
   });
 
-  let [isOpen, setIsOpen] = useState(false);
+  let [isOpen, setIsOpen] = useState(true);
 
   function closeModal() {
     setIsOpen(false);
@@ -126,24 +126,24 @@ export default function Footer() {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-[10px] bg-blackberry p-[16px] text-left align-middle text-gray shadow-xl transition-all">
+                  <Dialog.Panel className="w-full max-w-[350px] transform overflow-hidden rounded-[10px] bg-blackberry p-[16px] text-left align-middle text-gray shadow-xl transition-all">
                     <Dialog.Title
                       as="h3"
-                      className="text-gray-900 text-left text-[20px] text-lg font-medium capitalize leading-6 text-gray brightness-90 md:!text-left"
+                      className="text-gray-900 text-left text-[20px] text-lg font-medium capitalize leading-6 text-gray  md:!text-left"
                     >
                       {modal.title || "payment successful"}
                     </Dialog.Title>
                     <div className="mt-2">
-                      <p className="text-gray-500 text-sm">
+                      <p className="text-gray-500 text-sm brightness-75">
                         {modal.message ||
                           "Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order."}
                       </p>
                     </div>
 
-                    <div className="mt-4">
+                    <div className="mt-[32px]">
                       <button
                         type="button"
-                        className="block w-full min-w-[210px] items-center justify-center rounded-[10px] bg-gray p-[16px] font-bold text-blackberry hover:brightness-110 md:w-[300px]"
+                        className="block items-center justify-center rounded-[10px] bg-gray p-[12px] text-sm font-bold text-blackberry hover:brightness-110"
                         onClick={closeModal}
                       >
                         {modal.button || "Got it, thanks!"}
@@ -161,7 +161,7 @@ export default function Footer() {
             <h1 className="text-left text-[32px] font-bold capitalize text-gray md:text-[64px]">
               Reaching goals relentlessly!
             </h1>
-            <p className="text-left text-[20px] text-gray brightness-90 md:!text-left">
+            <p className="text-gray2 text-left text-[20px] md:!text-left">
               Relentlessly pursuing goals with unwavering{" "}
               <br className="hidden md:flex" />
               determination, turning vision into reality!
@@ -185,7 +185,7 @@ export default function Footer() {
                       required={true}
                       placeholder="Enter your name..."
                       autoComplete="on"
-                      className=" bg-blackglass block w-full rounded-[10px] bg-opacity-70 p-[16px] text-left text-gray focus:placeholder:italic md:w-[300px]"
+                      className=" bg-blackglass text-gray2 block w-full rounded-[10px] p-[16px] text-left focus:placeholder:italic md:w-[300px]"
                     />
 
                     <input
@@ -196,7 +196,7 @@ export default function Footer() {
                       required={true}
                       placeholder="Enter your email..."
                       autoComplete="on"
-                      className=" bg-blackglass  block w-full rounded-[10px] bg-opacity-70 p-[16px] text-left text-gray focus:placeholder:italic md:w-[300px]"
+                      className=" bg-blackglass block w-full rounded-[10px] bg-opacity-70 p-[16px] text-left text-gray focus:placeholder:italic md:w-[300px]"
                     />
                   </div>
 
