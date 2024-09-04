@@ -73,7 +73,7 @@ export default function Navbar() {
           <Link
             href="#footer"
             data-to-scrollspy-id={6}
-            className="block w-full min-w-[210px] select-none items-center justify-center rounded-[10px] bg-gray p-[16px] text-center font-bold text-blackberry hover:brightness-110 md:w-[300px]"
+            className="block w-full min-w-[210px] select-none items-center justify-center rounded-[10px] border border-gray bg-transparent p-[16px] text-center font-bold text-gray hover:brightness-110 md:w-[300px]"
           >
             Contact Me
           </Link>
