@@ -35,7 +35,7 @@ export default function Footer() {
     message: "",
   });
 
-  let [isOpen, setIsOpen] = useState(false);
+  let [isOpen, setIsOpen] = useState(true);
 
   function closeModal() {
     setIsOpen(false);
@@ -116,7 +116,7 @@ export default function Footer() {
               <div className="fixed inset-0  bg-black bg-opacity-25" />
             </Transition.Child>
             <div className="fixed inset-0 overflow-y-auto">
-              <div className="flex h-full w-full items-center justify-center  p-4 text-center">
+              <div className="flex h-full w-full items-center justify-center p-4 text-center">
                 <Transition.Child
                   as={Fragment}
                   enter="ease-out duration-300"
@@ -126,10 +126,10 @@ export default function Footer() {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-3xl bg-white p-6 text-left align-middle shadow-xl transition-all  ">
+                  <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-[10px] bg-blackberry p-[16px] text-left align-middle text-gray shadow-xl transition-all">
                     <Dialog.Title
                       as="h3"
-                      className="text-gray-900 text-lg font-medium capitalize leading-6"
+                      className="text-gray-900 text-left text-[20px] text-lg font-medium capitalize leading-6 text-gray brightness-90 md:!text-left"
                     >
                       {modal.title || "payment successful"}
                     </Dialog.Title>
@@ -143,7 +143,7 @@ export default function Footer() {
                     <div className="mt-4">
                       <button
                         type="button"
-                        className="inline-flex justify-center rounded-3xl border border-transparent bg-secondary-red px-4 py-2 text-sm font-semibold normal-case text-white hover:brightness-125 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary-red focus-visible:ring-offset-2"
+                        className="block w-full min-w-[210px] items-center justify-center rounded-[10px] bg-gray p-[16px] font-bold text-blackberry hover:brightness-110 md:w-[300px]"
                         onClick={closeModal}
                       >
                         {modal.button || "Got it, thanks!"}
