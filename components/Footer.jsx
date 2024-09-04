@@ -235,21 +235,21 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-[30px] md:items-end md:justify-end md:gap-[60px]">
-          <ul className="flex w-fit flex-row items-center gap-[30px] md:w-full md:justify-between md:gap-2 lg:flex">
+        <div className="flex flex-row items-center justify-between gap-[30px] md:flex-col md:items-end md:justify-end md:gap-[60px]">
+          <ul className="order-2 flex w-fit flex-row items-center gap-[15px] md:order-1 md:w-full md:justify-between md:gap-2 lg:flex">
             {SocialMediaLinks.map(({ id, icon, ariaLabel, url }) => (
               <a
                 key={id}
                 href={url}
                 target="_blank"
                 ariaLabel={ariaLabel}
-                className="h-[48px] w-[48px] rounded-full text-gray"
+                className="flex h-[28px] w-[28px] items-center justify-center rounded-full text-gray md:h-[48px] md:w-[48px]"
               >
                 {icon}
               </a>
             ))}
           </ul>
-          <p className="flex w-fit flex-row gap-[6px] text-center text-[13px] text-gray md:text-[20px]">
+          <p className="order-1 flex w-fit flex-row gap-[6px] text-center text-[13px] text-gray md:order-2 md:text-[20px]">
             © 2023{" "}
             <span className="flex h-fit w-fit font-bold"> Andrei Sager</span>
           </p>
