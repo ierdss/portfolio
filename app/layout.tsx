@@ -36,8 +36,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex justify-center w-full">
-          <div className="flex flex-col w-full">
+        <div className="flex w-full justify-center">
+          <div className="flex w-full flex-col">
             <Navbar />
             <main className="w-full">{children}</main>
             <Footer />
