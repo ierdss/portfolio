@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-background: 37 33 49;
+    --color-heading: 244 245 248;
+    --color-content: 217 217 217;
+    --color-accent: 180 65 100;
+    --color-glass: 25 22 33;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -48,12 +58,6 @@ body {
 
 ::selection {
   @apply text-redberry bg-gray;
-}
-
-@layer components {
-  .my-custom-style {
-    /* ... */
-  }
 }
 
 /* Flex Shortcuts */
@@ -561,9 +565,4 @@ body {
 }
 .other-projects-card__details-link {
   @apply flex flex-row items-center justify-center gap-2 text-xs capitalize hover:text-secondary-red;
-}
-
-/* Testimonials Section  */
-.testimonials {
-  @apply flexCenter flex-col gap-[50px] text-center;
 }

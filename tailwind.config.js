@@ -8,6 +8,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        background: {
+          1: "rgb(var(--color-background) / <alpha-value>)",
+          2: "rgb(var(--color-background) / 0.95)",
+        },
+        heading: "rgb(var(--color-heading) / <alpha-value>)",
+        content: "rgb(var(--color-content) / <alpha-value>)",
+        accent: "rgb(var(--color-accent) / <alpha-value>)",
+        glass: "rgb(var(--color-glass) / 0.7)",
+
         redberry: "#B40041",
         blackberry: "#252131",
         gray: "#F4F5F8",

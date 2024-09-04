@@ -99,9 +99,9 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="flex w-full flex-col items-center justify-center bg-blackberry"
+      className="bg-background-1 flex w-full flex-col items-center justify-center"
     >
-      <div className="flex w-full max-w-[1980px] flex-col justify-between gap-[50px] px-[8px] py-[50px] shadow-lg md:flex-row md:px-[150px] md:py-[100px]">
+      <div className="flex w-full max-w-[1980px] flex-col justify-between gap-[50px] px-[8px] py-[50px] md:flex-row md:px-[150px] md:py-[100px]">
         <Transition appear show={isOpen} as={Fragment}>
           <Dialog as="div" className="relative z-50" onClose={closeModal}>
             <Transition.Child
@@ -126,7 +126,7 @@ export default function Footer() {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="w-full max-w-[350px] transform overflow-hidden rounded-[10px] bg-blackberry p-[16px] text-left align-middle text-gray shadow-xl transition-all">
+                  <Dialog.Panel className="bg-background w-full max-w-[350px] transform overflow-hidden rounded-[10px] p-[16px] text-left align-middle text-gray shadow-xl transition-all">
                     <Dialog.Title
                       as="h3"
                       className="text-gray-900 text-left text-[20px] text-lg font-medium capitalize leading-6 text-gray  md:!text-left"
@@ -185,7 +185,7 @@ export default function Footer() {
                       required={true}
                       placeholder="Enter your name..."
                       autoComplete="on"
-                      className="bg-blackglass/70 text-gray2 block w-full select-none rounded-[10px] p-[16px] text-left focus:placeholder:italic md:w-[300px]"
+                      className="bg-glass text-content block w-full select-none rounded-[10px] p-[16px] text-left focus:placeholder:italic md:w-[300px]"
                     />
 
                     <input
@@ -196,7 +196,7 @@ export default function Footer() {
                       required={true}
                       placeholder="Enter your email..."
                       autoComplete="on"
-                      className="bg-blackglass/70 text-gray2 block w-full select-none rounded-[10px] p-[16px] text-left focus:placeholder:italic md:w-[300px]"
+                      className="bg-glass text-content block w-full select-none rounded-[10px] p-[16px] text-left focus:placeholder:italic md:w-[300px]"
                     />
                   </div>
 
@@ -207,7 +207,7 @@ export default function Footer() {
                     onChange={handleChange}
                     required={true}
                     placeholder="Enter your message..."
-                    className=" bg-blackglass/70 text-gray2 mb-[15px] block h-full w-full select-none resize-none rounded-[10px]  p-[16px] text-left focus:placeholder:italic md:mb-[0px] md:h-[175px] md:w-[500px]
+                    className="bg-glass text-content mb-[15px] block h-full w-full select-none resize-none rounded-[10px]  p-[16px] text-left focus:placeholder:italic md:mb-[0px] md:h-[175px] md:w-[500px]
                     "
                   />
                 </div>
