@@ -249,9 +249,10 @@ export default function Footer() {
         </div>
       </div>
 
-      <h1 className="flex flex-col w-full py-6 px-16 text-center">
-        © 2023 Andrei Sager
-      </h1>
+      <p className="flex flex-row w-full py-6 px-16 text-center gap-2">
+        © 2023{" "}
+        <span className="flex w-fit h-fit font-bold"> Andrei Sager</span>
+      </p>
     </footer>
   );
 }
