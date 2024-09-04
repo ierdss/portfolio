@@ -98,8 +98,8 @@ export default function Footer() {
   };
 
   return (
-    <footer className="flex w-full flex-col bg-blackberry">
-      <div className="max-w-screen-2xl">
+    <footer className="flex w-full flex-col items-center justify-center bg-blackberry">
+      <div className="max-w-screen-3xl flex flex-row">
         <div
           id="contact"
           className="section-padding__y-axis section-padding__x-axis flex w-full flex-col items-center justify-center overflow-hidden bg-transparent !pb-[30px] text-center md:flex-row md:text-left"
