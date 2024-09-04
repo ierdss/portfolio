@@ -5,7 +5,10 @@ import TechnologiesCard from "./TechnologiesCard";
 
 export default function Technologies() {
   return (
-    <div id="technologies" className="technologies">
+    <div
+      id="technologies"
+      className="bg-background-2 flex w-full flex-col items-center justify-center gap-8 px-2"
+    >
       <div>
         <h1 className="sectionOverline">Technologies</h1>
         <h1 className="sectionHeading">Skills Inside My Toolbox</h1>

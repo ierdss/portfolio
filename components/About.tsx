@@ -15,11 +15,11 @@ type TechProps = {
 
 const TechGroup = ({ technologies }: TechListProps) => {
   return (
-    <motion.ul className="grid grid-cols-4 gap-4 w-full mt-8">
+    <motion.ul className="mt-8 grid w-full grid-cols-4 gap-4">
       {technologies.map(({ id, icon }) => (
         <li
           key={id}
-          className="flex justify-center items-center w-full aspect-square rounded-xl shadow-inner shadow-slate-400 hover:shadow-lg scale-95 hover:scale-100"
+          className="flex aspect-square w-full scale-95 items-center justify-center rounded-xl shadow-inner shadow-slate-400 hover:scale-100 hover:shadow-lg"
         >
           {icon}
         </li>
@@ -35,7 +35,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="about flex flex-row w-full justify-center items-center gap-[50px] md:gap-[100px]"
+      className="flex-rowitems-center bg-background-1  relative flex w-full justify-center gap-[50px] overflow-hidden text-center md:h-[100vh] md:max-h-[800px] md:flex-row md:gap-[100px] md:text-left"
     >
       <div className="about-portrait">
         <Image
