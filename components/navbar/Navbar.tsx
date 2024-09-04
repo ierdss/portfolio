@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import React from "react";
 
@@ -9,6 +9,7 @@ import { useScroll, useSpring, motion, useCycle } from "framer-motion";
 import NavbarToggle from "./NavbarToggle";
 import { useDimensions } from "@/src/useDimensions";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { FaSun } from "react-icons/fa";
 
 export default function Navbar() {
   const { scrollYProgress } = useScroll();
@@ -34,6 +35,15 @@ export default function Navbar() {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
+
+  const [theme, setTheme] = useState("dark");
+  const toggleTheme = () => {
+    if (theme === "dark") {
+      setTheme("light");
+    } else {
+      setTheme("dark");
+    }
+  };
 
   return (
     <nav
@@ -69,7 +79,17 @@ export default function Navbar() {
           </ul>
         </div>
         <div className="flex max-w-[350px] flex-row items-center justify-center gap-5">
-          <BsFillMoonStarsFill className="h-[30px] w-[30px] text-gray" />
+          {theme === "dark" ? (
+            <FaSun
+              onClick={() => toggleTheme()}
+              className="h-[30px] w-[30px] text-blackberry"
+            />
+          ) : (
+            <BsFillMoonStarsFill
+              onClick={() => toggleTheme()}
+              className="h-[30px] w-[30px] text-gray"
+            />
+          )}
           <Link
             href="#footer"
             data-to-scrollspy-id={6}
