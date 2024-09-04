@@ -174,62 +174,65 @@ export default function Footer() {
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
-                className="flex w-full flex-col gap-[15px] md:flex-row md:gap-[30px]"
+                className="flex w-full flex-col"
               >
-                <div className="flex w-full flex-col gap-[15px] md:w-fit md:gap-[30px]">
-                  <input
-                    type="text"
-                    name="name"
-                    value={form.name}
+                <div className="flex w-full flex-col gap-[15px] md:w-fit md:flex-row md:gap-[30px]">
+                  <div className="flex w-full flex-col gap-[15px] md:w-fit md:gap-[30px]">
+                    <input
+                      type="text"
+                      name="name"
+                      value={form.name}
+                      onChange={handleChange}
+                      required={true}
+                      placeholder="Enter your name..."
+                      autoComplete="on"
+                      className=" bg-blackglass block w-full rounded-[10px] bg-opacity-70 p-[16px] text-left text-gray focus:placeholder:italic md:w-[300px]"
+                    />
+
+                    <input
+                      type="email"
+                      name="email"
+                      value={form.email}
+                      onChange={handleChange}
+                      required={true}
+                      placeholder="Enter your email..."
+                      autoComplete="on"
+                      className=" bg-blackglass active:bg-blackglass block w-full rounded-[10px] bg-opacity-70 p-[16px] text-left text-gray focus:placeholder:italic md:w-[300px]"
+                    />
+                  </div>
+
+                  <textarea
+                    rows={7}
+                    name="message"
+                    value={form.message}
                     onChange={handleChange}
                     required={true}
-                    placeholder="Enter your name..."
-                    autoComplete="on"
-                    className=" bg-blackglass block w-full rounded-[10px] bg-opacity-70 p-[16px] text-left text-gray focus:placeholder:italic md:w-[300px]"
+                    placeholder="Enter your message..."
+                    className=" bg-blackglass mb-[15px] block h-full w-full resize-none rounded-[10px] bg-opacity-70 p-[16px] text-left text-gray focus:placeholder:italic md:mb-[0px] md:h-[175px] md:w-[500px]"
                   />
-
-                  <input
-                    type="email"
-                    name="email"
-                    value={form.email}
-                    onChange={handleChange}
-                    required={true}
-                    placeholder="Enter your email..."
-                    autoComplete="on"
-                    className=" bg-blackglass active:bg-blackglass block w-full rounded-[10px] bg-opacity-70 p-[16px] text-left text-gray focus:placeholder:italic md:w-[300px]"
-                  />
-
-                  <button
-                    type="submit"
-                    className="block w-full min-w-[210px] items-center justify-center rounded-[10px] bg-gray p-[16px] font-bold text-blackberry hover:brightness-110 md:w-[300px]"
-                  >
-                    {loading ? (
-                      <div className="flex flex-row items-center justify-center gap-4">
-                        Sending...
-                        <HashLoader
-                          loading={true}
-                          size={20}
-                          color="#252131"
-                          aria-label="Loading Spinner"
-                          data-testid="loader"
-                          speedMultiplier={1}
-                          className="text-blackberry"
-                        />
-                      </div>
-                    ) : (
-                      "Send"
-                    )}
-                  </button>
                 </div>
-                <textarea
-                  rows={7}
-                  name="message"
-                  value={form.message}
-                  onChange={handleChange}
-                  required={true}
-                  placeholder="Enter your message..."
-                  className=" bg-blackglass block h-full w-full resize-none rounded-[10px] bg-opacity-70 p-[16px] text-left text-gray focus:placeholder:italic md:h-[175px] md:w-[500px]"
-                />
+
+                <button
+                  type="submit"
+                  className="block w-full min-w-[210px] items-center justify-center rounded-[10px] bg-gray p-[16px] font-bold text-blackberry hover:brightness-110 md:w-[300px]"
+                >
+                  {loading ? (
+                    <div className="flex flex-row items-center justify-center gap-4">
+                      Sending...
+                      <HashLoader
+                        loading={true}
+                        size={20}
+                        color="#252131"
+                        aria-label="Loading Spinner"
+                        data-testid="loader"
+                        speedMultiplier={1}
+                        className="text-blackberry"
+                      />
+                    </div>
+                  ) : (
+                    "Send"
+                  )}
+                </button>
               </form>
             </div>
           </div>
