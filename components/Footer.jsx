@@ -174,9 +174,9 @@ export default function Footer() {
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
-                className="flex w-full flex-col gap-[30px] md:flex-row"
+                className="flex w-full flex-col gap-[15px] md:flex-row"
               >
-                <div className="flex w-full flex-col gap-[30px] md:w-fit">
+                <div className="flex w-full flex-col gap-[15px] md:w-fit">
                   <input
                     type="text"
                     name="name"
