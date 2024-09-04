@@ -21,7 +21,10 @@ export default function Hero() {
   }, []);
 
   return (
-    <div id="hero" className="hero">
+    <div
+      id="hero"
+      className="section-padding__x-axis section-padding__y-axis relative flex h-[100vh] max-h-[800px] w-full flex-col items-center justify-center  gap-[40px] overflow-hidden bg-blackberry md:flex-row  md:gap-[50px]"
+    >
       <div className="hero__portrait">
         <Image
           src="/hero.png"
@@ -37,12 +40,12 @@ export default function Hero() {
           <h1 className="sectionOverline !text-center md:!text-left">
             Andrei Sager
           </h1>
-          <h1 className="sectionHeading !text-4xl !text-center md:!text-left">
+          <h1 className="sectionHeading !text-center !text-4xl md:!text-left">
             Software Developer
           </h1>
         </div>
 
-        <p className="sectionLeading !text-center md:!text-left max-w-md">
+        <p className="sectionLeading max-w-md !text-center md:!text-left">
           I specialize in constructing websites and mobile applications while
           immersing myself in diverse aspects of the digital spectrum that pique
           my interest.

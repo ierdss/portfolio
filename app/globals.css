@@ -150,11 +150,9 @@ body {
 }
 
 /* Navbar Section */
-.navbar {
-  @apply fixed left-0 top-0 !z-40 flex w-full items-center justify-center bg-transparent px-4 pb-1 pt-2 text-slate-500 md:px-8 md:pb-0 md:pt-[5px];
-}
+
 .navbar--scrolled {
-  @apply bg-white shadow-lg;
+  @apply bg-blackberry shadow-lg;
 }
 .navbar--scrolled .navbar-logo {
   @apply text-slate-500  hover:text-secondary-red;
@@ -166,18 +164,9 @@ body {
 .navbar-logo {
   @apply w-fit text-4xl font-black text-secondary-red;
 }
-.navbar-links {
-  @apply hidden flex-row gap-4 lg:flex;
-}
-.navbar-link {
-  @apply relative my-3 block w-full px-4 py-3 text-sm font-bold capitalize target:text-secondary-red hover:text-secondary-red;
-}
+
 .navbar-socials {
   @apply hidden flex-row items-center justify-center gap-2 lg:flex lg:justify-start;
-}
-
-.navbar-desktop {
-  @apply flex w-screen items-center justify-between gap-10 md:gap-16 lg:max-w-screen-xl;
 }
 
 .navbar-mobile {
@@ -208,9 +197,6 @@ body {
 }
 
 /* Hero Section  */
-.hero {
-  @apply section-padding__x-axis section-padding__y-axis relative flex h-[100vh] max-h-[800px] w-full flex-col items-center justify-center  gap-[40px] overflow-hidden md:flex-row md:gap-[50px];
-}
 
 .hero__portrait {
   @apply z-10 flex aspect-square w-[80%] items-center justify-center overflow-hidden rounded-full shadow-lg brightness-125 md:w-[30%];
