@@ -185,7 +185,7 @@ export default function Footer() {
                       required={true}
                       placeholder="Enter your name..."
                       autoComplete="on"
-                      className=" bg-blackglass text-gray2 block w-full select-none rounded-[10px] p-[16px] text-left focus:placeholder:italic md:w-[300px]"
+                      className="bg-blackglass text-gray2 block w-full select-none rounded-[10px] bg-opacity-70 p-[16px] text-left focus:placeholder:italic md:w-[300px]"
                     />
 
                     <input
@@ -196,7 +196,7 @@ export default function Footer() {
                       required={true}
                       placeholder="Enter your email..."
                       autoComplete="on"
-                      className=" bg-blackglass block w-full select-none rounded-[10px] bg-opacity-70 p-[16px] text-left text-gray focus:placeholder:italic md:w-[300px]"
+                      className="bg-blackglass text-gray2 block w-full select-none rounded-[10px] bg-opacity-70 p-[16px] text-left focus:placeholder:italic md:w-[300px]"
                     />
                   </div>
 
@@ -207,7 +207,8 @@ export default function Footer() {
                     onChange={handleChange}
                     required={true}
                     placeholder="Enter your message..."
-                    className=" bg-blackglass mb-[15px] block h-full w-full select-none resize-none rounded-[10px] bg-opacity-70 p-[16px] text-left text-gray focus:placeholder:italic md:mb-[0px] md:h-[175px] md:w-[500px]"
+                    className=" bg-blackglass text-gray2 mb-[15px] block h-full w-full select-none resize-none rounded-[10px] bg-opacity-70 p-[16px] text-left focus:placeholder:italic md:mb-[0px] md:h-[175px] md:w-[500px]
+                    "
                   />
                 </div>
 
