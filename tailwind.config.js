@@ -11,6 +11,7 @@ module.exports = {
         redberry: "#D31336",
         blackberry: "#252131",
         gray: "#F4F5F8",
+        blackglass: "#191621",
 
         "nav-border": "#EBEAEA",
         "light-white": "#FAFAFB",

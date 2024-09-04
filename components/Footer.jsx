@@ -101,7 +101,7 @@ export default function Footer() {
       id="footer"
       className="flex w-full flex-col items-center justify-center bg-blackberry"
     >
-      <div className="flex w-full max-w-[1980px] flex-row justify-between px-[150px] py-[200px] shadow-lg md:flex-row">
+      <div className="flex w-full max-w-[1980px] flex-row justify-between px-[150px] py-[100px] pt-[200px] shadow-lg md:flex-row">
         <Transition appear show={isOpen} as={Fragment}>
           <Dialog as="div" className="relative z-50" onClose={closeModal}>
             <Transition.Child
@@ -167,14 +167,14 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className=" relative flex flex-col gap-[50px] overflow-hidden  lg:flex-row">
+          <div className="flex flex-col gap-[50px] overflow-hidden lg:flex-row">
             <div className="g:order-1 z-20 flex w-full flex-1 flex-col items-center justify-center gap-4 rounded-md !px-[0px] md:gap-[50px] lg:w-2/3">
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
-                className="flex w-full flex-wrap gap-3"
+                className="flex w-full flex-row gap-[30px] p-1"
               >
-                <div className="flex w-full flex-col gap-4 md:flex-row">
+                <div className="flex w-fit flex-col gap-[30px]">
                   <input
                     type="text"
                     name="name"
@@ -183,7 +183,7 @@ export default function Footer() {
                     required={true}
                     placeholder="Enter your name.."
                     autoComplete="on"
-                    className=" block w-full rounded-t-md border-b border-black-1 bg-white p-3 text-left shadow-lg outline-none  focus:bg-white  focus:placeholder:italic"
+                    className=" bg-blackglass focus:border-redberry block w-full rounded-[10px] bg-opacity-70 p-[16px] text-left text-gray focus:placeholder:italic md:w-[300px]"
                   />
 
                   <input
@@ -194,8 +194,30 @@ export default function Footer() {
                     required={true}
                     placeholder="Enter your email.."
                     autoComplete="on"
-                    className=" block w-full rounded-t-md border-b border-black-1 bg-white p-3 text-left shadow-lg outline-none focus:bg-white  focus:placeholder:italic"
+                    className=" bg-blackglass block w-full rounded-[10px] bg-opacity-70 p-[16px] text-left text-gray focus:placeholder:italic md:w-[300px]"
                   />
+
+                  <button
+                    type="submit"
+                    className="block w-full min-w-[210px] items-center justify-center rounded-[10px] bg-gray p-[16px] font-bold text-blackberry hover:brightness-110 md:w-[300px]"
+                  >
+                    {loading ? (
+                      <div className="flex flex-row gap-4">
+                        Sending...
+                        <HashLoader
+                          loading={true}
+                          size={20}
+                          color="white"
+                          aria-label="Loading Spinner"
+                          data-testid="loader"
+                          speedMultiplier={1}
+                          className="text-white"
+                        />
+                      </div>
+                    ) : (
+                      "Send"
+                    )}
+                  </button>
                 </div>
                 <textarea
                   rows={7}
@@ -204,29 +226,8 @@ export default function Footer() {
                   onChange={handleChange}
                   required={true}
                   placeholder="Write your message.."
-                  className="block h-[200px] w-full  resize-none  bg-white text-left md:h-[155px]"
+                  className=" bg-blackglass block h-full w-full resize-none rounded-[10px] bg-opacity-70 p-[16px] text-left text-gray focus:placeholder:italic md:h-[175px] md:w-[500px]"
                 />
-                <button
-                  type="submit"
-                  className="cta__solid flex !w-full min-w-[210px] items-center justify-center !px-12 !py-3 md:!w-fit"
-                >
-                  {loading ? (
-                    <div className="flex flex-row gap-4">
-                      Sending...
-                      <HashLoader
-                        loading={true}
-                        size={20}
-                        color="white"
-                        aria-label="Loading Spinner"
-                        data-testid="loader"
-                        speedMultiplier={1}
-                        className="text-white"
-                      />
-                    </div>
-                  ) : (
-                    "Send"
-                  )}
-                </button>
               </form>
             </div>
           </div>
