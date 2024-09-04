@@ -161,7 +161,6 @@ export default function Footer() {
             <h1 className="text-left text-[32px] font-bold capitalize text-gray md:text-[64px]">
               Reaching goals relentlessly!
             </h1>
-
             <p className="text-left text-[20px] text-gray brightness-90 md:!text-left">
               Relentlessly pursuing goals with unwavering{" "}
               <br className="hidden md:flex" />
