@@ -101,7 +101,7 @@ export default function Footer() {
       id="footer"
       className="flex w-full flex-col items-center justify-center bg-blackberry"
     >
-      <div className="flex w-full max-w-[1980px] flex-row justify-between px-[150px] py-[100px] pt-[200px] shadow-lg md:flex-row">
+      <div className="flex w-full max-w-[1980px] flex-col justify-between gap-[50px] px-[8px] py-[50px] shadow-lg md:flex-row md:px-[150px] md:py-[100px] md:pt-[200px]">
         <Transition appear show={isOpen} as={Fragment}>
           <Dialog as="div" className="relative z-50" onClose={closeModal}>
             <Transition.Child
@@ -156,34 +156,36 @@ export default function Footer() {
           </Dialog>
         </Transition>
 
-        <div className="flex flex-col gap-[70px]">
-          <div className="flex flex-col gap-0">
-            <h1 className="text-left text-[64px] font-bold capitalize text-gray">
+        <div className="flex flex-col gap-[35px] md:gap-[70px]">
+          <div className="flex flex-col gap-[10px]">
+            <h1 className="text-left text-[32px] font-bold capitalize text-gray md:text-[64px]">
               Reaching goals relentlessly!
             </h1>
-            <p className=" mt-2 !text-center text-[20px] text-gray brightness-90 md:!text-left">
-              Relentlessly pursuing goals with unwavering <br />
+
+            <p className="text-left text-[20px] text-gray brightness-90 md:!text-left">
+              Relentlessly pursuing goals with unwavering{" "}
+              <br className="hidden md:flex" />
               determination, turning vision into reality!
             </p>
           </div>
 
-          <div className="flex flex-col gap-[50px] overflow-hidden lg:flex-row">
-            <div className="g:order-1 z-20 flex w-full flex-1 flex-col items-center justify-center gap-4 rounded-md !px-[0px] md:gap-[50px] lg:w-2/3">
+          <div className="flex flex-col gap-[25px] overflow-hidden md:gap-[50px] lg:flex-row">
+            <div className="group:order-1 z-20 flex w-full flex-1 flex-col items-center justify-center gap-4 rounded-md !px-[0px] md:gap-[50px]">
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
-                className="flex w-full flex-row gap-[30px] p-1"
+                className="flex w-full flex-col gap-[30px] p-1 md:flex-row"
               >
-                <div className="flex w-fit flex-col gap-[30px]">
+                <div className="flex w-full flex-col gap-[30px] md:w-fit">
                   <input
                     type="text"
                     name="name"
                     value={form.name}
                     onChange={handleChange}
                     required={true}
-                    placeholder="Enter your name.."
+                    placeholder="Enter your name..."
                     autoComplete="on"
-                    className=" bg-blackglass focus:border-redberry block w-full rounded-[10px] bg-opacity-70 p-[16px] text-left text-gray focus:placeholder:italic md:w-[300px]"
+                    className=" bg-blackglass block w-full rounded-[10px] bg-opacity-70 p-[16px] text-left text-gray focus:placeholder:italic md:w-[300px]"
                   />
 
                   <input
@@ -192,9 +194,9 @@ export default function Footer() {
                     value={form.email}
                     onChange={handleChange}
                     required={true}
-                    placeholder="Enter your email.."
+                    placeholder="Enter your email..."
                     autoComplete="on"
-                    className=" bg-blackglass block w-full rounded-[10px] bg-opacity-70 p-[16px] text-left text-gray focus:placeholder:italic md:w-[300px]"
+                    className=" bg-blackglass active:bg-blackglass block w-full rounded-[10px] bg-opacity-70 p-[16px] text-left text-gray focus:placeholder:italic md:w-[300px]"
                   />
 
                   <button
@@ -225,7 +227,7 @@ export default function Footer() {
                   value={form.message}
                   onChange={handleChange}
                   required={true}
-                  placeholder="Write your message.."
+                  placeholder="Write your message..."
                   className=" bg-blackglass block h-full w-full resize-none rounded-[10px] bg-opacity-70 p-[16px] text-left text-gray focus:placeholder:italic md:h-[175px] md:w-[500px]"
                 />
               </form>
@@ -233,21 +235,21 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-end justify-end gap-[60px]">
-          <ul className="hidden w-full flex-row items-center justify-between gap-2 lg:flex ">
+        <div className="flex flex-col items-center justify-center gap-[30px] md:items-end md:justify-end md:gap-[60px]">
+          <ul className="flex w-fit flex-row items-center gap-[30px] md:w-full md:justify-between md:gap-2 lg:flex">
             {SocialMediaLinks.map(({ id, icon, ariaLabel, url }) => (
               <a
                 key={id}
-                url={url}
+                href={url}
                 target="_blank"
                 ariaLabel={ariaLabel}
-                className="hover:text-redberry h-[48px] w-[48px] text-gray"
+                className="h-[48px] w-[48px] rounded-full text-gray"
               >
                 {icon}
               </a>
             ))}
           </ul>
-          <p className="flex w-full flex-row gap-2 text-center text-[20px] text-gray">
+          <p className="flex w-fit flex-row gap-[6px] text-center text-[13px] text-gray md:text-[20px]">
             © 2023{" "}
             <span className="flex h-fit w-fit font-bold"> Andrei Sager</span>
           </p>
