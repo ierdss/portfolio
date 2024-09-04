@@ -102,7 +102,7 @@ export default function Footer() {
       id="footer"
       className="flex w-full flex-col items-center justify-center bg-blackberry"
     >
-      <div className="flex w-full max-w-[1980px] flex-row px-[150px] py-[200px] shadow-lg md:flex-row">
+      <div className="flex w-full max-w-[1980px] flex-row justify-between px-[150px] py-[200px] shadow-lg md:flex-row">
         <Transition appear show={isOpen} as={Fragment}>
           <Dialog as="div" className="relative z-50" onClose={closeModal}>
             <Transition.Child
@@ -231,7 +231,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex  flex-col">
+        <div className="flex flex-col items-end justify-end gap-[60px]">
           <ul className="navbar-socials">
             {SocialMediaLinks.map(({ id, ariaLabel, url }) => (
               <SocialIcon
@@ -244,7 +244,7 @@ export default function Footer() {
               />
             ))}
           </ul>
-          <p className="flex w-full flex-row gap-2 px-16 py-6 text-center text-gray">
+          <p className="flex w-full flex-row gap-2 text-center text-[20px] text-gray">
             © 2023{" "}
             <span className="flex h-fit w-fit font-bold"> Andrei Sager</span>
           </p>
