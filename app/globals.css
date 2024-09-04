@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -47,7 +47,7 @@ body {
 }
 
 ::selection {
-  @apply bg-white text-secondary-red;
+  @apply text-redberry bg-gray;
 }
 
 @layer components {
