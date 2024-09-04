@@ -206,22 +206,6 @@ body {
 .navbar-mobile__socials {
   @apply flex flex-row items-center justify-center gap-2 lg:justify-start;
 }
-/* .navbar-mobile__top {
-  @apply flex w-full justify-between items-center pt-2 pb-1 px-6;
-} */
-/* .navbar-mobile__toggle {
-  @apply lg:hidden flex flex-row gap-10;
-}
-.navbar-mobile--open,
-.navbar-mobile--closed {
-  @apply overflow-hidden flex flex-col items-center gap-8 bg-white w-full h-full fixed lg:hidden z-50 ease-in-out duration-500;
-}
-.navbar-mobile--open {
-  @apply top-0 left-0;
-}
-.navbar-mobile--closed {
-  @apply top-0 left-[-100%];
-} */
 
 /* Hero Section  */
 .hero {
@@ -472,32 +456,6 @@ body {
 }
 .experience-card__date {
   @apply text-black;
-}
-
-/* Grid Component */
-.gridSquare {
-  @apply w-full overflow-hidden rounded-2xl border border-neutral-300 shadow-lg;
-}
-
-.gridSquare__small,
-.gridSquare__big {
-  @apply aspect-square;
-}
-
-.gridSquare__tall {
-  @apply row-span-2;
-}
-
-.gridSquare__long {
-  @apply col-span-2;
-}
-
-.gridSquare__big {
-  @apply col-span-2 row-span-2;
-}
-
-.gridImage {
-  @apply transition-all duration-500 ease-in-out hover:scale-110;
 }
 
 /* Projects Component */
