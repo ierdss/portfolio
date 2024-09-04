@@ -5,7 +5,6 @@ import {
   WorkflowSectionContent,
   ExperienceSectionContent,
   TestimonialsSectionContent,
-  ContactSectionContent,
 } from "./SectionContent";
 
 export {
@@ -15,7 +14,6 @@ export {
   WorkflowSectionContent,
   ExperienceSectionContent,
   TestimonialsSectionContent,
-  ContactSectionContent,
 };
 
 import { FeaturedProjectsData, OtherProjectsData } from "./database/projects";

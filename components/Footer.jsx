@@ -7,7 +7,6 @@ import emailjs from "@emailjs/browser";
 import "dotenv/config";
 
 import HashLoader from "react-spinners/HashLoader";
-import { ContactSectionContent } from "@/constants";
 
 export default function Footer() {
   const formRef = useRef();
@@ -169,19 +168,6 @@ export default function Footer() {
                 Feel free to contact me anytime! I'll get back to you as soon as
                 I can!
               </p>
-            </div>
-            <div className="z-10 flex flex-col gap-[50px] w-fit">
-              <ul className="flex flex-col gap-[20px]">
-                {ContactSectionContent.map(({ icon, title, text }, index) => (
-                  <li key={index} className="flex flex-row gap-2 text-left">
-                    <div className="text-secondary-red">{icon}</div>
-                    <div>
-                      <h1 className="sectionLeading">{title}</h1>
-                      <p className="sectionDescription">{text}</p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
 
