@@ -169,12 +169,12 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-[25px] overflow-hidden md:gap-[50px] lg:flex-row">
+          <div className="flex flex-col gap-[25px] md:gap-[50px] lg:flex-row">
             <div className="group:order-1 z-20 flex w-full flex-1 flex-col items-center justify-center gap-4 rounded-md !px-[0px] md:gap-[50px]">
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
-                className="flex w-full flex-col gap-[30px] p-1 md:flex-row"
+                className="flex w-full flex-col gap-[30px] md:flex-row"
               >
                 <div className="flex w-full flex-col gap-[30px] md:w-fit">
                   <input
