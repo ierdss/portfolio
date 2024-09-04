@@ -8,7 +8,6 @@ import "dotenv/config";
 
 import HashLoader from "react-spinners/HashLoader";
 import { SocialMediaLinks } from "@/constants";
-import { SocialIcon } from "react-social-icons";
 
 export default function Footer() {
   const formRef = useRef();
@@ -232,16 +231,17 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col items-end justify-end gap-[60px]">
-          <ul className="hidden w-full flex-row items-center justify-center gap-2 lg:flex lg:justify-start">
-            {SocialMediaLinks.map(({ id, ariaLabel, url }) => (
-              <SocialIcon
+          <ul className="hidden w-full flex-row items-center justify-between gap-2 lg:flex ">
+            {SocialMediaLinks.map(({ id, icon, ariaLabel, url }) => (
+              <a
                 key={id}
                 url={url}
                 target="_blank"
-                label={ariaLabel}
-                style={{ height: 35, width: 35 }}
-                className="text-secondary-red hover:text-accent-pink"
-              />
+                ariaLabel={ariaLabel}
+                className="hover:text-redberry h-[48px] w-[48px] text-gray"
+              >
+                {icon}
+              </a>
             ))}
           </ul>
           <p className="flex w-full flex-row gap-2 text-center text-[20px] text-gray">
