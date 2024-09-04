@@ -98,82 +98,75 @@ export default function Footer() {
   };
 
   return (
-    <footer className="flex w-full flex-col items-center justify-center bg-blackberry">
-      <div className="max-w-screen-3xl flex flex-row">
-        <div
-          id="contact"
-          className="section-padding__y-axis section-padding__x-axis flex w-full flex-col items-center justify-center overflow-hidden bg-transparent !pb-[30px] text-center md:flex-row md:text-left"
-        >
-          <Transition appear show={isOpen} as={Fragment}>
-            <Dialog as="div" className="relative z-50" onClose={closeModal}>
-              <Transition.Child
-                as={Fragment}
-                enter="ease-out duration-300"
-                enterFrom="opacity-0"
-                enterTo="opacity-100"
-                leave="ease-in duration-200"
-                leaveFrom="opacity-100"
-                leaveTo="opacity-0"
-              >
-                <div className="fixed inset-0  bg-black bg-opacity-25" />
-              </Transition.Child>
-              <div className="fixed inset-0 overflow-y-auto">
-                <div className="flex h-full w-full items-center justify-center  p-4 text-center">
-                  <Transition.Child
-                    as={Fragment}
-                    enter="ease-out duration-300"
-                    enterFrom="opacity-0 scale-95"
-                    enterTo="opacity-100 scale-100"
-                    leave="ease-in duration-200"
-                    leaveFrom="opacity-100 scale-100"
-                    leaveTo="opacity-0 scale-95"
-                  >
-                    <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-3xl bg-white p-6 text-left align-middle shadow-xl transition-all  ">
-                      <Dialog.Title
-                        as="h3"
-                        className="text-gray-900 text-lg font-medium capitalize leading-6"
+    <footer
+      id="footer"
+      className="flex w-full flex-col items-center justify-center bg-blackberry"
+    >
+      <div className="flex w-full max-w-[1980px] flex-row px-[150px] py-[200px] shadow-lg md:flex-row">
+        <Transition appear show={isOpen} as={Fragment}>
+          <Dialog as="div" className="relative z-50" onClose={closeModal}>
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0"
+              enterTo="opacity-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100"
+              leaveTo="opacity-0"
+            >
+              <div className="fixed inset-0  bg-black bg-opacity-25" />
+            </Transition.Child>
+            <div className="fixed inset-0 overflow-y-auto">
+              <div className="flex h-full w-full items-center justify-center  p-4 text-center">
+                <Transition.Child
+                  as={Fragment}
+                  enter="ease-out duration-300"
+                  enterFrom="opacity-0 scale-95"
+                  enterTo="opacity-100 scale-100"
+                  leave="ease-in duration-200"
+                  leaveFrom="opacity-100 scale-100"
+                  leaveTo="opacity-0 scale-95"
+                >
+                  <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-3xl bg-white p-6 text-left align-middle shadow-xl transition-all  ">
+                    <Dialog.Title
+                      as="h3"
+                      className="text-gray-900 text-lg font-medium capitalize leading-6"
+                    >
+                      {modal.title || "payment successful"}
+                    </Dialog.Title>
+                    <div className="mt-2">
+                      <p className="text-gray-500 text-sm">
+                        {modal.message ||
+                          "Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order."}
+                      </p>
+                    </div>
+
+                    <div className="mt-4">
+                      <button
+                        type="button"
+                        className="inline-flex justify-center rounded-3xl border border-transparent bg-secondary-red px-4 py-2 text-sm font-semibold normal-case text-white hover:brightness-125 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary-red focus-visible:ring-offset-2"
+                        onClick={closeModal}
                       >
-                        {modal.title || "payment successful"}
-                      </Dialog.Title>
-                      <div className="mt-2">
-                        <p className="text-gray-500 text-sm">
-                          {modal.message ||
-                            "Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order."}
-                        </p>
-                      </div>
-
-                      <div className="mt-4">
-                        <button
-                          type="button"
-                          className="inline-flex justify-center rounded-3xl border border-transparent bg-secondary-red px-4 py-2 text-sm font-semibold normal-case text-white hover:brightness-125 focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary-red focus-visible:ring-offset-2"
-                          onClick={closeModal}
-                        >
-                          {modal.button || "Got it, thanks!"}
-                        </button>
-                      </div>
-                    </Dialog.Panel>
-                  </Transition.Child>
-                </div>
-              </div>
-            </Dialog>
-          </Transition>
-
-          <div className="section-padding__y-axis section-padding__x-axis relative flex flex-col gap-[50px] overflow-hidden rounded-3xl bg-rose-100 lg:flex-row">
-            <div className="relative flex aspect-square w-full flex-col items-center justify-center gap-8 drop-shadow-xl md:aspect-auto md:items-start lg:w-1/3">
-              <div className="w-full">
-                <h1 className="sectionOverline !text-center md:!text-left">
-                  Contact
-                </h1>
-                <h1 className="sectionHeading !text-center md:!text-left">
-                  Send me a message
-                </h1>
-                <p className="sectionLeading mt-2 !text-center md:!text-left">
-                  Feel free to contact me anytime! I'll get back to you as soon
-                  as I can!
-                </p>
+                        {modal.button || "Got it, thanks!"}
+                      </button>
+                    </div>
+                  </Dialog.Panel>
+                </Transition.Child>
               </div>
             </div>
+          </Dialog>
+        </Transition>
 
+        <div className="flex flex-col ">
+          <h1 className="sectionHeading !text-center text-3xl capitalize text-gray md:!text-left">
+            Reaching goals relentlessly!
+          </h1>
+          <p className=" mt-2 !text-center text-[20px] text-gray brightness-90 md:!text-left">
+            Relentlessly pursuing goals with unwavering <br />
+            determination, turning vision into reality!
+          </p>
+
+          <div className=" relative flex flex-col gap-[50px] overflow-hidden  lg:flex-row">
             <div className="g:order-1 z-20 flex w-full flex-1 flex-col items-center justify-center gap-4 rounded-md !px-[0px] md:gap-[50px] lg:w-2/3">
               <form
                 ref={formRef}
@@ -181,51 +174,37 @@ export default function Footer() {
                 className="flex w-full flex-wrap gap-3"
               >
                 <div className="flex w-full flex-col gap-4 md:flex-row">
-                  <label className="flex w-full flex-col">
-                    <span className="sectionLeading text-left">
-                      Name<span className="text-secondary-red">*</span>
-                    </span>
-                    <input
-                      type="text"
-                      name="name"
-                      value={form.name}
-                      onChange={handleChange}
-                      required={true}
-                      placeholder="Enter your name.."
-                      autoComplete="on"
-                      className="inputField sectionDescription"
-                    />
-                  </label>
-                  <label className="flex w-full flex-col">
-                    <span className="sectionLeading text-left">
-                      Email<span className="text-secondary-red">*</span>
-                    </span>
-                    <input
-                      type="email"
-                      name="email"
-                      value={form.email}
-                      onChange={handleChange}
-                      required={true}
-                      placeholder="Enter your email.."
-                      autoComplete="on"
-                      className="inputField sectionDescription"
-                    />
-                  </label>
-                </div>
-                <label className="flex w-full flex-col">
-                  <span className="sectionLeading text-left">
-                    Message<span className="text-secondary-red">*</span>
-                  </span>
-                  <textarea
-                    rows={7}
-                    name="message"
-                    value={form.message}
+                  <input
+                    type="text"
+                    name="name"
+                    value={form.name}
                     onChange={handleChange}
                     required={true}
-                    placeholder="Write your message.."
-                    className="inputField textArea sectionDescription"
+                    placeholder="Enter your name.."
+                    autoComplete="on"
+                    className=" block w-full rounded-t-md border-b border-black-1 bg-white p-3 text-left shadow-lg outline-none  focus:bg-white  focus:placeholder:italic"
                   />
-                </label>
+
+                  <input
+                    type="email"
+                    name="email"
+                    value={form.email}
+                    onChange={handleChange}
+                    required={true}
+                    placeholder="Enter your email.."
+                    autoComplete="on"
+                    className=" block w-full rounded-t-md border-b border-black-1 bg-white p-3 text-left shadow-lg outline-none focus:bg-white  focus:placeholder:italic"
+                  />
+                </div>
+                <textarea
+                  rows={7}
+                  name="message"
+                  value={form.message}
+                  onChange={handleChange}
+                  required={true}
+                  placeholder="Write your message.."
+                  className="block h-[200px] w-full  resize-none  bg-white text-left md:h-[155px]"
+                />
                 <button
                   type="submit"
                   className="cta__solid flex !w-full min-w-[210px] items-center justify-center !px-12 !py-3 md:!w-fit"
@@ -252,7 +231,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex  flex-col">
           <ul className="navbar-socials">
             {SocialMediaLinks.map(({ id, ariaLabel, url }) => (
               <SocialIcon
@@ -265,7 +244,7 @@ export default function Footer() {
               />
             ))}
           </ul>
-          <p className="flex w-full flex-row gap-2 px-16 py-6 text-center">
+          <p className="flex w-full flex-row gap-2 px-16 py-6 text-center text-gray">
             © 2023{" "}
             <span className="flex h-fit w-fit font-bold"> Andrei Sager</span>
           </p>

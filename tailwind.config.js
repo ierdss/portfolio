@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         blackberry: "#252131",
+        gray: "#F4F5F8",
 
         "nav-border": "#EBEAEA",
         "light-white": "#FAFAFB",
@@ -17,7 +18,6 @@ module.exports = {
         "light-white-300": "#F3F3F4",
         "light-white-400": "#E2E5F1",
         "light-white-500": "#E4E4E4",
-        gray: "#4D4A4A",
         "gray-1": "#3d3d4e",
         "black-1": "#212121",
         "primary-purple": "#9747FF",
