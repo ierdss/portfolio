@@ -5,12 +5,10 @@ import {
   Services,
   About,
   Technologies,
-  Workflow,
   Experience,
   Projects,
   Testimonials,
 } from "@/components";
-import Head from "next/head";
 
 import ScrollSpy from "react-ui-scrollspy";
 
