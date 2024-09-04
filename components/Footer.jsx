@@ -232,7 +232,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col items-end justify-end gap-[60px]">
-          <ul className="navbar-socials">
+          <ul className="hidden w-full flex-row items-center justify-center gap-2 lg:flex lg:justify-start">
             {SocialMediaLinks.map(({ id, ariaLabel, url }) => (
               <SocialIcon
                 key={id}
