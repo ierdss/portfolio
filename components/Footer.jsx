@@ -247,7 +247,7 @@ export default function Footer() {
                 key={id}
                 href={url}
                 target="_blank"
-                ariaLabel={ariaLabel}
+                aria-label={ariaLabel}
                 className="flex h-[28px] w-[28px] items-center justify-center text-gray md:h-[48px] md:w-[48px]"
               >
                 {icon}
