@@ -99,7 +99,7 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="bg-background-1 flex w-full flex-col items-center justify-center"
+      className="flex w-full flex-col items-center justify-center bg-background-1"
     >
       <div className="flex w-full max-w-[1980px] flex-col justify-between gap-[50px] px-[8px] py-[50px] md:flex-row md:px-[150px] md:py-[100px]">
         <Transition appear show={isOpen} as={Fragment}>
@@ -161,7 +161,7 @@ export default function Footer() {
             <h1 className="text-left text-[32px] font-bold capitalize text-gray md:text-[64px]">
               Reaching goals relentlessly!
             </h1>
-            <p className="text-gray2 text-left text-[20px] md:!text-left">
+            <p className="text-left text-[20px] font-semibold text-gray2 md:!text-left">
               Relentlessly pursuing goals with unwavering{" "}
               <br className="hidden md:flex" />
               determination, turning vision into reality!
@@ -185,7 +185,7 @@ export default function Footer() {
                       required={true}
                       placeholder="Enter your name..."
                       autoComplete="on"
-                      className="bg-glass text-content block w-full select-none rounded-[10px] p-[16px] text-left focus:placeholder:italic md:w-[300px]"
+                      className="block w-full select-none rounded-[10px] bg-glass p-[16px] text-left text-content focus:placeholder:italic md:w-[300px]"
                     />
 
                     <input
@@ -196,7 +196,7 @@ export default function Footer() {
                       required={true}
                       placeholder="Enter your email..."
                       autoComplete="on"
-                      className="bg-glass text-content block w-full select-none rounded-[10px] p-[16px] text-left focus:placeholder:italic md:w-[300px]"
+                      className="block w-full select-none rounded-[10px] bg-glass p-[16px] text-left text-content focus:placeholder:italic md:w-[300px]"
                     />
                   </div>
 
@@ -207,7 +207,7 @@ export default function Footer() {
                     onChange={handleChange}
                     required={true}
                     placeholder="Enter your message..."
-                    className="bg-glass text-content mb-[15px] block h-full w-full select-none resize-none rounded-[10px]  p-[16px] text-left focus:placeholder:italic md:mb-[0px] md:h-[175px] md:w-[500px]
+                    className="mb-[15px] block h-full w-full select-none resize-none rounded-[10px] bg-glass p-[16px]  text-left text-content focus:placeholder:italic md:mb-[0px] md:h-[175px] md:w-[500px]
                     "
                   />
                 </div>
