@@ -11,7 +11,7 @@ export default function Testimonials() {
         <h1 className="font-boldtext-left z-20 w-full text-[32px] font-bold capitalize text-gray md:text-[64px]">
           What Do My Clients Think?
         </h1>
-        <ul className="z-20 flex flex-row flex-wrap gap-[40px]">
+        <ul className="z-20 flex flex-row items-center justify-center gap-[40px]">
           {TestimonialsSectionContent.map(
             ({ id, avatar, name, location, testimonial }) => (
               <li
