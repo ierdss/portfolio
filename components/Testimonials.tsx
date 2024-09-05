@@ -48,8 +48,9 @@ export default function Testimonials() {
         </ul>
 
         {/* Background Mist Effect */}
-        <div className="absolute left-0 top-0 z-10 h-[500px] w-[500px] -translate-x-[30%] -translate-y-[30%] rounded-full bg-accent-1 blur-[300px]" />
-        <div className="absolute bottom-0 right-0 z-10 h-[500px] w-[500px] translate-x-[30%] translate-y-[30%] rounded-full bg-accent-2 blur-[300px]" />
+        <div className="absolute left-0 top-0 z-10 h-[500px] w-[500px] -translate-x-[30%] -translate-y-[30%] rounded-full bg-accent-1 blur-[400px]" />
+        <div className="bg-accent-3 absolute left-[50%] top-[50%] z-10 h-[500px] w-[500px] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[400px]" />
+        <div className="absolute bottom-0 right-0 z-10 h-[500px] w-[500px] translate-x-[30%] translate-y-[30%] rounded-full bg-accent-2 blur-[400px]" />
       </div>
     </div>
   );
