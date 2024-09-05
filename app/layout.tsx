@@ -1,9 +1,13 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Poppins({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-poppins",
+});
 
 export const metadata = {
   metadataBase: new URL("https://andreiportfolio.vercel.app"),
@@ -35,7 +39,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={font.className}>
         <div className="flex w-full justify-center">
           <div className="flex w-full flex-col">
             <Navbar />
