@@ -2,7 +2,14 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import { BiLogoJavascript, BiLogoSass, BiLogoTypescript } from "react-icons/bi";
 import { FaCss3Alt, FaHtml5, FaReact } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiVercel } from "react-icons/si";
+import { IoLogoMarkdown } from "react-icons/io5";
+import {
+  SiNextdotjs,
+  SiObsidian,
+  SiTailwindcss,
+  SiVercel,
+} from "react-icons/si";
+import { GrGraphQl } from "react-icons/gr";
 
 export default function Technologies() {
   const iconSize = 50;
@@ -145,12 +152,83 @@ export default function Technologies() {
               </div>
             </ul>
           </Marquee>
+
+          {/* Skills Row 3 */}
+          <Marquee
+            play={true}
+            direction={"left"}
+            loop={0}
+            pauseOnHover={false}
+            speed={100}
+            autoFill={true}
+          >
+            <ul className="first-letter: z-20 mr-3 flex w-full flex-row gap-3 md:mr-5 md:gap-5">
+              <div className="overflow-hidden rounded-[20px]">
+                <a
+                  href="https://www.markdownguide.org/"
+                  target="_blank"
+                  className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-blackberry text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-blackberry"
+                >
+                  <IoLogoMarkdown size={iconSize} />
+                  <h1 className="bg-clip-text text-[32px] font-bold">
+                    Markdown
+                  </h1>
+                </a>
+              </div>
+              <div className="overflow-hidden rounded-[20px]">
+                <a
+                  href="https://obsidian.md/"
+                  target="_blank"
+                  className="bg-obsidian hover:text-obsidian flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray"
+                >
+                  <SiObsidian size={iconSize} />
+                  <h1 className="bg-clip-text text-[32px] font-bold">
+                    Obsidian
+                  </h1>
+                </a>
+              </div>
+              <div className="overflow-hidden rounded-[20px]">
+                <a
+                  href="https://graphql.org/"
+                  target="_blank"
+                  className="bg-graphql hover:text-graphql flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray"
+                >
+                  <GrGraphQl size={iconSize} />
+                  <h1 className="bg-clip-text text-[32px] font-bold">
+                    GraphQl
+                  </h1>
+                </a>
+              </div>
+              {/* <div className="overflow-hidden rounded-[20px]">
+                <a
+                  href="https://nextjs.org/docs"
+                  target="_blank"
+                  className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-next text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-next"
+                >
+                  <SiNextdotjs size={iconSize} />
+                  <h1 className="bg-clip-text text-[32px] font-bold">
+                    Next.js
+                  </h1>
+                </a>
+              </div>
+              <div className="overflow-hidden rounded-[20px]">
+                <a
+                  href="https://vercel.com/docs"
+                  target="_blank"
+                  className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-next text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-next"
+                >
+                  <SiVercel size={iconSize} />
+                  <h1 className="bg-clip-text text-[32px] font-bold">Vercel</h1>
+                </a>
+              </div> */}
+            </ul>
+          </Marquee>
         </div>
 
         {/* Background Mist Effects */}
         <div className="absolute left-0 top-0 z-10 h-[650px] w-[650px] -translate-x-[30%] -translate-y-[30%] rounded-full bg-accent-1 blur-[300px]" />
         <div className="absolute left-[50%] top-[50%] z-10 h-[650px] w-[650px] -translate-x-[50%] -translate-y-[50%] rounded-full bg-accent-2 blur-[300px]" />
-        <div className="bg-accent-3 absolute bottom-0 right-0 z-10 h-[650px] w-[650px] translate-x-[30%] translate-y-[30%] rounded-full blur-[300px]" />
+        <div className="absolute bottom-0 right-0 z-10 h-[650px] w-[650px] translate-x-[30%] translate-y-[30%] rounded-full bg-accent-3 blur-[300px]" />
       </div>
     </div>
   );
