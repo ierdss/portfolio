@@ -5,7 +5,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { ExperienceSectionContent } from "@/constants";
+import { Experiences as ExperiencesContent } from "@/constants";
 
 export default function Experiences() {
   return (
@@ -19,7 +19,7 @@ export default function Experiences() {
         </h1>
 
         <VerticalTimeline className="w-full" lineColor="#B40041">
-          {ExperienceSectionContent.map(
+          {ExperiencesContent.map(
             ({ id, icon, title, company, date, bullets, tags }) => (
               <Experience
                 key={id}
