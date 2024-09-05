@@ -33,7 +33,7 @@ export default function Technologies() {
 
 interface ISkillsRow {
   row: ISkillsRow[];
-  direction: string;
+  direction: "left" | "right" | "up" | "down" | undefined;
 }
 
 interface ISkillsRow {
