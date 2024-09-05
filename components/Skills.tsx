@@ -1,8 +1,7 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import { BiLogoTypescript } from "react-icons/bi";
-import { FaCss3Alt, FaHtml5, FaReact, FaSass } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io";
+import { BiLogoJavascript, BiLogoSass, BiLogoTypescript } from "react-icons/bi";
+import { FaCss3Alt, FaHtml5, FaReact } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss, SiVercel } from "react-icons/si";
 
 export default function Technologies() {
@@ -69,7 +68,7 @@ export default function Technologies() {
                   target="_blank"
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-sass text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-sass"
                 >
-                  <FaSass size={48} />
+                  <BiLogoSass size={48} />
                   <h1 className="bg-clip-text text-[32px] font-bold">Sass</h1>
                 </a>
               </div>
@@ -92,7 +91,7 @@ export default function Technologies() {
                   target="_blank"
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-javascript text-blackberry transition-all duration-300 ease-out hover:scale-150 hover:bg-blackberry hover:text-javascript"
                 >
-                  <IoLogoJavascript size={48} />
+                  <BiLogoJavascript size={48} />
                   <h1 className="bg-clip-text text-[32px] font-bold">
                     Javascript
                   </h1>
