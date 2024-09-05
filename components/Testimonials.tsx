@@ -24,9 +24,9 @@ export default function Testimonials() {
         </div>
 
         {/* Background Mist Effects */}
-        <div className="absolute left-0 top-0 z-10 h-[500px] w-[500px] -translate-x-[30%] -translate-y-[30%] rounded-full bg-accent-1 blur-[400px]" />
-        <div className="bg-accent-3 absolute left-[50%] top-[50%] z-10 h-[500px] w-[500px] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[400px]" />
-        <div className="absolute bottom-0 right-0 z-10 h-[500px] w-[500px] translate-x-[30%] translate-y-[30%] rounded-full bg-accent-2 blur-[400px]" />
+        <div className="absolute left-0 top-0 z-10 h-[700px] w-[700px] -translate-x-[30%] -translate-y-[30%] rounded-full bg-accent-1 blur-[300px]" />
+        <div className="bg-accent-3 absolute left-[50%] top-[50%] z-10 h-[500px] w-[500px] -translate-x-[50%] -translate-y-[50%] rounded-full blur-[300px]" />
+        <div className="absolute bottom-0 right-0 z-10 h-[500px] w-[500px] translate-x-[30%] translate-y-[30%] rounded-full bg-accent-2 blur-[300px]" />
       </div>
     </div>
   );
@@ -54,25 +54,27 @@ function TestimonialsRow({ row }: ITestimonialsRow) {
         >
           <div className="flex w-full flex-row items-center justify-between">
             <div className="flex w-full flex-row items-center justify-start gap-[10px]">
-              <Image
-                src={avatar}
-                width={50}
-                height={50}
-                alt="Avatar"
-                className="h-[50px] w-[50px] overflow-hidden rounded-full bg-background-1"
-              />
+              <div className="h-[50px] w-[50px] overflow-hidden rounded-full bg-gray">
+                {/* <Image
+                  src={avatar}
+                  width={50}
+                  height={50}
+                  alt="Avatar"
+                  className="h-[50px] w-[50px] overflow-hidden rounded-full bg-background-1"
+                /> */}
+              </div>
               <div className="text-left">
                 <h1 className="text-[20px] font-bold text-heading group-first:text-background-1">
                   {name}
                 </h1>
-                <p className="text-[14px] font-medium capitalize text-heading group-first:text-background-1">
+                <p className="font-regular text-[14px] capitalize text-heading group-first:text-background-1">
                   {location}
                 </p>
               </div>
             </div>
             <p className="flex justify-end text-sm">⭐⭐⭐⭐⭐</p>
           </div>
-          <p className="flex flex-row gap-4 text-left text-[16px] font-semibold text-content group-first:text-background-1">
+          <p className="flex w-full flex-row gap-4 text-left text-[12px] font-semibold text-content group-first:text-background-1 ">
             ❝{testimonial}❞
           </p>
         </li>
