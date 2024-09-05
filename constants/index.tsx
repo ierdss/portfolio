@@ -15,7 +15,6 @@ import {
 } from "./TestimonialsDB";
 
 import { FeaturedProjectsData, OtherProjectsData } from "./database/projects";
-import { SkillsRow1, SkillsRow2, SkillsRow3 } from "./SkillsDB";
 
 export { FeaturedProjectsData, OtherProjectsData };
 
@@ -28,8 +27,5 @@ export {
   TestimonialsRow1,
   TestimonialsRow2,
   TestimonialsRow3,
-  SkillsRow1,
-  SkillsRow2,
-  SkillsRow3,
   SocialMediaLinks,
 };
