@@ -36,7 +36,7 @@ export default function Technologies() {
                   target="_blank"
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-html text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-html"
                 >
-                  <FaHtml5 size={48} />
+                  <FaHtml5 size={iconSize} />
                   <h1 className="bg-clip-text text-[32px] font-bold">HTML</h1>
                 </a>
               </div>
@@ -46,7 +46,7 @@ export default function Technologies() {
                   target="_blank"
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-css text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-css"
                 >
-                  <FaCss3Alt size={48} />
+                  <FaCss3Alt size={iconSize} />
                   <h1 className="bg-clip-text text-[32px] font-bold">CSS</h1>
                 </a>
               </div>
@@ -56,7 +56,7 @@ export default function Technologies() {
                   target="_blank"
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-tailwind text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-tailwind"
                 >
-                  <SiTailwindcss size={48} />
+                  <SiTailwindcss size={iconSize} />
                   <h1 className="bg-clip-text text-[32px] font-bold">
                     Tailwind
                   </h1>
@@ -68,7 +68,7 @@ export default function Technologies() {
                   target="_blank"
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-sass text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-sass"
                 >
-                  <BiLogoSass size={48} />
+                  <BiLogoSass size={iconSize} />
                   <h1 className="bg-clip-text text-[32px] font-bold">Sass</h1>
                 </a>
               </div>
@@ -91,7 +91,7 @@ export default function Technologies() {
                   target="_blank"
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-javascript text-blackberry transition-all duration-300 ease-out hover:scale-150 hover:bg-blackberry hover:text-javascript"
                 >
-                  <BiLogoJavascript size={48} />
+                  <BiLogoJavascript size={iconSize} />
                   <h1 className="bg-clip-text text-[32px] font-bold">
                     Javascript
                   </h1>
@@ -103,7 +103,7 @@ export default function Technologies() {
                   target="_blank"
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-typescript text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-typescript"
                 >
-                  <BiLogoTypescript size={48} />
+                  <BiLogoTypescript size={iconSize} />
                   <h1 className="bg-clip-text text-[32px] font-bold">
                     Typescript
                   </h1>
@@ -115,7 +115,7 @@ export default function Technologies() {
                   target="_blank"
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-react text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-react"
                 >
-                  <FaReact size={48} />
+                  <FaReact size={iconSize} />
                   <h1 className="bg-clip-text text-[32px] font-bold">
                     React.JS
                   </h1>
@@ -127,7 +127,7 @@ export default function Technologies() {
                   target="_blank"
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-next text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-next"
                 >
-                  <SiNextdotjs size={48} />
+                  <SiNextdotjs size={iconSize} />
                   <h1 className="bg-clip-text text-[32px] font-bold">
                     Next.js
                   </h1>
@@ -139,7 +139,7 @@ export default function Technologies() {
                   target="_blank"
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-next text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-next"
                 >
-                  <SiVercel size={48} />
+                  <SiVercel size={iconSize} />
                   <h1 className="bg-clip-text text-[32px] font-bold">Vercel</h1>
                 </a>
               </div>
