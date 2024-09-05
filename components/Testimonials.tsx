@@ -6,9 +6,9 @@ export default function Testimonials() {
   return (
     <div
       id="testimonials"
-      className=" flex w-full flex-col items-center justify-center gap-[50px] overflow-hidden bg-background-2 text-center"
+      className=" flex w-full flex-col items-center justify-center gap-[50px] bg-background-2 text-center"
     >
-      <div className="relative flex w-full max-w-[1980px] flex-col items-center justify-between gap-[70px] px-[8px] py-[50px] md:px-[150px] md:py-[200px]">
+      <div className="relative flex w-full max-w-[1980px] flex-col items-center justify-between gap-[70px] overflow-hidden px-[8px] py-[50px] md:px-[150px] md:py-[200px] ">
         <h1 className="font-boldtext-left z-20 w-full text-[32px] font-bold capitalize text-gray md:text-[64px]">
           What Do My Clients Think?
         </h1>
@@ -48,8 +48,8 @@ export default function Testimonials() {
         </ul>
 
         {/* Background Mist Effect */}
-        <div className="absolute left-0 top-0 z-10 h-[500px] w-[500px] -translate-x-[50%] -translate-y-[50%] rounded-full bg-accent-1 blur-[300px]" />
-        <div className="absolute bottom-0 right-0 z-10 h-[500px] w-[500px] translate-x-[50%] translate-y-[50%] rounded-full bg-accent-2 blur-[300px]" />
+        <div className="absolute left-0 top-0 z-10 h-[500px] w-[500px] -translate-x-[30%] -translate-y-[30%] rounded-full bg-accent-1 blur-[300px]" />
+        <div className="absolute bottom-0 right-0 z-10 h-[500px] w-[500px] translate-x-[30%] translate-y-[30%] rounded-full bg-accent-2 blur-[300px]" />
       </div>
     </div>
   );
