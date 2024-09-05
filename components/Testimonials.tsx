@@ -11,13 +11,13 @@ export default function Testimonials() {
       id="testimonials"
       className=" flex w-full flex-col items-center justify-center gap-[50px] bg-background-2 text-center"
     >
-      <div className="relative flex w-full max-w-[1980px] flex-col items-center justify-between gap-[70px] overflow-hidden px-[8px] py-[50px] md:px-[150px] md:py-[200px]">
-        <h1 className="font-boldtext-left z-20 w-full text-[32px] font-bold capitalize text-gray md:text-[64px]">
+      <div className="relative flex w-full max-w-[1980px] flex-col items-center justify-between gap-[35px] overflow-hidden px-[8px] py-[50px] md:gap-[70px] md:px-[150px] md:py-[200px]">
+        <h1 className="font-boldtext-left z-20 w-full text-[32px] font-bold capitalize text-gray  md:text-[64px]">
           What Do My Clients Think?
         </h1>
 
         {/* Testimonials Stack */}
-        <div className="flex flex-col gap-[40px]">
+        <div className="flex flex-col gap-[8px] md:gap-[40px]">
           <TestimonialsRow row={TestimonialsRow1} />
           <TestimonialsRow row={TestimonialsRow2} />
           <TestimonialsRow row={TestimonialsRow3} />
@@ -46,11 +46,11 @@ interface ITestimonial {
 
 function TestimonialsRow({ row }: ITestimonialsRow) {
   return (
-    <ul className="z-20 flex flex-row items-start justify-center gap-[40px]">
+    <ul className="z-20 flex flex-col items-start justify-center gap-[8px] md:flex-row md:gap-[40px]">
       {row.map(({ id, avatar, name, location, testimonial }) => (
         <li
           key={id}
-          className="group relative flex h-fit min-h-[250px] w-[400px] select-none flex-col items-center justify-center gap-[24px] rounded-[20px] bg-glass p-10 text-content transition-all duration-500 ease-in-out first:bg-heading first:text-white  hover:-translate-y-4"
+          className="group relative flex w-full select-none flex-col items-center justify-center gap-[24px] rounded-[20px] bg-glass p-5 text-content transition-all duration-500 ease-in-out hover:-translate-y-4 md:h-fit md:min-h-[250px] md:w-[400px] md:p-10"
         >
           <div className="flex w-full flex-row items-center justify-between">
             <div className="flex w-full flex-row items-center justify-start gap-[10px]">
@@ -64,17 +64,15 @@ function TestimonialsRow({ row }: ITestimonialsRow) {
                 /> */}
               </div>
               <div className="text-left">
-                <h1 className="text-[16px] font-bold text-heading group-first:text-background-1">
-                  {name}
-                </h1>
-                <p className="font-regular text-[12px] capitalize text-heading group-first:text-background-1">
+                <h1 className="text-[16px] font-bold text-heading">{name}</h1>
+                <p className="font-regular text-[12px] capitalize text-heading">
                   {location}
                 </p>
               </div>
             </div>
             <p className="flex justify-end text-sm">⭐⭐⭐⭐⭐</p>
           </div>
-          <p className="flex w-full flex-row gap-4 text-left text-[12px] font-semibold text-content group-first:text-background-1 ">
+          <p className="flex w-full flex-row gap-4 text-left text-[12px] font-semibold text-content">
             ❝{testimonial}❞
           </p>
         </li>
