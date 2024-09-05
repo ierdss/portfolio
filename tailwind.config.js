@@ -17,6 +17,7 @@ module.exports = {
         accent: {
           1: "rgb(var(--color-accent1) / <alpha-value>)",
           2: "rgb(var(--color-accent2) / <alpha-value>)",
+          3: "rgb(var(--color-accent3) / <alpha-value>)",
         },
         glass: "rgb(var(--color-glass) / 0.7)",
 
