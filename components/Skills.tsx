@@ -46,15 +46,16 @@ interface ISkillsRow {
 
 function SkillsRow({ row, direction }: ISkillsRow) {
   return (
-    <ul className="first-letter: z-20 flex w-full flex-row gap-3 md:gap-5">
-      <Marquee
-        play={true}
-        direction={direction}
-        loop={0}
-        pauseOnHover={false}
-        speed={100}
-        autoFill={true}
-      >
+    <Marquee
+      play={true}
+      direction={direction}
+      loop={0}
+      pauseOnHover={false}
+      speed={100}
+      autoFill={true}
+      className=""
+    >
+      <ul className="first-letter: z-20 mr-3  flex w-full flex-row gap-3 md:mr-5 md:gap-5">
         {row.map(({ id, icon, name, color, link }) => (
           <a
             key={id}
@@ -66,7 +67,7 @@ function SkillsRow({ row, direction }: ISkillsRow) {
             <h1 className="text-[32px] font-bold">{name || "Name"}</h1>
           </a>
         ))}
-      </Marquee>
-    </ul>
+      </ul>
+    </Marquee>
   );
 }
