@@ -29,7 +29,6 @@ export default function Technologies() {
             pauseOnHover={false}
             speed={100}
             autoFill={true}
-            className="overflow-visible"
           >
             <ul className="first-letter: z-20 mr-3 flex w-full flex-row gap-3 md:mr-5 md:gap-5">
               <div className="overflow-hidden rounded-[20px]">
@@ -85,7 +84,6 @@ export default function Technologies() {
             pauseOnHover={false}
             speed={100}
             autoFill={true}
-            className="overflow-visible"
           >
             <ul className="first-letter: z-20 mr-3 flex w-full flex-row gap-3 md:mr-5 md:gap-5">
               <div className="overflow-hidden rounded-[20px]">
