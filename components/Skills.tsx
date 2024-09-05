@@ -14,7 +14,7 @@ export default function Technologies() {
       className="flex w-full flex-col items-center justify-center overflow-hidden bg-background-2"
     >
       <div className="relative flex w-full max-w-[1980px] flex-col items-center justify-between gap-[70px] px-[8px] py-[50px] md:px-[150px] md:py-[200px]">
-        <h1 className="z-20 w-full text-center text-[32px] font-bold capitalize text-gray md:text-[64px]">
+        <h1 className="z-20 w-full text-center text-[32px] font-bold capitalize text-gray blur-3xl md:text-[64px]">
           The Technologies I Use
           <br className="hidden md:flex" /> To Create My Works
         </h1>
