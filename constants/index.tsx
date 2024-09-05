@@ -8,7 +8,11 @@ import {
 
 import { SocialMediaLinks } from "./SocialMediaLInks";
 
-import { TestimonialsSectionContent } from "./TestimonialsDB";
+import {
+  TestimonialsRow1,
+  TestimonialsRow2,
+  TestimonialsRow3,
+} from "./TestimonialsDB";
 
 export {
   ServicesSectionContent,
@@ -16,7 +20,9 @@ export {
   TechnologiesSectionContent,
   WorkflowSectionContent,
   ExperienceSectionContent,
-  TestimonialsSectionContent,
+  TestimonialsRow1,
+  TestimonialsRow2,
+  TestimonialsRow3,
   SocialMediaLinks,
 };
 
