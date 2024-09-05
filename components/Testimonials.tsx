@@ -17,7 +17,7 @@ export default function Testimonials() {
             ({ id, avatar, name, location, testimonial }) => (
               <li
                 key={id}
-                className="group relative flex min-h-[250px] w-[400px] flex-col items-center justify-center gap-6 rounded-[20px] bg-glass p-10 text-content shadow-lg transition-all duration-500 ease-in-out first:bg-content first:text-white hover:-translate-y-4"
+                className="group relative flex h-fit min-h-[250px] w-[400px] flex-col items-center justify-center gap-[24px] rounded-[20px] bg-glass p-10 text-content transition-all duration-500 ease-in-out first:bg-heading first:text-white hover:-translate-y-4"
               >
                 <div className="flex w-full flex-row items-center justify-between">
                   <div className="flex w-full flex-row items-center justify-start gap-[10px]">
@@ -29,10 +29,10 @@ export default function Testimonials() {
                       className="h-[50px] w-[50px] select-none overflow-hidden rounded-full bg-background-1"
                     />
                     <div className="text-left">
-                      <h1 className="text-xl font-bold text-heading group-first:text-background-1">
+                      <h1 className="text-[20px] font-bold text-heading group-first:text-background-1">
                         {name}
                       </h1>
-                      <p className="text-sm font-medium capitalize text-heading group-first:text-background-1">
+                      <p className="text-[14px] font-medium capitalize text-heading group-first:text-background-1">
                         {location}
                       </p>
                     </div>
@@ -41,7 +41,7 @@ export default function Testimonials() {
                     ⭐⭐⭐⭐⭐
                   </p>
                 </div>
-                <p className="flex flex-row gap-4 text-left font-semibold text-content group-first:text-background-1">
+                <p className="flex flex-row gap-4 text-left text-[16px] font-semibold text-content group-first:text-background-1">
                   ❝{testimonial}❞
                 </p>
               </li>
