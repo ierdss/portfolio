@@ -1,6 +1,5 @@
 import { TestimonialsSectionContent } from "@/constants";
 import Image from "next/image";
-import { BiSolidQuoteLeft } from "react-icons/bi";
 
 export default function Testimonials() {
   return (
