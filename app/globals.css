@@ -57,7 +57,7 @@ body {
 }
 
 ::selection {
-  @apply text-redberry bg-gray;
+  @apply bg-gray text-redberry;
 }
 
 /* Flex Shortcuts */

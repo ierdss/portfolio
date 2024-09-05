@@ -4,10 +4,11 @@ import {
   TechnologiesSectionContent,
   WorkflowSectionContent,
   ExperienceSectionContent,
-  TestimonialsSectionContent,
 } from "./SectionContent";
 
 import { SocialMediaLinks } from "./SocialMediaLInks";
+
+import { TestimonialsSectionContent } from "./TestimonialsDB";
 
 export {
   ServicesSectionContent,

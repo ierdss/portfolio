@@ -6,48 +6,44 @@ export default function Testimonials() {
   return (
     <div
       id="testimonials"
-      className="sectionPadding bg-background-2 flex w-full flex-col items-center justify-center gap-[50px] text-center"
+      className=" flex w-full flex-col items-center justify-center gap-[50px] bg-background-2  text-center"
     >
-      <div className="flex w-full max-w-[1980px] flex-col justify-between gap-[50px] px-[8px] py-[50px] md:flex-row md:px-[150px] md:py-[100px]">
-        <div className="w-full">
-          <h1 className="sectionOverline !text-center">Testimonials</h1>
-          <h1 className="sectionHeading !text-center">What People Say</h1>
-          <span className="mt-2 h-[5px] w-[60px] rounded-md bg-secondary-red" />
-        </div>
-        <ul className="grid grid-cols-1 gap-x-[25px] gap-y-[20px] md:grid-cols-2 lg:w-[80%]">
+      <div className="flex w-full max-w-[1980px] flex-col justify-between gap-[50px] px-[8px] py-[50px] md:flex-row md:px-[150px] md:py-[200px]">
+        <h1 className="font-boldtext-left w-full text-[32px] font-bold capitalize text-gray md:text-[64px]">
+          What Do My Clients Think?
+        </h1>
+        <ul className="flex flex-row flex-wrap gap-[40px]">
           {TestimonialsSectionContent.map(
-            ({ avatar, name, occupation, testimonial }, index) => (
+            ({ id, avatar, name, location, testimonial }) => (
               <li
-                key={index}
-                className="group relative flex w-full flex-col items-center gap-3 rounded-md border border-neutral-300 bg-neutral-50 p-8 shadow-lg transition-all duration-500  ease-in-out first:bg-secondary-red first:text-white hover:-translate-y-4"
+                key={id}
+                className="group relative flex min-h-[250px] w-[400px] flex-col items-center justify-center gap-6 rounded-[20px] bg-glass p-10 text-content shadow-lg transition-all duration-500 ease-in-out first:bg-content first:text-white hover:-translate-y-4"
               >
-                <p className="flex flex-row gap-4">
-                  <span className="sectionDescription w-[90%] group-first:text-white">
-                    {testimonial}
-                  </span>
-                  <BiSolidQuoteLeft
-                    size={50}
-                    className="text-secondary-red group-first:text-white"
-                  />
-                </p>
-                <div className="flexCenter mt-2 w-full flex-row !justify-start gap-2">
-                  <Image
-                    src={avatar}
-                    width={50}
-                    height={50}
-                    alt="Testimonial Avatar"
-                    className=" aspect-square overflow-hidden rounded-full bg-black"
-                  />
-                  <div className="text-left">
-                    <h1 className="sectionLeading group-first:text-white">
-                      {name}
-                    </h1>
-                    <h1 className="sectionOverline-2 !capitalize group-first:text-white ">
-                      {occupation}
-                    </h1>
+                <div className="flex w-full flex-row items-center justify-between">
+                  <div className="flex w-full flex-row items-center justify-start gap-[10px]">
+                    <Image
+                      src={avatar}
+                      width={50}
+                      height={50}
+                      alt="Avatar"
+                      className="h-[50px] w-[50px] select-none overflow-hidden rounded-full bg-background-1"
+                    />
+                    <div className="text-left">
+                      <h1 className="text-xl font-bold text-heading group-first:text-background-1">
+                        {name}
+                      </h1>
+                      <p className="text-sm font-medium capitalize text-heading group-first:text-background-1">
+                        {location}
+                      </p>
+                    </div>
                   </div>
+                  <p className="flex select-none justify-end text-sm">
+                    ⭐⭐⭐⭐⭐
+                  </p>
                 </div>
-                <p className="flex w-full justify-end">⭐⭐⭐⭐⭐</p>
+                <p className="flex flex-row gap-4 text-left font-semibold text-content group-first:text-background-1">
+                  ❝{testimonial}❞
+                </p>
               </li>
             ),
           )}
