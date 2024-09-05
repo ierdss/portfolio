@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Services from "./Services";
 import About from "./About";
-import Technologies from "./Technologies";
+import Skills from "./Skills";
 import Workflow from "./WorkFlow";
 import Experience from "./Experience";
 import Projects from "./Projects";
@@ -14,7 +14,7 @@ export {
   Hero,
   Services,
   About,
-  Technologies,
+  Skills,
   Workflow,
   Experience,
   Projects,

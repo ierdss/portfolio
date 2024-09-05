@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { Technologies as TechList } from "@/constants";
+import { SkillsRow1, SkillsRow2, SkillsRow3 } from "@/constants";
 import { FaQuestion } from "react-icons/fa";
 
 export default function Technologies() {
@@ -14,16 +14,12 @@ export default function Technologies() {
           <br className="hidden md:flex" /> To Create My Works
         </h1>
 
-        <ul className="technologies__list z-20">
-          {TechList.map((technology) => (
-            <Technology
-              key={technology.name}
-              icon={technology.icon}
-              name={technology.name}
-              link={technology.link}
-            />
-          ))}
-        </ul>
+        {/* Skill Stack */}
+        <div className="flex flex-col gap-[8px] md:gap-[40px]">
+          <SkillsRow row={SkillsRow1} />
+          <SkillsRow row={SkillsRow2} />
+          <SkillsRow row={SkillsRow3} />
+        </div>
 
         {/* Background Mist Effects */}
         <div className="absolute left-0 top-0 z-10 h-[650px] w-[650px] -translate-x-[30%] -translate-y-[30%] rounded-full bg-accent-1 blur-[300px]" />
@@ -34,25 +30,32 @@ export default function Technologies() {
   );
 }
 
-interface ITechnologyCard {
+interface ISkillsRow {
+  row: ISkillsRow[];
+}
+
+interface ISkillsRow {
+  id: number;
   icon: ReactNode;
   name: string;
+  color: string;
   link: string;
 }
 
-function Technology({ icon, name, link }: ITechnologyCard) {
+function SkillsRow({ row }: ISkillsRow) {
   return (
-    <a
-      href={link || "/"}
-      target="_blank"
-      className="group flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 rounded-2xl shadow-md transition-all duration-300 ease-out hover:scale-105"
-    >
-      <div className="group-hover:text-secondary-red">
-        {icon || <FaQuestion size={30} />}
-      </div>
-      <h1 className="text-[32px] font-bold group-hover:text-secondary-red">
-        {name || "Name"}
-      </h1>
-    </a>
+    <ul className="first-letter: z-20 flex w-full flex-row gap-3 md:gap-5">
+      {row.map(({ id, icon, name, color, link }) => (
+        <a
+          key={id}
+          href={link || "/"}
+          target="_blank"
+          className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 rounded-2xl shadow-md transition-all duration-300 ease-out hover:scale-105"
+        >
+          <div className="">{icon || <FaQuestion size={48} />}</div>
+          <h1 className="text-[32px] font-bold">{name || "Name"}</h1>
+        </a>
+      ))}
+    </ul>
   );
 }

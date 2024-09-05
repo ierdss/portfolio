@@ -11,7 +11,7 @@ export default function Testimonials() {
       id="testimonials"
       className=" flex w-full flex-col items-center justify-center gap-[50px] overflow-hidden bg-background-2 text-center"
     >
-      <div className="relative flex w-full max-w-[1980px] flex-col items-center justify-between gap-[35px]  px-[8px] py-[50px] md:gap-[70px] md:px-[150px] md:py-[200px]">
+      <div className="relative flex w-full max-w-[1980px] flex-col items-center justify-between gap-[35px] px-[8px] py-[50px] md:gap-[70px] md:px-[150px] md:py-[200px]">
         <h1 className="font-boldtext-left z-20 w-full text-[32px] font-bold capitalize text-gray  md:text-[64px]">
           What Do My Clients Think?
         </h1>

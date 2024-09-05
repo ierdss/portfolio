@@ -153,7 +153,6 @@ html {
 }
 
 /* Navbar Section */
-
 .navbar--scrolled {
   @apply bg-blackberry shadow-lg;
 }
@@ -377,22 +376,6 @@ html {
 }
 .about-description {
   @apply text-left text-base font-medium normal-case text-neutral-800 first:text-white;
-}
-
-/* Technologies Section */
-.technologies__list {
-  @apply grid w-full grid-flow-row grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 md:gap-5 lg:grid-cols-6;
-}
-
-/* Technologies Card Component*/
-.technologies-card {
-  @apply hoverSmoothScale flex aspect-16/11 w-full flex-col items-center justify-center gap-4 rounded-2xl shadow-md lg:max-w-[200px];
-}
-.technologies-card__icon {
-  @apply group-hover:text-secondary-red;
-}
-.technologies-card__name {
-  @apply text-sm font-medium group-hover:text-secondary-red;
 }
 
 /* Work Flow Section  */

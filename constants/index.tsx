@@ -14,6 +14,11 @@ import {
   TestimonialsRow3,
 } from "./TestimonialsDB";
 
+import { FeaturedProjectsData, OtherProjectsData } from "./database/projects";
+import { SkillsRow1, SkillsRow2, SkillsRow3 } from "./SkillsDB";
+
+export { FeaturedProjectsData, OtherProjectsData };
+
 export {
   ServicesSectionContent,
   AboutSectionContent,
@@ -23,10 +28,8 @@ export {
   TestimonialsRow1,
   TestimonialsRow2,
   TestimonialsRow3,
+  SkillsRow1,
+  SkillsRow2,
+  SkillsRow3,
   SocialMediaLinks,
 };
-
-import { FeaturedProjectsData, OtherProjectsData } from "./database/projects";
-import { Technologies } from "./technologiesdatabase";
-
-export { FeaturedProjectsData, OtherProjectsData, Technologies };

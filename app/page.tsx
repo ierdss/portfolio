@@ -4,7 +4,7 @@ import {
   Hero,
   Services,
   About,
-  Technologies,
+  Skills,
   Experience,
   Projects,
   Testimonials,
@@ -25,7 +25,7 @@ export default function Home() {
         <Services />
         <About />
         <Experience />
-        <Technologies />
+        <Skills />
         <Projects />
         <Testimonials />
       </main>
