@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import { SkillsRow1, SkillsRow2, SkillsRow3 } from "@/constants";
-import { FaQuestion } from "react-icons/fa";
+import { FaHtml5, FaQuestion } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
 
 export default function Technologies() {
@@ -16,10 +16,33 @@ export default function Technologies() {
         </h1>
 
         {/* Skill Stack */}
-        <div className="flex max-w-[1980px] flex-col gap-[8px] md:gap-[40px]">
-          <SkillsRow row={SkillsRow1} direction="left" />
+        <div className="z-20 flex max-w-[1980px] flex-col gap-[8px] md:gap-[40px]">
+          {/* <SkillsRow row={SkillsRow1} direction="left" />
           <SkillsRow row={SkillsRow2} direction="right" />
-          <SkillsRow row={SkillsRow3} direction="left" />
+          <SkillsRow row={SkillsRow3} direction="left" /> */}
+          <Marquee
+            play={true}
+            direction={"left"}
+            loop={0}
+            pauseOnHover={false}
+            speed={100}
+            autoFill={true}
+            className="overflow-visible"
+          >
+            <ul className="first-letter: z-20 mr-3 flex w-full flex-row gap-3 md:mr-5 md:gap-5">
+              <div className="overflow-hidden rounded-[20px]">
+                <a
+                  key={1}
+                  href={"/"}
+                  target="_blank"
+                  className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-html text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-html"
+                >
+                  <FaHtml5 size={48} />
+                  <h1 className="bg-clip-text text-[32px] font-bold">HTML</h1>
+                </a>
+              </div>
+            </ul>
+          </Marquee>
         </div>
 
         {/* Background Mist Effects */}
@@ -53,7 +76,6 @@ function SkillsRow({ row, direction }: ISkillsRow) {
       pauseOnHover={false}
       speed={100}
       autoFill={true}
-      className=""
     >
       <ul className="first-letter: z-20 mr-3  flex w-full flex-row gap-3 md:mr-5 md:gap-5">
         {row.map(({ id, icon, name, color, link }) => (
@@ -61,9 +83,9 @@ function SkillsRow({ row, direction }: ISkillsRow) {
             key={id}
             href={link || "/"}
             target="_blank"
-            className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 rounded-2xl shadow-md transition-all duration-300 ease-out hover:scale-105"
+            className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 rounded-2xl transition-all duration-300 ease-out hover:scale-105"
           >
-            <div className="">{icon || <FaQuestion size={48} />}</div>
+            <div>{icon || <FaQuestion size={48} />}</div>
             <h1 className="text-[32px] font-bold">{name || "Name"}</h1>
           </a>
         ))}
