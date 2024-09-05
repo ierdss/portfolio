@@ -64,10 +64,10 @@ function TestimonialsRow({ row }: ITestimonialsRow) {
                 /> */}
               </div>
               <div className="text-left">
-                <h1 className="text-[20px] font-bold text-heading group-first:text-background-1">
+                <h1 className="text-[16px] font-bold text-heading group-first:text-background-1">
                   {name}
                 </h1>
-                <p className="font-regular text-[14px] capitalize text-heading group-first:text-background-1">
+                <p className="font-regular text-[12px] capitalize text-heading group-first:text-background-1">
                   {location}
                 </p>
               </div>
