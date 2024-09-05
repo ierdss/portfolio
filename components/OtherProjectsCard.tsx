@@ -5,7 +5,6 @@ import { IoGlobe } from "react-icons/io5";
 import { CiMobile1 } from "react-icons/ci";
 import { IoIosLaptop } from "react-icons/io";
 
-import { Tooltip } from "../../src/components/ReactTooltip";
 import { TbExternalLink } from "react-icons/tb";
 
 interface OtherProjectsCardProps {
@@ -28,12 +27,6 @@ interface TagProps {
   id: number;
   tag: string;
 }
-
-// MongoDB
-// interface tagProps {
-//   name?: string;
-//   type?: string;
-// }
 
 export default function OtherProjectsCard({
   title,
@@ -159,6 +152,8 @@ export default function OtherProjectsCard({
             <BsBookHalf size={30} />
             Case Study
           </a> */}
+          {/* 
+            TODO: Replace tooltip package with tailwind css https://flowbite.com/docs/components/tooltips/
           <Tooltip
             id="tooltip__live-demo"
             place="left"
@@ -176,7 +171,7 @@ export default function OtherProjectsCard({
             place="right"
             content="Case Study"
             style={{ borderRadius: "4px" }}
-          />
+          /> */}
         </div>
       </div>
     </div>

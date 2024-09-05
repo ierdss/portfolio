@@ -10,7 +10,7 @@ export default function Experience() {
   return (
     <div
       id="experience"
-      className="bg-background-1 flex w-full flex-col items-center justify-center gap-[50px]"
+      className="flex w-full flex-col items-center justify-center gap-[50px] bg-background-1"
     >
       <div className="flex w-full max-w-[1980px] flex-col justify-between gap-[50px] px-[8px] py-[50px] md:flex-row md:px-[150px] md:py-[100px]">
         <div className="experience__heading">

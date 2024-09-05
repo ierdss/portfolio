@@ -1,11 +1,11 @@
-import Navbar from "./navbar/Navbar";
+import Navbar from "./Navbar";
 import Hero from "./Hero";
-import Services from "./services/Services";
+import Services from "./Services";
 import About from "./About";
-import Technologies from "./technologies/Technologies";
+import Technologies from "./Technologies";
 import Workflow from "./WorkFlow";
-import Experience from "./experience/Experience";
-import Projects from "./projects/Projects";
+import Experience from "./Experience";
+import Projects from "./Projects";
 import Testimonials from "./Testimonials";
 import Footer from "./Footer";
 

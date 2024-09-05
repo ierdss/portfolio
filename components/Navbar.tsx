@@ -70,10 +70,10 @@ export default function Navbar() {
                 key={id}
                 href={href}
                 data-to-scrollspy-id={id}
-                className="target:text-redberry group relative my-3 block rounded-[10px] px-4 py-3 text-sm font-bold capitalize text-gray"
+                className="group relative my-3 block rounded-[10px] px-4 py-3 text-sm font-bold capitalize text-gray target:text-redberry"
               >
                 {text}
-                <span className="ease border-redberry absolute -bottom-3 left-[50%] h-0 w-0 -translate-x-1/2 border-t-4 transition-all duration-500 group-hover:w-full" />
+                <span className="ease absolute -bottom-3 left-[50%] h-0 w-0 -translate-x-1/2 border-t-4 border-redberry transition-all duration-500 group-hover:w-full" />
               </Link>
             ))}
           </ul>
