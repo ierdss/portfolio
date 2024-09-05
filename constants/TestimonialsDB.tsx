@@ -39,12 +39,12 @@ export const TestimonialsSectionContent = [
     testimonial:
       "Your dedication and passion are evident in every project you take on. You have a unique ability to blend technical expertise with a personal touch, making your work stand out from the rest.",
   },
-  {
-    id: 6,
-    avatar: "/MeRed.png",
-    name: "Sophia",
-    location: "Sydney, Australia",
-    testimonial:
-      "I'm always impressed by the creativity you bring to the table. Whether it's design or content, you consistently deliver innovative ideas that resonate with your audience. Keep up the great work!",
-  },
+  // {
+  //   id: 6,
+  //   avatar: "/MeRed.png",
+  //   name: "Sophia",
+  //   location: "Sydney, Australia",
+  //   testimonial:
+  //     "I'm always impressed by the creativity you bring to the table. Whether it's design or content, you consistently deliver innovative ideas that resonate with your audience. Keep up the great work!",
+  // },
 ];
