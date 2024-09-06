@@ -122,7 +122,7 @@ function FeaturedProjectsCard({
   ];
 
   return (
-    <div className="flex h-fit w-full flex-col items-center overflow-hidden rounded-2xl shadow-lg lg:flex-row lg:even:flex-row-reverse">
+    <div className="gap=[70px] flex h-fit w-full flex-col items-center overflow-hidden rounded-2xl shadow-lg lg:flex-row  lg:even:flex-row-reverse">
       <div className="relative aspect-16/11 w-full overflow-hidden rounded-2xl shadow-lg">
         <a href={linkLiveDemo} target="_blank">
           <Image
@@ -150,30 +150,30 @@ function FeaturedProjectsCard({
       <div className="flex h-fit w-full flex-col gap-4 rounded-2xl p-4 lg:w-3/5">
         <div className="flex flex-row justify-between">
           <div>
-            <h1 className="block w-full text-left text-2xl font-bold capitalize">
+            <h1 className="block w-full text-left text-[48px] font-bold capitalize text-gray">
               {title || "title"}
             </h1>
-            <h1 className="block w-full text-left text-xs font-bold uppercase text-secondary-red">
+            <h1 className="block w-full text-left text-[24px] font-bold uppercase text-secondary-red">
               {subtitle || "subtitle"}
             </h1>
           </div>
-          <div className="flex flex-row items-center gap-3">
-            {platformDesktop ? <IoIosLaptop size={40} /> : ""}
-            {platformMobile ? <CiMobile1 size={25} /> : ""}
+          <div className="flex flex-row items-center gap-3 text-gray">
+            {platformDesktop && <IoIosLaptop size={40} />}
+            {platformMobile && <CiMobile1 size={25} />}
           </div>
         </div>
         <a href={linkCaseStudy} target="_blank">
-          <p className="text-justify text-sm font-medium normal-case text-black lg:text-left">
+          <p className="text-justify text-base normal-case text-gray lg:text-left">
             {description ||
               "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti pariatur dolorum doloribus natus, quisquam illo sunt rem nihil neque repellat consequatur molestiae maxime saepe laborum? Quae nesciunt excepturi quasi reprehenderit quo illum natus incidunt possimus doloribus minus. Fugit, id. Rerum facere, consectetur alias ad consequatur quam quo soluta repellat consequuntur."}
           </p>
         </a>
-        <ul className="line-clamp-3 flex h-full w-full flex-wrap gap-1">
+        <ul className="mt-4 flex flex-row flex-wrap gap-2 text-gray2">
           {tags.length !== 0
             ? tags.map((tag) => (
                 <li
                   key={tag.id}
-                  className="flex items-center justify-center rounded-full border border-solid border-slate-300 px-3 py-1 text-xs font-medium capitalize text-slate-600"
+                  className="border-gray1 rounded-full border px-4 py-1 text-[13px] font-bold"
                 >
                   {tag.tag}
                 </li>
@@ -181,7 +181,7 @@ function FeaturedProjectsCard({
             : placeholderArray.map((tag) => (
                 <li
                   key={tag.id}
-                  className="flex items-center justify-center rounded-full border border-solid border-slate-300 px-3 py-1 text-xs font-medium capitalize text-slate-600"
+                  className="border-gray1 rounded-full border px-4 py-1 text-[13px] font-bold"
                 >
                   {tag.name}
                 </li>
