@@ -39,13 +39,13 @@ export default function Services() {
 
         {/* Background Mist Effects */}
         <div className="absolute left-0 top-0 -translate-x-[30%] -translate-y-[30%]">
-          <div className="animate-grow-shrink-1 z-10 h-[650px] w-[650px] bg-accent-1 blur-[300px] " />
+          <div className="z-10 h-[650px] w-[650px] animate-grow-shrink-1 bg-accent-1 blur-[300px] " />
         </div>
         <div className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%]">
-          <div className="animate-grow-shrink-2 z-10 h-[650px] w-[650px] bg-accent-2 blur-[300px]" />
+          <div className="z-10 h-[650px] w-[650px] animate-grow-shrink-2 bg-accent-2 blur-[300px]" />
         </div>
         <div className="absolute bottom-0 right-0 translate-x-[30%] translate-y-[30%]">
-          <div className="animate-grow-shrink-3 z-10 h-[650px] w-[650px] bg-accent-3 blur-[300px]" />
+          <div className="z-10 h-[650px] w-[650px] animate-grow-shrink-3 bg-accent-3 blur-[300px]" />
         </div>
       </div>
     </div>
@@ -92,7 +92,7 @@ function WorkflowCard({ number, title, description }: IWorkflow) {
         "group z-20 flex w-full flex-row items-center justify-center gap-[4.375rem] overflow-hidden p-6 transition-all duration-300 ease-out hover:scale-105 hover:text-secondary-red md:max-h-[250px] md:min-h-[200px] md:max-w-[750px]  [&:nth-child(3)]:flex-row-reverse  [&:nth-child(4)]:flex-row-reverse"
       }
     >
-      <h1 className="numbers text-redberry">{number}</h1>
+      <h1 className="numbers select-none text-redberry">{number}</h1>
       <div className="flex flex-col gap-2">
         <h6 className="text-left text-gray">{title || "Title"}</h6>
         <p className="text-left text-sm normal-case text-gray">
