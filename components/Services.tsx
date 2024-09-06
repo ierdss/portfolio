@@ -9,7 +9,7 @@ export default function Services() {
       className="flex w-full flex-col items-center justify-center bg-background-2"
     >
       <div className="relative flex w-full max-w-[1980px] flex-col items-center justify-between gap-[70px] overflow-hidden px-[8px] py-[50px] md:px-[150px] md:py-[200px]">
-        <h1 className="z-20 w-full text-left text-[40px] font-bold capitalize text-gray md:text-[96px]">
+        <h1 className="z-20 w-full text-left capitalize text-gray">
           What Do I Offer?
         </h1>
 
