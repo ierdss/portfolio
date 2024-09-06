@@ -19,14 +19,14 @@ export default function Skills() {
       id="skills"
       className="flex w-full flex-col items-center justify-center overflow-hidden bg-background-2"
     >
-      <div className="relative flex w-[3000px] w-full flex-col items-center justify-between gap-[70px] px-[8px] py-[50px] md:px-[150px] md:py-[200px]">
+      <div className="relative flex w-[1980px] flex-col items-center justify-between gap-[70px] px-[8px] py-[50px] md:px-[150px] md:py-[200px]">
         <h1 className="z-20 w-full text-center text-[32px] font-bold capitalize text-gray md:text-[64px]">
           The Technologies I Use
           <br className="hidden md:flex" /> To Create My Works
         </h1>
 
         {/* Skill Stack */}
-        <div className="z-20 flex w-full flex-col gap-[8px] [mask-image:radial-gradient(circle,#000_50%,transparent_90%)] md:gap-[40px]">
+        <div className="z-20 flex w-[3000px] w-full flex-col gap-[8px] [mask-image:radial-gradient(circle,#000_50%,transparent_90%)] md:gap-[40px]">
           {/* Skills Row 1 */}
           <Marquee
             play={true}
