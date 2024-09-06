@@ -172,7 +172,7 @@ function FeaturedProjectsCard({
             ? tags.map((tag) => (
                 <li
                   key={tag.id}
-                  className="border-gray1 rounded-full border px-4 py-1 text-[13px] font-bold"
+                  className="border-gray1 rounded-full border px-4 py-1 text-[13px] "
                 >
                   {tag.tag}
                 </li>
@@ -180,7 +180,7 @@ function FeaturedProjectsCard({
             : placeholderArray.map((tag) => (
                 <li
                   key={tag.id}
-                  className="border-gray1 rounded-full border px-4 py-1 text-[13px] font-bold"
+                  className="border-gray1 rounded-full border px-4 py-1 text-[13px] "
                 >
                   {tag.name}
                 </li>
@@ -195,9 +195,9 @@ function FeaturedProjectsCard({
             <a
               href={linkCaseStudy}
               target="_blank"
-              className="flex w-[30%] flex-row items-center justify-center gap-2 text-xs capitalize text-gray hover:text-secondary-red"
+              className="flex w-[30%] flex-row items-center justify-center gap-2 rounded-full text-xs capitalize text-gray hover:text-redberry md:text-base"
             >
-              <IoSearchCircle size={40} />
+              <IoSearchCircle size={40} className="aspect-square w-[40px]" />
               Case Study
             </a>
           )}
@@ -205,7 +205,7 @@ function FeaturedProjectsCard({
             <a
               href={linkLiveDemo}
               target="_blank"
-              className="flex w-[30%] flex-row items-center justify-center gap-2  text-xs capitalize text-gray hover:text-secondary-red "
+              className="flex w-[30%] flex-row items-center justify-center gap-2  text-xs capitalize text-gray hover:text-redberry  md:text-base"
             >
               <IoGlobe size={33.5} />
               Live Demo
@@ -215,7 +215,7 @@ function FeaturedProjectsCard({
             <a
               href={linkRepository}
               target="_blank"
-              className="flex w-[30%] flex-row items-center justify-center gap-2 text-xs capitalize text-gray hover:text-secondary-red "
+              className="flex w-[30%] flex-row items-center justify-center gap-2 text-xs capitalize text-gray hover:text-redberry md:text-base"
             >
               <BsGithub size={30} />
               Source Code
