@@ -56,7 +56,7 @@ export default function Navbar() {
         style={{ scaleX }}
       />
 
-      <div className="flex w-screen items-center justify-between gap-10 md:gap-16 lg:max-w-[1980px]">
+      <div className="flex  w-screen items-center justify-between gap-10 md:gap-16 lg:max-w-[1980px]">
         <Link href="#" className="group w-full max-w-[350px]">
           <h3
             className="relative w-fit text-secondary-red"
@@ -104,7 +104,7 @@ export default function Navbar() {
       </div>
 
       <motion.div
-        className="navbar-mobile"
+        className="relative bottom-0 right-0 top-0 lg:hidden"
         initial={false}
         animate={isOpen ? "open" : "closed"}
         custom={height}
@@ -112,25 +112,30 @@ export default function Navbar() {
       >
         <div className="relative h-[20px] w-[20px]">
           <motion.div
-            className="navbar-mobile__background"
+            className="absolute -right-12 -top-6 bottom-0 h-[110vh] w-[100vh] bg-rose-50 md:w-[300px]"
             variants={sidebar}
           />
           <NavbarToggle
             toggle={() => toggleOpen()}
-            customClass="navbar-mobile__toggle"
+            customClass="absolute inset-0 z-20 cursor-pointer border-none bg-transparent outline-none"
           />
         </div>
       </motion.div>
 
       <motion.div
         className={
-          isOpen ? "navbar-mobile__body--open" : "navbar-mobile__body--closed"
+          isOpen
+            ? "absolute bottom-0 right-0 top-0 flex w-full flex-col gap-5 px-4 pb-1 pt-2 md:w-[300px] md:px-8 md:pb-0 md:pt-[5px] lg:!hidden"
+            : "absolute -right-[500px] bottom-0 top-0 flex w-full flex-col gap-5 px-4 pb-1 pt-2 transition-all delay-1000 md:w-[300px] md:px-8 md:pb-0 md:pt-[5px] lg:!hidden"
         }
         initial={false}
         animate={isOpen ? "open" : "closed"}
         ref={containerRef}
       >
-        <motion.ul variants={links} className="navbar-mobile__links">
+        <motion.ul
+          variants={links}
+          className="flex w-full flex-col gap-6 text-center text-black-1 lg:hidden"
+        >
           <motion.a href="#" className="w-fit" variants={link}>
             <h4 className="text-secondary-red">ANDREI</h4>
           </motion.a>
@@ -148,7 +153,10 @@ export default function Navbar() {
               <span className="ease absolute bottom-0 left-[50%] h-0 w-0 -translate-x-1/2 border-t-2 border-secondary-red transition-all duration-500 group-hover:w-full" />
             </motion.a>
           ))}
-          <motion.ul className="navbar-mobile__socials" variants={link}>
+          <motion.ul
+            className="hidden flex-row items-center justify-center gap-2 lg:flex lg:justify-start"
+            variants={link}
+          >
             {SocialMediaLinks.map(({ id, ariaLabel, url }) => (
               <SocialIcon
                 key={id}
@@ -156,7 +164,7 @@ export default function Navbar() {
                 target="_blank"
                 label={ariaLabel}
                 style={{ height: 35, width: 35 }}
-                className="text-secondary-red hover:text-accent-pink"
+                className="flex flex-row items-center justify-center gap-2 lg:justify-start"
               />
             ))}
           </motion.ul>

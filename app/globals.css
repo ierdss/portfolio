@@ -42,6 +42,13 @@
       font-size: clamp(14px, 3vw + 1rem, 16px);
       text-transform: capitalize;
     }
+    .claim {
+      font-weight: 700;
+      font-size: clamp(14px, 8vw + 1rem, 200px);
+      text-transform: uppercase;
+      text-align: left;
+      line-height: 7.75rem;
+    }
     .numbers {
       font-weight: 700;
       font-size: clamp(100px, 12vw + 1rem, 220px);
@@ -100,56 +107,13 @@ html {
   @apply bg-blackberry shadow-lg;
 }
 .navbar--scrolled .navbar-logo {
-  @apply text-slate-500  hover:text-secondary-red;
+  @apply text-slate-500 hover:text-secondary-red;
 }
 .navbar--scrolled span {
   @apply w-0;
 }
 
-.navbar-socials {
-  @apply hidden flex-row items-center justify-center gap-2 lg:flex lg:justify-start;
-}
-
-.navbar-mobile {
-  @apply relative bottom-0 right-0 top-0 lg:hidden;
-}
-.navbar-mobile__background {
-  @apply absolute -right-12 -top-6 bottom-0 h-[110vh] w-[100vh] bg-rose-50 md:w-[300px];
-}
-.navbar-mobile__toggle {
-  @apply absolute inset-0 z-20 cursor-pointer border-none bg-transparent outline-none;
-}
-
-.navbar-mobile__body--open {
-  @apply absolute bottom-0 right-0 top-0 flex w-full flex-col gap-5 px-4 pb-1 pt-2 md:w-[300px] md:px-8 md:pb-0 md:pt-[5px] lg:!hidden;
-}
-.navbar-mobile__body--closed {
-  @apply absolute -right-[500px] bottom-0 top-0 flex w-full flex-col gap-5 px-4 pb-1 pt-2 transition-all delay-1000 md:w-[300px] md:px-8 md:pb-0 md:pt-[5px] lg:!hidden;
-}
-
-.navbar-mobile__links {
-  @apply flex w-full flex-col gap-6 text-center text-black-1 lg:hidden;
-}
-.navbar-mobile__link {
-  @apply w-full;
-}
-.navbar-mobile__socials {
-  @apply flex flex-row items-center justify-center gap-2 lg:justify-start;
-}
-
 /* Hero Section  */
-
-.hero__portrait {
-  @apply z-10 flex aspect-square w-[80%] items-center justify-center overflow-hidden rounded-full shadow-lg brightness-125 md:w-[30%];
-}
-
-.hero__headline {
-  @apply z-20 flex w-[90%] shrink-0 flex-col items-center justify-center gap-4 text-center md:w-[50%] md:items-start;
-}
-
-.hero__headline__buttons {
-  @apply flex w-full items-center justify-center gap-4 md:justify-start;
-}
 
 .hero__squares {
   position: absolute;
@@ -251,11 +215,15 @@ html {
     transform: translateY(0) rotate(0deg);
     opacity: 1;
     border-radius: 0;
+    filter: brightness(100%);
   }
-
+  50% {
+    filter: brightness(200%);
+  }
   100% {
     transform: translateY(-1000px) rotate(720deg);
     opacity: 0;
     border-radius: 50%;
+    filter: brightness(100%);
   }
 }
