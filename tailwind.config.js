@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        mono: ["var(--font-pt-serif)"],
+      },
       colors: {
         background: {
           1: "rgb(var(--color-background) / <alpha-value>)",
@@ -67,7 +70,6 @@ module.exports = {
         "grow-shrink-2": "grow-shrink 9s linear infinite",
         "grow-shrink-3": "grow-shrink 7s linear infinite",
       },
-
       keyframes: {
         "grow-shrink": {
           "0%, 100%": {

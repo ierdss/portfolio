@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Poppins } from "next/font/google";
+import { Poppins, PT_Serif } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -7,6 +7,12 @@ const font = Poppins({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-poppins",
+});
+
+const pt_serif = PT_Serif({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-pt-serif",
 });
 
 export const metadata = {
@@ -39,7 +45,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body className={`${font.className} ${pt_serif.variable}`}>
         <div className="flex w-full justify-center">
           <div className="flex w-full flex-col">
             <Navbar />

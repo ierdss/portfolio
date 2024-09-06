@@ -47,7 +47,7 @@ export default function Hero() {
             <div className="ml-[-10px]">
               <h1 className="claim ml-[-2px] !font-normal">BIGGER</h1>
               <h1 className="claim">BOLDER</h1>
-              <h1 className="claim">BETTER</h1>
+              <h1 className="claim font-mono">BETTER</h1>
             </div>
 
             <p className="sectionLeading max-w-md !text-center md:!text-left">
