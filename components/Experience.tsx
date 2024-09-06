@@ -46,7 +46,7 @@ export default function Experiences() {
                   {tags.map(({ id, tag }) => (
                     <li
                       key={id}
-                      className="border-gray1 rounded-full border px-4 py-1 text-[13px] font-bold"
+                      className="border-gray1 rounded-full border px-4 py-1 text-[13px]"
                     >
                       {tag}
                     </li>
