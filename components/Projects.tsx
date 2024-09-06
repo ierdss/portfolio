@@ -7,9 +7,7 @@ export default function Projects() {
       className="flex h-fit w-full flex-col items-center justify-center gap-[50px] bg-background-1 px-2 sm:px-5 md:text-left"
     >
       <div className="relative flex w-full max-w-[1980px] flex-col items-center justify-center gap-[35px] px-[8px] py-[50px] md:gap-[200px] md:px-[150px] md:py-[200px]">
-        <h1 className="z-20 w-full text-center text-[40px] font-bold capitalize text-gray md:text-[96px]">
-          What Have I Done?
-        </h1>
+        <h1 className="z-20 w-full text-center text-gray">What Have I Done?</h1>
 
         {ProjectsData.map((project) => (
           <FeaturedProjectsCard
@@ -155,12 +153,10 @@ function FeaturedProjectsCard({
       <div className="flex h-fit w-full flex-col gap-4 rounded-2xl lg:w-3/5">
         <div className="flex flex-row justify-between">
           <div>
-            <h1 className="block w-full text-left text-[48px] font-bold capitalize text-gray">
-              {title || "title"}
-            </h1>
-            <h1 className="block w-full text-left text-[24px] font-bold uppercase text-secondary-red">
+            <h3 className="w-full text-left text-gray">{title || "title"}</h3>
+            <h4 className="w-full text-left text-[24px] font-bold uppercase text-secondary-red">
               {subtitle || "subtitle"}
-            </h1>
+            </h4>
           </div>
           <div className="flex flex-row items-center gap-3 text-gray">
             {platformDesktop && <IoIosLaptop size={40} />}

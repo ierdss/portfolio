@@ -20,10 +20,10 @@ export default function Skills() {
       className="flex w-full flex-col items-center justify-center overflow-hidden bg-background-2"
     >
       <div className="relative flex w-[1980px] flex-col items-center justify-between gap-[70px] px-[8px] py-[50px] md:px-[150px] md:py-[200px]">
-        <h1 className="z-20 w-full text-center text-[32px] font-bold capitalize text-gray md:text-[64px]">
+        <h2 className="z-20 w-full text-center text-gray ">
           The Technologies I Use
           <br className="hidden md:flex" /> To Create My Works
-        </h1>
+        </h2>
 
         {/* Skill Stack */}
         <div className="z-20 flex w-[3000px] flex-col gap-[8px] [mask-image:radial-gradient(circle,#000_50%,transparent_90%)] md:gap-[40px]">
@@ -44,7 +44,7 @@ export default function Skills() {
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-html text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-html"
                 >
                   <FaHtml5 size={iconSize} />
-                  <h1 className="bg-clip-text text-[32px] font-bold">HTML</h1>
+                  <h4>HTML</h4>
                 </a>
               </div>
               <div className="overflow-hidden rounded-[20px]">
@@ -54,7 +54,7 @@ export default function Skills() {
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-css text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-css"
                 >
                   <FaCss3Alt size={iconSize} />
-                  <h1 className="bg-clip-text text-[32px] font-bold">CSS</h1>
+                  <h4>CSS</h4>
                 </a>
               </div>
               <div className="overflow-hidden rounded-[20px]">
@@ -64,9 +64,7 @@ export default function Skills() {
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-tailwind text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-tailwind"
                 >
                   <SiTailwindcss size={iconSize} />
-                  <h1 className="bg-clip-text text-[32px] font-bold">
-                    Tailwind
-                  </h1>
+                  <h4>Tailwind</h4>
                 </a>
               </div>
               <div className="overflow-hidden rounded-[20px]">
@@ -76,7 +74,7 @@ export default function Skills() {
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-sass text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-sass"
                 >
                   <BiLogoSass size={iconSize} />
-                  <h1 className="bg-clip-text text-[32px] font-bold">Sass</h1>
+                  <h4>Sass</h4>
                 </a>
               </div>
             </ul>
@@ -99,9 +97,7 @@ export default function Skills() {
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-javascript text-blackberry transition-all duration-300 ease-out hover:scale-150 hover:bg-blackberry hover:text-javascript"
                 >
                   <BiLogoJavascript size={iconSize} />
-                  <h1 className="bg-clip-text text-[32px] font-bold">
-                    Javascript
-                  </h1>
+                  <h4>Javascript</h4>
                 </a>
               </div>
               <div className="overflow-hidden rounded-[20px]">
@@ -111,9 +107,7 @@ export default function Skills() {
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-typescript text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-typescript"
                 >
                   <BiLogoTypescript size={iconSize} />
-                  <h1 className="bg-clip-text text-[32px] font-bold">
-                    Typescript
-                  </h1>
+                  <h4>Typescript</h4>
                 </a>
               </div>
               <div className="overflow-hidden rounded-[20px]">
@@ -123,9 +117,7 @@ export default function Skills() {
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-react text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-react"
                 >
                   <FaReact size={iconSize} />
-                  <h1 className="bg-clip-text text-[32px] font-bold">
-                    React.JS
-                  </h1>
+                  <h4>React.JS</h4>
                 </a>
               </div>
               <div className="overflow-hidden rounded-[20px]">
@@ -135,9 +127,7 @@ export default function Skills() {
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-next text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-next"
                 >
                   <SiNextdotjs size={iconSize} />
-                  <h1 className="bg-clip-text text-[32px] font-bold">
-                    Next.js
-                  </h1>
+                  <h4>Next.js</h4>
                 </a>
               </div>
               <div className="overflow-hidden rounded-[20px]">
@@ -147,7 +137,7 @@ export default function Skills() {
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-next text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-next"
                 >
                   <SiVercel size={iconSize} />
-                  <h1 className="bg-clip-text text-[32px] font-bold">Vercel</h1>
+                  <h4>Vercel</h4>
                 </a>
               </div>
             </ul>
@@ -170,9 +160,7 @@ export default function Skills() {
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-blackberry text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-blackberry"
                 >
                   <IoLogoMarkdown size={iconSize} />
-                  <h1 className="bg-clip-text text-[32px] font-bold">
-                    Markdown
-                  </h1>
+                  <h4>Markdown</h4>
                 </a>
               </div>
               <div className="overflow-hidden rounded-[20px]">
@@ -182,9 +170,7 @@ export default function Skills() {
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-obsidian text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-obsidian"
                 >
                   <SiObsidian size={iconSize} />
-                  <h1 className="bg-clip-text text-[32px] font-bold">
-                    Obsidian
-                  </h1>
+                  <h4>Obsidian</h4>
                 </a>
               </div>
               <div className="overflow-hidden rounded-[20px]">
@@ -194,9 +180,7 @@ export default function Skills() {
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-graphql text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-graphql"
                 >
                   <GrGraphQl size={iconSize} />
-                  <h1 className="bg-clip-text text-[32px] font-bold">
-                    GraphQl
-                  </h1>
+                  <h4>GraphQl</h4>
                 </a>
               </div>
               {/* <div className="overflow-hidden rounded-[20px]">
@@ -206,9 +190,9 @@ export default function Skills() {
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-next text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-next"
                 >
                   <SiNextdotjs size={iconSize} />
-                  <h1 className="bg-clip-text text-[32px] font-bold">
+                  <h4>
                     Next.js
-                  </h1>
+                  </h4>
                 </a>
               </div>
               <div className="overflow-hidden rounded-[20px]">
@@ -218,7 +202,7 @@ export default function Skills() {
                   className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-next text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-next"
                 >
                   <SiVercel size={iconSize} />
-                  <h1 className="bg-clip-text text-[32px] font-bold">Vercel</h1>
+                  <h4>Vercel</h4>
                 </a>
               </div> */}
             </ul>

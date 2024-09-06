@@ -10,7 +10,7 @@ import {
   TestimonialsRow2,
   TestimonialsRow3,
 } from "./TestimonialsDB";
-import { Projects } from "./projects";
+import { Projects } from "./Projects";
 
 import { Experiences } from "./ExperienceDB";
 

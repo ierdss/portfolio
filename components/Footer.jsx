@@ -158,9 +158,9 @@ export default function Footer() {
 
         <div className="flex flex-col gap-[35px] md:gap-[70px]">
           <div className="flex flex-col gap-[10px]">
-            <h1 className="text-left text-[32px] font-bold capitalize text-gray md:text-[64px]">
+            <h2 className="w-full text-left text-gray">
               Reaching goals relentlessly!
-            </h1>
+            </h2>
             <p className="text-left text-[20px] font-semibold text-gray2 md:!text-left">
               Relentlessly pursuing goals with unwavering{" "}
               <br className="hidden md:flex" />

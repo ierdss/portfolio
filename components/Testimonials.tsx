@@ -12,9 +12,9 @@ export default function Testimonials() {
       className=" flex w-full flex-col items-center justify-center gap-[50px] overflow-hidden bg-background-2 text-center"
     >
       <div className="relative flex w-full max-w-[1980px] flex-col items-center justify-between gap-[35px] px-[8px] py-[50px] md:gap-[70px] md:px-[150px] md:py-[200px]">
-        <h1 className="font-boldtext-left z-20 w-full text-[32px] font-bold capitalize text-gray  md:text-[64px]">
+        <h2 className="z-20 w-full text-center text-gray">
           What Do My Clients Think?
-        </h1>
+        </h2>
 
         {/* Testimonials Stack */}
         <div className="flex flex-col gap-[8px] md:gap-[40px]">
@@ -26,7 +26,7 @@ export default function Testimonials() {
         {/* Background Mist Effects */}
         <div className="absolute left-0 top-0 z-10 h-[650px] w-[650px] -translate-x-[30%] -translate-y-[30%] rounded-full bg-accent-1 blur-[300px]" />
         <div className="absolute left-[50%] top-[50%] z-10 h-[650px] w-[650px] -translate-x-[50%] -translate-y-[50%] rounded-full bg-accent-2 blur-[300px]" />
-        <div className="bg-accent-3 absolute bottom-0 right-0 z-10 h-[650px] w-[650px] translate-x-[30%] translate-y-[30%] rounded-full blur-[300px]" />
+        <div className="absolute bottom-0 right-0 z-10 h-[650px] w-[650px] translate-x-[30%] translate-y-[30%] rounded-full bg-accent-3 blur-[300px]" />
       </div>
     </div>
   );
@@ -64,7 +64,7 @@ function TestimonialsRow({ row }: ITestimonialsRow) {
                 /> */}
               </div>
               <div className="text-left">
-                <h1 className="text-[16px] font-bold text-heading">{name}</h1>
+                <h6 className="text-[16px] font-bold text-heading">{name}</h6>
                 <p className="font-regular text-[12px] capitalize text-heading">
                   {location}
                 </p>

@@ -20,7 +20,7 @@ export const Projects = [
   {
     id: 1,
     title: "Roadway Delivery",
-    subtitle: "Transport Service (Landing Page)",
+    subtitle: "Delivery Service (Landing Page)",
     description:
       "Roadway Delivery Service is a leading logistics company revolutionizing the industry with fast, reliable road transportation solutions. We specialize in secure, on-time deliveries for customers and businesses across local and regional destinations.",
     desktopThumbnail:

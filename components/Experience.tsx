@@ -16,9 +16,9 @@ export default function Experiences() {
       className="flex w-full flex-col items-center justify-center gap-[50px] bg-background-1"
     >
       <div className="flex w-full max-w-[1980px] flex-col justify-between gap-[70px] px-[8px] py-[50px] md:px-[150px] md:py-[100px]">
-        <h1 className="z-20 w-full text-center text-[32px] font-bold capitalize text-gray md:text-[64px]">
+        <h2 className="z-20 w-full text-center text-gray">
           Where Have I Worked?
-        </h1>
+        </h2>
 
         <VerticalTimeline className="w-full" lineColor="#B40041">
           {ExperiencesContent.map(
