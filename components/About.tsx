@@ -49,7 +49,7 @@ export default function About() {
         </div>
 
         <div className="flex w-full max-w-[925px] flex-col gap-[70px]">
-          <h1 className="z-20 w-full text-left text-[40px] font-bold capitalize text-gray  md:text-[96px]">
+          <h1 className="z-20 w-full text-left text-[40px] font-bold capitalize text-gray md:text-[96px]">
             Who Am I?
           </h1>
 
