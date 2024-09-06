@@ -15,17 +15,17 @@
 
   h1 {
     font-weight: 700;
-    font-size: clamp(40px, 5vw + 1rem, 100px);
+    font-size: clamp(40px, 8vw + 1rem, 100px);
     text-transform: capitalize;
   }
   h2 {
     font-weight: 700;
-    font-size: clamp(32px, 5vw + 1rem, 64px);
+    font-size: clamp(32px, 8vw + 1rem, 64px);
     text-transform: capitalize;
   }
   h3 {
     font-weight: 700;
-    font-size: clamp(28px, 5vw + 1rem, 40px);
+    font-size: clamp(28px, 8vw + 1rem, 40px);
     text-transform: capitalize;
   }
 }
