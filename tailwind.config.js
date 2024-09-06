@@ -62,6 +62,22 @@ module.exports = {
         "16/11": "16/11",
         "16/19": "16/19",
       },
+      animation: {
+        "mist-1": "grow-shrink 5s ease-in-out infinite spin 1s linear infinite",
+        "mist-2": "grow-shrink 9s ease-in-out infinite spin 1s linear infinite",
+        "mist-3": "grow-shrink 7s ease-in-out infinite spin 1s linear infinite",
+      },
+      keyframes: {
+        "grow-shrink": {
+          "0%": { transform: "scale(1)" },
+          "50%": { transform: "scale(0.8)" },
+          "100%": { transform: "scale(1)" },
+        },
+        spin: {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: " rotate(360deg)" },
+        },
+      },
     },
   },
   plugins: [],
