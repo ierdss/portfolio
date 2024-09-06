@@ -12,11 +12,12 @@ import {
 import { Projects } from "./Projects";
 
 import { Experiences } from "./ExperienceDB";
-import { ServicesData } from "./ServicesDB";
+import { ServicesData, WorkflowData } from "./ServicesDB";
 
 export {
   Projects,
   ServicesData,
+  WorkflowData,
   AboutSectionContent,
   TechnologiesSectionContent,
   WorkflowSectionContent,

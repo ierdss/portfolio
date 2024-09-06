@@ -48,3 +48,34 @@ export const ServicesData = [
   //     "I teach students all around the world programming. I also provide one-on-one mentorship for a price.",
   // },
 ];
+
+export const WorkflowData = [
+  {
+    id: 1,
+    number: "01",
+    title: "Content & Layout",
+    description:
+      "I excel at crafting compelling content and designing layouts that resonate with my target audience. My attention to detail ensures that every piece of content is clear, engaging, and strategically aligned with the overall vision.",
+  },
+  {
+    id: 2,
+    number: "02",
+    title: "Prototype & Concept",
+    description:
+      "I am highly skilled in taking initial ideas and transforming them into tangible prototypes and concepts. My ability to visualize and iterate on concepts ensures that the end product is both innovative and functional.",
+  },
+  {
+    id: 3,
+    number: "03",
+    title: "Design &  Development",
+    description:
+      "My expertise in design and development allows me to seamlessly blend aesthetics with functionality. I create designs that are not only visually appealing but also user-friendly, and my development skills ensure that these designs are brought to life with precision and efficiency.",
+  },
+  {
+    id: 4,
+    number: "04",
+    title: "Marketing & Advertising",
+    description:
+      " I have a strong aptitude for marketing and advertising, with a keen understanding of how to position products or services in the market effectively. My strategies are well-researched, creative, and tailored to meet specific business objectives, driving measurable results.",
+  },
+];

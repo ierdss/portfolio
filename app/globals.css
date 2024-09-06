@@ -42,6 +42,11 @@
       font-size: clamp(14px, 3vw + 1rem, 16px);
       text-transform: capitalize;
     }
+    .numbers {
+      font-weight: 700;
+      font-size: clamp(100px, 12vw + 1rem, 220px);
+      text-transform: capitalize;
+    }
   }
 }
 
