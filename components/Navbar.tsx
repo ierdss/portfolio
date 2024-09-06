@@ -167,9 +167,10 @@ export default function Navbar() {
 const NavLinks = [
   { id: "1", href: "#services", text: "Services" },
   { id: "2", href: "#about", text: "About" },
-  { id: "3", href: "#skill&experience", text: "Skills & Experience" },
-  { id: "4", href: "#projects", text: "Projects" },
-  { id: "5", href: "#testimonials", text: "Testimonials" },
+  { id: "3", href: "#experience", text: "Experience" },
+  { id: "4", href: "#skills", text: "Skills" },
+  { id: "5", href: "#projects", text: "Projects" },
+  { id: "6", href: "#testimonials", text: "Testimonials" },
 ];
 
 const SocialMediaLinks = [
