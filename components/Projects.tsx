@@ -172,7 +172,7 @@ function FeaturedProjectsCard({
             ? tags.map((tag) => (
                 <li
                   key={tag.id}
-                  className="border-gray1 rounded-full border px-4 py-1 text-[13px] "
+                  className="border-gray1 rounded-full border px-4 py-1 text-[13px] capitalize "
                 >
                   {tag.tag}
                 </li>
@@ -180,7 +180,7 @@ function FeaturedProjectsCard({
             : placeholderArray.map((tag) => (
                 <li
                   key={tag.id}
-                  className="border-gray1 rounded-full border px-4 py-1 text-[13px] "
+                  className="border-gray1 rounded-full border px-4 py-1 text-[13px] capitalize "
                 >
                   {tag.name}
                 </li>
