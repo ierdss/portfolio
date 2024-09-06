@@ -2,7 +2,7 @@ import { BsMailbox2 } from "react-icons/bs";
 import { RiLinkedinFill } from "react-icons/ri";
 import { TbBrandGithubFilled } from "react-icons/tb";
 
-export const SocialMediaLinks = [
+export const SocialLinksData = [
   {
     id: 1,
     title: "Gmail",

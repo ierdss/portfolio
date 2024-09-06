@@ -16,7 +16,7 @@
 //   linkCaseStudy: "/",
 // },
 
-export const Projects = [
+export const ProjectsData = [
   {
     id: 1,
     title: "Roadway Delivery",

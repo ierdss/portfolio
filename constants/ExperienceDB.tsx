@@ -1,7 +1,7 @@
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 
-export const Experiences = [
+export const ExperiencesData = [
   {
     id: 1,
     icon: <SiNextdotjs className="scale-150" />,

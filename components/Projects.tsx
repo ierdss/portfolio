@@ -1,4 +1,4 @@
-import { Projects as ProjectsData } from "@/constants";
+import { ProjectsData } from "@/constants";
 
 export default function Projects() {
   return (
@@ -50,7 +50,7 @@ export default function Projects() {
 
 import Image from "next/image";
 
-import { BsBookHalf, BsGithub } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 import { CiMobile1 } from "react-icons/ci";
 import { IoIosLaptop } from "react-icons/io";
 import { IoGlobe, IoSearchCircle } from "react-icons/io5";

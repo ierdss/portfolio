@@ -7,7 +7,7 @@ import emailjs from "@emailjs/browser";
 import "dotenv/config";
 
 import HashLoader from "react-spinners/HashLoader";
-import { SocialMediaLinks } from "@/constants";
+import { SocialLinksData } from "@/constants";
 
 export default function Footer() {
   const formRef = useRef();
@@ -242,7 +242,7 @@ export default function Footer() {
 
         <div className="flex flex-row items-center justify-center gap-[30px] md:flex-col md:items-end md:justify-end md:gap-[60px]">
           <ul className="order-2 flex w-fit flex-row justify-between gap-[15px] md:order-1 md:w-full md:gap-2 lg:flex">
-            {SocialMediaLinks.map(({ id, icon, ariaLabel, url }) => (
+            {SocialLinksData.map(({ id, icon, ariaLabel, url }) => (
               <a
                 key={id}
                 href={url}

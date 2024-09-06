@@ -1,29 +1,20 @@
-import {
-  AboutSectionContent,
-  TechnologiesSectionContent,
-  WorkflowSectionContent,
-} from "./SectionContent";
-import { SocialMediaLinks } from "./SocialMediaLInks";
+import { ExperiencesData } from "./ExperienceDB";
+import { ProjectsData } from "./ProjectsDB";
+import { ServicesData, WorkflowData } from "./ServicesDB";
+import { SocialLinksData } from "./SocialLinksDB";
 import {
   TestimonialsRow1,
   TestimonialsRow2,
   TestimonialsRow3,
 } from "./TestimonialsDB";
-import { Projects } from "./Projects";
-
-import { Experiences } from "./ExperienceDB";
-import { ServicesData, WorkflowData } from "./ServicesDB";
 
 export {
-  Projects,
+  ExperiencesData,
+  ProjectsData,
   ServicesData,
-  WorkflowData,
-  AboutSectionContent,
-  TechnologiesSectionContent,
-  WorkflowSectionContent,
+  SocialLinksData,
   TestimonialsRow1,
   TestimonialsRow2,
   TestimonialsRow3,
-  SocialMediaLinks,
-  Experiences,
+  WorkflowData,
 };

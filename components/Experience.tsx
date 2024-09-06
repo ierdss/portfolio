@@ -4,7 +4,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { Experiences as ExperiencesContent } from "@/constants";
+import { ExperiencesData } from "@/constants";
 import { FaStar } from "react-icons/fa";
 
 export default function Experiences() {
@@ -21,7 +21,7 @@ export default function Experiences() {
         </h2>
 
         <VerticalTimeline className="w-full" lineColor="#B40041">
-          {ExperiencesContent.map(
+          {ExperiencesData.map(
             ({ id, icon, iconStyle, title, subtitle, date, bullets, tags }) => (
               <VerticalTimelineElement
                 key={id}
@@ -38,10 +38,10 @@ export default function Experiences() {
                 iconClassName="scale-150"
                 visible={testingVisibility}
               >
-                <h1 className="text-2xl font-bold text-gray">{title}</h1>
-                <h1 className="text-base font-bold uppercase text-secondary-red">
+                <h4 className="text-2xl font-bold text-gray">{title}</h4>
+                <h6 className="text-base font-bold uppercase text-secondary-red">
                   {subtitle}
-                </h1>
+                </h6>
                 <ul className="mt-4 flex flex-row flex-wrap gap-2 text-gray2">
                   {tags.map(({ id, tag }) => (
                     <li
