@@ -11,12 +11,12 @@ import {
 } from "react-icons/si";
 import { GrGraphQl } from "react-icons/gr";
 
-export default function Technologies() {
+export default function Skills() {
   const iconSize = 50;
 
   return (
     <div
-      id="technologies"
+      id="skills"
       className="flex w-full flex-col items-center justify-center overflow-hidden bg-background-2"
     >
       <div className="relative flex w-full max-w-[1980px] flex-col items-center justify-between gap-[70px] px-[8px] py-[50px] md:px-[150px] md:py-[200px]">
@@ -179,7 +179,7 @@ export default function Technologies() {
                 <a
                   href="https://obsidian.md/"
                   target="_blank"
-                  className="bg-obsidian hover:text-obsidian flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray"
+                  className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-obsidian text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-obsidian"
                 >
                   <SiObsidian size={iconSize} />
                   <h1 className="bg-clip-text text-[32px] font-bold">
@@ -191,7 +191,7 @@ export default function Technologies() {
                 <a
                   href="https://graphql.org/"
                   target="_blank"
-                  className="bg-graphql hover:text-graphql flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray"
+                  className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-graphql text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-graphql"
                 >
                   <GrGraphQl size={iconSize} />
                   <h1 className="bg-clip-text text-[32px] font-bold">
