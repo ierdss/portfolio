@@ -57,11 +57,14 @@ export default function Navbar() {
       />
 
       <div className="flex w-screen items-center justify-between gap-10 md:gap-16 lg:max-w-[1980px]">
-        <Link href="#" className="group  w-full max-w-[350px]">
-          <h1 className="navbar-logo relative" onClick={() => toggleOpen()}>
+        <Link href="#" className="group w-full max-w-[350px]">
+          <h3
+            className="relative w-fit text-secondary-red"
+            onClick={() => toggleOpen()}
+          >
             ANDREI
             <span className="ease absolute -bottom-1 left-0 h-0 w-full border-t-4 border-secondary-red transition-all duration-500" />
-          </h1>
+          </h3>
         </Link>
         <div className="flex flex-row items-center justify-center gap-[50px]">
           <ul className="hidden flex-row gap-5 lg:flex">
@@ -129,7 +132,7 @@ export default function Navbar() {
       >
         <motion.ul variants={links} className="navbar-mobile__links">
           <motion.a href="#" className="w-fit" variants={link}>
-            <h1 className="navbar-logo">ANDREI</h1>
+            <h4 className="text-secondary-red">ANDREI</h4>
           </motion.a>
           {NavLinks.map(({ id, href, text }) => (
             <motion.a

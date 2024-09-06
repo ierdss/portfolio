@@ -106,10 +106,6 @@ html {
   @apply w-0;
 }
 
-.navbar-logo {
-  @apply w-fit text-4xl font-black text-secondary-red;
-}
-
 .navbar-socials {
   @apply hidden flex-row items-center justify-center gap-2 lg:flex lg:justify-start;
 }
