@@ -12,6 +12,19 @@
     --color-accent3: 58 90 215;
     --color-glass: 25 22 33;
   }
+
+  h1 {
+    font-weight: 700;
+    font-size: clamp(40px, 8vw, 96px);
+  }
+  h2 {
+    font-weight: 700;
+    font-size: clamp(32px, 8vw, 64px);
+  }
+  h3 {
+    font-weight: 700;
+    font-size: clamp(28px, 8vw, 40px);
+  }
 }
 
 * {
