@@ -190,7 +190,7 @@ function FeaturedProjectsCard({
           {description ||
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti pariatur dolorum doloribus natus, quisquam illo sunt rem nihil neque repellat consequatur molestiae maxime saepe laborum? Quae nesciunt excepturi quasi reprehenderit quo illum natus incidunt possimus doloribus minus. Fugit, id. Rerum facere, consectetur alias ad consequatur quam quo soluta repellat consequuntur."}
         </p>
-        <div className="mt-[30px] flex w-full flex-row flex-wrap items-center justify-center gap-4">
+        <div className="mt-[50px] flex w-full flex-row flex-wrap items-center gap-4">
           {linkCaseStudy && (
             <a
               href={linkCaseStudy}
