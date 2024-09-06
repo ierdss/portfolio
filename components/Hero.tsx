@@ -5,6 +5,7 @@ import Image from "next/image";
 
 import { FaGithub } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
+import { SocialLinksData } from "@/constants";
 
 export default function Hero() {
   useEffect(() => {
@@ -42,7 +43,7 @@ export default function Hero() {
             Software Developer
           </h5>
 
-          <div className="flex flex-col items-start justify-center text-gray">
+          <div className="relative flex flex-col items-start justify-center text-gray">
             <p className="">I make</p>
             <div className="ml-[-10px]">
               <h1 className="claim ml-[-2px] !font-normal">BIGGER</h1>
@@ -53,6 +54,20 @@ export default function Hero() {
             <p className="sectionLeading max-w-md !text-center md:!text-left">
               websites that are hard to ignore.
             </p>
+
+            <ul className="absolute -left-[120px] top-0 order-2 flex w-fit flex-col justify-between gap-[30px] ">
+              {SocialLinksData.map(({ id, icon, ariaLabel, url }) => (
+                <a
+                  key={id}
+                  href={url}
+                  target="_blank"
+                  aria-label={ariaLabel}
+                  className="flex h-[28px] w-[28px] items-center justify-center text-gray md:h-[48px] md:w-[48px]"
+                >
+                  {icon}
+                </a>
+              ))}
+            </ul>
           </div>
           <div className="flex w-full items-center justify-center gap-4 md:justify-start">
             <a
