@@ -26,7 +26,7 @@ export default function Skills() {
         </h1>
 
         {/* Skill Stack */}
-        <div className="z-20 flex max-w-[1980px] flex-col gap-[8px] md:gap-[40px]">
+        <div className="z-20 flex w-[2200px] flex-col gap-[8px] [mask-image:radial-gradient(circle,#000_10%,transparent_90%)] md:gap-[40px]">
           {/* Skills Row 1 */}
           <Marquee
             play={true}
