@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
 
 import { FaGithub } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
@@ -39,8 +40,23 @@ export default function Hero() {
 
         <div className="z-20 order-1 flex w-[90%] shrink-0 flex-col items-center justify-center gap-20 text-center md:w-[50%] md:items-start">
           <h5 className="text-gray">
-            Hi, I Am <span className="text-redberry">Andrei Sager</span>, a
-            Software Developer
+            Hi, I Am <span className="text-redberry">Andrei Sager</span>, a{" "}
+            <TypeAnimation
+              preRenderFirstString={true}
+              sequence={[
+                // Same substring at the start will only be typed once, initially
+                "Software Developer",
+                4000,
+                "Front-End Designer",
+                4000,
+                "Writer",
+                4000,
+              ]}
+              speed={30}
+              deletionSpeed={30}
+              style={{ fontSize: "1.4em" }}
+              repeat={Infinity}
+            />
           </h5>
 
           <div className="relative flex flex-col items-start justify-center text-gray">
