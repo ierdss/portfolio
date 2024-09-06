@@ -8,6 +8,8 @@ import { Experiences as ExperiencesContent } from "@/constants";
 import { FaStar } from "react-icons/fa";
 
 export default function Experiences() {
+  const testingVisibility = false;
+
   return (
     <div
       id="experience"
@@ -34,7 +36,7 @@ export default function Experiences() {
                 icon={icon}
                 iconStyle={iconStyle}
                 iconClassName="scale-150"
-                visible={true}
+                visible={testingVisibility}
               >
                 <h1 className="text-2xl font-bold text-gray">{title}</h1>
                 <h1 className="text-base font-bold uppercase text-secondary-red">
@@ -66,7 +68,7 @@ export default function Experiences() {
           <VerticalTimelineElement
             iconStyle={{ background: "#B40041", color: "#fff" }}
             icon={<FaStar />}
-            visible={true}
+            visible={testingVisibility}
           />
         </VerticalTimeline>
       </div>
