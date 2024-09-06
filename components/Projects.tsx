@@ -154,9 +154,9 @@ function FeaturedProjectsCard({
         <div className="flex flex-row justify-between">
           <div>
             <h3 className="w-full text-left text-gray">{title || "title"}</h3>
-            <h4 className="w-full text-left text-[24px] font-bold uppercase text-secondary-red">
+            <h5 className="w-full text-left text-[24px] font-bold uppercase text-secondary-red">
               {subtitle || "subtitle"}
-            </h4>
+            </h5>
           </div>
           <div className="flex flex-row items-center gap-3 text-gray">
             {platformDesktop && <IoIosLaptop size={40} />}

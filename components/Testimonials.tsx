@@ -17,7 +17,7 @@ export default function Testimonials() {
         </h2>
 
         {/* Testimonials Stack */}
-        <div className="flex flex-col gap-[8px] md:gap-[40px]">
+        <div className="flex flex-col items-center justify-between gap-[8px] md:gap-[40px]">
           <TestimonialsRow row={TestimonialsRow1} />
           <TestimonialsRow row={TestimonialsRow2} />
           <TestimonialsRow row={TestimonialsRow3} />

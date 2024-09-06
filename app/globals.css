@@ -90,11 +90,6 @@ html {
   @apply bg-gray text-redberry;
 }
 
-/* Hover Effects */
-.hoverSmoothScale {
-  @apply transition-all duration-300 ease-out hover:scale-105;
-}
-
 /* Navbar Section */
 .navbar--scrolled {
   @apply bg-blackberry shadow-lg;
@@ -262,47 +257,4 @@ html {
     opacity: 0;
     border-radius: 50%;
   }
-}
-
-/* Services Section  */
-.services__background {
-  @apply pointer-events-none absolute -z-0 opacity-50;
-}
-
-/* Service Cards Component */
-.service-cards {
-  @apply flex w-full flex-col flex-wrap items-center gap-2 md:flex-row md:gap-8;
-}
-
-/* Service Card Component */
-.service-card {
-  @apply hoverSmoothScale relative z-20 row-span-2 mb-4 flex w-full flex-col gap-2 overflow-hidden rounded-2xl bg-white p-6 shadow-lg hover:text-secondary-red hover:shadow-lg md:min-h-[280px] md:max-w-[230px];
-}
-.service-card__icon {
-  @apply text-secondary-red;
-}
-.service-card__title {
-  @apply text-left text-lg font-bold capitalize text-black group-hover:text-secondary-red first:group-hover:text-white md:whitespace-pre;
-}
-.service-card__description {
-  @apply text-left text-xs font-medium normal-case text-neutral-800;
-}
-.service-card__shadow {
-  @apply absolute -right-[150px] -top-[20px] z-10 aspect-square w-[180px] -rotate-45 bg-white opacity-20 brightness-75;
-}
-
-.service-card:first-child {
-  @apply bg-secondary-red;
-}
-.service-card:first-child .service-card__icon {
-  @apply text-white;
-}
-.service-card:first-child .service-card__title {
-  @apply text-white;
-}
-.service-card:first-child .service-card__description {
-  @apply text-white;
-}
-.service-card:first-child .service-card__shadow {
-  @apply !bg-white !opacity-100 brightness-100;
 }

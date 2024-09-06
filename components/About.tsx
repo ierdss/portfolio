@@ -52,7 +52,7 @@ export default function About() {
           <h1 className="z-20 w-full text-left text-gray">Who Am I?</h1>
 
           <div className="font-regular flex flex-col gap-4 text-left text-2xl normal-case text-content first:text-white">
-            <p>
+            <p className="">
               Hey there! I'm <span className="text-redberry">Andrei Sager</span>
               , a software developer residing in the Philippines. I am a student
               of STI College Sta. Mesa who is currently finishing his Bachelors

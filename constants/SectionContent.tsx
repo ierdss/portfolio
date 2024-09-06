@@ -1,67 +1,15 @@
 import { BiCodeAlt, BiLogoTypescript, BiTargetLock } from "react-icons/bi";
-import {
-  BsGlobeAsiaAustralia,
-  BsLayersFill,
-  BsPatchQuestion,
-} from "react-icons/bs";
-import {
-  FaGlobeAsia,
-  FaHtml5,
-  FaReact,
-  FaCss3Alt,
-  FaSass,
-} from "react-icons/fa";
-import { GiRotaryPhone } from "react-icons/gi";
-import { HiMailOpen } from "react-icons/hi";
+import { BsGlobeAsiaAustralia, BsLayersFill } from "react-icons/bs";
+import { FaHtml5, FaReact, FaCss3Alt, FaSass } from "react-icons/fa";
+
 import { IoLogoJavascript } from "react-icons/io";
-import { IoStorefront, IoColorPaletteSharp, IoLibrary } from "react-icons/io5";
-import { MdOutlineMobileFriendly, MdAccessTimeFilled } from "react-icons/md";
-import { RiDatabaseFill } from "react-icons/ri";
+import { IoColorPaletteSharp, IoLibrary } from "react-icons/io5";
 import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 
 const servicesIconSize = 50;
 const aboutIconSize = 40;
-const contactIconSize = 40;
 const techIconSize = 50;
 const categoryIconSize = 15;
-const experienceIconSize = 70;
-
-export const ServicesSectionContent = [
-  {
-    icon: <FaGlobeAsia size={servicesIconSize} />,
-    title: "Web \nDevelopment",
-    description:
-      "Professional looking web pages made with the best practices, clean code structures and layout responsiveness.",
-  },
-  {
-    icon: <MdOutlineMobileFriendly size={servicesIconSize} />,
-    title: "Mobile \nDevelopment",
-    description:
-      "Unified and consistent user experience across various devices. Localized platform design using platform modules for Android, iOS, and Web.",
-  },
-  {
-    icon: <IoStorefront size={servicesIconSize} />,
-    title: "Front-End \nDevelopment",
-    description:
-      "Prototyping and design for customer sales conversion. Creating familiarity for users throught UI/UX.",
-  },
-  {
-    icon: <RiDatabaseFill size={servicesIconSize} />,
-    title: "Back-End \nDevelopment",
-    description:
-      "Support and maintenance with the latest backend technologies through code optimization and unit testing.",
-  },
-  // {
-  //     icon: <FaPhoneVolume size={servicesIconSize} />,
-  //     title:"Consulting",
-  //     description:"I can suggest solutions for your problems.",
-  // },
-  // {
-  //     icon: <BsMortarboardFill size={servicesIconSize} />,
-  //     title:"Mentoring",
-  //     description:"I teach students all around the world programming. I also provide one-on-one mentorship for a price.",
-  // }
-];
 
 export const AboutSectionContent = [
   {

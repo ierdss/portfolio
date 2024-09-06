@@ -1,5 +1,4 @@
 import {
-  ServicesSectionContent,
   AboutSectionContent,
   TechnologiesSectionContent,
   WorkflowSectionContent,
@@ -13,10 +12,11 @@ import {
 import { Projects } from "./Projects";
 
 import { Experiences } from "./ExperienceDB";
+import { ServicesData } from "./ServicesDB";
 
 export {
   Projects,
-  ServicesSectionContent,
+  ServicesData,
   AboutSectionContent,
   TechnologiesSectionContent,
   WorkflowSectionContent,
