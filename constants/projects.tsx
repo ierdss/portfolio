@@ -16,7 +16,7 @@
 //   linkCaseStudy: "/",
 // },
 
-export const FeaturedProjectsData = [
+export const Projects = [
   {
     id: 1,
     title: "Roadway Delivery (Landing Page)",
@@ -41,9 +41,6 @@ export const FeaturedProjectsData = [
     linkLiveDemo: "https://roadwaydelivery.vercel.app",
     linkCaseStudy: "/",
   },
-];
-
-export const OtherProjectsData = [
   {
     id: 0,
     title: "This Portfolio",

@@ -10,13 +10,12 @@ import {
   TestimonialsRow2,
   TestimonialsRow3,
 } from "./TestimonialsDB";
-import { FeaturedProjectsData, OtherProjectsData } from "./database/projects";
+import { Projects } from "./projects";
 
 import { Experiences } from "./ExperienceDB";
 
 export {
-  FeaturedProjectsData,
-  OtherProjectsData,
+  Projects,
   ServicesSectionContent,
   AboutSectionContent,
   TechnologiesSectionContent,

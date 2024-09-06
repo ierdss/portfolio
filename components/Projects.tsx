@@ -1,4 +1,4 @@
-import { FeaturedProjectsData } from "@/constants";
+import { Projects as ProjectsData } from "@/constants";
 
 export default function Projects() {
   return (
@@ -11,7 +11,7 @@ export default function Projects() {
           What Have I Done?
         </h1>
 
-        {FeaturedProjectsData.map((project) => (
+        {ProjectsData.map((project) => (
           <FeaturedProjectsCard
             key={project.id}
             title={project.title !== null ? project.title : ""}
