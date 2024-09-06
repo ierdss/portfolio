@@ -39,7 +39,7 @@ export const Projects = [
     ],
     linkRepository: "https://github.com/AndreiSager/road-way-delivery",
     linkLiveDemo: "https://roadwaydelivery.vercel.app",
-    linkCaseStudy: "/",
+    linkCaseStudy: "",
   },
   {
     id: 0,
@@ -60,9 +60,9 @@ export const Projects = [
       { id: 3, tag: "emailjs" },
       { id: 4, tag: "framer motion" },
     ],
-    linkRepository: "https://github.com/AndreiSager/andrei-portfolio",
-    linkLiveDemo: "/",
-    linkCaseStudy: "/",
+    linkRepository: "",
+    linkLiveDemo: "",
+    linkCaseStudy: "",
   },
   {
     id: 1,
@@ -86,7 +86,7 @@ export const Projects = [
     linkRepository:
       "https://github.com/AndreiSager/family-friends_image-gallery",
     linkLiveDemo: "https://remembrance-gallery.vercel.app",
-    linkCaseStudy: "/",
+    linkCaseStudy: "",
   },
   {
     id: 2,
@@ -110,7 +110,7 @@ export const Projects = [
     ],
     linkRepository: "https://github.com/AndreiSager/blog",
     linkLiveDemo: "https://andreiblog.vercel.app/",
-    linkCaseStudy: "/",
+    linkCaseStudy: "",
   },
 ];
 

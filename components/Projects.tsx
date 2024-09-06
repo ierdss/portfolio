@@ -6,8 +6,8 @@ export default function Projects() {
       id="projects"
       className="flex h-fit w-full flex-col items-center justify-center gap-[50px] bg-background-1 px-2 sm:px-5 md:text-left"
     >
-      <div className="relative flex w-full max-w-[1980px] flex-col items-center justify-center gap-[35px] px-[8px] py-[50px] md:gap-[70px] md:px-[150px] md:py-[200px]">
-        <h1 className="z-20 w-full text-left text-[40px] font-bold capitalize text-gray md:text-[96px]">
+      <div className="relative flex w-full max-w-[1980px] flex-col items-center justify-center gap-[35px] px-[8px] py-[50px] md:gap-[200px] md:px-[150px] md:py-[200px]">
+        <h1 className="z-20 w-full text-center text-[40px] font-bold capitalize text-gray md:text-[96px]">
           What Have I Done?
         </h1>
 
@@ -55,7 +55,7 @@ import Image from "next/image";
 import { BsBookHalf, BsGithub } from "react-icons/bs";
 import { CiMobile1 } from "react-icons/ci";
 import { IoIosLaptop } from "react-icons/io";
-import { IoGlobe } from "react-icons/io5";
+import { IoGlobe, IoSearchCircle } from "react-icons/io5";
 import { TbExternalLink } from "react-icons/tb";
 
 interface FeaturedProjectsCardProps {
@@ -122,9 +122,12 @@ function FeaturedProjectsCard({
   ];
 
   return (
-    <div className="gap=[70px] flex h-fit w-full flex-col items-center overflow-hidden rounded-2xl shadow-lg lg:flex-row  lg:even:flex-row-reverse">
-      <div className="relative aspect-16/11 w-full overflow-hidden rounded-2xl shadow-lg">
-        <a href={linkLiveDemo} target="_blank">
+    <div className="flex h-fit w-full flex-col items-center justify-center gap-[70px] overflow-hidden lg:odd:flex-row-reverse lg:even:flex-row">
+      <div className="relative aspect-16/11 w-full overflow-hidden">
+        <a
+          href={linkLiveDemo ? linkLiveDemo : "javascript:void(0);"}
+          target={linkLiveDemo ? "_blank" : ""}
+        >
           <Image
             src={desktopThumbnail || "/placeholder/desktop-thumbnail.jpg"}
             width={1000}
@@ -147,7 +150,7 @@ function FeaturedProjectsCard({
           className="absolute bottom-3 left-3 text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
         />
       </div>
-      <div className="flex h-fit w-full flex-col gap-4 rounded-2xl p-4 lg:w-3/5">
+      <div className="flex h-fit w-full flex-col gap-4 rounded-2xl lg:w-3/5">
         <div className="flex flex-row justify-between">
           <div>
             <h1 className="block w-full text-left text-[48px] font-bold capitalize text-gray">
@@ -162,13 +165,7 @@ function FeaturedProjectsCard({
             {platformMobile && <CiMobile1 size={25} />}
           </div>
         </div>
-        <a href={linkCaseStudy} target="_blank">
-          <p className="text-justify text-base normal-case text-gray lg:text-left">
-            {description ||
-              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti pariatur dolorum doloribus natus, quisquam illo sunt rem nihil neque repellat consequatur molestiae maxime saepe laborum? Quae nesciunt excepturi quasi reprehenderit quo illum natus incidunt possimus doloribus minus. Fugit, id. Rerum facere, consectetur alias ad consequatur quam quo soluta repellat consequuntur."}
-          </p>
-        </a>
-        <ul className="mt-4 flex flex-row flex-wrap gap-2 text-gray2">
+        <ul className="flex flex-row flex-wrap gap-2 text-gray2">
           {tags.length !== 0
             ? tags.map((tag) => (
                 <li
@@ -187,14 +184,28 @@ function FeaturedProjectsCard({
                 </li>
               ))}
         </ul>
+        <p className="text-justify text-base normal-case text-gray lg:text-left">
+          {description ||
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti pariatur dolorum doloribus natus, quisquam illo sunt rem nihil neque repellat consequatur molestiae maxime saepe laborum? Quae nesciunt excepturi quasi reprehenderit quo illum natus incidunt possimus doloribus minus. Fugit, id. Rerum facere, consectetur alias ad consequatur quam quo soluta repellat consequuntur."}
+        </p>
         <div className="flex w-full flex-row flex-wrap items-center gap-4">
+          {linkCaseStudy && (
+            <a
+              href={linkCaseStudy}
+              target="_blank"
+              className="flex flex-row items-center justify-center gap-2 text-xs capitalize text-gray hover:text-secondary-red"
+            >
+              <IoSearchCircle size={40} />
+              Case Study
+            </a>
+          )}
           {linkLiveDemo && (
             <a
               href={linkLiveDemo}
               target="_blank"
-              className="flex flex-row items-center justify-center gap-2 text-xs capitalize hover:text-secondary-red"
+              className="flex flex-row items-center justify-center gap-2 text-xs  capitalize text-gray hover:text-secondary-red"
             >
-              <IoGlobe size={34} />
+              <IoGlobe size={33.5} />
               Live Demo
             </a>
           )}
@@ -202,20 +213,10 @@ function FeaturedProjectsCard({
             <a
               href={linkRepository}
               target="_blank"
-              className="flex flex-row items-center justify-center gap-2 text-xs capitalize hover:text-secondary-red"
+              className="flex flex-row items-center justify-center gap-2 text-xs capitalize text-gray hover:text-secondary-red"
             >
               <BsGithub size={30} />
               Source Code
-            </a>
-          )}
-          {linkCaseStudy && (
-            <a
-              href={linkCaseStudy}
-              target="_blank"
-              className="flex flex-row items-center justify-center gap-2 text-xs capitalize hover:text-secondary-red"
-            >
-              <BsBookHalf size={30} />
-              Case Study
             </a>
           )}
         </div>
