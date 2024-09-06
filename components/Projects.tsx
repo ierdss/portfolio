@@ -145,10 +145,12 @@ function FeaturedProjectsCard({
           sizes="(min-width: 768px) 100vw, 50vw"
           className="w-full"
         />
-        <TbExternalLink
-          size={30}
-          className="absolute bottom-3 left-3 text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
-        />
+        {linkLiveDemo && (
+          <TbExternalLink
+            size={30}
+            className="absolute bottom-3 left-3 text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+          />
+        )}
       </div>
       <div className="flex h-fit w-full flex-col gap-4 rounded-2xl lg:w-3/5">
         <div className="flex flex-row justify-between">
@@ -188,12 +190,12 @@ function FeaturedProjectsCard({
           {description ||
             "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti pariatur dolorum doloribus natus, quisquam illo sunt rem nihil neque repellat consequatur molestiae maxime saepe laborum? Quae nesciunt excepturi quasi reprehenderit quo illum natus incidunt possimus doloribus minus. Fugit, id. Rerum facere, consectetur alias ad consequatur quam quo soluta repellat consequuntur."}
         </p>
-        <div className="flex w-full flex-row flex-wrap items-center gap-4">
+        <div className="mt-[30px] flex w-full flex-row flex-wrap items-center justify-center gap-4">
           {linkCaseStudy && (
             <a
               href={linkCaseStudy}
               target="_blank"
-              className="flex flex-row items-center justify-center gap-2 text-xs capitalize text-gray hover:text-secondary-red"
+              className="flex w-[30%] flex-row items-center justify-center gap-2 text-xs capitalize text-gray hover:text-secondary-red"
             >
               <IoSearchCircle size={40} />
               Case Study
@@ -203,7 +205,7 @@ function FeaturedProjectsCard({
             <a
               href={linkLiveDemo}
               target="_blank"
-              className="flex flex-row items-center justify-center gap-2 text-xs  capitalize text-gray hover:text-secondary-red"
+              className="flex w-[30%] flex-row items-center justify-center gap-2  text-xs capitalize text-gray hover:text-secondary-red "
             >
               <IoGlobe size={33.5} />
               Live Demo
@@ -213,7 +215,7 @@ function FeaturedProjectsCard({
             <a
               href={linkRepository}
               target="_blank"
-              className="flex flex-row items-center justify-center gap-2 text-xs capitalize text-gray hover:text-secondary-red"
+              className="flex w-[30%] flex-row items-center justify-center gap-2 text-xs capitalize text-gray hover:text-secondary-red "
             >
               <BsGithub size={30} />
               Source Code
