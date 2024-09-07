@@ -9,7 +9,7 @@ export default function Services() {
       className="flex w-full flex-col items-center justify-center overflow-hidden bg-background-2"
     >
       <div className="max-w-center relative flex w-full flex-col items-center justify-between gap-20 px-2 py-12 md:px-40 md:py-48">
-        <div className="z-20 flex flex-col gap-20">
+        <div className="z-20 flex w-full flex-col gap-20">
           <h1 className="z-20 w-full text-left text-gray">What Do I Offer?</h1>
           <ul className="flex w-full flex-col flex-wrap items-center justify-between md:flex-row">
             {ServicesData.map(({ id, icon, title, description }) => (
@@ -38,13 +38,13 @@ export default function Services() {
         </div>
 
         {/* Background Mist Effects */}
-        <div className="absolute left-0 top-0 -translate-x-[30%] -translate-y-[30%]">
-          <div className="z-10 h-[650px] w-[650px] animate-grow-shrink-1 bg-accent-1 blur-[300px] " />
+        <div className="absolute left-0 top-0 -translate-x-[30%] -translate-y-[30%] select-none">
+          <div className="z-10 h-[650px] w-[650px] animate-grow-shrink-1 bg-accent-1 blur-[300px]" />
         </div>
-        <div className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%]">
+        <div className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] select-none">
           <div className="z-10 h-[650px] w-[650px] animate-grow-shrink-2 bg-accent-2 blur-[300px]" />
         </div>
-        <div className="absolute bottom-0 right-0 translate-x-[30%] translate-y-[30%]">
+        <div className="absolute bottom-0 right-0 translate-x-[30%] translate-y-[30%] select-none">
           <div className="z-10 h-[650px] w-[650px] animate-grow-shrink-3 bg-accent-3 blur-[300px]" />
         </div>
       </div>
@@ -62,7 +62,7 @@ function ServiceCard({ icon, title, description }: IService) {
   return (
     <div
       className={
-        "group z-20 flex w-full flex-row gap-6 overflow-hidden p-6 transition-all duration-300 ease-out hover:scale-105 hover:text-secondary-red md:min-h-[200px] md:max-w-[400px]"
+        "group z-20 flex w-full flex-row gap-6 overflow-hidden p-6 transition-all duration-300 ease-out hover:scale-105 hover:text-secondary-red md:min-h-[200px] md:max-w-[360px]"
       }
     >
       <div className="flex h-fit text-secondary-red">
@@ -89,7 +89,7 @@ function WorkflowCard({ number, title, description }: IWorkflow) {
   return (
     <div
       className={
-        "group z-20 flex w-full flex-row items-center justify-center gap-[4.375rem] overflow-hidden p-6 transition-all duration-300 ease-out hover:scale-105 hover:text-secondary-red md:max-h-[250px] md:min-h-[200px] md:max-w-[750px]  [&:nth-child(3)]:flex-row-reverse  [&:nth-child(4)]:flex-row-reverse"
+        "group z-20 flex w-full flex-row items-center justify-center gap-16 overflow-hidden p-6 transition-all duration-300 ease-out hover:scale-105 hover:text-secondary-red md:max-h-[250px] md:min-h-[200px] md:max-w-[700px] [&:nth-child(3)]:flex-row-reverse [&:nth-child(4)]:flex-row-reverse"
       }
     >
       <h1 className="numbers select-none text-redberry">{number}</h1>
