@@ -8,8 +8,8 @@ export default function Services() {
       id="services"
       className="flex w-full flex-col items-center justify-center overflow-hidden bg-background-2"
     >
-      <div className="max-w-center relative flex w-full flex-col items-center justify-between gap-[70px] px-[8px] py-[50px] md:px-[150px] md:py-[200px]">
-        <div className="z-20 flex flex-col gap-[4.375rem]">
+      <div className="max-w-center relative flex w-full flex-col items-center justify-between gap-20 px-2 py-12 md:px-40 md:py-48">
+        <div className="z-20 flex flex-col gap-20">
           <h1 className="z-20 w-full text-left text-gray">What Do I Offer?</h1>
           <ul className="flex w-full flex-col flex-wrap items-center justify-between md:flex-row">
             {ServicesData.map(({ id, icon, title, description }) => (
@@ -23,7 +23,7 @@ export default function Services() {
           </ul>
         </div>
 
-        <div className="z-20 flex flex-col gap-[4.375rem]">
+        <div className="z-20 flex flex-col gap-20">
           <h2 className="text-center text-gray">How Do I Get The Job Done?</h2>
           <ul className="flex w-full flex-col flex-wrap items-center justify-between gap-24 md:flex-row">
             {WorkflowData.map(({ id, number, title, description }) => (
