@@ -56,7 +56,7 @@ export default function Navbar() {
         style={{ scaleX }}
       />
 
-      <div className="flex  w-screen items-center justify-between gap-10 md:gap-16 lg:max-w-[1980px]">
+      <div className="lg:max-w-center flex w-full items-center justify-between gap-10 md:gap-16">
         <Link href="#" className="group w-full max-w-[350px]">
           <h3
             className="relative w-fit text-secondary-red"

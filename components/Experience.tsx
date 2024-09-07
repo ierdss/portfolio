@@ -15,7 +15,7 @@ export default function Experiences() {
       id="experience"
       className="flex w-full flex-col items-center justify-center gap-[50px] bg-background-1"
     >
-      <div className="flex w-full max-w-[1980px] flex-col justify-between gap-[70px] px-[8px] py-[50px] md:px-[150px] md:py-[100px]">
+      <div className="max-w-center flex w-full flex-col justify-between gap-[70px] px-[8px] py-[50px] md:px-[150px] md:py-[100px]">
         <h2 className="z-20 w-full text-center text-gray">
           Where Have I Worked?
         </h2>

@@ -37,7 +37,7 @@ export default function About() {
       id="about"
       className="flex-rowitems-center relative flex w-full flex-col items-center justify-center gap-[50px] overflow-hidden bg-background-1 text-center md:flex-row md:gap-[100px] md:text-left"
     >
-      <div className="relative flex w-full max-w-[1980px] flex-col items-center justify-center gap-[35px] px-[8px] py-[50px] md:flex-row md:gap-[70px] md:px-[150px] md:pb-[100px] md:pt-[200px]">
+      <div className="max-w-center relative flex w-full flex-col items-center justify-center gap-[35px] px-[8px] py-[50px] md:flex-row md:gap-[70px] md:px-[150px] md:pb-[100px] md:pt-[200px]">
         <div className="flex w-[550px] items-center justify-center overflow-hidden rounded-xl bg-secondary-red">
           <Image
             src="/1styear.jpg"

@@ -27,7 +27,7 @@ export default function Hero() {
       id="hero"
       className="flex w-full select-none flex-col items-center justify-center bg-blackberry"
     >
-      <div className="relative flex w-full max-w-[1980px] flex-col items-center justify-center gap-[40px] overflow-hidden px-[8px] py-[50px] md:flex-row md:gap-[50px] md:px-[150px] md:pb-[200px] md:pt-[200px]">
+      <div className="max-w-center relative flex w-full flex-col items-center justify-center gap-[40px] overflow-hidden px-[8px] py-[50px] md:flex-row md:gap-[50px] md:px-[150px] md:pb-[200px] md:pt-[200px]">
         <div className="z-10 order-2 flex aspect-square w-[80%] max-w-[450px] items-center justify-center overflow-hidden rounded-full bg-gray bg-opacity-10 brightness-125">
           <Image
             src="/hero.png"
