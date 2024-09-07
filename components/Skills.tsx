@@ -19,14 +19,14 @@ export default function Skills() {
       id="skills"
       className="flex w-full flex-col items-center justify-center overflow-hidden bg-background-2"
     >
-      <div className="max-w-center relative flex w-full flex-col items-center justify-between gap-[70px] px-[8px] py-[50px] md:px-[150px] md:py-[200px]">
+      <div className="max-w-center relative flex w-full flex-col items-center justify-between gap-20 px-2 py-12 md:px-40 md:py-48">
         <h2 className="z-20 w-full text-center text-gray ">
           The Technologies I Use
           <br className="hidden md:flex" /> To Create My Works
         </h2>
 
         {/* Skill Stack */}
-        <div className="z-20 flex w-[3000px] flex-col gap-[8px] [mask-image:radial-gradient(circle,#000_50%,transparent_90%)] md:gap-[40px]">
+        <div className="z-20 flex w-[3000px] flex-col gap-2 [mask-image:radial-gradient(circle,#000_50%,transparent_90%)] md:gap-10">
           {/* Skills Row 1 */}
           <Marquee
             play={true}
@@ -37,11 +37,11 @@ export default function Skills() {
             autoFill={true}
           >
             <ul className="first-letter: z-20 mr-3 flex w-full flex-row gap-3 md:mr-5 md:gap-5">
-              <div className="overflow-hidden rounded-[20px]">
+              <div className="min-h-52 overflow-hidden rounded-[20px]">
                 <a
                   href="https://www.w3schools.com/html/default.asp"
                   target="_blank"
-                  className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-html text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-html"
+                  className="flex aspect-3/2 h-56 w-[30rem] flex-row flex-wrap items-center justify-center gap-4 bg-html text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-html"
                 >
                   <FaHtml5 size={iconSize} />
                   <h4>HTML</h4>
@@ -51,7 +51,7 @@ export default function Skills() {
                 <a
                   href="https://www.w3schools.com/css/default.asp"
                   target="_blank"
-                  className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-css text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-css"
+                  className="flex aspect-16/11 h-56 w-[30rem] flex-row flex-wrap items-center justify-center gap-4 bg-css text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-css"
                 >
                   <FaCss3Alt size={iconSize} />
                   <h4>CSS</h4>
@@ -61,7 +61,7 @@ export default function Skills() {
                 <a
                   href="https://tailwindcss.com/docs/installation"
                   target="_blank"
-                  className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-tailwind text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-tailwind"
+                  className="flex aspect-16/11 h-56 w-[30rem] flex-row flex-wrap items-center justify-center gap-4 bg-tailwind text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-tailwind"
                 >
                   <SiTailwindcss size={iconSize} />
                   <h4>Tailwind</h4>
@@ -71,7 +71,7 @@ export default function Skills() {
                 <a
                   href="https://sass-lang.com/documentation/"
                   target="_blank"
-                  className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-sass text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-sass"
+                  className="flex aspect-16/11 h-56 w-[30rem] flex-row flex-wrap items-center justify-center gap-4 bg-sass text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-sass"
                 >
                   <BiLogoSass size={iconSize} />
                   <h4>Sass</h4>
@@ -94,7 +94,7 @@ export default function Skills() {
                 <a
                   href="https://www.w3schools.com/js/default.asp"
                   target="_blank"
-                  className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-javascript text-blackberry transition-all duration-300 ease-out hover:scale-150 hover:bg-blackberry hover:text-javascript"
+                  className="flex aspect-16/11 h-56 w-[30rem] flex-row flex-wrap items-center justify-center gap-4 bg-javascript text-blackberry transition-all duration-300 ease-out hover:scale-150 hover:bg-blackberry hover:text-javascript"
                 >
                   <BiLogoJavascript size={iconSize} />
                   <h4>Javascript</h4>
@@ -104,7 +104,7 @@ export default function Skills() {
                 <a
                   href="https://www.typescriptlang.org/docs/"
                   target="_blank"
-                  className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-typescript text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-typescript"
+                  className="flex aspect-16/11 h-56 w-[30rem] flex-row flex-wrap items-center justify-center gap-4 bg-typescript text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-typescript"
                 >
                   <BiLogoTypescript size={iconSize} />
                   <h4>Typescript</h4>
@@ -114,7 +114,7 @@ export default function Skills() {
                 <a
                   href="https://react.dev/reference/react"
                   target="_blank"
-                  className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-react text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-react"
+                  className="flex aspect-16/11 h-56 w-[30rem] flex-row flex-wrap items-center justify-center gap-4 bg-react text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-react"
                 >
                   <FaReact size={iconSize} />
                   <h4>React.JS</h4>
@@ -124,7 +124,7 @@ export default function Skills() {
                 <a
                   href="https://nextjs.org/docs"
                   target="_blank"
-                  className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-next text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-next"
+                  className="flex aspect-16/11 h-56 w-[30rem] flex-row flex-wrap items-center justify-center gap-4 bg-next text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-next"
                 >
                   <SiNextdotjs size={iconSize} />
                   <h4>Next.js</h4>
@@ -134,7 +134,7 @@ export default function Skills() {
                 <a
                   href="https://vercel.com/docs"
                   target="_blank"
-                  className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-next text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-next"
+                  className="flex aspect-16/11 h-56 w-[30rem] flex-row flex-wrap items-center justify-center gap-4 bg-next text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-next"
                 >
                   <SiVercel size={iconSize} />
                   <h4>Vercel</h4>
@@ -157,7 +157,7 @@ export default function Skills() {
                 <a
                   href="https://www.markdownguide.org/"
                   target="_blank"
-                  className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-blackberry text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-blackberry"
+                  className="flex aspect-16/11 h-56 w-[30rem] flex-row flex-wrap items-center justify-center gap-4 bg-blackberry text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-blackberry"
                 >
                   <IoLogoMarkdown size={iconSize} />
                   <h4>Markdown</h4>
@@ -167,7 +167,7 @@ export default function Skills() {
                 <a
                   href="https://obsidian.md/"
                   target="_blank"
-                  className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-obsidian text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-obsidian"
+                  className="flex aspect-16/11 h-56 w-[30rem] flex-row flex-wrap items-center justify-center gap-4 bg-obsidian text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-obsidian"
                 >
                   <SiObsidian size={iconSize} />
                   <h4>Obsidian</h4>
@@ -177,7 +177,7 @@ export default function Skills() {
                 <a
                   href="https://graphql.org/"
                   target="_blank"
-                  className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-graphql text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-graphql"
+                  className="flex aspect-16/11 h-56 w-[30rem] flex-row flex-wrap items-center justify-center gap-4 bg-graphql text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-graphql"
                 >
                   <GrGraphQl size={iconSize} />
                   <h4>GraphQl</h4>
@@ -187,7 +187,7 @@ export default function Skills() {
                 <a
                   href="https://nextjs.org/docs"
                   target="_blank"
-                  className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-next text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-next"
+                  className="flex aspect-16/11 h-56 w-[30rem] flex-row flex-wrap items-center justify-center gap-4 bg-next text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-next"
                 >
                   <SiNextdotjs size={iconSize} />
                   <h4>
@@ -199,7 +199,7 @@ export default function Skills() {
                 <a
                   href="https://vercel.com/docs"
                   target="_blank"
-                  className="flex aspect-16/11 h-[220px] w-[480px] flex-row flex-wrap items-center justify-center gap-4 bg-next text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-next"
+                  className="flex aspect-16/11 h-56 w-[30rem] flex-row flex-wrap items-center justify-center gap-4 bg-next text-gray transition-all duration-300 ease-out hover:scale-150 hover:bg-gray hover:text-next"
                 >
                   <SiVercel size={iconSize} />
                   <h4>Vercel</h4>
