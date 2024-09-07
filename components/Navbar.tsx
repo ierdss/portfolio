@@ -96,7 +96,7 @@ export default function Navbar() {
           <Link
             href="#footer"
             data-to-scrollspy-id={6}
-            className="block w-full min-w-[210px] select-none items-center justify-center rounded-[10px] bg-gray p-4 text-center font-bold text-blackberry hover:brightness-110 md:w-[300px]"
+            className="text-grat block w-full min-w-[210px] select-none items-center justify-center rounded-[10px] bg-gray p-4 text-center font-bold hover:brightness-110 md:w-[300px]"
           >
             Contact Me
           </Link>
@@ -112,7 +112,7 @@ export default function Navbar() {
       >
         <div className="relative h-5 w-5">
           <motion.div
-            className="absolute -right-12 -top-6 bottom-0 h-[110vh] w-[100vh] bg-rose-50 md:w-[300px]"
+            className="absolute -right-12 -top-6 bottom-0 h-[110vh] w-[100vh] bg-gray md:w-[300px]"
             variants={sidebar}
           />
           <NavbarToggle
