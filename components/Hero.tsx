@@ -27,8 +27,8 @@ export default function Hero() {
       id="hero"
       className="flex w-full select-none flex-col items-center justify-center bg-blackberry"
     >
-      <div className="max-w-center relative flex w-full flex-col items-center justify-center gap-[40px] overflow-hidden px-2 py-24 md:flex-row md:gap-12 md:px-40 md:py-48">
-        <div className="z-10 flex aspect-square w-[80%] max-w-[450px] items-center justify-center overflow-hidden rounded-full bg-gray bg-opacity-10 brightness-125 md:order-2">
+      <div className="max-w-center relative flex w-full flex-col items-center justify-center gap-10 overflow-hidden px-2 py-24 md:flex-row md:gap-24 md:px-40 md:py-48">
+        <div className="z-10 flex aspect-square w-[80%] items-center justify-center overflow-hidden rounded-full bg-gray bg-opacity-10 brightness-125 md:order-2 md:max-w-[450px]">
           <Image
             src="/hero.png"
             width={1000}
@@ -38,7 +38,7 @@ export default function Hero() {
           />
         </div>
 
-        <div className="z-20 order-1 flex w-[90%] shrink-0 flex-col items-center justify-center gap-20 text-center md:w-[50%] md:items-start">
+        <div className="z-20 order-1 flex w-full shrink-0 flex-col items-center justify-center gap-20 text-center md:w-[50%] md:items-start">
           <h5 className="text-gray">
             Hi, I Am <span className="text-redberry">Andrei Sager</span>, a{" "}
             <br className="flex md:hidden" />
@@ -86,12 +86,12 @@ export default function Hero() {
               ))}
             </ul>
           </div>
-          <div className="flex w-full items-center justify-center gap-4 md:justify-start">
+          <div className="flex w-full items-center justify-center gap-2 md:justify-start md:gap-4">
             <a
               href="#projects"
-              className="flex w-full min-w-[210px] flex-row items-center justify-center gap-3 rounded-[10px] bg-redberry p-4 text-center font-bold text-gray hover:brightness-110 md:w-[300px]"
+              className="flex w-full flex-row items-center justify-center gap-[0.6em] rounded-[10px] bg-redberry p-[1.2em] px-4 text-center text-xs font-bold text-gray hover:brightness-110 md:w-[300px] md:min-w-[210px] md:p-[1em] md:text-base"
             >
-              <SiMinutemailer size={30} />
+              <SiMinutemailer size={30} className="h-5 w-5 md:h-8 md:w-8" />
               <p>See Projects</p>
             </a>
             <a
@@ -99,9 +99,9 @@ export default function Hero() {
               href="https://github.com/AndreiSager/files/blob/495a5a1c5238bc0de0bd23ee95d40821accaf439/curriculum_vitae-no_photo.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-full min-w-[210px] select-none flex-row items-center justify-center gap-3 rounded-[10px] border border-gray bg-transparent p-4 text-center font-bold text-gray hover:brightness-110 md:w-[300px]"
+              className="flex w-full select-none flex-row items-center justify-center gap-[0.6em] rounded-[10px] border border-gray bg-transparent p-[1.2em] text-center text-xs font-bold text-gray hover:border-redberry hover:text-redberry hover:brightness-110 md:min-w-[210px] md:max-w-[300px] md:p-[1em] md:text-base"
             >
-              <FaGithub size={30} />
+              <FaGithub size={30} className="h-5 w-5 md:h-8 md:w-8" />
               <p>View CV</p>
             </a>
           </div>
