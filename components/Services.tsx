@@ -65,8 +65,11 @@ function ServiceCard({ icon, title, description }: IService) {
         "group z-20 flex w-full flex-row gap-6 overflow-hidden p-6 transition-all duration-300 ease-out hover:scale-105 hover:text-secondary-red md:min-h-[200px] md:max-w-[360px]"
       }
     >
-      <div className="flex h-fit text-secondary-red">
-        {icon || <BsQuestionOctagon size={50} />}
+      <div className="relative z-10 flex h-12 w-12">
+        <div className="z-20 h-12 w-12 text-secondary-red group-hover:text-gray">
+          {icon || <BsQuestionOctagon size={48} />}
+        </div>
+        <div className="absolute left-[50%] top-[50%] z-10 h-0 w-0 -translate-x-[50%] -translate-y-[50%] rounded-full bg-redberry duration-500 ease-in-out group-hover:h-20 group-hover:w-20" />
       </div>
       <div className="flex flex-col gap-2">
         <h6 className="text-left text-gray">{title || "Title"}</h6>
