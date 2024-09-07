@@ -78,7 +78,6 @@ export const ProjectsData = [
     platformDesktop: true,
     platformMobile: true,
     tags: [
-      { id: 0, tag: "template" },
       { id: 1, tag: "next.js" },
       { id: 2, tag: "cloudinary" },
       { id: 3, tag: "typescript" },
