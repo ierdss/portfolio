@@ -18,36 +18,12 @@
 
 export const ProjectsData = [
   {
-    id: 1,
-    title: "Roadway Delivery",
-    subtitle: "Delivery Service (Landing Page)",
-    description:
-      "Roadway Delivery Service is a leading logistics company revolutionizing the industry with fast, reliable road transportation solutions. We specialize in secure, on-time deliveries for customers and businesses across local and regional destinations.",
-    desktopThumbnail:
-      "/projects-short/road-way-delivery__compressed-desktop.jpg",
-    desktopAlt: "RWD full page on desktop",
-    mobileThumbnail: "",
-    mobileAlt: "RWD full page on mobile",
-    platformDesktop: true,
-    platformMobile: true,
-    tags: [
-      { id: 1, tag: "Next.js" },
-      { id: 2, tag: "Typescript" },
-      { id: 3, tag: "Tailwind" },
-      { id: 4, tag: "CSS" },
-      { id: 5, tag: "HTML" },
-    ],
-    linkRepository: "https://github.com/AndreiSager/road-way-delivery",
-    linkLiveDemo: "https://roadwaydelivery.vercel.app",
-    linkCaseStudy: "",
-  },
-  {
     id: 0,
     title: "This Portfolio",
     subtitle: "Portfolio",
     description:
       "To be honest, this is my fourth portfolio. The first one got deleted and I didn't know how to use version control software, the second one was bloated from Sass for a relatively small project, and the last was just too ugly.",
-    desktopThumbnail: "/projects-short/portfolio-compressed.png",
+    desktopThumbnail: "/projects-short/portfolio.png",
     desktopAlt: "",
     mobileThumbnail: "",
     mobileAlt: "",
@@ -67,11 +43,35 @@ export const ProjectsData = [
   },
   {
     id: 1,
+    title: "Roadway Delivery",
+    subtitle: "Delivery Service (Landing Page)",
+    description:
+      "Roadway Delivery Service is a leading logistics company revolutionizing the industry with fast, reliable road transportation solutions. We specialize in secure, on-time deliveries for customers and businesses across local and regional destinations.",
+    desktopThumbnail: "/projects-short/road-way-delivery.jpg",
+    desktopAlt: "RWD full page on desktop",
+    mobileThumbnail: "",
+    mobileAlt: "RWD full page on mobile",
+    platformDesktop: true,
+    platformMobile: true,
+    tags: [
+      { id: 1, tag: "Next.js" },
+      { id: 2, tag: "Typescript" },
+      { id: 3, tag: "Tailwind" },
+      { id: 4, tag: "CSS" },
+      { id: 5, tag: "HTML" },
+    ],
+    linkRepository: "https://github.com/AndreiSager/road-way-delivery",
+    linkLiveDemo: "https://roadwaydelivery.vercel.app",
+    linkCaseStudy: "",
+  },
+
+  {
+    id: 2,
     title: "Commemoration Gallery",
     subtitle: "Image Gallery",
     description:
       "A simple and quick to setup image gallery created from a Next.js template. Although I did use a template, I still had to make major changes and learn cloudinary. It took me a week to make the gallery support portrait images.",
-    desktopThumbnail: "/projects-short/remembrance-gallery-compressed.png",
+    desktopThumbnail: "/projects-short/remembrance-gallery.png",
     desktopAlt: "",
     mobileThumbnail: "",
     mobileAlt: "",
@@ -88,30 +88,6 @@ export const ProjectsData = [
     linkLiveDemo: "https://remembrance-gallery.vercel.app",
     linkCaseStudy: "",
   },
-  // {
-  //   id: 2,
-  //   title: "My Blog",
-  //   subtitle: "Blog",
-  //   description:
-  //     "A simple and quick to setup ordinary blog created from a Next.js template. I wanted to write my thoughts and experiences in a place where I wouldn't need to worry about paying for any service.",
-  //   desktopThumbnail: "",
-  //   desktopAlt: "",
-  //   mobileThumbnail: "",
-  //   mobileAlt: "",
-  //   platformDesktop: true,
-  //   platformMobile: true,
-  //   tags: [
-  //     { id: 0, tag: "template" },
-  //     { id: 1, tag: "next.js" },
-  //     { id: 2, tag: "typescript" },
-  //     { id: 3, tag: "tailwind" },
-  //     { id: 4, tag: "mdx" },
-  //     { id: 5, tag: "contentlayer" },
-  //   ],
-  //   linkRepository: "https://github.com/AndreiSager/blog",
-  //   linkLiveDemo: "https://andreiblog.vercel.app/",
-  //   linkCaseStudy: "",
-  // },
 ];
 
 // {
