@@ -9,40 +9,46 @@ export default function Projects() {
       <div className="max-w-center relative flex w-full flex-col items-center justify-center gap-9 py-12 md:gap-48 md:px-36 md:py-48">
         <h1 className="z-20 w-full text-center text-gray">What Have I Done?</h1>
 
-        {ProjectsData.map((project) => (
-          <FeaturedProjectsCard
-            key={project.id}
-            title={project.title !== null ? project.title : ""}
-            subtitle={project.subtitle !== null ? project.subtitle : ""}
-            description={
-              project.description !== null ? project.description : ""
-            }
-            desktopThumbnail={
-              project.desktopThumbnail !== null ? project.desktopThumbnail : ""
-            }
-            desktopAlt={project.desktopAlt !== null ? project.desktopAlt : ""}
-            mobileThumbnail={
-              project.mobileThumbnail !== null ? project.mobileThumbnail : ""
-            }
-            mobileAlt={project.mobileAlt !== null ? project.mobileAlt : ""}
-            platformDesktop={
-              project.platformDesktop !== null ? project.platformDesktop : false
-            }
-            platformMobile={
-              project.platformMobile !== null ? project.platformMobile : false
-            }
-            linkRepository={
-              project.linkRepository !== null ? project.linkRepository : ""
-            }
-            linkLiveDemo={
-              project.linkLiveDemo !== null ? project.linkLiveDemo : ""
-            }
-            linkCaseStudy={
-              project.linkCaseStudy !== null ? project.linkCaseStudy : ""
-            }
-            tags={project.tags as TagProps[]}
-          />
-        ))}
+        <ul className="flex flex-col gap-12 md:gap-40">
+          {ProjectsData.map((project) => (
+            <FeaturedProjectsCard
+              key={project.id}
+              title={project.title !== null ? project.title : ""}
+              subtitle={project.subtitle !== null ? project.subtitle : ""}
+              description={
+                project.description !== null ? project.description : ""
+              }
+              desktopThumbnail={
+                project.desktopThumbnail !== null
+                  ? project.desktopThumbnail
+                  : ""
+              }
+              desktopAlt={project.desktopAlt !== null ? project.desktopAlt : ""}
+              mobileThumbnail={
+                project.mobileThumbnail !== null ? project.mobileThumbnail : ""
+              }
+              mobileAlt={project.mobileAlt !== null ? project.mobileAlt : ""}
+              platformDesktop={
+                project.platformDesktop !== null
+                  ? project.platformDesktop
+                  : false
+              }
+              platformMobile={
+                project.platformMobile !== null ? project.platformMobile : false
+              }
+              linkRepository={
+                project.linkRepository !== null ? project.linkRepository : ""
+              }
+              linkLiveDemo={
+                project.linkLiveDemo !== null ? project.linkLiveDemo : ""
+              }
+              linkCaseStudy={
+                project.linkCaseStudy !== null ? project.linkCaseStudy : ""
+              }
+              tags={project.tags as TagProps[]}
+            />
+          ))}
+        </ul>
       </div>
     </div>
   );
