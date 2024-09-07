@@ -27,7 +27,7 @@ export default function Hero() {
       id="hero"
       className="flex w-full select-none flex-col items-center justify-center bg-blackberry"
     >
-      <div className="max-w-center relative flex w-full flex-col items-center justify-center gap-[40px] overflow-hidden px-2 py-12 md:flex-row md:gap-12 md:px-40 md:py-48">
+      <div className="max-w-center relative flex w-full flex-col items-center justify-center gap-[40px] overflow-hidden px-2 py-24 md:flex-row md:gap-12 md:px-40 md:py-48">
         <div className="z-10 flex aspect-square w-[80%] max-w-[450px] items-center justify-center overflow-hidden rounded-full bg-gray bg-opacity-10 brightness-125 md:order-2">
           <Image
             src="/hero.png"
@@ -41,6 +41,7 @@ export default function Hero() {
         <div className="z-20 order-1 flex w-[90%] shrink-0 flex-col items-center justify-center gap-20 text-center md:w-[50%] md:items-start">
           <h5 className="text-gray">
             Hi, I Am <span className="text-redberry">Andrei Sager</span>, a{" "}
+            <br className="flex md:hidden" />
             <TypeAnimation
               preRenderFirstString={true}
               sequence={[
