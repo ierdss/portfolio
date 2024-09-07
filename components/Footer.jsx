@@ -101,7 +101,7 @@ export default function Footer() {
       id="footer"
       className="flex w-full flex-col items-center justify-center bg-background-1"
     >
-      <div className="max-w-center flex w-full flex-col justify-between gap-12 px-2 py-12 md:flex-row md:px-40 md:py-24">
+      <div className="flex w-full max-w-center flex-col justify-between gap-12 px-2 py-12 md:flex-row md:px-40 md:py-24">
         <Transition appear show={isOpen} as={Fragment}>
           <Dialog as="div" className="relative z-50" onClose={closeModal}>
             <Transition.Child
@@ -126,7 +126,7 @@ export default function Footer() {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="bg-background w-full max-w-[350px] transform overflow-hidden rounded-[10px] p-4 text-left align-middle text-gray shadow-xl transition-all">
+                  <Dialog.Panel className="bg-background w-full max-w-[350px] transform rounded-[10px] p-4 text-left align-middle text-gray transition-all">
                     <Dialog.Title
                       as="h3"
                       className="text-gray-900 text-left text-xl font-medium capitalize leading-6 text-gray md:!text-left"
@@ -238,7 +238,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex h-[2px] w-full bg-gray/10  md:hidden" />
+        <div className="flex h-[2px] w-full bg-gray/10 md:hidden" />
 
         <div className="flex flex-row items-center justify-center gap-8 md:flex-col md:items-end md:justify-end md:gap-16">
           <ul className="order-2 flex w-fit flex-row justify-between gap-4 md:order-1 md:w-full md:gap-2 lg:flex">

@@ -8,7 +8,7 @@ export default function Services() {
       id="services"
       className="flex w-full flex-col items-center justify-center overflow-hidden bg-background-2"
     >
-      <div className="max-w-center relative flex w-full flex-col items-center justify-between gap-20 px-2 py-12 md:px-40 md:py-48">
+      <div className="relative flex w-full max-w-center flex-col items-center justify-between gap-20 px-2 py-12 md:px-40 md:py-48">
         <div className="z-20 flex w-full flex-col gap-12 md:gap-20 ">
           <h1 className="z-20 w-full text-left text-gray">What Do I Offer?</h1>
           <ul className="flex w-full flex-col flex-wrap items-center justify-between gap-2 md:flex-row">
@@ -62,7 +62,7 @@ function ServiceCard({ icon, title, description }: IService) {
   return (
     <div
       className={
-        "group z-20 flex w-full flex-row gap-6 overflow-hidden p-6 transition-all duration-300 ease-out hover:scale-105 hover:text-secondary-red md:min-h-[200px] md:max-w-[360px]"
+        "group z-20 flex w-full flex-row gap-6 p-6 transition-all duration-300 ease-out hover:scale-105 hover:text-secondary-red md:min-h-[200px] md:max-w-[360px]"
       }
     >
       <div className="relative z-10 flex h-12 w-12">
@@ -92,7 +92,7 @@ function WorkflowCard({ number, title, description }: IWorkflow) {
   return (
     <div
       className={
-        "group z-20 flex w-full flex-row items-center justify-center gap-4 overflow-hidden p-6 transition-all duration-300 ease-out hover:scale-105 hover:text-secondary-red md:max-h-[250px] md:min-h-[200px] md:max-w-[700px] md:gap-16 [&:nth-child(2)]:flex-row-reverse md:[&:nth-child(2)]:flex-row md:[&:nth-child(3)]:flex-row-reverse [&:nth-child(4)]:flex-row-reverse"
+        "group z-20 flex w-full flex-row items-center justify-center gap-4 p-6 transition-all duration-300 ease-out hover:scale-105 hover:text-secondary-red md:max-h-[250px] md:min-h-[200px] md:max-w-[700px] md:gap-16 [&:nth-child(2)]:flex-row-reverse md:[&:nth-child(2)]:flex-row md:[&:nth-child(3)]:flex-row-reverse [&:nth-child(4)]:flex-row-reverse"
       }
     >
       <h1 className="numbers select-none text-redberry">{number}</h1>

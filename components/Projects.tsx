@@ -6,7 +6,7 @@ export default function Projects() {
       id="projects"
       className="flex h-fit w-full flex-col items-center justify-center gap-12 bg-background-1 sm:px-5 md:text-left"
     >
-      <div className="max-w-center relative flex w-full flex-col items-center justify-center gap-9 py-12 md:gap-48 md:px-36 md:py-48">
+      <div className="relative flex w-full max-w-center flex-col items-center justify-center gap-9 py-12 md:gap-48 md:px-36 md:py-48">
         <h1 className="z-20 w-full text-center text-gray">What Have I Done?</h1>
 
         <ul className="flex flex-col gap-12 md:gap-40">
@@ -99,8 +99,8 @@ function FeaturedProjectsCard({
   tags,
 }: FeaturedProjectsCardProps) {
   return (
-    <div className="flex h-fit w-full flex-col items-center justify-center gap-4 overflow-hidden md:gap-20 lg:odd:flex-row-reverse lg:even:flex-row">
-      <div className="relative aspect-16/11 w-full overflow-hidden">
+    <div className="flex h-fit w-full flex-col items-center justify-center gap-4 md:gap-20 lg:odd:flex-row-reverse lg:even:flex-row">
+      <div className="relative aspect-16/11 w-full">
         <a
           href={linkLiveDemo}
           target={"_blank"}
@@ -125,7 +125,7 @@ function FeaturedProjectsCard({
         {linkLiveDemo && (
           <TbExternalLink
             size={30}
-            className="absolute bottom-3 left-3 text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]"
+            className="absolute bottom-3 left-3 text-white"
           />
         )}
       </div>
