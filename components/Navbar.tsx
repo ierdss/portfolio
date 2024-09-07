@@ -96,7 +96,7 @@ export default function Navbar() {
           <Link
             href="#footer"
             data-to-scrollspy-id={6}
-            className="text-grat block w-full min-w-[210px] select-none items-center justify-center rounded-[10px] bg-gray p-4 text-center font-bold hover:brightness-110 md:w-[300px]"
+            className="flex w-full flex-row items-center justify-center gap-[0.6em] rounded-[10px] bg-gray p-[1.2em] px-4 text-center text-xs font-bold text-blackberry hover:brightness-110 md:w-[300px] md:min-w-[210px] md:p-[0.9em] md:text-base"
           >
             Contact Me
           </Link>
