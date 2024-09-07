@@ -89,7 +89,7 @@ export default function Hero() {
           <div className="flex w-full items-center justify-center gap-2 md:justify-start md:gap-4">
             <a
               href="#projects"
-              className="flex w-full flex-row items-center justify-center gap-[0.6em] rounded-[10px] bg-redberry p-[1.2em] px-4 text-center text-xs font-bold text-gray hover:brightness-110 md:w-[300px] md:min-w-[210px] md:p-[1em] md:text-base"
+              className="flex w-full flex-row items-center justify-center gap-[0.6em] rounded-[10px] bg-redberry p-[1.2em] text-center text-xs font-bold text-gray hover:brightness-110 md:w-[300px] md:min-w-[210px] md:p-[0.9em] md:text-base"
             >
               <SiMinutemailer size={30} className="h-5 w-5 md:h-8 md:w-8" />
               <p>See Projects</p>
@@ -99,7 +99,7 @@ export default function Hero() {
               href="https://github.com/AndreiSager/files/blob/495a5a1c5238bc0de0bd23ee95d40821accaf439/curriculum_vitae-no_photo.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-full select-none flex-row items-center justify-center gap-[0.6em] rounded-[10px] border border-gray bg-transparent p-[1.2em] text-center text-xs font-bold text-gray hover:border-redberry hover:text-redberry hover:brightness-110 md:min-w-[210px] md:max-w-[300px] md:p-[1em] md:text-base"
+              className="flex w-full select-none flex-row items-center justify-center gap-[0.6em] rounded-[10px] border border-gray bg-transparent p-[1.2em] text-center text-xs font-bold text-gray hover:border-redberry hover:text-redberry hover:brightness-110 md:min-w-[210px] md:max-w-[300px] md:p-[0.9em] md:text-base"
             >
               <FaGithub size={30} className="h-5 w-5 md:h-8 md:w-8" />
               <p>View CV</p>
