@@ -19,7 +19,7 @@ export default function Skills() {
       id="skills"
       className="flex w-full flex-col items-center justify-center overflow-hidden bg-background-2"
     >
-      <div className="max-w-center relative flex w-full flex-col items-center justify-between gap-20 px-2 py-12 md:px-40 md:py-48">
+      <div className="max-w-center relative flex w-full flex-col items-center justify-between gap-12 px-2 py-12 md:gap-20 md:px-40 md:py-48">
         <h2 className="z-20 w-full text-center text-gray ">
           The Technologies I Use
           <br className="hidden md:flex" /> To Create My Works
