@@ -44,7 +44,7 @@
     }
     .claim {
       font-weight: 700;
-      font-size: clamp(14px, 8vw + 1rem, 200px);
+      font-size: clamp(96px, 8vw + 1rem, 200px);
       text-transform: uppercase;
       text-align: left;
       line-height: 7.75rem;
