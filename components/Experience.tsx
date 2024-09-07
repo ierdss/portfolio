@@ -8,7 +8,7 @@ import { ExperiencesData } from "@/constants";
 import { FaStar } from "react-icons/fa";
 
 export default function Experiences() {
-  const testingVisibility = true;
+  const testingVisibility = false;
 
   return (
     <div
