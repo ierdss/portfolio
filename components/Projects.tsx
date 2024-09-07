@@ -123,7 +123,7 @@ function FeaturedProjectsCard({
           />
         )}
       </div>
-      <div className="flex h-fit w-full flex-col gap-4 rounded-2xl lg:w-3/5">
+      <div className="flex h-fit w-full flex-col gap-4 lg:w-3/5">
         <div className="flex flex-row justify-between">
           <div>
             <h3 className="w-full text-left text-gray">{title}</h3>
