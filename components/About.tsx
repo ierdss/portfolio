@@ -7,20 +7,20 @@ export default function About() {
       className="flex-rowitems-center relative flex w-full flex-col items-center justify-center gap-12 overflow-hidden bg-background-1 text-center md:flex-row md:gap-20 md:text-left"
     >
       <div className="max-w-center relative flex w-full flex-col items-center justify-center gap-8 px-2 py-12 md:flex-row md:gap-20 md:px-40 md:pb-24 md:pt-48">
-        <div className="flex w-[550px] items-center justify-center overflow-hidden rounded-xl bg-secondary-red">
+        <div className="flex w-full max-w-[450px] items-center justify-center overflow-hidden rounded-xl bg-secondary-red">
           <Image
             src="/1styear.jpg"
             width={800}
             height={800}
-            alt="Me in red"
-            className="w-[550px]"
+            alt="My 1st year in college"
+            className="w-full max-w-[450px]"
           />
         </div>
 
-        <div className="flex w-full max-w-[925px] flex-col gap-20">
+        <div className="flex w-full max-w-[700px] flex-col gap-8">
           <h1 className="z-20 w-full text-left text-gray">Who Am I?</h1>
 
-          <div className="font-regular flex flex-col gap-4 text-left text-2xl normal-case text-content first:text-white">
+          <div className="font-regular flex flex-col gap-4 text-left text-base normal-case text-content first:text-white">
             <p className="">
               Hey there! I'm <span className="text-redberry">Andrei Sager</span>
               , a software developer residing in the Philippines. I am a student
