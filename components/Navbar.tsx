@@ -48,7 +48,7 @@ export default function Navbar() {
   return (
     <nav
       id="navbar"
-      className="fixed left-0 top-0 !z-[99] flex w-full items-center justify-center bg-transparent px-2 py-1 md:px-12 md:pb-0 md:pt-1"
+      className="fixed left-0 top-0 !z-50 flex w-full items-center justify-center bg-transparent px-2 py-1 md:px-12 md:pb-0 md:pt-1"
     >
       {/* Measures the scroll progress on the page. */}
       <motion.div
@@ -63,7 +63,7 @@ export default function Navbar() {
             onClick={() => toggleOpen()}
           >
             ANDREI
-            <span className="ease absolute bottom-1 left-0 h-0 w-full border-t-4 border-secondary-red transition-all duration-500 md:bottom-2" />
+            <span className="absolute bottom-1 left-0 h-0 w-full border-t-4 border-secondary-red transition-all duration-500 ease-in-out md:bottom-2" />
           </h3>
         </Link>
         <div className="flex flex-row items-center justify-center gap-12">
@@ -75,8 +75,8 @@ export default function Navbar() {
                 data-to-scrollspy-id={id}
                 className="group relative my-3 block rounded-[10px] px-4 py-3 text-sm font-bold capitalize text-gray target:text-redberry"
               >
+                {/* Add a blob mergin animation here */}
                 {text}
-                <span className="ease absolute -bottom-3 left-[50%] h-0 w-0 -translate-x-1/2 border-t-4 border-redberry transition-all duration-500 group-hover:w-full" />
               </Link>
             ))}
           </ul>
