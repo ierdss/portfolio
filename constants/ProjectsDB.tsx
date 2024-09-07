@@ -23,7 +23,7 @@ export const ProjectsData = [
     subtitle: "Portfolio",
     description:
       "To be honest, this is my fourth portfolio. The first one got deleted and I didn't know how to use version control software, the second one was bloated from Sass for a relatively small project, and the last was just too ugly.",
-    desktopThumbnail: "/projects-short/portfolio.png",
+    desktopThumbnail: "/thumbnails/portfolio.png",
     desktopAlt: "",
     mobileThumbnail: "",
     mobileAlt: "",
@@ -47,7 +47,7 @@ export const ProjectsData = [
     subtitle: "Delivery Service (Landing Page)",
     description:
       "Roadway Delivery Service is a leading logistics company revolutionizing the industry with fast, reliable road transportation solutions. We specialize in secure, on-time deliveries for customers and businesses across local and regional destinations.",
-    desktopThumbnail: "/projects-short/road-way-delivery.jpg",
+    desktopThumbnail: "/thumbnails/road-way-delivery.jpg",
     desktopAlt: "RWD full page on desktop",
     mobileThumbnail: "",
     mobileAlt: "RWD full page on mobile",
@@ -71,7 +71,7 @@ export const ProjectsData = [
     subtitle: "Image Gallery",
     description:
       "A simple and quick to setup image gallery created from a Next.js template. Although I did use a template, I still had to make major changes and learn cloudinary. It took me a week to make the gallery support portrait images.",
-    desktopThumbnail: "/projects-short/remembrance-gallery.png",
+    desktopThumbnail: "/thumbnails/remembrance-gallery.png",
     desktopAlt: "",
     mobileThumbnail: "",
     mobileAlt: "",
@@ -135,9 +135,9 @@ export const ProjectsData = [
 //   subtitle: "Social Platform",
 //   description:
 //     "Bridge is an all-in-one communication app designed to seamlessly connect you with friends and loved ones. With Bridge, you can effortlessly send messages to users and join engaging voice chats fostering meaningful conversations. Elevate your interactions with face-to-face connections through high-quality video calls, making every conversation feel personal and authentic. Stay connected like never before with Bridge – where messaging, voice chats, and video calls come together in one intuitive platform.",
-//   desktopThumbnail: "/projects-short/bridge__compressed-desktop.jpg",
+//   desktopThumbnail: "/projects-thumbnails/bridge__compressed-desktop.jpg",
 //   desktopAlt: "RWD full page on desktop",
-//   mobileThumbnail: "/projects-short/bridge__compressed-mobile.jpg",
+//   mobileThumbnail: "/projects-thumbnails/bridge__compressed-mobile.jpg",
 //   mobileAlt: "RWD full page on mobile",
 //   platformDesktop: true,
 //   platformMobile: true,
@@ -181,9 +181,9 @@ export const ProjectsData = [
 //   description:
 //     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
 //   desktopThumbnail:
-//     "/projects-short/road-way-delivery__compressed-desktop.jpg",
+//     "/projects-thumbnails/road-way-delivery__compressed-desktop.jpg",
 //   desktopAlt: "RWD full page on desktop",
-//   mobileThumbnail: "/projects-short/road-way-delivery__compressed-mobile.jpg",
+//   mobileThumbnail: "/projects-thumbnails/road-way-delivery__compressed-mobile.jpg",
 //   mobileAlt: "RWD full page on mobile",
 //   platformDesktop: true,
 //   platformMobile: true,
@@ -204,9 +204,9 @@ export const ProjectsData = [
 //   description:
 //     "Welcome to Shoutcaster, our dedicated podcast platform, the ultimate destination for immersive audio experiences. Discover a world of knowledge, stories, and insights as you explore a diverse array of podcasts on our platform. Whether you're into captivating storytelling, thought-provoking discussions, or expert interviews, our platform offers a curated selection to cater to every interest. Immerse yourself in a universe of sound, where ideas and narratives come to life, all in one convenient podcast-exclusive platform.",
 //   desktopThumbnail:
-//     "/projects-short/road-way-delivery__compressed-desktop.jpg",
+//     "/projects-thumbnails/road-way-delivery__compressed-desktop.jpg",
 //   desktopAlt: "RWD full page on desktop",
-//   mobileThumbnail: "/projects-short/road-way-delivery__compressed-mobile.jpg",
+//   mobileThumbnail: "/projects-thumbnails/road-way-delivery__compressed-mobile.jpg",
 //   mobileAlt: "RWD full page on mobile",
 //   platformDesktop: true,
 //   platformMobile: true,
@@ -227,9 +227,9 @@ export const ProjectsData = [
 //   description:
 //     "Roadway Delivery Service is a leading logistics company revolutionizing the industry with fast, reliable road transportation solutions. We specialize in secure, on-time deliveries for customers and businesses across local and regional destinations.",
 //   desktopThumbnail:
-//     "/projects-short/road-way-delivery__compressed-desktop.jpg",
+//     "/projects-thumbnails/road-way-delivery__compressed-desktop.jpg",
 //   desktopAlt: "RWD full page on desktop",
-//   mobileThumbnail: "/projects-short/road-way-delivery__compressed-mobile.jpg",
+//   mobileThumbnail: "/projects-thumbnails/road-way-delivery__compressed-mobile.jpg",
 //   mobileAlt: "RWD full page on mobile",
 //   platformDesktop: true,
 //   platformMobile: true,
