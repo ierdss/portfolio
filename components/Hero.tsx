@@ -62,10 +62,12 @@ export default function Hero() {
 
           <div className="relative flex flex-col items-start justify-center text-gray">
             <p className="">I make</p>
-            <div className="ml-[-10px]">
-              <h1 className="claim ml-[-2px] !font-normal">BIGGER</h1>
-              <h1 className="claim">BOLDER</h1>
-              <h1 className="claim font-mono">BETTER</h1>
+            <div className="ml-[-5px] md:ml-[-10px]">
+              <h1 className="claim ml-[-2px] !font-normal ">BIGGER</h1>
+              <h1 className="claim ml-[-1px] md:ml-0">BOLDER</h1>
+              <h1 className="claim ml-[-4px] mt-[-3px] font-mono md:ml-[-7px] md:mt-[-5px]">
+                BETTER
+              </h1>
             </div>
 
             <p className="sectionLeading max-w-md !text-center md:!text-left">
