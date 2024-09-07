@@ -60,6 +60,9 @@ module.exports = {
         tailwind: "#67e8f9",
         typescript: "#007acc",
       },
+      maxWidth: {
+        center: "1980px",
+      },
       aspectRatio: {
         "3/2": "3/2",
         "16/11": "16/11",
