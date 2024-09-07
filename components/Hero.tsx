@@ -38,10 +38,10 @@ export default function Hero() {
           />
         </div>
 
-        <div className="z-20 order-1 flex w-full shrink-0 flex-col items-center justify-center gap-4 text-center md:w-[50%] md:items-start md:gap-20">
-          <h5 className="text-gray">
-            Hi, I Am <span className="text-redberry">Andrei Sager</span>, a{" "}
-            <br className="flex md:hidden" />
+        <div className="z-20 order-1 flex w-full shrink-0 flex-col items-center justify-center gap-4 text-center md:w-[50%] md:items-start md:gap-20 md:text-left">
+          <h5 className="w-full text-gray">
+            Hi, I'm <span className="text-redberry">Andrei Sager</span>, I Am a
+            <br />
             <TypeAnimation
               preRenderFirstString={true}
               sequence={[
@@ -74,7 +74,7 @@ export default function Hero() {
               websites that are hard to ignore.
             </p>
 
-            <ul className="absolute -left-[120px] top-0 order-2 flex w-fit flex-col justify-between gap-8 ">
+            <ul className="absolute -left-[120px] top-0 order-2 hidden w-fit flex-col justify-between gap-8 md:flex ">
               {SocialLinksData.map(({ id, icon, ariaLabel, url }) => (
                 <a
                   key={id}
