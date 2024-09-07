@@ -48,11 +48,11 @@ export default function Navbar() {
   return (
     <nav
       id="navbar"
-      className="fixed left-0 top-0 !z-40 flex w-full items-center justify-center bg-transparent pb-1 pt-2 md:px-[50px] md:pb-0 md:pt-[5px]"
+      className="fixed left-0 top-0 !z-40 flex w-full items-center justify-center bg-transparent pb-1 pt-2 md:px-12 md:pb-0 md:pt-1"
     >
       {/* Measures the scroll progress on the page. */}
       <motion.div
-        className="fixed left-0 right-0 top-0 h-[5px] origin-top-left bg-secondary-red"
+        className="fixed left-0 right-0 top-0 h-1 origin-top-left bg-secondary-red"
         style={{ scaleX }}
       />
 
@@ -66,7 +66,7 @@ export default function Navbar() {
             <span className="ease absolute -bottom-1 left-0 h-0 w-full border-t-4 border-secondary-red transition-all duration-500" />
           </h3>
         </Link>
-        <div className="flex flex-row items-center justify-center gap-[50px]">
+        <div className="flex flex-row items-center justify-center gap-12">
           <ul className="hidden flex-row gap-5 lg:flex">
             {NavLinks.map(({ id, href, text }) => (
               <Link
@@ -85,18 +85,18 @@ export default function Navbar() {
           {theme === "dark" ? (
             <BsFillMoonStarsFill
               onClick={() => toggleTheme()}
-              className="h-[30px] w-[30px] text-gray"
+              className="h-8 w-8 text-gray"
             />
           ) : (
             <FaSun
               onClick={() => toggleTheme()}
-              className="h-[30px] w-[30px] text-blackberry"
+              className="h-8 w-8 text-blackberry"
             />
           )}
           <Link
             href="#footer"
             data-to-scrollspy-id={6}
-            className="block w-full min-w-[210px] select-none items-center justify-center rounded-[10px] bg-gray p-[16px] text-center font-bold text-blackberry hover:brightness-110 md:w-[300px]"
+            className="block w-full min-w-[210px] select-none items-center justify-center rounded-[10px] bg-gray p-4 text-center font-bold text-blackberry hover:brightness-110 md:w-[300px]"
           >
             Contact Me
           </Link>
@@ -110,7 +110,7 @@ export default function Navbar() {
         custom={height}
         ref={containerRef}
       >
-        <div className="relative h-[20px] w-[20px]">
+        <div className="relative h-5 w-5">
           <motion.div
             className="absolute -right-12 -top-6 bottom-0 h-[110vh] w-[100vh] bg-rose-50 md:w-[300px]"
             variants={sidebar}
@@ -125,8 +125,8 @@ export default function Navbar() {
       <motion.div
         className={
           isOpen
-            ? "absolute bottom-0 right-0 top-0 flex w-full flex-col gap-5 px-4 pb-1 pt-2 md:w-[300px] md:px-8 md:pb-0 md:pt-[5px] lg:!hidden"
-            : "absolute -right-[500px] bottom-0 top-0 flex w-full flex-col gap-5 px-4 pb-1 pt-2 transition-all delay-1000 md:w-[300px] md:px-8 md:pb-0 md:pt-[5px] lg:!hidden"
+            ? "absolute bottom-0 right-0 top-0 flex w-full flex-col gap-5 px-4 pb-1 pt-2 md:w-[300px] md:px-8 md:pb-0 md:pt-1 lg:!hidden"
+            : "absolute -right-[500px] bottom-0 top-0 flex w-full flex-col gap-5 px-4 pb-1 pt-2 transition-all delay-1000 md:w-[300px] md:px-8 md:pb-0 md:pt-1 lg:!hidden"
         }
         initial={false}
         animate={isOpen ? "open" : "closed"}
