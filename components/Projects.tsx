@@ -174,26 +174,6 @@ function FeaturedProjectsCard({
             </a>
           )}
         </div>
-        {/* 
-            TODO: Replace tooltip package with tailwind css https://flowbite.com/docs/components/tooltips/
-          <Tooltip
-            id="tooltip__live-demo"
-            place="left"
-            content="Live Demo"
-            style={{ borderRadius: "4px" }}
-          />
-          <Tooltip
-            id="tooltip__source-code"
-            place="bottom"
-            content="Source Code"
-            style={{ borderRadius: "4px" }}
-          />
-          <Tooltip
-            id="tooltip__case-study"
-            place="right"
-            content="Case Study"
-            style={{ borderRadius: "4px" }}
-          /> */}
       </div>
     </div>
   );
