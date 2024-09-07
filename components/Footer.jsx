@@ -185,7 +185,7 @@ export default function Footer() {
                       required={true}
                       placeholder="Enter your name..."
                       autoComplete="on"
-                      className="block w-full select-none rounded-[10px] bg-glass p-4 text-left text-content focus:placeholder:italic md:w-[300px]"
+                      className="block w-full select-none rounded-[10px] bg-glass p-[1em] text-left text-content focus:placeholder:italic md:w-[300px] md:p-[0.9em]"
                     />
 
                     <input
@@ -196,7 +196,7 @@ export default function Footer() {
                       required={true}
                       placeholder="Enter your email..."
                       autoComplete="on"
-                      className="block w-full select-none rounded-[10px] bg-glass p-4 text-left text-content focus:placeholder:italic md:w-[300px]"
+                      className="md:p-[0.9em]text-left block w-full select-none rounded-[10px] bg-glass p-[1em] text-content focus:placeholder:italic md:w-[300px]"
                     />
                   </div>
 
@@ -207,14 +207,14 @@ export default function Footer() {
                     onChange={handleChange}
                     required={true}
                     placeholder="Enter your message..."
-                    className="mb-4 block h-full w-full select-none resize-none rounded-[10px] bg-glass p-4 text-left text-content focus:placeholder:italic md:mb-0 md:h-[175px] md:w-[500px]
+                    className="mb-4 block h-full w-full select-none resize-none rounded-[10px] bg-glass p-[1em] text-left text-content focus:placeholder:italic md:mb-0 md:h-[175px] md:w-[500px] md:p-[0.9em]
                     "
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="block w-full min-w-[210px] select-none items-center justify-center rounded-[10px] bg-gray p-4 font-bold text-blackberry hover:brightness-110 md:w-[300px]"
+                  className="block w-full min-w-[210px] select-none items-center justify-center rounded-[10px] bg-gray p-[1em] font-bold text-blackberry hover:brightness-110 md:w-[300px] md:p-[0.9em]"
                 >
                   {loading ? (
                     <div className="flex flex-row items-center justify-center gap-4">
