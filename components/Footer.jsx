@@ -101,7 +101,7 @@ export default function Footer() {
       id="footer"
       className="flex w-full flex-col items-center justify-center bg-background-1"
     >
-      <div className="max-w-center flex w-full flex-col justify-between gap-[50px] px-[8px] py-[50px] md:flex-row md:px-[150px] md:py-[100px]">
+      <div className="max-w-center flex w-full flex-col justify-between gap-12 px-2 py-12 md:flex-row md:px-40 md:py-24">
         <Transition appear show={isOpen} as={Fragment}>
           <Dialog as="div" className="relative z-50" onClose={closeModal}>
             <Transition.Child
@@ -126,10 +126,10 @@ export default function Footer() {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="bg-background w-full max-w-[350px] transform overflow-hidden rounded-[10px] p-[16px] text-left align-middle text-gray shadow-xl transition-all">
+                  <Dialog.Panel className="bg-background w-full max-w-[350px] transform overflow-hidden rounded-[10px] p-4 text-left align-middle text-gray shadow-xl transition-all">
                     <Dialog.Title
                       as="h3"
-                      className="text-gray-900 text-left text-[20px] text-lg font-medium capitalize leading-6 text-gray  md:!text-left"
+                      className="text-gray-900 text-left text-xl font-medium capitalize leading-6 text-gray md:!text-left"
                     >
                       {modal.title || "payment successful"}
                     </Dialog.Title>
@@ -140,10 +140,10 @@ export default function Footer() {
                       </p>
                     </div>
 
-                    <div className="mt-[32px]">
+                    <div className="mt-8">
                       <button
                         type="button"
-                        className="block items-center justify-center rounded-[10px] bg-gray p-[12px] text-sm font-bold text-blackberry hover:brightness-110"
+                        className="block items-center justify-center rounded-[10px] bg-gray p-3 text-sm font-bold text-blackberry hover:brightness-110"
                         onClick={closeModal}
                       >
                         {modal.button || "Got it, thanks!"}
@@ -156,27 +156,27 @@ export default function Footer() {
           </Dialog>
         </Transition>
 
-        <div className="flex flex-col gap-[35px] md:gap-[70px]">
-          <div className="flex flex-col gap-[10px]">
+        <div className="flex flex-col gap-9 md:gap-20">
+          <div className="flex flex-col gap-3">
             <h2 className="w-full text-left text-gray">
               Reaching goals relentlessly!
             </h2>
-            <p className="text-left text-[20px] font-semibold text-gray2 md:!text-left">
+            <p className="text-left text-xl font-semibold text-gray2 md:!text-left">
               Relentlessly pursuing goals with unwavering{" "}
               <br className="hidden md:flex" />
               determination, turning vision into reality!
             </p>
           </div>
 
-          <div className="flex flex-col gap-[25px] md:gap-[50px] lg:flex-row">
-            <div className="group:order-1 z-20 flex w-full flex-1 flex-col items-center justify-center gap-4 rounded-md !px-[0px] md:gap-[50px]">
+          <div className="flex flex-col gap-6 md:gap-12 lg:flex-row">
+            <div className="group:order-1 z-20 flex w-full flex-1 flex-col items-center justify-center gap-4 rounded-md !px-0 md:gap-12">
               <form
                 ref={formRef}
                 onSubmit={handleSubmit}
                 className="flex w-full flex-col"
               >
-                <div className="flex w-full flex-col gap-[15px] md:w-fit md:flex-row md:gap-[30px]">
-                  <div className="flex w-full flex-col gap-[15px] md:w-fit md:gap-[30px]">
+                <div className="flex w-full flex-col gap-4 md:w-fit md:flex-row md:gap-[30px]">
+                  <div className="flex w-full flex-col gap-4 md:w-fit md:gap-8">
                     <input
                       type="text"
                       name="name"
@@ -185,7 +185,7 @@ export default function Footer() {
                       required={true}
                       placeholder="Enter your name..."
                       autoComplete="on"
-                      className="block w-full select-none rounded-[10px] bg-glass p-[16px] text-left text-content focus:placeholder:italic md:w-[300px]"
+                      className="block w-full select-none rounded-[10px] bg-glass p-4 text-left text-content focus:placeholder:italic md:w-[300px]"
                     />
 
                     <input
@@ -196,7 +196,7 @@ export default function Footer() {
                       required={true}
                       placeholder="Enter your email..."
                       autoComplete="on"
-                      className="block w-full select-none rounded-[10px] bg-glass p-[16px] text-left text-content focus:placeholder:italic md:w-[300px]"
+                      className="block w-full select-none rounded-[10px] bg-glass p-4 text-left text-content focus:placeholder:italic md:w-[300px]"
                     />
                   </div>
 
@@ -207,14 +207,14 @@ export default function Footer() {
                     onChange={handleChange}
                     required={true}
                     placeholder="Enter your message..."
-                    className="mb-[15px] block h-full w-full select-none resize-none rounded-[10px] bg-glass p-[16px]  text-left text-content focus:placeholder:italic md:mb-[0px] md:h-[175px] md:w-[500px]
+                    className="mb-4 block h-full w-full select-none resize-none rounded-[10px] bg-glass p-4 text-left text-content focus:placeholder:italic md:mb-0 md:h-[175px] md:w-[500px]
                     "
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="block w-full min-w-[210px] select-none items-center justify-center rounded-[10px] bg-gray p-[16px] font-bold text-blackberry hover:brightness-110 md:w-[300px]"
+                  className="block w-full min-w-[210px] select-none items-center justify-center rounded-[10px] bg-gray p-4 font-bold text-blackberry hover:brightness-110 md:w-[300px]"
                 >
                   {loading ? (
                     <div className="flex flex-row items-center justify-center gap-4">
@@ -240,21 +240,21 @@ export default function Footer() {
 
         <div className="flex h-[2px] w-full bg-gray/10  md:hidden" />
 
-        <div className="flex flex-row items-center justify-center gap-[30px] md:flex-col md:items-end md:justify-end md:gap-[60px]">
-          <ul className="order-2 flex w-fit flex-row justify-between gap-[15px] md:order-1 md:w-full md:gap-2 lg:flex">
+        <div className="flex flex-row items-center justify-center gap-8 md:flex-col md:items-end md:justify-end md:gap-16">
+          <ul className="order-2 flex w-fit flex-row justify-between gap-4 md:order-1 md:w-full md:gap-2 lg:flex">
             {SocialLinksData.map(({ id, icon, ariaLabel, url }) => (
               <a
                 key={id}
                 href={url}
                 target="_blank"
                 aria-label={ariaLabel}
-                className="flex h-[28px] w-[28px] items-center justify-center text-gray md:h-[48px] md:w-[48px]"
+                className="flex aspect-square w-7 items-center justify-center text-gray md:w-12"
               >
                 {icon}
               </a>
             ))}
           </ul>
-          <p className="order-1 flex w-fit flex-row gap-[6px] text-center text-[13px] text-gray md:order-2 md:text-[20px]">
+          <p className="order-1 flex w-fit flex-row gap-[6px] text-center text-xs text-gray md:order-2 md:text-xl">
             © 2023{" "}
             <span className="flex h-fit w-fit font-bold"> Andrei Sager</span>
           </p>
