@@ -11,7 +11,7 @@ export default function Services() {
       <div className="max-w-center relative flex w-full flex-col items-center justify-between gap-20 px-2 py-12 md:px-40 md:py-48">
         <div className="z-20 flex w-full flex-col gap-20">
           <h1 className="z-20 w-full text-left text-gray">What Do I Offer?</h1>
-          <ul className="flex w-full flex-col flex-wrap items-center justify-between md:flex-row">
+          <ul className="flex w-full flex-col flex-wrap items-center justify-between gap-2 md:flex-row">
             {ServicesData.map(({ id, icon, title, description }) => (
               <ServiceCard
                 key={id}
