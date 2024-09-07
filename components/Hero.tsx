@@ -38,7 +38,7 @@ export default function Hero() {
           />
         </div>
 
-        <div className="z-20 order-1 flex w-full shrink-0 flex-col items-center justify-center gap-20 text-center md:w-[50%] md:items-start">
+        <div className="z-20 order-1 flex w-full shrink-0 flex-col items-center justify-center gap-4 text-center md:w-[50%] md:items-start md:gap-20">
           <h5 className="text-gray">
             Hi, I Am <span className="text-redberry">Andrei Sager</span>, a{" "}
             <br className="flex md:hidden" />
