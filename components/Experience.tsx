@@ -13,9 +13,9 @@ export default function Experiences() {
   return (
     <div
       id="experience"
-      className="flex w-full flex-col items-center justify-center gap-[50px] bg-background-1"
+      className="flex w-full flex-col items-center justify-center gap-12 bg-background-1"
     >
-      <div className="max-w-center flex w-full flex-col justify-between gap-[70px] px-[8px] py-[50px] md:px-[150px] md:py-[100px]">
+      <div className="max-w-center flex w-full flex-col justify-between gap-20 px-2 py-12 md:px-40 md:py-24">
         <h2 className="z-20 w-full text-center text-gray">
           Where Have I Worked?
         </h2>
@@ -32,7 +32,7 @@ export default function Experiences() {
                 }}
                 contentArrowStyle={{ borderRight: "10px solid #B40041" }}
                 date={date}
-                dateClassName="text-heading text-[16px]"
+                dateClassName="text-heading text-4"
                 icon={icon}
                 iconStyle={iconStyle}
                 iconClassName="scale-150"
@@ -46,7 +46,7 @@ export default function Experiences() {
                   {tags.map(({ id, tag }) => (
                     <li
                       key={id}
-                      className="border-gray1 rounded-full border px-4 py-1 text-[13px]"
+                      className="border-gray1 rounded-full border px-4 py-1 text-xs"
                     >
                       {tag}
                     </li>
