@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { BiLogoJavascript, BiLogoSass, BiLogoTypescript } from "react-icons/bi";
