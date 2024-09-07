@@ -69,18 +69,16 @@ module.exports = {
         "16/19": "16/19",
       },
       animation: {
-        "grow-shrink-1": "grow-shrink 5s linear infinite",
-        "grow-shrink-2": "grow-shrink 9s linear infinite",
-        "grow-shrink-3": "grow-shrink 7s linear infinite",
+        "grow-shrink-1": "grow-shrink 9s ease-in-out infinite",
+        "grow-shrink-2": "grow-shrink 13s ease-in-out infinite",
+        "grow-shrink-3": "grow-shrink 11s ease-in-out infinite",
       },
       keyframes: {
         "grow-shrink": {
           "0%, 100%": {
             transform: "translateY(-50%) translateX(50%)",
           },
-          "25%": { transform: "translateY(0) translateX(0)" },
           "50%": { transform: "translateY(50%) translateX(-50%)" },
-          "75%": { transform: " translateY(0) translateX(0)" },
         },
       },
     },
