@@ -4,9 +4,9 @@ export default function About() {
   return (
     <div
       id="about"
-      className="flex-rowitems-center relative flex w-full flex-col items-center justify-center gap-[50px] overflow-hidden bg-background-1 text-center md:flex-row md:gap-[100px] md:text-left"
+      className="flex-rowitems-center relative flex w-full flex-col items-center justify-center gap-12 overflow-hidden bg-background-1 text-center md:flex-row md:gap-20 md:text-left"
     >
-      <div className="max-w-center relative flex w-full flex-col items-center justify-center gap-[35px] px-[8px] py-[50px] md:flex-row md:gap-[70px] md:px-[150px] md:pb-[100px] md:pt-[200px]">
+      <div className="max-w-center relative flex w-full flex-col items-center justify-center gap-8 px-2 py-12 md:flex-row md:gap-20 md:px-40 md:pb-24 md:pt-48">
         <div className="flex w-[550px] items-center justify-center overflow-hidden rounded-xl bg-secondary-red">
           <Image
             src="/1styear.jpg"
@@ -17,7 +17,7 @@ export default function About() {
           />
         </div>
 
-        <div className="flex w-full max-w-[925px] flex-col gap-[70px]">
+        <div className="flex w-full max-w-[925px] flex-col gap-20">
           <h1 className="z-20 w-full text-left text-gray">Who Am I?</h1>
 
           <div className="font-regular flex flex-col gap-4 text-left text-2xl normal-case text-content first:text-white">
