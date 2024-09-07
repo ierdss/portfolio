@@ -1,5 +1,3 @@
-"use client";
-
 import { ServicesData, WorkflowData } from "@/constants";
 import { ReactNode } from "react";
 import { BsQuestionOctagon } from "react-icons/bs";
@@ -40,14 +38,14 @@ export default function Services() {
         </div>
 
         {/* Background Mist Effects */}
-        <div className="absolute left-0 top-0 -translate-x-[30%] -translate-y-[30%] select-none">
-          <div className="animate-grow-shrink-1 z-10 h-[650px] w-[650px] bg-accent-1 blur-[300px]" />
+        <div className="absolute left-0 top-0 -translate-x-[30%] -translate-y-[30%]">
+          <div className="md:animate-grow-shrink-1 z-10 h-[650px] w-[650px] bg-accent-1 blur-[300px] " />
         </div>
-        <div className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] select-none">
-          <div className="animate-grow-shrink-2 z-10 h-[650px] w-[650px] bg-accent-2 blur-[300px]" />
+        <div className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%]">
+          <div className="md:animate-grow-shrink-2 z-10 h-[650px] w-[650px] bg-accent-2 blur-[300px]" />
         </div>
-        <div className="absolute bottom-0 right-0 translate-x-[30%] translate-y-[30%] select-none">
-          <div className="animate-grow-shrink-3 z-10 h-[650px] w-[650px] bg-accent-3 blur-[300px]" />
+        <div className="absolute bottom-0 right-0 translate-x-[30%] translate-y-[30%]">
+          <div className="md:animate-grow-shrink-3 z-10 h-[650px] w-[650px] bg-accent-3 blur-[300px]" />
         </div>
       </div>
     </div>
