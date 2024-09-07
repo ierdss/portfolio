@@ -4,7 +4,7 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="flex h-fit w-full flex-col items-center justify-center gap-[50px] bg-background-1 px-2 sm:px-5 md:text-left"
+      className="flex h-fit w-full flex-col items-center justify-center gap-12 bg-background-1 px-2 sm:px-5 md:text-left"
     >
       <div className="max-w-center relative flex w-full flex-col items-center justify-center gap-9 px-2 py-12 md:gap-48 md:px-36 md:py-48">
         <h1 className="z-20 w-full text-center text-gray">What Have I Done?</h1>
@@ -140,7 +140,7 @@ function FeaturedProjectsCard({
           {tags.length !== 0 &&
             tags.map((tag) => (
               <li key={tag.id} className="border-gray1 rounded-full border">
-                <p className="px-4 py-1 text-[13px] capitalize">{tag.tag}</p>
+                <p className="px-4 py-1 text-xs capitalize">{tag.tag}</p>
               </li>
             ))}
         </ul>
