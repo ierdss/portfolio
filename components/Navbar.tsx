@@ -48,7 +48,7 @@ export default function Navbar() {
   return (
     <nav
       id="navbar"
-      className="fixed left-0 top-0 !z-40 flex w-full items-center justify-center bg-transparent pb-1 pt-2 md:px-12 md:pb-0 md:pt-1"
+      className="fixed left-0 top-0 !z-[99] flex w-full items-center justify-center bg-transparent px-2 py-1 md:px-12 md:pb-0 md:pt-1"
     >
       {/* Measures the scroll progress on the page. */}
       <motion.div
@@ -57,13 +57,13 @@ export default function Navbar() {
       />
 
       <div className="lg:max-w-center flex w-full items-center justify-between gap-10 md:gap-16">
-        <Link href="#" className="group w-full max-w-[350px]">
+        <Link href="#" className="group w-fit max-w-[350px] md:w-full">
           <h3
-            className="relative w-fit text-secondary-red"
+            className="relative w-fit text-secondary-red "
             onClick={() => toggleOpen()}
           >
             ANDREI
-            <span className="ease absolute -bottom-1 left-0 h-0 w-full border-t-4 border-secondary-red transition-all duration-500" />
+            <span className="ease absolute bottom-1 left-0 h-0 w-full border-t-4 border-secondary-red transition-all duration-500 md:bottom-2" />
           </h3>
         </Link>
         <div className="flex flex-row items-center justify-center gap-12">
@@ -81,7 +81,7 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
-        <div className="flex max-w-[350px] flex-row items-center justify-center gap-[3.125rem]">
+        <div className="hidden max-w-[350px] flex-row items-center justify-center gap-[3.125rem] md:flex">
           {theme === "dark" ? (
             <BsFillMoonStarsFill
               onClick={() => toggleTheme()}
