@@ -4,9 +4,9 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="flex h-fit w-full flex-col items-center justify-center gap-12 bg-background-1 px-2 sm:px-5 md:text-left"
+      className="flex h-fit w-full flex-col items-center justify-center gap-12 bg-background-1 sm:px-5 md:text-left"
     >
-      <div className="max-w-center relative flex w-full flex-col items-center justify-center gap-9 px-2 py-12 md:gap-48 md:px-36 md:py-48">
+      <div className="max-w-center relative flex w-full flex-col items-center justify-center gap-9 py-12 md:gap-48 md:px-36 md:py-48">
         <h1 className="z-20 w-full text-center text-gray">What Have I Done?</h1>
 
         {ProjectsData.map((project) => (
@@ -93,7 +93,7 @@ function FeaturedProjectsCard({
   tags,
 }: FeaturedProjectsCardProps) {
   return (
-    <div className="flex h-fit w-full flex-col items-center justify-center gap-20 overflow-hidden lg:odd:flex-row-reverse lg:even:flex-row">
+    <div className="flex h-fit w-full flex-col items-center justify-center gap-4 overflow-hidden md:gap-20 lg:odd:flex-row-reverse lg:even:flex-row">
       <div className="relative aspect-16/11 w-full overflow-hidden">
         <a
           href={linkLiveDemo}
@@ -123,7 +123,7 @@ function FeaturedProjectsCard({
           />
         )}
       </div>
-      <div className="flex h-fit w-full flex-col gap-4 lg:w-3/5">
+      <div className="flex h-fit w-full flex-col gap-4 px-2 md:px-0 lg:w-3/5">
         <div className="flex flex-row justify-between">
           <div>
             <h3 className="w-full text-left text-gray">{title}</h3>
@@ -147,7 +147,7 @@ function FeaturedProjectsCard({
         <p className="text-justify text-base normal-case text-gray lg:text-left">
           {description}
         </p>
-        <div className="mt-12 flex w-full flex-row flex-wrap items-center gap-4">
+        <div className="mt-2 flex w-full flex-row flex-wrap items-center gap-4 md:mt-12">
           {linkCaseStudy && (
             <a
               href={linkCaseStudy}
