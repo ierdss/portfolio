@@ -25,7 +25,7 @@ export default function Services() {
 
         <div className="z-20 flex flex-col gap-20">
           <h2 className="text-center text-gray">How Do I Get The Job Done?</h2>
-          <ul className="flex w-full flex-col flex-wrap items-center justify-between gap-24 md:flex-row">
+          <ul className="flex w-full flex-col flex-wrap items-center justify-between gap-2 md:flex-row md:gap-24">
             {WorkflowData.map(({ id, number, title, description }) => (
               <WorkflowCard
                 key={id}
@@ -92,7 +92,7 @@ function WorkflowCard({ number, title, description }: IWorkflow) {
   return (
     <div
       className={
-        "group z-20 flex w-full flex-row items-center justify-center gap-16 overflow-hidden p-6 transition-all duration-300 ease-out hover:scale-105 hover:text-secondary-red md:max-h-[250px] md:min-h-[200px] md:max-w-[700px] [&:nth-child(3)]:flex-row-reverse [&:nth-child(4)]:flex-row-reverse"
+        "group z-20 flex w-full flex-row items-center justify-center gap-4 overflow-hidden p-6 transition-all duration-300 ease-out hover:scale-105 hover:text-secondary-red md:max-h-[250px] md:min-h-[200px] md:max-w-[700px] md:gap-16 [&:nth-child(2)]:flex-row-reverse md:[&:nth-child(2)]:flex-row md:[&:nth-child(3)]:flex-row-reverse [&:nth-child(4)]:flex-row-reverse"
       }
     >
       <h1 className="numbers select-none text-redberry">{number}</h1>
