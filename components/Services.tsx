@@ -9,7 +9,7 @@ export default function Services() {
       className="flex w-full flex-col items-center justify-center overflow-hidden bg-background-2"
     >
       <div className="max-w-center relative flex w-full flex-col items-center justify-between gap-20 px-2 py-12 md:px-40 md:py-48">
-        <div className="z-20 flex w-full flex-col gap-20">
+        <div className="z-20 flex w-full flex-col gap-12 md:gap-20 ">
           <h1 className="z-20 w-full text-left text-gray">What Do I Offer?</h1>
           <ul className="flex w-full flex-col flex-wrap items-center justify-between gap-2 md:flex-row">
             {ServicesData.map(({ id, icon, title, description }) => (
@@ -23,7 +23,7 @@ export default function Services() {
           </ul>
         </div>
 
-        <div className="z-20 flex flex-col gap-20">
+        <div className="z-20 flex flex-col gap-12 md:gap-20 ">
           <h2 className="text-center text-gray">How Do I Get The Job Done?</h2>
           <ul className="flex w-full flex-col flex-wrap items-center justify-between gap-2 md:flex-row md:gap-24">
             {WorkflowData.map(({ id, number, title, description }) => (
