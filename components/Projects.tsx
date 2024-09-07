@@ -6,7 +6,7 @@ export default function Projects() {
       id="projects"
       className="flex h-fit w-full flex-col items-center justify-center gap-[50px] bg-background-1 px-2 sm:px-5 md:text-left"
     >
-      <div className="relative flex w-full max-w-[1980px] flex-col items-center justify-center gap-[35px] px-[8px] py-[50px] md:gap-[200px] md:px-[150px] md:py-[200px]">
+      <div className="relative flex w-full max-w-[1980px] flex-col items-center justify-center gap-9 px-2 py-12 md:gap-48 md:px-36 md:py-48">
         <h1 className="z-20 w-full text-center text-gray">What Have I Done?</h1>
 
         {ProjectsData.map((project) => (
