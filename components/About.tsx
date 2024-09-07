@@ -1,37 +1,6 @@
-import { ReactNode, useRef } from "react";
-import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 
-type TechListProps = {
-  technologies: Array<TechProps>;
-};
-
-type TechProps = {
-  id: number;
-  title: string;
-  group: string;
-  icon: ReactNode;
-};
-
-const TechGroup = ({ technologies }: TechListProps) => {
-  return (
-    <motion.ul className="mt-8 grid w-full grid-cols-4 gap-4">
-      {technologies.map(({ id, icon }) => (
-        <li
-          key={id}
-          className="flex aspect-square w-full scale-95 items-center justify-center rounded-xl shadow-inner shadow-slate-400 hover:scale-100 hover:shadow-lg"
-        >
-          {icon}
-        </li>
-      ))}
-    </motion.ul>
-  );
-};
-
 export default function About() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
   return (
     <div
       id="about"
