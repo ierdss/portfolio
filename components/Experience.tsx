@@ -61,6 +61,8 @@ export default function Experiences() {
                 </ul>
                 <span className="ease absolute bottom-0 left-[50%] z-20 h-0 w-0 -translate-x-1/2 border-t-2 border-secondary-red transition-all duration-700 group-hover:w-full" />
                 <div className="absolute -bottom-1 left-0 z-10 h-2 w-full bg-blackberry" />
+                <div className="absolute -left-1 top-0 z-10 h-full w-2 bg-blackberry" />
+                <div className="absolute -right-1 top-0 z-10 h-full w-2 bg-blackberry" />
               </VerticalTimelineElement>
             ),
           )}
