@@ -1,6 +1,5 @@
-import { FaGlobeAsia } from "react-icons/fa";
-import { IoStorefront } from "react-icons/io5";
-import { MdOutlineMobileFriendly } from "react-icons/md";
+import { FaGlobeAsia, FaMobile } from "react-icons/fa";
+import { IoColorPaletteSharp } from "react-icons/io5";
 import { RiDatabaseFill } from "react-icons/ri";
 
 const iconSize = 48;
@@ -15,7 +14,7 @@ export const ServicesData = [
   },
   {
     id: 2,
-    icon: <IoStorefront size={iconSize} />,
+    icon: <IoColorPaletteSharp size={iconSize} />,
     title: "Front-End Development",
     description:
       "Prototyping and design for customer sales conversion. Creating familiarity for users throught UI/UX.",
@@ -29,7 +28,7 @@ export const ServicesData = [
   },
   {
     id: 4,
-    icon: <MdOutlineMobileFriendly size={iconSize} />,
+    icon: <FaMobile size={iconSize} />,
     title: "Mobile Development",
     description:
       "Unified and consistent user experience across various devices. Localized platform design using platform modules for Android, iOS, and Web.",
