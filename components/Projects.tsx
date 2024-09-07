@@ -123,8 +123,9 @@ function FeaturedProjectsCard({
     <div className="flex h-fit w-full flex-col items-center justify-center gap-[70px] overflow-hidden lg:odd:flex-row-reverse lg:even:flex-row">
       <div className="relative aspect-16/11 w-full overflow-hidden">
         <a
-          href={linkLiveDemo ? linkLiveDemo : "javascript:void(0);"}
-          target={linkLiveDemo ? "_blank" : ""}
+          href={linkLiveDemo}
+          target={"_blank"}
+          className={linkLiveDemo ? "" : "pointer-events-none select-none"}
         >
           <Image
             src={desktopThumbnail || "/placeholder/desktop-thumbnail.jpg"}
@@ -132,7 +133,6 @@ function FeaturedProjectsCard({
             height={1000}
             alt={desktopAlt || "Desktop Thumbnail"}
             sizes="(min-width: 768px) 100vw, 50vw"
-            className="w-full"
           />
         </a>
         <Image
