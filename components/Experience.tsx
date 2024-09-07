@@ -15,12 +15,15 @@ export default function Experiences() {
       id="experience"
       className="flex w-full flex-col items-center justify-center bg-background-1"
     >
-      <div className="max-w-center flex w-full flex-col justify-between gap-12 px-2 py-12 md:gap-20 md:px-40 md:py-24">
+      <div className="flex w-full max-w-center flex-col justify-between gap-12 px-2 py-12 md:gap-20 md:px-40 md:py-24">
         <h2 className="z-20 w-full text-center text-gray">
           Where Have I Worked?
         </h2>
 
-        <VerticalTimeline className="w-full" lineColor="#B40041">
+        <VerticalTimeline
+          className="w-full overflow-hidden"
+          lineColor="#B40041"
+        >
           {ExperiencesData.map(
             ({ id, icon, iconStyle, title, subtitle, date, bullets, tags }) => (
               <VerticalTimelineElement
