@@ -26,7 +26,7 @@ export const ProjectsData = [
     desktopThumbnail:
       "/projects-short/road-way-delivery__compressed-desktop.jpg",
     desktopAlt: "RWD full page on desktop",
-    mobileThumbnail: "/projects-short/road-way-delivery__compressed-mobile.jpg",
+    mobileThumbnail: "",
     mobileAlt: "RWD full page on mobile",
     platformDesktop: true,
     platformMobile: true,

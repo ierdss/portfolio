@@ -24,9 +24,6 @@ export default function Projects() {
                   : ""
               }
               desktopAlt={project.desktopAlt !== null ? project.desktopAlt : ""}
-              mobileThumbnail={
-                project.mobileThumbnail !== null ? project.mobileThumbnail : ""
-              }
               mobileAlt={project.mobileAlt !== null ? project.mobileAlt : ""}
               platformDesktop={
                 project.platformDesktop !== null
@@ -100,7 +97,7 @@ function FeaturedProjectsCard({
 }: FeaturedProjectsCardProps) {
   return (
     <div className="flex h-fit w-full flex-col items-center justify-center gap-4 md:gap-20 lg:odd:flex-row-reverse lg:even:flex-row">
-      <div className="relative aspect-16/11 w-full">
+      <div className="relative aspect-16/11 w-full overflow-hidden">
         <a
           href={linkLiveDemo}
           target={"_blank"}
@@ -114,14 +111,6 @@ function FeaturedProjectsCard({
             sizes="(min-width: 768px) 100vw, 50vw"
           />
         </a>
-        <Image
-          src={mobileThumbnail || "/placeholder/mobile-thumbnail.jpg"}
-          width={600}
-          height={600}
-          alt={mobileAlt || "Mobile Thumbnail"}
-          sizes="(min-width: 768px) 100vw, 50vw"
-          className="w-full"
-        />
         {linkLiveDemo && (
           <TbExternalLink
             size={30}
@@ -158,7 +147,7 @@ function FeaturedProjectsCard({
             <a
               href={linkCaseStudy}
               target="_blank"
-              className="flex w-[30%] flex-row items-center justify-center gap-2 rounded-full text-xs capitalize text-gray hover:text-redberry md:text-base"
+              className="flex w-[30%] flex-row items-center justify-center gap-2 rounded-full text-xs capitalize text-gray hover:text-redberry md:text-sm"
             >
               <IoSearchCircle size={40} className="aspect-square w-10" />
               Case Study
@@ -168,7 +157,7 @@ function FeaturedProjectsCard({
             <a
               href={linkLiveDemo}
               target="_blank"
-              className="flex w-[30%] flex-row items-center justify-center gap-2  text-xs capitalize text-gray hover:text-redberry  md:text-base"
+              className="flex w-[30%] flex-row items-center justify-center gap-2  text-xs capitalize text-gray hover:text-redberry md:text-sm"
             >
               <IoGlobe size={33.5} />
               Live Demo
@@ -178,7 +167,7 @@ function FeaturedProjectsCard({
             <a
               href={linkRepository}
               target="_blank"
-              className="flex w-[30%] flex-row items-center justify-center gap-2 text-xs capitalize text-gray hover:text-redberry md:text-base"
+              className="flex w-[30%] flex-row items-center justify-center gap-2 text-xs capitalize text-gray hover:text-redberry md:text-sm"
             >
               <BsGithub size={30} />
               Source Code
