@@ -3,7 +3,7 @@ import { IoStorefront } from "react-icons/io5";
 import { MdOutlineMobileFriendly } from "react-icons/md";
 import { RiDatabaseFill } from "react-icons/ri";
 
-const iconSize = 50;
+const iconSize = 48;
 
 export const ServicesData = [
   {
