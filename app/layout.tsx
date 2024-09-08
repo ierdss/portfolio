@@ -46,12 +46,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${font.className} ${pt_serif.variable}`}>
-        <div className="flex w-full justify-center">
-          <div className="flex w-full flex-col">
-            <Navbar />
-            <main className="w-full">{children}</main>
-            <Footer />
-          </div>
+        <div className="flex w-full flex-col justify-center">
+          <Navbar />
+          <main className="w-full">{children}</main>
+          <Footer />
         </div>
       </body>
     </html>
