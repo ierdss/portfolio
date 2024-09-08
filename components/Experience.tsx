@@ -39,7 +39,7 @@ export default function Experiences() {
                 visible={testingVisibility}
               >
                 <h4 className="text-text text-2xl font-bold">{title}</h4>
-                <h6 className="text-base font-bold uppercase text-secondary-red">
+                <h6 className="text-primary text-base font-bold uppercase">
                   {subtitle}
                 </h6>
                 <ul className="text-text2 mt-4 flex flex-row flex-wrap gap-2">
@@ -59,7 +59,7 @@ export default function Experiences() {
                     </li>
                   ))}
                 </ul>
-                <span className="ease absolute bottom-0 left-[50%] z-20 h-0 w-0 -translate-x-1/2 border-t-2 border-secondary-red transition-all duration-700 group-hover:w-full" />
+                <span className="ease border-primary absolute bottom-0 left-[50%] z-20 h-0 w-0 -translate-x-1/2 border-t-2 transition-all duration-700 group-hover:w-full" />
                 <div className="absolute -bottom-1 left-0 z-10 h-2 w-full bg-background-1" />
                 <div className="absolute -left-1 top-0 z-10 h-full w-2 bg-background-1" />
                 <div className="absolute -right-1 top-0 z-10 h-full w-2 bg-background-1" />
