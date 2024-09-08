@@ -17,7 +17,8 @@
     --accent-2: 151 71 255;
     --accent-3: 58 90 215;
 
-    --color-glass: 25 22 33;
+    --glass-1: 25 22 33;
+    --glass-1: 25 22 33;
   }
   [data-theme="light"] {
     --background: 244 245 248;
@@ -29,7 +30,8 @@
     --accent-2: 151 71 255;
     --accent-3: 58 90 215;
 
-    --color-glass: 244 245 248;
+    --glass-1: 217 217 217;
+    --glass-2: 244 245 248;
   }
   h1 {
     font-weight: 700;

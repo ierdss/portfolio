@@ -23,7 +23,10 @@ module.exports = {
           2: "rgb(var(--accent-2))",
           3: "rgb(var(--accent-3))",
         },
-        glass: "rgba(var(--color-glass) / 0.7)",
+        glass: {
+          1: "rgba(var(--glass-1) / 0.7)",
+          2: "rgba(var(--glass-2) / 0.7)",
+        },
 
         redberry: "#B40041",
         blackberry: "#252131",

@@ -56,7 +56,7 @@ function TestimonialsRow({ row }: ITestimonialsRow) {
       {row.map(({ id, avatar, name, location, testimonial }) => (
         <li
           key={id}
-          className="group relative flex w-full select-none flex-col items-center justify-start gap-5 rounded-[20px] bg-glass p-5 text-content transition-all duration-500 ease-in-out hover:-translate-y-1 md:min-h-[220px] md:w-[400px] md:p-10 md:hover:-translate-y-4"
+          className="bg-glass-2 group relative flex w-full select-none flex-col items-center justify-start gap-5 rounded-[20px] p-5 text-content transition-all duration-500 ease-in-out hover:-translate-y-1 md:min-h-[220px] md:w-[400px] md:p-10 md:hover:-translate-y-4"
         >
           <div className="flex w-full flex-row items-center justify-between">
             <div className="flex w-full flex-row items-center justify-start gap-3">
