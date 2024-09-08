@@ -12,7 +12,7 @@ export default function Testimonials() {
       className=" flex w-full flex-col items-center justify-center gap-12 overflow-hidden bg-background-2 text-center"
     >
       <div className="relative flex w-full max-w-center flex-col items-center justify-between gap-9 px-2 py-12 md:gap-20 md:px-40 md:py-48">
-        <h2 className="z-20 w-full text-center text-gray">
+        <h2 className="text-text z-20 w-full text-center">
           What Do My Clients Think?
         </h2>
 
