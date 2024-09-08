@@ -4,7 +4,7 @@ import { motion, SVGMotionProps } from "framer-motion";
 const Path = (
   props: JSX.IntrinsicAttributes &
     SVGMotionProps<SVGPathElement> &
-    React.RefAttributes<SVGPathElement>
+    React.RefAttributes<SVGPathElement>,
 ) => (
   <motion.path
     fill="transparent"
@@ -25,7 +25,7 @@ export default function NavbarToggle({
   customClass,
 }: NavbarToggleProps) {
   return (
-    <button onClick={toggle} className={customClass || "navbar-mobile__toggle"}>
+    <button onClick={toggle} className={customClass}>
       <svg width="23" height="23" viewBox="0 0 23 23">
         <Path
           fill="white"

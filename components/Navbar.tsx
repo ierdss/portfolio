@@ -74,12 +74,12 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
-        <div className="hidden max-w-[350px] flex-row items-center justify-center gap-12 md:flex">
+        <div className="flex max-w-[350px] flex-row items-center justify-center gap-12">
           <ThemePicker />
           <Link
             href="#footer"
             data-to-scrollspy-id={6}
-            className="flex w-full flex-row items-center justify-center gap-[0.6em] rounded-[10px] bg-gray p-[1.2em] px-4 text-center text-xs font-bold text-blackberry hover:brightness-110 md:w-[300px] md:min-w-[210px] md:p-[0.9em] md:text-base"
+            className="text-text hidden w-full flex-row items-center justify-center gap-[0.6em] rounded-[10px] bg-background-1 p-[1.2em] px-4 text-center text-xs font-bold hover:brightness-110 md:flex md:w-[300px] md:min-w-[210px] md:p-[0.9em] md:text-base"
           >
             Contact Me
           </Link>
@@ -95,12 +95,12 @@ export default function Navbar() {
       >
         <div className="relative h-5 w-5">
           <motion.div
-            className="absolute -right-12 -top-6 bottom-0 h-[110vh] w-[100vh] bg-gray md:w-[300px]"
+            className="absolute -right-12 -top-6 bottom-0 h-[110vh] w-[100vh] bg-background-1 md:w-[300px] "
             variants={sidebar}
           />
           <NavbarToggle
             toggle={() => toggleOpen()}
-            customClass="absolute inset-0 z-20 cursor-pointer border-none bg-transparent outline-none"
+            customClass="absolute inset-0 z-20 cursor-pointer border-none bg-transparent outline-none text-text"
           />
         </div>
       </motion.div>
@@ -117,7 +117,7 @@ export default function Navbar() {
       >
         <motion.ul
           variants={links}
-          className="flex w-full flex-col gap-6 text-center text-black-1 lg:hidden"
+          className="text-text flex w-full flex-col gap-6 text-center lg:hidden"
         >
           <motion.a href="#" className="w-fit" variants={link}>
             <h4 className="text-primary">ANDREI</h4>
@@ -130,7 +130,7 @@ export default function Navbar() {
               href={href}
               data-to-scrollspy-id={id}
               onClick={() => toggleOpen()}
-              className="navbar-link navbar-mobile__link group"
+              className="text-text group"
             >
               {text}
               <span className="ease border-primary absolute bottom-0 left-[50%] h-0 w-0 -translate-x-1/2 border-t-2 transition-all duration-500 group-hover:w-full" />
@@ -171,13 +171,16 @@ function ThemePicker() {
   }
 
   return (
-    <div className="text-text">
+    <div className="text-text mr-4 md:mr-0">
       {theme === "light" ? (
-        <FaSun onClick={() => setTheme("dark")} className="h-8 w-8" />
+        <FaSun
+          onClick={() => setTheme("dark")}
+          className="h-6 w-6 md:h-8 md:w-8"
+        />
       ) : (
         <BsFillMoonStarsFill
           onClick={() => setTheme("light")}
-          className="h-8 w-8"
+          className="h-6 w-6 md:h-8 md:w-8"
         />
       )}
     </div>
