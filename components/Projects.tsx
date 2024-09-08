@@ -7,7 +7,7 @@ export default function Projects() {
       className="flex h-fit w-full flex-col items-center justify-center gap-12 bg-background-1 sm:px-5 md:text-left"
     >
       <div className="relative flex w-full max-w-center flex-col items-center justify-center gap-9 py-12 md:gap-48 md:px-36 md:py-48">
-        <h1 className="z-20 w-full text-center text-gray">What Have I Done?</h1>
+        <h1 className="text-text z-20 w-full text-center">What Have I Done?</h1>
 
         <ul className="flex flex-col gap-12 md:gap-40">
           {ProjectsData.map((project) => (
@@ -121,17 +121,17 @@ function FeaturedProjectsCard({
       <div className="flex h-fit w-full flex-col gap-4 px-2 md:px-0 lg:w-3/5">
         <div className="flex flex-row justify-between">
           <div>
-            <h3 className="w-full text-left text-gray">{title}</h3>
-            <h5 className="w-full text-left font-bold uppercase text-secondary-red">
+            <h3 className="text-text w-full text-left">{title}</h3>
+            <h5 className="text-primary w-full text-left font-bold uppercase">
               {subtitle}
             </h5>
           </div>
-          <div className="flex flex-row items-center gap-3 text-gray">
+          <div className="text-text flex flex-row items-center gap-3">
             {platformDesktop && <IoIosLaptop size={40} />}
             {platformMobile && <CiMobile1 size={25} />}
           </div>
         </div>
-        <ul className="flex flex-row flex-wrap gap-2 text-gray2">
+        <ul className="text-text2 flex flex-row flex-wrap gap-2">
           {tags.length !== 0 &&
             tags.map((tag) => (
               <li key={tag.id} className="border-gray1 rounded-full border">
@@ -139,7 +139,7 @@ function FeaturedProjectsCard({
               </li>
             ))}
         </ul>
-        <p className="text-justify text-base normal-case text-gray lg:text-left">
+        <p className="text-text text-justify text-base normal-case lg:text-left">
           {description}
         </p>
         <div className="mt-2 flex w-full flex-row flex-wrap items-center gap-4 md:mt-12">
@@ -147,7 +147,7 @@ function FeaturedProjectsCard({
             <a
               href={linkCaseStudy}
               target="_blank"
-              className="flex w-[30%] flex-row items-center justify-center gap-2 rounded-full text-xs capitalize text-gray hover:text-redberry md:text-sm"
+              className="text-text hover:text-primary flex w-[30%] flex-row items-center justify-center gap-2 rounded-full text-xs capitalize md:text-sm"
             >
               <IoSearchCircle size={40} className="aspect-square w-10" />
               Case Study
@@ -157,7 +157,7 @@ function FeaturedProjectsCard({
             <a
               href={linkLiveDemo}
               target="_blank"
-              className="flex w-[30%] flex-row items-center justify-center gap-2  text-xs capitalize text-gray hover:text-redberry md:text-sm"
+              className="text-text hover:text-primary flex w-[30%] flex-row items-center  justify-center gap-2 text-xs capitalize md:text-sm"
             >
               <IoGlobe size={33.5} />
               Live Demo
@@ -167,7 +167,7 @@ function FeaturedProjectsCard({
             <a
               href={linkRepository}
               target="_blank"
-              className="flex w-[30%] flex-row items-center justify-center gap-2 text-xs capitalize text-gray hover:text-redberry md:text-sm"
+              className="text-text hover:text-primary flex w-[30%] flex-row items-center justify-center gap-2 text-xs capitalize md:text-sm"
             >
               <BsGithub size={30} />
               Source Code
