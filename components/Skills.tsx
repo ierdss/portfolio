@@ -20,7 +20,7 @@ export default function Skills() {
       className="flex w-full flex-col items-center justify-center overflow-hidden bg-background-2"
     >
       <div className="relative flex w-full max-w-center flex-col items-center justify-between gap-12 px-2 py-12 md:gap-20 md:px-40 md:py-48">
-        <h2 className="z-20 w-full text-center text-gray ">
+        <h2 className="text-text z-20 w-full text-center">
           The Technologies I Use
           <br className="hidden md:flex" /> To Create My Works
         </h2>
@@ -211,13 +211,13 @@ export default function Skills() {
 
         {/* Background Mist Effects */}
         <div className="absolute left-0 top-0 -translate-x-[30%] -translate-y-[30%]">
-          <div className="md:animate-grow-shrink-1 z-10 h-[650px] w-[650px] bg-accent-1 blur-[300px] " />
+          <div className="z-10 h-[650px] w-[650px] bg-accent-1 blur-[300px] md:animate-grow-shrink-1 " />
         </div>
         <div className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%]">
-          <div className="md:animate-grow-shrink-2 z-10 h-[650px] w-[650px] bg-accent-2 blur-[300px]" />
+          <div className="z-10 h-[650px] w-[650px] bg-accent-2 blur-[300px] md:animate-grow-shrink-2" />
         </div>
         <div className="absolute bottom-0 right-0 translate-x-[30%] translate-y-[30%]">
-          <div className="md:animate-grow-shrink-3 z-10 h-[650px] w-[650px] bg-accent-3 blur-[300px]" />
+          <div className="z-10 h-[650px] w-[650px] bg-accent-3 blur-[300px] md:animate-grow-shrink-3" />
         </div>
       </div>
     </div>
