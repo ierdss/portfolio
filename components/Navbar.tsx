@@ -12,6 +12,7 @@ import { useDimensions } from "@/src/useDimensions";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FaSun } from "react-icons/fa";
 import { IoDesktop } from "react-icons/io5";
+import { SocialLinksData } from "@/constants";
 
 export default function Navbar() {
   const { scrollYProgress } = useScroll();
@@ -51,10 +52,7 @@ export default function Navbar() {
 
       <div className="flex w-full items-center justify-between gap-10 md:gap-16 lg:max-w-center">
         <Link href="#" className="group w-fit max-w-[350px] md:w-full">
-          <h3
-            className="text-primary relative w-fit "
-            onClick={() => toggleOpen()}
-          >
+          <h3 className="text-primary relative w-fit ">
             ANDREI
             <span className="absolute bottom-1 left-0 h-0 w-full border-t-4 border-secondary-red transition-all duration-500 ease-in-out md:bottom-2" />
           </h3>
@@ -117,11 +115,8 @@ export default function Navbar() {
       >
         <motion.ul
           variants={links}
-          className="text-text flex w-full flex-col gap-6 text-center lg:hidden"
+          className="text-text my-12 flex w-full flex-col gap-6 text-center lg:hidden"
         >
-          <motion.a href="#" className="w-fit" variants={link}>
-            <h4 className="text-primary">ANDREI</h4>
-          </motion.a>
           {NavLinks.map(({ id, href, text }) => (
             <motion.a
               variants={link}
@@ -130,25 +125,25 @@ export default function Navbar() {
               href={href}
               data-to-scrollspy-id={id}
               onClick={() => toggleOpen()}
-              className="text-text group"
+              className="text-text group py-4"
             >
               {text}
-              <span className="ease border-primary absolute bottom-0 left-[50%] h-0 w-0 -translate-x-1/2 border-t-2 transition-all duration-500 group-hover:w-full" />
             </motion.a>
           ))}
           <motion.ul
-            className="hidden flex-row items-center justify-center gap-2 lg:flex lg:justify-start"
+            className="order-2 mt-12 flex w-full flex-row items-center justify-center gap-8 md:order-1 md:w-full md:gap-2 lg:flex lg:justify-start"
             variants={link}
           >
-            {SocialMediaLinks.map(({ id, ariaLabel, url }) => (
-              <SocialIcon
+            {SocialLinksData.map(({ id, icon, ariaLabel, url }) => (
+              <a
                 key={id}
-                url={url}
+                href={url}
                 target="_blank"
-                label={ariaLabel}
-                style={{ height: 35, width: 35 }}
-                className="flex flex-row items-center justify-center gap-2 lg:justify-start"
-              />
+                aria-label={ariaLabel}
+                className="text-text flex items-center justify-center"
+              >
+                {icon}
+              </a>
             ))}
           </motion.ul>
         </motion.ul>
