@@ -51,7 +51,7 @@ export default function RootLayout({
           enableSystem={true}
           disableTransitionOnChange
           defaultTheme="dark"
-          themes={["system", "dark", "light"]}
+          themes={["dark", "light"]}
         >
           <div className="flex w-full flex-col justify-center">
             <Navbar />

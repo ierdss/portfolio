@@ -74,7 +74,7 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
-        <div className="hidden max-w-[350px] flex-row items-center justify-center gap-[3.125rem] md:flex">
+        <div className="hidden max-w-[350px] flex-row items-center justify-center gap-12 md:flex">
           <ThemePicker />
           <Link
             href="#footer"
@@ -171,13 +171,15 @@ function ThemePicker() {
   }
 
   return (
-    <div className="text-text flex w-full flex-row gap-5">
-      <IoDesktop onClick={() => setTheme("system")} className="h-5 w-5" />
-      <BsFillMoonStarsFill
-        onClick={() => setTheme("dark")}
-        className="h-5 w-5"
-      />
-      <FaSun onClick={() => setTheme("light")} className="h-5 w-5" />
+    <div className="text-text">
+      {theme === "light" ? (
+        <FaSun onClick={() => setTheme("dark")} className="h-8 w-8" />
+      ) : (
+        <BsFillMoonStarsFill
+          onClick={() => setTheme("light")}
+          className="h-8 w-8"
+        />
+      )}
     </div>
   );
 }
