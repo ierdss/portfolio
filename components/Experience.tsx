@@ -42,17 +42,17 @@ export default function Experiences() {
                 <h6 className="text-primary text-base font-bold uppercase">
                   {subtitle}
                 </h6>
-                <ul className="text-text2 mt-4 flex flex-row flex-wrap gap-2">
+                <ul className="text-text mt-4 flex flex-row flex-wrap gap-2">
                   {tags.map(({ id, tag }) => (
                     <li
                       key={id}
-                      className="border-gray1 rounded-full border px-4 py-1 text-xs"
+                      className="border-text rounded-full border px-4 py-1 text-xs"
                     >
                       {tag}
                     </li>
                   ))}
                 </ul>
-                <ul className="text-text2 ml-4 mt-4 list-disc">
+                <ul className="text-text ml-4 mt-4 list-disc">
                   {bullets.map(({ id, bullet }) => (
                     <li key={id} className="pl-1 text-sm">
                       {bullet}
