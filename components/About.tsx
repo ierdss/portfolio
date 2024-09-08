@@ -18,11 +18,11 @@ export default function About() {
         </div>
 
         <div className="flex w-full max-w-[700px] flex-col gap-8">
-          <h1 className="z-20 w-full text-left text-gray">Who Am I?</h1>
+          <h1 className="text-text z-20 w-full text-left">Who Am I?</h1>
 
-          <div className="font-regular flex flex-col gap-4 text-left text-base normal-case text-content first:text-white">
+          <div className="font-regular flex flex-col gap-4 text-left text-base normal-case text-content">
             <p className="">
-              Hey there! I'm <span className="text-redberry">Andrei Sager</span>
+              Hey there! I'm <span className="text-primary">Andrei Sager</span>
               , a software developer residing in the Philippines. I am a student
               of STI College Sta. Mesa who is currently finishing his Bachelors
               of Science in Computer Science (BSCS) Degree.
