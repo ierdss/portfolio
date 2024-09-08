@@ -4,9 +4,9 @@ export default function About() {
   return (
     <div
       id="about"
-      className="flex-rowitems-center relative flex w-full flex-col items-center justify-center bg-blackberry md:text-left"
+      className="flex-rowitems-center relative flex w-full flex-col items-center justify-center bg-background-1 md:text-left"
     >
-      <div className="max-w-center relative flex w-full flex-col items-center justify-center gap-12 px-2 py-12 md:flex-row md:gap-20 md:px-40 md:pb-24 md:pt-48">
+      <div className="relative flex w-full max-w-center flex-col items-center justify-center gap-12 px-2 py-12 md:flex-row md:gap-20 md:px-40 md:pb-24 md:pt-48">
         <div className="flex w-full max-w-[450px] items-center justify-center overflow-hidden rounded-xl bg-secondary-red">
           <Image
             src="/1styear.jpg"

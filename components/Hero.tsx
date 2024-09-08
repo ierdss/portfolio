@@ -25,7 +25,7 @@ export default function Hero() {
   return (
     <div
       id="hero"
-      className="flex w-full select-none flex-col items-center justify-center bg-blackberry"
+      className="flex w-full select-none flex-col items-center justify-center bg-background-1"
     >
       <div className="relative flex w-full max-w-center flex-col items-center justify-center gap-10 px-2 py-24 md:flex-row md:gap-24 md:px-40 md:py-48">
         <div className="z-10 flex aspect-square w-[80%] items-center justify-center overflow-hidden rounded-full bg-gray bg-opacity-10 brightness-125 md:order-2 md:max-w-[450px]">

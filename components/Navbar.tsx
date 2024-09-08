@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import React from "react";
+import { useTheme } from "next-themes";
 
 import { SocialIcon } from "react-social-icons";
 import { useScroll, useSpring, motion, useCycle } from "framer-motion";
@@ -10,6 +11,7 @@ import NavbarToggle from "./NavbarToggle";
 import { useDimensions } from "@/src/useDimensions";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FaSun } from "react-icons/fa";
+import { IoDesktop } from "react-icons/io5";
 
 export default function Navbar() {
   const { scrollYProgress } = useScroll();
@@ -36,15 +38,6 @@ export default function Navbar() {
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
 
-  const [theme, setTheme] = useState("dark");
-  const toggleTheme = () => {
-    if (theme === "dark") {
-      setTheme("light");
-    } else {
-      setTheme("dark");
-    }
-  };
-
   return (
     <nav
       id="navbar"
@@ -52,14 +45,14 @@ export default function Navbar() {
     >
       {/* Measures the scroll progress on the page. */}
       <motion.div
-        className="fixed left-0 right-0 top-0 h-1 origin-top-left bg-secondary-red"
+        className="bg-primary fixed left-0 right-0 top-0 h-1 origin-top-left"
         style={{ scaleX }}
       />
 
-      <div className="lg:max-w-center flex w-full items-center justify-between gap-10 md:gap-16">
+      <div className="flex w-full items-center justify-between gap-10 md:gap-16 lg:max-w-center">
         <Link href="#" className="group w-fit max-w-[350px] md:w-full">
           <h3
-            className="relative w-fit text-secondary-red "
+            className="text-primary relative w-fit "
             onClick={() => toggleOpen()}
           >
             ANDREI
@@ -73,7 +66,7 @@ export default function Navbar() {
                 key={id}
                 href={href}
                 data-to-scrollspy-id={id}
-                className="group relative my-3 block rounded-[10px] px-4 py-3 text-sm font-bold capitalize text-gray target:text-redberry"
+                className="target:text-primary text-text-1 group relative my-3 block rounded-[10px] px-4 py-3 text-sm font-bold capitalize"
               >
                 {/* Add a blob mergin animation here */}
                 {text}
@@ -82,17 +75,7 @@ export default function Navbar() {
           </ul>
         </div>
         <div className="hidden max-w-[350px] flex-row items-center justify-center gap-[3.125rem] md:flex">
-          {theme === "dark" ? (
-            <BsFillMoonStarsFill
-              onClick={() => toggleTheme()}
-              className="h-8 w-8 text-gray"
-            />
-          ) : (
-            <FaSun
-              onClick={() => toggleTheme()}
-              className="h-8 w-8 text-blackberry"
-            />
-          )}
+          <ThemePicker />
           <Link
             href="#footer"
             data-to-scrollspy-id={6}
@@ -137,7 +120,7 @@ export default function Navbar() {
           className="flex w-full flex-col gap-6 text-center text-black-1 lg:hidden"
         >
           <motion.a href="#" className="w-fit" variants={link}>
-            <h4 className="text-secondary-red">ANDREI</h4>
+            <h4 className="text-primary">ANDREI</h4>
           </motion.a>
           {NavLinks.map(({ id, href, text }) => (
             <motion.a
@@ -150,7 +133,7 @@ export default function Navbar() {
               className="navbar-link navbar-mobile__link group"
             >
               {text}
-              <span className="ease absolute bottom-0 left-[50%] h-0 w-0 -translate-x-1/2 border-t-2 border-secondary-red transition-all duration-500 group-hover:w-full" />
+              <span className="ease border-primary absolute bottom-0 left-[50%] h-0 w-0 -translate-x-1/2 border-t-2 transition-all duration-500 group-hover:w-full" />
             </motion.a>
           ))}
           <motion.ul
@@ -171,6 +154,31 @@ export default function Navbar() {
         </motion.ul>
       </motion.div>
     </nav>
+  );
+}
+
+function ThemePicker() {
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+  // useEffect only runs on the client, so now we can safely show the UI
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
+  return (
+    <div className="text-text-1 flex w-full flex-row gap-5">
+      <IoDesktop onClick={() => setTheme("system")} className="h-5 w-5" />
+      <BsFillMoonStarsFill
+        onClick={() => setTheme("dark")}
+        className="h-5 w-5"
+      />
+      <FaSun onClick={() => setTheme("light")} className="h-5 w-5" />
+    </div>
   );
 }
 

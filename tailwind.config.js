@@ -12,15 +12,19 @@ module.exports = {
       },
       colors: {
         background: {
-          1: "rgb(var(--color-background) / <alpha-value>)",
-          2: "rgb(var(--color-background) / 0.95)",
+          1: "rgba(var(--background-1) / <alpha-value>)",
+          2: "rgba(var(--background-2) / 0.5)",
         },
+        primary: "rgba(var(--primary) / <alpha-value>)",
         heading: "rgb(var(--color-heading) / <alpha-value>)",
-        content: "rgb(var(--color-content) / <alpha-value>)",
+        text: {
+          1: "rgb(var(--text-1) / <alpha-value>)",
+          2: "rgb(var(--text-2) / <alpha-value>)",
+        },
         accent: {
-          1: "rgb(var(--color-accent1) / <alpha-value>)",
-          2: "rgb(var(--color-accent2) / <alpha-value>)",
-          3: "rgb(var(--color-accent3) / <alpha-value>)",
+          1: "rgb(var(--accent-1) / <alpha-value>)",
+          2: "rgb(var(--accent-2) / <alpha-value>)",
+          3: "rgb(var(--accent-3) / <alpha-value>)",
         },
         glass: "rgb(var(--color-glass) / 0.7)",
 

@@ -1,4 +1,5 @@
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
 import { Poppins, PT_Serif } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -44,13 +45,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${font.className} ${pt_serif.variable}`}>
-        <div className="flex w-full flex-col justify-center">
-          <Navbar />
-          <main className="w-full">{children}</main>
-          <Footer />
-        </div>
+        <ThemeProvider
+          enableSystem={true}
+          disableTransitionOnChange
+          defaultTheme="dark"
+          themes={["system", "dark", "light"]}
+        >
+          <div className="flex w-full flex-col justify-center">
+            <Navbar />
+            <main className="w-full">{children}</main>
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
