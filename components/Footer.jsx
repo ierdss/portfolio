@@ -35,7 +35,7 @@ export default function Footer() {
     message: "",
   });
 
-  let [isOpen, setIsOpen] = useState(false);
+  let [isOpen, setIsOpen] = useState(true);
 
   function closeModal() {
     setIsOpen(false);
@@ -126,7 +126,7 @@ export default function Footer() {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="bg-background text-text w-full max-w-[350px] transform rounded-[10px] p-4 text-left align-middle transition-all">
+                  <Dialog.Panel className="text-text w-full max-w-[350px] transform rounded-[10px] bg-background-1 p-4 text-left align-middle transition-all">
                     <Dialog.Title
                       as="h3"
                       className="text-text-900 text-text text-left text-xl font-medium capitalize leading-6 md:!text-left"
@@ -143,7 +143,7 @@ export default function Footer() {
                     <div className="mt-8">
                       <button
                         type="button"
-                        className="block items-center justify-center rounded-[10px] bg-gray p-3 text-sm font-bold text-blackberry hover:brightness-110"
+                        className="bg-text block items-center justify-center rounded-[10px] p-3 text-sm font-bold text-background-1 hover:brightness-110"
                         onClick={closeModal}
                       >
                         {modal.button || "Got it, thanks!"}
@@ -214,7 +214,7 @@ export default function Footer() {
 
                 <button
                   type="submit"
-                  className="block w-full min-w-[210px] select-none items-center justify-center rounded-[10px] bg-gray p-[1em] font-bold text-blackberry hover:brightness-110 md:w-[300px] md:p-[0.9em]"
+                  className="bg-text block w-full min-w-[210px] select-none items-center justify-center rounded-[10px] p-[1em] font-bold text-background-1 hover:brightness-110 md:w-[300px] md:p-[0.9em]"
                 >
                   {loading ? (
                     <div className="flex flex-row items-center justify-center gap-4">
