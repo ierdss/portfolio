@@ -5,13 +5,11 @@ import Link from "next/link";
 import React from "react";
 import { useTheme } from "next-themes";
 
-import { SocialIcon } from "react-social-icons";
 import { useScroll, useSpring, motion, useCycle } from "framer-motion";
 import NavbarToggle from "./NavbarToggle";
 import { useDimensions } from "@/src/useDimensions";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FaSun } from "react-icons/fa";
-import { IoDesktop } from "react-icons/io5";
 import { SocialLinksData } from "@/constants";
 
 export default function Navbar() {
