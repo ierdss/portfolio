@@ -11,49 +11,54 @@
     --color-accent2: 151 71 255;
     --color-accent3: 58 90 215;
     --color-glass: 25 22 33;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: clamp(40px, 8vw + 1rem, 100px);
+    text-transform: capitalize;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: clamp(32px, 4vw + 1rem, 64px);
+    text-transform: capitalize;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: clamp(28px, 3vw + 1rem, 40px);
+    text-transform: capitalize;
+  }
+  h4 {
+    font-weight: 700;
+    font-size: clamp(20px, 3vw + 1rem, 32px);
+    text-transform: capitalize;
+  }
+  h5 {
+    font-weight: 700;
+    font-size: clamp(20px, 3vw + 1rem, 24px);
+    text-transform: capitalize;
+  }
+  h6 {
+    font-weight: 700;
+    font-size: clamp(14px, 3vw + 1rem, 16px);
+    text-transform: capitalize;
+  }
+}
 
-    h1 {
-      font-weight: 700;
-      font-size: clamp(40px, 8vw + 1rem, 100px);
-      text-transform: capitalize;
-    }
-    h2 {
-      font-weight: 700;
-      font-size: clamp(32px, 4vw + 1rem, 64px);
-      text-transform: capitalize;
-    }
-    h3 {
-      font-weight: 700;
-      font-size: clamp(28px, 3vw + 1rem, 40px);
-      text-transform: capitalize;
-    }
-    h4 {
-      font-weight: 700;
-      font-size: clamp(20px, 3vw + 1rem, 32px);
-      text-transform: capitalize;
-    }
-    h5 {
-      font-weight: 700;
-      font-size: clamp(20px, 3vw + 1rem, 24px);
-      text-transform: capitalize;
-    }
-    h6 {
-      font-weight: 700;
-      font-size: clamp(14px, 3vw + 1rem, 16px);
-      text-transform: capitalize;
-    }
-    .claim {
-      font-weight: 700;
-      font-size: clamp(96px, 8vw + 1rem, 200px);
-      text-transform: uppercase;
-      text-align: left;
-      line-height: clamp(4.5rem, 6vw + 1rem, 7.8rem);
-    }
-    .numbers {
-      font-weight: 700;
-      font-size: clamp(100px, 12vw + 1rem, 220px);
-      text-transform: capitalize;
-    }
+@layer components {
+}
+
+@layer utilities {
+  .claim {
+    font-weight: 700;
+    font-size: clamp(96px, 8vw + 1rem, 200px);
+    text-transform: uppercase;
+    text-align: left;
+    line-height: clamp(4.5rem, 6vw + 1rem, 7.8rem);
+  }
+  .numbers {
+    font-weight: 700;
+    font-size: clamp(100px, 12vw + 1rem, 220px);
+    text-transform: capitalize;
   }
 }
 
