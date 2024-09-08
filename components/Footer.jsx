@@ -161,7 +161,7 @@ export default function Footer() {
             <h2 className="w-full text-left text-gray">
               Reaching goals relentlessly!
             </h2>
-            <p className="text-left text-xl font-semibold text-gray2 md:!text-left">
+            <p className="text-left text-xl font-semibold text-gray/70 md:!text-left">
               Relentlessly pursuing goals with unwavering{" "}
               <br className="hidden md:flex" />
               determination, turning vision into reality!

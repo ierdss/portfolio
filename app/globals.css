@@ -8,32 +8,28 @@
   }
 
   [data-theme="dark"] {
-    --background-1: 37 33 49;
-    --background-2: 37 33 49;
-
-    --text-1: 244 245 248;
-    --text-2: 244 245 248;
-
+    --background: 37 33 49;
+    --heading: 244 245 248;
+    --text: 244 245 248;
     --primary: 180 0 64;
 
     --accent-1: 180 65 100;
     --accent-2: 151 71 255;
     --accent-3: 58 90 215;
+
     --color-glass: 25 22 33;
   }
   [data-theme="light"] {
-    --background-1: 244 245 248;
-    --background-2: 244 245 248;
-
-    --text-1: 37 33 49;
-    --text-2: 37 33 49;
-
+    --background: 244 245 248;
+    --heading: 37 33 49;
+    --text: 37 33 49;
     --primary: 180 0 64;
 
     --accent-1: 180 65 100;
     --accent-2: 151 71 255;
     --accent-3: 58 90 215;
-    --color-glass: 25 22 33;
+
+    --color-glass: 217 217 217;
   }
   h1 {
     font-weight: 700;
@@ -130,7 +126,7 @@ html {
 }
 
 ::selection {
-  @apply bg-gray text-redberry;
+  @apply bg-gray text-redberry brightness-100;
 }
 
 /* Navbar Section */
@@ -138,7 +134,7 @@ html {
   @apply bg-background-1 shadow-lg;
 }
 .navbar--scrolled .navbar-logo {
-  @apply text-slate-500 hover:text-secondary-red;
+  @apply hover:text-primary text-slate-500;
 }
 .navbar--scrolled span {
   @apply w-0;

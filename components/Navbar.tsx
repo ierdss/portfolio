@@ -66,7 +66,7 @@ export default function Navbar() {
                 key={id}
                 href={href}
                 data-to-scrollspy-id={id}
-                className="target:text-primary text-text-1 group relative my-3 block rounded-[10px] px-4 py-3 text-sm font-bold capitalize"
+                className="target:text-primary text-text group relative my-3 block rounded-[10px] px-4 py-3 text-sm font-bold capitalize"
               >
                 {/* Add a blob mergin animation here */}
                 {text}
@@ -171,7 +171,7 @@ function ThemePicker() {
   }
 
   return (
-    <div className="text-text-1 flex w-full flex-row gap-5">
+    <div className="text-text flex w-full flex-row gap-5">
       <IoDesktop onClick={() => setTheme("system")} className="h-5 w-5" />
       <BsFillMoonStarsFill
         onClick={() => setTheme("dark")}
