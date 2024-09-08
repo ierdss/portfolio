@@ -28,7 +28,7 @@ export default function Hero() {
       className="flex w-full select-none flex-col items-center justify-center bg-background-1"
     >
       <div className="relative flex w-full max-w-center flex-col items-center justify-center gap-10 px-2 py-24 md:flex-row md:gap-24 md:px-40 md:py-48">
-        <div className="z-10 flex aspect-square w-[80%] items-center justify-center overflow-hidden rounded-full bg-gray bg-opacity-10 brightness-125 md:order-2 md:max-w-[450px]">
+        <div className="z-10 flex aspect-square w-[80%] items-center justify-center overflow-hidden rounded-full bg-background-1/50  brightness-125 md:order-2 md:max-w-[450px]">
           <Image
             src="/hero.png"
             width={1000}
@@ -39,7 +39,7 @@ export default function Hero() {
         </div>
 
         <div className="z-20 order-1 flex w-full shrink-0 flex-col items-center justify-center gap-4 text-center md:w-[50%] md:items-start md:gap-20 md:text-left">
-          <h5 className="w-full text-gray">
+          <h5 className="text-text w-full">
             Hi, I'm <span className="text-redberry">Andrei Sager</span>, I Am a
             <br />
             <TypeAnimation
@@ -60,7 +60,7 @@ export default function Hero() {
             />
           </h5>
 
-          <div className="relative flex flex-col items-start justify-center text-gray">
+          <div className="text-text relative flex flex-col items-start justify-center">
             <p className="">I make</p>
             <div className="ml-[-5px] md:ml-[-10px]">
               <h1 className="claim ml-[-2px] !font-normal ">BIGGER</h1>
@@ -81,7 +81,7 @@ export default function Hero() {
                   href={url}
                   target="_blank"
                   aria-label={ariaLabel}
-                  className="flex items-center justify-center text-gray"
+                  className="text-text flex items-center justify-center"
                 >
                   {icon}
                 </a>
