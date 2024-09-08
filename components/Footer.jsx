@@ -126,15 +126,15 @@ export default function Footer() {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="bg-background w-full max-w-[350px] transform rounded-[10px] p-4 text-left align-middle text-gray transition-all">
+                  <Dialog.Panel className="bg-background text-text w-full max-w-[350px] transform rounded-[10px] p-4 text-left align-middle transition-all">
                     <Dialog.Title
                       as="h3"
-                      className="text-gray-900 text-left text-xl font-medium capitalize leading-6 text-gray md:!text-left"
+                      className="text-text-900 text-text text-left text-xl font-medium capitalize leading-6 md:!text-left"
                     >
                       {modal.title || "payment successful"}
                     </Dialog.Title>
                     <div className="mt-2">
-                      <p className="text-gray-500 text-sm brightness-75">
+                      <p className="text-text-500 text-sm brightness-75">
                         {modal.message ||
                           "Your payment has been successfully submitted. We’ve sent you an email with all of the details of your order."}
                       </p>
@@ -158,10 +158,10 @@ export default function Footer() {
 
         <div className="flex flex-col gap-9 md:gap-20">
           <div className="flex flex-col gap-3">
-            <h2 className="w-full text-left text-gray">
+            <h2 className="text-text w-full text-left">
               Reaching goals relentlessly!
             </h2>
-            <p className="text-left text-xl font-semibold text-gray/70 md:!text-left">
+            <p className="text-text/70 text-left text-xl font-semibold md:!text-left">
               Relentlessly pursuing goals with unwavering{" "}
               <br className="hidden md:flex" />
               determination, turning vision into reality!
@@ -248,13 +248,13 @@ export default function Footer() {
                 href={url}
                 target="_blank"
                 aria-label={ariaLabel}
-                className="flex items-center justify-center text-gray"
+                className="text-text flex items-center justify-center"
               >
                 {icon}
               </a>
             ))}
           </ul>
-          <p className="order-1 flex w-fit flex-row gap-[6px] text-center text-xs text-gray md:order-2 md:text-xl">
+          <p className="text-text order-1 flex w-fit flex-row gap-[6px] text-center text-xs md:order-2 md:text-xl">
             © 2023{" "}
             <span className="flex h-fit w-fit font-bold"> Andrei Sager</span>
           </p>
