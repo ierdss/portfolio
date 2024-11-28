@@ -126,10 +126,10 @@ export default function Footer() {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="text-text w-full max-w-[350px] transform rounded-[10px] bg-background-1 p-4 text-left align-middle transition-all">
+                  <Dialog.Panel className="w-full max-w-[350px] transform rounded-[10px] bg-background-1 p-4 text-left align-middle text-text transition-all">
                     <Dialog.Title
                       as="h3"
-                      className="text-text-900 text-text text-left text-xl font-medium capitalize leading-6 md:!text-left"
+                      className="text-text-900 text-left text-xl font-medium capitalize leading-6 text-text md:!text-left"
                     >
                       {modal.title || "payment successful"}
                     </Dialog.Title>
@@ -143,7 +143,7 @@ export default function Footer() {
                     <div className="mt-8">
                       <button
                         type="button"
-                        className="bg-text block items-center justify-center rounded-[10px] p-3 text-sm font-bold text-background-1 hover:brightness-110"
+                        className="block items-center justify-center rounded-[10px] bg-text p-3 text-sm font-bold text-background-1 hover:brightness-110"
                         onClick={closeModal}
                       >
                         {modal.button || "Got it, thanks!"}
@@ -158,10 +158,10 @@ export default function Footer() {
 
         <div className="flex flex-col gap-9 md:gap-20">
           <div className="flex flex-col gap-3">
-            <h2 className="text-text w-full text-left">
+            <h2 className="w-full text-left text-text">
               Reaching goals relentlessly!
             </h2>
-            <p className="text-text/70 text-left text-xl font-semibold md:!text-left">
+            <p className="text-left text-xl font-semibold text-text/70 md:!text-left">
               Relentlessly pursuing goals with unwavering{" "}
               <br className="hidden md:flex" />
               determination, turning vision into reality!
@@ -185,7 +185,7 @@ export default function Footer() {
                       required={true}
                       placeholder="Enter your name..."
                       autoComplete="on"
-                      className="bg-glass-1 block w-full select-none rounded-[10px] p-[1em] text-left text-content focus:placeholder:italic md:w-[300px] md:p-[0.9em]"
+                      className="text-content block w-full select-none rounded-[10px] bg-glass-1 p-[1em] text-left focus:placeholder:italic md:w-[300px] md:p-[0.9em]"
                     />
 
                     <input
@@ -196,7 +196,7 @@ export default function Footer() {
                       required={true}
                       placeholder="Enter your email..."
                       autoComplete="on"
-                      className="md:p-[0.9em]text-left bg-glass-1 block w-full select-none rounded-[10px] p-[1em] text-content focus:placeholder:italic md:w-[300px]"
+                      className="md:p-[0.9em]text-left text-content block w-full select-none rounded-[10px] bg-glass-1 p-[1em] focus:placeholder:italic md:w-[300px]"
                     />
                   </div>
 
@@ -207,14 +207,14 @@ export default function Footer() {
                     onChange={handleChange}
                     required={true}
                     placeholder="Enter your message..."
-                    className="bg-glass-1 mb-4 block h-full w-full select-none resize-none rounded-[10px] p-[1em] text-left text-content focus:placeholder:italic md:mb-0 md:h-[175px] md:w-[500px] md:p-[0.9em]
+                    className="text-content mb-4 block h-full w-full select-none resize-none rounded-[10px] bg-glass-1 p-[1em] text-left focus:placeholder:italic md:mb-0 md:h-[175px] md:w-[500px] md:p-[0.9em]
                     "
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="bg-text block w-full min-w-[210px] select-none items-center justify-center rounded-[10px] p-[1em] font-bold text-background-1 hover:brightness-110 md:w-[300px] md:p-[0.9em]"
+                  className="block w-full min-w-[210px] select-none items-center justify-center rounded-[10px] bg-text p-[1em] font-bold text-background-1 hover:bg-primary hover:brightness-110 md:w-[300px] md:p-[0.9em]"
                 >
                   {loading ? (
                     <div className="flex flex-row items-center justify-center gap-4">
@@ -238,8 +238,6 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex h-[2px] w-full bg-gray/10 md:hidden" />
-
         <div className="flex flex-row items-center justify-center gap-8 md:flex-col md:items-end md:justify-end md:gap-16">
           <ul className="order-2 flex w-fit flex-row justify-between gap-4 md:order-1 md:w-full md:gap-2 lg:flex">
             {SocialLinksData.map(({ id, icon, ariaLabel, url }) => (
@@ -248,13 +246,13 @@ export default function Footer() {
                 href={url}
                 target="_blank"
                 aria-label={ariaLabel}
-                className="text-text flex items-center justify-center"
+                className="flex h-6 w-6 items-center justify-center text-text hover:text-primary md:h-12 md:w-12"
               >
                 {icon}
               </a>
             ))}
           </ul>
-          <p className="text-text order-1 flex w-fit flex-row gap-[6px] text-center text-xs md:order-2 md:text-xl">
+          <p className="order-1 flex w-fit flex-row gap-[6px] text-center text-xs text-text md:order-2 md:text-xl">
             © 2023{" "}
             <span className="flex h-fit w-fit font-bold"> Andrei Sager</span>
           </p>

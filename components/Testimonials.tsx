@@ -12,7 +12,7 @@ export default function Testimonials() {
       className=" flex w-full flex-col items-center justify-center gap-12 overflow-hidden bg-background-2 text-center"
     >
       <div className="relative flex w-full max-w-center flex-col items-center justify-between gap-9 px-2 py-12 md:gap-20 md:px-40 md:py-48">
-        <h2 className="text-text z-20 w-full text-center">
+        <h2 className="z-20 w-full text-center text-text">
           What Do My Clients Think?
         </h2>
 
@@ -56,7 +56,7 @@ function TestimonialsRow({ row }: ITestimonialsRow) {
       {row.map(({ id, avatar, name, location, testimonial }) => (
         <li
           key={id}
-          className="bg-glass-2 group relative flex w-full select-none flex-col items-center justify-start gap-5 rounded-[20px] p-5 text-content transition-all duration-500 ease-in-out hover:-translate-y-1 md:min-h-[220px] md:w-[400px] md:p-10 md:hover:-translate-y-4"
+          className="text-content group relative flex w-full select-none flex-col items-center justify-start gap-5 rounded-[20px] bg-glass-2 p-5 transition-all duration-500 ease-in-out hover:-translate-y-1 md:min-h-[220px] md:w-[400px] md:p-10 md:hover:-translate-y-4"
         >
           <div className="flex w-full flex-row items-center justify-between">
             <div className="flex w-full flex-row items-center justify-start gap-3">
@@ -78,7 +78,7 @@ function TestimonialsRow({ row }: ITestimonialsRow) {
             </div>
             <p className="flex justify-end text-sm">⭐⭐⭐⭐⭐</p>
           </div>
-          <p className="flex w-full flex-row gap-4 text-left text-xs font-semibold text-content">
+          <p className="text-content flex w-full flex-row gap-4 text-left text-xs font-semibold">
             ❝{testimonial}❞
           </p>
         </li>
