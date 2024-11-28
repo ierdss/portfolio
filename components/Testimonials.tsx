@@ -43,7 +43,6 @@ interface ITestimonialsRow {
 }
 
 interface ITestimonial {
-  id: number;
   avatar: string;
   name: string;
   location: string;
