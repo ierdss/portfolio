@@ -42,7 +42,6 @@ export const ProjectsData = [
   //   linkCaseStudy: "",
   // },
   {
-    id: 1,
     title: "Roadway Delivery",
     subtitle: "Delivery Service (Landing Page)",
     description:
@@ -53,13 +52,7 @@ export const ProjectsData = [
     mobileAlt: "RWD full page on mobile",
     platformDesktop: true,
     platformMobile: true,
-    tags: [
-      { id: 1, tag: "Next.js" },
-      { id: 2, tag: "Typescript" },
-      { id: 3, tag: "Tailwind" },
-      { id: 4, tag: "CSS" },
-      { id: 5, tag: "HTML" },
-    ],
+    tags: ["Next.js", "Typescript", "Tailwind", "CSS", "HTML"],
     linkRepository: "https://github.com/AndreiSager/road-way-delivery",
     linkLiveDemo: "https://roadwaydelivery.vercel.app",
     linkCaseStudy: "",
@@ -77,12 +70,7 @@ export const ProjectsData = [
     mobileAlt: "",
     platformDesktop: true,
     platformMobile: true,
-    tags: [
-      { id: 1, tag: "next.js" },
-      { id: 2, tag: "cloudinary" },
-      { id: 3, tag: "typescript" },
-      { id: 4, tag: "tailwind" },
-    ],
+    tags: ["next.js", "cloudinary", "typescript", "tailwind"],
     linkRepository:
       "https://github.com/AndreiSager/family-friends_image-gallery",
     linkLiveDemo: "https://remembrance-gallery.vercel.app",

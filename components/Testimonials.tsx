@@ -53,9 +53,9 @@ interface ITestimonial {
 function TestimonialsRow({ row }: ITestimonialsRow) {
   return (
     <ul className="z-20 flex flex-col items-start justify-center gap-2 md:flex-row md:gap-10">
-      {row.map(({ id, avatar, name, location, testimonial }) => (
+      {row.map(({ avatar, name, location, testimonial }, index) => (
         <li
-          key={id}
+          key={index}
           className="text-content group relative flex w-full select-none flex-col items-center justify-start gap-5 rounded-[20px] bg-glass-2 p-5 transition-all duration-500 ease-in-out hover:-translate-y-1 md:min-h-[220px] md:w-[400px] md:p-10 md:hover:-translate-y-4"
         >
           <div className="flex w-full flex-row items-center justify-between">

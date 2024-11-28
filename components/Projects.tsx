@@ -10,9 +10,9 @@ export default function Projects() {
         <h1 className="z-20 w-full text-center text-text">What Have I Done?</h1>
 
         <ul className="flex flex-col gap-12 md:gap-40">
-          {ProjectsData.map((project) => (
+          {ProjectsData.map((project, index) => (
             <FeaturedProjectsCard
-              key={project.id}
+              key={index}
               title={project.title !== null ? project.title : ""}
               subtitle={project.subtitle !== null ? project.subtitle : ""}
               description={
@@ -42,7 +42,7 @@ export default function Projects() {
               linkCaseStudy={
                 project.linkCaseStudy !== null ? project.linkCaseStudy : ""
               }
-              tags={project.tags as TagProps[]}
+              tags={project.tags}
             />
           ))}
         </ul>
@@ -72,12 +72,7 @@ interface FeaturedProjectsCardProps {
   linkRepository?: string;
   linkLiveDemo?: string;
   linkCaseStudy?: string;
-  tags: TagProps[];
-}
-
-interface TagProps {
-  id: number;
-  tag: string;
+  tags: Array<string>;
 }
 
 function FeaturedProjectsCard({
@@ -133,9 +128,9 @@ function FeaturedProjectsCard({
         </div>
         <ul className="text-text2 flex flex-row flex-wrap gap-2">
           {tags.length !== 0 &&
-            tags.map((tag) => (
-              <li key={tag.id} className="border-gray1 rounded-full border">
-                <p className="px-4 py-1 text-xs capitalize">{tag.tag}</p>
+            tags.map((tag, index) => (
+              <li key={index} className="border-gray1 rounded-full border">
+                <p className="px-4 py-1 text-xs capitalize">{tag}</p>
               </li>
             ))}
         </ul>

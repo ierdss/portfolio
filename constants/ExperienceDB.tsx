@@ -18,6 +18,22 @@ export const ExperiencesData = [
       "Integrated third-party APIs to deliver real-time data updates and interactive user experiences.",
     ],
   },
+  {
+    icon: <SiNextdotjs className="scale-150" />,
+    iconStyle: { background: "#252131", color: "#F4F5F8" },
+    title: "Next.js Developer",
+    subtitle: "TechLoom",
+    date: "March 2024 - Present",
+    tags: ["Next.js", "Typescript", "Tailwind", "CSS", "HTML"],
+    bullets: [
+      "Developed and maintained custom web applications using Next.js to improve user experiences for TechLoom’s SaaS products.",
+      "Collaborated with cross-functional teams including designers, product managers, and developers to create high-quality, user-centered features.",
+      "Implemented responsive design and optimized applications for cross-browser compatibility and performance.",
+      "Participated in code reviews, providing feedback to ensure clean, maintainable, and efficient code.",
+      "Leveraged Next.js’s SSR capabilities to enhance SEO and load times for client-facing products.",
+      "Integrated third-party APIs to deliver real-time data updates and interactive user experiences.",
+    ],
+  },
   // {
   //   id: 1,
   //   icon: <SiNextdotjs className="scale-150" />,
