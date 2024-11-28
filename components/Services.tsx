@@ -62,7 +62,7 @@ function ServiceCard({ icon, title, description }: IService) {
   return (
     <div
       className={
-        "group/card z-20 flex w-full flex-row gap-6 p-6 transition-all duration-300 ease-out hover:scale-105 hover:text-primary md:min-h-[200px] md:max-w-[360px]"
+        "group/card z-20 flex w-full select-none flex-row gap-6 p-6 transition-all duration-300 ease-out hover:scale-105 hover:text-primary md:min-h-[200px] md:max-w-[360px]"
       }
     >
       <div className="relative z-10 flex h-12 w-12">
