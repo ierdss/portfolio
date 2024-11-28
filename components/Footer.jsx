@@ -214,7 +214,7 @@ export default function Footer() {
 
                 <button
                   type="submit"
-                  className="block w-full min-w-[210px] select-none items-center justify-center rounded-[10px] bg-text p-[1em] font-bold text-background-1 hover:bg-primary hover:brightness-110 md:w-[300px] md:p-[0.9em]"
+                  className="block w-full min-w-[210px] select-none items-center justify-center rounded-[10px] bg-text p-[1em] font-bold text-background-1 hover:bg-primary hover:text-heading hover:brightness-110 md:w-[300px] md:p-[0.9em]"
                 >
                   {loading ? (
                     <div className="flex flex-row items-center justify-center gap-4">
