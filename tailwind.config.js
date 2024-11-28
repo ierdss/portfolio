@@ -79,9 +79,9 @@ module.exports = {
       keyframes: {
         "grow-shrink": {
           "0%, 100%": {
-            transform: "translateY(-50%) translateX(50%)",
+            transform: "translateY(-10%) translateX(10%)",
           },
-          "50%": { transform: "translateY(50%) translateX(-50%)" },
+          "50%": { transform: "translateY(10%) translateX(-10%)" },
         },
       },
     },
