@@ -6,41 +6,35 @@ const iconSize = 48;
 
 export const ServicesData = [
   {
-    id: 1,
     icon: <FaGlobeAsia size={iconSize} />,
     title: "Web Development",
     description:
       "Professional looking web pages made with the best practices, clean code structures and layout responsiveness.",
   },
   {
-    id: 2,
     icon: <IoColorPaletteSharp size={iconSize} />,
     title: "Front-End Development",
     description:
       "Prototyping and design for customer sales conversion. Creating familiarity for users throught UI/UX.",
   },
   {
-    id: 3,
     icon: <RiDatabaseFill size={iconSize} />,
     title: "Back-End Development",
     description:
       "Support and maintenance with the latest backend technologies through code optimization and unit testing.",
   },
   {
-    id: 4,
     icon: <FaMobile size={iconSize} />,
     title: "Mobile Development",
     description:
       "Unified and consistent user experience across various devices. Localized platform design using platform modules for Android, iOS, and Web.",
   },
   // {
-  //   id: 5,
   //   icon: <FaPhoneVolume size={iconSize} />,
   //   title: "Consulting",
   //   description: "I can suggest solutions for your problems.",
   // },
   // {
-  //   id: 6,
   //   icon: <BsMortarboardFill size={iconSize} />,
   //   title: "Mentoring",
   //   description:
@@ -50,28 +44,24 @@ export const ServicesData = [
 
 export const WorkflowData = [
   {
-    id: 1,
     number: "01",
     title: "Content & Layout",
     description:
       "I excel at crafting compelling content and designing layouts that resonate with my target audience. My attention to detail ensures that every piece of content is clear, engaging, and strategically aligned with the overall vision.",
   },
   {
-    id: 2,
     number: "02",
     title: "Prototype & Concept",
     description:
       "I am highly skilled in taking initial ideas and transforming them into tangible prototypes and concepts. My ability to visualize and iterate on concepts ensures that the end product is both innovative and functional.",
   },
   {
-    id: 3,
     number: "03",
     title: "Design &  Development",
     description:
       "My expertise in design and development allows me to seamlessly blend aesthetics with functionality. I create designs that are not only visually appealing but also user-friendly, and my development skills ensure that these designs are brought to life with precision and efficiency.",
   },
   {
-    id: 4,
     number: "04",
     title: "Marketing & Advertising",
     description:

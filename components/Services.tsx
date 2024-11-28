@@ -12,9 +12,9 @@ export default function Services() {
         <div className="z-20 flex w-full flex-col gap-12 md:gap-20 ">
           <h1 className="z-20 w-full text-left text-text">What Do I Offer?</h1>
           <ul className="group/cards flex w-full flex-col flex-wrap items-center justify-between gap-2 md:flex-row">
-            {ServicesData.map(({ id, icon, title, description }) => (
+            {ServicesData.map(({ icon, title, description }, index) => (
               <ServiceCard
-                key={id}
+                key={index}
                 icon={icon}
                 title={title}
                 description={description}
@@ -23,7 +23,7 @@ export default function Services() {
           </ul>
         </div>
 
-        <div className="z-20 flex flex-col gap-12 md:gap-20 ">
+        {/* <div className="z-20 flex flex-col gap-12 md:gap-20 ">
           <h2 className="text-center text-text">How Do I Get The Job Done?</h2>
           <ul className="flex w-full flex-col flex-wrap items-center justify-between gap-2 md:flex-row md:gap-24">
             {WorkflowData.map(({ id, number, title, description }) => (
@@ -35,7 +35,7 @@ export default function Services() {
               />
             ))}
           </ul>
-        </div>
+        </div> */}
 
         {/* Background Mist Effects */}
         <div className="absolute left-0 top-0 -translate-x-[30%] -translate-y-[30%]">
