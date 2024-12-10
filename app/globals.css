@@ -136,6 +136,9 @@ html {
 .navbar--scrolled {
   @apply bg-background-1 shadow-lg;
 }
+.navbar--scrolled > Link {
+  @apply bg-transparent shadow-lg;
+}
 .navbar--scrolled .navbar-logo {
   @apply text-slate-500 hover:text-primary;
 }
@@ -144,7 +147,6 @@ html {
 }
 
 /* Hero Section  */
-
 .hero__squares {
   position: absolute;
   top: 0;
@@ -256,4 +258,33 @@ html {
     border-radius: 50%;
     filter: brightness(100%);
   }
+}
+
+/* Hover Blob Effect */
+.label {
+  position: relative;
+  transition: color 0.3s ease-out;
+  z-index: 1;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 225%;
+  min-height: 225%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: rgba(var(--primary));
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease-out;
+}
+
+/* hover styles */
+.btn:hover .label {
+  color: white;
+}
+
+.btn:hover .bg {
+  transform: translate(-50%, -50%) scale(1);
 }
