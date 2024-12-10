@@ -1,13 +1,13 @@
 "use client";
 
-import { Fragment, useRef, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
+import { Fragment, useRef, useState } from "react";
 
 import emailjs from "@emailjs/browser";
 import "dotenv/config";
 
-import HashLoader from "react-spinners/HashLoader";
 import { SocialLinksData } from "@/constants";
+import HashLoader from "react-spinners/HashLoader";
 
 export default function Footer() {
   const formRef = useRef();
@@ -99,7 +99,7 @@ export default function Footer() {
   return (
     <footer
       id="footer"
-      className="flex w-full flex-col items-center justify-center bg-background-1"
+      className="relative flex w-full flex-col items-center justify-center bg-background-1"
     >
       <div className="flex w-full max-w-center flex-col justify-between gap-12 px-2 py-12 md:flex-row md:px-40 md:py-24">
         <Transition appear show={isOpen} as={Fragment}>
@@ -156,7 +156,7 @@ export default function Footer() {
           </Dialog>
         </Transition>
 
-        <div className="flex flex-col gap-9 md:gap-20">
+        <div className="z-10 flex flex-col gap-9 md:gap-20">
           <div className="flex flex-col gap-3">
             <h2 className="w-full text-left text-text">
               Reaching goals relentlessly!
@@ -238,7 +238,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-row items-center justify-center gap-8 md:flex-col md:items-end md:justify-end md:gap-16">
+        <div className="z-10 flex flex-row items-center justify-center gap-8 md:flex-col md:items-end md:justify-end md:gap-16">
           <ul className="order-2 flex w-fit flex-row justify-between gap-4 md:order-1 md:w-full md:gap-2 lg:flex">
             {SocialLinksData.map(({ id, icon, ariaLabel, url }) => (
               <a
@@ -258,6 +258,20 @@ export default function Footer() {
           </p>
         </div>
       </div>
+
+      {/* Animated Lavalamp Squares */}
+      <ul className="hero__squares">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </footer>
   );
 }
