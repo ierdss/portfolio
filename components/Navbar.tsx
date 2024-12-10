@@ -1,26 +1,25 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
-import React from "react";
-import { useTheme } from "next-themes";
-
-import { useScroll, useSpring, motion, useCycle } from "framer-motion";
-import NavbarToggle from "./NavbarToggle";
+import { SocialLinksData } from "@/constants";
 import { useDimensions } from "@/src/useDimensions";
+import { motion, useCycle, useScroll, useSpring } from "framer-motion";
+import { useTheme } from "next-themes";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FaSun } from "react-icons/fa";
-import { SocialLinksData } from "@/constants";
+import NavbarToggle from "./NavbarToggle";
 
 export default function Navbar() {
+  // Scroll Progress
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
     restDelta: 0.001,
   });
-
   useEffect(() => {
+    // On scroll function
     const onScroll = () => {
       const navbar = document.getElementById("navbar")!;
       const distance = 50;
@@ -31,12 +30,24 @@ export default function Navbar() {
       }
     };
     window.addEventListener("scroll", onScroll);
+    // Blob animation on hovering link
+    const buttons = document.querySelectorAll<HTMLDivElement>(".btn");
+    buttons.forEach((btn) => {
+      const bg = btn.querySelector<HTMLDivElement>(".bg");
+      if (bg) {
+        const handleOrigin = (e: MouseEvent): void => {
+          bg.style.left = `${e.pageX - btn.offsetLeft}px`;
+          bg.style.top = `${e.pageY - btn.offsetTop}px`;
+        };
+        btn.addEventListener("mouseenter", handleOrigin);
+        btn.addEventListener("mouseleave", handleOrigin);
+      }
+    }, []);
   }, []);
-
+  // Mobile Navbar
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
-
   return (
     <nav
       id="navbar"
@@ -44,15 +55,15 @@ export default function Navbar() {
     >
       {/* Measures the scroll progress on the page. */}
       <motion.div
-        className="bg-primary fixed left-0 right-0 top-0 h-1 origin-top-left"
+        className="fixed left-0 right-0 top-0 h-1 origin-top-left bg-primary"
         style={{ scaleX }}
       />
 
       <div className="flex w-full items-center justify-between gap-10 md:gap-16 lg:max-w-center">
         <Link href="#" className="group w-fit max-w-[350px] md:w-full">
-          <h3 className="text-primary relative w-fit ">
+          <h3 className="relative w-fit text-primary ">
             ANDREI
-            <span className="absolute bottom-1 left-0 h-0 w-full border-t-4 border-secondary-red transition-all duration-500 ease-in-out md:bottom-2" />
+            <span className="border-secondary-red absolute bottom-1 left-0 h-0 w-full border-t-4 transition-all duration-500 ease-in-out md:bottom-2" />
           </h3>
         </Link>
         <div className="flex flex-row items-center justify-center gap-12">
@@ -62,10 +73,10 @@ export default function Navbar() {
                 key={id}
                 href={href}
                 data-to-scrollspy-id={id}
-                className="target:text-primary text-text group relative my-3 block rounded-[10px] px-4 py-3 text-sm font-bold capitalize"
+                className="btn group relative my-3 block cursor-pointer overflow-hidden rounded-[40px] bg-transparent px-4 py-3 text-sm font-bold capitalize text-text target:text-primary"
               >
-                {/* Add a blob mergin animation here */}
-                {text}
+                <span className="label">{text}</span>
+                <span className="bg" />
               </Link>
             ))}
           </ul>
@@ -75,7 +86,7 @@ export default function Navbar() {
           <Link
             href="#footer"
             data-to-scrollspy-id={6}
-            className="bg-text hidden w-full select-none flex-row items-center justify-center gap-[0.6em] rounded-[10px] p-[1.2em] px-4 text-center text-xs font-bold text-background-1 hover:brightness-110 md:flex md:w-[300px] md:min-w-[210px] md:p-[0.9em] md:text-base"
+            className="hidden w-full select-none flex-row items-center justify-center gap-[0.6em] rounded-[10px] bg-text p-[1.2em] px-4 text-center text-xs font-bold text-background-1 hover:brightness-110 md:flex md:w-[300px] md:min-w-[210px] md:p-[0.9em] md:text-base"
           >
             Contact Me
           </Link>
@@ -113,7 +124,7 @@ export default function Navbar() {
       >
         <motion.ul
           variants={links}
-          className="text-text my-12 flex w-full flex-col gap-6 text-center lg:hidden"
+          className="my-12 flex w-full flex-col gap-6 text-center text-text lg:hidden"
         >
           {NavLinks.map(({ id, href, text }) => (
             <motion.a
@@ -123,7 +134,7 @@ export default function Navbar() {
               href={href}
               data-to-scrollspy-id={id}
               onClick={() => toggleOpen()}
-              className="text-text group py-4"
+              className="group py-4 text-text"
             >
               {text}
             </motion.a>
@@ -138,7 +149,7 @@ export default function Navbar() {
                 href={url}
                 target="_blank"
                 aria-label={ariaLabel}
-                className="text-text flex items-center justify-center"
+                className="flex items-center justify-center text-text"
               >
                 {icon}
               </a>
@@ -164,7 +175,7 @@ function ThemePicker() {
   }
 
   return (
-    <div className="text-text mr-4 md:mr-0">
+    <div className="mr-4 text-text md:mr-0">
       {theme === "light" ? (
         <FaSun
           onClick={() => setTheme("dark")}
