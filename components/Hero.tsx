@@ -1,12 +1,12 @@
 "use client";
 
-import { useEffect } from "react";
 import Image from "next/image";
+import { useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
 
+import { SocialLinksData } from "@/constants";
 import { FaGithub } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
-import { SocialLinksData } from "@/constants";
 
 export default function Hero() {
   useEffect(() => {
@@ -21,7 +21,6 @@ export default function Hero() {
       });
     });
   }, []);
-
   return (
     <div
       id="hero"
@@ -39,7 +38,7 @@ export default function Hero() {
         </div>
 
         <div className="z-20 order-1 flex w-full shrink-0 flex-col items-center justify-center gap-4 text-center md:w-[50%] md:items-start md:gap-20 md:text-left">
-          <h5 className="text-text w-full">
+          <h5 className="w-full text-text">
             Hi, I'm <span className="text-redberry">Andrei Sager</span>, I Am a
             <br />
             <TypeAnimation
@@ -60,7 +59,7 @@ export default function Hero() {
             />
           </h5>
 
-          <div className="text-text relative flex flex-col items-start justify-center">
+          <div className="relative flex flex-col items-start justify-center text-text">
             <p className="">I make</p>
             <div className="ml-[-5px] md:ml-[-10px]">
               <h1 className="claim ml-[-2px] !font-normal ">BIGGER</h1>
@@ -81,7 +80,7 @@ export default function Hero() {
                   href={url}
                   target="_blank"
                   aria-label={ariaLabel}
-                  className="text-text flex items-center justify-center"
+                  className="flex items-center justify-center text-text"
                 >
                   {icon}
                 </a>
@@ -101,7 +100,7 @@ export default function Hero() {
               href="https://github.com/AndreiSager/files/blob/495a5a1c5238bc0de0bd23ee95d40821accaf439/curriculum_vitae-no_photo.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-text border-text flex w-full select-none flex-row items-center justify-center gap-[0.6em] rounded-[10px] border bg-transparent p-[1.2em] text-center text-xs font-bold hover:border-redberry hover:text-redberry hover:brightness-110 md:min-w-[210px] md:max-w-[300px] md:p-[0.9em] md:text-base"
+              className="flex w-full select-none flex-row items-center justify-center gap-[0.6em] rounded-[10px] border border-text bg-transparent p-[1.2em] text-center text-xs font-bold text-text hover:border-redberry hover:text-redberry hover:brightness-110 md:min-w-[210px] md:max-w-[300px] md:p-[0.9em] md:text-base"
             >
               <FaGithub size={30} className="h-5 w-5 md:h-8 md:w-8" />
               <p>View CV</p>
