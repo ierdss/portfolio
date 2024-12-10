@@ -101,7 +101,7 @@ export default function Footer() {
       id="footer"
       className="relative flex w-full flex-col items-center justify-center bg-background-1"
     >
-      <div className="flex w-full max-w-center flex-col justify-between gap-12 px-2 py-12 md:flex-row md:px-40 md:py-24">
+      <div className="relative flex w-full max-w-center flex-col justify-between gap-12 px-2 py-12 md:flex-row md:px-40 md:py-24">
         <Transition appear show={isOpen} as={Fragment}>
           <Dialog as="div" className="relative z-50" onClose={closeModal}>
             <Transition.Child
@@ -257,21 +257,21 @@ export default function Footer() {
             <span className="flex h-fit w-fit font-bold"> Andrei Sager</span>
           </p>
         </div>
-      </div>
 
-      {/* Animated Lavalamp Squares */}
-      <ul className="hero__squares">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+        {/* Animated Lavalamp Squares */}
+        <ul className="hero__squares">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
     </footer>
   );
 }
