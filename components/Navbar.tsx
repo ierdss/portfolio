@@ -30,19 +30,27 @@ export default function Navbar() {
       }
     };
     window.addEventListener("scroll", onScroll);
-    // Blob animation on hovering link
     const buttons = document.querySelectorAll<HTMLDivElement>(".btn");
     buttons.forEach((btn) => {
       const bg = btn.querySelector<HTMLDivElement>(".bg");
       if (bg) {
         const handleOrigin = (e: MouseEvent): void => {
-          bg.style.left = `${e.pageX - btn.offsetLeft}px`;
-          bg.style.top = `${e.pageY - btn.offsetTop}px`;
+          const rect = btn.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          bg.style.left = `${x}px`;
         };
-        btn.addEventListener("mouseenter", handleOrigin);
+        btn.addEventListener("mousemove", handleOrigin);
         btn.addEventListener("mouseleave", handleOrigin);
+        return () => {
+          btn.removeEventListener("mousemove", handleOrigin);
+          btn.removeEventListener("mouseleave", handleOrigin);
+        };
       }
-    }, []);
+    });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
   }, []);
   // Mobile Navbar
   const [isOpen, toggleOpen] = useCycle(false, true);
