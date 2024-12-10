@@ -136,9 +136,6 @@ html {
 .navbar--scrolled {
   @apply bg-background-1 shadow-lg;
 }
-.navbar--scrolled > Link {
-  @apply bg-transparent shadow-lg;
-}
 .navbar--scrolled .navbar-logo {
   @apply text-slate-500 hover:text-primary;
 }
@@ -266,7 +263,6 @@ html {
   transition: color 0.3s ease-out;
   z-index: 1;
 }
-
 .bg {
   position: absolute;
   top: 0;
@@ -279,12 +275,10 @@ html {
   transform: translate(-50%, -50%) scale(0);
   transition: transform 0.5s ease-out;
 }
-
 /* hover styles */
 .btn:hover .label {
   color: white;
 }
-
 .btn:hover .bg {
   transform: translate(-50%, -50%) scale(1);
 }
