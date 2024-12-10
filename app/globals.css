@@ -4,13 +4,35 @@
 
 @layer base {
   :root {
-    --color-background: 37 33 49;
-    --color-heading: 244 245 248;
-    --color-content: 217 217 217;
-    --color-accent1: 180 65 100;
-    --color-accent2: 151 71 255;
-    --color-accent3: 58 90 215;
-    --color-glass: 25 22 33;
+    height: 100%;
+    --ff:  ;
+  }
+
+  [data-theme="dark"] {
+    --background: 37 33 49;
+    --heading: 244 245 248;
+    --text: 244 245 248;
+
+    --primary: 180 0 64;
+    --accent-1: 180 65 100;
+    --accent-2: 151 71 255;
+    --accent-3: 58 90 215;
+
+    --glass-1: 25 22 33;
+    --glass-2: 25 22 33;
+  }
+  [data-theme="light"] {
+    --background: 244 245 248;
+    --heading: 37 33 49;
+    --text: 37 33 49;
+
+    --primary: 180 0 64;
+    --accent-1: 180 65 100;
+    --accent-2: 151 71 255;
+    --accent-3: 58 90 215;
+
+    --glass-1: 217 217 217;
+    --glass-2: 244 245 248;
   }
   h1 {
     font-weight: 700;
@@ -107,22 +129,21 @@ html {
 }
 
 ::selection {
-  @apply bg-gray text-redberry;
+  @apply bg-gray text-redberry brightness-100;
 }
 
 /* Navbar Section */
 .navbar--scrolled {
-  @apply bg-blackberry shadow-lg;
+  @apply bg-background-1 shadow-lg;
 }
 .navbar--scrolled .navbar-logo {
-  @apply text-slate-500 hover:text-secondary-red;
+  @apply text-slate-500 hover:text-primary;
 }
 .navbar--scrolled span {
   @apply w-0;
 }
 
 /* Hero Section  */
-
 .hero__squares {
   position: absolute;
   top: 0;
@@ -234,4 +255,30 @@ html {
     border-radius: 50%;
     filter: brightness(100%);
   }
+}
+
+/* Hover Blob Effect */
+.label {
+  position: relative;
+  transition: color 0.3s ease-out;
+  z-index: 1;
+}
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 225%;
+  min-height: 225%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: rgba(var(--primary));
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease-out;
+}
+/* hover styles */
+.btn:hover .label {
+  color: white;
+}
+.btn:hover .bg {
+  transform: translate(-50%, -50%) scale(1);
 }

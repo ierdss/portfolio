@@ -4,9 +4,9 @@ export default function About() {
   return (
     <div
       id="about"
-      className="flex-rowitems-center relative flex w-full flex-col items-center justify-center bg-blackberry md:text-left"
+      className="flex-rowitems-center relative flex w-full flex-col items-center justify-center bg-background-1 md:text-left"
     >
-      <div className="max-w-center relative flex w-full flex-col items-center justify-center gap-12 px-2 py-12 md:flex-row md:gap-20 md:px-40 md:pb-24 md:pt-48">
+      <div className="relative flex w-full max-w-center flex-col items-center justify-center gap-12 px-2 py-12 md:flex-row md:gap-20 md:px-40 md:pb-24 md:pt-48">
         <div className="flex w-full max-w-[450px] items-center justify-center overflow-hidden rounded-xl bg-secondary-red">
           <Image
             src="/1styear.jpg"
@@ -18,11 +18,11 @@ export default function About() {
         </div>
 
         <div className="flex w-full max-w-[700px] flex-col gap-8">
-          <h1 className="z-20 w-full text-left text-gray">Who Am I?</h1>
+          <h1 className="text-text z-20 w-full text-left">Who Am I?</h1>
 
-          <div className="font-regular flex flex-col gap-4 text-left text-base normal-case text-content first:text-white">
+          <div className="font-regular flex flex-col gap-4 text-left text-base normal-case text-content">
             <p className="">
-              Hey there! I'm <span className="text-redberry">Andrei Sager</span>
+              Hey there! I'm <span className="text-primary">Andrei Sager</span>
               , a software developer residing in the Philippines. I am a student
               of STI College Sta. Mesa who is currently finishing his Bachelors
               of Science in Computer Science (BSCS) Degree.
