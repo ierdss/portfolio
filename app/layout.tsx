@@ -1,8 +1,8 @@
-import "./globals.css";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import { ThemeProvider } from "next-themes";
 import { Poppins, PT_Serif } from "next/font/google";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import "./globals.css";
 
 const font = Poppins({
   weight: ["400", "500", "600", "700"],
