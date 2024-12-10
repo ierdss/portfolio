@@ -39,11 +39,12 @@ export default function Navbar() {
           const x = e.clientX - rect.left;
           const y = e.clientY - rect.top;
           bg.style.left = `${x}px`;
+          bg.style.top = `${y}px`;
         };
-        btn.addEventListener("mousemove", handleOrigin);
+        btn.addEventListener("mouseenter", handleOrigin);
         btn.addEventListener("mouseleave", handleOrigin);
         return () => {
-          btn.removeEventListener("mousemove", handleOrigin);
+          btn.removeEventListener("mouseenter", handleOrigin);
           btn.removeEventListener("mouseleave", handleOrigin);
         };
       }
