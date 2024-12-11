@@ -2,6 +2,7 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import { BiLogoJavascript, BiLogoSass, BiLogoTypescript } from "react-icons/bi";
 import { FaCss3Alt, FaHtml5, FaReact } from "react-icons/fa";
+import { GrGraphQl } from "react-icons/gr";
 import { IoLogoMarkdown } from "react-icons/io5";
 import {
   SiNextdotjs,
@@ -9,7 +10,6 @@ import {
   SiTailwindcss,
   SiVercel,
 } from "react-icons/si";
-import { GrGraphQl } from "react-icons/gr";
 
 export default function Skills() {
   const iconSize = 50;
@@ -20,7 +20,7 @@ export default function Skills() {
       className="flex w-full flex-col items-center justify-center overflow-hidden bg-background-2"
     >
       <div className="relative flex w-full max-w-center flex-col items-center justify-between gap-12 px-2 py-12 md:gap-20 md:px-40 md:py-48">
-        <h2 className="text-text z-20 w-full text-center">
+        <h2 className="z-20 w-full text-center text-text">
           The Technologies I Use
           <br className="hidden md:flex" /> To Create My Works
         </h2>
@@ -32,7 +32,7 @@ export default function Skills() {
             play={true}
             direction={"left"}
             loop={0}
-            pauseOnHover={false}
+            pauseOnHover={true}
             speed={100}
             autoFill={true}
           >
@@ -85,7 +85,7 @@ export default function Skills() {
             play={true}
             direction={"right"}
             loop={0}
-            pauseOnHover={false}
+            pauseOnHover={true}
             speed={100}
             autoFill={true}
           >
@@ -148,7 +148,7 @@ export default function Skills() {
             play={true}
             direction={"left"}
             loop={0}
-            pauseOnHover={false}
+            pauseOnHover={true}
             speed={100}
             autoFill={true}
           >
