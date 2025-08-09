@@ -77,7 +77,7 @@ export default function Navbar() {
         </Link>
         <div className="flex flex-row items-center justify-center gap-12">
           <ul className="hidden flex-row gap-5 lg:flex">
-            {NavLinks.map(({ id, href, text }) => (
+            {Pages.map(({ id, href, text }) => (
               <Link
                 key={id}
                 href={href}
@@ -135,7 +135,7 @@ export default function Navbar() {
           variants={links}
           className="my-12 flex w-full flex-col gap-6 text-center text-text lg:hidden"
         >
-          {NavLinks.map(({ id, href, text }) => (
+          {Pages.map(({ id, href, text }) => (
             <motion.a
               variants={link}
               key={id}
@@ -200,35 +200,10 @@ function ThemePicker() {
   );
 }
 
-// URLs
-const NavLinks = [
-  { id: "1", href: "#services", text: "Services" },
-  { id: "2", href: "#about", text: "About" },
-  { id: "3", href: "#experience", text: "Experience" },
-  { id: "4", href: "#skills", text: "Skills" },
-  { id: "5", href: "#projects", text: "Projects" },
-  { id: "6", href: "#testimonials", text: "Testimonials" },
-];
-
-const SocialMediaLinks = [
-  {
-    id: 1,
-    title: "Gmail",
-    ariaLabel: "Send me an email!",
-    url: "mailto:andreiwork25@gmail.com",
-  },
-  {
-    id: 2,
-    title: "LinkedIn",
-    ariaLabel: "Take a look at my work profile on LinkedIn.",
-    url: "https://www.linkedin.com/in/andrei-sager-34a452265/",
-  },
-  {
-    id: 3,
-    title: "Github",
-    ariaLabel: "Check out my projects from my GitHub repository!",
-    url: "https://github.com/AndreiSager",
-  },
+const Pages = [
+  { id: 1, href: "/", text: "Home" },
+  { id: 2, href: "/projects", text: "Projects" },
+  { id: 3, href: "/resume", text: "Resume" },
 ];
 
 // Animations
