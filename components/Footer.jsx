@@ -257,20 +257,6 @@ export default function Footer() {
             <span className="flex h-fit w-fit font-bold"> Andrei Sager</span>
           </p>
         </div>
-
-        {/* Animated Lavalamp Squares */}
-        <ul className="hero__squares">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
       </div>
     </footer>
   );
