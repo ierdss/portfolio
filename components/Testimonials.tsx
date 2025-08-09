@@ -85,3 +85,13 @@ function TestimonialsRow({ row }: ITestimonialsRow) {
     </ul>
   );
 }
+
+// TODO: Add marquee to testimonials.
+// <Marquee
+//   play={true}
+//   direction={"left"}
+//   loop={0}
+//   pauseOnHover={true}
+//   speed={100}
+//   autoFill={true}
+// ></Marquee>
