@@ -40,6 +40,8 @@ export default function Hero() {
             Hi, I'm <span className="text-redberry">Andrei Sager</span>, I Am a
             <br />
             Frontend Web Developer
+            <br />
+            Based in the Philippines
           </h5>
 
           <div className="relative flex flex-col items-start justify-center text-text">
