@@ -60,19 +60,6 @@ export default function Hero() {
           </h5>
 
           <div className="relative flex flex-col items-start justify-center text-text">
-            <p className="">I make</p>
-            <div className="ml-[-5px] md:ml-[-10px]">
-              <h1 className="claim ml-[-2px] !font-normal ">BIGGER</h1>
-              <h1 className="claim ml-[-1px] md:ml-0">BOLDER</h1>
-              <h1 className="claim ml-[-4px] mt-[-3px] font-mono md:ml-[-7px] md:mt-[-5px]">
-                BETTER
-              </h1>
-            </div>
-
-            <p className="sectionLeading max-w-md !text-center md:!text-left">
-              websites that are hard to ignore.
-            </p>
-
             <ul className="absolute -left-[120px] top-0 order-2 hidden w-fit flex-col justify-between gap-8 md:flex ">
               {SocialLinksData.map(({ id, icon, ariaLabel, url }) => (
                 <a
@@ -88,13 +75,6 @@ export default function Hero() {
             </ul>
           </div>
           <div className="flex w-full items-center justify-center gap-2 md:justify-start md:gap-4">
-            <a
-              href="#projects"
-              className="flex w-full flex-row items-center justify-center gap-[0.6em] rounded-[10px] bg-redberry p-[1.2em] text-center text-xs font-bold text-gray hover:brightness-110 md:w-[300px] md:min-w-[210px] md:p-[0.9em] md:text-base"
-            >
-              <SiMinutemailer size={30} className="h-5 w-5 md:h-8 md:w-8" />
-              <p>See Projects</p>
-            </a>
             <a
               download={true}
               href="https://github.com/AndreiSager/files/blob/495a5a1c5238bc0de0bd23ee95d40821accaf439/curriculum_vitae-no_photo.pdf"
