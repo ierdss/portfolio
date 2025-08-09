@@ -69,12 +69,6 @@ export default function Navbar() {
       />
 
       <div className="flex w-full items-center justify-between gap-10 md:gap-16 lg:max-w-center">
-        <Link href="#" className="group w-fit max-w-[350px] md:w-full">
-          <h3 className="relative w-fit text-primary ">
-            ANDREI
-            <span className="border-secondary-red absolute bottom-1 left-0 h-0 w-full border-t-4 transition-all duration-500 ease-in-out md:bottom-2" />
-          </h3>
-        </Link>
         <div className="flex flex-row items-center justify-center gap-12">
           <ul className="hidden flex-row gap-5 lg:flex">
             {Pages.map(({ id, href, text }) => (
