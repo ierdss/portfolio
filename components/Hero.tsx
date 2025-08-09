@@ -2,11 +2,9 @@
 
 import Image from "next/image";
 import { useEffect } from "react";
-import { TypeAnimation } from "react-type-animation";
 
 import { SocialLinksData } from "@/constants";
 import { FaGithub } from "react-icons/fa";
-import { SiMinutemailer } from "react-icons/si";
 
 export default function Hero() {
   useEffect(() => {
@@ -41,22 +39,7 @@ export default function Hero() {
           <h5 className="w-full text-text">
             Hi, I'm <span className="text-redberry">Andrei Sager</span>, I Am a
             <br />
-            <TypeAnimation
-              preRenderFirstString={true}
-              sequence={[
-                // Same substring at the start will only be typed once, initially
-                "Software Developer",
-                4000,
-                "Front-End Designer",
-                4000,
-                "Writer",
-                4000,
-              ]}
-              speed={30}
-              deletionSpeed={30}
-              style={{ fontSize: "1.4em" }}
-              repeat={Infinity}
-            />
+            Frontend Web Developer
           </h5>
 
           <div className="relative flex flex-col items-start justify-center text-text">
