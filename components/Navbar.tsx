@@ -86,13 +86,6 @@ export default function Navbar() {
         </div>
         <div className="flex max-w-[350px] flex-row items-center justify-center gap-12">
           <ThemePicker />
-          <Link
-            href="#footer"
-            data-to-scrollspy-id={6}
-            className="hidden w-full select-none flex-row items-center justify-center gap-[0.6em] rounded-[10px] bg-text p-[1.2em] px-4 text-center text-xs font-bold text-background-1 hover:brightness-110 md:flex md:w-[300px] md:min-w-[210px] md:p-[0.9em] md:text-base"
-          >
-            Contact Me
-          </Link>
         </div>
       </div>
 
