@@ -21,10 +21,8 @@ export default function Home() {
     >
       <main className="flex w-full flex-col items-center justify-center">
         <Hero />
-        <Services />
-        <About />
-        <Experience />
         <Skills />
+        <Experience />
         <Projects />
         <Testimonials />
       </main>
