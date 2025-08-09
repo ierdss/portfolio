@@ -15,9 +15,6 @@ export default function Projects() {
               key={index}
               title={project.title !== null ? project.title : ""}
               subtitle={project.subtitle !== null ? project.subtitle : ""}
-              description={
-                project.description !== null ? project.description : ""
-              }
               desktopThumbnail={
                 project.desktopThumbnail !== null
                   ? project.desktopThumbnail

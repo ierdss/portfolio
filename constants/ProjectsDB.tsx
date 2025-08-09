@@ -3,7 +3,6 @@
 //   id: 0,
 //   title: "",
 //   subtitle: "",
-//   description: "",
 //   desktopThumbnail: "",
 //   desktopAlt: "",
 //   mobileThumbnail: "",
@@ -44,8 +43,6 @@ export const ProjectsData = [
   {
     title: "Roadway Delivery",
     subtitle: "Delivery Service (Landing Page)",
-    description:
-      "Roadway Delivery Service is a leading logistics company revolutionizing the industry with fast, reliable road transportation solutions. We specialize in secure, on-time deliveries for customers and businesses across local and regional destinations.",
     desktopThumbnail: "/thumbnails/road-way-delivery.jpg",
     desktopAlt: "RWD full page on desktop",
     mobileThumbnail: "",
@@ -57,13 +54,10 @@ export const ProjectsData = [
     linkLiveDemo: "https://roadwaydelivery.vercel.app",
     linkCaseStudy: "",
   },
-
   {
     id: 2,
     title: "Commemoration Gallery",
     subtitle: "Image Gallery",
-    description:
-      "A simple and quick to setup image gallery created from a Next.js template. Although I did use a template, I still had to make major changes and learn cloudinary. It took me a week to make the gallery support portrait images.",
     desktopThumbnail: "/thumbnails/remembrance-gallery.png",
     desktopAlt: "",
     mobileThumbnail: "",
@@ -82,8 +76,6 @@ export const ProjectsData = [
 //   id: 0,
 //   title: "Lorebuilder",
 //   subtitle: "World Building",
-//   description:
-//     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
 //   desktopThumbnail: "",
 //   desktopAlt: "Lorebuilder On Desktop",
 //   mobileThumbnail: "",
@@ -99,8 +91,6 @@ export const ProjectsData = [
 //   id: 1,
 //   title: "Samura",
 //   subtitle: "e-commerce shop",
-//   description:
-//     "An online shop that sells a lot of products. It also has a dashboard for the seller and the user. Sellers can effortlessly manage their inventory, track orders, and engage with customers, while users can easily track their purchases, manage their profiles, and explore personalized recommendations.",
 //   desktopThumbnail: "",
 //   desktopAlt: "Samura On Desktop",
 //   mobileThumbnail: "",
@@ -121,8 +111,6 @@ export const ProjectsData = [
 //   id: 2,
 //   title: "Bridge",
 //   subtitle: "Social Platform",
-//   description:
-//     "Bridge is an all-in-one communication app designed to seamlessly connect you with friends and loved ones. With Bridge, you can effortlessly send messages to users and join engaging voice chats fostering meaningful conversations. Elevate your interactions with face-to-face connections through high-quality video calls, making every conversation feel personal and authentic. Stay connected like never before with Bridge – where messaging, voice chats, and video calls come together in one intuitive platform.",
 //   desktopThumbnail: "/projects-thumbnails/bridge__compressed-desktop.jpg",
 //   desktopAlt: "RWD full page on desktop",
 //   mobileThumbnail: "/projects-thumbnails/bridge__compressed-mobile.jpg",
@@ -143,8 +131,6 @@ export const ProjectsData = [
 //   id: 3,
 //   title: "Roadway Delivery (App)",
 //   subtitle: "Social Platform",
-//   description:
-//     "Bridge is an all-in-one communication app designed to seamlessly connect you with friends and loved ones. With Bridge, you can effortlessly send messages to users and join engaging voice chats fostering meaningful conversations. Elevate your interactions with face-to-face connections through high-quality video calls, making every conversation feel personal and authentic. Stay connected like never before with Bridge – where messaging, voice chats, and video calls come together in one intuitive platform.",
 //   desktopThumbnail: "",
 //   desktopAlt: "RWD full page on desktop",
 //   mobileThumbnail: "",
@@ -166,8 +152,6 @@ export const ProjectsData = [
 //   id: 0,
 //   title: "Marked A.I.",
 //   subtitle: "Artificial Intelligence",
-//   description:
-//     "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque vitae magni maxime expedita, ea facilis modi incidunt quisquam corrupti velit! Similique eaque voluptas repudiandae iste aperiam consequatur accusantium porro nihil.",
 //   desktopThumbnail:
 //     "/projects-thumbnails/road-way-delivery__compressed-desktop.jpg",
 //   desktopAlt: "RWD full page on desktop",
@@ -189,8 +173,6 @@ export const ProjectsData = [
 //   id: 1,
 //   title: "Shoutcaster",
 //   subtitle: "Video Sharing",
-//   description:
-//     "Welcome to Shoutcaster, our dedicated podcast platform, the ultimate destination for immersive audio experiences. Discover a world of knowledge, stories, and insights as you explore a diverse array of podcasts on our platform. Whether you're into captivating storytelling, thought-provoking discussions, or expert interviews, our platform offers a curated selection to cater to every interest. Immerse yourself in a universe of sound, where ideas and narratives come to life, all in one convenient podcast-exclusive platform.",
 //   desktopThumbnail:
 //     "/projects-thumbnails/road-way-delivery__compressed-desktop.jpg",
 //   desktopAlt: "RWD full page on desktop",
@@ -212,8 +194,6 @@ export const ProjectsData = [
 //   id: 2,
 //   title: "Roadway Delivery (Landing Page)",
 //   subtitle: "Transport Service",
-//   description:
-//     "Roadway Delivery Service is a leading logistics company revolutionizing the industry with fast, reliable road transportation solutions. We specialize in secure, on-time deliveries for customers and businesses across local and regional destinations.",
 //   desktopThumbnail:
 //     "/projects-thumbnails/road-way-delivery__compressed-desktop.jpg",
 //   desktopAlt: "RWD full page on desktop",
