@@ -10,7 +10,7 @@ export default function Projects() {
       <div className="relative flex w-full max-w-center flex-col items-center justify-center gap-9 py-12 md:gap-48 md:px-36 md:py-48">
         <div className="flex flex-row justify-between">
           <Heading1 text="Featured Projects" />
-          <ViewMoreBtn text="View All Projects" />
+          <ViewMoreBtn text="View All Projects" href="/projects" />
         </div>
 
         <ul className="grid grid-cols-2 gap-12 md:gap-3">
