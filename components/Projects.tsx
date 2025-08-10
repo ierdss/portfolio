@@ -1,4 +1,5 @@
 import { ProjectsData } from "@/constants";
+import Heading1 from "./headings/Heading1";
 
 export default function Projects() {
   return (
@@ -7,7 +8,7 @@ export default function Projects() {
       className="flex h-fit w-full flex-col items-center justify-center gap-12 bg-background-1 sm:px-5 md:text-left"
     >
       <div className="relative flex w-full max-w-center flex-col items-center justify-center gap-9 py-12 md:gap-48 md:px-36 md:py-48">
-        <h1 className="z-20 w-full text-center text-text">What Have I Done?</h1>
+        <Heading1 text="Featured Projects" />
 
         <ul className="flex flex-col gap-12 md:gap-40">
           {ProjectsData.map((project, index) => (

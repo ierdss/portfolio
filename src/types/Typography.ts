@@ -1,0 +1,3 @@
+type HeadingProps = {
+  text: string;
+};
