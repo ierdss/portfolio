@@ -24,7 +24,6 @@ export default function Home() {
         <Skills />
         <Experience />
         <Projects />
-        <Testimonials />
       </main>
     </ScrollSpy>
   );
