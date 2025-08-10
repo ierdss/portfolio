@@ -1,11 +1,12 @@
+import { ExperiencesData } from "@/constants";
 import React from "react";
+import { FaStar } from "react-icons/fa";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { ExperiencesData } from "@/constants";
-import { FaStar } from "react-icons/fa";
+import Heading1 from "./headings/Heading1";
 
 export default function Experiences() {
   const testingVisibility = false;
@@ -16,9 +17,7 @@ export default function Experiences() {
       className="flex w-full flex-col items-center justify-center bg-background-1"
     >
       <div className="flex w-full max-w-center flex-col justify-between gap-12 overflow-hidden px-2 py-12 md:gap-20 md:px-40 md:py-24">
-        <h2 className="z-20 w-full text-center text-text">
-          Where Have I Worked?
-        </h2>
+        <Heading1 text="Work Experience" />
 
         <VerticalTimeline className="w-full" lineColor="#B40041">
           {ExperiencesData.map(
