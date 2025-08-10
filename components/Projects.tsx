@@ -13,6 +13,8 @@ export default function Projects() {
           <ViewMoreBtn text="View All Projects" href="/projects" />
         </div>
 
+        <Divider />
+
         <ul className="grid grid-cols-2 gap-12 md:gap-3">
           {ProjectsData.map((project, index) => (
             <FeaturedProjectsCard
@@ -60,6 +62,7 @@ import { IoIosLaptop } from "react-icons/io";
 import { IoGlobe, IoSearchCircle } from "react-icons/io5";
 import { TbExternalLink } from "react-icons/tb";
 import ViewMoreBtn from "./buttons/ViewMoreBtn";
+import Divider from "./divider/Divider";
 
 interface FeaturedProjectsCardProps {
   title: string;
