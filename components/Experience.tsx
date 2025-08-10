@@ -6,6 +6,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import ViewMoreBtn from "./buttons/ViewMoreBtn";
 import Heading1 from "./headings/Heading1";
 
 export default function Experiences() {
@@ -17,7 +18,10 @@ export default function Experiences() {
       className="flex w-full flex-col items-center justify-center bg-background-1"
     >
       <div className="flex w-full max-w-center flex-col justify-between gap-12 overflow-hidden px-2 py-12 md:gap-20 md:px-40 md:py-24">
-        <Heading1 text="Work Experience" />
+        <div className="flex w-full flex-row justify-between">
+          <Heading1 text="Work Experience" />
+          <ViewMoreBtn text="View All Experiences" href="/experiences" />
+        </div>
 
         <VerticalTimeline className="w-full" lineColor="#B40041">
           {ExperiencesData.map(
