@@ -10,7 +10,7 @@ export default function Projects() {
       <div className="relative flex w-full max-w-center flex-col items-center justify-center gap-9 py-12 md:gap-48 md:px-36 md:py-48">
         <Heading1 text="Featured Projects" />
 
-        <ul className="grid grid-cols-2 gap-12 md:gap-40">
+        <ul className="grid grid-cols-2 gap-12 md:gap-6">
           {ProjectsData.map((project, index) => (
             <FeaturedProjectsCard
               key={index}
@@ -89,7 +89,7 @@ function FeaturedProjectsCard({
   tags,
 }: FeaturedProjectsCardProps) {
   return (
-    <div className="flex h-fit w-full flex-col items-center justify-center gap-4 md:gap-20 lg:odd:flex-row-reverse lg:even:flex-row">
+    <div className="flex h-fit w-full flex-col items-center justify-center gap-4 overflow-hidden rounded-3xl md:gap-20 lg:odd:flex-row-reverse lg:even:flex-row">
       <div className="relative aspect-16/11 w-full overflow-hidden">
         <a
           href={linkLiveDemo}
