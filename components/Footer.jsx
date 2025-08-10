@@ -1,14 +1,3 @@
-"use client";
-
-import { Dialog, Transition } from "@headlessui/react";
-import { Fragment, useRef, useState } from "react";
-
-import emailjs from "@emailjs/browser";
-import "dotenv/config";
-
-import { SocialLinksData } from "@/constants";
-import HashLoader from "react-spinners/HashLoader";
-
 export default function Footer() {
   return (
     <footer
