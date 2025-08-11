@@ -141,3 +141,13 @@ export const SkillData = [
 //   icon: <div className="text-react"></div>,
 //   name: "",
 // },
+
+// TODO: Add in the future
+// EJS
+// jQuery
+// Node.js
+// Express.js
+// API
+// Postgres
+// Web3
+// Blockchain
