@@ -3,6 +3,7 @@ import { SiNextdotjs } from "react-icons/si";
 
 export const ExperiencesData = [
   {
+    id: 1,
     icon: <FaReact className="scale-150" />,
     iconStyle: { background: "#1E293B", color: "#61DAFB" },
     title: "Frontend Wordpress Developer",
@@ -12,10 +13,10 @@ export const ExperiencesData = [
     bullets: [
       "Built and delivered custom web solutions for small businesses, optimizing their online presence.",
       "Worked on multiple freelance projects while managing academic responsibilities effectively.",
-      "Enhanced client websites with responsive designs and modern UI/UX practices.",
-      "Developed interactive components using React to streamline user experiences.",
-      "Collaborated with clients to gather requirements and deliver tailored solutions under tight deadlines.",
-      "Gained proficiency in time management and prioritization through balancing academic and work commitments.",
+      // "Enhanced client websites with responsive designs and modern UI/UX practices.",
+      // "Developed interactive components using React to streamline user experiences.",
+      // "Collaborated with clients to gather requirements and deliver tailored solutions under tight deadlines.",
+      // "Gained proficiency in time management and prioritization through balancing academic and work commitments.",
     ],
   },
   // {

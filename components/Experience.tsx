@@ -1,50 +1,65 @@
 import { ExperiencesData } from "@/constants";
+import Link from "next/link";
 import React from "react";
 import ViewMoreBtn from "./buttons/ViewMoreBtn";
 import Divider from "./divider/Divider";
 import Heading1 from "./headings/Heading1";
 
 export default function Experiences() {
+  const Pages = [
+    { id: 1, href: "/", text: "Home" },
+    { id: 2, href: "/projects", text: "Projects" },
+    { id: 3, href: "/resume", text: "Resume" },
+  ];
   return (
     <div
       id="experience"
       className="flex w-full flex-col items-center justify-center bg-background-1"
     >
-      <div className="flex w-full max-w-center flex-col justify-between gap-12 overflow-hidden px-2 py-12 md:gap-20 md:px-40 md:py-24">
+      <div className="flex w-full max-w-center flex-col justify-between gap-24 overflow-hidden px-2 py-12 md:gap-12 md:px-40 md:py-24">
         <div className="flex w-full flex-row justify-between">
           <Heading1 text="Work Experience" />
           <ViewMoreBtn text="View All Experiences" href="/experiences" />
+        </div>
+        <div>
+          <ul className="hidden flex-row gap-5 lg:flex">
+            {Pages.map(({ id, href, text }) => (
+              <Link
+                key={id}
+                href={href}
+                className="btn group relative block cursor-pointer overflow-hidden rounded-[40px] bg-transparent text-sm capitalize text-text target:text-primary"
+              >
+                <span className="label">{text}</span>
+              </Link>
+            ))}
+          </ul>
         </div>
 
         <Divider />
         <ul>
           {ExperiencesData.map(
             (
-              { icon, iconStyle, title, company, date, bullets, tags },
+              { id, icon, iconStyle, title, company, date, bullets, tags },
               index,
             ) => (
-              <li>
+              <li className="flex flex-col gap-5 border-b pb-5" key={id}>
                 <div className="flex flex-row justify-between">
-                  <div className="flex flex-row gap-4">
-                    <h5>
-                      {title} •<span className="text-redberry"> {company}</span>
-                    </h5>
-                  </div>
+                  <h5>
+                    {title} •<span className="text-redberry"> {company}</span>
+                  </h5>
                   <p>{date}</p>
                 </div>
-                <ul className="mt-4 flex flex-row flex-wrap gap-2 text-text">
+                <ul className="flex flex-row flex-wrap gap-2 text-text">
                   {tags.map((tag, index) => (
-                    <li>
-                      <li
-                        key={index}
-                        className="rounded-full border border-text px-4 py-1 text-xs"
-                      >
-                        {tag}
-                      </li>
+                    <li
+                      key={index}
+                      className="rounded-full border border-text px-4 py-1 text-xs"
+                    >
+                      {tag}
                     </li>
                   ))}
                 </ul>
-                <ul className="ml-4 mt-4 list-disc text-text">
+                <ul className="ml-4 list-disc text-text">
                   {bullets.map((bullet, index) => (
                     <li key={index} className="pl-1 text-sm">
                       {bullet}
