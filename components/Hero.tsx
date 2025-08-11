@@ -35,7 +35,7 @@ export default function Hero() {
           /> */}
         </div>
 
-        <div className="z-20 order-1 flex w-full shrink-0 flex-col items-center justify-center gap-4 text-center md:w-[50%] md:items-start md:gap-20 md:text-left">
+        <div className="z-20 order-1 flex w-full shrink-0 flex-col items-center justify-center gap-4 text-center md:w-[50%] md:items-start md:gap-6 md:text-left">
           <p>Hey, Im</p>
           <h1 className="leading-none text-redberry">
             Andrei
@@ -49,31 +49,32 @@ export default function Hero() {
             specializing in Landing Pages & E-commerce Websites
           </p>
 
-          <ul className=" hidden w-fit justify-between gap-8 md:flex ">
-            {SocialLinksData.map(({ id, icon, ariaLabel, url }) => (
+          <div className="flex w-full gap-6">
+            <div className="flex w-full items-center justify-center gap-2 md:justify-start md:gap-4">
               <a
-                key={id}
-                href={url}
+                download={true}
+                href="https://github.com/AndreiSager/files/blob/495a5a1c5238bc0de0bd23ee95d40821accaf439/curriculum_vitae-no_photo.pdf"
                 target="_blank"
-                aria-label={ariaLabel}
-                className="flex items-center justify-center text-text"
+                rel="noopener noreferrer"
+                className="flex w-full select-none flex-row items-center justify-center gap-[0.6em] rounded-[10px] border border-text bg-transparent p-[1.2em] text-center text-xs font-bold text-text hover:border-redberry hover:text-redberry hover:brightness-110 md:min-w-[210px] md:max-w-[300px] md:p-[0.9em] md:text-base"
               >
-                {icon}
+                <FaGithub size={30} className="h-5 w-5 md:h-8 md:w-8" />
+                <p>View CV</p>
               </a>
-            ))}
-          </ul>
-
-          <div className="flex w-full items-center justify-center gap-2 md:justify-start md:gap-4">
-            <a
-              download={true}
-              href="https://github.com/AndreiSager/files/blob/495a5a1c5238bc0de0bd23ee95d40821accaf439/curriculum_vitae-no_photo.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex w-full select-none flex-row items-center justify-center gap-[0.6em] rounded-[10px] border border-text bg-transparent p-[1.2em] text-center text-xs font-bold text-text hover:border-redberry hover:text-redberry hover:brightness-110 md:min-w-[210px] md:max-w-[300px] md:p-[0.9em] md:text-base"
-            >
-              <FaGithub size={30} className="h-5 w-5 md:h-8 md:w-8" />
-              <p>View CV</p>
-            </a>
+            </div>
+            <ul className=" hidden w-fit justify-between gap-8 md:flex ">
+              {SocialLinksData.map(({ id, icon, ariaLabel, url }) => (
+                <a
+                  key={id}
+                  href={url}
+                  target="_blank"
+                  aria-label={ariaLabel}
+                  className="flex items-center justify-center text-text"
+                >
+                  {icon}
+                </a>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
