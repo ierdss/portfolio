@@ -16,7 +16,7 @@ export default function Skills() {
 
         {/* Skill Grid */}
         <div className="z-20 flex w-full flex-col gap-2 md:gap-10">
-          <ul className="z-20 mr-3 flex w-full flex-row flex-wrap justify-between gap-3 md:mr-5 md:gap-5">
+          <ul className="z-20 mr-3 flex w-full flex-row flex-wrap gap-3 md:mr-5 md:gap-5">
             {SkillData.map(({ href, icon, name }, index) => (
               <div
                 className="min-h-52 overflow-hidden rounded-[20px]"

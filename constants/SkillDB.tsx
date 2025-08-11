@@ -130,18 +130,10 @@ export const SkillData = [
     ),
     name: "Figma",
   },
-  {
-    href: "",
-    icon: <div className="text-react"></div>,
-    name: "",
-  },
 ];
 
-//  {
-//     href: "",
-//     icon: (
-//       <div className="text-">
-//       </div>
-//     ),
-//     name: "",
-//   },
+// {
+//   href: "",
+//   icon: <div className="text-react"></div>,
+//   name: "",
+// },
