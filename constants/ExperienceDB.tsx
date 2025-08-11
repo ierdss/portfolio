@@ -3,7 +3,7 @@ import { SiNextdotjs } from "react-icons/si";
 
 export const ExperiencesData = [
   {
-    id: 3,
+    id: 1,
     icon: <FaReact className="scale-150" />,
     iconStyle: { background: "#1E293B", color: "#61DAFB" },
     title: "Working Student",
@@ -35,12 +35,12 @@ export const ExperiencesData = [
     ],
   },
   {
-    id: 1,
+    id: 3,
     icon: <FaReact className="scale-150" />,
     iconStyle: { background: "#1E293B", color: "#61DAFB" },
     title: "Frontend Wordpress Developer",
     company: "Freelance",
-    date: "January 2025 - Present",
+    date: "July 2025 - Present",
     tags: ["React", "JavaScript", "CSS", "HTML"],
     bullets: [
       "Built and delivered custom web solutions for small businesses, optimizing their online presence.",
