@@ -56,10 +56,10 @@ export default function Hero() {
                 href="https://github.com/AndreiSager/files/blob/495a5a1c5238bc0de0bd23ee95d40821accaf439/curriculum_vitae-no_photo.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex w-full select-none flex-row items-center justify-center gap-[0.6em] rounded-[10px] border border-text bg-transparent p-[1.2em] text-center text-xs font-bold text-text hover:border-redberry hover:text-redberry hover:brightness-110 md:min-w-[210px] md:max-w-[300px] md:p-[0.9em] md:text-base"
+                className="text-primary-foreground shadow-xs [&_svg:not([class*='size-'])]:size-4 focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive has-[>svg]:px-3 inline-flex h-9 shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-text px-4 py-2 text-sm font-medium text-background-1 outline-none transition-all hover:bg-primary/90 focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0"
               >
-                <FaGithub size={30} className="h-5 w-5 md:h-8 md:w-8" />
-                <p>View CV</p>
+                <FaGithub />
+                <p>Resume</p>
               </a>
             </div>
             <ul className=" hidden w-fit justify-between gap-8 md:flex ">
