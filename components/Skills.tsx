@@ -9,6 +9,7 @@ import {
   SiTailwindcss,
   SiVercel,
 } from "react-icons/si";
+import Divider from "./divider/Divider";
 import Heading1 from "./headings/Heading1";
 
 export default function Skills() {
@@ -19,8 +20,11 @@ export default function Skills() {
       id="skills"
       className="j/saustify-center flex w-full flex-col items-center overflow-hidden bg-background-2"
     >
-      <div className="relative flex w-full max-w-center flex-col items-center justify-between gap-12 px-2 py-12 md:gap-20 md:px-40 md:py-48">
-        <Heading1 text="Skills and Technologies" />
+      <div className="flex w-full max-w-center flex-col gap-12 px-2 py-12 text-left md:gap-20 md:px-40 md:py-48">
+        <div className="flex w-full ">
+          <Heading1 text="Skills and Technologies" />
+        </div>
+        <Divider />
 
         {/* Skill Stack */}
         <div className="z-20 flex w-[3000px] flex-col gap-2 [mask-image:radial-gradient(circle,#000_50%,transparent_90%)] md:gap-10">
