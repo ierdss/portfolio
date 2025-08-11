@@ -49,7 +49,7 @@ export default function Hero() {
             specializing in Landing Pages & E-commerce Websites
           </p>
 
-          <div className="flex w-full gap-6">
+          <div className="flex justify-start gap-6">
             <div className="flex w-full items-center justify-center gap-2 md:justify-start md:gap-4">
               <a
                 download={true}
