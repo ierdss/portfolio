@@ -20,7 +20,7 @@ export default function Skills() {
             {SkillData.map(({ href, icon, name }, index) => (
               <div
                 className="min-h-52 overflow-hidden rounded-[20px]"
-                key={`${index}skill`}
+                key={`${index}${name}`}
               >
                 <a href={href} target="_blank" className="skill-card">
                   {icon}
