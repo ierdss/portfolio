@@ -96,8 +96,8 @@ function FeaturedProjectsCard({
   tags,
 }: FeaturedProjectsCardProps) {
   return (
-    <div className="flex aspect-video h-fit w-full flex-col items-center justify-center gap-4 overflow-hidden rounded-3xl md:gap-20 lg:odd:flex-row-reverse lg:even:flex-row">
-      <div className="relative aspect-16/11 w-full overflow-hidden">
+    <div className="aspect-16/10 flex h-full w-full flex-col items-center justify-center gap-4 overflow-hidden rounded-3xl md:gap-20 lg:odd:flex-row-reverse lg:even:flex-row">
+      <div className="h-50 relative w-full overflow-hidden">
         <a
           href={linkLiveDemo}
           target={"_blank"}
