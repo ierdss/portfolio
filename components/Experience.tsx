@@ -61,7 +61,7 @@ export default function Experiences() {
                     </li>
                   ))}
                 </ul> */}
-                <div className="border-b border-b-white opacity-10"></div>
+                <div className="border-b border-b-text opacity-10"></div>
               </li>
             ),
           )}
