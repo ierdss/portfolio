@@ -11,8 +11,8 @@ export default function Experiences() {
       id="experience"
       className="flex w-full flex-col items-center justify-center bg-background-1"
     >
-      <div className="flex w-full max-w-center flex-col justify-between gap-24 overflow-hidden px-2 py-12 md:gap-12 md:px-40 md:py-24">
-        <div className="flex w-full flex-row justify-between">
+      <div className="flex w-full max-w-center flex-col items-center justify-center gap-24 overflow-hidden px-2 py-12 md:gap-12 md:px-40 md:py-24">
+        <div className="flex w-full max-w-screen-xl flex-row justify-between">
           <div className="flex flex-col gap-8">
             <Heading1 text="Work Experience" />
             <ul className="hidden flex-row gap-5 lg:flex">
@@ -31,7 +31,7 @@ export default function Experiences() {
         </div>
 
         <Divider />
-        <ul className="flex flex-col gap-12">
+        <ul className="flex w-full max-w-screen-xl flex-col gap-12">
           {ExperiencesData.toReversed().map(
             (
               { id, icon, iconStyle, title, company, date, bullets, tags },
@@ -54,13 +54,13 @@ export default function Experiences() {
                     </li>
                   ))}
                 </ul>
-                {/* <ul className="ml-4 list-disc text-text">
+                <ul className="ml-4 list-disc text-text">
                   {bullets.map((bullet, index) => (
                     <li key={index} className="pl-1 text-sm">
                       {bullet}
                     </li>
                   ))}
-                </ul> */}
+                </ul>
                 <div className="border-b border-b-text opacity-10"></div>
               </li>
             ),

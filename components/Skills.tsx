@@ -8,14 +8,14 @@ export default function Skills() {
       id="skills"
       className="flex w-full flex-col items-center overflow-hidden bg-background-2"
     >
-      <div className="flex w-full max-w-center flex-col gap-12 px-2 py-12 text-left md:gap-20 md:px-40 md:py-48">
-        <div className="flex w-full ">
+      <div className="flex w-full max-w-center flex-col items-center gap-12 px-2 py-12 text-left md:gap-20 md:px-40 md:py-48">
+        <div className="flex w-full max-w-screen-xl">
           <Heading1 text="Skills and Technologies" />
         </div>
         <Divider />
 
         {/* Skill Grid */}
-        <div className="z-20 flex w-full flex-col gap-2 md:gap-10">
+        <div className="z-20 flex w-full max-w-screen-xl flex-col gap-2 md:gap-10">
           <ul className="z-20 mr-3 flex w-full flex-row flex-wrap gap-3 md:mr-5 md:gap-16">
             {SkillData.map(({ href, icon, name }, index) => (
               <div
