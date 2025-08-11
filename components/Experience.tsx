@@ -32,12 +32,12 @@ export default function Experiences() {
 
         <Divider />
         <ul className="flex flex-col gap-12">
-          {ExperiencesData.map(
+          {ExperiencesData.reverse().map(
             (
               { id, icon, iconStyle, title, company, date, bullets, tags },
               index,
             ) => (
-              <li className=" flex flex-col gap-5 pb-5" key={id}>
+              <li className=" flex flex-col gap-5" key={id}>
                 <div className="flex flex-row justify-between">
                   <h5>
                     {title} •<span className="text-redberry"> {company}</span>
@@ -47,20 +47,20 @@ export default function Experiences() {
                 <ul className="flex flex-row flex-wrap gap-2 text-text">
                   {tags.map((tag, index) => (
                     <li
-                      key={index}
+                      key={`tag${index}`}
                       className="rounded-full border border-text px-4 py-1 text-xs"
                     >
                       {tag}
                     </li>
                   ))}
                 </ul>
-                <ul className="ml-4 list-disc text-text">
+                {/* <ul className="ml-4 list-disc text-text">
                   {bullets.map((bullet, index) => (
                     <li key={index} className="pl-1 text-sm">
                       {bullet}
                     </li>
                   ))}
-                </ul>
+                </ul> */}
                 <div className="border-b border-b-white opacity-10"></div>
               </li>
             ),
