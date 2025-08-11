@@ -1,11 +1,6 @@
 import { ExperiencesData } from "@/constants";
 import React from "react";
 import { FaStar } from "react-icons/fa";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 import ViewMoreBtn from "./buttons/ViewMoreBtn";
 import Heading1 from "./headings/Heading1";
 
@@ -23,7 +18,7 @@ export default function Experiences() {
           <ViewMoreBtn text="View All Experiences" href="/experiences" />
         </div>
 
-        <VerticalTimeline className="w-full" lineColor="#B40041">
+        {/* <VerticalTimeline className="w-full" lineColor="#B40041">
           {ExperiencesData.map(
             (
               { icon, iconStyle, title, subtitle, date, bullets, tags },
@@ -72,13 +67,53 @@ export default function Experiences() {
               </VerticalTimelineElement>
             ),
           )}
-          {/* TODO: Make this add new elements on click in the future when I have more job experience. */}
+          {/* TODO: Make this add new elements on click in the future when I have more job experience.
           <VerticalTimelineElement
             iconStyle={{ background: "#B40041", color: "#fff" }}
             icon={<FaStar />}
             visible={testingVisibility}
           />
-        </VerticalTimeline>
+        </VerticalTimeline> */}
+        <ul>
+          {ExperiencesData.map(
+            (
+              { icon, iconStyle, title, company, date, bullets, tags },
+              index,
+            ) => (
+              <li>
+                <div className="flex flex-row justify-between">
+                  <div className="flex flex-row gap-4">
+                    <h5>
+                      {title} •<span className="text-redberry"> {company}</span>
+                    </h5>
+                  </div>
+                  <p>{date}</p>
+                </div>
+                <div>
+                  <ul className="mt-4 flex flex-row flex-wrap gap-2 text-text">
+                    {tags.map((tag, index) => (
+                      <li>
+                        <li
+                          key={index}
+                          className="rounded-full border border-text px-4 py-1 text-xs"
+                        >
+                          {tag}
+                        </li>
+                      </li>
+                    ))}
+                  </ul>
+                  <ul className="ml-4 mt-4 list-disc text-text">
+                    {bullets.map((bullet, index) => (
+                      <li key={index} className="pl-1 text-sm">
+                        {bullet}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </li>
+            ),
+          )}
+        </ul>
       </div>
     </div>
   );

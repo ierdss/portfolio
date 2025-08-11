@@ -5,8 +5,8 @@ export const ExperiencesData = [
   {
     icon: <FaReact className="scale-150" />,
     iconStyle: { background: "#1E293B", color: "#61DAFB" },
-    title: "Freelancer",
-    subtitle: "Working Student",
+    title: "Frontend Wordpress Developer",
+    company: "Freelancer",
     date: "January 2023 - January 2025",
     tags: ["React", "JavaScript", "CSS", "HTML"],
     bullets: [
