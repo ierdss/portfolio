@@ -49,7 +49,7 @@ export default function Hero() {
             specializing in Landing Pages & E-commerce Websites
           </p>
 
-          <div className="flex justify-start gap-6">
+          <div className="flex justify-start gap-10">
             <div className="flex w-full items-center justify-center gap-2 md:justify-start md:gap-4">
               <a
                 download={true}
@@ -62,7 +62,7 @@ export default function Hero() {
                 <p>Resume</p>
               </a>
             </div>
-            <ul className=" hidden w-fit justify-between gap-8 md:flex ">
+            <ul className=" hidden w-fit justify-between gap-4 md:flex ">
               {SocialLinksData.map(({ id, icon, ariaLabel, url }) => (
                 <a
                   key={id}
