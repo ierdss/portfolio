@@ -36,29 +36,33 @@ export default function Hero() {
         </div>
 
         <div className="z-20 order-1 flex w-full shrink-0 flex-col items-center justify-center gap-4 text-center md:w-[50%] md:items-start md:gap-20 md:text-left">
-          <h5 className="w-full text-text">
-            Hi, I'm <span className="text-redberry">Andrei Sager</span>, I Am a
+          <p>Hey, Im</p>
+          <h1 className="leading-none text-redberry">
+            Andrei
             <br />
-            Frontend Web Developer
+            <span className="text-background-2">A</span>
+            <span className="text-text">Sager</span>
+          </h1>
+          <p>
+            A 25 y/o Frontend Web Developer based in the Philippines
             <br />
-            Based in the Philippines
-          </h5>
+            specializing in Landing Pages & E-commerce Websites
+          </p>
 
-          <div className="relative flex flex-col items-start justify-center text-text">
-            <ul className="absolute -left-[120px] top-0 order-2 hidden w-fit flex-col justify-between gap-8 md:flex ">
-              {SocialLinksData.map(({ id, icon, ariaLabel, url }) => (
-                <a
-                  key={id}
-                  href={url}
-                  target="_blank"
-                  aria-label={ariaLabel}
-                  className="flex items-center justify-center text-text"
-                >
-                  {icon}
-                </a>
-              ))}
-            </ul>
-          </div>
+          <ul className=" hidden w-fit justify-between gap-8 md:flex ">
+            {SocialLinksData.map(({ id, icon, ariaLabel, url }) => (
+              <a
+                key={id}
+                href={url}
+                target="_blank"
+                aria-label={ariaLabel}
+                className="flex items-center justify-center text-text"
+              >
+                {icon}
+              </a>
+            ))}
+          </ul>
+
           <div className="flex w-full items-center justify-center gap-2 md:justify-start md:gap-4">
             <a
               download={true}
