@@ -1,3 +1,4 @@
+import { IconContext } from "react-icons";
 import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
 import {
   FaCss3Alt,
@@ -16,117 +17,117 @@ export const SkillData = [
   {
     href: "https://www.w3schools.com/html/default.asp",
     icon: (
-      <div className="text-html">
+      <IconContext.Provider value={{ color: "#f06529" }}>
         <FaHtml5 size={iconSize} />
-      </div>
+      </IconContext.Provider>
     ),
     name: "HTML",
   },
   {
     href: "https://www.w3schools.com/css/default.asp",
     icon: (
-      <div className="text-css">
+      <IconContext.Provider value={{ color: "#2965f1" }}>
         <FaCss3Alt size={iconSize} />
-      </div>
+      </IconContext.Provider>
     ),
     name: "CSS",
   },
   {
     href: "https://tailwindcss.com/docs/installation",
     icon: (
-      <div className="text-tailwind">
+      <IconContext.Provider value={{ color: "#67e8f9" }}>
         <SiTailwindcss size={iconSize} />
-      </div>
+      </IconContext.Provider>
     ),
     name: "Tailwind",
   },
   {
     href: "https://www.w3schools.com/js/default.asp",
     icon: (
-      <div className="text-javascript">
+      <IconContext.Provider value={{ color: "#ecd120" }}>
         <BiLogoJavascript size={iconSize} />
-      </div>
+      </IconContext.Provider>
     ),
     name: "JavaScript",
   },
   {
     href: "https://www.typescriptlang.org/docs/",
     icon: (
-      <div className="text-typescript">
+      <IconContext.Provider value={{ color: "#007acc" }}>
         <BiLogoTypescript size={iconSize} />
-      </div>
+      </IconContext.Provider>
     ),
     name: "TypeScript",
   },
   {
     href: "https://react.dev/reference/react",
     icon: (
-      <div className="text-react">
+      <IconContext.Provider value={{ color: "#61dbfb" }}>
         <FaReact size={iconSize} />
-      </div>
+      </IconContext.Provider>
     ),
     name: "React",
   },
   {
     href: "https://nextjs.org/docs",
     icon: (
-      <div className="text-next">
+      <IconContext.Provider value={{ color: "#171515" }}>
         <SiNextdotjs size={iconSize} />
-      </div>
+      </IconContext.Provider>
     ),
     name: "Next.js",
   },
   {
     href: "https://vercel.com/docs",
     icon: (
-      <div className="text-next">
+      <IconContext.Provider value={{ color: "#171515" }}>
         <SiVercel size={iconSize} />
-      </div>
+      </IconContext.Provider>
     ),
     name: "Vercel",
   },
   {
     href: "https://www.markdownguide.org/",
     icon: (
-      <div className="text-blackberry">
+      <IconContext.Provider value={{ color: "#171515" }}>
         <IoLogoMarkdown size={iconSize} />
-      </div>
+      </IconContext.Provider>
     ),
     name: "Markdown",
   },
   {
     href: "https://git-scm.com/",
     icon: (
-      <div className="text-git">
+      <IconContext.Provider value={{ color: "#f1502f" }}>
         <FaGitAlt size={iconSize} />
-      </div>
+      </IconContext.Provider>
     ),
     name: "Git",
   },
   {
     href: "https://github.com/",
     icon: (
-      <div className="text-github">
+      <IconContext.Provider value={{ color: "#171515" }}>
         <FaGithub size={iconSize} />
-      </div>
+      </IconContext.Provider>
     ),
     name: "GitHub",
   },
   {
     href: "https://www.vim.org/",
     icon: (
-      <div className="text-vim">
+      <IconContext.Provider value={{ color: "#008000" }}>
         <SiVim size={iconSize} />
-      </div>
+      </IconContext.Provider>
     ),
     name: "Vim",
   },
   {
     href: "",
     icon: (
-      <div className="text-react">
+      <IconContext.Provider value={{ color: "#a259ff" }}>
         <PiFigmaLogoFill size={iconSize} />
-      </div>
+      </IconContext.Provider>
     ),
     name: "Figma",
   },
