@@ -35,7 +35,7 @@ export default function Hero() {
           /> */}
         </div>
 
-        <div className="z-20 order-1 flex w-full shrink-0 flex-col items-center justify-center gap-4 text-center md:w-[50%] md:items-start md:gap-6 md:text-left">
+        <div className="z-20 order-1 flex w-fit shrink-0 flex-col items-center justify-center gap-4 text-center md:items-start md:gap-6 md:text-left">
           <p>Hey, Im</p>
           <h1 className="leading-none text-redberry">
             Andrei
