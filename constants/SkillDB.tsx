@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { IconContext } from "react-icons";
 import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
 import {
@@ -8,7 +9,6 @@ import {
   FaReact,
 } from "react-icons/fa";
 import { IoLogoMarkdown } from "react-icons/io5";
-import { PiFigmaLogoFill } from "react-icons/pi";
 import { SiNextdotjs, SiTailwindcss, SiVercel, SiVim } from "react-icons/si";
 
 const iconSize = 40;
@@ -125,9 +125,12 @@ export const SkillData = [
   {
     href: "",
     icon: (
-      <IconContext.Provider value={{ color: "#a259ff" }}>
-        <PiFigmaLogoFill size={iconSize} />
-      </IconContext.Provider>
+      <Image
+        src="/icons/Figma_Symbol_0.svg"
+        alt="Figma"
+        width={25}
+        height={25}
+      />
     ),
     name: "Figma",
   },

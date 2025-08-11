@@ -26,13 +26,13 @@ export default function Hero() {
     >
       <div className="relative flex w-full max-w-center flex-col items-center justify-center gap-10 px-2 py-24 md:flex-row md:gap-24 md:px-40 md:py-48">
         <div className="z-10 flex aspect-square w-[80%] items-center justify-center overflow-hidden rounded-full bg-background-1/50  brightness-125 md:order-2 md:max-w-[450px]">
-          <Image
+          {/* <Image
             src="/hero.png"
             width={1000}
             height={1000}
             alt="A picture of Andrei Sager"
             priority
-          />
+          /> */}
         </div>
 
         <div className="z-20 order-1 flex w-full shrink-0 flex-col items-center justify-center gap-4 text-center md:w-[50%] md:items-start md:gap-20 md:text-left">
@@ -72,20 +72,6 @@ export default function Hero() {
             </a>
           </div>
         </div>
-
-        {/* Animated Lavalamp Squares */}
-        <ul className="hero__squares">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
       </div>
     </div>
   );
