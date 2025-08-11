@@ -32,7 +32,7 @@ export default function Experiences() {
 
         <Divider />
         <ul className="flex flex-col gap-12">
-          {ExperiencesData.reverse().map(
+          {ExperiencesData.toReversed().map(
             (
               { id, icon, iconStyle, title, company, date, bullets, tags },
               index,
