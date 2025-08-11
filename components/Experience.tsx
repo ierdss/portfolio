@@ -13,21 +13,21 @@ export default function Experiences() {
     >
       <div className="flex w-full max-w-center flex-col justify-between gap-24 overflow-hidden px-2 py-12 md:gap-12 md:px-40 md:py-24">
         <div className="flex w-full flex-row justify-between">
-          <Heading1 text="Work Experience" />
+          <div className="flex flex-col gap-8">
+            <Heading1 text="Work Experience" />
+            <ul className="hidden flex-row gap-5 lg:flex">
+              {Pages.map(({ id, href, text }) => (
+                <Link
+                  key={id}
+                  href={href}
+                  className="btn group relative block cursor-pointer overflow-hidden rounded-[40px] bg-transparent text-sm capitalize text-text target:text-primary"
+                >
+                  <span className="label">{text}</span>
+                </Link>
+              ))}
+            </ul>
+          </div>
           <ViewMoreBtn text="View All Experiences" href="/experiences" />
-        </div>
-        <div>
-          <ul className="hidden flex-row gap-5 lg:flex">
-            {Pages.map(({ id, href, text }) => (
-              <Link
-                key={id}
-                href={href}
-                className="btn group relative block cursor-pointer overflow-hidden rounded-[40px] bg-transparent text-sm capitalize text-text target:text-primary"
-              >
-                <span className="label">{text}</span>
-              </Link>
-            ))}
-          </ul>
         </div>
 
         <Divider />
