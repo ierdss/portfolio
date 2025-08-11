@@ -71,7 +71,7 @@ export const SkillData = [
   {
     href: "https://nextjs.org/docs",
     icon: (
-      <IconContext.Provider value={{ color: "#171515" }}>
+      <IconContext.Provider value={{ className: "text-text" }}>
         <SiNextdotjs size={iconSize} />
       </IconContext.Provider>
     ),
@@ -80,7 +80,7 @@ export const SkillData = [
   {
     href: "https://vercel.com/docs",
     icon: (
-      <IconContext.Provider value={{ color: "#171515" }}>
+      <IconContext.Provider value={{ className: "text-text" }}>
         <SiVercel size={iconSize} />
       </IconContext.Provider>
     ),
@@ -89,7 +89,7 @@ export const SkillData = [
   {
     href: "https://www.markdownguide.org/",
     icon: (
-      <IconContext.Provider value={{ color: "#171515" }}>
+      <IconContext.Provider value={{ className: "text-text" }}>
         <IoLogoMarkdown size={iconSize} />
       </IconContext.Provider>
     ),
@@ -107,7 +107,7 @@ export const SkillData = [
   {
     href: "https://github.com/",
     icon: (
-      <IconContext.Provider value={{ color: "#171515" }}>
+      <IconContext.Provider value={{ className: "text-text" }}>
         <FaGithub size={iconSize} />
       </IconContext.Provider>
     ),
