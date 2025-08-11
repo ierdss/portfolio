@@ -44,7 +44,7 @@ export const ProjectsData = [
     id: 1,
     title: "Roadway Delivery",
     subtitle: "Delivery Service (Landing Page)",
-    desktopThumbnail: "/thumbnails/road-way-delivery.jpg",
+    desktopThumbnail: "/thumbnails/RWD_Thumbnail.jpg",
     desktopAlt: "RWD full page on desktop",
     mobileThumbnail: "",
     mobileAlt: "RWD full page on mobile",
