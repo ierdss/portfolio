@@ -89,27 +89,25 @@ export default function Experiences() {
                   </div>
                   <p>{date}</p>
                 </div>
-                <div>
-                  <ul className="mt-4 flex flex-row flex-wrap gap-2 text-text">
-                    {tags.map((tag, index) => (
-                      <li>
-                        <li
-                          key={index}
-                          className="rounded-full border border-text px-4 py-1 text-xs"
-                        >
-                          {tag}
-                        </li>
+                <ul className="mt-4 flex flex-row flex-wrap gap-2 text-text">
+                  {tags.map((tag, index) => (
+                    <li>
+                      <li
+                        key={index}
+                        className="rounded-full border border-text px-4 py-1 text-xs"
+                      >
+                        {tag}
                       </li>
-                    ))}
-                  </ul>
-                  <ul className="ml-4 mt-4 list-disc text-text">
-                    {bullets.map((bullet, index) => (
-                      <li key={index} className="pl-1 text-sm">
-                        {bullet}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                    </li>
+                  ))}
+                </ul>
+                <ul className="ml-4 mt-4 list-disc text-text">
+                  {bullets.map((bullet, index) => (
+                    <li key={index} className="pl-1 text-sm">
+                      {bullet}
+                    </li>
+                  ))}
+                </ul>
               </li>
             ),
           )}
