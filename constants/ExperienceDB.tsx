@@ -19,6 +19,23 @@ export const ExperiencesData = [
       // "Gained proficiency in time management and prioritization through balancing academic and work commitments.",
     ],
   },
+  {
+    id: 2,
+    icon: <FaReact className="scale-150" />,
+    iconStyle: { background: "#1E293B", color: "#61DAFB" },
+    title: "Frontend Wordpress Developer",
+    company: "Freelancer",
+    date: "January 2023 - January 2025",
+    tags: ["React", "JavaScript", "CSS", "HTML"],
+    bullets: [
+      "Built and delivered custom web solutions for small businesses, optimizing their online presence.",
+      "Worked on multiple freelance projects while managing academic responsibilities effectively.",
+      // "Enhanced client websites with responsive designs and modern UI/UX practices.",
+      // "Developed interactive components using React to streamline user experiences.",
+      // "Collaborated with clients to gather requirements and deliver tailored solutions under tight deadlines.",
+      // "Gained proficiency in time management and prioritization through balancing academic and work commitments.",
+    ],
+  },
   // {
   //   id: 1,
   //   icon: <SiNextdotjs className="scale-150" />,

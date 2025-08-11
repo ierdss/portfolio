@@ -31,7 +31,7 @@ export default function Experiences() {
         </div>
 
         <Divider />
-        <ul>
+        <ul className="flex flex-col gap-12">
           {ExperiencesData.map(
             (
               { id, icon, iconStyle, title, company, date, bullets, tags },
