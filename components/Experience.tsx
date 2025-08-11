@@ -6,11 +6,6 @@ import Divider from "./divider/Divider";
 import Heading1 from "./headings/Heading1";
 
 export default function Experiences() {
-  const Pages = [
-    { id: 1, href: "/", text: "Home" },
-    { id: 2, href: "/projects", text: "Projects" },
-    { id: 3, href: "/resume", text: "Resume" },
-  ];
   return (
     <div
       id="experience"
@@ -74,3 +69,9 @@ export default function Experiences() {
     </div>
   );
 }
+
+const Pages = [
+  { id: 1, href: "/work", text: "Work" },
+  { id: 2, href: "/education", text: "Education" },
+  { id: 3, href: "/certificates", text: "Certificates" },
+];
