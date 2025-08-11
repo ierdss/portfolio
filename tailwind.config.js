@@ -59,7 +59,6 @@ module.exports = {
         next: "#171515",
         obsidian: "#8B5CF6",
         react: "#61dbfb",
-        sass: "#cc6699",
         tailwind: "#67e8f9",
         typescript: "#007acc",
       },

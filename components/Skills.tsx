@@ -22,7 +22,7 @@ export default function Skills() {
                 className="min-h-52 overflow-hidden rounded-[20px]"
                 key={`${index}skill`}
               >
-                <a href={href} target="_blank" className="skill-card text-html">
+                <a href={href} target="_blank" className="skill-card">
                   {icon}
                   <h6 className="text-text">{name}</h6>
                 </a>
