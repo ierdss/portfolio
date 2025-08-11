@@ -37,7 +37,7 @@ export default function Experiences() {
               { id, icon, iconStyle, title, company, date, bullets, tags },
               index,
             ) => (
-              <li className="flex flex-col gap-5 border-b pb-5" key={id}>
+              <li className=" flex flex-col gap-5 pb-5" key={id}>
                 <div className="flex flex-row justify-between">
                   <h5>
                     {title} •<span className="text-redberry"> {company}</span>
@@ -61,6 +61,7 @@ export default function Experiences() {
                     </li>
                   ))}
                 </ul>
+                <div className="border-b border-b-white opacity-10"></div>
               </li>
             ),
           )}
