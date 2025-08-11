@@ -29,40 +29,40 @@ export default function Skills() {
               <a
                 href="https://www.w3schools.com/html/default.asp"
                 target="_blank"
-                className="skill-card bg-html hover:text-html"
+                className="skill-card text-html"
               >
                 <FaHtml5 size={iconSize} />
-                <h6>HTML</h6>
+                <h6 className="text-black">HTML</h6>
               </a>
             </div>
             <div className="overflow-hidden rounded-[20px]">
               <a
                 href="https://www.w3schools.com/css/default.asp"
                 target="_blank"
-                className="skill-card bg-css hover:text-css"
+                className="skill-card text-css"
               >
                 <FaCss3Alt size={iconSize} />
-                <h6>CSS</h6>
+                <h6 className="text-black">CSS</h6>
               </a>
             </div>
             <div className="overflow-hidden rounded-[20px]">
               <a
                 href="https://tailwindcss.com/docs/installation"
                 target="_blank"
-                className="skill-card bg-tailwind hover:text-tailwind"
+                className="skill-card text-tailwind"
               >
                 <SiTailwindcss size={iconSize} />
-                <h6>Tailwind</h6>
+                <h6 className="text-black">Tailwind</h6>
               </a>
             </div>
             <div className="overflow-hidden rounded-[20px]">
               <a
                 href="https://sass-lang.com/documentation/"
                 target="_blank"
-                className="skill-card bg-sass hover:text-sass"
+                className="skill-card text-sass"
               >
                 <BiLogoSass size={iconSize} />
-                <h6>Sass</h6>
+                <h6 className="text-black">Sass</h6>
               </a>
             </div>
           </ul>
@@ -73,50 +73,50 @@ export default function Skills() {
               <a
                 href="https://www.w3schools.com/js/default.asp"
                 target="_blank"
-                className="skill-card bg-javascript hover:text-javascript"
+                className="skill-card text-javascript"
               >
                 <BiLogoJavascript size={iconSize} />
-                <h6>Javascript</h6>
+                <h6 className="text-black">Javascript</h6>
               </a>
             </div>
             <div className="overflow-hidden rounded-[20px]">
               <a
                 href="https://www.typescriptlang.org/docs/"
                 target="_blank"
-                className="skill-card bg-typescript hover:text-typescript"
+                className="skill-card text-typescript"
               >
                 <BiLogoTypescript size={iconSize} />
-                <h6>Typescript</h6>
+                <h6 className="text-black">Typescript</h6>
               </a>
             </div>
             <div className="overflow-hidden rounded-[20px]">
               <a
                 href="https://react.dev/reference/react"
                 target="_blank"
-                className="skill-card bg-react hover:text-react"
+                className="skill-card text-react"
               >
                 <FaReact size={iconSize} />
-                <h6>React.JS</h6>
+                <h6 className="text-black">React.JS</h6>
               </a>
             </div>
             <div className="overflow-hidden rounded-[20px]">
               <a
                 href="https://nextjs.org/docs"
                 target="_blank"
-                className="skill-card bg-next hover:text-next"
+                className="skill-card text-next"
               >
                 <SiNextdotjs size={iconSize} />
-                <h6>Next.js</h6>
+                <h6 className="text-black">Next.js</h6>
               </a>
             </div>
             <div className="overflow-hidden rounded-[20px]">
               <a
                 href="https://vercel.com/docs"
                 target="_blank"
-                className="skill-card bg-next hover:text-next"
+                className="skill-card text-next"
               >
                 <SiVercel size={iconSize} />
-                <h6>Vercel</h6>
+                <h6 className="text-black">Vercel</h6>
               </a>
             </div>
           </ul>
@@ -127,30 +127,30 @@ export default function Skills() {
               <a
                 href="https://www.markdownguide.org/"
                 target="_blank"
-                className="skill-card bg-blackberry hover:text-blackberry"
+                className="skill-card text-blackberry"
               >
                 <IoLogoMarkdown size={iconSize} />
-                <h6>Markdown</h6>
+                <h6 className="text-black">Markdown</h6>
               </a>
             </div>
             <div className="overflow-hidden rounded-[20px]">
               <a
                 href="https://obsidian.md/"
                 target="_blank"
-                className="skill-card bg-obsidian hover:text-obsidian"
+                className="skill-card text-obsidian"
               >
                 <SiObsidian size={iconSize} />
-                <h6>Obsidian</h6>
+                <h6 className="text-black">Obsidian</h6>
               </a>
             </div>
             <div className="overflow-hidden rounded-[20px]">
               <a
                 href="https://graphql.org/"
                 target="_blank"
-                className="skill-card bg-graphql hover:text-graphql"
+                className="skill-card text-graphql"
               >
                 <GrGraphQl size={iconSize} />
-                <h6>GraphQl</h6>
+                <h6 className="text-black">GraphQl</h6>
               </a>
             </div>
             {/* <div className="overflow-hidden rounded-[20px]">
@@ -179,7 +179,7 @@ export default function Skills() {
         </div>
 
         {/* Background Mist Effects */}
-        <div className="absolute left-0 top-0 -translate-x-[30%] -translate-y-[30%]">
+        {/* <div className="absolute left-0 top-0 -translate-x-[30%] -translate-y-[30%]">
           <div className="z-10 h-[650px] w-[650px] bg-accent-1 blur-[300px] md:animate-grow-shrink-1 " />
         </div>
         <div className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%]">
@@ -187,7 +187,7 @@ export default function Skills() {
         </div>
         <div className="absolute bottom-0 right-0 translate-x-[30%] translate-y-[30%]">
           <div className="z-10 h-[650px] w-[650px] bg-accent-3 blur-[300px] md:animate-grow-shrink-3" />
-        </div>
+        </div> */}
       </div>
     </div>
   );
