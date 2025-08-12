@@ -1,14 +1,6 @@
 "use client";
 
-import {
-  About,
-  Experience,
-  Hero,
-  Projects,
-  Services,
-  Skills,
-  Testimonials,
-} from "@/components";
+import { Experience, Hero, Projects, Skills } from "@/components";
 import ScrollSpy from "react-ui-scrollspy";
 
 export default function Home() {
