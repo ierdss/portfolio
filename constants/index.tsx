@@ -1,6 +1,5 @@
 import { ExperiencesData } from "./ExperienceDB";
 import { ProjectsData } from "./ProjectsDB";
-import { ServicesData, WorkflowData } from "./ServicesDB";
 import { SocialLinksData } from "./SocialLinksDB";
 import {
   TestimonialsRow1,
@@ -11,10 +10,8 @@ import {
 export {
   ExperiencesData,
   ProjectsData,
-  ServicesData,
   SocialLinksData,
   TestimonialsRow1,
   TestimonialsRow2,
   TestimonialsRow3,
-  WorkflowData,
 };
