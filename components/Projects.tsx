@@ -7,7 +7,7 @@ export default function Projects() {
       id="projects"
       className="flex h-fit w-full flex-col items-center justify-center gap-12 bg-background-1 sm:px-5 md:text-left"
     >
-      <div className="relative flex w-full max-w-center flex-col items-center justify-center gap-9 px-2 py-12 md:gap-16 md:px-36 md:py-20">
+      <div className="relative flex w-full max-w-center flex-col items-center justify-center gap-8 px-2 py-12 md:gap-16 md:px-36 md:py-20">
         <div className="flex w-full max-w-screen-xl flex-col items-start justify-between md:flex-row">
           <Heading1 text="Featured Projects" />
           <ViewMoreBtn text="View All Projects" href="/projects" />
