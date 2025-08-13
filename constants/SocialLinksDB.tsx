@@ -2,13 +2,13 @@ import { BsMailbox2 } from "react-icons/bs";
 import { RiLinkedinFill } from "react-icons/ri";
 import { TbBrandGithubFilled } from "react-icons/tb";
 
-const size = 48;
+const size = 20;
 
 export const SocialLinksData = [
   {
     id: 1,
     title: "Gmail",
-    icon: <BsMailbox2 size={size} className="h-6 w-6 md:h-12 md:w-12" />,
+    icon: <BsMailbox2 size={size} />,
     ariaLabel: "Send me an email!",
     url: "mailto:andreisager@proton.me",
   },
@@ -22,9 +22,7 @@ export const SocialLinksData = [
   {
     id: 3,
     title: "Github",
-    icon: (
-      <TbBrandGithubFilled size={size} className="h-6 w-6 md:h-12 md:w-12" />
-    ),
+    icon: <TbBrandGithubFilled size={size} />,
     ariaLabel: "Check out my projects from my GitHub repository!",
     url: "https://github.com/ierdss",
   },
