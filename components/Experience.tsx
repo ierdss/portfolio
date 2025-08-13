@@ -12,10 +12,10 @@ export default function Experiences() {
       className="flex w-full flex-col items-center justify-center bg-background-1"
     >
       <div className="flex w-full max-w-center flex-col items-center justify-center gap-24 overflow-hidden px-2 py-12 md:gap-12 md:px-40 md:py-24">
-        <div className="flex w-full max-w-screen-xl flex-row justify-between">
-          <div className="flex flex-col gap-8">
+        <div className="flex w-full max-w-screen-xl flex-col justify-start md:flex-row md:justify-between">
+          <div className="flex flex-col md:gap-8">
             <Heading1 text="Work Experience" />
-            <ul className="hidden flex-row gap-5 lg:flex">
+            <ul className="flex flex-row gap-5">
               {Pages.map(({ id, href, text }) => (
                 <Link
                   key={id}
