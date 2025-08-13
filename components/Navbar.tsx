@@ -83,7 +83,7 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
-        <div className="flex max-w-[350px] flex-row items-center justify-center gap-12">
+        <div className="flex max-w-[350px] cursor-pointer flex-row items-center justify-center gap-12">
           <ThemePicker />
         </div>
       </div>
