@@ -12,22 +12,22 @@ export default function Experiences() {
       className="flex w-full flex-col items-center justify-center bg-background-1"
     >
       <div className="flex w-full max-w-center flex-col items-center justify-center gap-24 overflow-hidden px-2 py-12 md:gap-12 md:px-40 md:py-24">
-        <div className="flex w-full max-w-screen-xl flex-col justify-start md:flex-row md:justify-between">
-          <div className="flex flex-col md:gap-8">
+        <div className="flex w-full max-w-screen-xl flex-col justify-start gap-8 md:justify-between">
+          <div className="flex w-full max-w-screen-xl flex-col items-start justify-between md:flex-row">
             <Heading1 text="Work Experience" />
-            <ul className="flex flex-row gap-5">
-              {Pages.map(({ id, href, text }) => (
-                <Link
-                  key={id}
-                  href={href}
-                  className="btn group relative block cursor-pointer overflow-hidden rounded-[40px] bg-transparent text-sm capitalize text-text target:text-primary"
-                >
-                  <span className="label">{text}</span>
-                </Link>
-              ))}
-            </ul>
+            <ViewMoreBtn text="View All Experiences" href="/experiences" />
           </div>
-          <ViewMoreBtn text="View All Experiences" href="/experiences" />
+          <ul className="flex flex-row gap-5">
+            {Pages.map(({ id, href, text }) => (
+              <Link
+                key={id}
+                href={href}
+                className="btn group relative block cursor-pointer overflow-hidden rounded-[40px] bg-transparent text-sm capitalize text-text target:text-primary"
+              >
+                <span className="label">{text}</span>
+              </Link>
+            ))}
+          </ul>
         </div>
 
         <Divider />
