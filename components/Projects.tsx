@@ -15,7 +15,7 @@ export default function Projects() {
 
         <Divider />
 
-        <ul className="grid w-full max-w-screen-xl grid-cols-2 gap-12 md:gap-3">
+        <ul className="grid w-full max-w-screen-xl grid-cols-1 gap-12 md:grid-cols-2 md:gap-3">
           {ProjectsData.map((project, index) => (
             <FeaturedProjectsCard
               key={index}
@@ -96,7 +96,7 @@ function FeaturedProjectsCard({
   tags,
 }: FeaturedProjectsCardProps) {
   return (
-    <div className="flex aspect-16/10 h-full w-full flex-col items-center justify-center gap-4 overflow-hidden rounded-3xl md:gap-20 lg:odd:flex-row-reverse lg:even:flex-row">
+    <div className="flex aspect-16/10 h-full w-full flex-col items-center justify-center gap-4 overflow-hidden rounded-md md:gap-20 md:rounded-3xl lg:odd:flex-row-reverse lg:even:flex-row">
       <div className="h-50 relative w-full overflow-hidden">
         <a
           href={linkLiveDemo}
