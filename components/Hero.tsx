@@ -50,7 +50,7 @@ export default function Hero() {
             E-commerce Websites
           </p>
 
-          <div className="flex justify-start gap-10">
+          <div className="flex flex-row items-center justify-center gap-4 md:justify-start">
             <div className="flex w-full items-center justify-center gap-2 md:justify-start md:gap-4">
               <a
                 download={true}
@@ -59,7 +59,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="text-primary-foreground shadow-xs [&_svg:not([class*='size-'])]:size-4 focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive has-[>svg]:px-3 inline-flex h-9 shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-text px-4 py-2 text-sm font-medium text-background-1 outline-none transition-all hover:bg-primary/90 focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0"
               >
-                <FaGithub />
+                <FaGithub size={20} />
                 <p>Resume</p>
               </a>
             </div>
@@ -70,10 +70,19 @@ export default function Hero() {
                   href={url}
                   target="_blank"
                   aria-label={ariaLabel}
-                  className="flex items-center justify-center text-text"
+                  className="text-primary-foreground shadow-xs [&_svg:not([class*='size-'])]:size-4 focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive has-[>svg]:px-3 inline-flex aspect-square h-9 shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-text px-2 py-2 text-sm font-medium text-background-1 outline-none transition-all hover:bg-primary/90 focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0"
                 >
                   {icon}
                 </a>
+                // <a
+                //   key={id}
+                //   href={url}
+                //   target="_blank"
+                //   aria-label={ariaLabel}
+                //   className="flex items-center justify-center text-text hover:bg-black hover:text-background-1"
+                // >
+                //   {icon}
+                // </a>
               ))}
             </ul>
           </div>
