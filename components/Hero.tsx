@@ -62,7 +62,7 @@ export default function Hero() {
                 <p>Resume</p>
               </a>
             </div>
-            <ul className=" hidden w-fit justify-between gap-4 md:flex ">
+            <ul className="flex w-fit flex-row justify-between gap-4">
               {SocialLinksData.map(({ id, icon, ariaLabel, url }) => (
                 <a
                   key={id}
