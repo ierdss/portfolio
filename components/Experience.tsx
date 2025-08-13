@@ -17,14 +17,14 @@ export default function Experiences() {
             <Heading1 text="Work Experience" />
             <ViewMoreBtn text="View All Experiences" href="/experiences" />
           </div>
-          <ul className="flex w-full flex-row gap-5">
+          <ul className="flex flex-row gap-4">
             {Pages.map(({ id, href, text }) => (
               <Link
                 key={id}
                 href={href}
-                className="btn group relative block cursor-pointer overflow-hidden rounded-[40px] bg-transparent text-sm capitalize text-text target:text-primary"
+                className="cursor-pointer text-sm capitalize text-text"
               >
-                <span className="label">{text}</span>
+                {text}
               </Link>
             ))}
           </ul>
