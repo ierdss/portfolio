@@ -76,10 +76,9 @@ export default function Navbar() {
                 key={id}
                 href={href}
                 data-to-scrollspy-id={id}
-                className="btn group relative my-3 block cursor-pointer overflow-hidden rounded-[40px] bg-transparent px-4 py-3 text-sm font-bold capitalize text-text target:text-primary"
+                className="btn group relative my-3 block cursor-pointer overflow-hidden rounded-[40px] bg-transparent px-4 py-3 text-sm capitalize text-text target:text-primary"
               >
-                <span className="label">{text}</span>
-                <span className="bg" />
+                {text}
               </Link>
             ))}
           </ul>
