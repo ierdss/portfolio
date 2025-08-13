@@ -13,7 +13,7 @@ export default function Experiences() {
     >
       <div className="flex w-full max-w-center flex-col items-center justify-center gap-8 overflow-hidden px-2 py-12 md:gap-12 md:px-40 md:py-24">
         <div className="flex w-full max-w-screen-xl flex-col justify-start gap-8 md:justify-between">
-          <div className="flex w-full max-w-screen-xl flex-col items-start justify-between md:flex-row">
+          <div className="flex w-full max-w-screen-xl flex-col items-center justify-between md:flex-row">
             <Heading1 text="Work Experience" />
             <ViewMoreBtn text="View All Experiences" href="/experiences" />
           </div>
