@@ -43,7 +43,7 @@ export const ProjectsFeaturedData = [
   {
     id: 1,
     title: "Roadway Delivery",
-    subtitle: "Delivery Service (Landing Page)",
+    subtitle: "Landing Page",
     desktopThumbnail: "/thumbnails/RWD_Thumbnail.jpg",
     desktopAlt: "RWD full page on desktop",
     mobileThumbnail: "",
@@ -76,7 +76,7 @@ export const ProjectsFeaturedData = [
   {
     id: 3,
     title: "Roadway Delivery",
-    subtitle: "Delivery Service (Landing Page)",
+    subtitle: "Landing Page",
     desktopThumbnail: "/thumbnails/road-way-delivery.jpg",
     desktopAlt: "RWD full page on desktop",
     mobileThumbnail: "",
