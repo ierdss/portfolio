@@ -65,6 +65,9 @@ module.exports = {
       maxWidth: {
         center: "1980px",
       },
+      screens: {
+        smd: "425px",
+      },
       aspectRatio: {
         "3/2": "3/2",
         "16/10": "16/9.8",
