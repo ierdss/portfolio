@@ -145,22 +145,14 @@ function FeaturedProjectsCard({
           {description}
         </p>
         <div className="mt-2 flex w-full flex-row flex-wrap items-center gap-4 md:mt-12">
-          {linkCaseStudy && (
-            <a
-              href={linkCaseStudy}
-              target="_blank"
-              className="rounded-full bg-text p-2 text-background-1 hover:bg-primary"
-            >
-              <FaSearch size={size} />
-            </a>
-          )}
           {linkLiveDemo && (
             <a
               href={linkLiveDemo}
               target="_blank"
-              className="rounded-full bg-text p-2 text-background-1 hover:bg-primary"
+              className="flex flex-row items-center gap-2 rounded-full bg-text p-2 text-background-1 hover:bg-primary"
             >
               <TbExternalLink size={size} />
+              <p>Live Demo</p>
             </a>
           )}
           {linkRepository && (
@@ -170,6 +162,15 @@ function FeaturedProjectsCard({
               className="rounded-full bg-text p-2 text-background-1 hover:bg-primary"
             >
               <BsGithub size={size} />
+            </a>
+          )}
+          {linkCaseStudy && (
+            <a
+              href={linkCaseStudy}
+              target="_blank"
+              className="rounded-full bg-text p-2 text-background-1 hover:bg-primary"
+            >
+              <FaSearch size={size} />
             </a>
           )}
         </div>
