@@ -1,5 +1,5 @@
-import { ProjectsData } from "@/constants";
-import Heading1 from "./headings/Heading1";
+import { Heading1 } from "@/components";
+import { FeaturedProjectsData } from "@/constants";
 
 export default function Projects() {
   return (
@@ -16,7 +16,7 @@ export default function Projects() {
         <Divider />
 
         <ul className="grid w-full max-w-screen-xl grid-cols-1 gap-12 md:grid-cols-2 md:gap-3">
-          {ProjectsData.map((project, index) => (
+          {FeaturedProjectsData.map((project, index) => (
             <FeaturedProjectsCard
               key={index}
               title={project.title !== null ? project.title : ""}

@@ -15,7 +15,7 @@
 //   linkCaseStudy: "/",
 // },
 
-export const ProjectsData = [
+export const FeaturedProjectsData = [
   // {
   //   id: 0,
   //   title: "This Portfolio",
