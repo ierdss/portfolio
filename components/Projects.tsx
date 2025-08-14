@@ -95,9 +95,10 @@ function FeaturedProjectsCard({
   linkCaseStudy,
   tags,
 }: FeaturedProjectsCardProps) {
+  const size = 20;
   return (
-    <div className="flex aspect-16/10 h-full w-full flex-col items-center justify-center gap-4 overflow-hidden rounded-md md:gap-20 md:rounded-3xl lg:odd:flex-row-reverse lg:even:flex-row">
-      <div className="h-50 relative w-full overflow-hidden">
+    <div className="flex h-full w-full flex-col items-center justify-center gap-4 overflow-hidden rounded-md md:gap-20 md:rounded-3xl">
+      <div className="h-50 relative aspect-16/10 w-full overflow-hidden">
         <a
           href={linkLiveDemo}
           target={"_blank"}
@@ -118,7 +119,7 @@ function FeaturedProjectsCard({
           />
         )}
       </div>
-      {/* <div className="flex h-fit w-full flex-col gap-4 px-2 md:px-0 lg:w-3/5">
+      <div className="flex h-fit w-full flex-col gap-4 px-2 md:px-0 lg:w-3/5">
         <div className="flex flex-row justify-between">
           <div>
             <h3 className="w-full text-left text-text">{title}</h3>
@@ -157,24 +158,22 @@ function FeaturedProjectsCard({
             <a
               href={linkLiveDemo}
               target="_blank"
-              className="flex w-[30%] flex-row items-center justify-center gap-2  text-xs capitalize text-text hover:text-primary md:text-sm"
+              className="rounded-full bg-text p-2 text-background-1 hover:bg-primary"
             >
-              <IoGlobe size={33.5} />
-              Live Demo
+              <IoGlobe size={size} />
             </a>
           )}
           {linkRepository && (
             <a
               href={linkRepository}
               target="_blank"
-              className="flex w-[30%] flex-row items-center justify-center gap-2 text-xs capitalize text-text hover:text-primary md:text-sm"
+              className="rounded-full bg-text p-2 text-background-1 hover:bg-primary"
             >
-              <BsGithub size={30} />
-              Source Code
+              <BsGithub size={size} />
             </a>
           )}
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
