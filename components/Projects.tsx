@@ -97,7 +97,7 @@ function FeaturedProjectsCard({
   const size = 20;
   return (
     <div className="flex h-full w-full flex-col items-center justify-center gap-4">
-      <div className="h-50 relative aspect-16/10 w-full overflow-hidden">
+      <div className="h-50 relative aspect-16/10 w-full overflow-hidden rounded-lg md:rounded-xl">
         <a
           href={linkLiveDemo}
           target={"_blank"}
