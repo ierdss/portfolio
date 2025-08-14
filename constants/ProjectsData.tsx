@@ -53,7 +53,7 @@ export const ProjectsFeaturedData = [
     tags: ["Next.js", "Typescript", "Tailwind", "CSS", "HTML"],
     linkRepository: "https://github.com/AndreiSager/road-way-delivery",
     linkLiveDemo: "https://roadwaydelivery.vercel.app",
-    linkCaseStudy: "",
+    linkCaseStudy: "andrei",
   },
   {
     id: 2,
