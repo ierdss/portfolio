@@ -76,7 +76,7 @@ export default function Navbar() {
                 key={id}
                 href={href}
                 data-to-scrollspy-id={id}
-                className="btn group relative my-3 block cursor-pointer overflow-hidden rounded-[40px] bg-transparent px-4 py-3 text-sm capitalize text-text target:text-primary"
+                className="btn group relative my-3 block cursor-pointer overflow-hidden bg-transparent px-4 py-3 text-sm capitalize text-text target:text-primary"
               >
                 {text}
               </Link>
@@ -170,17 +170,11 @@ function ThemePicker() {
   }
 
   return (
-    <div className="mr-4 text-text md:mr-0">
+    <div className="mr-4 rounded-full px-2 py-2 text-text md:mr-0">
       {theme === "light" ? (
-        <FaSun
-          onClick={() => setTheme("dark")}
-          className="h-6 w-6 md:h-8 md:w-8"
-        />
+        <FaSun onClick={() => setTheme("dark")} size={20} />
       ) : (
-        <BsFillMoonStarsFill
-          onClick={() => setTheme("light")}
-          className="h-6 w-6 md:h-8 md:w-8"
-        />
+        <BsFillMoonStarsFill onClick={() => setTheme("light")} size={20} />
       )}
     </div>
   );
