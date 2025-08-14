@@ -96,7 +96,7 @@ function FeaturedProjectsCard({
 }: FeaturedProjectsCardProps) {
   const size = 20;
   return (
-    <div className="flex h-full w-full flex-col items-center justify-center gap-4 overflow-hidden rounded-md md:gap-20 md:rounded-3xl">
+    <div className="flex h-full w-full flex-col items-center justify-center gap-4">
       <div className="h-50 relative aspect-16/10 w-full overflow-hidden">
         <a
           href={linkLiveDemo}
@@ -118,7 +118,7 @@ function FeaturedProjectsCard({
           />
         )}
       </div>
-      <div className="flex h-fit w-full flex-col gap-4 px-2 md:px-0 lg:w-3/5">
+      <div className="flex h-fit w-full flex-col gap-4 px-2 md:px-0">
         <div className="flex flex-row justify-between">
           <div>
             <h3 className="w-full text-left text-text">{title}</h3>
