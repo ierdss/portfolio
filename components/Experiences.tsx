@@ -36,7 +36,7 @@ export default function Experiences() {
               index,
             ) => (
               <li className=" flex flex-col gap-4" key={id}>
-                <div className="flex flex-col justify-between lg:flex-row">
+                <div className="flex flex-col items-center justify-between lg:flex-row">
                   <h5>
                     {title} •<span className="text-redberry"> {company}</span>
                   </h5>
