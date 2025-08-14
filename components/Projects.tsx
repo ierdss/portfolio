@@ -58,6 +58,7 @@ import Image from "next/image";
 
 import { BsGithub } from "react-icons/bs";
 import { CiMobile1 } from "react-icons/ci";
+import { FaSearch } from "react-icons/fa";
 import { IoIosLaptop } from "react-icons/io";
 import { IoGlobe, IoSearchCircle } from "react-icons/io5";
 import { TbExternalLink } from "react-icons/tb";
@@ -150,7 +151,7 @@ function FeaturedProjectsCard({
               target="_blank"
               className="rounded-full bg-text p-2 text-background-1 hover:bg-primary"
             >
-              <IoSearchCircle size={size} />
+              <FaSearch size={size} />
             </a>
           )}
           {linkLiveDemo && (
@@ -159,7 +160,7 @@ function FeaturedProjectsCard({
               target="_blank"
               className="rounded-full bg-text p-2 text-background-1 hover:bg-primary"
             >
-              <IoGlobe size={size} />
+              <TbExternalLink size={size} />
             </a>
           )}
           {linkRepository && (
