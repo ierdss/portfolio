@@ -1,9 +1,8 @@
-import { ExperiencesData } from "@/constants";
+import { Divider, Heading1 } from "@/components";
+import { ExperiencesTabs, WorkExperiencesData } from "@/constants";
 import Link from "next/link";
 import React from "react";
 import ViewMoreBtn from "./buttons/ViewMoreBtn";
-import Divider from "./divider/Divider";
-import Heading1 from "./headings/Heading1";
 
 export default function Experiences() {
   return (
@@ -18,7 +17,7 @@ export default function Experiences() {
             <ViewMoreBtn text="View All Experiences" href="/experiences" />
           </div>
           <ul className="flex flex-row gap-4">
-            {Pages.map(({ id, href, text }) => (
+            {ExperiencesTabs.map(({ id, href, text }) => (
               <Link
                 key={id}
                 href={href}
@@ -32,7 +31,7 @@ export default function Experiences() {
 
         <Divider />
         <ul className="flex w-full max-w-screen-xl flex-col gap-12">
-          {ExperiencesData.toReversed().map(
+          {WorkExperiencesData.toReversed().map(
             (
               { id, icon, iconStyle, title, company, date, bullets, tags },
               index,
@@ -70,9 +69,3 @@ export default function Experiences() {
     </div>
   );
 }
-
-const Pages = [
-  { id: 1, href: "/work", text: "Work" },
-  { id: 2, href: "/education", text: "Education" },
-  { id: 3, href: "/certificates", text: "Certificates" },
-];

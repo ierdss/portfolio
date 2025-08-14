@@ -1,7 +1,13 @@
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 
-export const ExperiencesData = [
+export const ExperiencesTabs = [
+  { id: 1, href: "/work", text: "Work" },
+  { id: 2, href: "/education", text: "Education" },
+  { id: 3, href: "/certificates", text: "Certificates" },
+];
+
+export const WorkExperiencesData = [
   {
     id: 1,
     icon: <FaReact className="scale-150" />,
