@@ -1,6 +1,6 @@
 import { ExperiencesData } from "./ExperienceDB";
 import { ProjectsData } from "./ProjectsDB";
-import { SocialLinksData } from "./SocialLinksDB";
+import { SocialLinksData } from "./SocialLinksData";
 import {
   TestimonialsRow1,
   TestimonialsRow2,
