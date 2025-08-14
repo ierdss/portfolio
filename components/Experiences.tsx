@@ -1,8 +1,7 @@
-import { Divider, Heading1 } from "@/components";
+import { Divider, Heading1, ViewMoreBtn } from "@/components";
 import { ExperiencesTabs, WorkExperiencesData } from "@/constants";
 import Link from "next/link";
 import React from "react";
-import ViewMoreBtn from "./buttons/ViewMoreBtn";
 
 export default function Experiences() {
   return (

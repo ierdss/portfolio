@@ -9,6 +9,12 @@ import Testimonials from "./Testimonials";
 
 export { Experience, Footer, Hero, Navbar, Projects, Skills, Testimonials };
 
+// Components
+
+import ViewMoreBtn from "./buttons/ViewMoreBtn";
+
+export { ViewMoreBtn };
+
 // Typography
 import Heading1 from "./headings/Heading1";
 
