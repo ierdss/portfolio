@@ -1,7 +1,7 @@
 // Sections
 import Experience from "./Experience";
 import Footer from "./Footer";
-import Hero from "./Hero";
+import Hero from "./hero_section/Hero";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Skills from "./Skills";
