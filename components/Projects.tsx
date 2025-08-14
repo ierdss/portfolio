@@ -96,7 +96,7 @@ function FeaturedProjectsCard({
 }: FeaturedProjectsCardProps) {
   const size = 20;
   return (
-    <div className="flex h-full w-full flex-col items-center justify-center gap-4">
+    <div className="flex h-full w-full flex-col items-center gap-4">
       <div className="h-50 relative aspect-16/10 w-full overflow-hidden rounded-lg md:rounded-xl">
         <a
           href={linkLiveDemo}
