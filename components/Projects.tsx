@@ -56,12 +56,10 @@ export default function Projects() {
 
 import Image from "next/image";
 
-import { BsGithub } from "react-icons/bs";
 import { CiMobile1 } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
 import { IoIosLaptop } from "react-icons/io";
-import { IoGlobe, IoSearchCircle } from "react-icons/io5";
-import { TbExternalLink } from "react-icons/tb";
+import { TbBrandGithubFilled, TbExternalLink } from "react-icons/tb";
 import ViewMoreBtn from "./buttons/ViewMoreBtn";
 import Divider from "./divider/Divider";
 
@@ -149,7 +147,7 @@ function FeaturedProjectsCard({
             <a
               href={linkLiveDemo}
               target="_blank"
-              className="flex flex-row items-center gap-2 rounded-full bg-text p-2 text-background-1 hover:bg-primary"
+              className="text-primary-foreground shadow-xs [&_svg:not([class*='size-'])]:size-4 focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive has-[>svg]:px-3 inline-flex h-9 shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-text px-4 py-2 text-sm font-medium text-background-1 outline-none transition-all hover:bg-primary/90 focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0"
             >
               <TbExternalLink size={size} />
               <p>Live Demo</p>
@@ -161,7 +159,7 @@ function FeaturedProjectsCard({
               target="_blank"
               className="rounded-full bg-text p-2 text-background-1 hover:bg-primary"
             >
-              <BsGithub size={size} />
+              <TbBrandGithubFilled size={size} />
             </a>
           )}
           {linkCaseStudy && (
