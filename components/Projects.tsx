@@ -119,18 +119,9 @@ function FeaturedProjectsCard({
         )}
       </div>
       <div className="flex h-fit w-full flex-col gap-4 px-2 md:px-0">
-        <div className="flex flex-row justify-between">
-          <div>
-            <h3 className="w-full text-left text-text">{title}</h3>
-            <h5 className="w-full text-left font-bold uppercase text-primary">
-              {subtitle}
-            </h5>
-          </div>
-          <div className="flex flex-row items-center gap-3 text-text">
-            {platformDesktop && <IoIosLaptop size={40} />}
-            {platformMobile && <CiMobile1 size={25} />}
-          </div>
-        </div>
+        <h5>
+          {title} •<span className="text-redberry"> {subtitle}</span>
+        </h5>
         <ul className="text-text2 flex flex-row flex-wrap gap-2">
           {tags.length !== 0 &&
             tags.map((tag, index) => (
@@ -139,7 +130,7 @@ function FeaturedProjectsCard({
               </li>
             ))}
         </ul>
-        <p className="text-justify text-base normal-case text-text lg:text-left">
+        <p className="text-justify text-base normal-case text-black text-text lg:text-left">
           {description}
         </p>
         <div className="mt-2 flex w-full flex-row flex-wrap items-center gap-4 md:mt-12">

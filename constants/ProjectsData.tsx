@@ -51,6 +51,7 @@ export const ProjectsFeaturedData = [
     platformDesktop: true,
     platformMobile: true,
     tags: ["Next.js", "Typescript", "Tailwind", "CSS", "HTML"],
+    description: "Hello World!",
     linkRepository: "https://github.com/AndreiSager/road-way-delivery",
     linkLiveDemo: "https://roadwaydelivery.vercel.app",
     linkCaseStudy: "andrei",
@@ -66,6 +67,7 @@ export const ProjectsFeaturedData = [
     platformDesktop: true,
     platformMobile: true,
     tags: ["next.js", "cloudinary", "typescript", "tailwind"],
+    description: "Hello World!",
     linkRepository:
       "https://github.com/AndreiSager/family-friends_image-gallery",
     linkLiveDemo: "https://remembrance-gallery.vercel.app",
@@ -82,6 +84,7 @@ export const ProjectsFeaturedData = [
     platformDesktop: true,
     platformMobile: true,
     tags: ["Next.js", "Typescript", "Tailwind", "CSS", "HTML"],
+    description: "Hello World!",
     linkRepository: "https://github.com/AndreiSager/road-way-delivery",
     linkLiveDemo: "https://roadwaydelivery.vercel.app",
     linkCaseStudy: "",
@@ -97,6 +100,7 @@ export const ProjectsFeaturedData = [
     platformDesktop: true,
     platformMobile: true,
     tags: ["next.js", "cloudinary", "typescript", "tailwind"],
+    description: "Hello World!",
     linkRepository:
       "https://github.com/AndreiSager/family-friends_image-gallery",
     linkLiveDemo: "https://remembrance-gallery.vercel.app",
@@ -116,6 +120,7 @@ export const ProjectsAllData = [
     platformDesktop: true,
     platformMobile: true,
     tags: ["Next.js", "Typescript", "Tailwind", "CSS", "HTML"],
+    description: "Hello World!",
     linkRepository: "https://github.com/AndreiSager/road-way-delivery",
     linkLiveDemo: "https://roadwaydelivery.vercel.app",
     linkCaseStudy: "",
@@ -131,6 +136,7 @@ export const ProjectsAllData = [
     platformDesktop: true,
     platformMobile: true,
     tags: ["next.js", "cloudinary", "typescript", "tailwind"],
+    description: "Hello World!",
     linkRepository:
       "https://github.com/AndreiSager/family-friends_image-gallery",
     linkLiveDemo: "https://remembrance-gallery.vercel.app",
@@ -147,6 +153,7 @@ export const ProjectsAllData = [
     platformDesktop: true,
     platformMobile: true,
     tags: ["Next.js", "Typescript", "Tailwind", "CSS", "HTML"],
+    description: "Hello World!",
     linkRepository: "https://github.com/AndreiSager/road-way-delivery",
     linkLiveDemo: "https://roadwaydelivery.vercel.app",
     linkCaseStudy: "",
@@ -162,6 +169,7 @@ export const ProjectsAllData = [
     platformDesktop: true,
     platformMobile: true,
     tags: ["next.js", "cloudinary", "typescript", "tailwind"],
+    description: "Hello World!",
     linkRepository:
       "https://github.com/AndreiSager/family-friends_image-gallery",
     linkLiveDemo: "https://remembrance-gallery.vercel.app",
