@@ -36,6 +36,8 @@ export default function Projects() {
               platformMobile={
                 project.platformMobile !== null ? project.platformMobile : false
               }
+              tags={project.tags}
+              description={project.description}
               linkRepository={
                 project.linkRepository !== null ? project.linkRepository : ""
               }
@@ -45,7 +47,6 @@ export default function Projects() {
               linkCaseStudy={
                 project.linkCaseStudy !== null ? project.linkCaseStudy : ""
               }
-              tags={project.tags}
             />
           ))}
         </ul>
@@ -118,7 +119,7 @@ function FeaturedProjectsCard({
           />
         )}
       </div>
-      <div className="flex h-fit w-full flex-col gap-4 px-2 md:px-0">
+      <div className="flex w-full flex-col gap-4">
         <h5>
           {title} •<span className="text-redberry"> {subtitle}</span>
         </h5>
@@ -130,10 +131,10 @@ function FeaturedProjectsCard({
               </li>
             ))}
         </ul>
-        <p className="text-justify text-base normal-case text-black text-text lg:text-left">
+        <p className="text-justify text-base normal-case text-text lg:text-left">
           {description}
         </p>
-        <div className="mt-2 flex w-full flex-row flex-wrap items-center gap-4 md:mt-12">
+        <div className="flex w-full flex-row flex-wrap items-center gap-4">
           {linkLiveDemo && (
             <a
               href={linkLiveDemo}

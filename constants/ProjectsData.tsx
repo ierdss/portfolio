@@ -67,7 +67,7 @@ export const ProjectsFeaturedData = [
     platformDesktop: true,
     platformMobile: true,
     tags: ["next.js", "cloudinary", "typescript", "tailwind"],
-    description: "Hello World!",
+    description: "Hello World! My g where are you?",
     linkRepository:
       "https://github.com/AndreiSager/family-friends_image-gallery",
     linkLiveDemo: "https://remembrance-gallery.vercel.app",
