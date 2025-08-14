@@ -1,6 +1,5 @@
+import { Divider, Heading1 } from "@/components";
 import { SkillData } from "@/constants/SkillDB";
-import Divider from "./divider/Divider";
-import Heading1 from "./headings/Heading1";
 
 export default function Skills() {
   return (
