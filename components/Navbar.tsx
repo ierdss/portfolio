@@ -159,7 +159,13 @@ export default function Navbar() {
 function ThemePicker() {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
-
+  const handleTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
     setMounted(true);
@@ -170,11 +176,14 @@ function ThemePicker() {
   }
 
   return (
-    <div className="mr-4 rounded-full px-2 py-2 text-text md:mr-0">
+    <div
+      className="mr-4 rounded-full px-2 py-2 text-text md:mr-0"
+      onClick={() => handleTheme()}
+    >
       {theme === "light" ? (
-        <FaSun onClick={() => setTheme("dark")} size={20} />
+        <FaSun size={20} />
       ) : (
-        <BsFillMoonStarsFill onClick={() => setTheme("light")} size={20} />
+        <BsFillMoonStarsFill size={20} />
       )}
     </div>
   );
