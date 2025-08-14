@@ -68,7 +68,7 @@
 
 @layer components {
   .skill-card {
-    @apply flex aspect-square h-28 w-28 flex-col items-center justify-center gap-1 transition-all duration-300 ease-out hover:scale-150;
+    @apply flex aspect-square h-24 w-24 flex-col items-center justify-center gap-2 transition-all duration-300 ease-out hover:scale-110;
   }
 }
 
