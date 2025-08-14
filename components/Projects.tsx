@@ -148,10 +148,9 @@ function FeaturedProjectsCard({
             <a
               href={linkCaseStudy}
               target="_blank"
-              className="flex w-[30%] flex-row items-center justify-center gap-2 rounded-full text-xs capitalize text-text hover:text-primary md:text-sm"
+              className="rounded-full bg-text p-2 text-background-1 hover:bg-primary"
             >
-              <IoSearchCircle size={40} className="aspect-square w-10" />
-              Case Study
+              <IoSearchCircle size={size} />
             </a>
           )}
           {linkLiveDemo && (
