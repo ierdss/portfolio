@@ -23,18 +23,18 @@ export default function Hero() {
       id="hero"
       className="flex w-full select-none flex-col items-center justify-center bg-background-1"
     >
-      <div className="relative flex w-full max-w-center flex-col items-center justify-center gap-10 px-2 py-24 md:flex-row md:gap-40 md:px-40 md:py-48">
-        <div className="z-10 flex w-[80%] items-center justify-center overflow-hidden rounded-full bg-background-1/50 md:order-1 md:max-w-[450px]">
+      <div className="flex w-full max-w-center flex-col items-center justify-center gap-10 px-2 py-24 md:flex-row lg:gap-20 lg:py-48">
+        <div className="z-10 flex w-full max-w-[300px] items-center justify-center overflow-hidden rounded-full bg-background-1/50 lg:max-w-[400px]">
           <Image
             src="/portraits/barong.png"
             width={1000}
             height={1000}
-            alt="Just a chill guy A picture of Andrei Sager"
+            alt="Just a chill guy."
             priority
           />
         </div>
 
-        <div className="z-20 order-2 flex w-fit shrink-0 flex-col items-center justify-center gap-4 text-center md:items-start md:gap-6 md:text-left">
+        <div className="z-20 order-2 flex w-fit max-w-[500px] shrink-0 flex-col items-center justify-center gap-4 text-center md:max-w-[350px] md:items-start md:gap-6 md:text-left lg:max-w-[500px]">
           <p>Hey, Im</p>
           <h1 className="leading-none text-redberry">
             Andrei
@@ -72,15 +72,6 @@ export default function Hero() {
                 >
                   {icon}
                 </a>
-                // <a
-                //   key={id}
-                //   href={url}
-                //   target="_blank"
-                //   aria-label={ariaLabel}
-                //   className="flex items-center justify-center text-text hover:bg-black hover:text-background-1"
-                // >
-                //   {icon}
-                // </a>
               ))}
             </ul>
           </div>
