@@ -45,7 +45,7 @@ export default function Hero() {
           <p>
             A 25 y/o Frontend Web Developer based in the Philippines
             <br className="hidden lg:flex" /> specializing in Landing Pages &
-            <br className="smd:flex hidden lg:hidden" /> E-commerce Websites
+            <br className="smd:flex hidden md:hidden" /> E-commerce Websites
           </p>
 
           <div className="flex flex-row items-center justify-center gap-4 md:justify-start">
