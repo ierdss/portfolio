@@ -1,9 +1,8 @@
 "use client";
 
+import { SocialLinksData } from "@/constants";
 import Image from "next/image";
 import { useEffect } from "react";
-
-import { SocialLinksData } from "@/constants";
 import { FaFileDownload, FaGithub } from "react-icons/fa";
 
 export default function Hero() {
