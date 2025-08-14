@@ -13,7 +13,7 @@ import { SiNextdotjs, SiTailwindcss, SiVercel, SiVim } from "react-icons/si";
 
 const iconSize = 40;
 
-export const SkillData = [
+export const SkillsData = [
   {
     href: "https://www.w3schools.com/html/default.asp",
     icon: (
