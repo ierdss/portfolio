@@ -7,7 +7,7 @@ export default function Skills() {
       id="skills"
       className="flex w-full flex-col items-center overflow-hidden bg-background-2"
     >
-      <div className="flex w-full max-w-center flex-col items-center gap-8 px-2 py-12 text-left md:px-10 md:py-48">
+      <div className="flex w-full max-w-center flex-col items-center gap-8 px-2 py-12 text-left md:gap-12 md:px-10 md:py-48">
         <div className="flex w-full max-w-screen-xl">
           <Heading1 text="Skills and Technologies" />
         </div>
