@@ -9,7 +9,7 @@ export default function Experiences() {
       id="experience"
       className="flex w-full flex-col items-center justify-center bg-background-1"
     >
-      <div className="flex w-full max-w-center flex-col items-center justify-center gap-8 overflow-hidden px-2 py-12 md:gap-12 md:px-40 md:py-24">
+      <div className="flex w-full max-w-center flex-col items-center justify-center gap-8 overflow-hidden px-2 py-12 md:gap-12 md:px-10 md:py-24">
         <div className="flex w-full max-w-screen-xl flex-col justify-start gap-8 md:justify-between">
           <div className="flex w-full max-w-screen-xl flex-col items-start justify-between md:flex-row md:items-center">
             <Heading1 text="Work Experience" />
@@ -36,7 +36,7 @@ export default function Experiences() {
               index,
             ) => (
               <li className=" flex flex-col gap-4" key={id}>
-                <div className="flex flex-col justify-between md:flex-row">
+                <div className="flex flex-col justify-between lg:flex-row">
                   <h5>
                     {title} •<span className="text-redberry"> {company}</span>
                   </h5>
