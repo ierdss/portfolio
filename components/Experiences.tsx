@@ -52,7 +52,7 @@ export default function Experiences() {
                     </li>
                   ))}
                 </ul>
-                <ul className="ml-4 list-disc text-text">
+                <ul className="ml-5 list-disc text-text">
                   {bullets.map((bullet, index) => (
                     <li key={index} className="pl-1 text-sm">
                       {bullet}
