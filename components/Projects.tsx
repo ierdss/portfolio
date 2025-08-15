@@ -15,7 +15,7 @@ export default function Projects() {
 
         <Divider />
 
-        <ul className="grid w-full max-w-screen-xl grid-cols-1 gap-12 md:grid-cols-2 md:gap-3">
+        <ul className="grid w-full max-w-screen-xl grid-cols-1 gap-12 md:grid-cols-2 md:gap-x-4 md:gap-y-12">
           {ProjectsFeaturedData.map((project, index) => (
             <FeaturedProjectsCard
               key={index}
