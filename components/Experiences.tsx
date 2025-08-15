@@ -1,5 +1,6 @@
 import { Divider, Heading1, ViewMoreBtn } from "@/components";
 import { ExperiencesDataWork, ExperiencesTabs } from "@/constants";
+import { ExperiencesDataEducation } from "@/constants/ExperiencesData";
 import Link from "next/link";
 import React from "react";
 
@@ -68,35 +69,20 @@ export default function Experiences() {
         {/* Education */}
         <Divider />
         <ul className="flex w-full max-w-screen-xl flex-col gap-8">
-          {ExperiencesDataWork.toReversed().map(
+          {ExperiencesDataEducation.toReversed().map(
             (
-              { id, icon, iconStyle, title, company, date, bullets, tags },
+              { id, degree, institution, graduationDate, description },
               index,
             ) => (
               <li className=" flex flex-col gap-4" key={id}>
                 <div className="flex flex-col justify-between lg:flex-row lg:items-center">
                   <h5>
-                    {title} •<span className="text-redberry"> {company}</span>
+                    {degree} •
+                    <span className="text-redberry"> {institution}</span>
                   </h5>
-                  <p>{date}</p>
+                  <p>Graduated: {graduationDate}</p>
                 </div>
-                <ul className="flex flex-row flex-wrap gap-2 text-text">
-                  {tags.map((tag, index) => (
-                    <li
-                      key={`tag${index}`}
-                      className="rounded-full border border-text px-2 py-1 text-xs"
-                    >
-                      {tag}
-                    </li>
-                  ))}
-                </ul>
-                <ul className="ml-5 list-disc text-text">
-                  {bullets.map((bullet, index) => (
-                    <li key={index} className="pl-1 text-sm">
-                      {bullet}
-                    </li>
-                  ))}
-                </ul>
+                <p className="text-sm text-black/60">{description}</p>
                 <div className="border-b border-b-text opacity-10"></div>
               </li>
             ),

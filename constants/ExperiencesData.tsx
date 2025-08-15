@@ -58,3 +58,13 @@ export const ExperiencesDataWork = [
     ],
   },
 ];
+
+export const ExperiencesDataEducation = [
+  {
+    id: 1,
+    degree: "Bachelor of Computer Science",
+    institution: "STI College Sta. Mesa",
+    graduationDate: "July 2025",
+    description: "Sta. Mesa, Manila, Metro Manila",
+  },
+];
