@@ -68,3 +68,12 @@ export const ExperiencesDataEducation = [
     description: "Sta. Mesa, Manila, Metro Manila",
   },
 ];
+
+export const ExperiencesDataUpskill = [
+  {
+    id: 1,
+    title: "The Complete Full-Stack Web Development Bootcamp",
+    platform: "Udemy",
+    date: "April 2025",
+  },
+];
