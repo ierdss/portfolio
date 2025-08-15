@@ -150,7 +150,7 @@ function FeaturedProjectsCard({
             </a>
           )}
         </div>
-        <h5>
+        <h5 className="text-lg">
           {title} •<span className="text-redberry"> {subtitle}</span>
         </h5>
         <ul className="text-text2 flex flex-row flex-wrap gap-2">
