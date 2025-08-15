@@ -72,9 +72,9 @@ export const ExperiencesDataEducation = [
 export const ExperiencesDataUpskill = [
   {
     id: 1,
-    title: "The Complete Full-Stack Web Development Bootcamp",
+    title: "Learn Visual Studio Code",
     platform: "Udemy",
-    date: "April 2025",
+    date: "March 2025",
     tags: [
       "HTML",
       "CSS",
@@ -89,9 +89,9 @@ export const ExperiencesDataUpskill = [
   },
   {
     id: 2,
-    title: "The Ultimate React Course 2025 React, Next.js, Redux & More",
+    title: "Git Complete The definitive, step-by-step guide to Git",
     platform: "Udemy",
-    date: "April 2025",
+    date: "March 2025",
     tags: [
       "HTML",
       "CSS",
@@ -123,9 +123,9 @@ export const ExperiencesDataUpskill = [
   },
   {
     id: 4,
-    title: "Git Complete The definitive, step-by-step guide to Git",
+    title: "The Ultimate React Course 2025 React, Next.js, Redux & More",
     platform: "Udemy",
-    date: "March 2025",
+    date: "April 2025",
     tags: [
       "HTML",
       "CSS",
@@ -140,9 +140,9 @@ export const ExperiencesDataUpskill = [
   },
   {
     id: 5,
-    title: "Learn Visual Studio Code",
+    title: "The Complete Full-Stack Web Development Bootcamp",
     platform: "Udemy",
-    date: "March 2025",
+    date: "April 2025",
     tags: [
       "HTML",
       "CSS",
