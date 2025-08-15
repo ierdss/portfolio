@@ -42,10 +42,10 @@ export default function Experiences() {
             ) => (
               <li className=" flex flex-col gap-4" key={id}>
                 <div className="flex flex-col justify-between lg:flex-row lg:items-center">
-                  <h5>
+                  <h5 className="text-lg">
                     {title} •<span className="text-redberry"> {company}</span>
                   </h5>
-                  <p>{date}</p>
+                  <p className="text-sm">{date}</p>
                 </div>
                 <ul className="flex flex-row flex-wrap gap-2 text-text">
                   {tags.map((tag, index) => (
@@ -80,11 +80,11 @@ export default function Experiences() {
             ) => (
               <li className=" flex flex-col gap-4" key={id}>
                 <div className="flex flex-col justify-between lg:flex-row lg:items-center">
-                  <h5>
+                  <h5 className="text-lg">
                     {degree} •
                     <span className="text-redberry"> {institution}</span>
                   </h5>
-                  <p>Graduated: {graduationDate}</p>
+                  <p className="text-sm">Graduated: {graduationDate}</p>
                 </div>
                 <p className="text-sm text-text/70">{description}</p>
                 <div className="border-b border-b-text opacity-10"></div>
@@ -100,10 +100,10 @@ export default function Experiences() {
             ({ id, title, platform, date, tags }, index) => (
               <li className=" flex flex-col gap-4" key={id}>
                 <div className="flex flex-col justify-between lg:flex-row lg:items-center">
-                  <h5>
+                  <h5 className="text-lg">
                     {title} •<span className="text-redberry"> {platform}</span>
                   </h5>
-                  <p>Completed: {date}</p>
+                  <p className="text-sm">Completed: {date}</p>
                 </div>
                 <ul className="flex flex-row flex-wrap gap-2 text-text">
                   {tags.map((tag, index) => (
