@@ -123,7 +123,7 @@ export const ExperiencesDataUpskill = [
   },
   {
     id: 4,
-    title: "The Ultimate React Course 2025 React, Next.js, Redux & More",
+    title: "The Complete Full-Stack Web Development Bootcamp",
     platform: "Udemy",
     date: "April 2025",
     tags: [
@@ -140,7 +140,7 @@ export const ExperiencesDataUpskill = [
   },
   {
     id: 5,
-    title: "The Complete Full-Stack Web Development Bootcamp",
+    title: "The Ultimate React Course 2025 React, Next.js, Redux & More",
     platform: "Udemy",
     date: "April 2025",
     tags: [
