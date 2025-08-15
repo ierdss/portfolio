@@ -93,10 +93,10 @@ export default function Experiences() {
           )}
         </ul>
 
-        {/* Certificates */}
+        {/* Upskill Certificates */}
         <Divider />
         <ul className="flex w-full max-w-screen-xl flex-col gap-8">
-          {ExperiencesDataUpskill.toReversed().map(
+          {ExperiencesDataUpskill.map(
             ({ id, title, platform, date, tags }, index) => (
               <li className=" flex flex-col gap-4" key={id}>
                 <div className="flex flex-col justify-between lg:flex-row lg:items-center">
