@@ -120,6 +120,22 @@ function FeaturedProjectsCard({
         )}
       </div>
       <div className="flex w-full flex-col gap-4">
+        <ul className="text-text2 flex flex-row flex-wrap gap-2">
+          {tags.length !== 0 &&
+            tags.map((tag, index) => (
+              <li key={index} className="border-gray1 rounded-full border">
+                <p className="px-4 py-1 text-xs capitalize">{tag}</p>
+              </li>
+            ))}
+        </ul>
+        <div className="flex w-full flex-col">
+          <h5 className="text-lg">
+            {title} •<span className="text-redberry"> {subtitle}</span>
+          </h5>
+          <p className="text-justify text-base normal-case text-text lg:text-left">
+            {description}
+          </p>
+        </div>
         <div className="flex w-full flex-row flex-wrap items-center gap-4">
           {linkLiveDemo && (
             <a
@@ -150,22 +166,6 @@ function FeaturedProjectsCard({
             </a>
           )}
         </div>
-        <div className="flex w-full flex-col">
-          <h5 className="text-lg">
-            {title} •<span className="text-redberry"> {subtitle}</span>
-          </h5>
-          <p className="text-justify text-base normal-case text-text lg:text-left">
-            {description}
-          </p>
-        </div>
-        <ul className="text-text2 flex flex-row flex-wrap gap-2">
-          {tags.length !== 0 &&
-            tags.map((tag, index) => (
-              <li key={index} className="border-gray1 rounded-full border">
-                <p className="px-4 py-1 text-xs capitalize">{tag}</p>
-              </li>
-            ))}
-        </ul>
       </div>
     </div>
   );
