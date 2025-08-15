@@ -82,7 +82,7 @@ export const ExperiencesDataUpskill = [
     title: "Git Complete The definitive, step-by-step guide to Git",
     platform: "Udemy",
     date: "March 2025",
-    tags: ["Git", "GitHub", "GitHub Desktop"],
+    tags: ["Git", "GitHub", "GitHub Desktop", "Version Control"],
   },
   {
     id: 3,
