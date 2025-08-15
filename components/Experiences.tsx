@@ -55,7 +55,7 @@ export default function Experiences() {
                 </ul>
                 <ul className="ml-5 list-disc text-text">
                   {bullets.map((bullet, index) => (
-                    <li key={index} className="pl-1 text-sm">
+                    <li key={index} className="text-sm text-text/70">
                       {bullet}
                     </li>
                   ))}
@@ -82,7 +82,7 @@ export default function Experiences() {
                   </h5>
                   <p>Graduated: {graduationDate}</p>
                 </div>
-                <p className="text-sm text-black/60">{description}</p>
+                <p className="text-sm text-text/70">{description}</p>
                 <div className="border-b border-b-text opacity-10"></div>
               </li>
             ),
@@ -116,7 +116,7 @@ export default function Experiences() {
                 </ul>
                 <ul className="ml-5 list-disc text-text">
                   {bullets.map((bullet, index) => (
-                    <li key={index} className="pl-1 text-sm">
+                    <li key={index} className="text-sm text-text/70">
                       {bullet}
                     </li>
                   ))}
