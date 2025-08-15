@@ -1,4 +1,4 @@
-import { ExperiencesTabs, WorkExperiencesData } from "./ExperiencesData";
+import { ExperiencesDataWork, ExperiencesTabs } from "./ExperiencesData";
 import { ProjectsAllData, ProjectsFeaturedData } from "./ProjectsData";
 import { SkillsData } from "./SkillsData";
 import { SocialLinksData } from "./SocialLinksData";
@@ -9,6 +9,7 @@ import {
 } from "./TestimonialsDB";
 
 export {
+  ExperiencesDataWork,
   ExperiencesTabs,
   ProjectsAllData,
   ProjectsFeaturedData,
@@ -17,5 +18,4 @@ export {
   TestimonialsRow1,
   TestimonialsRow2,
   TestimonialsRow3,
-  WorkExperiencesData,
 };

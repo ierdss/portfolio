@@ -1,5 +1,5 @@
 import { Divider, Heading1, ViewMoreBtn } from "@/components";
-import { ExperiencesTabs, WorkExperiencesData } from "@/constants";
+import { ExperiencesDataWork, ExperiencesTabs } from "@/constants";
 import Link from "next/link";
 import React from "react";
 
@@ -30,7 +30,7 @@ export default function Experiences() {
 
         <Divider />
         <ul className="flex w-full max-w-screen-xl flex-col gap-8">
-          {WorkExperiencesData.toReversed().map(
+          {ExperiencesDataWork.toReversed().map(
             (
               { id, icon, iconStyle, title, company, date, bullets, tags },
               index,
@@ -68,7 +68,7 @@ export default function Experiences() {
         {/* Education */}
         <Divider />
         <ul className="flex w-full max-w-screen-xl flex-col gap-8">
-          {WorkExperiencesData.toReversed().map(
+          {ExperiencesDataWork.toReversed().map(
             (
               { id, icon, iconStyle, title, company, date, bullets, tags },
               index,
@@ -106,7 +106,7 @@ export default function Experiences() {
         {/* Certificates */}
         <Divider />
         <ul className="flex w-full max-w-screen-xl flex-col gap-8">
-          {WorkExperiencesData.toReversed().map(
+          {ExperiencesDataWork.toReversed().map(
             (
               { id, icon, iconStyle, title, company, date, bullets, tags },
               index,

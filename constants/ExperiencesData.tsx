@@ -7,7 +7,7 @@ export const ExperiencesTabs = [
   { id: 3, href: "/certificates", text: "Certificates" },
 ];
 
-export const WorkExperiencesData = [
+export const ExperiencesDataWork = [
   {
     id: 1,
     icon: <FaReact className="scale-150" />,
