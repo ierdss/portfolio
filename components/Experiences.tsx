@@ -64,6 +64,82 @@ export default function Experiences() {
             ),
           )}
         </ul>
+
+        {/* Education */}
+        <Divider />
+        <ul className="flex w-full max-w-screen-xl flex-col gap-8">
+          {WorkExperiencesData.toReversed().map(
+            (
+              { id, icon, iconStyle, title, company, date, bullets, tags },
+              index,
+            ) => (
+              <li className=" flex flex-col gap-4" key={id}>
+                <div className="flex flex-col justify-between lg:flex-row lg:items-center">
+                  <h5>
+                    {title} •<span className="text-redberry"> {company}</span>
+                  </h5>
+                  <p>{date}</p>
+                </div>
+                <ul className="flex flex-row flex-wrap gap-2 text-text">
+                  {tags.map((tag, index) => (
+                    <li
+                      key={`tag${index}`}
+                      className="rounded-full border border-text px-2 py-1 text-xs"
+                    >
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+                <ul className="ml-5 list-disc text-text">
+                  {bullets.map((bullet, index) => (
+                    <li key={index} className="pl-1 text-sm">
+                      {bullet}
+                    </li>
+                  ))}
+                </ul>
+                <div className="border-b border-b-text opacity-10"></div>
+              </li>
+            ),
+          )}
+        </ul>
+
+        {/* Certificates */}
+        <Divider />
+        <ul className="flex w-full max-w-screen-xl flex-col gap-8">
+          {WorkExperiencesData.toReversed().map(
+            (
+              { id, icon, iconStyle, title, company, date, bullets, tags },
+              index,
+            ) => (
+              <li className=" flex flex-col gap-4" key={id}>
+                <div className="flex flex-col justify-between lg:flex-row lg:items-center">
+                  <h5>
+                    {title} •<span className="text-redberry"> {company}</span>
+                  </h5>
+                  <p>{date}</p>
+                </div>
+                <ul className="flex flex-row flex-wrap gap-2 text-text">
+                  {tags.map((tag, index) => (
+                    <li
+                      key={`tag${index}`}
+                      className="rounded-full border border-text px-2 py-1 text-xs"
+                    >
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+                <ul className="ml-5 list-disc text-text">
+                  {bullets.map((bullet, index) => (
+                    <li key={index} className="pl-1 text-sm">
+                      {bullet}
+                    </li>
+                  ))}
+                </ul>
+                <div className="border-b border-b-text opacity-10"></div>
+              </li>
+            ),
+          )}
+        </ul>
       </div>
     </div>
   );
