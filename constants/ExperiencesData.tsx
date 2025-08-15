@@ -125,7 +125,7 @@ export const ExperiencesDataUpskill = [
     id: 4,
     title: "Git Complete The definitive, step-by-step guide to Git",
     platform: "Udemy",
-    date: "April 2025",
+    date: "March 2025",
     tags: [
       "HTML",
       "CSS",
@@ -142,7 +142,7 @@ export const ExperiencesDataUpskill = [
     id: 5,
     title: "Learn Visual Studio Code",
     platform: "Udemy",
-    date: "April 2025",
+    date: "March 2025",
     tags: [
       "HTML",
       "CSS",
