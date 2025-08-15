@@ -150,9 +150,14 @@ function FeaturedProjectsCard({
             </a>
           )}
         </div>
-        <h5 className="text-lg">
-          {title} •<span className="text-redberry"> {subtitle}</span>
-        </h5>
+        <div className="flex w-full flex-col">
+          <h5 className="text-lg">
+            {title} •<span className="text-redberry"> {subtitle}</span>
+          </h5>
+          <p className="text-justify text-base normal-case text-text lg:text-left">
+            {description}
+          </p>
+        </div>
         <ul className="text-text2 flex flex-row flex-wrap gap-2">
           {tags.length !== 0 &&
             tags.map((tag, index) => (
@@ -161,9 +166,6 @@ function FeaturedProjectsCard({
               </li>
             ))}
         </ul>
-        <p className="text-justify text-base normal-case text-text lg:text-left">
-          {description}
-        </p>
       </div>
     </div>
   );
