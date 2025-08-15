@@ -75,5 +75,16 @@ export const ExperiencesDataUpskill = [
     title: "The Complete Full-Stack Web Development Bootcamp",
     platform: "Udemy",
     date: "April 2025",
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "EJS",
+      "JQuery",
+      "Express.js",
+      "Node.js",
+      "React",
+      "PostgreSQL",
+    ],
   },
 ];

@@ -1,5 +1,6 @@
 import {
   ExperiencesDataEducation,
+  ExperiencesDataUpskill,
   ExperiencesDataWork,
   ExperiencesTabs,
 } from "./ExperiencesData";
@@ -14,6 +15,7 @@ import {
 
 export {
   ExperiencesDataEducation,
+  ExperiencesDataUpskill,
   ExperiencesDataWork,
   ExperiencesTabs,
   ProjectsAllData,

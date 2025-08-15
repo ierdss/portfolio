@@ -1,6 +1,10 @@
 import { Divider, Heading1, ViewMoreBtn } from "@/components";
-import { ExperiencesDataWork, ExperiencesTabs } from "@/constants";
-import { ExperiencesDataEducation } from "@/constants/ExperiencesData";
+import {
+  ExperiencesDataEducation,
+  ExperiencesDataUpskill,
+  ExperiencesDataWork,
+  ExperiencesTabs,
+} from "@/constants";
 import Link from "next/link";
 import React from "react";
 
@@ -92,15 +96,12 @@ export default function Experiences() {
         {/* Certificates */}
         <Divider />
         <ul className="flex w-full max-w-screen-xl flex-col gap-8">
-          {ExperiencesDataWork.toReversed().map(
-            (
-              { id, icon, iconStyle, title, company, date, bullets, tags },
-              index,
-            ) => (
+          {ExperiencesDataUpskill.toReversed().map(
+            ({ id, title, platform, date, tags }, index) => (
               <li className=" flex flex-col gap-4" key={id}>
                 <div className="flex flex-col justify-between lg:flex-row lg:items-center">
                   <h5>
-                    {title} •<span className="text-redberry"> {company}</span>
+                    {title} •<span className="text-redberry"> {platform}</span>
                   </h5>
                   <p>{date}</p>
                 </div>
@@ -114,14 +115,14 @@ export default function Experiences() {
                     </li>
                   ))}
                 </ul>
-                <ul className="ml-5 list-disc text-text">
+                {/* <ul className="ml-5 list-disc text-text">
                   {bullets.map((bullet, index) => (
                     <li key={index} className="text-sm text-text/70">
                       {bullet}
                     </li>
                   ))}
-                </ul>
-                <div className="border-b border-b-text opacity-10"></div>
+                </ul> */}
+                <div className="border-b border-b-text opacity-10" />
               </li>
             ),
           )}
