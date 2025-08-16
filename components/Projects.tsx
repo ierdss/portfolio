@@ -124,7 +124,7 @@ function FeaturedProjectsCard({
             {description}
           </p>
         </div>
-        <ul className="text-text2 flex flex-row flex-wrap gap-2">
+        <ul className="flex flex-row flex-wrap gap-2 text-text">
           {tags.length !== 0 &&
             tags.map((tag, index) => (
               <li key={index} className="border-gray1 rounded-full border">
