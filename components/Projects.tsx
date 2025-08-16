@@ -124,10 +124,11 @@ function FeaturedProjectsCard({
         <ul className="flex flex-row flex-wrap gap-2">
           {tags.length !== 0 &&
             tags.map((tag, index) => (
-              <li key={index} className="rounded-full border border-text/70">
-                <p className="leading-0 px-2 py-0.5 text-xs capitalize">
-                  {tag}
-                </p>
+              <li
+                key={index}
+                className="leading-0 rounded-full border border-text/70 px-2 py-0.5 text-xs capitalize"
+              >
+                {tag}
               </li>
             ))}
         </ul>
