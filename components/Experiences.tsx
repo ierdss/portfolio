@@ -51,7 +51,7 @@ export default function Experiences() {
                   {tags.map((tag, index) => (
                     <li
                       key={`tag${index}`}
-                      className="leading-0 rounded-full border border-text/70 px-2 py-0.5 text-xs capitalize"
+                      className="rounded-full border border-text/70 px-2 py-0.5 text-xs"
                     >
                       {tag}
                     </li>
@@ -109,7 +109,7 @@ export default function Experiences() {
                   {tags.map((tag, index) => (
                     <li
                       key={`tag${index}`}
-                      className="leading-0 rounded-full border border-text/70 px-2 py-0.5 text-xs capitalize"
+                      className="rounded-full border border-text/70 px-2 py-0.5 text-xs"
                     >
                       {tag}
                     </li>
