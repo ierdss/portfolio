@@ -118,6 +118,12 @@ function FeaturedProjectsCard({
         )}
       </div>
       <div className="flex w-full flex-col gap-4">
+        <div className="flex w-full flex-col">
+          <h5 className="text-lg">{title}</h5>
+          <p className="text-justify text-base normal-case text-text lg:text-left">
+            {description}
+          </p>
+        </div>
         <ul className="text-text2 flex flex-row flex-wrap gap-2">
           {tags.length !== 0 &&
             tags.map((tag, index) => (
@@ -126,12 +132,6 @@ function FeaturedProjectsCard({
               </li>
             ))}
         </ul>
-        <div className="flex w-full flex-col">
-          <h5 className="text-lg">{title}</h5>
-          <p className="text-justify text-base normal-case text-text lg:text-left">
-            {description}
-          </p>
-        </div>
         <div className="flex w-full flex-row flex-wrap items-center gap-4">
           {linkLiveDemo && (
             <a
