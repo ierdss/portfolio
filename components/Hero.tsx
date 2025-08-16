@@ -1,23 +1,8 @@
-"use client";
-
 import { SocialLinksData } from "@/constants";
 import Image from "next/image";
-import { useEffect } from "react";
-import { FaFileDownload, FaGithub } from "react-icons/fa";
+import { FaFileDownload } from "react-icons/fa";
 
 export default function Hero() {
-  useEffect(() => {
-    let profileCardEl = document.querySelectorAll<HTMLElement>(".heroCard");
-
-    profileCardEl.forEach((heroCard) => {
-      heroCard.addEventListener("mouseover", function () {
-        profileCardEl.forEach((eachCard) => {
-          eachCard.classList.remove("active");
-        });
-        heroCard.classList.add("active");
-      });
-    });
-  }, []);
   return (
     <div
       id="hero"
@@ -45,7 +30,7 @@ export default function Hero() {
           <p>
             A 25 y/o Frontend Web Developer based in the Philippines
             <br className="hidden lg:flex" /> specializing in Landing Pages &
-            <br className="smd:flex hidden md:hidden" /> E-commerce Websites
+            <br className="hidden smd:flex md:hidden" /> E-commerce Websites
           </p>
 
           <div className="flex flex-row items-center justify-center gap-4 md:justify-start">
