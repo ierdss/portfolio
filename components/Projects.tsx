@@ -104,7 +104,7 @@ function FeaturedProjectsCard({
             width={1000}
             height={1000}
             alt={desktopAlt || "Desktop Thumbnail"}
-            sizes="(min-width: 768px) 100vw, 50vw"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </a>
         {linkLiveDemo && (
