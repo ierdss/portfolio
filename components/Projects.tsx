@@ -20,7 +20,6 @@ export default function Projects() {
             <FeaturedProjectsCard
               key={index}
               title={project.title !== null ? project.title : ""}
-              subtitle={project.subtitle !== null ? project.subtitle : ""}
               desktopThumbnail={
                 project.desktopThumbnail !== null
                   ? project.desktopThumbnail
@@ -66,7 +65,6 @@ import Divider from "./divider/Divider";
 
 interface FeaturedProjectsCardProps {
   title: string;
-  subtitle?: string;
   description?: string;
   desktopThumbnail?: string;
   desktopAlt?: string;
@@ -129,9 +127,7 @@ function FeaturedProjectsCard({
             ))}
         </ul>
         <div className="flex w-full flex-col">
-          <h5 className="text-lg">
-            {title} •<span className="text-redberry"> {subtitle}</span>
-          </h5>
+          <h5 className="text-lg">{title}</h5>
           <p className="text-justify text-base normal-case text-text lg:text-left">
             {description}
           </p>

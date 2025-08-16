@@ -43,7 +43,6 @@ export const ProjectsFeaturedData = [
   {
     id: 1,
     title: "Roadway Delivery",
-    subtitle: "Landing Page",
     desktopThumbnail: "/thumbnails/RWD_Thumbnail.jpg",
     desktopAlt: "RWD full page on desktop",
     mobileThumbnail: "",
@@ -59,7 +58,6 @@ export const ProjectsFeaturedData = [
   {
     id: 2,
     title: "Commemoration Gallery",
-    subtitle: "Image Gallery",
     desktopThumbnail: "/thumbnails/remembrance-gallery.png",
     desktopAlt: "",
     mobileThumbnail: "",
@@ -76,7 +74,6 @@ export const ProjectsFeaturedData = [
   {
     id: 3,
     title: "Roadway Delivery",
-    subtitle: "Landing Page",
     desktopThumbnail: "/thumbnails/road-way-delivery.jpg",
     desktopAlt: "RWD full page on desktop",
     mobileThumbnail: "",
@@ -92,7 +89,6 @@ export const ProjectsFeaturedData = [
   {
     id: 4,
     title: "Commemoration Gallery",
-    subtitle: "Image Gallery",
     desktopThumbnail: "/thumbnails/remembrance-gallery.png",
     desktopAlt: "",
     mobileThumbnail: "",
