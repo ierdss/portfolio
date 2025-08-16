@@ -120,7 +120,7 @@ function FeaturedProjectsCard({
       <div className="flex w-full flex-col gap-4">
         <div className="flex w-full flex-col">
           <h5 className="text-lg">{title}</h5>
-          <p className="text-justify text-base normal-case text-text lg:text-left">
+          <p className="text-justify text-sm normal-case text-text/90 lg:text-left">
             {description}
           </p>
         </div>
