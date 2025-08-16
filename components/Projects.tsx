@@ -125,7 +125,9 @@ function FeaturedProjectsCard({
           {tags.length !== 0 &&
             tags.map((tag, index) => (
               <li key={index} className="rounded-full border border-text/70">
-                <p className="px-1.5 py-0.5 text-xs capitalize">{tag}</p>
+                <p className="leading-0 px-2 py-0.5 text-xs capitalize">
+                  {tag}
+                </p>
               </li>
             ))}
         </ul>
