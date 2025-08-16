@@ -4,7 +4,7 @@ import {
   ExperiencesDataWork,
   ExperiencesTabs,
 } from "./ExperiencesData";
-import { ProjectsAllData, ProjectsFeaturedData } from "./ProjectsData";
+import { ProjectsDataAll, ProjectsDataFeatured } from "./ProjectsData";
 import { SkillsData } from "./SkillsData";
 import { SocialLinksData } from "./SocialLinksData";
 import {
@@ -18,8 +18,8 @@ export {
   ExperiencesDataUpskill,
   ExperiencesDataWork,
   ExperiencesTabs,
-  ProjectsAllData,
-  ProjectsFeaturedData,
+  ProjectsDataAll,
+  ProjectsDataFeatured,
   SkillsData,
   SocialLinksData,
   TestimonialsRow1,

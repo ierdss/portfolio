@@ -15,7 +15,7 @@
 //   linkCaseStudy: "/",
 // },
 
-export const ProjectsFeaturedData = [
+export const ProjectsDataFeatured = [
   // {
   //   id: 0,
   //   title: "This Portfolio",
@@ -104,7 +104,7 @@ export const ProjectsFeaturedData = [
   },
 ];
 
-export const ProjectsAllData = [
+export const ProjectsDataAll = [
   {
     id: 1,
     title: "Roadway Delivery",

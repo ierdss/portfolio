@@ -1,5 +1,5 @@
 import { Heading1 } from "@/components";
-import { ProjectsFeaturedData } from "@/constants";
+import { ProjectsDataFeatured } from "@/constants";
 
 export default function Projects() {
   return (
@@ -16,7 +16,7 @@ export default function Projects() {
         <Divider />
 
         <ul className="grid w-full max-w-screen-xl grid-cols-1 gap-12 md:grid-cols-2 md:gap-x-4 md:gap-y-12">
-          {ProjectsFeaturedData.map((project, index) => (
+          {ProjectsDataFeatured.map((project, index) => (
             <FeaturedProjectsCard
               key={index}
               title={project.title !== null ? project.title : ""}
@@ -56,9 +56,7 @@ export default function Projects() {
 
 import Image from "next/image";
 
-import { CiMobile1 } from "react-icons/ci";
 import { FaSearch } from "react-icons/fa";
-import { IoIosLaptop } from "react-icons/io";
 import { TbBrandGithubFilled, TbExternalLink } from "react-icons/tb";
 import ViewMoreBtn from "./buttons/ViewMoreBtn";
 import Divider from "./divider/Divider";
@@ -80,7 +78,6 @@ interface FeaturedProjectsCardProps {
 
 function FeaturedProjectsCard({
   title,
-  subtitle,
   description,
   desktopThumbnail,
   desktopAlt,
