@@ -1,8 +1,41 @@
 import { SocialLinksData } from "@/constants";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { SplitText } from "gsap/all";
 import Image from "next/image";
+import { useRef } from "react";
 import { FaFileDownload } from "react-icons/fa";
 
 export default function Hero() {
+  gsap.registerPlugin(useGSAP);
+  const container = useRef();
+  useGSAP(() => {
+    gsap.registerPlugin(SplitText);
+
+    console.clear();
+
+    gsap.set(".split", { opacity: 1 });
+
+    let split;
+    SplitText.create(".split", {
+      type: "words,lines",
+      linesClass: "line",
+      autoSplit: true,
+      mask: "lines",
+      onSplit: (self) => {
+        split = gsap.from(self.lines, {
+          duration: 1,
+          yPercent: 100,
+          autoAlpha: 0,
+          stagger: 0.1,
+          ease: "expo.out",
+          delay: 0.5,
+        });
+        return split;
+      },
+    });
+    gsap.to(".box", { x: 360 });
+  });
   return (
     <div
       id="hero"
@@ -27,10 +60,9 @@ export default function Hero() {
             <span className="text-background-2">A</span>
             <span className="text-text">Sager</span>
           </h1>
-          <p>
+          <p className="split">
             A 25 y/o Frontend Web Developer based in the Philippines
-            <br className="hidden lg:flex" /> specializing in Landing Pages &
-            <br className="hidden smd:flex md:hidden" /> E-commerce Websites
+            specializing in Landing Pages & E-commerce Websites
           </p>
 
           <div className="flex flex-row items-center justify-center gap-4 md:justify-start">
