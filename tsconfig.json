@@ -31,11 +31,11 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "build/types/**/*.ts",
-    "components/canvas/Stars.jsx",
+    "app/components/canvas/Stars.jsx",
     "utils/motion.jsx",
     "app/page.jsx",
-    "components/LoadingOverlay.jsx",
-    "components/Footer.jsx",
+    "app/components/LoadingOverlay.jsx",
+    "app/components/Footer.jsx",
     "app/resume"
   ],
   "exclude": ["node_modules"]
