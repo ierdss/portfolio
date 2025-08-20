@@ -1,5 +1,10 @@
 import { Heading1 } from "@/components";
+import ViewMoreBtn from "@/components/buttons/ViewMoreBtn";
+import Divider from "@/components/divider/Divider";
 import { ProjectsDataFeatured } from "@/constants";
+import Image from "next/image";
+import { FaSearch } from "react-icons/fa";
+import { TbBrandGithubFilled, TbExternalLink } from "react-icons/tb";
 
 export default function Projects() {
   return (
@@ -53,13 +58,6 @@ export default function Projects() {
     </div>
   );
 }
-
-import Image from "next/image";
-
-import { FaSearch } from "react-icons/fa";
-import { TbBrandGithubFilled, TbExternalLink } from "react-icons/tb";
-import ViewMoreBtn from "./buttons/ViewMoreBtn";
-import Divider from "./divider/Divider";
 
 interface FeaturedProjectsCardProps {
   title: string;
