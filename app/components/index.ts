@@ -1,9 +1,8 @@
 // Sections
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import Testimonials from "./Testimonials";
 
-export { Footer, Navbar, Testimonials };
+export { Footer, Navbar };
 
 // Components
 
