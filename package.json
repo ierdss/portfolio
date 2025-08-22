@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.11.0",
     "@gsap/react": "^2.1.2",
     "@headlessui/react": "^1.7.16",
     "@prisma/client": "^5.7.1",
