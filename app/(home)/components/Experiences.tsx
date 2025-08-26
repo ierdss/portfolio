@@ -9,6 +9,9 @@ import Link from "next/link";
 import React from "react";
 
 export default function Experiences() {
+  const experiences = ExperiencesDataWork.reverse();
+  const education = ExperiencesDataEducation.reverse();
+  const upskill = ExperiencesDataUpskill.reverse();
   return (
     <div
       id="experience"
@@ -35,7 +38,7 @@ export default function Experiences() {
 
         <Divider />
         <ul className="flex w-full max-w-screen-xl flex-col gap-8">
-          {ExperiencesDataWork.toReversed().map(
+          {experiences.map(
             (
               { id, icon, iconStyle, title, company, date, bullets, tags },
               index,
@@ -73,7 +76,7 @@ export default function Experiences() {
         {/* Education */}
         <Divider />
         <ul className="flex w-full max-w-screen-xl flex-col gap-8">
-          {ExperiencesDataEducation.toReversed().map(
+          {education.map(
             (
               { id, degree, institution, graduationDate, description },
               index,
@@ -96,36 +99,34 @@ export default function Experiences() {
         {/* Upskill Certificates */}
         <Divider />
         <ul className="flex w-full max-w-screen-xl flex-col gap-8">
-          {ExperiencesDataUpskill.toReversed().map(
-            ({ id, title, platform, date, tags }, index) => (
-              <li className=" flex flex-col gap-4" key={id}>
-                <div className="flex flex-col justify-between lg:flex-row lg:items-center">
-                  <h5 className="text-lg">
-                    {title} •<span className="text-redberry"> {platform}</span>
-                  </h5>
-                  <p className="text-sm">Completed: {date}</p>
-                </div>
-                <ul className="flex flex-row flex-wrap gap-2 text-text">
-                  {tags.map((tag, index) => (
-                    <li
-                      key={`tag${index}`}
-                      className="rounded-full border border-text/70 px-2 py-0.5 text-xs"
-                    >
-                      {tag}
-                    </li>
-                  ))}
-                </ul>
-                {/* <ul className="ml-5 list-disc text-text">
+          {upskill.map(({ id, title, platform, date, tags }, index) => (
+            <li className=" flex flex-col gap-4" key={id}>
+              <div className="flex flex-col justify-between lg:flex-row lg:items-center">
+                <h5 className="text-lg">
+                  {title} •<span className="text-redberry"> {platform}</span>
+                </h5>
+                <p className="text-sm">Completed: {date}</p>
+              </div>
+              <ul className="flex flex-row flex-wrap gap-2 text-text">
+                {tags.map((tag, index) => (
+                  <li
+                    key={`tag${index}`}
+                    className="rounded-full border border-text/70 px-2 py-0.5 text-xs"
+                  >
+                    {tag}
+                  </li>
+                ))}
+              </ul>
+              {/* <ul className="ml-5 list-disc text-text">
                   {bullets.map((bullet, index) => (
                     <li key={index} className="text-sm text-text/70">
                       {bullet}
                     </li>
                   ))}
                 </ul> */}
-                <div className="border-b border-b-text opacity-10" />
-              </li>
-            ),
-          )}
+              <div className="border-b border-b-text opacity-10" />
+            </li>
+          ))}
         </ul>
       </div>
     </div>
