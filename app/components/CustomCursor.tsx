@@ -12,7 +12,7 @@ export default function CustomCursor() {
     if (!el) return;
 
     // Center image on cursor
-    gsap.set(el, { xPercent: -50, yPercent: -50 });
+    gsap.set(el, { xPercent: 0, yPercent: -50 });
 
     gsap.to("#cursor", {
       rotation: "+=360", // Continuously adds 360 degrees to the rotation
