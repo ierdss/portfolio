@@ -39,7 +39,7 @@ export default function Hero() {
   return (
     <div
       id="hero"
-      className="bg-pattern flex w-full select-none flex-col items-center justify-center"
+      className="bg-pattern flex h-screen w-full select-none flex-col items-center justify-center"
     >
       <div className="flex w-full max-w-center flex-col items-center justify-center gap-10 px-2 py-24 md:flex-row lg:gap-20 lg:py-48">
         <div className="z-10 flex w-full max-w-[300px] items-center justify-center overflow-hidden rounded-full bg-background-1/50 lg:max-w-[400px]">

@@ -4,6 +4,7 @@ import { ThemeProvider } from "next-themes";
 import { Poppins, PT_Serif } from "next/font/google";
 import CustomCursor from "./components/CustomCursor";
 import "./globals.css";
+import ViewportProvider from "./providers/ViewportProvider";
 
 const font = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -54,12 +55,14 @@ export default function RootLayout({
           defaultTheme="dark"
           themes={["dark", "light"]}
         >
-          <div className="flex w-full flex-col justify-center">
-            <CustomCursor />
-            <Navbar />
-            <main className="w-full">{children}</main>
-            <Footer />
-          </div>
+          <ViewportProvider>
+            <div className="flex w-full flex-col justify-center">
+              <CustomCursor />
+              <Navbar />
+              <main className="w-full">{children}</main>
+              <Footer />
+            </div>
+          </ViewportProvider>
         </ThemeProvider>
       </body>
     </html>

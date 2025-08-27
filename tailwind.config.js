@@ -65,6 +65,12 @@ module.exports = {
         tailwind: "#67e8f9",
         typescript: "#007acc",
       },
+      height: {
+        screen: "calc(var(--vh) * 100)",
+      },
+      minHeight: {
+        screen: "calc(var(--vh) * 100)",
+      },
       maxWidth: {
         center: "1980px",
       },
