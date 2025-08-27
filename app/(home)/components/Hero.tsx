@@ -57,7 +57,7 @@ export default function Hero() {
           <h1 className="leading-none text-redberry">
             Andrei
             <br />
-            <span className="text-transparent">A</span>
+            <span className="text-background-2">A</span>
             <span className="text-text">Sager</span>
           </h1>
           <p className="split">
