@@ -32,7 +32,7 @@ export default function CustomCursor() {
       ref={cursorRef}
       src={cursorPng}
       alt="cursor"
-      className="pointer-events-none fixed left-0 top-0 h-24 w-24"
+      className="pointer-events-none fixed left-0 top-0 z-50 h-24 w-24"
     />
   );
 }
