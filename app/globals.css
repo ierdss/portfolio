@@ -132,6 +132,16 @@ html {
   @apply bg-gray text-redberry brightness-100;
 }
 
+/* Custom Cursor */
+.flair {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
 /* Navbar Section */
 .navbar--scrolled {
   @apply bg-background-1 shadow-lg;
