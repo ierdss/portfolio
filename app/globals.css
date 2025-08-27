@@ -40,26 +40,35 @@
     font-weight: 700;
     font-size: clamp(40px, 8vw + 1rem, 100px);
     text-transform: capitalize;
+    font-family: var(--font-pt-serif);
+    font-style: italic;
   }
   h2 {
     font-weight: 700;
     font-size: clamp(32px, 4vw + 1rem, 64px);
     text-transform: capitalize;
+    font-family: var(--font-pt-serif);
+    font-style: italic;
   }
   h3 {
     font-weight: 700;
     font-size: clamp(28px, 3vw + 1rem, 40px);
     text-transform: capitalize;
+    font-family: var(--font-pt-serif);
+    font-style: italic;
   }
   h4 {
     font-weight: 700;
     font-size: clamp(20px, 3vw + 1rem, 32px);
     text-transform: capitalize;
+    font-family: var(--font-pt-serif);
+    font-style: italic;
   }
   h5 {
     font-weight: 700;
     font-size: clamp(20px, 3vw + 1rem, 24px);
     text-transform: capitalize;
+    font-family: var(--font-pt-serif);
   }
   h6 {
     font-weight: 700;

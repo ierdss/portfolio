@@ -54,7 +54,7 @@ export default function Hero() {
 
         <div className="z-20 order-2 flex w-fit max-w-[500px] shrink-0 flex-col items-center justify-center gap-4 text-center md:max-w-[350px] md:items-start md:gap-6 md:text-left lg:max-w-[500px]">
           <p>Hey, Im</p>
-          <h1 className="leading-none text-redberry">
+          <h1 className="font-serif leading-none text-redberry">
             Andrei
             <br />
             <span className="text-background-2">A</span>
