@@ -18,6 +18,7 @@ export default function CustomCursor() {
       rotation: "+=360", // Continuously adds 360 degrees to the rotation
       repeat: -1, // Repeats the animation indefinitely
       ease: "none", // Ensures the rotation is constant
+      duration: 8, // Duration for one full rotation
     });
 
     // Make image smoothly follow cursor
