@@ -27,7 +27,7 @@ export default function Flair() {
   return (
     <div
       ref={flairRef}
-      className="flair pointer-events-none fixed left-0 top-0 h-10 w-10 rounded-full bg-red-500"
+      className="flair pointer-events-none fixed left-0 top-0 z-50 h-10 w-10 rounded-full bg-red-500"
     />
   );
 }
