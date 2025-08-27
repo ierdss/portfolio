@@ -1,4 +1,5 @@
 import { SocialLinksData } from "@/constants";
+import Magnetic from "@/wrappers/MagneticWrapper";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SplitText } from "gsap/all";
@@ -67,27 +68,31 @@ export default function Hero() {
 
           <div className="flex flex-row items-center justify-center gap-4 md:justify-start">
             <div className="flex w-full items-center justify-center gap-2 md:justify-start md:gap-4">
-              <a
-                href="/resume/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary-foreground shadow-xs [&_svg:not([class*='size-'])]:size-4 focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive has-[>svg]:px-3 inline-flex h-9 shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-text px-4 py-2 text-sm font-medium text-background-1 outline-none transition-all hover:bg-primary/90 focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0"
-              >
-                <FaFileDownload size={20} />
-                <p>Resume</p>
-              </a>
+              <Magnetic>
+                <a
+                  href="/resume/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary-foreground shadow-xs [&_svg:not([class*='size-'])]:size-4 focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive has-[>svg]:px-3 inline-flex h-9 shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-text px-4 py-2 text-sm font-medium text-background-1 outline-none transition-all hover:bg-primary/90 focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0"
+                >
+                  <FaFileDownload size={20} />
+                  <p>Resume</p>
+                </a>
+              </Magnetic>
             </div>
             <ul className="flex w-fit flex-row justify-between gap-4">
               {SocialLinksData.map(({ id, icon, ariaLabel, url }) => (
-                <a
-                  key={id}
-                  href={url}
-                  target="_blank"
-                  aria-label={ariaLabel}
-                  className="text-primary-foreground shadow-xs [&_svg:not([class*='size-'])]:size-4 focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive has-[>svg]:px-3 inline-flex aspect-square h-9 shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-text px-2 py-2 text-sm font-medium text-background-1 outline-none transition-all hover:bg-primary/90 focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0"
-                >
-                  {icon}
-                </a>
+                <Magnetic>
+                  <a
+                    key={id}
+                    href={url}
+                    target="_blank"
+                    aria-label={ariaLabel}
+                    className="text-primary-foreground shadow-xs [&_svg:not([class*='size-'])]:size-4 focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive has-[>svg]:px-3 inline-flex aspect-square h-9 shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-text px-2 py-2 text-sm font-medium text-background-1 outline-none transition-all hover:bg-primary/90 focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0"
+                  >
+                    {icon}
+                  </a>
+                </Magnetic>
               ))}
             </ul>
           </div>
