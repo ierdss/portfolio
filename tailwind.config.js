@@ -11,7 +11,7 @@ module.exports = {
         mono: ["var(--font-pt-serif)"],
       },
       backgroundImage: {
-        pattern: "url('/patterns/barong_1.svg')",
+        pattern: "var(--bg-pattern)",
       },
       colors: {
         background: {

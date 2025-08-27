@@ -9,6 +9,7 @@
   }
 
   [data-theme="dark"] {
+    --bg-pattern: url("/patterns/barong_1_dark.svg");
     --background: 37 33 49;
     --heading: 244 245 248;
     --text: 244 245 248;
@@ -22,6 +23,7 @@
     --glass-2: 25 22 33;
   }
   [data-theme="light"] {
+    --bg-pattern: url("/patterns/barong_1_light.svg");
     --background: 244 245 248;
     --heading: 37 33 49;
     --text: 37 33 49;
