@@ -14,6 +14,12 @@ export default function CustomCursor() {
     // Center image on cursor
     gsap.set(el, { xPercent: -50, yPercent: -50 });
 
+    gsap.to("#cursor", {
+      rotation: "+=360", // Continuously adds 360 degrees to the rotation
+      repeat: -1, // Repeats the animation indefinitely
+      ease: "none", // Ensures the rotation is constant
+    });
+
     // Make image smoothly follow cursor
     const xTo = gsap.quickTo(el, "x", { duration: 0.6, ease: "power3" });
     const yTo = gsap.quickTo(el, "y", { duration: 0.6, ease: "power3" });
@@ -32,6 +38,7 @@ export default function CustomCursor() {
       ref={cursorRef}
       src={cursorPng}
       alt="cursor"
+      id="cursor"
       className="pointer-events-none fixed left-0 top-0 z-50 h-24 w-24"
     />
   );

@@ -133,7 +133,7 @@ html {
 }
 
 /* Custom Cursor */
-.flair {
+#cursor {
   width: 100px;
   height: 100px;
   position: fixed;
