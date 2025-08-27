@@ -10,6 +10,9 @@ module.exports = {
       fontFamily: {
         mono: ["var(--font-pt-serif)"],
       },
+      backgroundImage: {
+        pattern: "url('/patterns/barong_1.svg')",
+      },
       colors: {
         background: {
           1: "rgb(var(--background))",
