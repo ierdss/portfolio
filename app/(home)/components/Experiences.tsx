@@ -5,13 +5,41 @@ import {
   ExperiencesDataWork,
   ExperiencesTabs,
 } from "@/constants";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 export default function Experiences() {
   const experiences = ExperiencesDataWork.reverse();
   const education = ExperiencesDataEducation.reverse();
   const upskill = ExperiencesDataUpskill.reverse();
+
+  const [tab, setTab] = useState("work");
+
+  gsap.registerPlugin(useGSAP);
+  useGSAP(() => {
+    console.clear();
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".box", {
+      scrollTrigger: ".box",
+      y: 100,
+      opacity: 0,
+      duration: 1,
+    });
+
+    gsap.to(".box", {
+      scrollTrigger: ".box",
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      delay: 1,
+      stagger: 0.3,
+    });
+  }, []);
+
   return (
     <div
       id="experience"
@@ -43,7 +71,7 @@ export default function Experiences() {
               { id, icon, iconStyle, title, company, date, bullets, tags },
               index,
             ) => (
-              <li className=" flex flex-col gap-4" key={id}>
+              <li className="box experience flex flex-col gap-4" key={id}>
                 <div className="flex flex-col justify-between lg:flex-row lg:items-center">
                   <h5 className="text-lg">
                     {title} •<span className="text-redberry"> {company}</span>
@@ -81,7 +109,7 @@ export default function Experiences() {
               { id, degree, institution, graduationDate, description },
               index,
             ) => (
-              <li className=" flex flex-col gap-4" key={id}>
+              <li className="flex flex-col gap-4" key={id}>
                 <div className="flex flex-col justify-between lg:flex-row lg:items-center">
                   <h5 className="text-lg">
                     {degree} •
