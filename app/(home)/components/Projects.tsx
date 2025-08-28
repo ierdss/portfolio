@@ -27,21 +27,8 @@ export default function Projects() {
             <FeaturedProjectsCard
               key={index}
               title={project.title !== null ? project.title : ""}
-              desktopThumbnail={
-                project.desktopThumbnail !== null
-                  ? project.desktopThumbnail
-                  : ""
-              }
-              desktopAlt={project.desktopAlt !== null ? project.desktopAlt : ""}
-              mobileAlt={project.mobileAlt !== null ? project.mobileAlt : ""}
-              platformDesktop={
-                project.platformDesktop !== null
-                  ? project.platformDesktop
-                  : false
-              }
-              platformMobile={
-                project.platformMobile !== null ? project.platformMobile : false
-              }
+              thumbnail={project.thumbnail !== null ? project.thumbnail : ""}
+              alt={project.alt !== null ? project.alt : ""}
               tags={project.tags}
               description={project.description}
               linkRepository={
@@ -63,13 +50,9 @@ export default function Projects() {
 
 interface FeaturedProjectsCardProps {
   title: string;
-  description?: string;
-  desktopThumbnail?: string;
-  desktopAlt?: string;
-  mobileThumbnail?: string;
-  mobileAlt?: string;
-  platformDesktop?: boolean;
-  platformMobile?: boolean;
+  description: string;
+  thumbnail: string;
+  alt: string;
   linkRepository?: string;
   linkLiveDemo?: string;
   linkCaseStudy?: string;
@@ -79,12 +62,8 @@ interface FeaturedProjectsCardProps {
 function FeaturedProjectsCard({
   title,
   description,
-  desktopThumbnail,
-  desktopAlt,
-  mobileThumbnail,
-  mobileAlt,
-  platformDesktop,
-  platformMobile,
+  thumbnail,
+  alt,
   linkRepository,
   linkLiveDemo,
   linkCaseStudy,
@@ -100,10 +79,10 @@ function FeaturedProjectsCard({
           className={linkLiveDemo ? "" : "pointer-events-none select-none"}
         >
           <Image
-            src={desktopThumbnail || "/placeholder/desktop-thumbnail.jpg"}
+            src={thumbnail || "/placeholder/desktop-thumbnail.jpg"}
             width={1000}
             height={1000}
-            alt={desktopAlt || "Desktop Thumbnail"}
+            alt={alt || "Desktop Thumbnail"}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </a>
