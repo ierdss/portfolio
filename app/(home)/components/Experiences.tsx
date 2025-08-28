@@ -9,7 +9,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Link from "next/link";
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 
 export default function Experiences() {
   const experiences = ExperiencesDataWork.reverse();
@@ -19,9 +19,6 @@ export default function Experiences() {
   const [tab, setTab] = useState("work");
 
   gsap.registerPlugin(useGSAP);
-
-  const container = useRef();
-
   useGSAP(() => {
     console.clear();
     gsap.registerPlugin(ScrollTrigger);

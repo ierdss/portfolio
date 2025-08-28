@@ -5,12 +5,10 @@ import gsap from "gsap";
 import { SplitText } from "gsap/all";
 import Image from "next/image";
 import Link from "next/link";
-import { useRef } from "react";
 import { FaFileDownload } from "react-icons/fa";
 
 export default function Hero() {
   gsap.registerPlugin(useGSAP);
-  const container = useRef();
   useGSAP(() => {
     gsap.registerPlugin(SplitText);
 
