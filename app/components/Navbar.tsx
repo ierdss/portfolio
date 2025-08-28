@@ -139,7 +139,7 @@ export default function Navbar() {
             variants={link}
           >
             {SocialLinksData.map(({ id, icon, ariaLabel, url }) => (
-              <a
+              <Link
                 key={id}
                 href={url}
                 target="_blank"
@@ -147,7 +147,7 @@ export default function Navbar() {
                 className="flex items-center justify-center text-text"
               >
                 {icon}
-              </a>
+              </Link>
             ))}
           </motion.ul>
         </motion.ul>
