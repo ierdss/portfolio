@@ -4,7 +4,7 @@ import MagneticWrapper from "./wrappers/MagneticWrapper";
 
 export default function NotFound() {
   return (
-    <div className="flex h-screen min-h-screen flex-col items-center justify-center bg-pattern">
+    <div className="flex h-screen min-h-screen flex-col items-center justify-center gap-4 bg-pattern md:gap-6">
       <h2 className="text-redberry">404 Not Found</h2>
       <p>Could not find requested resource</p>
 
