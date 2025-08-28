@@ -2,9 +2,9 @@ import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 
 export const ExperiencesTabs = [
-  { id: 1, href: "/work", text: "Work" },
-  { id: 2, href: "/education", text: "Education" },
-  { id: 3, href: "/certificates", text: "Certificates" },
+  { id: 1, label: "Work", title: "Work Experience" },
+  { id: 2, label: "Eeducation", title: "Education" },
+  { id: 3, label: "Upskill", title: "Upskill Certificates" },
 ];
 
 export const ExperiencesDataWork = [
