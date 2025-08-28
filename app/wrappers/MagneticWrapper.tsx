@@ -37,8 +37,6 @@ export default function MagneticWrapper({ children }: MagneticWrapperProps) {
 
     const mouseLeave = () => {
       if (!magnetic.current) return;
-      gsap.to(magnetic.current, { x: 0, duration: 1 });
-      gsap.to(magnetic.current, { y: 0, duration: 1 });
       xTo(0);
       yTo(0);
     };
