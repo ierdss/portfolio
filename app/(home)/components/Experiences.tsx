@@ -9,7 +9,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 export default function Experiences() {
   const experiences = ExperiencesDataWork.reverse();
@@ -19,26 +19,27 @@ export default function Experiences() {
   const [tab, setTab] = useState("work");
 
   gsap.registerPlugin(useGSAP);
+
+  const container = useRef();
+
   useGSAP(() => {
     console.clear();
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.from(".box", {
-      scrollTrigger: ".box",
-      y: 100,
-      opacity: 0,
-      duration: 1,
-    });
+    gsap.set(".card", { opacity: 0, y: 100 });
 
-    gsap.to(".box", {
-      scrollTrigger: ".box",
+    gsap.to(".card", {
+      scrollTrigger: {
+        trigger: ".card",
+        toggleActions: "play none reverse reset",
+      },
       y: 0,
       opacity: 1,
-      duration: 1,
+      duration: 0.8,
       delay: 1,
-      stagger: 0.3,
+      stagger: 0.2,
     });
-  }, []);
+  });
 
   return (
     <div
@@ -71,7 +72,7 @@ export default function Experiences() {
               { id, icon, iconStyle, title, company, date, bullets, tags },
               index,
             ) => (
-              <li className="box experience flex flex-col gap-4" key={id}>
+              <li className="card flex flex-col gap-4" key={id}>
                 <div className="flex flex-col justify-between lg:flex-row lg:items-center">
                   <h5 className="text-lg">
                     {title} •<span className="text-redberry"> {company}</span>
@@ -109,7 +110,7 @@ export default function Experiences() {
               { id, degree, institution, graduationDate, description },
               index,
             ) => (
-              <li className="flex flex-col gap-4" key={id}>
+              <li className="card flex flex-col gap-4" key={id}>
                 <div className="flex flex-col justify-between lg:flex-row lg:items-center">
                   <h5 className="text-lg">
                     {degree} •
@@ -128,7 +129,7 @@ export default function Experiences() {
         <Divider />
         <ul className="flex w-full max-w-screen-xl flex-col gap-8">
           {upskill.map(({ id, title, platform, date, tags }, index) => (
-            <li className=" flex flex-col gap-4" key={id}>
+            <li className="card flex flex-col gap-4" key={id}>
               <div className="flex flex-col justify-between lg:flex-row lg:items-center">
                 <h5 className="text-lg">
                   {title} •<span className="text-redberry"> {platform}</span>
