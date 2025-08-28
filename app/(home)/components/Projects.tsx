@@ -14,7 +14,7 @@ export default function Projects() {
       id="projects"
       className="flex h-fit w-full flex-col items-center justify-center gap-12 bg-background-1 md:text-left"
     >
-      <div className="flex w-full max-w-center flex-col items-center justify-center gap-8 px-2 py-12 md:gap-12 md:px-10 md:py-20">
+      <div className="flex w-full max-w-center flex-col items-center justify-center gap-8 px-2 pb-[15lvh] pt-12 md:gap-12 md:px-10 md:pb-40 md:pt-20">
         <div className="flex w-full max-w-screen-xl flex-col items-start justify-between md:flex-row md:items-center">
           <Heading1 text="Featured Projects" />
           <ViewMoreBtn text="View All Projects" href="/projects" />
@@ -71,7 +71,7 @@ function FeaturedProjectsCard({
 }: FeaturedProjectsCardProps) {
   const size = 20;
   return (
-    <div className="flex h-full w-full flex-col items-center gap-4">
+    <div className="flex h-fit w-full flex-col items-center gap-4">
       <div className="h-50 relative aspect-16/10 w-full overflow-hidden rounded-lg md:rounded-xl">
         <a
           href={linkLiveDemo}
