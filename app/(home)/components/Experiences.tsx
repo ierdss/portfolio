@@ -44,7 +44,7 @@ export default function Experiences() {
   return (
     <div
       id="experience"
-      className="flex w-full flex-col items-center justify-center bg-background-1"
+      className="flex w-full flex-col items-center justify-center bg-pattern"
     >
       <div className="flex w-full max-w-center flex-col items-center justify-center gap-8 overflow-hidden px-2 py-12 md:gap-12 md:px-10 md:py-24">
         <div className="flex w-full max-w-screen-xl flex-col justify-start gap-8 md:justify-between">
