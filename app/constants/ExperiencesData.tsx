@@ -3,7 +3,7 @@ import { SiNextdotjs } from "react-icons/si";
 
 export const ExperiencesTabs = [
   { id: 1, label: "Work", title: "Work Experience" },
-  { id: 2, label: "Eeducation", title: "Education" },
+  { id: 2, label: "Education", title: "Education" },
   { id: 3, label: "Upskill", title: "Upskill Certificates" },
 ];
 

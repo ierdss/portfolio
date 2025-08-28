@@ -15,7 +15,7 @@ export default function Experiences() {
   const education = ExperiencesDataEducation.reverse();
   const upskill = ExperiencesDataUpskill.reverse();
 
-  const [tab, setTab] = useState("work");
+  const [tab, setTab] = useState("Work");
   const [tabTitle, setTabTitle] = useState("Work Experience");
   const tabHandler = (tab: string, title: string) => {
     setTab(tab);
@@ -59,14 +59,14 @@ export default function Experiences() {
                 className="cursor-pointer text-sm capitalize text-text"
                 onClick={() => tabHandler(label, title)}
               >
-                {title}
+                {label}
               </div>
             ))}
           </ul>
         </div>
 
         <Divider />
-        {tab === "work" && (
+        {tab === "Work" && (
           <ul className="flex w-full max-w-screen-xl flex-col gap-8">
             {experiences.map(
               (
@@ -105,7 +105,7 @@ export default function Experiences() {
         )}
 
         {/* Education */}
-        {tab === "Eeducation" && (
+        {tab === "Education" && (
           <ul className="flex w-full max-w-screen-xl flex-col gap-8">
             {education.map(
               (
