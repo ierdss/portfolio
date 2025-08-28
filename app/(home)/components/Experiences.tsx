@@ -28,7 +28,7 @@ export default function Experiences() {
     gsap.to(".card", {
       scrollTrigger: {
         trigger: ".card",
-        toggleActions: "play none reverse reset",
+        toggleActions: "play none none reset",
       },
       y: 0,
       opacity: 1,
