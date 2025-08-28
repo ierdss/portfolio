@@ -5,9 +5,8 @@ export default function Footer() {
       className="relative flex w-full flex-col items-center justify-center gap-12 bg-background-1 md:flex-row"
     >
       <div className="flex w-full max-w-center justify-center">
-        <p className="flex flex-row gap-[6px] text-xs text-text md:order-2 md:text-xl">
-          © 2023{" "}
-          <span className="flex h-fit w-fit font-bold"> Andrei Sager</span>
+        <p className="flex flex-row gap-2 text-text">
+          © 2023 Andrei Sager. All rights reserved.
         </p>
       </div>
     </footer>
