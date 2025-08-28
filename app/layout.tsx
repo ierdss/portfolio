@@ -56,7 +56,7 @@ export default function RootLayout({
           themes={["dark", "light"]}
         >
           <ViewportProvider>
-            <div className="flex w-full flex-col justify-center">
+            <div className="relative flex w-full flex-col justify-center">
               <CustomCursor />
               <Navbar />
               <main className="w-full">{children}</main>
