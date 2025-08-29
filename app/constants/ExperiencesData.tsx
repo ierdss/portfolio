@@ -2,14 +2,13 @@ import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 
 export const ExperiencesTabs = [
-  { id: 1, label: "Work", title: "Work Experience" },
-  { id: 2, label: "Education", title: "Education" },
-  { id: 3, label: "Upskill", title: "Upskill Certificates" },
+  { label: "Work", title: "Work Experience" },
+  { label: "Education", title: "Education" },
+  { label: "Upskill", title: "Upskill Certificates" },
 ];
 
 export const ExperiencesDataWork = [
   {
-    id: 1,
     icon: <FaReact className="scale-150" />,
     iconStyle: { background: "#1E293B", color: "#61DAFB" },
     title: "Working Student",
@@ -25,7 +24,6 @@ export const ExperiencesDataWork = [
     ],
   },
   {
-    id: 2,
     icon: <FaReact className="scale-150" />,
     iconStyle: { background: "#1E293B", color: "#61DAFB" },
     title: "Fullstack Web Developer Intern",
@@ -41,7 +39,6 @@ export const ExperiencesDataWork = [
     ],
   },
   {
-    id: 3,
     icon: <FaReact className="scale-150" />,
     iconStyle: { background: "#1E293B", color: "#61DAFB" },
     title: "Frontend Wordpress Developer",
@@ -61,7 +58,6 @@ export const ExperiencesDataWork = [
 
 export const ExperiencesDataEducation = [
   {
-    id: 1,
     degree: "Bachelor of Computer Science",
     institution: "STI College Sta. Mesa",
     graduationDate: "July 2025",
@@ -71,28 +67,24 @@ export const ExperiencesDataEducation = [
 
 export const ExperiencesDataUpskill = [
   {
-    id: 1,
     title: "Learn Visual Studio Code",
     platform: "Udemy",
     date: "March 2025",
     tags: ["Visual Studio Code"],
   },
   {
-    id: 2,
     title: "Git Complete The definitive, step-by-step guide to Git",
     platform: "Udemy",
     date: "March 2025",
     tags: ["Git", "GitHub", "GitHub Desktop", "Version Control"],
   },
   {
-    id: 3,
     title: "Tech Writers Master Class",
     platform: "Udemy",
     date: "April 2025",
     tags: ["Technical Writing", "Technical Documentation", "Markdown"],
   },
   {
-    id: 4,
     title: "The Complete Full-Stack Web Development Bootcamp",
     platform: "Udemy",
     date: "April 2025",
@@ -127,7 +119,6 @@ export const ExperiencesDataUpskill = [
     ],
   },
   {
-    id: 5,
     title: "The Ultimate React Course 2025 React, Next.js, Redux & More",
     platform: "Udemy",
     date: "April 2025",
