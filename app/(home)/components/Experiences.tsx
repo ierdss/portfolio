@@ -85,9 +85,9 @@ export default function Experiences() {
                     <p className="text-sm">{date}</p>
                   </div>
                   <ul className="flex flex-row flex-wrap gap-2 text-text">
-                    {tags.map((tag, index) => (
+                    {tags.map((id, tag) => (
                       <li
-                        key={`tag-1.${index}`}
+                        key={id}
                         className="rounded-full border border-text/70 px-2 py-0.5 text-xs"
                       >
                         {tag}
@@ -95,11 +95,8 @@ export default function Experiences() {
                     ))}
                   </ul>
                   <ul className="ml-5 list-disc text-text">
-                    {bullets.map((bullet, index) => (
-                      <li
-                        key={`bullet-1.${index}`}
-                        className="text-sm text-text/70"
-                      >
+                    {bullets.map((id, bullet) => (
+                      <li key={id} className="text-sm text-text/70">
                         {bullet}
                       </li>
                     ))}
@@ -144,9 +141,9 @@ export default function Experiences() {
                   <p className="text-sm">Completed: {date}</p>
                 </div>
                 <ul className="flex flex-row flex-wrap gap-2 text-text">
-                  {tags.map((tag, index) => (
+                  {tags.map((id, tag) => (
                     <li
-                      key={`tag-2.${index}`}
+                      key={id}
                       className="rounded-full border border-text/70 px-2 py-0.5 text-xs"
                     >
                       {tag}
