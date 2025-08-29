@@ -36,7 +36,7 @@ export default function Experiences() {
       },
       y: 0,
       opacity: 1,
-      duration: 0.8,
+      duration: 0.5,
       stagger: 0.2,
     });
   }, [tab]);
