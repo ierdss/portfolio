@@ -10,11 +10,13 @@ import {
 } from "react-icons/fa";
 import { IoLogoMarkdown } from "react-icons/io5";
 import { SiNextdotjs, SiTailwindcss, SiVercel, SiVim } from "react-icons/si";
+import { v4 as uuidv4 } from "uuid";
 
 const iconSize = 40;
 
 export const SkillsData = [
   {
+    id: uuidv4(),
     href: "https://www.w3schools.com/html/default.asp",
     icon: (
       <IconContext.Provider value={{ color: "#f06529" }}>
@@ -24,6 +26,7 @@ export const SkillsData = [
     name: "HTML",
   },
   {
+    id: uuidv4(),
     href: "https://www.w3schools.com/css/default.asp",
     icon: (
       <IconContext.Provider value={{ color: "#2965f1" }}>
@@ -33,6 +36,7 @@ export const SkillsData = [
     name: "CSS",
   },
   {
+    id: uuidv4(),
     href: "https://tailwindcss.com/docs/installation",
     icon: (
       <IconContext.Provider value={{ color: "#67e8f9" }}>
@@ -42,6 +46,7 @@ export const SkillsData = [
     name: "Tailwind",
   },
   {
+    id: uuidv4(),
     href: "https://www.w3schools.com/js/default.asp",
     icon: (
       <IconContext.Provider value={{ color: "#ecd120" }}>
@@ -51,6 +56,7 @@ export const SkillsData = [
     name: "JavaScript",
   },
   {
+    id: uuidv4(),
     href: "https://www.typescriptlang.org/docs/",
     icon: (
       <IconContext.Provider value={{ color: "#007acc" }}>
@@ -60,6 +66,7 @@ export const SkillsData = [
     name: "TypeScript",
   },
   {
+    id: uuidv4(),
     href: "https://react.dev/reference/react",
     icon: (
       <IconContext.Provider value={{ color: "#61dbfb" }}>
@@ -69,6 +76,7 @@ export const SkillsData = [
     name: "React",
   },
   {
+    id: uuidv4(),
     href: "https://nextjs.org/docs",
     icon: (
       <IconContext.Provider value={{ className: "text-text" }}>
@@ -78,6 +86,7 @@ export const SkillsData = [
     name: "Next.js",
   },
   {
+    id: uuidv4(),
     href: "https://vercel.com/docs",
     icon: (
       <IconContext.Provider value={{ className: "text-text" }}>
@@ -87,6 +96,7 @@ export const SkillsData = [
     name: "Vercel",
   },
   {
+    id: uuidv4(),
     href: "https://www.markdownguide.org/",
     icon: (
       <IconContext.Provider value={{ className: "text-text" }}>
@@ -96,6 +106,7 @@ export const SkillsData = [
     name: "Markdown",
   },
   {
+    id: uuidv4(),
     href: "https://git-scm.com/",
     icon: (
       <IconContext.Provider value={{ color: "#f1502f" }}>
@@ -105,6 +116,7 @@ export const SkillsData = [
     name: "Git",
   },
   {
+    id: uuidv4(),
     href: "https://github.com/",
     icon: (
       <IconContext.Provider value={{ className: "text-text" }}>
@@ -114,6 +126,7 @@ export const SkillsData = [
     name: "GitHub",
   },
   {
+    id: uuidv4(),
     href: "https://www.vim.org/",
     icon: (
       <IconContext.Provider value={{ color: "#008000" }}>
@@ -123,6 +136,7 @@ export const SkillsData = [
     name: "Vim",
   },
   {
+    id: uuidv4(),
     href: "",
     icon: (
       <Image
