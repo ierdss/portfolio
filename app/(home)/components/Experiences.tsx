@@ -8,6 +8,7 @@ import {
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import $ from "jquery";
 import React, { useState } from "react";
 
 export default function Experiences() {
@@ -28,7 +29,6 @@ export default function Experiences() {
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.set(".card", { opacity: 0, y: 100 });
-
     gsap.to(".card", {
       scrollTrigger: {
         trigger: ".card",
@@ -39,8 +39,7 @@ export default function Experiences() {
       duration: 0.8,
       stagger: 0.2,
     });
-  });
-
+  }, [tab]);
   return (
     <div
       id="experience"
@@ -56,7 +55,7 @@ export default function Experiences() {
             {ExperiencesTabs.map(({ label, title }, index) => (
               <div
                 key={index}
-                className="cursor-pointer text-sm capitalize text-text"
+                className="tab cursor-pointer text-sm capitalize text-text"
                 onClick={() => tabHandler(label, title)}
               >
                 {label}
