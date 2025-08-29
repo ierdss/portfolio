@@ -1,5 +1,4 @@
 import { FaReact } from "react-icons/fa";
-import { SiNextdotjs } from "react-icons/si";
 
 export const ExperiencesTabs = [
   { label: "Work", title: "Work Experience" },
