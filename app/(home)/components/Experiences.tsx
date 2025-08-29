@@ -70,10 +70,10 @@ export default function Experiences() {
           <ul className="flex w-full max-w-screen-xl flex-col gap-8">
             {experiences.map(
               (
-                { id, icon, iconStyle, title, company, date, bullets, tags },
+                { icon, iconStyle, title, company, date, bullets, tags },
                 index,
               ) => (
-                <li className="card flex flex-col gap-4" key={id}>
+                <li className="card flex flex-col gap-4" key={index}>
                   <div className="flex flex-col justify-between lg:flex-row lg:items-center">
                     <h5 className="text-lg">
                       {title} •<span className="text-redberry"> {company}</span>
@@ -108,11 +108,8 @@ export default function Experiences() {
         {tab === "Education" && (
           <ul className="flex w-full max-w-screen-xl flex-col gap-8">
             {education.map(
-              (
-                { id, degree, institution, graduationDate, description },
-                index,
-              ) => (
-                <li className="card flex flex-col gap-4" key={id}>
+              ({ degree, institution, graduationDate, description }, index) => (
+                <li className="card flex flex-col gap-4" key={index}>
                   <div className="flex flex-col justify-between lg:flex-row lg:items-center">
                     <h5 className="text-lg">
                       {degree} •
@@ -131,8 +128,8 @@ export default function Experiences() {
         {/* Upskill Certificates */}
         {tab === "Upskill" && (
           <ul className="flex w-full max-w-screen-xl flex-col gap-8">
-            {upskill.map(({ id, title, platform, date, tags }, index) => (
-              <li className="card flex flex-col gap-4" key={id}>
+            {upskill.map(({ title, platform, date, tags }, index) => (
+              <li className="card flex flex-col gap-4" key={index}>
                 <div className="flex flex-col justify-between lg:flex-row lg:items-center">
                   <h5 className="text-lg">
                     {title} •<span className="text-redberry"> {platform}</span>
