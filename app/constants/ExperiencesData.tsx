@@ -1,13 +1,14 @@
 import { FaReact } from "react-icons/fa";
 
 export const ExperiencesTabs = [
-  { label: "Work", title: "Work Experience" },
-  { label: "Education", title: "Education" },
-  { label: "Upskill", title: "Upskill Certificates" },
+  { id: "tab-1", label: "Work", title: "Work Experience" },
+  { id: "tab-2", label: "Education", title: "Education" },
+  { id: "tab-3", label: "Upskill", title: "Upskill Certificates" },
 ];
 
 export const ExperiencesDataWork = [
   {
+    id: "work-1",
     icon: <FaReact className="scale-150" />,
     iconStyle: { background: "#1E293B", color: "#61DAFB" },
     title: "Frontend Wordpress Developer",
@@ -24,6 +25,7 @@ export const ExperiencesDataWork = [
     ],
   },
   {
+    id: "work-2",
     icon: <FaReact className="scale-150" />,
     iconStyle: { background: "#1E293B", color: "#61DAFB" },
     title: "Fullstack Web Developer Intern",
@@ -39,6 +41,7 @@ export const ExperiencesDataWork = [
     ],
   },
   {
+    id: "work-3",
     icon: <FaReact className="scale-150" />,
     iconStyle: { background: "#1E293B", color: "#61DAFB" },
     title: "Working Student",
@@ -57,6 +60,7 @@ export const ExperiencesDataWork = [
 
 export const ExperiencesDataEducation = [
   {
+    id: "edu-1",
     degree: "Bachelor of Computer Science",
     institution: "STI College Sta. Mesa",
     graduationDate: "July 2025",
@@ -66,6 +70,7 @@ export const ExperiencesDataEducation = [
 
 export const ExperiencesDataUpskill = [
   {
+    id: "ups-1",
     title: "The Ultimate React Course 2025 React, Next.js, Redux & More",
     platform: "Udemy",
     date: "April 2025",
@@ -93,6 +98,7 @@ export const ExperiencesDataUpskill = [
     ],
   },
   {
+    id: "ups-2",
     title: "The Complete Full-Stack Web Development Bootcamp",
     platform: "Udemy",
     date: "April 2025",
@@ -127,18 +133,21 @@ export const ExperiencesDataUpskill = [
     ],
   },
   {
+    id: "ups-3",
     title: "Tech Writers Master Class",
     platform: "Udemy",
     date: "April 2025",
     tags: ["Technical Writing", "Technical Documentation", "Markdown"],
   },
   {
+    id: "ups-4",
     title: "Git Complete The definitive, step-by-step guide to Git",
     platform: "Udemy",
     date: "March 2025",
     tags: ["Git", "GitHub", "GitHub Desktop", "Version Control"],
   },
   {
+    id: "ups-5",
     title: "Learn Visual Studio Code",
     platform: "Udemy",
     date: "March 2025",

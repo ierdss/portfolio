@@ -8,7 +8,6 @@ import {
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import $ from "jquery";
 import React, { useState } from "react";
 
 export default function Experiences() {
@@ -52,9 +51,9 @@ export default function Experiences() {
             <ViewMoreBtn text="View All Experiences" href="/experiences" />
           </div>
           <ul className="flex flex-row gap-4">
-            {ExperiencesTabs.map(({ label, title }, index) => (
+            {ExperiencesTabs.map(({ id, label, title }) => (
               <div
-                key={index}
+                key={id}
                 className="tab cursor-pointer text-sm capitalize text-text"
                 onClick={() => tabHandler(label, title)}
               >
@@ -68,11 +67,17 @@ export default function Experiences() {
         {tab === "Work" && (
           <ul className="flex w-full max-w-screen-xl flex-col gap-8">
             {experiences.map(
-              (
-                { icon, iconStyle, title, company, date, bullets, tags },
-                index,
-              ) => (
-                <li className="card flex flex-col gap-4" key={index}>
+              ({
+                id,
+                icon,
+                iconStyle,
+                title,
+                company,
+                date,
+                bullets,
+                tags,
+              }) => (
+                <li className="card flex flex-col gap-4" key={id}>
                   <div className="flex flex-col justify-between lg:flex-row lg:items-center">
                     <h5 className="text-lg">
                       {title} •<span className="text-redberry"> {company}</span>
@@ -82,7 +87,7 @@ export default function Experiences() {
                   <ul className="flex flex-row flex-wrap gap-2 text-text">
                     {tags.map((tag, index) => (
                       <li
-                        key={`tag${index}`}
+                        key={`tag-1.${index}`}
                         className="rounded-full border border-text/70 px-2 py-0.5 text-xs"
                       >
                         {tag}
@@ -91,7 +96,10 @@ export default function Experiences() {
                   </ul>
                   <ul className="ml-5 list-disc text-text">
                     {bullets.map((bullet, index) => (
-                      <li key={index} className="text-sm text-text/70">
+                      <li
+                        key={`bullet-1.${index}`}
+                        className="text-sm text-text/70"
+                      >
                         {bullet}
                       </li>
                     ))}
@@ -107,8 +115,8 @@ export default function Experiences() {
         {tab === "Education" && (
           <ul className="flex w-full max-w-screen-xl flex-col gap-8">
             {education.map(
-              ({ degree, institution, graduationDate, description }, index) => (
-                <li className="card flex flex-col gap-4" key={index}>
+              ({ id, degree, institution, graduationDate, description }) => (
+                <li className="card flex flex-col gap-4" key={id}>
                   <div className="flex flex-col justify-between lg:flex-row lg:items-center">
                     <h5 className="text-lg">
                       {degree} •
@@ -127,8 +135,8 @@ export default function Experiences() {
         {/* Upskill Certificates */}
         {tab === "Upskill" && (
           <ul className="flex w-full max-w-screen-xl flex-col gap-8">
-            {upskill.map(({ title, platform, date, tags }, index) => (
-              <li className="card flex flex-col gap-4" key={index}>
+            {upskill.map(({ id, title, platform, date, tags }) => (
+              <li className="card flex flex-col gap-4 " key={id}>
                 <div className="flex flex-col justify-between lg:flex-row lg:items-center">
                   <h5 className="text-lg">
                     {title} •<span className="text-redberry"> {platform}</span>
@@ -138,7 +146,7 @@ export default function Experiences() {
                 <ul className="flex flex-row flex-wrap gap-2 text-text">
                   {tags.map((tag, index) => (
                     <li
-                      key={`tag${index}`}
+                      key={`tag-2.${index}`}
                       className="rounded-full border border-text/70 px-2 py-0.5 text-xs"
                     >
                       {tag}
