@@ -11,9 +11,9 @@ import { ScrollTrigger } from "gsap/all";
 import React, { useState } from "react";
 
 export default function Experiences() {
-  const experiences = ExperiencesDataWork.reverse();
-  const education = ExperiencesDataEducation.reverse();
-  const upskill = ExperiencesDataUpskill.reverse();
+  const experiences = ExperiencesDataWork;
+  const education = ExperiencesDataEducation;
+  const upskill = ExperiencesDataUpskill;
 
   const [tab, setTab] = useState("Work");
   const [tabTitle, setTabTitle] = useState("Work Experience");
