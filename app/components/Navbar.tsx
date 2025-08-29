@@ -8,6 +8,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { FaSun } from "react-icons/fa";
+import { v4 as uuidv4 } from "uuid";
 import NavbarToggle from "./NavbarToggle";
 
 export default function Navbar() {
@@ -190,9 +191,9 @@ function ThemePicker() {
 }
 
 const Pages = [
-  { id: 1, href: "/", text: "Home" },
-  { id: 2, href: "/projects", text: "Projects" },
-  { id: 3, href: "/resume", text: "Resume" },
+  { id: uuidv4(), href: "/", text: "Home" },
+  { id: uuidv4(), href: "/projects", text: "Projects" },
+  { id: uuidv4(), href: "/resume", text: "Resume" },
 ];
 
 // Animations
