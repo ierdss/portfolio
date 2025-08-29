@@ -53,9 +53,9 @@ export default function Experiences() {
             <ViewMoreBtn text="View All Experiences" href="/experiences" />
           </div>
           <ul className="flex flex-row gap-4">
-            {ExperiencesTabs.map(({ id, label, title }) => (
+            {ExperiencesTabs.map(({ label, title }, index) => (
               <div
-                key={id}
+                key={index}
                 className="cursor-pointer text-sm capitalize text-text"
                 onClick={() => tabHandler(label, title)}
               >
