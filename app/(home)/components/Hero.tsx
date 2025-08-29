@@ -35,21 +35,6 @@ export default function Hero() {
       },
     });
     gsap.to(".box", { x: 360 });
-
-    gsap.registerPlugin(Draggable);
-    Draggable.create(".button", {
-      onPress: function () {
-        if (!this.origX || !this.origY) {
-          this.origX = this.startX;
-          this.origY = this.startY;
-        }
-      },
-      onDragEnd: function (pointerEvent) {
-        const speed = 0.35;
-        const easing = "back.out(1.7)"; // https://greensock.com/docs/v3/Eases
-        gsap.to(this.target, { x: 0, y: 0, duration: speed, ease: easing });
-      },
-    });
   });
   return (
     <div

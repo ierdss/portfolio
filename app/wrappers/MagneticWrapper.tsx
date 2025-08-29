@@ -1,6 +1,7 @@
 "use client";
 
 import gsap from "gsap";
+import { Draggable } from "gsap/all";
 import React, { ReactElement, useEffect, useRef } from "react";
 
 interface MagneticWrapperProps {
@@ -51,5 +52,25 @@ export default function MagneticWrapper({ children }: MagneticWrapperProps) {
     };
   }, []);
 
+  useEffect(() => {
+    if (!magnetic.current) return;
+    gsap.registerPlugin(Draggable);
+    Draggable.create(magnetic.current, {
+      onPress: function () {
+        if (!this.origX || !this.origY) {
+          this.origX = this.startX;
+          this.origY = this.startY;
+        }
+      },
+      onDragEnd: function () {
+        gsap.to(this.target, {
+          x: 0,
+          y: 0,
+          duration: 1,
+          ease: "elastic.out(1, 0.3)",
+        });
+      },
+    });
+  }, []);
   return React.cloneElement(children, { ref: magnetic });
 }
