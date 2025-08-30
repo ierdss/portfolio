@@ -42,13 +42,38 @@ export default function Hero() {
       className="flex h-screen w-full select-none flex-col items-center justify-center bg-pattern"
     >
       <div className="flex w-full max-w-center flex-col items-center justify-center gap-10 px-2 py-24 md:flex-row lg:gap-20 lg:py-48">
-        <div className="z-10 flex w-full max-w-[300px] items-center justify-center overflow-hidden rounded-full bg-background-1/50 lg:max-w-[400px]">
+        <div className="group z-10 flex w-full max-w-[300px] items-center justify-center overflow-hidden rounded-full bg-background-1/50 lg:max-w-[400px]">
           <Image
-            src="/portraits/barong.png"
+            src="/portraits/barong_light.png"
             width={1000}
             height={1000}
-            alt="Just a chill guy."
+            alt="Just a guy in barong."
             priority
+            className="transition-all duration-300 ease-in-out group-hover:hidden"
+          />
+          <Image
+            src="/portraits/barong_light_chill.png"
+            width={1000}
+            height={1000}
+            alt="Just a chill guy in barong."
+            priority
+            className="hidden transition-all duration-300 ease-in-out group-hover:block"
+          />
+          <Image
+            src="/portraits/barong_dark.png"
+            width={1000}
+            height={1000}
+            alt="Just a guy in barong."
+            priority
+            className="transition-all duration-300 ease-in-out group-hover:hidden"
+          />
+          <Image
+            src="/portraits/barong_dark_chill.png"
+            width={1000}
+            height={1000}
+            alt="Just a chill guy in barong."
+            priority
+            className="hidden transition-all duration-300 ease-in-out group-hover:block"
           />
         </div>
 
