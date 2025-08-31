@@ -44,10 +44,6 @@ export const ProjectsDataAll = [
     subtitle: "Delivery Service (Landing Page)",
     desktopThumbnail: "/thumbnails/RWD_Thumbnail.jpg",
     desktopAlt: "RWD full page on desktop",
-    mobileThumbnail: "",
-    mobileAlt: "RWD full page on mobile",
-    platformDesktop: true,
-    platformMobile: true,
     tags: [
       { id: uuidv4(), text: "Next.js" },
       { id: uuidv4(), text: "Typescript" },
@@ -66,10 +62,6 @@ export const ProjectsDataAll = [
     subtitle: "Image Gallery",
     desktopThumbnail: "/thumbnails/remembrance-gallery.png",
     desktopAlt: "",
-    mobileThumbnail: "",
-    mobileAlt: "",
-    platformDesktop: true,
-    platformMobile: true,
     tags: [
       { id: uuidv4(), text: "next.js" },
       { id: uuidv4(), text: "cloudinary" },
@@ -88,10 +80,6 @@ export const ProjectsDataAll = [
     subtitle: "Delivery Service (Landing Page)",
     desktopThumbnail: "/thumbnails/road-way-delivery.jpg",
     desktopAlt: "RWD full page on desktop",
-    mobileThumbnail: "",
-    mobileAlt: "RWD full page on mobile",
-    platformDesktop: true,
-    platformMobile: true,
     tags: [
       { id: uuidv4(), text: "Next.js" },
       { id: uuidv4(), text: "Typescript" },
@@ -110,10 +98,6 @@ export const ProjectsDataAll = [
     subtitle: "Image Gallery",
     desktopThumbnail: "/thumbnails/remembrance-gallery.png",
     desktopAlt: "",
-    mobileThumbnail: "",
-    mobileAlt: "",
-    platformDesktop: true,
-    platformMobile: true,
     tags: [
       { id: uuidv4(), text: "next.js" },
       { id: uuidv4(), text: "cloudinary" },
