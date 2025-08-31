@@ -49,7 +49,6 @@ export default function Experiences() {
         <div className="flex w-full max-w-screen-xl flex-col justify-start gap-8 md:justify-between">
           <div className="flex w-full max-w-screen-xl flex-col items-start justify-between md:flex-row md:items-center">
             <Heading1 text={tabTitle} />
-            <ViewMoreBtn text="View All Experiences" href="/experiences" />
           </div>
           <ul className="flex flex-row gap-4">
             {ExperiencesTabs.map(({ id, label, title }) => (
