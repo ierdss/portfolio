@@ -20,14 +20,13 @@ export default function Projects() {
     ScrollTrigger.batch(".project-card", {
       onEnter: (batch) =>
         gsap.to(batch, {
-          scrollTrigger: {
-            toggleActions: "play none none reset",
-          },
           stagger: 0.15,
           opacity: 1,
           y: 0,
           overwrite: true,
         }),
+      onLeaveBack: (batch) =>
+        gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
     });
   });
   return (
