@@ -20,6 +20,30 @@ export default function Skills() {
       onLeaveBack: (batch) =>
         gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
     });
+    gsap.set(".skill-hover", { scale: 1 });
+    gsap.to(".skill-hover", {
+      scale: 1.1,
+      stagger: 0.15,
+      overwrite: true,
+    });
+
+    gsap.utils.toArray(".skill-hover").forEach((el) => {
+      const element = el as Element;
+      element.addEventListener("mouseenter", () => {
+        gsap.to(element, {
+          scale: 1.2,
+          ease: "back.out(3)",
+          overwrite: true,
+        });
+      });
+      element.addEventListener("mouseleave", () => {
+        gsap.to(element, {
+          scale: 1,
+          ease: "back.out(3)",
+          overwrite: true,
+        });
+      });
+    });
   });
   return (
     <div
@@ -36,7 +60,12 @@ export default function Skills() {
         <div className="z-20 flex w-full max-w-screen-xl flex-col gap-2 md:gap-10">
           <ul className="z-20 grid w-full grid-cols-3 place-items-center justify-items-center smd:grid-cols-4 md:mr-5 md:grid-cols-5 md:gap-16 lg:grid-cols-7 xl:grid-cols-8">
             {SkillsData.map(({ id, href, icon, name }) => (
-              <a href={href} target="_blank" className="skill-card" key={id}>
+              <a
+                href={href}
+                target="_blank"
+                className="skill-card skill-hover flex aspect-square h-24 w-24 flex-col items-center justify-center gap-2"
+                key={id}
+              >
                 {icon}
                 <h6 className="text-text">{name}</h6>
               </a>
