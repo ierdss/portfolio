@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 
 export const ExperiencesTabs = [
   { id: uuidv4(), label: "Work", title: "Work Experience" },
-  { id: uuidv4(), label: "Education", title: "Education" },
+  { id: uuidv4(), label: "Education", title: "Formal Education" },
   { id: uuidv4(), label: "Upskill", title: "Upskill Certificates" },
 ];
 export const ExperiencesDataWork = [
