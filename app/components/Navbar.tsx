@@ -191,7 +191,6 @@ function ThemePicker() {
 const Pages = [
   { id: uuidv4(), href: "/", text: "Home" },
   { id: uuidv4(), href: "/projects", text: "Projects" },
-  { id: uuidv4(), href: "/resume", text: "Resume" },
 ];
 
 // Animations
