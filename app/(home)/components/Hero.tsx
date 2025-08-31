@@ -126,9 +126,10 @@ export default function Hero() {
             <ul className="flex w-fit flex-row justify-between gap-4">
               {SocialLinksData.map(({ id, icon, ariaLabel, url }) => (
                 <CallToActionBtn
+                  key={id}
                   iconOnly={true}
                   href={url}
-                  ariaLabel="Open resume in new tab"
+                  ariaLabel={ariaLabel}
                   icon={icon}
                 />
               ))}
