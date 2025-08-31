@@ -32,7 +32,7 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="flex h-fit w-full flex-col items-center justify-center gap-12 bg-background-1 md:text-left"
+      className="flex h-fit w-full flex-col items-center justify-center gap-12 bg-background-2 md:text-left"
     >
       <div className="flex w-full max-w-center flex-col items-center justify-center gap-8 px-2 pb-[15lvh] pt-12 md:gap-12 md:px-10 md:pb-40 md:pt-20">
         <div className="flex w-full max-w-screen-xl flex-col items-start justify-between md:flex-row md:items-center">
