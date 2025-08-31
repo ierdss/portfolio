@@ -104,7 +104,7 @@ export default function Projects() {
                   <div className="flex w-full flex-row flex-wrap items-center gap-4">
                     {linkLiveDemo && (
                       <CallToActionBtn
-                        iconOnly={true}
+                        iconOnly={false}
                         href={linkLiveDemo}
                         ariaLabel="Live Demo"
                         icon={<TbExternalLink size={size} />}
@@ -113,7 +113,7 @@ export default function Projects() {
                     )}
                     {linkRepository && (
                       <CallToActionBtn
-                        iconOnly={linkLiveDemo ? false : true}
+                        iconOnly={linkLiveDemo ? true : false}
                         href={linkRepository}
                         ariaLabel="Github Repository"
                         icon={<TbBrandGithubFilled size={size} />}
@@ -122,7 +122,7 @@ export default function Projects() {
                     )}
                     {linkCaseStudy && (
                       <CallToActionBtn
-                        iconOnly={linkLiveDemo || linkRepository ? false : true}
+                        iconOnly={linkLiveDemo || linkRepository ? true : false}
                         href={linkCaseStudy}
                         ariaLabel="Case Study"
                         icon={<FaSearch size={size} />}
