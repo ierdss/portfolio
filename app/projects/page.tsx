@@ -3,7 +3,7 @@
 import { Heading1 } from "@/components";
 import ViewMoreBtn from "@/components/buttons/ViewMoreBtn";
 import Divider from "@/components/divider/Divider";
-import { ProjectsDataFeatured } from "@/constants";
+import { ProjectsDataAll, ProjectsDataFeatured } from "@/constants";
 import Magnetic from "@/wrappers/MagneticWrapper";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -44,7 +44,7 @@ export default function AllProjects() {
         <Divider />
 
         <ul className="grid w-full max-w-screen-xl grid-cols-1 gap-12 md:grid-cols-2 md:gap-x-4 md:gap-y-12">
-          {ProjectsDataFeatured.map(
+          {ProjectsDataAll.map(
             ({
               id,
               title,
