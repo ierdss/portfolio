@@ -26,8 +26,7 @@ export default function Experiences() {
   useGSAP(() => {
     console.clear();
     gsap.registerPlugin(ScrollTrigger);
-
-    gsap.set(".exp-card", { opacity: 0, y: 100 });
+    gsap.set(".exp-card", { opacity: 0, y: 50 });
     ScrollTrigger.batch(".exp-card", {
       onEnter: (batch) =>
         gsap.to(batch, {
