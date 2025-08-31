@@ -1,12 +1,13 @@
 import { BsMailbox2 } from "react-icons/bs";
 import { RiLinkedinFill } from "react-icons/ri";
 import { TbBrandGithubFilled } from "react-icons/tb";
+import { v4 as uuidv4 } from "uuid";
 
 const size = 20;
 
 export const SocialLinksData = [
   {
-    id: 1,
+    id: uuidv4(),
     title: "Gmail",
     icon: <BsMailbox2 size={size} />,
     ariaLabel: "Send me an email!",
@@ -20,7 +21,7 @@ export const SocialLinksData = [
   //   url: "https://www.linkedin.com/in/andrei-sager-34a452265/",
   // },
   {
-    id: 3,
+    id: uuidv4(),
     title: "Github",
     icon: <TbBrandGithubFilled size={size} />,
     ariaLabel: "Check out my projects from my GitHub repository!",
