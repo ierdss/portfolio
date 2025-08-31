@@ -28,17 +28,19 @@ export default function Experiences() {
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.set(".exp-card", { opacity: 0, y: 100 });
-    gsap.to(".exp-card", {
-      scrollTrigger: {
-        trigger: ".exp-card",
-        toggleActions: "play none none reset",
-      },
-      y: 0,
-      opacity: 1,
-      duration: 0.5,
-      stagger: 0.2,
+    ScrollTrigger.batch(".exp-card", {
+      onEnter: (batch) =>
+        gsap.to(batch, {
+          stagger: 0.15,
+          opacity: 1,
+          y: 0,
+          overwrite: true,
+        }),
+      onLeaveBack: (batch) =>
+        gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
     });
   }, [tab]);
+
   return (
     <div
       id="experience"
