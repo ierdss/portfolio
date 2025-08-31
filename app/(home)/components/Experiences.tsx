@@ -27,10 +27,10 @@ export default function Experiences() {
     console.clear();
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.set(".card", { opacity: 0, y: 100 });
-    gsap.to(".card", {
+    gsap.set(".exp-card", { opacity: 0, y: 100 });
+    gsap.to(".exp-card", {
       scrollTrigger: {
-        trigger: ".card",
+        trigger: ".exp-card",
         toggleActions: "play none none reset",
       },
       y: 0,
@@ -77,7 +77,7 @@ export default function Experiences() {
                 bullets,
                 tags,
               }) => (
-                <li className="card flex flex-col gap-4" key={id}>
+                <li className="exp-card flex flex-col gap-4" key={id}>
                   <div className="flex flex-col justify-between lg:flex-row lg:items-center">
                     <h5 className="text-lg">
                       {title} •<span className="text-redberry"> {company}</span>
@@ -113,7 +113,7 @@ export default function Experiences() {
           <ul className="flex w-full max-w-screen-xl flex-col gap-8">
             {education.map(
               ({ id, degree, institution, graduationDate, description }) => (
-                <li className="card flex flex-col gap-4" key={id}>
+                <li className="exp-card flex flex-col gap-4" key={id}>
                   <div className="flex flex-col justify-between lg:flex-row lg:items-center">
                     <h5 className="text-lg">
                       {degree} •
@@ -133,7 +133,7 @@ export default function Experiences() {
         {tab === "Upskill" && (
           <ul className="flex w-full max-w-screen-xl flex-col gap-8">
             {upskill.map(({ id, title, platform, date, tags }) => (
-              <li className="card flex flex-col gap-4 " key={id}>
+              <li className="exp-card flex flex-col gap-4 " key={id}>
                 <div className="flex flex-col justify-between lg:flex-row lg:items-center">
                   <h5 className="text-lg">
                     {title} •<span className="text-redberry"> {platform}</span>
