@@ -40,7 +40,7 @@ export const ProjectsDataFeatured = [
 export const ProjectsDataAll = [
   {
     id: uuidv4(),
-    title: "Bases Column Width",
+    title: "Bases Column Width (Coming Soon)",
     thumbnail: "",
     alt: "Thumbnail Of Obsidian Bases Column Width Plugin (Coming Soon)",
     tags: [
@@ -50,8 +50,8 @@ export const ProjectsDataAll = [
     ],
     description:
       "An Obsidian plugin to manage column widths for the new Bases, an Obsidian core feature.",
-    linkRepository: "https://github.com/AndreiSager/road-way-delivery",
-    linkLiveDemo: "https://roadwaydelivery.vercel.app",
+    linkRepository: "",
+    linkLiveDemo: "",
     linkCaseStudy: "",
   },
   {
