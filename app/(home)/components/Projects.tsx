@@ -105,7 +105,6 @@ export default function Projects() {
                     {linkLiveDemo && (
                       <CallToActionBtn
                         iconOnly={true}
-                        id="1"
                         href={linkLiveDemo}
                         ariaLabel="Live Demo"
                         icon={<TbExternalLink size={size} />}
@@ -115,7 +114,6 @@ export default function Projects() {
                     {linkRepository && (
                       <CallToActionBtn
                         iconOnly={linkLiveDemo ? false : true}
-                        id="2"
                         href={linkRepository}
                         ariaLabel="Github Repository"
                         icon={<TbBrandGithubFilled size={size} />}
@@ -125,7 +123,6 @@ export default function Projects() {
                     {linkCaseStudy && (
                       <CallToActionBtn
                         iconOnly={linkLiveDemo || linkRepository ? false : true}
-                        id="3"
                         href={linkCaseStudy}
                         ariaLabel="Case Study"
                         icon={<FaSearch size={size} />}

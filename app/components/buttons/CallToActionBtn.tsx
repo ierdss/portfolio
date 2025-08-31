@@ -4,7 +4,6 @@ import React from "react";
 
 type CallToActionBtnProps = {
   iconOnly: boolean;
-  id: string;
   href: string;
   ariaLabel: string;
   icon: React.ReactNode;
@@ -13,7 +12,6 @@ type CallToActionBtnProps = {
 
 export default function CallToActionBtn({
   iconOnly,
-  id,
   href,
   ariaLabel,
   icon,
@@ -35,7 +33,6 @@ export default function CallToActionBtn({
           </Link>
         ) : (
           <Link
-            key={id}
             href={href ? href : ""}
             target="_blank"
             aria-label={ariaLabel}
