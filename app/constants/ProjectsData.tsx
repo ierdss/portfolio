@@ -42,8 +42,8 @@ export const ProjectsDataAll = [
     id: uuidv4(),
     title: "Roadway Delivery",
     subtitle: "Delivery Service (Landing Page)",
-    desktopThumbnail: "/thumbnails/RWD_Thumbnail.jpg",
-    desktopAlt: "RWD full page on desktop",
+    thumbnail: "/thumbnails/RWD_Thumbnail.jpg",
+    alt: "RWD full page on desktop",
     tags: [
       { id: uuidv4(), text: "Next.js" },
       { id: uuidv4(), text: "Typescript" },
@@ -60,8 +60,8 @@ export const ProjectsDataAll = [
     id: uuidv4(),
     title: "Commemoration Gallery",
     subtitle: "Image Gallery",
-    desktopThumbnail: "/thumbnails/remembrance-gallery.png",
-    desktopAlt: "",
+    thumbnail: "/thumbnails/remembrance-gallery.png",
+    alt: "",
     tags: [
       { id: uuidv4(), text: "next.js" },
       { id: uuidv4(), text: "cloudinary" },
@@ -78,8 +78,8 @@ export const ProjectsDataAll = [
     id: uuidv4(),
     title: "Roadway Delivery",
     subtitle: "Delivery Service (Landing Page)",
-    desktopThumbnail: "/thumbnails/road-way-delivery.jpg",
-    desktopAlt: "RWD full page on desktop",
+    thumbnail: "/thumbnails/road-way-delivery.jpg",
+    alt: "RWD full page on desktop",
     tags: [
       { id: uuidv4(), text: "Next.js" },
       { id: uuidv4(), text: "Typescript" },
@@ -96,8 +96,8 @@ export const ProjectsDataAll = [
     id: uuidv4(),
     title: "Commemoration Gallery",
     subtitle: "Image Gallery",
-    desktopThumbnail: "/thumbnails/remembrance-gallery.png",
-    desktopAlt: "",
+    thumbnail: "/thumbnails/remembrance-gallery.png",
+    alt: "",
     tags: [
       { id: uuidv4(), text: "next.js" },
       { id: uuidv4(), text: "cloudinary" },
