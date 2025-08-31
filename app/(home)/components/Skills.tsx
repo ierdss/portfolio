@@ -1,7 +1,27 @@
 import { Divider, Heading1 } from "@/components";
 import { SkillsData } from "@/constants";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 export default function Skills() {
+  gsap.registerPlugin(useGSAP);
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.set(".grid-i", { y: 50, opacity: 0 });
+    ScrollTrigger.batch(".card", {
+      onEnter: (batch) =>
+        gsap.to(batch, {
+          scrollTrigger: {
+            toggleActions: "play none none reset",
+          },
+          stagger: 0.15,
+          opacity: 1,
+          y: 0,
+          overwrite: true,
+        }),
+    });
+  });
   return (
     <div
       id="skills"
@@ -17,7 +37,12 @@ export default function Skills() {
         <div className="z-20 flex w-full max-w-screen-xl flex-col gap-2 md:gap-10">
           <ul className="z-20 grid w-full grid-cols-3 place-items-center justify-items-center smd:grid-cols-4 md:mr-5 md:grid-cols-5 md:gap-16 lg:grid-cols-7 xl:grid-cols-8">
             {SkillsData.map(({ id, href, icon, name }) => (
-              <a href={href} target="_blank" className="skill-card" key={id}>
+              <a
+                href={href}
+                target="_blank"
+                className="skill-card card"
+                key={id}
+              >
                 {icon}
                 <h6 className="text-text">{name}</h6>
               </a>
