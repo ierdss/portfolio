@@ -3,6 +3,9 @@ import ViewMoreBtn from "@/components/buttons/ViewMoreBtn";
 import Divider from "@/components/divider/Divider";
 import { ProjectsDataFeatured } from "@/constants";
 import Magnetic from "@/wrappers/MagneticWrapper";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
 import Image from "next/image";
 import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
@@ -10,6 +13,23 @@ import { TbBrandGithubFilled, TbExternalLink } from "react-icons/tb";
 
 export default function Projects() {
   const size = 20;
+  gsap.registerPlugin(useGSAP);
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.set(".project-card", { y: 50, opacity: 0 });
+    ScrollTrigger.batch(".project-card", {
+      onEnter: (batch) =>
+        gsap.to(batch, {
+          scrollTrigger: {
+            toggleActions: "play none none reset",
+          },
+          stagger: 0.15,
+          opacity: 1,
+          y: 0,
+          overwrite: true,
+        }),
+    });
+  });
   return (
     <div
       id="projects"
@@ -37,7 +57,7 @@ export default function Projects() {
               linkCaseStudy,
             }) => (
               <div
-                className="flex h-fit w-full flex-col items-center gap-4"
+                className="project-card flex h-fit w-full flex-col items-center gap-4"
                 key={id}
               >
                 <div className="h-50 relative aspect-16/10 w-full overflow-hidden rounded-lg md:rounded-xl">
