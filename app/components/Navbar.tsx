@@ -76,7 +76,6 @@ export default function Navbar() {
               <Link
                 key={id}
                 href={href}
-                data-to-scrollspy-id={id}
                 className="btn group relative my-3 block cursor-pointer overflow-hidden bg-transparent px-4 py-3 text-sm capitalize text-text target:text-primary"
               >
                 {text}
@@ -128,7 +127,6 @@ export default function Navbar() {
               key={id}
               whileTap={{ scale: 0.95 }}
               href={href}
-              data-to-scrollspy-id={id}
               onClick={() => toggleOpen()}
               className="group py-4 text-text"
             >
