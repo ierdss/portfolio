@@ -8,6 +8,8 @@ export default function Skills() {
   gsap.registerPlugin(useGSAP);
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
+
+    // Scroll Animation
     gsap.set(".skill-card", { y: 50, opacity: 0 });
     ScrollTrigger.batch(".skill-card", {
       onEnter: (batch) =>
@@ -20,13 +22,8 @@ export default function Skills() {
       onLeaveBack: (batch) =>
         gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
     });
-    gsap.set(".skill-hover", { scale: 1 });
-    gsap.to(".skill-hover", {
-      scale: 1.1,
-      stagger: 0.15,
-      overwrite: true,
-    });
 
+    // Hover Animation
     gsap.utils.toArray(".skill-hover").forEach((el) => {
       const element = el as Element;
       element.addEventListener("mouseenter", () => {
