@@ -2,7 +2,8 @@ import { SocialLinksData } from "@/constants";
 import Magnetic from "@/wrappers/MagneticWrapper";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { Draggable, SplitText } from "gsap/all";
+import { SplitText } from "gsap/all";
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 import { FaFileDownload } from "react-icons/fa";
@@ -36,45 +37,49 @@ export default function Hero() {
     });
     gsap.to(".box", { x: 360 });
   });
+
+  const { theme } = useTheme();
   return (
     <div
       id="hero"
       className="flex h-screen w-full select-none flex-col items-center justify-center bg-pattern"
     >
       <div className="flex w-full max-w-center flex-col items-center justify-center gap-10 px-2 py-24 md:flex-row lg:gap-20 lg:py-48">
-        <div className="group z-10 flex w-full max-w-[300px] items-center justify-center overflow-hidden rounded-full bg-background-1/50 lg:max-w-[400px]">
-          <Image
-            src="/portraits/barong_light.png"
-            width={1000}
-            height={1000}
-            alt="Just a guy in barong."
-            priority
-            className="transition-all duration-300 ease-in-out group-hover:hidden"
-          />
-          <Image
-            src="/portraits/barong_light_chill.png"
-            width={1000}
-            height={1000}
-            alt="Just a chill guy in barong."
-            priority
-            className="hidden transition-all duration-300 ease-in-out group-hover:block"
-          />
-          <Image
-            src="/portraits/barong_dark.png"
-            width={1000}
-            height={1000}
-            alt="Just a guy in barong."
-            priority
-            className="transition-all duration-300 ease-in-out group-hover:hidden"
-          />
-          <Image
+        <div className="z-10 flex w-full max-w-[300px] items-center justify-center overflow-hidden rounded-full bg-background-1/50 lg:max-w-[400px]">
+          {theme === "light" && (
+            <Image
+              src="/portraits/barong_light.png"
+              width={1000}
+              height={1000}
+              alt="Just a guy in barong."
+              priority
+            />
+          )}
+          {/* <Image
+              src="/portraits/barong_light_chill.png"
+              width={1000}
+              height={1000}
+              alt="Just a chill guy in barong."
+              priority
+              className="hidden transition-all duration-300 ease-in-out group-hover:flex"
+            /> */}
+          {theme === "dark" && (
+            <Image
+              src="/portraits/barong_dark.png"
+              width={1000}
+              height={1000}
+              alt="Just a guy in barong."
+              priority
+            />
+          )}
+          {/* <Image
             src="/portraits/barong_dark_chill.png"
             width={1000}
             height={1000}
             alt="Just a chill guy in barong."
             priority
-            className="hidden transition-all duration-300 ease-in-out group-hover:block"
-          />
+            className="hidden transition-all duration-300 ease-in-out group-hover:block dark:group-hover:hidden"
+          /> */}
         </div>
 
         <div className="z-20 order-2 flex w-fit max-w-[500px] shrink-0 flex-col items-center justify-center gap-4 text-center md:max-w-[350px] md:items-start md:gap-6 md:text-left lg:max-w-[500px]">
