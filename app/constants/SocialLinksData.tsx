@@ -14,9 +14,9 @@ export const SocialLinksData = [
     url: "mailto:andreisager@proton.me",
   },
   // {
-  //   id: 2,
+  //   id: uuidv4(),
   //   title: "LinkedIn",
-  //   icon: <RiLinkedinFill size={size} className="h-6 w-6 md:h-12 md:w-12" />,
+  //   icon: <RiLinkedinFill size={size} />,
   //   ariaLabel: "Take a look at my work profile on LinkedIn.",
   //   url: "https://www.linkedin.com/in/andrei-sager-34a452265/",
   // },
