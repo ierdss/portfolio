@@ -44,7 +44,7 @@ export default function AllProjects() {
 
         <Divider />
 
-        <ul className="grid w-full max-w-screen-xl grid-cols-1 gap-12 md:grid-cols-2 md:gap-x-4 md:gap-y-12">
+        <ul className="grid w-full max-w-screen-2xl grid-cols-1 gap-12 md:grid-cols-2 md:gap-x-4 md:gap-y-12">
           {ProjectsDataAll.map(
             ({
               id,
