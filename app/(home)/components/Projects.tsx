@@ -1,4 +1,5 @@
 import { Heading1 } from "@/components";
+import CallToActionBtn from "@/components/buttons/CallToActionBtn";
 import ViewMoreBtn from "@/components/buttons/ViewMoreBtn";
 import Divider from "@/components/divider/Divider";
 import { ProjectsDataFeatured } from "@/constants";
@@ -102,44 +103,34 @@ export default function Projects() {
                   </ul>
                   <div className="flex w-full flex-row flex-wrap items-center gap-4">
                     {linkLiveDemo && (
-                      <Magnetic>
-                        <div>
-                          <Link
-                            href={linkLiveDemo}
-                            target="_blank"
-                            className="text-primary-foreground shadow-xs [&_svg:not([class*='size-'])]:size-4 focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive has-[>svg]:px-3 inline-flex h-9 shrink-0 select-none items-center justify-center gap-2 whitespace-nowrap rounded-full bg-text px-4 py-2 text-sm font-medium text-background-1 outline-none transition-all hover:bg-primary/90 focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0"
-                          >
-                            <TbExternalLink size={size} />
-                            <p>Live Demo</p>
-                          </Link>
-                        </div>
-                      </Magnetic>
+                      <CallToActionBtn
+                        iconOnly={true}
+                        id="1"
+                        href={linkLiveDemo}
+                        ariaLabel="Live Demo"
+                        icon={<TbExternalLink size={size} />}
+                        text="Live Demo"
+                      />
                     )}
                     {linkRepository && (
-                      <Magnetic>
-                        <div>
-                          <Link
-                            href={linkRepository}
-                            target="_blank"
-                            className="flex rounded-full bg-text p-2 text-background-1 hover:bg-primary"
-                          >
-                            <TbBrandGithubFilled size={size} />
-                          </Link>
-                        </div>
-                      </Magnetic>
+                      <CallToActionBtn
+                        iconOnly={linkLiveDemo ? false : true}
+                        id="2"
+                        href={linkRepository}
+                        ariaLabel="Github Repository"
+                        icon={<TbBrandGithubFilled size={size} />}
+                        text="GitHub Repo"
+                      />
                     )}
                     {linkCaseStudy && (
-                      <Magnetic>
-                        <div>
-                          <Link
-                            href={linkCaseStudy}
-                            target="_blank"
-                            className="flex rounded-full bg-text p-2 text-background-1 hover:bg-primary"
-                          >
-                            <FaSearch size={size} />
-                          </Link>
-                        </div>
-                      </Magnetic>
+                      <CallToActionBtn
+                        iconOnly={linkLiveDemo || linkRepository ? false : true}
+                        id="3"
+                        href={linkCaseStudy}
+                        ariaLabel="Case Study"
+                        icon={<FaSearch size={size} />}
+                        text="Case Study"
+                      />
                     )}
                   </div>
                 </div>
