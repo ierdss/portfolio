@@ -21,7 +21,7 @@ export const ProjectsDataFeatured = [
   },
   {
     id: uuidv4(),
-    title: "Commemoration Gallery",
+    title: "Remembrance Gallery",
     thumbnail: "/thumbnails/remembrance-gallery.png",
     alt: "Commemoration Gallery full page on desktop",
     tags: [
@@ -31,7 +31,7 @@ export const ProjectsDataFeatured = [
       { id: uuidv4(), text: "Tailwind" },
     ],
     description: "An image gallery to commemorate my loved ones.",
-    linkRepository: "https://github.com/ierdss/family-friends_image-gallery",
+    linkRepository: "https://github.com/ierdss/remembrance-gallery",
     linkLiveDemo: "https://remembrance-gallery.vercel.app",
     linkCaseStudy: "",
   },
@@ -66,7 +66,7 @@ export const ProjectsDataAll = [
       { id: uuidv4(), text: "Tailwind" },
     ],
     description: "An image gallery to commemorate my loved ones.",
-    linkRepository: "https://github.com/ierdss/family-friends_image-gallery",
+    linkRepository: "https://github.com/ierdss/remembrance-gallery",
     linkLiveDemo: "https://remembrance-gallery.vercel.app",
     linkCaseStudy: "",
   },
