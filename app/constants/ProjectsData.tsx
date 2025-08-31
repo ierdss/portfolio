@@ -4,7 +4,7 @@ export const ProjectsDataFeatured = [
   {
     id: uuidv4(),
     title: "Roadway Delivery",
-    thumbnail: "/thumbnails/RWD_Thumbnail.jpg",
+    thumbnail: "/thumbnails/road-way-delivery.jpg",
     alt: "RWD full landing page on desktop with logo",
     tags: [
       { id: uuidv4(), text: "Next.js" },
@@ -73,7 +73,7 @@ export const ProjectsDataAll = [
   {
     id: uuidv4(),
     title: "Roadway Delivery",
-    thumbnail: "/thumbnails/RWD_Thumbnail.jpg",
+    thumbnail: "/thumbnails/road-way-delivery.jpg",
     alt: "Mockup of the Roadway Delivery full landing page on desktop with logo",
     tags: [
       { id: uuidv4(), text: "Next.js" },
