@@ -97,8 +97,8 @@ export const ProjectsDataAll = [
       { id: uuidv4(), text: "next.js" },
       { id: uuidv4(), text: "typescript" },
       { id: uuidv4(), text: "tailwind" },
-      { id: uuidv4(), text: "css" },
-      { id: uuidv4(), text: "gsap" },
+      { id: uuidv4(), text: "CSS" },
+      { id: uuidv4(), text: "GSAP" },
     ],
     description:
       "A portfolio to showcase my work experience, skills, and projects.",
