@@ -1,9 +1,9 @@
 import { Divider, Heading1 } from "@/components";
 import {
-  ExperiencesDataEducation,
-  ExperiencesDataUpskill,
-  ExperiencesDataWork,
-  ExperiencesTabs,
+  ExperiencesDataEducation as education,
+  ExperiencesTabs as tabs,
+  ExperiencesDataUpskill as upskill,
+  ExperiencesDataWork as work,
 } from "@/constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -11,10 +11,6 @@ import { ScrollTrigger } from "gsap/all";
 import React, { useState } from "react";
 
 export default function Experiences() {
-  const experiences = ExperiencesDataWork;
-  const education = ExperiencesDataEducation;
-  const upskill = ExperiencesDataUpskill;
-
   const [tab, setTab] = useState("Work");
   const [tabTitle, setTabTitle] = useState("Work Experience");
   const tabHandler = (tab: string, title: string) => {
@@ -47,10 +43,18 @@ export default function Experiences() {
       <div className="flex w-full max-w-center flex-col items-center justify-center gap-8 overflow-hidden px-2 py-12 md:gap-12 md:px-10 md:py-24">
         <div className="flex w-full max-w-screen-xl flex-col justify-start gap-8 md:justify-between">
           <div className="flex w-full max-w-screen-xl flex-col items-start justify-between md:flex-row md:items-center">
-            <Heading1 text={tabTitle} />
+            {tabTitle === "Work Experience" && (
+              <Heading1 text={tabs[0].title} />
+            )}
+            {tabTitle === "Formal Education" && (
+              <Heading1 text={tabs[1].title} />
+            )}
+            {tabTitle === "Upskill Certificates" && (
+              <Heading1 text={tabs[2].title} />
+            )}
           </div>
           <ul className="flex flex-row gap-4">
-            {ExperiencesTabs.map(({ id, label, title }) => (
+            {tabs.map(({ id, label, title }) => (
               <div
                 key={id}
                 className="tab cursor-pointer text-sm capitalize text-text"
@@ -65,7 +69,7 @@ export default function Experiences() {
         <Divider />
         {tab === "Work" && (
           <ul className="flex w-full max-w-screen-xl flex-col gap-8">
-            {experiences.map(
+            {work.map(
               ({
                 id,
                 icon,
