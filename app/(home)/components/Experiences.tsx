@@ -42,7 +42,7 @@ export default function Experiences() {
       const element = el as Element;
       element.addEventListener("mouseenter", () => {
         gsap.to(element, {
-          scale: 0.9,
+          scale: 0.95,
           ease: "back.out(3)",
           overwrite: true,
         });
