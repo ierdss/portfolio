@@ -1,5 +1,6 @@
 import CallToActionBtn from "@/components/buttons/CallToActionBtn";
 import { SocialLinksData } from "@/constants";
+import { HeroData } from "@/constants/HeroData";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SplitText } from "gsap/all";
@@ -9,6 +10,7 @@ import { useEffect, useState } from "react";
 import { FaFileDownload } from "react-icons/fa";
 
 export default function Hero() {
+  const { specialty } = HeroData;
   gsap.registerPlugin(useGSAP);
   useGSAP(() => {
     gsap.registerPlugin(SplitText);
@@ -91,7 +93,7 @@ export default function Hero() {
           )}
         </div>
 
-        <div className="z-20 order-2 flex w-fit max-w-[500px] shrink-0 flex-col items-center justify-center gap-4 text-center md:max-w-[350px] md:items-start md:gap-6 md:text-left lg:max-w-[500px]">
+        <div className="z-20 order-2 flex w-fit max-w-[500px] shrink-0 flex-col items-center justify-center gap-4 text-center md:max-w-[360px] md:items-start md:gap-6 md:text-left lg:max-w-[510px]">
           <p>Hey, Im</p>
           <h1 className="split font-serif leading-none text-redberry">
             Andrei
@@ -100,8 +102,8 @@ export default function Hero() {
             <span className="text-text">Sager</span>
           </h1>
           <p className="split">
-            A 25 y/o Frontend Web Developer based in the Philippines
-            specializing in Landing Pages & E-commerce Websites
+            A Frontend Web Developer based in the Philippines specializing in{" "}
+            {specialty}.
           </p>
 
           <div className="flex flex-row items-center justify-center gap-4 md:justify-start">
