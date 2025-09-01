@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "next-themes";
 import { Poppins, PT_Serif } from "next/font/google";
 import CustomCursor from "./components/CustomCursor";
@@ -59,7 +60,10 @@ export default function RootLayout({
             <div className="relative flex w-full flex-col justify-center">
               <CustomCursor />
               <Navbar />
-              <main className="w-full">{children}</main>
+              <main className="w-full">
+                {children}
+                <SpeedInsights />
+              </main>
               <Footer />
             </div>
           </ViewportProvider>
