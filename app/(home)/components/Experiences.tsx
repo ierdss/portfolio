@@ -1,4 +1,4 @@
-import { Divider, Heading1, ViewMoreBtn } from "@/components";
+import { Divider, Heading1 } from "@/components";
 import {
   ExperiencesDataEducation,
   ExperiencesDataUpskill,
@@ -24,7 +24,7 @@ export default function Experiences() {
 
   gsap.registerPlugin(useGSAP);
   useGSAP(() => {
-    console.clear();
+    // Experience Cards Animation
     gsap.registerPlugin(ScrollTrigger);
     gsap.set(".exp-card", { opacity: 0, y: 50 });
     ScrollTrigger.batch(".exp-card", {
@@ -39,7 +39,6 @@ export default function Experiences() {
         gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
     });
   }, [tab]);
-
   return (
     <div
       id="experience"
