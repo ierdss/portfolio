@@ -2,15 +2,12 @@
 
 import { Heading1 } from "@/components";
 import CallToActionBtn from "@/components/buttons/CallToActionBtn";
-import ViewMoreBtn from "@/components/buttons/ViewMoreBtn";
 import Divider from "@/components/divider/Divider";
 import { ProjectsDataAll, ProjectsDataFeatured } from "@/constants";
-import Magnetic from "@/wrappers/MagneticWrapper";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import Image from "next/image";
-import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
 import { TbBrandGithubFilled, TbExternalLink } from "react-icons/tb";
 
@@ -38,7 +35,7 @@ export default function AllProjects() {
       className="flex h-fit w-full flex-col items-center justify-center gap-12 bg-background-2 md:text-left"
     >
       <div className="flex w-full max-w-center flex-col items-center justify-center gap-8 px-2 pb-[15lvh] pt-12 md:gap-12 md:px-10 md:pb-40 md:pt-20">
-        <div className="flex w-full max-w-screen-xl flex-col items-start justify-between md:flex-row md:items-center">
+        <div className="project-card flex w-full max-w-screen-xl flex-col items-start justify-between md:flex-row md:items-center">
           <Heading1 text="All My Projects" />
         </div>
 
