@@ -7,8 +7,8 @@ import {
 } from "@/constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
-import React, { useState } from "react";
+import { ScrollTrigger, SplitText } from "gsap/all";
+import React, { useRef, useState } from "react";
 
 export default function Experiences() {
   const [tab, setTab] = useState("Work");
@@ -42,7 +42,7 @@ export default function Experiences() {
     >
       <div className="flex w-full max-w-center flex-col items-center justify-center gap-8 overflow-hidden px-2 py-12 md:gap-12 md:px-10 md:py-24">
         <div className="flex w-full max-w-screen-xl flex-col justify-start gap-8 md:justify-between">
-          <div className="flex w-full max-w-screen-xl flex-col items-start justify-between md:flex-row md:items-center">
+          <div className="exp-card flex w-full max-w-screen-xl flex-col items-start justify-between md:flex-row md:items-center">
             {tabTitle === "Work Experience" && (
               <Heading1 text={tabs[0].title} />
             )}
