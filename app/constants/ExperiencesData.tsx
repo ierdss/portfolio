@@ -11,7 +11,7 @@ export const ExperiencesDataWork = [
     id: uuidv4(),
     icon: <FaReact className="scale-150" />,
     iconStyle: { background: "#1E293B", color: "#61DAFB" },
-    title: "Frontend Wordpress Developer",
+    title: "Frontend Developer",
     company: "Freelance",
     date: "July 2025 - Present",
     tags: [
@@ -23,16 +23,12 @@ export const ExperiencesDataWork = [
     bullets: [
       {
         id: uuidv4(),
-        text: "Built and delivered custom web solutions for small businesses, optimizing their online presence.",
+        text: "Built and delivered custom web solutions for small businesses and online clients, optimizing their online presence.",
       },
       {
         id: uuidv4(),
-        text: "Worked on multiple freelance projects while managing academic responsibilities effectively.",
+        text: "Worked on multiple freelance projects while maintaining strict deadlines.",
       },
-      // { id: uuidv4(), text: "Enhanced client websites with responsive designs and modern UI/UX practices." },
-      // { id: uuidv4(), text: "Developed interactive components using React to streamline user experiences." },
-      // { id: uuidv4(), text: "Collaborated with clients to gather requirements and deliver tailored solutions under tight deadlines." },
-      // { id: uuidv4(), text: "Gained proficiency in time management and prioritization through balancing academic and work commitments." },
     ],
   },
   {
@@ -47,27 +43,35 @@ export const ExperiencesDataWork = [
       { id: uuidv4(), text: "JavaScript" },
       { id: uuidv4(), text: "CSS" },
       { id: uuidv4(), text: "HTML" },
+      { id: uuidv4(), text: "Express.js" },
+      { id: uuidv4(), text: "RESTful APIs" },
+      { id: uuidv4(), text: "MySQL/SQL" },
+      { id: uuidv4(), text: "Agile/Scrum" },
     ],
     bullets: [
       {
         id: uuidv4(),
-        text: "Acquired comprehensive  expertise of Java and web development through online courses on Udemy.",
+        text: "Built and optimized dynamic user interfaces with React, HTML, CSS, and JavaScript, ensuring responsive, accessible, and cross-browser designs.",
       },
       {
         id: uuidv4(),
-        text: "Designed and implemented dynamic user interfaces using HTML, CSS, and JavaScript, ensuring responsive and user-friendly designs.",
+        text: "Assisted in developing RESTful APIs and backend logic in Express.js, enabling smooth communication between frontend and backend systems.",
       },
       {
         id: uuidv4(),
-        text: "Enhanced database management skills by implementing relational database models for java and web applications.",
+        text: "Designed and maintained relational database models (MySQL/SQL) to support enterprise applications, focusing on data consistency and performance.",
       },
       {
         id: uuidv4(),
-        text: "Integrated data structures with frontend components.",
+        text: "Integrated frontend components with backend services, streamlining data flow and improving system efficiency.",
       },
       {
         id: uuidv4(),
-        text: "Managed and logged work hours using Jibble, demonstrating effective time management and remote work discipline.",
+        text: "Collaborated in an Agile/Scrum environment, participating in sprint planning, daily stand-ups, and code reviews.",
+      },
+      {
+        id: uuidv4(),
+        text: "Managed and logged work hours using Jibble, demonstrating effective time management and work discipline.",
       },
     ],
   },
@@ -82,27 +86,33 @@ export const ExperiencesDataWork = [
       { id: uuidv4(), text: "HTML" },
       { id: uuidv4(), text: "CSS" },
       { id: uuidv4(), text: "JavaScript" },
+      { id: uuidv4(), text: "React" },
+      { id: uuidv4(), text: "PostgreSQL" },
     ],
     bullets: [
       {
         id: uuidv4(),
-        text: "Acquired comprehensive  expertise of Java and web development through online courses on Udemy.",
+        text: "Collaborated with small businesses and local clients to build and maintain websites tailored to their branding and customer needs.",
       },
       {
         id: uuidv4(),
-        text: "Designed and implemented dynamic user interfaces using HTML, CSS, and JavaScript, ensuring responsive and user-friendly designs.",
+        text: "Designed and implemented responsive, mobile-friendly user interfaces using HTML, CSS, JavaScript, and React, improving client site usability and accessibility.",
       },
       {
         id: uuidv4(),
-        text: "Enhanced database management skills by implementing relational database models for java and web applications.",
+        text: "Developed interactive features such as contact forms, booking systems, and dashboards to enhance customer engagement.",
       },
       {
         id: uuidv4(),
-        text: "Integrated data structures with frontend components.",
+        text: "Improved performance of web applications by optimizing front-end code, reducing load times by up to 30%.",
       },
       {
         id: uuidv4(),
-        text: "Managed and logged work hours using Jibble, demonstrating effective time management and remote work discipline.",
+        text: "Integrated PostgreSQL databases with web applications, managing relational data models and ensuring secure data handling.",
+      },
+      {
+        id: uuidv4(),
+        text: "Demonstrated effective time management by tracking and delivering projects on schedule, while managing academic responsibilities effectively.",
       },
     ],
   },
