@@ -133,7 +133,7 @@ export const ExperiencesDataUpskill = [
     id: uuidv4(),
     title: "The Ultimate React Course 2025 React, Next.js, Redux & More",
     platform: "Udemy",
-    date: "April 2025",
+    date: "May 2025",
     tags: [
       { id: uuidv4(), text: "React.js" },
       { id: uuidv4(), text: "Components" },
