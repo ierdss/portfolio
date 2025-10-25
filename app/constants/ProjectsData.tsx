@@ -50,7 +50,7 @@ export const ProjectsDataAll = [
     ],
     description:
       "An Obsidian plugin to manage column widths for the new Bases, an Obsidian core feature.",
-    linkRepository: "",
+    linkRepository: "https://github.com/ierdss/base-column-width",
     linkLiveDemo: "",
     linkCaseStudy: "",
   },
