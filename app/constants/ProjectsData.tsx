@@ -40,9 +40,9 @@ export const ProjectsDataFeatured = [
 export const ProjectsDataAll = [
   {
     id: uuidv4(),
-    title: "Bases Column Width (Coming Soon)",
+    title: "Bases Column Width",
     thumbnail: "/thumbnails/base-column-width.png",
-    alt: "Thumbnail Of Obsidian Bases Column Width Plugin (Coming Soon)",
+    alt: "Thumbnail Of Obsidian Bases Column Width Plugin",
     tags: [
       { id: uuidv4(), text: "Obsidian" },
       { id: uuidv4(), text: "Typescript" },
