@@ -41,7 +41,7 @@ export const ProjectsDataAll = [
   {
     id: uuidv4(),
     title: "Bases Column Width (Coming Soon)",
-    thumbnail: "",
+    thumbnail: "/thumbnails/base-column-width.png",
     alt: "Thumbnail Of Obsidian Bases Column Width Plugin (Coming Soon)",
     tags: [
       { id: uuidv4(), text: "Obsidian" },
@@ -91,7 +91,7 @@ export const ProjectsDataAll = [
   {
     id: uuidv4(),
     title: "This Online Portfolio",
-    thumbnail: "",
+    thumbnail: "/thumbnails/portfolio.png",
     alt: "Thumbnail Of This Online Portfolio",
     tags: [
       { id: uuidv4(), text: "next.js" },
