@@ -47,9 +47,9 @@ export default function Hero() {
   return (
     <div
       id="hero"
-      className="flex h-screen w-full select-none flex-col items-center justify-center bg-pattern"
+      className="flex w-full select-none flex-col items-center justify-center bg-pattern"
     >
-      <div className="flex w-full max-w-center flex-col items-center justify-center gap-10 px-2 py-24 md:flex-row lg:gap-20 lg:py-48">
+      <div className="flex w-full max-w-center flex-col items-center justify-center gap-10 px-2 py-12 md:flex-row md:py-24 lg:gap-20 lg:py-48">
         <div className="z-10 flex w-full max-w-[300px] items-center justify-center overflow-hidden rounded-full bg-background-1 shadow-inner shadow-black/20 lg:max-w-[400px]">
           {theme === "light" && (
             <div className="group">
