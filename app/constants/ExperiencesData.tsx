@@ -13,7 +13,7 @@ export const ExperiencesDataWork = [
     iconStyle: { background: "#1E293B", color: "#61DAFB" },
     title: "Frontend Java/Web Developer",
     company: "Accenture",
-    date: "February 2023 - May 2025",
+    date: "Feb 2025 - Apr 2025",
     tags: [
       { id: uuidv4(), text: "React" },
       { id: uuidv4(), text: "JavaScript" },
@@ -53,7 +53,7 @@ export const ExperiencesDataWork = [
     iconStyle: { background: "#1E293B", color: "#61DAFB" },
     title: "Frontend React Native Developer",
     company: "UERMMC/ACE Medical",
-    date: "January 2023 - January 2025",
+    date: "Nov 2023 - Dec 2024",
     tags: [
       { id: uuidv4(), text: "HTML" },
       { id: uuidv4(), text: "CSS" },
