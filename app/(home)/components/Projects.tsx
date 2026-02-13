@@ -2,7 +2,7 @@ import { Heading1 } from "@/components";
 import CallToActionBtn from "@/components/buttons/CallToActionBtn";
 import ViewMoreBtn from "@/components/buttons/ViewMoreBtn";
 import Divider from "@/components/divider/Divider";
-import { ProjectsDataFeatured } from "@/constants";
+import settings, { ProjectsDataFeatured } from "@/constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -12,22 +12,25 @@ import { TbBrandGithubFilled, TbExternalLink } from "react-icons/tb";
 
 export default function Projects() {
   const size = 20;
-  gsap.registerPlugin(useGSAP);
-  useGSAP(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.set(".project-card", { y: 50, opacity: 0 });
-    ScrollTrigger.batch(".project-card", {
-      onEnter: (batch) =>
-        gsap.to(batch, {
-          stagger: 0.15,
-          opacity: 1,
-          y: 0,
-          overwrite: true,
-        }),
-      onLeaveBack: (batch) =>
-        gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
+
+  if (settings.animation) {
+    gsap.registerPlugin(useGSAP);
+    useGSAP(() => {
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.set(".project-card", { y: 50, opacity: 0 });
+      ScrollTrigger.batch(".project-card", {
+        onEnter: (batch) =>
+          gsap.to(batch, {
+            stagger: 0.15,
+            opacity: 1,
+            y: 0,
+            overwrite: true,
+          }),
+        onLeaveBack: (batch) =>
+          gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
+      });
     });
-  });
+  }
   return (
     <div
       id="projects"

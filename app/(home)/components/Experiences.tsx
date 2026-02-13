@@ -1,5 +1,5 @@
 import { Divider, Heading1 } from "@/components";
-import {
+import settings, {
   ExperiencesDataEducation as education,
   ExperiencesTabs as tabs,
   ExperiencesDataUpskill as upskill,
@@ -18,44 +18,46 @@ export default function Experiences() {
     setTabTitle(title);
   };
 
-  gsap.registerPlugin(useGSAP);
-  useGSAP(() => {
-    // Experience Cards Animation
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.set(".exp-card", { opacity: 0, y: 50 });
-    ScrollTrigger.batch(".exp-card", {
-      onEnter: (batch) =>
-        gsap.to(batch, {
-          stagger: 0.15,
-          opacity: 1,
-          y: 0,
-          overwrite: true,
-        }),
-      onLeaveBack: (batch) =>
-        gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
-    });
-  }, [tab]);
+  if (settings.animation) {
+    gsap.registerPlugin(useGSAP);
+    useGSAP(() => {
+      // Experience Cards Animation
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.set(".exp-card", { opacity: 0, y: 50 });
+      ScrollTrigger.batch(".exp-card", {
+        onEnter: (batch) =>
+          gsap.to(batch, {
+            stagger: 0.15,
+            opacity: 1,
+            y: 0,
+            overwrite: true,
+          }),
+        onLeaveBack: (batch) =>
+          gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
+      });
+    }, [tab]);
 
-  useGSAP(() => {
-    // Hover Animation
-    gsap.utils.toArray(".exp-hover").forEach((el) => {
-      const element = el as Element;
-      element.addEventListener("mouseenter", () => {
-        gsap.to(element, {
-          scale: 0.95,
-          ease: "back.out(3)",
-          overwrite: true,
+    useGSAP(() => {
+      // Hover Animation
+      gsap.utils.toArray(".exp-hover").forEach((el) => {
+        const element = el as Element;
+        element.addEventListener("mouseenter", () => {
+          gsap.to(element, {
+            scale: 0.95,
+            ease: "back.out(3)",
+            overwrite: true,
+          });
+        });
+        element.addEventListener("mouseleave", () => {
+          gsap.to(element, {
+            scale: 1,
+            ease: "back.out(3)",
+            overwrite: true,
+          });
         });
       });
-      element.addEventListener("mouseleave", () => {
-        gsap.to(element, {
-          scale: 1,
-          ease: "back.out(3)",
-          overwrite: true,
-        });
-      });
-    });
-  }, [tab]);
+    }, [tab]);
+  }
   return (
     <div
       id="experience"

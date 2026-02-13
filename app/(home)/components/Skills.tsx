@@ -1,47 +1,49 @@
 import { Divider, Heading1 } from "@/components";
-import { SkillsData } from "@/constants";
+import settings, { SkillsData } from "@/constants";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
 export default function Skills() {
-  gsap.registerPlugin(useGSAP);
-  useGSAP(() => {
-    gsap.registerPlugin(ScrollTrigger);
+  if (settings.animation) {
+    gsap.registerPlugin(useGSAP);
+    useGSAP(() => {
+      gsap.registerPlugin(ScrollTrigger);
 
-    // Scroll Animation
-    gsap.set(".skill-card", { y: 50, opacity: 0 });
-    ScrollTrigger.batch(".skill-card", {
-      onEnter: (batch) =>
-        gsap.to(batch, {
-          stagger: 0.15,
-          opacity: 1,
-          y: 0,
-          overwrite: true,
-        }),
-      onLeaveBack: (batch) =>
-        gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
-    });
+      // Scroll Animation
+      gsap.set(".skill-card", { y: 50, opacity: 0 });
+      ScrollTrigger.batch(".skill-card", {
+        onEnter: (batch) =>
+          gsap.to(batch, {
+            stagger: 0.15,
+            opacity: 1,
+            y: 0,
+            overwrite: true,
+          }),
+        onLeaveBack: (batch) =>
+          gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
+      });
 
-    // Hover Animation
-    gsap.utils.toArray(".skill-hover").forEach((el) => {
-      const element = el as Element;
-      element.addEventListener("mouseenter", () => {
-        gsap.to(element, {
-          scale: 1.2,
-          ease: "back.out(3)",
-          overwrite: true,
+      // Hover Animation
+      gsap.utils.toArray(".skill-hover").forEach((el) => {
+        const element = el as Element;
+        element.addEventListener("mouseenter", () => {
+          gsap.to(element, {
+            scale: 1.2,
+            ease: "back.out(3)",
+            overwrite: true,
+          });
+        });
+        element.addEventListener("mouseleave", () => {
+          gsap.to(element, {
+            scale: 1,
+            ease: "back.out(3)",
+            overwrite: true,
+          });
         });
       });
-      element.addEventListener("mouseleave", () => {
-        gsap.to(element, {
-          scale: 1,
-          ease: "back.out(3)",
-          overwrite: true,
-        });
-      });
     });
-  });
+  }
   return (
     <div
       id="skills"

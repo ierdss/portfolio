@@ -26,3 +26,6 @@ export {
   TestimonialsRow2,
   TestimonialsRow3,
 };
+
+import { settings } from "./dev_settings";
+export default settings;
