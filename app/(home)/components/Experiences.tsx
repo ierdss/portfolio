@@ -36,27 +36,6 @@ export default function Experiences() {
           gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
       });
     }, [tab]);
-
-    useGSAP(() => {
-      // Hover Animation
-      gsap.utils.toArray(".exp-hover").forEach((el) => {
-        const element = el as Element;
-        element.addEventListener("mouseenter", () => {
-          gsap.to(element, {
-            scale: 0.95,
-            ease: "back.out(3)",
-            overwrite: true,
-          });
-        });
-        element.addEventListener("mouseleave", () => {
-          gsap.to(element, {
-            scale: 1,
-            ease: "back.out(3)",
-            overwrite: true,
-          });
-        });
-      });
-    }, [tab]);
   }
   return (
     <div
@@ -71,7 +50,7 @@ export default function Experiences() {
         <ul className="flex w-full max-w-screen-xl flex-col gap-8">
           {work.map(
             ({ id, icon, iconStyle, title, company, date, bullets, tags }) => (
-              <li className="exp-card exp-hover flex flex-col gap-4" key={id}>
+              <li className="exp-card flex flex-col gap-4" key={id}>
                 <div className="flex flex-col justify-between lg:flex-row lg:items-center">
                   <h5 className="text-lg">
                     {title} •<span className="text-redberry"> {company}</span>
