@@ -62,107 +62,19 @@ export default function Experiences() {
       className="flex w-full flex-col items-center justify-center bg-pattern"
     >
       <div className="flex w-full max-w-center flex-col items-center justify-center gap-8 overflow-hidden px-2 py-12 md:gap-12 md:px-10 md:py-24">
-        <div className="flex w-full max-w-screen-xl flex-col justify-start gap-8 md:justify-between">
-          <div className="exp-card flex w-full max-w-screen-xl flex-col items-start justify-between md:flex-row md:items-center">
-            {tabTitle === "Work Experience" && (
-              <Heading1 text={tabs[0].title} />
-            )}
-            {tabTitle === "Formal Education" && (
-              <Heading1 text={tabs[1].title} />
-            )}
-            {tabTitle === "Upskill Certificates" && (
-              <Heading1 text={tabs[2].title} />
-            )}
-          </div>
-          <ul className="flex flex-row gap-4">
-            {tabs.map(({ id, label, title }) => (
-              <div
-                key={id}
-                className="tab cursor-pointer text-sm capitalize text-text"
-                onClick={() => tabHandler(label, title)}
-              >
-                {label}
-              </div>
-            ))}
-          </ul>
+        <div className="w-full max-w-screen-xl">
+          <Heading1 text={tabs[0].title} />
         </div>
-
         <Divider />
-        {tab === "Work" && (
-          <ul className="flex w-full max-w-screen-xl flex-col gap-8">
-            {work.map(
-              ({
-                id,
-                icon,
-                iconStyle,
-                title,
-                company,
-                date,
-                bullets,
-                tags,
-              }) => (
-                <li className="exp-card exp-hover flex flex-col gap-4" key={id}>
-                  <div className="flex flex-col justify-between lg:flex-row lg:items-center">
-                    <h5 className="text-lg">
-                      {title} •<span className="text-redberry"> {company}</span>
-                    </h5>
-                    <p className="text-sm">{date}</p>
-                  </div>
-                  <ul className="flex flex-row flex-wrap gap-2 text-text">
-                    {tags.map((tag) => (
-                      <li
-                        key={tag.id}
-                        className="rounded-full border border-text/70 px-2 py-0.5 text-xs"
-                      >
-                        {tag.text}
-                      </li>
-                    ))}
-                  </ul>
-                  <ul className="ml-5 list-disc text-text">
-                    {bullets.map((bullet) => (
-                      <li key={bullet.id} className="text-sm text-text/70">
-                        {bullet.text}
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="border-b border-b-text opacity-10"></div>
-                </li>
-              ),
-            )}
-          </ul>
-        )}
-
-        {/* Education */}
-        {tab === "Education" && (
-          <ul className="flex w-full max-w-screen-xl flex-col gap-8">
-            {education.map(
-              ({ id, degree, institution, graduationDate, description }) => (
-                <li className="exp-card exp-hover flex flex-col gap-4" key={id}>
-                  <div className="flex flex-col justify-between lg:flex-row lg:items-center">
-                    <h5 className="text-lg">
-                      {degree} •
-                      <span className="text-redberry"> {institution}</span>
-                    </h5>
-                    <p className="text-sm">Graduated: {graduationDate}</p>
-                  </div>
-                  <p className="text-sm text-text/70">{description}</p>
-                  <div className="border-b border-b-text opacity-10"></div>
-                </li>
-              ),
-            )}
-          </ul>
-        )}
-
-        {/* Upskill Certificates */}
-        {tab === "Upskill" && (
-          <ul className="flex w-full max-w-screen-xl flex-col gap-8">
-            {upskill.map(({ id, title, platform, date, tags }) => (
-              <li className="exp-card exp-hover flex flex-col gap-4 " key={id}>
+        <ul className="flex w-full max-w-screen-xl flex-col gap-8">
+          {work.map(
+            ({ id, icon, iconStyle, title, company, date, bullets, tags }) => (
+              <li className="exp-card exp-hover flex flex-col gap-4" key={id}>
                 <div className="flex flex-col justify-between lg:flex-row lg:items-center">
                   <h5 className="text-lg">
-                    {title} •<span className="text-redberry"> {platform}</span>
+                    {title} •<span className="text-redberry"> {company}</span>
                   </h5>
-                  <p className="text-sm">Completed: {date}</p>
+                  <p className="text-sm">{date}</p>
                 </div>
                 <ul className="flex flex-row flex-wrap gap-2 text-text">
                   {tags.map((tag) => (
@@ -174,11 +86,68 @@ export default function Experiences() {
                     </li>
                   ))}
                 </ul>
-                <div className="border-b border-b-text opacity-10" />
+                <ul className="ml-5 list-disc text-text">
+                  {bullets.map((bullet) => (
+                    <li key={bullet.id} className="text-sm text-text/70">
+                      {bullet.text}
+                    </li>
+                  ))}
+                </ul>
+                <div className="border-b border-b-text opacity-10"></div>
               </li>
-            ))}
-          </ul>
-        )}
+            ),
+          )}
+        </ul>
+
+        <div className="w-full max-w-screen-xl">
+          <Heading1 text={tabs[1].title} />
+        </div>
+        <Divider />
+        <ul className="flex w-full max-w-screen-xl flex-col gap-8">
+          {education.map(
+            ({ id, degree, institution, graduationDate, description }) => (
+              <li className="exp-card exp-hover flex flex-col gap-4" key={id}>
+                <div className="flex flex-col justify-between lg:flex-row lg:items-center">
+                  <h5 className="text-lg">
+                    {degree} •
+                    <span className="text-redberry"> {institution}</span>
+                  </h5>
+                  <p className="text-sm">Graduated: {graduationDate}</p>
+                </div>
+                <p className="text-sm text-text/70">{description}</p>
+                <div className="border-b border-b-text opacity-10"></div>
+              </li>
+            ),
+          )}
+        </ul>
+
+        <div className="w-full max-w-screen-xl">
+          <Heading1 text={tabs[2].title} />
+        </div>
+        <Divider />
+        <ul className="flex w-full max-w-screen-xl flex-col gap-8">
+          {upskill.map(({ id, title, platform, date, tags }) => (
+            <li className="exp-card exp-hover flex flex-col gap-4 " key={id}>
+              <div className="flex flex-col justify-between lg:flex-row lg:items-center">
+                <h5 className="text-lg">
+                  {title} •<span className="text-redberry"> {platform}</span>
+                </h5>
+                <p className="text-sm">Completed: {date}</p>
+              </div>
+              <ul className="flex flex-row flex-wrap gap-2 text-text">
+                {tags.map((tag) => (
+                  <li
+                    key={tag.id}
+                    className="rounded-full border border-text/70 px-2 py-0.5 text-xs"
+                  >
+                    {tag.text}
+                  </li>
+                ))}
+              </ul>
+              <div className="border-b border-b-text opacity-10" />
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
