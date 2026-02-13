@@ -58,7 +58,7 @@ export default function AllProjects() {
                 className="project-card flex h-fit w-full flex-col items-center gap-4"
                 key={id}
               >
-                <div className="h-50 relative aspect-16/10 w-full overflow-hidden rounded-lg md:rounded-xl">
+                <div className="h-50 relative aspect-16/10 w-full overflow-hidden rounded-lg border border-solid border-neutral-400 md:rounded-xl">
                   <a
                     href={linkLiveDemo}
                     target={"_blank"}
