@@ -102,8 +102,8 @@ export default function Hero() {
             <span className="text-text">Sager</span>
           </h1>
           <p className="split">
-            A Frontend Web Developer based in the Philippines specializing in{" "}
-            {specialty}.
+            A Frontend Web Developer based in the Philippines{" "}
+            <br className="hidden lg:flex" /> specializing in {specialty}.
           </p>
 
           <div className="flex flex-row items-center justify-center gap-4 md:justify-start">
