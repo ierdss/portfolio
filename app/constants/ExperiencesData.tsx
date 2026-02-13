@@ -13,6 +13,7 @@ export const ExperiencesDataWork = [
     iconStyle: { background: "#1E293B", color: "#61DAFB" },
     title: "Frontend Java/Web Developer",
     company: "Accenture",
+    location: "remote",
     date: "Feb 2025 - Apr 2025",
     tags: [
       { id: uuidv4(), text: "React" },
@@ -100,7 +101,7 @@ export const ExperiencesDataEducation = [
     degree: "Bachelor of Computer Science",
     institution: "STI College Sta. Mesa",
     graduationDate: "July 2025",
-    description: "Sta. Mesa, Manila, Metro Manila",
+    location: "Sta. Mesa, Manila, Metro Manila",
   },
 ];
 

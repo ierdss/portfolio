@@ -49,12 +49,26 @@ export default function Experiences() {
         <Divider />
         <ul className="flex w-full max-w-screen-xl flex-col gap-8">
           {work.map(
-            ({ id, icon, iconStyle, title, company, date, bullets, tags }) => (
+            ({
+              id,
+              icon,
+              iconStyle,
+              title,
+              company,
+              location,
+              date,
+              bullets,
+              tags,
+            }) => (
               <li className="exp-card flex flex-col gap-4" key={id}>
                 <div className="flex flex-col justify-between lg:flex-row lg:items-center">
-                  <h5 className="text-lg">
-                    {title} •<span className="text-redberry"> {company}</span>
-                  </h5>
+                  <div>
+                    <h5 className="text-lg">{title}</h5>
+                    <p className="capitalize">
+                      <span className="">{company}</span> • {location}
+                    </p>
+                  </div>
+
                   <p className="text-sm">{date}</p>
                 </div>
                 <ul className="flex flex-row flex-wrap gap-2 text-text">
@@ -86,16 +100,17 @@ export default function Experiences() {
         <Divider />
         <ul className="flex w-full max-w-screen-xl flex-col gap-8">
           {education.map(
-            ({ id, degree, institution, graduationDate, description }) => (
+            ({ id, degree, institution, graduationDate, location }) => (
               <li className="exp-card exp-hover flex flex-col gap-4" key={id}>
                 <div className="flex flex-col justify-between lg:flex-row lg:items-center">
-                  <h5 className="text-lg">
-                    {degree} •
-                    <span className="text-redberry"> {institution}</span>
-                  </h5>
+                  <div>
+                    <h5 className="text-lg">{degree}</h5>
+                    <p className="capitalize">
+                      <span className="">{institution}</span> • {location}
+                    </p>
+                  </div>
                   <p className="text-sm">Graduated: {graduationDate}</p>
                 </div>
-                <p className="text-sm text-text/70">{description}</p>
                 <div className="border-b border-b-text opacity-10"></div>
               </li>
             ),
@@ -110,9 +125,10 @@ export default function Experiences() {
           {upskill.map(({ id, title, platform, date, tags }) => (
             <li className="exp-card exp-hover flex flex-col gap-4 " key={id}>
               <div className="flex flex-col justify-between lg:flex-row lg:items-center">
-                <h5 className="text-lg">
-                  {title} •<span className="text-redberry"> {platform}</span>
-                </h5>
+                <div>
+                  <h5 className="text-lg">{title}</h5>
+                  <p>{platform}</p>
+                </div>
                 <p className="text-sm">Completed: {date}</p>
               </div>
               <ul className="flex flex-row flex-wrap gap-2 text-text">
