@@ -1,3 +1,3 @@
 export const settings = {
-  animation: false,
+  animation: true,
 };
