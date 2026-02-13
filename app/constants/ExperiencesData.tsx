@@ -11,31 +11,7 @@ export const ExperiencesDataWork = [
     id: uuidv4(),
     icon: <FaReact className="scale-150" />,
     iconStyle: { background: "#1E293B", color: "#61DAFB" },
-    title: "Frontend Developer",
-    company: "Freelance",
-    date: "July 2025 - Present",
-    tags: [
-      { id: uuidv4(), text: "React" },
-      { id: uuidv4(), text: "JavaScript" },
-      { id: uuidv4(), text: "CSS" },
-      { id: uuidv4(), text: "HTML" },
-    ],
-    bullets: [
-      {
-        id: uuidv4(),
-        text: "Built and delivered custom web solutions for small businesses and online clients, optimizing their online presence.",
-      },
-      {
-        id: uuidv4(),
-        text: "Worked on multiple freelance projects while maintaining strict deadlines.",
-      },
-    ],
-  },
-  {
-    id: uuidv4(),
-    icon: <FaReact className="scale-150" />,
-    iconStyle: { background: "#1E293B", color: "#61DAFB" },
-    title: "Fullstack Web Developer Intern",
+    title: "Frontend Java/Web Developer",
     company: "Accenture",
     date: "February 2023 - May 2025",
     tags: [
@@ -51,27 +27,23 @@ export const ExperiencesDataWork = [
     bullets: [
       {
         id: uuidv4(),
-        text: "Built and optimized dynamic user interfaces with React, HTML, CSS, and JavaScript, ensuring responsive, accessible, and cross-browser designs.",
+        text: "Acquired comprehensive  expertise of Java and web development through online courses on Udemy.",
       },
       {
         id: uuidv4(),
-        text: "Assisted in developing RESTful APIs and backend logic in Express.js, enabling smooth communication between frontend and backend systems.",
+        text: "Designed and implemented dynamic user interfaces using HTML, CSS, and JavaScript, ensuring responsive and user-friendly designs.",
       },
       {
         id: uuidv4(),
-        text: "Designed and maintained relational database models (MySQL/SQL) to support enterprise applications, focusing on data consistency and performance.",
+        text: "Enhanced database management skills by implementing relational database models for java and web applications.",
       },
       {
         id: uuidv4(),
-        text: "Integrated frontend components with backend services, streamlining data flow and improving system efficiency.",
+        text: "Integrated data structures with frontend components.",
       },
       {
         id: uuidv4(),
-        text: "Collaborated in an Agile/Scrum environment, participating in sprint planning, daily stand-ups, and code reviews.",
-      },
-      {
-        id: uuidv4(),
-        text: "Managed and logged work hours using Jibble, demonstrating effective time management and work discipline.",
+        text: "Managed and logged work hours using Jibble, demonstrating effective time management and remote work discipline.",
       },
     ],
   },
@@ -79,8 +51,8 @@ export const ExperiencesDataWork = [
     id: uuidv4(),
     icon: <FaReact className="scale-150" />,
     iconStyle: { background: "#1E293B", color: "#61DAFB" },
-    title: "Working Student",
-    company: "Freelance",
+    title: "Frontend React Native Developer",
+    company: "UERMMC/ACE Medical",
     date: "January 2023 - January 2025",
     tags: [
       { id: uuidv4(), text: "HTML" },
@@ -92,27 +64,31 @@ export const ExperiencesDataWork = [
     bullets: [
       {
         id: uuidv4(),
-        text: "Collaborated with small businesses and local clients to build and maintain websites tailored to their branding and customer needs.",
+        text: "Coordinated with Ace Medical Mandaluyong Center Laboratory and UERMMC Quezon City Blood Banks to define app requirements, perform acceptance testing, and broaden recommendations.",
       },
       {
         id: uuidv4(),
-        text: "Designed and implemented responsive, mobile-friendly user interfaces using HTML, CSS, JavaScript, and React, improving client site usability and accessibility.",
+        text: "Collaborated with colleagues that improved productivity by 44%  using GitHub and Todoist for project management, task management, automation, and integrations.",
       },
       {
         id: uuidv4(),
-        text: "Developed interactive features such as contact forms, booking systems, and dashboards to enhance customer engagement.",
+        text: "Designed and developed 5 roles for each access level with their corresponding routes and permissions.",
       },
       {
         id: uuidv4(),
-        text: "Improved performance of web applications by optimizing front-end code, reducing load times by up to 30%.",
+        text: "Organized 100+ screens based on relevance to roles and their routing.",
       },
       {
         id: uuidv4(),
-        text: "Integrated PostgreSQL databases with web applications, managing relational data models and ensuring secure data handling.",
+        text: "Created 25+ reusable components including component wrappers.",
       },
       {
         id: uuidv4(),
-        text: "Demonstrated effective time management by tracking and delivering projects on schedule, while managing academic responsibilities effectively.",
+        text: "Established a database and an API layer using Redux and Firebase for CRUD Operations.",
+      },
+      {
+        id: uuidv4(),
+        text: "Built report generation for daily, weekly, monthly, and yearly blood donations and requests on Firebase using batch increments.",
       },
     ],
   },
