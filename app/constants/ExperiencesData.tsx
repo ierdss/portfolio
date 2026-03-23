@@ -11,6 +11,36 @@ export const ExperiencesDataWork = [
     id: uuidv4(),
     icon: <FaReact className="scale-150" />,
     iconStyle: { background: "#1E293B", color: "#61DAFB" },
+    title: "Short-form Video Editor",
+    company: "Sobowale Studios",
+    location: "Makati",
+    date: "Aug 2025 - present",
+    tags: [
+      { id: uuidv4(), text: "Capcut Pro (Editing)" },
+      { id: uuidv4(), text: "Canva Premium (Thumbnail)" },
+      { id: uuidv4(), text: "ElevenLabs (Voiceover)" },
+      { id: uuidv4(), text: "ChatGPT (Ideas)" },
+      { id: uuidv4(), text: "Claude (Scripting)" },
+    ],
+    bullets: [
+      {
+        id: uuidv4(),
+        text: "Organized and managed video assets using scalable directory schemas, structured file systems, asset tracking, and cloud collaboration, reducing project setup and media search time by 53% while streamlining team workflows.",
+      },
+      {
+        id: uuidv4(),
+        text: "Optimized product interfaces by applying frame-accurate precision, pixel-perfect implementation, and narrative-driven storytelling, resulting in a 14% boost in user retention.",
+      },
+      {
+        id: uuidv4(),
+        text: "Influenced Agile workflows through technical communication, cross-functional collaboration, and rapid interactive development to ensure 100% on-time time-critical deliveries and a 17% boost in sprint efficiency.",
+      },
+    ],
+  },
+  {
+    id: uuidv4(),
+    icon: <FaReact className="scale-150" />,
+    iconStyle: { background: "#1E293B", color: "#61DAFB" },
     title: "Frontend Java/Web Developer",
     company: "Accenture",
     location: "remote",
@@ -18,6 +48,7 @@ export const ExperiencesDataWork = [
     tags: [
       { id: uuidv4(), text: "React" },
       { id: uuidv4(), text: "JavaScript" },
+      { id: uuidv4(), text: "Embedded JavaScript (EJS)" },
       { id: uuidv4(), text: "CSS" },
       { id: uuidv4(), text: "HTML" },
       { id: uuidv4(), text: "Express.js" },
@@ -52,45 +83,62 @@ export const ExperiencesDataWork = [
     id: uuidv4(),
     icon: <FaReact className="scale-150" />,
     iconStyle: { background: "#1E293B", color: "#61DAFB" },
-    title: "Frontend React Native Developer",
-    company: "UERMMC/ACE Medical",
+    title: "React Native Developer",
+    company: "ACE Medical",
+    location: "Mandaluyong",
     date: "Nov 2023 - Dec 2024",
     tags: [
-      { id: uuidv4(), text: "HTML" },
-      { id: uuidv4(), text: "CSS" },
+      { id: uuidv4(), text: "React Native" },
       { id: uuidv4(), text: "JavaScript" },
-      { id: uuidv4(), text: "React" },
-      { id: uuidv4(), text: "PostgreSQL" },
+      { id: uuidv4(), text: "CSS" },
+      { id: uuidv4(), text: "Tailwind" },
+      { id: uuidv4(), text: "Firebase" },
+      { id: uuidv4(), text: "Expo" },
+      { id: uuidv4(), text: "Google Maps" },
+      { id: uuidv4(), text: "Redux" },
     ],
     bullets: [
       {
         id: uuidv4(),
-        text: "Coordinated with Ace Medical Mandaluyong Center Laboratory and UERMMC Quezon City Blood Banks to define app requirements, perform acceptance testing, and broaden recommendations.",
+        text: "Engineered a library of 25+ high-performance and reusable React Native components including wrappers, accelerating the development cycle by 66% while ensuring UI/UX consistency.",
       },
       {
         id: uuidv4(),
-        text: "Collaborated with colleagues that improved productivity by 44%  using GitHub and Todoist for project management, task management, automation, and integrations.",
+        text: "Built an automated report generation engine using Firebase Cloud Functions and Batch Increments, enabling real-time inventory tracking and improving supply chain transparency for hospital administrators. ",
       },
       {
         id: uuidv4(),
-        text: "Designed and developed 5 roles for each access level with their corresponding routes and permissions.",
+        text: "Designed a seamless data layer using Redux Toolkit for centralized state management and Firebase/Firestore for real-time CRUD operations. Optimized API calls to maintain low latency during peak laboratory hours. ",
       },
-      {
-        id: uuidv4(),
-        text: "Organized 100+ screens based on relevance to roles and their routing.",
-      },
-      {
-        id: uuidv4(),
-        text: "Created 25+ reusable components including component wrappers.",
-      },
-      {
-        id: uuidv4(),
-        text: "Established a database and an API layer using Redux and Firebase for CRUD Operations.",
-      },
-      {
-        id: uuidv4(),
-        text: "Built report generation for daily, weekly, monthly, and yearly blood donations and requests on Firebase using batch increments.",
-      },
+      // Use in the future. Because I might forget.
+      // {
+      //   id: uuidv4(),
+      //   text: "Coordinated with Ace Medical Mandaluyong Center Laboratory and UERMMC Quezon City Blood Banks to define app requirements, perform acceptance testing, and broaden recommendations.",
+      // },
+      // {
+      //   id: uuidv4(),
+      //   text: "Collaborated with colleagues that improved productivity by 44%  using GitHub and Todoist for project management, task management, automation, and integrations.",
+      // },
+      // {
+      //   id: uuidv4(),
+      //   text: "Designed and developed 5 roles for each access level with their corresponding routes and permissions.",
+      // },
+      // {
+      //   id: uuidv4(),
+      //   text: "Organized 100+ screens based on relevance to roles and their routing.",
+      // },
+      // {
+      //   id: uuidv4(),
+      //   text: "Created 25+ reusable components including component wrappers.",
+      // },
+      // {
+      //   id: uuidv4(),
+      //   text: "Established a database and an API layer using Redux and Firebase for CRUD Operations.",
+      // },
+      // {
+      //   id: uuidv4(),
+      //   text: "Built report generation for daily, weekly, monthly, and yearly blood donations and requests on Firebase using batch increments.",
+      // },
     ],
   },
 ];
