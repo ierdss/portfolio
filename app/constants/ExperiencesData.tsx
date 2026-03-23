@@ -98,7 +98,7 @@ export const ExperiencesDataWork = [
 export const ExperiencesDataEducation = [
   {
     id: uuidv4(),
-    degree: "Bachelor of Computer Science",
+    degree: "Bachelor of Computer Science • Cum Lause • Best In Thesis",
     institution: "STI College Sta. Mesa",
     graduationDate: "July 2025",
     location: "Sta. Mesa, Manila, Metro Manila",
