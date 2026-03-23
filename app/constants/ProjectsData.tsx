@@ -56,6 +56,22 @@ export const ProjectsDataFeatured = [
 export const ProjectsDataAll = [
   {
     id: uuidv4(),
+    title: "Video Editor Portfolio",
+    thumbnail: "/thumbnails/ve-portfolio.jpg",
+    alt: "Video Editor Portfolio full page on desktop",
+    tags: [
+      { id: uuidv4(), text: "Next.js" },
+      { id: uuidv4(), text: "TypeScript" },
+      { id: uuidv4(), text: "Tailwind" },
+    ],
+    description:
+      "A portfolio to showcase my video editing work experience, skills, and projects with optimized video examples.",
+    linkRepository: "",
+    linkLiveDemo: "https://andreisager-ve.vercel.app/",
+    linkCaseStudy: "",
+  },
+  {
+    id: uuidv4(),
     title: "Bases Column Width",
     thumbnail: "/thumbnails/base-column-width.png",
     alt: "Thumbnail Of Obsidian Bases Column Width Plugin",
