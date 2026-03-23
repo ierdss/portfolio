@@ -3,6 +3,22 @@ import { v4 as uuidv4 } from "uuid";
 export const ProjectsDataFeatured = [
   {
     id: uuidv4(),
+    title: "Video Editor Portfolio",
+    thumbnail: "/thumbnails/ve-portfolio.jpg",
+    alt: "Video Editor Portfolio full page on desktop",
+    tags: [
+      { id: uuidv4(), text: "Next.js" },
+      { id: uuidv4(), text: "TypeScript" },
+      { id: uuidv4(), text: "Tailwind" },
+    ],
+    description:
+      "A portfolio to showcase my video editing work experience, skills, and projects with optimized video examples.",
+    linkRepository: "",
+    linkLiveDemo: "https://andreisager-ve.vercel.app/",
+    linkCaseStudy: "",
+  },
+  {
+    id: uuidv4(),
     title: "Roadway Delivery",
     thumbnail: "/thumbnails/road-way-delivery.jpg",
     alt: "RWD full landing page on desktop with logo",
@@ -25,7 +41,7 @@ export const ProjectsDataFeatured = [
     thumbnail: "/thumbnails/remembrance-gallery.png",
     alt: "Commemoration Gallery full page on desktop",
     tags: [
-      { id: uuidv4(), text: "Next.js Template" },
+      { id: uuidv4(), text: "Next.js" },
       { id: uuidv4(), text: "Cloudinary API" },
       { id: uuidv4(), text: "TypeScript" },
       { id: uuidv4(), text: "Tailwind" },
